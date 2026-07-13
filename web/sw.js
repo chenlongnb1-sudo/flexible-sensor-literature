@@ -1,5 +1,15 @@
-const CACHE = "research-intelligence-v3";
-const CORE = ["./", "./index.html", "./styles.css", "./app.js", "./data/research-bundle.json", "./assets/tactile-front-end.svg"];
+const CACHE = "research-intelligence-v6";
+const CORE = [
+  "./",
+  "./index.html",
+  "./styles.css?v=6",
+  "./app.js?v=6",
+  "./manifest.webmanifest",
+  "./data/research-bundle.json",
+  "./assets/tactile-front-end.svg",
+  "./assets/tactile-front-end-image2.webp",
+  "./assets/research-intelligence-icon-image2.png",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE)).then(() => self.skipWaiting()));

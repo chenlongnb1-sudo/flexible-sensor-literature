@@ -1,0 +1,224 @@
+{
+  "created_at": "2026-07-14T04:13:52",
+  "repo": "C:\\Users\\Administrator\\Documents\\论文汇总",
+  "git_branch": "main",
+  "git_status": "M tests/test_data_contracts.py\n M web/assets/image2-prompts.md\n M web/data/research-bundle.json\n M web/index.html\n M web/manifest.webmanifest\n M web/styles.css\n M web/sw.js\n?? web/assets/research-intelligence-icon-image2.png\n?? web/assets/tactile-front-end-image2.webp",
+  "git_remote": "origin\thttps://github.com/chenlongnb1-sudo/flexible-sensor-literature.git (fetch)\norigin\thttps://github.com/chenlongnb1-sudo/flexible-sensor-literature.git (push)",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 268,
+      "modified": "2026-07-14T03:45:44"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 112,
+      "modified": "2026-07-14T03:37:37"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5071,
+      "modified": "2026-07-14T03:50:31"
+    },
+    {
+      "path": ".github/workflows/daily-literature.yml",
+      "bytes": 3120,
+      "modified": "2026-07-14T03:50:31"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1617,
+      "modified": "2026-07-14T03:54:49"
+    },
+    {
+      "path": "config/literature-queries.json",
+      "bytes": 1557,
+      "modified": "2026-07-14T03:20:53"
+    },
+    {
+      "path": "research-memory/system-blueprint.md",
+      "bytes": 13618,
+      "modified": "2026-07-14T02:50:56"
+    },
+    {
+      "path": "research-memory/conversations/2026-07-02-0914-session.md",
+      "bytes": 1353,
+      "modified": "2026-07-02T09:14:13"
+    },
+    {
+      "path": "research-memory/conversations/2026-07-14-0351-session.md",
+      "bytes": 9553,
+      "modified": "2026-07-14T03:52:41"
+    },
+    {
+      "path": "research-memory/decisions/decision-log.json",
+      "bytes": 384,
+      "modified": "2026-07-14T02:59:58"
+    },
+    {
+      "path": "research-memory/file-maps/2026-07-02-0914-file-map.json",
+      "bytes": 358,
+      "modified": "2026-07-02T09:14:13"
+    },
+    {
+      "path": "research-memory/file-maps/2026-07-14-0351-file-map.json",
+      "bytes": 6417,
+      "modified": "2026-07-14T03:51:41"
+    },
+    {
+      "path": "research-memory/ideas/idea-log.json",
+      "bytes": 11341,
+      "modified": "2026-07-14T03:40:28"
+    },
+    {
+      "path": "research-memory/literature/2026/2026-07-14/daily-report.md",
+      "bytes": 9601,
+      "modified": "2026-07-14T03:40:28"
+    },
+    {
+      "path": "research-memory/literature/2026/2026-07-14/papers/paper-111b8e5432862b60.pdf",
+      "bytes": 7199206,
+      "modified": "2026-07-14T03:40:28"
+    },
+    {
+      "path": "research-memory/literature/2026/2026-07-14/papers/paper-c1ebbe0c7b587881.pdf",
+      "bytes": 1691027,
+      "modified": "2026-07-14T03:40:27"
+    },
+    {
+      "path": "research-memory/literature/2026/2026-07-14/papers/paper-e283f7043e4a9d7f.pdf",
+      "bytes": 2753059,
+      "modified": "2026-07-14T03:40:28"
+    },
+    {
+      "path": "research-memory/literature/2026/2026-07-14/summaries/papers.json",
+      "bytes": 32080,
+      "modified": "2026-07-14T03:40:28"
+    },
+    {
+      "path": "research-memory/profile/user-research-profile.md",
+      "bytes": 7103,
+      "modified": "2026-07-13T13:10:25"
+    },
+    {
+      "path": "research-memory/profile-update-proposals/proposals.json",
+      "bytes": 52,
+      "modified": "2026-07-14T03:33:19"
+    },
+    {
+      "path": "research-memory/schemas/ideas.schema.json",
+      "bytes": 1368,
+      "modified": "2026-07-14T03:33:19"
+    },
+    {
+      "path": "research-memory/schemas/papers.schema.json",
+      "bytes": 3203,
+      "modified": "2026-07-14T03:33:19"
+    },
+    {
+      "path": "research-memory/schemas/profile-proposals.schema.json",
+      "bytes": 731,
+      "modified": "2026-07-14T03:33:19"
+    },
+    {
+      "path": "research-memory/tasks/task-board.json",
+      "bytes": 787,
+      "modified": "2026-07-14T02:59:58"
+    },
+    {
+      "path": "scripts/build_research_intelligence.py",
+      "bytes": 5162,
+      "modified": "2026-07-14T03:48:40"
+    },
+    {
+      "path": "scripts/daily_literature_pipeline.py",
+      "bytes": 47785,
+      "modified": "2026-07-14T03:50:31"
+    },
+    {
+      "path": "scripts/research_server.py",
+      "bytes": 8148,
+      "modified": "2026-07-14T03:47:59"
+    },
+    {
+      "path": "scripts/research_store.py",
+      "bytes": 12982,
+      "modified": "2026-07-14T03:32:38"
+    },
+    {
+      "path": "scripts/send_daily_notification.py",
+      "bytes": 4560,
+      "modified": "2026-07-14T03:36:29"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "bytes": 48,
+      "modified": "2026-07-14T03:32:38"
+    },
+    {
+      "path": "tests/test_daily_pipeline.py",
+      "bytes": 3677,
+      "modified": "2026-07-14T03:34:13"
+    },
+    {
+      "path": "tests/test_data_contracts.py",
+      "bytes": 3789,
+      "modified": "2026-07-14T04:05:47"
+    },
+    {
+      "path": "tests/test_research_store.py",
+      "bytes": 4727,
+      "modified": "2026-07-14T03:34:13"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 27319,
+      "modified": "2026-07-14T03:48:40"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 10177,
+      "modified": "2026-07-14T04:11:41"
+    },
+    {
+      "path": "web/manifest.webmanifest",
+      "bytes": 454,
+      "modified": "2026-07-14T04:05:47"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 18628,
+      "modified": "2026-07-14T04:11:41"
+    },
+    {
+      "path": "web/sw.js",
+      "bytes": 1083,
+      "modified": "2026-07-14T04:11:41"
+    },
+    {
+      "path": "web/assets/image2-prompts.md",
+      "bytes": 3613,
+      "modified": "2026-07-14T04:05:47"
+    },
+    {
+      "path": "web/assets/research-intelligence-icon-image2.png",
+      "bytes": 283649,
+      "modified": "2026-07-14T04:04:32"
+    },
+    {
+      "path": "web/assets/tactile-front-end-image2.webp",
+      "bytes": 149300,
+      "modified": "2026-07-14T04:04:32"
+    },
+    {
+      "path": "web/assets/tactile-front-end.svg",
+      "bytes": 3045,
+      "modified": "2026-07-14T03:01:01"
+    },
+    {
+      "path": "web/data/research-bundle.json",
+      "bytes": 67937,
+      "modified": "2026-07-14T04:12:59"
+    }
+  ]
+}

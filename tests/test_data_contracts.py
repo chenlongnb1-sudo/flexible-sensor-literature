@@ -11,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "research-memory" / "literature" / "2026" / "2026-07-14" / "summaries" / "papers.json"
 IDEAS_PATH = ROOT / "research-memory" / "ideas" / "idea-log.json"
 BUNDLE_PATH = ROOT / "web" / "data" / "research-bundle.json"
+HERO_PATH = ROOT / "web" / "assets" / "tactile-front-end-image2.webp"
+ICON_PATH = ROOT / "web" / "assets" / "research-intelligence-icon-image2.png"
 
 
 class DataContractTests(unittest.TestCase):
@@ -54,6 +56,19 @@ class DataContractTests(unittest.TestCase):
         self.assertEqual(bundle["stats"]["papers_today"], len(bundle["papers"]))
         self.assertEqual(bundle["stats"]["must_read"], sum(1 for paper in bundle["papers"] if paper["relevance_score"] >= 80))
         self.assertEqual(bundle["stats"]["pending_proposals"], sum(1 for item in bundle["profile_proposals"] if item["status"] == "pending"))
+
+    def test_image2_assets_are_present_and_web_ready(self) -> None:
+        hero = HERO_PATH.read_bytes()
+        icon = ICON_PATH.read_bytes()
+        self.assertGreater(len(hero), 100_000)
+        self.assertEqual(hero[:4], b"RIFF")
+        self.assertEqual(hero[8:12], b"WEBP")
+        self.assertGreater(len(icon), 100_000)
+        self.assertEqual(icon[:8], b"\x89PNG\r\n\x1a\n")
+
+        bundle = json.loads(BUNDLE_PATH.read_text(encoding="utf-8"))
+        self.assertTrue(bundle["assets"]["hero_image2"])
+        self.assertTrue(bundle["assets"]["icon_image2"])
 
 
 if __name__ == "__main__":
