@@ -10,8 +10,18 @@
       "source": "User research profile and system blueprint",
       "hypothesis": "Normalized hardware projection features should degrade more gracefully than raw pixel readout when tactile pixels fail or drift.",
       "minimum_experiment": "Construct 3x3 resistor/tactile array states with 0, 1, 5, 10, and 20 percent equivalent faults; compare raw, software projection, and hardware projection.",
-      "controls": ["raw pixel scanning", "scalar downsampling", "software projection", "hardware projection"],
-      "success_metrics": ["classification accuracy drop", "R2 between software and hardware projection", "few-shot calibration samples", "fault ratio"],
+      "controls": [
+        "raw pixel scanning",
+        "scalar downsampling",
+        "software projection",
+        "hardware projection"
+      ],
+      "success_metrics": [
+        "classification accuracy drop",
+        "R2 between software and hardware projection",
+        "few-shot calibration samples",
+        "fault ratio"
+      ],
       "risk": "If the real 3x3 sensor is unstable, first validate with precision resistor arrays.",
       "profile_update_recommendation": "Add as P4/P5 bridge only after first resistor-array evidence appears."
     },
@@ -24,8 +34,20 @@
       "source": "Paper A project context",
       "hypothesis": "Kx/Ky tangential dynamics provide task-relevant friction cues that z-only or external force-reference channels miss.",
       "minimum_experiment": "Record raw A/B/C/D, hardware Kz/Kx/Ky, z-only, and reference force under matched texture/sliding conditions.",
-      "controls": ["raw four channels", "z-only", "reference force", "software vector", "hardware vector"],
-      "success_metrics": ["texture accuracy", "confusion matrix", "SNR/PSD", "latency", "ADC channel count"],
+      "controls": [
+        "raw four channels",
+        "z-only",
+        "reference force",
+        "software vector",
+        "hardware vector"
+      ],
+      "success_metrics": [
+        "texture accuracy",
+        "confusion matrix",
+        "SNR/PSD",
+        "latency",
+        "ADC channel count"
+      ],
       "risk": "Without synchronous hardware Kz/Kx/Ky, frame as direction-related feature extraction rather than ADC-front computing.",
       "profile_update_recommendation": "Keep as active Paper A gate."
     },
@@ -38,10 +60,189 @@
       "source": "User research profile",
       "hypothesis": "Gradient or non-periodic electrodes plus HCP microstructures reduce response dispersion under assembly and contact perturbations.",
       "minimum_experiment": "Test G1-G5 under controlled shift, rotation, and contact-radius conditions; produce CV, void ratio, and sensitivity maps.",
-      "controls": ["periodic electrode + normal microstructure", "periodic electrode + HCP", "gradient electrode + normal microstructure", "gradient electrode + HCP"],
-      "success_metrics": ["CV", "shift sensitivity", "rotation sensitivity", "contact-radius sensitivity", "signal void ratio"],
+      "controls": [
+        "periodic electrode + normal microstructure",
+        "periodic electrode + HCP",
+        "gradient electrode + normal microstructure",
+        "gradient electrode + HCP"
+      ],
+      "success_metrics": [
+        "CV",
+        "shift sensitivity",
+        "rotation sensitivity",
+        "contact-radius sensitivity",
+        "signal void ratio"
+      ],
       "risk": "If only sensitivity improves, downgrade the claim to response dispersion reduction.",
       "profile_update_recommendation": "Accept after at least two tolerance metrics beat controls."
+    },
+    {
+      "id": "idea-2026-07-14-6d61ef8f0eee",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
+      "source_papers": [
+        {
+          "paper_id": "paper-c1ebbe0c7b587881",
+          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
+          "doi": "",
+          "url": "http://arxiv.org/abs/2607.05241v1"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-13T19:40:26.770376+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-a23c3d1f9bb4",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P5",
+      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
+      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
+      "source_papers": [
+        {
+          "paper_id": "paper-c1ebbe0c7b587881",
+          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
+          "doi": "",
+          "url": "http://arxiv.org/abs/2607.05241v1"
+        }
+      ],
+      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
+      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
+      "controls": [
+        "raw readout",
+        "software projection",
+        "hardware projection",
+        "hardware projection + few-shot calibration"
+      ],
+      "success_metrics": [
+        "accuracy degradation",
+        "feature drift",
+        "calibration samples",
+        "fault ratio",
+        "cross-device variance"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-13T19:40:26.770393+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-8f8f8ad61e52",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
+      "source_papers": [
+        {
+          "paper_id": "paper-c1ebbe0c7b587881",
+          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
+          "doi": "",
+          "url": "http://arxiv.org/abs/2607.05241v1"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-13T19:40:26.770403+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-90d036ffa380",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P1",
+      "title": "把论文中的结构机制转成偏移/旋转/接触半径容差地图",
+      "source": "Self Capacitive Tactile Sensor System designed for Companion Robots",
+      "source_papers": [
+        {
+          "paper_id": "paper-111b8e5432862b60",
+          "title": "Self Capacitive Tactile Sensor System designed for Companion Robots",
+          "doi": "",
+          "url": "http://arxiv.org/abs/2606.25348v1"
+        }
+      ],
+      "hypothesis": "若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。",
+      "minimum_experiment": "在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。",
+      "controls": [
+        "周期电极+常规微结构",
+        "周期电极+HCP",
+        "梯度/非周期电极+常规微结构",
+        "目标结构"
+      ],
+      "success_metrics": [
+        "CV",
+        "shift sensitivity",
+        "rotation sensitivity",
+        "contact-radius sensitivity",
+        "signal void ratio"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-13T19:40:26.770411+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-8a94698b7f37",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P3",
+      "title": "把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照",
+      "source": "Self Capacitive Tactile Sensor System designed for Companion Robots",
+      "source_papers": [
+        {
+          "paper_id": "paper-111b8e5432862b60",
+          "title": "Self Capacitive Tactile Sensor System designed for Companion Robots",
+          "doi": "",
+          "url": "http://arxiv.org/abs/2606.25348v1"
+        }
+      ],
+      "hypothesis": "可解释的局部矢量/空间投影能以更少读出通道保持边缘、形状和滑移方向信息。",
+      "minimum_experiment": "在同一阵列输入上比较 raw scanning、scalar pooling、software gradient 与 hardware macro-pixel。",
+      "controls": [
+        "raw pixel scanning",
+        "scalar pooling",
+        "software gradient",
+        "hardware macro-pixel"
+      ],
+      "success_metrics": [
+        "channel count",
+        "latency",
+        "power",
+        "edge/shape accuracy",
+        "direction accuracy"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-13T19:40:26.770421+00:00"
     }
   ]
 }

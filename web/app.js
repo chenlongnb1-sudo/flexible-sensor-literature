@@ -1,411 +1,450 @@
+const EMPTY_BUNDLE = {
+  latest_report_date: "",
+  profile_markdown: "",
+  daily_report_markdown: "",
+  papers: [], ideas: [], tasks: [], decisions: [], profile_proposals: [], reports: [],
+  query_log: [], source_errors: [],
+  assets: { hero_image2: false, icon_image2: false },
+  stats: { papers_today: 0, must_read: 0, pending_ideas: 0, pending_proposals: 0, open_tasks: 0 }
+};
+
 const state = {
   view: "dashboard",
-  filter: "all",
+  dashboardFilter: "all",
   paperQuery: "",
   trackFilter: "all",
-  decisions: [],
-  papers: [
-    {
-      id: "seed-pre-adc-tactile-front-end",
-      title: "Seed topic: pre-ADC tactile front-end computing for flexible electronic skins",
-      authors: [],
-      venue: "System seed",
-      date: "2026-07-14",
-      paper_type: "topic-seed",
-      tracks: ["P2", "P4"],
-      relevance_score: 95,
-      core_claim: "每日 Agent 应优先寻找把触觉特征形成从后端算法前移到传感器/模拟前端的论文。",
-      transferable_points: [
-        "Hardware Kz/Kx/Ky evidence for Paper A",
-        "Programmable physical projection kernels for P4",
-        "Fault tolerance and few-shot transfer for P5"
-      ],
-      risks: ["不要把高灵敏材料论文误判为核心相关。", "没有标定矩阵时不要写完整三维力重建。"],
-      decision_hint: "profile_candidate"
-    }
-  ],
-  ideas: [
-    {
-      id: "idea-p4-fault-projection-001",
-      status: "watch",
-      grade: "A",
-      track: "P4/P5",
-      title: "用可编程物理投影验证坏点条件下的渐进退化",
-      hypothesis: "Normalized hardware projection features should degrade more gracefully than raw pixel readout when tactile pixels fail or drift.",
-      minimum_experiment: "Construct 3x3 resistor/tactile array states with 0, 1, 5, 10, and 20 percent equivalent faults; compare raw, software projection, and hardware projection."
-    },
-    {
-      id: "idea-p2-vector-ablation-001",
-      status: "candidate",
-      grade: "A",
-      track: "P2",
-      title: "把纹理识别消融转成 ADC 前矢量触觉证据链",
-      hypothesis: "Kx/Ky tangential dynamics provide task-relevant friction cues that z-only or external force-reference channels miss.",
-      minimum_experiment: "Record raw A/B/C/D, hardware Kz/Kx/Ky, z-only, and reference force under matched texture/sliding conditions."
-    },
-    {
-      id: "idea-p1-tolerance-map-001",
-      status: "candidate",
-      grade: "B",
-      track: "P1",
-      title: "用偏移/旋转/接触半径热图证明低离散界面不是只提高灵敏度",
-      hypothesis: "Gradient or non-periodic electrodes plus HCP microstructures reduce response dispersion under assembly and contact perturbations.",
-      minimum_experiment: "Test G1-G5 under controlled shift, rotation, and contact-radius conditions; produce CV, void ratio, and sensitivity maps."
-    }
-  ],
-  tasks: [
-    {
-      id: "task-p2-sync-vector-data",
-      status: "next",
-      track: "P2",
-      title: "同步采集 raw A/B/C/D 与 hardware Kz/Kx/Ky",
-      why: "这是 Paper A 高配身份能否成立的关键证据。",
-      output: "A matched dataset and plot package for hardware vector vs software projection."
-    },
-    {
-      id: "task-p4-resistor-projection",
-      status: "planned",
-      track: "P4",
-      title: "搭建 3x3 精密电阻阵列验证 programmable projection",
-      why: "先用低风险平台证明可编程物理投影前端的 R2 和坏点鲁棒性。",
-      output: "Ksum/Kx/Ky/Klap/Kring/Kcorner hardware vs software projection report."
-    }
-  ],
-  profileMarkdown: `# 用户研究画像
-
-## 当前研究方向
-
-用户当前博士主线不是普通“高灵敏柔性压力传感器”，而是围绕 **柔性电子皮肤前端触觉计算** 展开：
-
-- 结构-传感器-模拟前端-阵列-闭环协同设计。
-- 低离散/容差触觉界面。
-- ADC 前模拟矢量触觉读出。
-- 低冗余矢量触觉阵列。
-- 可编程物理触觉投影前端。
-- 容错、可迁移、少样本校准的电子皮肤。
-
-## 当前瓶颈
-
-- 高配 Paper A 需要硬件 Kz/Kx/Ky 的 ADC 前证据。
-- P1 需要 shift、rotation、contact-radius、signal void ratio 等容差证据。
-- P3/P4 需要从单器件推进到阵列层面的边缘/形状/容错/迁移指标。
-
-## 每日文献筛选优先级
-
-1. ADC 前、模拟前端、in-sensor computing、sensor-near computing。
-2. 矢量触觉、剪切力/摩擦/滑移方向。
-3. 柔性触觉阵列低通道读出和 macro-pixel。
-4. 可编程物理计算、投影核、模拟矩阵/电流求和、单 ADC。
-5. 电子皮肤容错、坏点鲁棒、跨器件迁移、少样本校准。`,
-  report: `# 2026-07-14 文献工作流种子报告
-
-本文件用于网页 MVP 和每日 Agent 输出格式对齐。正式每日任务应替换为当天真实检索结果。
-
-## 今日聚焦
-
-- ADC 前触觉计算。
-- 模拟矢量触觉读出。
-- 可编程物理触觉投影。
-- 低冗余/容错/可迁移电子皮肤。
-
-## 今日候选 idea
-
-1. 用 3x3 精密电阻阵列先验证 programmable projection 的硬件-软件一致性。
-2. 将坏点比例作为 P4/P5 的鲁棒性变量，比较 raw 与 normalized projection。
-3. 将纹理识别消融实验重写为 tangential/vector dynamics 的任务证据，而不是普通分类精度。`
+  paperActionFilter: "all",
+  ideaStatusFilter: "all",
+  selectedReportDate: "",
+  apiMode: false,
+  busy: false,
+  bundle: structuredClone(EMPTY_BUNDLE),
+  offlineQueue: JSON.parse(localStorage.getItem("research-decision-queue") || "[]"),
+  dialogAction: null
 };
 
 const titleMap = {
-  dashboard: "总览",
-  papers: "论文",
-  ideas: "创新点",
-  profile: "画像",
-  tasks: "任务",
-  reports: "报告"
+  dashboard: "总览", papers: "论文", ideas: "创新点", profile: "研究画像",
+  tasks: "任务", reports: "日报", decisions: "决策历史", settings: "运行状态"
+};
+const actionLabels = {
+  read: "精读", skim: "略读", ignore: "忽略", add_to_ideas: "加入 idea",
+  watch: "观察", reject: "拒绝", convert_to_task: "转任务", propose_profile: "生成画像提案",
+  accept: "接受并写入画像"
+};
+const statusLabels = {
+  candidate: "候选", watch: "观察", proposed: "提案中", accepted: "已采纳",
+  rejected: "已拒绝", converted_to_task: "已转任务", next: "下一步", planned: "计划中", done: "已完成"
 };
 
-function $(selector) {
-  return document.querySelector(selector);
+const $ = (selector) => document.querySelector(selector);
+const $all = (selector) => Array.from(document.querySelectorAll(selector));
+
+function escapeHtml(value = "") {
+  return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 }
 
-function $all(selector) {
-  return Array.from(document.querySelectorAll(selector));
+function safeUrl(value = "") {
+  try {
+    const url = new URL(value, window.location.href);
+    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+  } catch { return ""; }
 }
 
-function escapeHtml(value) {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
+function inlineMarkdown(value = "") {
+  let output = escapeHtml(value);
+  output = output.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => `<a href="${escapeHtml(safeUrl(url))}" target="_blank" rel="noreferrer">${label}</a>`);
+  return output;
 }
 
-function tag(label, tone = "") {
-  return `<span class="tag ${tone}">${escapeHtml(label)}</span>`;
-}
-
-function showToast(message) {
-  const toast = $("#toast");
-  toast.textContent = message;
-  toast.classList.add("show");
-  window.setTimeout(() => toast.classList.remove("show"), 1800);
-}
-
-function recordDecision(type, itemId, decision) {
-  state.decisions.push({
-    id: `decision-${Date.now()}`,
-    type,
-    item_id: itemId,
-    decision,
-    created_at: new Date().toISOString()
-  });
-  showToast(`已记录：${decision}`);
-}
-
-function paperCard(paper) {
-  return `
-    <article class="paper-card">
-      <div>
-        <h3>${escapeHtml(paper.title)}</h3>
-        <div class="paper-meta">
-          <span>${escapeHtml(paper.venue || "Unknown venue")}</span>
-          <span>${escapeHtml(paper.date || "")}</span>
-          <span>${escapeHtml(paper.paper_type || "")}</span>
-        </div>
-        <p>${escapeHtml(paper.core_claim)}</p>
-        <div class="tags">
-          ${(paper.tracks || []).map((item) => tag(item, "blue")).join("")}
-          ${tag(paper.decision_hint, "amber")}
-        </div>
-        <div class="card-actions">
-          <button class="small-btn" data-paper-action="read" data-id="${paper.id}">精读</button>
-          <button class="small-btn" data-paper-action="add_to_ideas" data-id="${paper.id}">加入 idea</button>
-          <button class="small-btn" data-paper-action="profile_candidate" data-id="${paper.id}">画像候选</button>
-          <button class="small-btn" data-paper-action="ignore" data-id="${paper.id}">忽略</button>
-        </div>
-      </div>
-      <div class="score">${paper.relevance_score}</div>
-    </article>
-  `;
-}
-
-function ideaCard(idea) {
-  return `
-    <article class="idea-card">
-      <div class="tags">${tag(idea.track, "blue")}${tag(`${idea.grade} 级`, "amber")}${tag(idea.status)}</div>
-      <h3>${escapeHtml(idea.title)}</h3>
-      <p>${escapeHtml(idea.hypothesis)}</p>
-      <p><strong>最小实验：</strong>${escapeHtml(idea.minimum_experiment)}</p>
-      <div class="card-actions">
-        <button class="small-btn" data-idea-action="accepted" data-id="${idea.id}">加入画像</button>
-        <button class="small-btn" data-idea-action="watch" data-id="${idea.id}">观察</button>
-        <button class="small-btn" data-idea-action="converted_to_task" data-id="${idea.id}">转任务</button>
-        <button class="small-btn" data-idea-action="rejected" data-id="${idea.id}">拒绝</button>
-      </div>
-    </article>
-  `;
-}
-
-function taskCard(task) {
-  return `
-    <article class="task-card">
-      <div class="tags">${tag(task.track, "blue")}${tag(task.status, "amber")}</div>
-      <h3>${escapeHtml(task.title)}</h3>
-      <p>${escapeHtml(task.why)}</p>
-      <p><strong>输出：</strong>${escapeHtml(task.output)}</p>
-    </article>
-  `;
-}
-
-function markdownToHtml(markdown) {
+function markdownToHtml(markdown = "") {
   const lines = markdown.split(/\r?\n/);
   let html = "";
   let inList = false;
-  for (const raw of lines) {
+  let inTable = false;
+  for (let index = 0; index < lines.length; index += 1) {
+    const raw = lines[index];
     const line = raw.trim();
-    if (!line) {
-      if (inList) {
-        html += "</ul>";
-        inList = false;
-      }
+    const closeList = () => { if (inList) { html += "</ul>"; inList = false; } };
+    const closeTable = () => { if (inTable) { html += "</tbody></table>"; inTable = false; } };
+    if (!line) { closeList(); closeTable(); continue; }
+    if (/^\|[-:| ]+\|$/.test(line)) continue;
+    if (line.startsWith("|")) {
+      closeList();
+      const cells = line.split("|").slice(1, -1).map((cell) => `<td>${inlineMarkdown(cell.trim())}</td>`).join("");
+      if (!inTable) { html += "<table><tbody>"; inTable = true; }
+      html += `<tr>${cells}</tr>`;
       continue;
     }
-    if (line.startsWith("# ")) {
-      if (inList) {
-        html += "</ul>";
-        inList = false;
-      }
-      html += `<h1>${escapeHtml(line.slice(2))}</h1>`;
-    } else if (line.startsWith("## ")) {
-      if (inList) {
-        html += "</ul>";
-        inList = false;
-      }
-      html += `<h2>${escapeHtml(line.slice(3))}</h2>`;
-    } else if (line.startsWith("- ")) {
-      if (!inList) {
-        html += "<ul>";
-        inList = true;
-      }
-      html += `<li>${escapeHtml(line.slice(2))}</li>`;
-    } else {
-      if (inList) {
-        html += "</ul>";
-        inList = false;
-      }
-      html += `<p>${escapeHtml(line)}</p>`;
-    }
+    closeTable();
+    if (line.startsWith("### ")) { closeList(); html += `<h3>${inlineMarkdown(line.slice(4))}</h3>`; }
+    else if (line.startsWith("## ")) { closeList(); html += `<h2>${inlineMarkdown(line.slice(3))}</h2>`; }
+    else if (line.startsWith("# ")) { closeList(); html += `<h1>${inlineMarkdown(line.slice(2))}</h1>`; }
+    else if (line.startsWith("- ")) { if (!inList) { html += "<ul>"; inList = true; } html += `<li>${inlineMarkdown(line.slice(2))}</li>`; }
+    else if (/^\d+\.\s/.test(line)) { closeList(); html += `<p>${inlineMarkdown(line)}</p>`; }
+    else if (line.startsWith("> ")) { closeList(); html += `<blockquote>${inlineMarkdown(line.slice(2))}</blockquote>`; }
+    else { closeList(); html += `<p>${inlineMarkdown(line)}</p>`; }
   }
   if (inList) html += "</ul>";
+  if (inTable) html += "</tbody></table>";
   return html;
 }
 
-function getFilteredPapers() {
-  const query = state.paperQuery.toLowerCase();
-  return state.papers.filter((paper) => {
+function icon(name, size = 16) { return `<i data-lucide="${name}" width="${size}" height="${size}"></i>`; }
+function tag(label, tone = "") { return `<span class="tag ${tone}">${escapeHtml(label)}</span>`; }
+function formatDate(value) { if (!value) return "日期未知"; return escapeHtml(value.slice(0, 10)); }
+function emptyState(title, text) { return `<div class="empty-state">${icon("inbox", 22)}<h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p></div>`; }
+
+function showToast(message, tone = "") {
+  const toast = $("#toast");
+  toast.textContent = message;
+  toast.className = `toast show ${tone}`;
+  window.clearTimeout(showToast.timer);
+  showToast.timer = window.setTimeout(() => { toast.className = "toast"; }, 2600);
+}
+
+function setBusy(busy, label = "") {
+  state.busy = busy;
+  $("#runDaily").disabled = busy || !state.apiMode;
+  $("#syncGitHub").disabled = busy || !state.apiMode;
+  if (label) showToast(label);
+}
+
+async function fetchJson(url, options = {}) {
+  const response = await fetch(url, { cache: "no-store", ...options });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(payload.error || `HTTP ${response.status}`);
+  return payload;
+}
+
+async function postJson(url, payload) {
+  return fetchJson(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+}
+
+function paperLink(paper) { return safeUrl(paper.url) || (paper.doi ? `https://doi.org/${paper.doi}` : ""); }
+function localPdfLink(paper) {
+  if (!paper.local_pdf) return "";
+  if (state.apiMode) return `./files/${paper.local_pdf}`;
+  return `https://github.com/chenlongnb1-sudo/flexible-sensor-literature/blob/main/${paper.local_pdf}`;
+}
+
+function paperCard(paper, compact = false) {
+  const link = paperLink(paper);
+  const pdfLink = localPdfLink(paper);
+  const authors = (paper.authors || []).slice(0, 4).join(", ");
+  const scoreTone = paper.relevance_score >= 80 ? "high" : paper.relevance_score >= 60 ? "medium" : "low";
+  const sources = (paper.sources || []).map((source) => tag(source)).join("");
+  const risks = (paper.risks || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  const transfers = (paper.transferable_points || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  return `
+    <article class="paper-card ${compact ? "compact" : ""}">
+      <div class="paper-main">
+        <div class="paper-topline"><div class="tags">${(paper.tracks || []).map((item) => tag(item, "blue")).join("")}${tag(actionLabels[paper.decision_hint] || paper.decision_hint || "待判断", "amber")}${sources}</div><span class="paper-date">${formatDate(paper.date)}</span></div>
+        <h3>${link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${escapeHtml(paper.title)}</a>` : escapeHtml(paper.title)}</h3>
+        <div class="paper-meta"><span>${escapeHtml(paper.venue || "来源未标注")}</span>${authors ? `<span>${escapeHtml(authors)}${(paper.authors || []).length > 4 ? " et al." : ""}</span>` : ""}</div>
+        <p class="paper-claim">${escapeHtml(paper.summary_zh || paper.core_claim || "等待摘要分析")}</p>
+        ${compact ? "" : `<details><summary>迁移价值与风险</summary><div class="detail-grid"><div><strong>可迁移</strong><ul>${transfers || "<li>需精读后判断</li>"}</ul></div><div><strong>边界</strong><ul>${risks || "<li>需精读后判断</li>"}</ul></div></div></details>`}
+        <div class="card-actions">
+          <button class="small-btn" data-paper-action="read" data-id="${escapeHtml(paper.id)}">${icon("book-open-check")}精读</button>
+          <button class="small-btn" data-paper-action="add_to_ideas" data-id="${escapeHtml(paper.id)}">${icon("lightbulb")}加入 idea</button>
+          <button class="small-btn quiet-action" data-paper-action="ignore" data-id="${escapeHtml(paper.id)}">${icon("archive")}忽略</button>
+          ${pdfLink ? `<a class="small-btn" href="${escapeHtml(pdfLink)}" target="_blank" rel="noreferrer">${icon("file-down")}PDF</a>` : ""}
+        </div>
+      </div>
+      <div class="score ${scoreTone}"><strong>${Number(paper.relevance_score || 0)}</strong><span>画像匹配</span></div>
+    </article>`;
+}
+
+function ideaCard(idea, compact = false) {
+  const source = (idea.source_papers || [])[0];
+  const status = statusLabels[idea.status] || idea.status;
+  return `
+    <article class="idea-card ${compact ? "compact" : ""}">
+      <div class="tags">${tag(idea.track || "未分轨", "blue")}${tag(`${idea.grade || "B"} 级`, "amber")}${tag(status)}</div>
+      <h3>${escapeHtml(idea.title)}</h3>
+      <p>${escapeHtml(idea.hypothesis || "")}</p>
+      ${compact ? "" : `<div class="experiment-block"><span>最小实验</span><p>${escapeHtml(idea.minimum_experiment || "待定义")}</p></div>`}
+      ${source ? `<a class="source-link" href="${escapeHtml(safeUrl(source.url || (source.doi ? `https://doi.org/${source.doi}` : "")))}" target="_blank" rel="noreferrer">${icon("external-link")} ${escapeHtml(source.title || "来源论文")}</a>` : ""}
+      ${["candidate", "watch"].includes(idea.status) ? `<div class="card-actions">
+        <button class="small-btn primary-action" data-idea-action="propose_profile" data-id="${escapeHtml(idea.id)}">${icon("scan-search")}加入画像提案</button>
+        <button class="small-btn" data-idea-action="watch" data-id="${escapeHtml(idea.id)}">${icon("eye")}观察</button>
+        <button class="small-btn" data-idea-action="convert_to_task" data-id="${escapeHtml(idea.id)}">${icon("list-plus")}转任务</button>
+        <button class="small-btn quiet-action" data-idea-action="reject" data-id="${escapeHtml(idea.id)}">${icon("x")}拒绝</button>
+      </div>` : ""}
+    </article>`;
+}
+
+function proposalCard(proposal) {
+  return `<article class="proposal-card">
+    <div class="tags">${tag(proposal.track || "未分轨", "blue")}${tag(statusLabels[proposal.status] || proposal.status, "amber")}</div>
+    <h3>${escapeHtml(proposal.title)}</h3><p>${escapeHtml(proposal.proposal)}</p>
+    <div class="proposal-evidence"><strong>写入前条件</strong><p>${escapeHtml(proposal.minimum_experiment || "需补充最小验证")}</p><strong>风险</strong><p>${escapeHtml(proposal.risk || "需人工判断")}</p></div>
+    ${proposal.status === "pending" ? `<div class="card-actions"><button class="small-btn primary-action" data-proposal-action="accept" data-id="${escapeHtml(proposal.id)}">${icon("check")}接受并写入</button><button class="small-btn" data-proposal-action="watch" data-id="${escapeHtml(proposal.id)}">${icon("eye")}暂存观察</button><button class="small-btn quiet-action" data-proposal-action="reject" data-id="${escapeHtml(proposal.id)}">${icon("x")}拒绝</button></div>` : ""}
+  </article>`;
+}
+
+function taskCard(task) {
+  return `<article class="task-card"><div class="task-track">${tag(task.track || "未分轨", "blue")}${tag(statusLabels[task.status] || task.status, "amber")}</div><div><h3>${escapeHtml(task.title)}</h3><p>${escapeHtml(task.why || "")}</p><div class="task-output"><strong>交付物</strong><span>${escapeHtml(task.output || "待定义")}</span></div></div></article>`;
+}
+
+function filteredPapers() {
+  const query = state.paperQuery.trim().toLowerCase();
+  return state.bundle.papers.filter((paper) => {
     const trackOk = state.trackFilter === "all" || (paper.tracks || []).includes(state.trackFilter);
-    const text = [paper.title, paper.core_claim, paper.decision_hint, ...(paper.tracks || [])].join(" ").toLowerCase();
-    return trackOk && (!query || text.includes(query));
+    const actionOk = state.paperActionFilter === "all" || paper.decision_hint === state.paperActionFilter;
+    const haystack = [paper.title, paper.venue, paper.core_claim, paper.summary_zh, ...(paper.tracks || [])].join(" ").toLowerCase();
+    return trackOk && actionOk && (!query || haystack.includes(query));
   });
 }
 
 function renderDashboard() {
-  $("#paperCount").textContent = state.papers.length;
-  $("#ideaCount").textContent = state.ideas.length;
-  $("#taskCount").textContent = state.tasks.length;
-  const papers = state.filter === "all" ? state.papers : state.papers.filter((paper) => paper.decision_hint === state.filter);
-  $("#topPapers").innerHTML = papers.map(paperCard).join("");
-  $("#ideaQueue").innerHTML = state.ideas.filter((idea) => idea.status !== "accepted").map(ideaCard).join("");
-  $("#gapList").innerHTML = [
-    ["P2", "缺少 raw A/B/C/D 与 hardware Kz/Kx/Ky 同步证据。"],
-    ["P1", "缺少 shift、rotation、contact-radius 容差热图。"],
-    ["P4", "需要先用电阻阵列验证 projection kernel 的硬件-软件一致性。"]
-  ].map(([track, text]) => `<div class="gap-item">${tag(track, "blue")}<p>${escapeHtml(text)}</p></div>`).join("");
+  const stats = state.bundle.stats || EMPTY_BUNDLE.stats;
+  $("#reportDate").textContent = state.bundle.latest_report_date ? `${state.bundle.latest_report_date} 日报` : "暂无日报";
+  $("#paperCount").textContent = stats.papers_today ?? state.bundle.papers.length;
+  $("#mustReadCount").textContent = stats.must_read ?? 0;
+  $("#ideaCount").textContent = stats.pending_ideas ?? 0;
+  $("#taskCount").textContent = stats.open_tasks ?? 0;
+  const papers = state.dashboardFilter === "all" ? state.bundle.papers : state.bundle.papers.filter((paper) => paper.decision_hint === state.dashboardFilter);
+  $("#topPapers").innerHTML = papers.length ? papers.slice(0, 5).map((paper) => paperCard(paper, true)).join("") : emptyState("没有符合当前筛选的论文", "系统不会用偏题论文填满日报。") ;
+  const pending = state.bundle.ideas.filter((idea) => ["candidate", "watch"].includes(idea.status));
+  $("#ideaQueue").innerHTML = pending.length ? pending.slice(0, 4).map((idea) => ideaCard(idea, true)).join("") : emptyState("暂无待处理 idea", "新论文中的可验证迁移点会进入这里。") ;
+  const gaps = [
+    ["P2", "同步记录 raw A/B/C/D 与 hardware Kz/Kx/Ky，并完成 R2、PSD/SNR 与通道消融。"],
+    ["P1", "补齐 shift、rotation、contact-radius 和 signal-void ratio 容差地图。"],
+    ["P4", "用 3x3 精密电阻阵列验证 projection kernel 的硬件-软件一致性。"],
+    ["P5", "建立坏点比例、增益漂移和少样本校准下的渐进退化曲线。"]
+  ];
+  $("#gapList").innerHTML = gaps.map(([track, text]) => `<div class="gap-item">${tag(track, "blue")}<p>${escapeHtml(text)}</p></div>`).join("");
 }
 
 function renderPapers() {
-  $("#paperGrid").innerHTML = getFilteredPapers().map(paperCard).join("");
+  const papers = filteredPapers();
+  $("#paperGrid").innerHTML = papers.length ? papers.map((paper) => paperCard(paper)).join("") : emptyState("没有匹配论文", "调整搜索词、轨道或建议动作筛选。") ;
 }
 
 function renderIdeas() {
-  const columns = [
-    ["candidate", "候选"],
-    ["watch", "观察"],
-    ["accepted", "已加入"],
-    ["rejected", "已拒绝"]
-  ];
-  $("#ideaBoard").innerHTML = columns.map(([status, label]) => {
-    const ideas = state.ideas.filter((idea) => idea.status === status);
-    return `<section class="kanban-col"><h2>${label}</h2>${ideas.map(ideaCard).join("") || "<p>暂无</p>"}</section>`;
-  }).join("");
+  const ideas = state.ideaStatusFilter === "all" ? state.bundle.ideas : state.bundle.ideas.filter((idea) => idea.status === state.ideaStatusFilter);
+  $("#ideaSummary").textContent = `${ideas.length} 个创新点`;
+  $("#ideaBoard").innerHTML = ideas.length ? ideas.map((idea) => ideaCard(idea)).join("") : emptyState("这个状态下没有 idea", "切换状态筛选查看其他候选。") ;
 }
 
 function renderProfile() {
-  $("#profileContent").innerHTML = markdownToHtml(state.profileMarkdown);
+  const pending = state.bundle.profile_proposals.filter((proposal) => proposal.status === "pending");
+  $("#proposalList").innerHTML = pending.length ? pending.map(proposalCard).join("") : emptyState("暂无待确认画像提案", "先在创新点页选择“加入画像提案”。") ;
+  $("#profileContent").innerHTML = markdownToHtml(state.bundle.profile_markdown || "# 暂无研究画像");
 }
 
 function renderTasks() {
-  $("#taskList").innerHTML = state.tasks.map(taskCard).join("");
+  const open = state.bundle.tasks.filter((task) => !["done", "cancelled"].includes(task.status));
+  $("#taskSummary").textContent = `${open.length} 个开放任务`;
+  $("#taskList").innerHTML = state.bundle.tasks.length ? state.bundle.tasks.map(taskCard).join("") : emptyState("暂无任务", "把一个 idea 转为任务后会在这里生成交付物。") ;
 }
 
 function renderReports() {
-  $("#dailyReport").textContent = state.report;
+  const reports = state.bundle.reports || [];
+  if (!state.selectedReportDate && reports.length) state.selectedReportDate = reports[0].date;
+  $("#reportIndex").innerHTML = reports.length ? reports.map((report) => `<button class="report-index-item ${report.date === state.selectedReportDate ? "active" : ""}" data-report-date="${escapeHtml(report.date)}"><span>${escapeHtml(report.date)}</span><small>${report.paper_count} 篇 · top ${report.top_score}</small></button>`).join("") : emptyState("暂无归档", "运行今日检索后会生成第一份日报。") ;
+  const selected = reports.find((report) => report.date === state.selectedReportDate);
+  $("#reportContent").innerHTML = markdownToHtml(selected?.report_markdown || state.bundle.daily_report_markdown || "# 暂无报告");
+}
+
+function renderDecisions() {
+  const decisions = [...state.bundle.decisions].reverse();
+  $("#decisionList").innerHTML = decisions.length ? decisions.map((item) => `<article class="decision-item"><div class="decision-icon">${icon(item.decision === "reject" ? "x" : item.decision === "watch" ? "eye" : "check")}</div><div><div class="decision-title"><strong>${escapeHtml(actionLabels[item.decision] || item.decision)}</strong>${tag(item.type || "item")}</div><p>${escapeHtml(item.item_id)}</p>${item.note ? `<blockquote>${escapeHtml(item.note)}</blockquote>` : ""}</div><time>${formatDate(item.created_at)}</time></article>`).join("") : emptyState("暂无决策记录", "你对论文、idea 和画像提案的每次操作都会留痕。") ;
+}
+
+function renderSettings() {
+  const sourceMap = new Map();
+  state.bundle.query_log.forEach((item) => {
+    const source = item.source || "unknown";
+    const current = sourceMap.get(source) || { ok: 0, failed: 0, results: 0 };
+    current[item.status === "ok" ? "ok" : "failed"] += 1;
+    current.results += Number(item.result_count || 0);
+    sourceMap.set(source, current);
+  });
+  state.bundle.source_errors.forEach((item) => {
+    if (!sourceMap.has(item.source)) sourceMap.set(item.source, { ok: 0, failed: 1, results: 0 });
+  });
+  $("#sourceStatus").innerHTML = sourceMap.size ? [...sourceMap.entries()].map(([source, data]) => `<div class="source-item"><span class="status-dot ${data.ok ? "online" : "warning"}"></span><div><strong>${escapeHtml(source)}</strong><small>${data.results} 条题录 · ${data.failed} 个异常</small></div></div>`).join("") : emptyState("尚未运行检索", "运行后会显示每个学术数据源的状态。") ;
+  $("#runtimeInfo").innerHTML = [
+    ["工作模式", state.apiMode ? "本地写入模式" : "静态只读模式"],
+    ["最新日报", state.bundle.latest_report_date || "暂无"],
+    ["离线决策", `${state.offlineQueue.length} 条`],
+    ["画像提案", `${state.bundle.stats?.pending_proposals || 0} 条待确认`],
+    ["数据版本", `schema v${state.bundle.schema_version || 1}`]
+  ].map(([label, value]) => `<div class="runtime-item"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("");
+}
+
+function renderServiceState() {
+  $("#serviceDot").className = `status-dot ${state.apiMode ? "online" : "warning"}`;
+  $("#serviceLabel").textContent = state.apiMode ? "本地写入已连接" : "静态只读 / 离线队列";
+  $("#runDaily").disabled = !state.apiMode || state.busy;
+  $("#syncGitHub").disabled = !state.apiMode || state.busy;
+  $("#exportQueue").hidden = !state.offlineQueue.length;
+  const pending = state.bundle.stats?.pending_proposals || 0;
+  $("#proposalNavCount").hidden = pending === 0;
+  $("#proposalNavCount").textContent = pending;
+}
+
+function renderAssets() {
+  const assets = state.bundle.assets || EMPTY_BUNDLE.assets;
+  const hero = assets.hero_image2 ? "./assets/tactile-front-end-image2.webp" : "./assets/tactile-front-end.svg";
+  const iconSource = assets.icon_image2 ? "./assets/research-intelligence-icon-image2.png" : "./assets/tactile-front-end.svg";
+  if ($("#heroImage").getAttribute("src") !== hero) $("#heroImage").setAttribute("src", hero);
+  if ($("#brandImage").getAttribute("src") !== iconSource) $("#brandImage").setAttribute("src", iconSource);
 }
 
 function render() {
   $("#viewTitle").textContent = titleMap[state.view];
   $all(".view").forEach((view) => view.classList.toggle("active", view.id === state.view));
   $all(".nav-item").forEach((button) => button.classList.toggle("active", button.dataset.view === state.view));
-  renderDashboard();
-  renderPapers();
-  renderIdeas();
-  renderProfile();
-  renderTasks();
-  renderReports();
+  renderDashboard(); renderPapers(); renderIdeas(); renderProfile(); renderTasks(); renderReports(); renderDecisions(); renderSettings(); renderServiceState(); renderAssets();
+  window.setTimeout(() => window.lucide?.createIcons(), 0);
+}
+
+function queueOfflineDecision(itemType, itemId, action, note = "") {
+  state.offlineQueue.push({ id: `offline-${Date.now()}`, item_type: itemType, item_id: itemId, action, note, created_at: new Date().toISOString() });
+  localStorage.setItem("research-decision-queue", JSON.stringify(state.offlineQueue));
+  showToast("当前为静态模式，决策已放入离线队列", "warning");
+  renderServiceState();
+}
+
+async function sendDecision(itemType, itemId, action, note = "") {
+  if (!state.apiMode) { queueOfflineDecision(itemType, itemId, action, note); return; }
+  setBusy(true);
+  try {
+    const result = await postJson("./api/decisions", { item_type: itemType, item_id: itemId, action, note });
+    state.bundle = { ...EMPTY_BUNDLE, ...result.bundle };
+    showToast(`已记录：${actionLabels[action] || action}`);
+    render();
+  } catch (error) { showToast(error.message, "error"); }
+  finally { setBusy(false); renderServiceState(); }
+}
+
+async function sendProposalDecision(id, action, note = "") {
+  if (!state.apiMode) { queueOfflineDecision("profile_proposal", id, action, note); return; }
+  setBusy(true);
+  try {
+    const result = await postJson(`./api/proposals/${encodeURIComponent(id)}/${action}`, { note });
+    state.bundle = { ...EMPTY_BUNDLE, ...result.bundle };
+    showToast(action === "accept" ? "已写入研究画像" : "提案状态已更新");
+    render();
+  } catch (error) { showToast(error.message, "error"); }
+  finally { setBusy(false); renderServiceState(); }
+}
+
+function openDialog({ title, message, confirmLabel = "确认", noteRequired = false, action }) {
+  state.dialogAction = action;
+  $("#dialogTitle").textContent = title;
+  $("#dialogMessage").textContent = message;
+  $("#dialogConfirm").textContent = confirmLabel;
+  $("#dialogNoteWrap").classList.toggle("required", noteRequired);
+  $("#dialogNote").required = noteRequired;
+  $("#dialogNote").value = "";
+  $("#decisionDialog").showModal();
+  window.setTimeout(() => window.lucide?.createIcons(), 0);
 }
 
 function downloadJson(filename, data) {
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json;charset=utf-8" });
   const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = filename;
-  link.click();
-  URL.revokeObjectURL(link.href);
+  link.href = URL.createObjectURL(blob); link.download = filename; link.click(); URL.revokeObjectURL(link.href);
+}
+
+function changeView(view) {
+  state.view = view;
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function bindEvents() {
-  $all(".nav-item").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.view = button.dataset.view;
-      render();
-    });
-  });
-  $all(".segment").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.filter = button.dataset.filter;
-      $all(".segment").forEach((item) => item.classList.toggle("active", item === button));
-      renderDashboard();
-    });
-  });
-  $("#paperSearch").addEventListener("input", (event) => {
-    state.paperQuery = event.target.value;
-    renderPapers();
-  });
-  $("#trackFilter").addEventListener("change", (event) => {
-    state.trackFilter = event.target.value;
-    renderPapers();
-  });
+  $all(".nav-item").forEach((button) => button.addEventListener("click", () => changeView(button.dataset.view)));
+  $all("[data-dashboard-filter]").forEach((button) => button.addEventListener("click", () => {
+    state.dashboardFilter = button.dataset.dashboardFilter;
+    $all("[data-dashboard-filter]").forEach((item) => item.classList.toggle("active", item === button));
+    renderDashboard(); window.lucide?.createIcons();
+  }));
+  $("#paperSearch").addEventListener("input", (event) => { state.paperQuery = event.target.value; renderPapers(); window.lucide?.createIcons(); });
+  $("#trackFilter").addEventListener("change", (event) => { state.trackFilter = event.target.value; renderPapers(); window.lucide?.createIcons(); });
+  $("#paperActionFilter").addEventListener("change", (event) => { state.paperActionFilter = event.target.value; renderPapers(); window.lucide?.createIcons(); });
+  $("#ideaStatusFilter").addEventListener("change", (event) => { state.ideaStatusFilter = event.target.value; renderIdeas(); window.lucide?.createIcons(); });
+
   document.body.addEventListener("click", (event) => {
+    const jump = event.target.closest("[data-jump]");
+    if (jump) { changeView(jump.dataset.jump); return; }
+    const report = event.target.closest("[data-report-date]");
+    if (report) { state.selectedReportDate = report.dataset.reportDate; renderReports(); return; }
     const paperButton = event.target.closest("[data-paper-action]");
-    if (paperButton) recordDecision("paper", paperButton.dataset.id, paperButton.dataset.paperAction);
+    if (paperButton) {
+      const action = paperButton.dataset.paperAction;
+      sendDecision("paper", paperButton.dataset.id, action);
+      if (action === "read") {
+        const paper = state.bundle.papers.find((item) => item.id === paperButton.dataset.id);
+        const link = paper && paperLink(paper); if (link) window.open(link, "_blank", "noopener");
+      }
+      return;
+    }
     const ideaButton = event.target.closest("[data-idea-action]");
     if (ideaButton) {
-      const idea = state.ideas.find((item) => item.id === ideaButton.dataset.id);
-      if (idea) idea.status = ideaButton.dataset.ideaAction;
-      recordDecision("idea", ideaButton.dataset.id, ideaButton.dataset.ideaAction);
-      render();
+      const action = ideaButton.dataset.ideaAction;
+      if (action === "reject") {
+        openDialog({ title: "拒绝这个创新点", message: "拒绝理由会进入决策历史，帮助系统避免重复推荐。", confirmLabel: "确认拒绝", noteRequired: true, action: (note) => sendDecision("idea", ideaButton.dataset.id, action, note) });
+      } else sendDecision("idea", ideaButton.dataset.id, action);
+      return;
+    }
+    const proposalButton = event.target.closest("[data-proposal-action]");
+    if (proposalButton) {
+      const action = proposalButton.dataset.proposalAction;
+      const messages = {
+        accept: "确认后，该创新点会永久追加到用户研究画像并保留来源与风险边界。",
+        watch: "提案将退回观察状态，不会写入画像。",
+        reject: "提案和来源 idea 将标记为拒绝，理由用于以后去重。"
+      };
+      openDialog({ title: action === "accept" ? "接受画像提案" : action === "watch" ? "暂存观察" : "拒绝画像提案", message: messages[action], confirmLabel: action === "accept" ? "接受并写入" : "确认", noteRequired: action === "reject", action: (note) => sendProposalDecision(proposalButton.dataset.id, action, note) });
     }
   });
-  $("#exportDecisions").addEventListener("click", () => {
-    downloadJson("decision-log-export.json", { updated_at: new Date().toISOString(), decisions: state.decisions });
+
+  $("#decisionForm").addEventListener("submit", (event) => {
+    const value = event.submitter?.value;
+    if (value !== "confirm") { state.dialogAction = null; return; }
+    event.preventDefault();
+    if (!event.currentTarget.reportValidity()) return;
+    const action = state.dialogAction; const note = $("#dialogNote").value.trim();
+    $("#decisionDialog").close(); state.dialogAction = null; action?.(note);
   });
-  $("#downloadProposal").addEventListener("click", () => {
-    const acceptedIdeas = state.ideas.filter((idea) => idea.status === "accepted");
-    downloadJson("profile-update-proposal.json", {
-      created_at: new Date().toISOString(),
-      proposals: acceptedIdeas.map((idea) => ({
-        source_idea: idea.id,
-        proposal: `将“${idea.title}”加入 ${idea.track} 画像候选。`,
-        evidence_needed: idea.minimum_experiment,
-        status: "pending_manual_merge"
-      }))
-    });
+
+  $("#exportQueue").addEventListener("click", () => downloadJson("research-decision-queue.json", { exported_at: new Date().toISOString(), decisions: state.offlineQueue }));
+  $("#syncGitHub").addEventListener("click", async () => {
+    if (!state.apiMode) return;
+    setBusy(true, "正在提交并推送 GitHub…");
+    try { const result = await postJson("./api/sync", { message: "chore: sync research decisions" }); showToast(`GitHub 已同步 · ${result.revision}`); }
+    catch (error) { showToast(error.message, "error"); }
+    finally { setBusy(false); renderServiceState(); }
   });
-  $("#syncHint").addEventListener("click", () => {
-    state.view = "profile";
-    render();
-    showToast("先处理 idea，再导出画像更新提案");
+  $("#runDaily").addEventListener("click", async () => {
+    if (!state.apiMode) return;
+    setBusy(true, "正在检索多源文献，通常需要 1–3 分钟…");
+    try { const result = await postJson("./api/run-daily", { download_pdfs: true }); state.bundle = { ...EMPTY_BUNDLE, ...result.bundle }; showToast("今日文献与创新点已刷新"); render(); }
+    catch (error) { showToast(error.message, "error"); }
+    finally { setBusy(false); renderServiceState(); }
   });
 }
-
-bindEvents();
-loadBundle().finally(render);
 
 async function loadBundle() {
   try {
-    const response = await fetch("./data/research-bundle.json", { cache: "no-store" });
-    if (!response.ok) return;
-    const bundle = await response.json();
-    if (Array.isArray(bundle.papers) && bundle.papers.length) state.papers = bundle.papers;
-    if (Array.isArray(bundle.ideas) && bundle.ideas.length) state.ideas = bundle.ideas;
-    if (Array.isArray(bundle.tasks) && bundle.tasks.length) state.tasks = bundle.tasks;
-    if (typeof bundle.profile_markdown === "string" && bundle.profile_markdown.trim()) {
-      state.profileMarkdown = bundle.profile_markdown;
-    }
-    if (typeof bundle.daily_report_markdown === "string" && bundle.daily_report_markdown.trim()) {
-      state.report = bundle.daily_report_markdown;
-    }
-  } catch (error) {
-    console.warn("Using embedded seed data because research-bundle.json could not be loaded.", error);
+    await fetchJson("./api/health");
+    state.apiMode = true;
+    state.bundle = { ...EMPTY_BUNDLE, ...(await fetchJson("./api/bundle")) };
+  } catch {
+    state.apiMode = false;
+    try { state.bundle = { ...EMPTY_BUNDLE, ...(await fetchJson("./data/research-bundle.json")) }; }
+    catch (error) { showToast(`数据加载失败：${error.message}`, "error"); }
   }
+  state.selectedReportDate = state.bundle.latest_report_date;
+  render();
 }
+
+bindEvents();
+loadBundle();
+if ("serviceWorker" in navigator && location.protocol !== "file:") navigator.serviceWorker.register("./sw.js").catch(() => {});

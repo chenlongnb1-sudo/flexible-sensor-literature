@@ -1,0 +1,44 @@
+{
+  "lookback_windows_days": [3, 7, 30, 365],
+  "minimum_candidates": 6,
+  "maximum_candidates": 12,
+  "open_access_pdf_limit": 3,
+  "queries": [
+    {
+      "id": "tactile-front-end-computing",
+      "query": "tactile sensor analog front-end in-sensor computing",
+      "tracks": ["P2", "P4"],
+      "sources": ["openalex", "crossref", "semantic_scholar", "arxiv"]
+    },
+    {
+      "id": "vector-shear-friction-slip",
+      "query": "flexible tactile sensor vector shear friction slip direction",
+      "tracks": ["P2", "P6"],
+      "sources": ["openalex", "crossref", "semantic_scholar"]
+    },
+    {
+      "id": "low-redundancy-array",
+      "query": "electronic skin tactile array compressed readout low channel",
+      "tracks": ["P3", "P4"],
+      "sources": ["openalex", "crossref", "semantic_scholar", "arxiv"]
+    },
+    {
+      "id": "physical-projection",
+      "query": "tactile sensor physical computing analog computing programmable projection",
+      "tracks": ["P4", "P5"],
+      "sources": ["openalex", "crossref", "semantic_scholar", "arxiv"]
+    },
+    {
+      "id": "fault-transfer-calibration",
+      "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+      "tracks": ["P5"],
+      "sources": ["openalex", "crossref", "semantic_scholar", "arxiv"]
+    },
+    {
+      "id": "tolerance-interface",
+      "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+      "tracks": ["P1"],
+      "sources": ["openalex", "crossref", "semantic_scholar"]
+    }
+  ]
+}

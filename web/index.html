@@ -3,79 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17212b" />
+    <meta name="description" content="柔性电子皮肤前端触觉计算个人科研情报中枢" />
     <title>科研情报中枢</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
   </head>
   <body>
     <aside class="sidebar">
       <div class="brand">
-        <img src="./assets/tactile-front-end.svg" alt="" />
+        <img id="brandImage" src="./assets/tactile-front-end.svg" alt="科研情报中枢" />
         <div>
           <strong>科研情报中枢</strong>
-          <span>Flexible Skin Intelligence</span>
+          <span>Front-end tactile computing</span>
         </div>
       </div>
+
       <nav class="nav" aria-label="主导航">
-        <button class="nav-item active" data-view="dashboard" title="总览"><span>⌘</span>总览</button>
-        <button class="nav-item" data-view="papers" title="论文"><span>▤</span>论文</button>
-        <button class="nav-item" data-view="ideas" title="创新点"><span>✦</span>创新点</button>
-        <button class="nav-item" data-view="profile" title="画像"><span>◫</span>画像</button>
-        <button class="nav-item" data-view="tasks" title="任务"><span>☑</span>任务</button>
-        <button class="nav-item" data-view="reports" title="报告"><span>¶</span>报告</button>
+        <button class="nav-item active" data-view="dashboard"><i data-lucide="layout-dashboard"></i><span>总览</span></button>
+        <button class="nav-item" data-view="papers"><i data-lucide="library-big"></i><span>论文</span></button>
+        <button class="nav-item" data-view="ideas"><i data-lucide="lightbulb"></i><span>创新点</span></button>
+        <button class="nav-item" data-view="profile"><i data-lucide="scan-search"></i><span>画像</span><b id="proposalNavCount" hidden>0</b></button>
+        <button class="nav-item" data-view="tasks"><i data-lucide="list-checks"></i><span>任务</span></button>
+        <button class="nav-item" data-view="reports"><i data-lucide="file-text"></i><span>报告</span></button>
+        <button class="nav-item" data-view="decisions"><i data-lucide="history"></i><span>决策</span></button>
+        <button class="nav-item" data-view="settings"><i data-lucide="settings-2"></i><span>运行状态</span></button>
       </nav>
+
       <div class="sidebar-foot">
-        <span>每日 09:00</span>
-        <strong>自动筛文献</strong>
+        <div class="service-state"><span id="serviceDot" class="status-dot"></span><span id="serviceLabel">正在连接</span></div>
+        <strong>每日 09:00 自动更新</strong>
       </div>
     </aside>
 
     <main class="shell">
       <header class="topbar">
         <div>
-          <p class="eyebrow">Personal research memory</p>
+          <p class="eyebrow">Personal research intelligence</p>
           <h1 id="viewTitle">总览</h1>
         </div>
         <div class="actions">
-          <button id="exportDecisions" class="icon-btn" title="导出决策 JSON">⇩</button>
-          <button id="syncHint" class="primary-btn">生成画像更新提案</button>
+          <button id="exportQueue" class="icon-btn" title="导出离线决策" aria-label="导出离线决策" hidden><i data-lucide="download"></i></button>
+          <button id="runDaily" class="secondary-btn"><i data-lucide="refresh-cw"></i><span>运行今日检索</span></button>
+          <button id="syncGitHub" class="primary-btn"><i data-lucide="cloud-upload"></i><span>同步 GitHub</span></button>
         </div>
       </header>
 
       <section id="dashboard" class="view active">
-        <div class="hero-grid">
-          <div class="hero-panel">
-            <div class="hero-copy">
-              <p class="eyebrow">当前主线</p>
-              <h2>柔性电子皮肤前端触觉计算</h2>
-              <p>围绕低离散触觉界面、ADC 前模拟矢量读出、低冗余阵列、可编程物理投影和容错迁移形成持续情报闭环。</p>
+        <div class="briefing-band">
+          <div class="briefing-copy">
+            <div class="briefing-kicker"><span id="reportDate">暂无日报</span><span class="divider"></span><span>研究主线</span></div>
+            <h2>柔性电子皮肤前端触觉计算</h2>
+            <p>低离散触觉界面、ADC 前模拟矢量读出、低冗余阵列、可编程物理投影与容错迁移。</p>
+            <div class="briefing-actions">
+              <button class="text-btn" data-jump="papers"><i data-lucide="arrow-right"></i>查看今日论文</button>
+              <button class="text-btn" data-jump="ideas"><i data-lucide="arrow-right"></i>处理创新点</button>
             </div>
-            <img class="hero-visual" src="./assets/tactile-front-end.svg" alt="触觉前端系统示意" />
           </div>
-          <div class="metric-grid">
-            <div class="metric"><span id="paperCount">0</span><p>今日论文</p></div>
-            <div class="metric"><span id="ideaCount">0</span><p>候选 idea</p></div>
-            <div class="metric"><span id="taskCount">0</span><p>任务</p></div>
-            <div class="metric"><span id="profileScore">P1-P6</span><p>画像轨道</p></div>
-          </div>
+          <picture class="briefing-visual">
+            <img id="heroImage" src="./assets/tactile-front-end.svg" alt="柔性电子皮肤触觉前端研究场景" />
+          </picture>
+        </div>
+
+        <div class="metric-grid" aria-label="今日科研情报指标">
+          <div class="metric"><div><i data-lucide="book-open-check"></i><span id="paperCount">0</span></div><p>今日论文</p></div>
+          <div class="metric"><div><i data-lucide="bookmark-check"></i><span id="mustReadCount">0</span></div><p>优先精读</p></div>
+          <div class="metric"><div><i data-lucide="lightbulb"></i><span id="ideaCount">0</span></div><p>待处理 idea</p></div>
+          <div class="metric"><div><i data-lucide="clipboard-check"></i><span id="taskCount">0</span></div><p>开放任务</p></div>
         </div>
 
         <div class="section-head">
-          <h2>今日优先级</h2>
+          <div><p class="eyebrow">Today inbox</p><h2>今日优先级</h2></div>
           <div class="segmented" role="tablist" aria-label="论文筛选">
-            <button class="segment active" data-filter="all">全部</button>
-            <button class="segment" data-filter="read">精读</button>
-            <button class="segment" data-filter="profile_candidate">画像候选</button>
+            <button class="segment active" data-dashboard-filter="all">全部</button>
+            <button class="segment" data-dashboard-filter="read">精读</button>
+            <button class="segment" data-dashboard-filter="add_to_ideas">转 idea</button>
           </div>
         </div>
         <div id="topPapers" class="paper-list"></div>
 
         <div class="two-col">
           <section>
-            <div class="section-head"><h2>待决策创新点</h2></div>
+            <div class="section-head"><div><p class="eyebrow">Decision queue</p><h2>待决策创新点</h2></div><button class="text-btn" data-jump="ideas">查看全部</button></div>
             <div id="ideaQueue" class="idea-list"></div>
           </section>
           <section>
-            <div class="section-head"><h2>证据缺口</h2></div>
+            <div class="section-head"><div><p class="eyebrow">Evidence gaps</p><h2>当前证据缺口</h2></div></div>
             <div id="gapList" class="gap-list"></div>
           </section>
         </div>
@@ -83,49 +97,75 @@
 
       <section id="papers" class="view">
         <div class="toolbar">
-          <input id="paperSearch" type="search" placeholder="搜索标题、轨道、创新点" />
+          <label class="search-field"><i data-lucide="search"></i><input id="paperSearch" type="search" placeholder="搜索标题、摘要、轨道或期刊" /></label>
           <select id="trackFilter" aria-label="轨道筛选">
-            <option value="all">全部轨道</option>
-            <option value="P1">P1</option>
-            <option value="P2">P2</option>
-            <option value="P3">P3</option>
-            <option value="P4">P4</option>
-            <option value="P5">P5</option>
-            <option value="P6">P6</option>
+            <option value="all">全部轨道</option><option value="P1">P1 容差界面</option><option value="P2">P2 矢量前端</option>
+            <option value="P3">P3 低冗余阵列</option><option value="P4">P4 物理投影</option><option value="P5">P5 容错迁移</option><option value="P6">P6 系统应用</option>
+          </select>
+          <select id="paperActionFilter" aria-label="建议动作筛选">
+            <option value="all">全部建议</option><option value="read">精读</option><option value="add_to_ideas">转 idea</option><option value="skim">略读</option><option value="ignore">低优先级</option>
           </select>
         </div>
         <div id="paperGrid" class="paper-list"></div>
       </section>
 
       <section id="ideas" class="view">
-        <div class="kanban" id="ideaBoard"></div>
+        <div class="section-toolbar">
+          <p id="ideaSummary">0 个候选</p>
+          <select id="ideaStatusFilter" aria-label="创新点状态筛选">
+            <option value="all">全部状态</option><option value="candidate">候选</option><option value="watch">观察</option><option value="proposed">画像提案中</option><option value="accepted">已采纳</option><option value="converted_to_task">已转任务</option><option value="rejected">已拒绝</option>
+          </select>
+        </div>
+        <div id="ideaBoard" class="idea-board"></div>
       </section>
 
       <section id="profile" class="view">
         <div class="profile-layout">
-          <div class="profile-main">
-            <h2>论文画像</h2>
-            <div id="profileContent" class="markdown"></div>
-          </div>
-          <aside class="profile-side">
-            <h3>更新原则</h3>
-            <p>外部论文只能生成候选提案，必须经过用户确认后进入画像。</p>
-            <button id="downloadProposal" class="primary-btn full">导出待确认提案</button>
-          </aside>
+          <section class="profile-proposals">
+            <div class="section-head"><div><p class="eyebrow">Human approval gate</p><h2>待确认画像提案</h2></div></div>
+            <p class="quiet">这里的“接受”是唯一会把外部创新写入研究画像的操作。</p>
+            <div id="proposalList" class="proposal-list"></div>
+          </section>
+          <section class="profile-document">
+            <div class="section-head"><div><p class="eyebrow">Durable memory</p><h2>当前研究画像</h2></div></div>
+            <article id="profileContent" class="markdown"></article>
+          </section>
         </div>
       </section>
 
       <section id="tasks" class="view">
+        <div class="section-toolbar"><p id="taskSummary">0 个开放任务</p><span class="quiet">任务由你确认的 idea 生成</span></div>
         <div id="taskList" class="task-list"></div>
       </section>
 
       <section id="reports" class="view">
-        <div class="report-panel">
-          <h2>2026-07-14 文献工作流种子报告</h2>
-          <pre id="dailyReport"></pre>
+        <div class="report-layout">
+          <aside class="report-index"><div class="section-head"><h2>日报归档</h2></div><div id="reportIndex"></div></aside>
+          <article class="report-document"><div id="reportContent" class="markdown"></div></article>
+        </div>
+      </section>
+
+      <section id="decisions" class="view">
+        <div class="section-head"><div><p class="eyebrow">Audit trail</p><h2>决策历史</h2></div></div>
+        <div id="decisionList" class="decision-list"></div>
+      </section>
+
+      <section id="settings" class="view">
+        <div class="settings-grid">
+          <section><div class="section-head"><h2>检索源状态</h2></div><div id="sourceStatus" class="source-list"></div></section>
+          <section><div class="section-head"><h2>运行信息</h2></div><div id="runtimeInfo" class="runtime-list"></div></section>
         </div>
       </section>
     </main>
+
+    <dialog id="decisionDialog" class="decision-dialog">
+      <form method="dialog" id="decisionForm">
+        <div class="dialog-head"><div><p class="eyebrow">Confirm decision</p><h2 id="dialogTitle">确认操作</h2></div><button value="cancel" class="icon-btn" aria-label="关闭"><i data-lucide="x"></i></button></div>
+        <p id="dialogMessage" class="quiet"></p>
+        <label id="dialogNoteWrap">备注<textarea id="dialogNote" rows="4" maxlength="1000" placeholder="可填写接受理由、拒绝边界或后续条件"></textarea></label>
+        <div class="dialog-actions"><button value="cancel" class="secondary-btn">取消</button><button id="dialogConfirm" value="confirm" class="primary-btn">确认</button></div>
+      </form>
+    </dialog>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <script src="./app.js"></script>

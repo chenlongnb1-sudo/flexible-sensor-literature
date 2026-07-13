@@ -1,44 +1,65 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Daily paper summary",
+  "$id": "https://github.com/chenlongnb1-sudo/flexible-sensor-literature/schemas/papers.schema.json",
+  "title": "Daily tactile-computing literature report",
   "type": "object",
-  "required": ["date", "query_log", "papers"],
+  "additionalProperties": true,
+  "required": ["date", "searched_at", "search_window_days", "query_log", "screening_policy", "papers", "generated_ideas"],
   "properties": {
-    "date": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "searched_at": { "type": "string", "format": "date-time" },
+    "search_window_days": { "type": "integer", "minimum": 1 },
     "query_log": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["source", "query"],
+        "required": ["source", "query_id", "query", "result_count", "status"],
         "properties": {
           "source": { "type": "string" },
+          "query_id": { "type": "string" },
           "query": { "type": "string" },
-          "result_count": { "type": "integer" }
+          "result_count": { "type": "integer", "minimum": 0 },
+          "status": { "enum": ["ok", "failed"] }
         }
       }
     },
+    "source_errors": { "type": "array", "items": { "type": "object" } },
+    "screening_policy": { "type": "object" },
     "papers": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "title", "relevance_score", "decision_hint"],
+        "required": ["id", "title", "tracks", "relevance_score", "score_breakdown", "relevance_reasons", "core_claim", "transferable_points", "risks", "decision_hint", "verification_status"],
         "properties": {
-          "id": { "type": "string" },
-          "title": { "type": "string" },
+          "id": { "type": "string", "pattern": "^paper-" },
+          "title": { "type": "string", "minLength": 1 },
           "authors": { "type": "array", "items": { "type": "string" } },
           "venue": { "type": "string" },
           "date": { "type": "string" },
           "doi": { "type": "string" },
           "url": { "type": "string" },
+          "pdf_url": { "type": "string" },
+          "local_pdf": { "type": "string" },
+          "is_open_access": { "type": "boolean" },
           "paper_type": { "type": "string" },
-          "tracks": { "type": "array", "items": { "type": "string" } },
+          "sources": { "type": "array", "items": { "type": "string" } },
+          "tracks": { "type": "array", "items": { "enum": ["P1", "P2", "P3", "P4", "P5", "P6"] } },
           "relevance_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+          "score_breakdown": {
+            "type": "object",
+            "required": ["topic_relevance", "evidence_strength", "transferability", "innovation_density", "material_only_penalty"]
+          },
+          "relevance_reasons": { "type": "array", "items": { "type": "string" } },
           "core_claim": { "type": "string" },
+          "summary_zh": { "type": "string" },
           "transferable_points": { "type": "array", "items": { "type": "string" } },
           "risks": { "type": "array", "items": { "type": "string" } },
-          "decision_hint": { "type": "string", "enum": ["ignore", "skim", "read", "add_to_ideas", "profile_candidate", "task_candidate"] }
+          "source_abstract": { "type": "string" },
+          "decision_hint": { "enum": ["ignore", "skim", "read", "add_to_ideas", "profile_candidate", "task_candidate"] },
+          "verification_status": { "enum": ["metadata_only", "metadata_abstract_screened", "full_text_verified"] }
         }
       }
-    }
+    },
+    "generated_ideas": { "type": "array", "items": { "$ref": "ideas.schema.json#/$defs/idea" } }
   }
 }

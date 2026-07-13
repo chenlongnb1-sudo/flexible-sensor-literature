@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "User-approved research-profile proposals",
+  "type": "object",
+  "required": ["updated_at", "proposals"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "proposals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source_idea", "track", "title", "proposal", "evidence", "risk", "status", "created_at"],
+        "properties": {
+          "id": { "type": "string" },
+          "source_idea": { "type": "string" },
+          "status": { "enum": ["pending", "accepted", "watch", "rejected"] },
+          "evidence": { "type": "array", "items": { "type": "object" } }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/chenlongnb1-sudo/flexible-sensor-literature/schemas/ideas.schema.json",
+  "title": "Research idea log",
+  "type": "object",
+  "required": ["updated_at", "ideas"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "ideas": { "type": "array", "items": { "$ref": "#/$defs/idea" } }
+  },
+  "$defs": {
+    "idea": {
+      "type": "object",
+      "required": ["id", "status", "grade", "track", "title", "hypothesis", "minimum_experiment", "controls", "success_metrics", "risk", "profile_update_recommendation"],
+      "properties": {
+        "id": { "type": "string" },
+        "status": { "enum": ["candidate", "watch", "proposed", "accepted", "rejected", "converted_to_task"] },
+        "grade": { "enum": ["A", "B", "C", "D"] },
+        "track": { "type": "string" },
+        "title": { "type": "string", "minLength": 1 },
+        "source_papers": { "type": "array", "items": { "type": "object" } },
+        "hypothesis": { "type": "string" },
+        "minimum_experiment": { "type": "string" },
+        "controls": { "type": "array", "items": { "type": "string" } },
+        "success_metrics": { "type": "array", "items": { "type": "string" } },
+        "risk": { "type": "string" },
+        "profile_update_recommendation": { "type": "string" }
+      }
+    }
+  }
+}
