@@ -18,7 +18,32 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  pages-status:
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.check.outputs.enabled }}
+    steps:
+      - name: Check whether GitHub Pages is enabled
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          STATUS=$(curl --silent --show-error --output /tmp/pages.json --write-out "%{http_code}" \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages")
+          if [[ "$STATUS" == "200" ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            echo "GitHub Pages is enabled."
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "GitHub Pages is not enabled (HTTP $STATUS); deployment skipped safely."
+          fi
+
   deploy:
+    needs: pages-status
+    if: needs.pages-status.outputs.enabled == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
