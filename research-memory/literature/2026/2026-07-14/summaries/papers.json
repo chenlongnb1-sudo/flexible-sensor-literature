@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-14",
+  "query_log": [
+    {
+      "source": "workflow-seed",
+      "query": "analog tactile preprocessing OR in-sensor computing tactile sensor",
+      "result_count": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "seed-pre-adc-tactile-front-end",
+      "title": "Seed topic: pre-ADC tactile front-end computing for flexible electronic skins",
+      "authors": [],
+      "venue": "System seed",
+      "date": "2026-07-14",
+      "doi": "",
+      "url": "",
+      "paper_type": "topic-seed",
+      "tracks": ["P2", "P4"],
+      "relevance_score": 95,
+      "core_claim": "The daily agent should prioritize papers that move tactile feature formation from backend algorithms into the sensor/front-end circuit.",
+      "transferable_points": [
+        "Hardware Kz/Kx/Ky evidence for Paper A",
+        "Programmable physical projection kernels for P4",
+        "Fault tolerance and few-shot transfer for P5"
+      ],
+      "risks": [
+        "Do not over-count papers that only report high sensitivity materials.",
+        "Do not claim full 3D force reconstruction without calibration."
+      ],
+      "decision_hint": "profile_candidate"
+    }
+  ]
+}

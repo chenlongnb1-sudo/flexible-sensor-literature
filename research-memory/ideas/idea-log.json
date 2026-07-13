@@ -1,0 +1,47 @@
+{
+  "updated_at": "2026-07-14",
+  "ideas": [
+    {
+      "id": "idea-p4-fault-projection-001",
+      "status": "watch",
+      "grade": "A",
+      "track": "P4/P5",
+      "title": "用可编程物理投影验证坏点条件下的渐进退化",
+      "source": "User research profile and system blueprint",
+      "hypothesis": "Normalized hardware projection features should degrade more gracefully than raw pixel readout when tactile pixels fail or drift.",
+      "minimum_experiment": "Construct 3x3 resistor/tactile array states with 0, 1, 5, 10, and 20 percent equivalent faults; compare raw, software projection, and hardware projection.",
+      "controls": ["raw pixel scanning", "scalar downsampling", "software projection", "hardware projection"],
+      "success_metrics": ["classification accuracy drop", "R2 between software and hardware projection", "few-shot calibration samples", "fault ratio"],
+      "risk": "If the real 3x3 sensor is unstable, first validate with precision resistor arrays.",
+      "profile_update_recommendation": "Add as P4/P5 bridge only after first resistor-array evidence appears."
+    },
+    {
+      "id": "idea-p2-vector-ablation-001",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P2",
+      "title": "把纹理识别消融转成 ADC 前矢量触觉证据链",
+      "source": "Paper A project context",
+      "hypothesis": "Kx/Ky tangential dynamics provide task-relevant friction cues that z-only or external force-reference channels miss.",
+      "minimum_experiment": "Record raw A/B/C/D, hardware Kz/Kx/Ky, z-only, and reference force under matched texture/sliding conditions.",
+      "controls": ["raw four channels", "z-only", "reference force", "software vector", "hardware vector"],
+      "success_metrics": ["texture accuracy", "confusion matrix", "SNR/PSD", "latency", "ADC channel count"],
+      "risk": "Without synchronous hardware Kz/Kx/Ky, frame as direction-related feature extraction rather than ADC-front computing.",
+      "profile_update_recommendation": "Keep as active Paper A gate."
+    },
+    {
+      "id": "idea-p1-tolerance-map-001",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P1",
+      "title": "用偏移/旋转/接触半径热图证明低离散界面不是只提高灵敏度",
+      "source": "User research profile",
+      "hypothesis": "Gradient or non-periodic electrodes plus HCP microstructures reduce response dispersion under assembly and contact perturbations.",
+      "minimum_experiment": "Test G1-G5 under controlled shift, rotation, and contact-radius conditions; produce CV, void ratio, and sensitivity maps.",
+      "controls": ["periodic electrode + normal microstructure", "periodic electrode + HCP", "gradient electrode + normal microstructure", "gradient electrode + HCP"],
+      "success_metrics": ["CV", "shift sensitivity", "rotation sensitivity", "contact-radius sensitivity", "signal void ratio"],
+      "risk": "If only sensitivity improves, downgrade the claim to response dispersion reduction.",
+      "profile_update_recommendation": "Accept after at least two tolerance metrics beat controls."
+    }
+  ]
+}

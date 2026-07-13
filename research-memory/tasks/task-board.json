@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-07-14",
+  "tasks": [
+    {
+      "id": "task-p2-sync-vector-data",
+      "status": "next",
+      "track": "P2",
+      "title": "同步采集 raw A/B/C/D 与 hardware Kz/Kx/Ky",
+      "why": "这是 Paper A 高配身份能否成立的关键证据。",
+      "output": "A matched dataset and plot package for hardware vector vs software projection.",
+      "due": ""
+    },
+    {
+      "id": "task-p4-resistor-projection",
+      "status": "planned",
+      "track": "P4",
+      "title": "搭建 3x3 精密电阻阵列验证 programmable projection",
+      "why": "先用低风险平台证明可编程物理投影前端的 R2 和坏点鲁棒性。",
+      "output": "Ksum/Kx/Ky/Klap/Kring/Kcorner hardware vs software projection report.",
+      "due": ""
+    }
+  ]
+}

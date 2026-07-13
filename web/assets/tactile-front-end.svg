@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Flexible tactile front-end system</title>
+  <desc id="desc">A stylized flexible electronic skin front-end with sensor pixels, analog vector outputs, programmable projections, and research memory.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7faf8"/>
+      <stop offset="1" stop-color="#e7eef5"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" x2="1">
+      <stop offset="0" stop-color="#c9793c"/>
+      <stop offset="1" stop-color="#e2b85c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#23313f" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="960" height="640" rx="0" fill="url(#panel)"/>
+  <path d="M70 432c82-42 172-45 264-18 92 26 175 12 247-37 76-51 174-57 300-16v183H70z" fill="#d7e9e2"/>
+  <g filter="url(#shadow)">
+    <path d="M132 168c126-44 224-37 318 13 91 48 180 56 312 14 32-10 66 13 66 47v220c0 29-23 52-52 52H184c-29 0-52-23-52-52z" fill="#fff"/>
+  </g>
+  <g transform="translate(198 222)">
+    <rect x="0" y="0" width="226" height="226" rx="24" fill="#22313f"/>
+    <g fill="#8fd6bd">
+      <circle cx="48" cy="48" r="24"/>
+      <circle cx="113" cy="48" r="24"/>
+      <circle cx="178" cy="48" r="24"/>
+      <circle cx="48" cy="113" r="24"/>
+      <circle cx="113" cy="113" r="24"/>
+      <circle cx="178" cy="113" r="24"/>
+      <circle cx="48" cy="178" r="24"/>
+      <circle cx="113" cy="178" r="24"/>
+      <circle cx="178" cy="178" r="24"/>
+    </g>
+    <path d="M26 113h174M113 26v174M47 47l132 132M179 47 47 179" stroke="url(#copper)" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(488 190)">
+    <rect width="286" height="88" rx="18" fill="#f4efe5" stroke="#d1a35d"/>
+    <text x="24" y="36" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2b36">Kz / Kx / Ky</text>
+    <text x="24" y="64" font-family="Arial, sans-serif" font-size="16" fill="#50606c">analog vector readout</text>
+  </g>
+  <g transform="translate(488 314)">
+    <rect width="286" height="88" rx="18" fill="#e9f2f7" stroke="#71a5bd"/>
+    <text x="24" y="36" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2b36">Ksum / Klap / Kring</text>
+    <text x="24" y="64" font-family="Arial, sans-serif" font-size="16" fill="#50606c">programmable projections</text>
+  </g>
+  <g transform="translate(488 438)">
+    <rect width="286" height="64" rx="18" fill="#eef4ea" stroke="#8aa76e"/>
+    <text x="24" y="39" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2b36">profile + idea decisions</text>
+  </g>
+  <path d="M424 300c34-34 48-48 64-54M424 348c34 17 43 18 64 18M424 392c35 55 46 77 64 78" fill="none" stroke="#41505d" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 12"/>
+</svg>

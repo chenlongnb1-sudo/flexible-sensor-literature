@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>科研情报中枢</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="./assets/tactile-front-end.svg" alt="" />
+        <div>
+          <strong>科研情报中枢</strong>
+          <span>Flexible Skin Intelligence</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="主导航">
+        <button class="nav-item active" data-view="dashboard" title="总览"><span>⌘</span>总览</button>
+        <button class="nav-item" data-view="papers" title="论文"><span>▤</span>论文</button>
+        <button class="nav-item" data-view="ideas" title="创新点"><span>✦</span>创新点</button>
+        <button class="nav-item" data-view="profile" title="画像"><span>◫</span>画像</button>
+        <button class="nav-item" data-view="tasks" title="任务"><span>☑</span>任务</button>
+        <button class="nav-item" data-view="reports" title="报告"><span>¶</span>报告</button>
+      </nav>
+      <div class="sidebar-foot">
+        <span>每日 09:00</span>
+        <strong>自动筛文献</strong>
+      </div>
+    </aside>
+
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Personal research memory</p>
+          <h1 id="viewTitle">总览</h1>
+        </div>
+        <div class="actions">
+          <button id="exportDecisions" class="icon-btn" title="导出决策 JSON">⇩</button>
+          <button id="syncHint" class="primary-btn">生成画像更新提案</button>
+        </div>
+      </header>
+
+      <section id="dashboard" class="view active">
+        <div class="hero-grid">
+          <div class="hero-panel">
+            <div class="hero-copy">
+              <p class="eyebrow">当前主线</p>
+              <h2>柔性电子皮肤前端触觉计算</h2>
+              <p>围绕低离散触觉界面、ADC 前模拟矢量读出、低冗余阵列、可编程物理投影和容错迁移形成持续情报闭环。</p>
+            </div>
+            <img class="hero-visual" src="./assets/tactile-front-end.svg" alt="触觉前端系统示意" />
+          </div>
+          <div class="metric-grid">
+            <div class="metric"><span id="paperCount">0</span><p>今日论文</p></div>
+            <div class="metric"><span id="ideaCount">0</span><p>候选 idea</p></div>
+            <div class="metric"><span id="taskCount">0</span><p>任务</p></div>
+            <div class="metric"><span id="profileScore">P1-P6</span><p>画像轨道</p></div>
+          </div>
+        </div>
+
+        <div class="section-head">
+          <h2>今日优先级</h2>
+          <div class="segmented" role="tablist" aria-label="论文筛选">
+            <button class="segment active" data-filter="all">全部</button>
+            <button class="segment" data-filter="read">精读</button>
+            <button class="segment" data-filter="profile_candidate">画像候选</button>
+          </div>
+        </div>
+        <div id="topPapers" class="paper-list"></div>
+
+        <div class="two-col">
+          <section>
+            <div class="section-head"><h2>待决策创新点</h2></div>
+            <div id="ideaQueue" class="idea-list"></div>
+          </section>
+          <section>
+            <div class="section-head"><h2>证据缺口</h2></div>
+            <div id="gapList" class="gap-list"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="papers" class="view">
+        <div class="toolbar">
+          <input id="paperSearch" type="search" placeholder="搜索标题、轨道、创新点" />
+          <select id="trackFilter" aria-label="轨道筛选">
+            <option value="all">全部轨道</option>
+            <option value="P1">P1</option>
+            <option value="P2">P2</option>
+            <option value="P3">P3</option>
+            <option value="P4">P4</option>
+            <option value="P5">P5</option>
+            <option value="P6">P6</option>
+          </select>
+        </div>
+        <div id="paperGrid" class="paper-list"></div>
+      </section>
+
+      <section id="ideas" class="view">
+        <div class="kanban" id="ideaBoard"></div>
+      </section>
+
+      <section id="profile" class="view">
+        <div class="profile-layout">
+          <div class="profile-main">
+            <h2>论文画像</h2>
+            <div id="profileContent" class="markdown"></div>
+          </div>
+          <aside class="profile-side">
+            <h3>更新原则</h3>
+            <p>外部论文只能生成候选提案，必须经过用户确认后进入画像。</p>
+            <button id="downloadProposal" class="primary-btn full">导出待确认提案</button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="tasks" class="view">
+        <div id="taskList" class="task-list"></div>
+      </section>
+
+      <section id="reports" class="view">
+        <div class="report-panel">
+          <h2>2026-07-14 文献工作流种子报告</h2>
+          <pre id="dailyReport"></pre>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

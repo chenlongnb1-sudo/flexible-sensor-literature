@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Daily paper summary",
+  "type": "object",
+  "required": ["date", "query_log", "papers"],
+  "properties": {
+    "date": { "type": "string" },
+    "query_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "query"],
+        "properties": {
+          "source": { "type": "string" },
+          "query": { "type": "string" },
+          "result_count": { "type": "integer" }
+        }
+      }
+    },
+    "papers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "relevance_score", "decision_hint"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "authors": { "type": "array", "items": { "type": "string" } },
+          "venue": { "type": "string" },
+          "date": { "type": "string" },
+          "doi": { "type": "string" },
+          "url": { "type": "string" },
+          "paper_type": { "type": "string" },
+          "tracks": { "type": "array", "items": { "type": "string" } },
+          "relevance_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+          "core_claim": { "type": "string" },
+          "transferable_points": { "type": "array", "items": { "type": "string" } },
+          "risks": { "type": "array", "items": { "type": "string" } },
+          "decision_hint": { "type": "string", "enum": ["ignore", "skim", "read", "add_to_ideas", "profile_candidate", "task_candidate"] }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "updated_at": "2026-07-14",
+  "profile_markdown": "# 用户研究画像\n\n更新日期：2026-07-13  \n背景来源：根据 `E:\\BaiduSyncdisk\\博` 文件夹目录、毕业总控文件、Paper A 项目上下文、可编程触觉投影论文思路等本地材料归纳。\n\n## 当前研究方向\n\n用户当前博士主线不是普通“高灵敏柔性压力传感器”，而是围绕 **柔性电子皮肤前端触觉计算** 展开：\n\n- 结构-传感器-模拟前端-阵列-闭环协同设计。\n- 低离散/容差触觉界面。\n- ADC 前模拟矢量触觉读出。\n- 低冗余矢量触觉阵列。\n- 可编程物理触觉投影前端。\n- 容错、可迁移、少样本校准的电子皮肤。\n- 面向摩擦/纹理/滑移/三维力或方向相关触觉线索的柔性传感系统。\n\n## 已有工作基础\n\n### Paper A：低离散界面 + ADC 前模拟矢量触觉单元\n\n核心身份：\n\n> Analog vector tactile preprocessing before digitization for friction-aware soft electronic skins.\n\n中文主张：\n\n> 结构层降低输入离散性，模拟前端层把四象限响应压缩成方向相关矢量特征，服务纹理/摩擦识别和可靠决策。\n\n已看到的关键证据：\n\n- HCP/Hex 微结构与梯度叉指电极用于降低器件级响应离散性。\n- G1-G4 对照中已有灵敏度和 CV 数据：G4 CV 可低至约 0.77%。\n- 四象限压阻单元计划输出 Kz/Kx/Ky 或 Fz/Fx/Fy。\n- 纹理识别/通道消融已有基础，vector/tangential 特征优于 z-only 或 reference force。\n\n需要继续补强：\n\n- raw A/B/C/D 与 hardware Kz/Kx/Ky 同步记录。\n- hardware vector 与 software projection 一致性分析。\n- Kx/Ky 方向相关标定。\n- PSD/SNR、共模扰动、ADC 通道数、功耗或延迟对比。\n\n### P1：非公度/低离散结构容差触觉界面\n\n核心主张：\n\n> HCP 微结构与梯度/非周期叉指电极降低装配偏移、旋转和接触半径变化导致的响应离散性。\n\n重点关键词：\n\n- low-dispersion tactile interface\n- assembly tolerance\n- gradient interdigitated electrodes\n- non-periodic electrodes\n- HCP/hexagonal microstructures\n- response dispersion\n- shift/rotation/contact-radius tolerance\n\n### P2：模拟矢量触觉单元与 ADC 前方向解耦\n\n核心主张：\n\n> 四象限压阻单元通过模拟求和/差分，在 ADC 前输出 Kz/Kx/Ky，实现方向相关触觉预处理。\n\n重点关键词：\n\n- analog tactile preprocessing\n- vector tactile sensing\n- before digitization / pre-ADC\n- summation and differencing circuit\n- friction-aware sensing\n- shear/friction cues\n- direction-aware tactile readout\n\n注意：如果没有纯三轴力标定矩阵，不应写 full 3D force sensor；应写 direction-related 或 vector-like tactile features。\n\n### P3：低冗余矢量触觉阵列\n\n核心主张：\n\n> 2x2 单元作为 hardware vector macro-pixel，用 Kz/Kx/Ky 代替逐像素 raw readout，实现边缘、形状、接触图案或滑移方向感知。\n\n重点关键词：\n\n- hardware vector macro-pixel\n- low-redundancy tactile array\n- edge perception\n- tactile array readout\n- spatial tactile feature\n- readout count reduction\n- latency and power reduction\n\n### P4：可编程物理触觉投影前端\n\n核心主张：\n\n> 3x3 压阻阵列通过可编程权重电压和电流求和电路，在 ADC 前直接生成 Ksum/Kx/Ky/Klap/Kring/Kcorner 等空间投影特征。\n\n一句话：\n\n> 不是采集后学习可迁移特征，而是在 ADC 前用电路把可迁移触觉特征物理算出来。\n\n重点关键词：\n\n- programmable physical tactile projection\n- tactile front-end computing\n- in-sensor computing\n- spatial projection features\n- current summation circuit\n- single ADC tactile readout\n- fault-tolerant tactile sensing\n- transferable force perception\n- cross-sensor calibration\n\n### 应用与平台\n\n本地文件显示还涉及：\n\n- 柔性三维力传感器文献汇报。\n- 离子传感器。\n- 榫卯结构传感器。\n- 陀螺仪/惯性或方向感知结构。\n- 鞋垫/足底压力或步态相关传感。\n- 机械臂和触觉闭环平台。\n- 空间站/太空人体项目中的皮肤顺应柔性电生理电极。\n- 审稿/项目材料表明用户持续关注柔性电极、电子皮肤和可穿戴传感方向。\n\n## 材料体系与器件结构\n\n已出现或可作为候选的体系：\n\n- PDMS / Ecoflex / TPU 等柔性基底或微结构。\n- HCP/Hex 微结构、棱台、泡沫、榫卯、鞋垫结构。\n- PEDOT:PSS/EG、碳黑、CNT、MXene、AgNW、液态金属等导电材料需按实际数据筛选。\n- PI/Cu、柔性 PCB、叉指电极、梯度叉指电极、非周期电极。\n- 四象限压阻单元、2x2 macro-pixel、3x3 压阻阵列、4x4 阵列。\n- 模拟求和/差分电路、可编程权重电压、电流求和、TIA、MUX、单 ADC 读出。\n\n## 当前瓶颈\n\n- 高配 Paper A 需要硬件 Kz/Kx/Ky 的 ADC 前证据，否则只能降级为后处理 vector features。\n- 需要更系统的方向标定、PSD/SNR、共模抑制、功耗/延迟/ADC 通道数证据。\n- P1 需要 shift、rotation、contact-radius、signal void ratio 等容差证据，而不是只证明灵敏度高。\n- P3/P4 需要从单器件推进到阵列层面的边缘/形状/容错/迁移指标。\n- 机器人闭环和滑移防护应用风险高，应作为最小演示，不应拖累 P1-P3 主线。\n\n## 每日文献筛选优先级\n\n每日自动文献任务应优先筛选以下论文：\n\n1. ADC 前、模拟前端、in-sensor computing、sensor-near computing 相关触觉/电子皮肤论文。\n2. 矢量触觉、剪切力/摩擦/滑移方向、三维力或 direction-aware tactile sensing。\n3. 柔性触觉阵列的低通道读出、压缩读出、macro-pixel、edge/shape perception。\n4. 可编程物理计算、投影核、模拟矩阵/电流求和、单 ADC 读出。\n5. 电子皮肤容错、坏点鲁棒、跨器件迁移、少样本校准、domain adaptation。\n6. 低离散结构、装配容差、微结构/电极结构协同设计。\n7. 面向机械臂、鞋垫、可穿戴、空间人体监测的触觉/柔性电极系统，但必须能服务前端触觉计算主线。\n\n## 不希望重复的方向\n\n- 不要把用户方向简化成普通 flexible pressure sensor。\n- 不要优先推荐只提高灵敏度、缺少结构机制或系统价值的材料论文。\n- 没有标定证据时，不要把方向相关读出夸大成完整三维力重建。\n- 不要把后端机器学习分类论文当成核心，除非它能和 ADC 前/传感器近端计算形成对照或启发。\n- 不要让复杂机器人闭环应用压过器件、前端、阵列主线。\n\n## 可迁移的创新方向\n\n- 将 2x2 四象限矢量单元扩展为 3x3 可编程物理投影前端。\n- 用硬件投影核生成 Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释空间特征。\n- 用 normalized projection 特征降低跨器件差异和老化/坏点影响。\n- 建立 hardware projection vs software projection 的一致性与失效边界。\n- 做 raw pixel scanning、scalar downsampling、software gradient、hardware vector macro-pixel 的系统对照。\n- 将摩擦/纹理/滑移方向线索作为 ADC 前矢量特征的任务价值，而不是只追求力数值重建。\n",
+  "daily_report_markdown": "# 2026-07-14 文献工作流种子报告\n\n本文件用于网页 MVP 和每日 Agent 输出格式对齐。正式每日任务应替换为当天真实检索结果。\n\n## 今日聚焦\n\n- ADC 前触觉计算。\n- 模拟矢量触觉读出。\n- 可编程物理触觉投影。\n- 低冗余/容错/可迁移电子皮肤。\n\n## 今日候选 idea\n\n1. 用 3x3 精密电阻阵列先验证 programmable projection 的硬件-软件一致性。\n2. 将坏点比例作为 P4/P5 的鲁棒性变量，比较 raw 与 normalized projection。\n3. 将纹理识别消融实验重写为 tangential/vector dynamics 的任务证据，而不是普通分类精度。\n",
+  "papers": [
+    {
+      "id": "seed-pre-adc-tactile-front-end",
+      "title": "Seed topic: pre-ADC tactile front-end computing for flexible electronic skins",
+      "authors": [],
+      "venue": "System seed",
+      "date": "2026-07-14",
+      "doi": "",
+      "url": "",
+      "paper_type": "topic-seed",
+      "tracks": [
+        "P2",
+        "P4"
+      ],
+      "relevance_score": 95,
+      "core_claim": "The daily agent should prioritize papers that move tactile feature formation from backend algorithms into the sensor/front-end circuit.",
+      "transferable_points": [
+        "Hardware Kz/Kx/Ky evidence for Paper A",
+        "Programmable physical projection kernels for P4",
+        "Fault tolerance and few-shot transfer for P5"
+      ],
+      "risks": [
+        "Do not over-count papers that only report high sensitivity materials.",
+        "Do not claim full 3D force reconstruction without calibration."
+      ],
+      "decision_hint": "profile_candidate"
+    }
+  ],
+  "query_log": [
+    {
+      "source": "workflow-seed",
+      "query": "analog tactile preprocessing OR in-sensor computing tactile sensor",
+      "result_count": 0
+    }
+  ],
+  "ideas": [
+    {
+      "id": "idea-p4-fault-projection-001",
+      "status": "watch",
+      "grade": "A",
+      "track": "P4/P5",
+      "title": "用可编程物理投影验证坏点条件下的渐进退化",
+      "source": "User research profile and system blueprint",
+      "hypothesis": "Normalized hardware projection features should degrade more gracefully than raw pixel readout when tactile pixels fail or drift.",
+      "minimum_experiment": "Construct 3x3 resistor/tactile array states with 0, 1, 5, 10, and 20 percent equivalent faults; compare raw, software projection, and hardware projection.",
+      "controls": [
+        "raw pixel scanning",
+        "scalar downsampling",
+        "software projection",
+        "hardware projection"
+      ],
+      "success_metrics": [
+        "classification accuracy drop",
+        "R2 between software and hardware projection",
+        "few-shot calibration samples",
+        "fault ratio"
+      ],
+      "risk": "If the real 3x3 sensor is unstable, first validate with precision resistor arrays.",
+      "profile_update_recommendation": "Add as P4/P5 bridge only after first resistor-array evidence appears."
+    },
+    {
+      "id": "idea-p2-vector-ablation-001",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P2",
+      "title": "把纹理识别消融转成 ADC 前矢量触觉证据链",
+      "source": "Paper A project context",
+      "hypothesis": "Kx/Ky tangential dynamics provide task-relevant friction cues that z-only or external force-reference channels miss.",
+      "minimum_experiment": "Record raw A/B/C/D, hardware Kz/Kx/Ky, z-only, and reference force under matched texture/sliding conditions.",
+      "controls": [
+        "raw four channels",
+        "z-only",
+        "reference force",
+        "software vector",
+        "hardware vector"
+      ],
+      "success_metrics": [
+        "texture accuracy",
+        "confusion matrix",
+        "SNR/PSD",
+        "latency",
+        "ADC channel count"
+      ],
+      "risk": "Without synchronous hardware Kz/Kx/Ky, frame as direction-related feature extraction rather than ADC-front computing.",
+      "profile_update_recommendation": "Keep as active Paper A gate."
+    },
+    {
+      "id": "idea-p1-tolerance-map-001",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P1",
+      "title": "用偏移/旋转/接触半径热图证明低离散界面不是只提高灵敏度",
+      "source": "User research profile",
+      "hypothesis": "Gradient or non-periodic electrodes plus HCP microstructures reduce response dispersion under assembly and contact perturbations.",
+      "minimum_experiment": "Test G1-G5 under controlled shift, rotation, and contact-radius conditions; produce CV, void ratio, and sensitivity maps.",
+      "controls": [
+        "periodic electrode + normal microstructure",
+        "periodic electrode + HCP",
+        "gradient electrode + normal microstructure",
+        "gradient electrode + HCP"
+      ],
+      "success_metrics": [
+        "CV",
+        "shift sensitivity",
+        "rotation sensitivity",
+        "contact-radius sensitivity",
+        "signal void ratio"
+      ],
+      "risk": "If only sensitivity improves, downgrade the claim to response dispersion reduction.",
+      "profile_update_recommendation": "Accept after at least two tolerance metrics beat controls."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-2026-07-14-001",
+      "type": "system",
+      "item_id": "research-intelligence-mvp",
+      "decision": "accepted",
+      "note": "Use GitHub as durable memory, web dashboard for deep management, and WeChat mini program later for daily lightweight decisions.",
+      "created_at": "2026-07-14"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-p2-sync-vector-data",
+      "status": "next",
+      "track": "P2",
+      "title": "同步采集 raw A/B/C/D 与 hardware Kz/Kx/Ky",
+      "why": "这是 Paper A 高配身份能否成立的关键证据。",
+      "output": "A matched dataset and plot package for hardware vector vs software projection.",
+      "due": ""
+    },
+    {
+      "id": "task-p4-resistor-projection",
+      "status": "planned",
+      "track": "P4",
+      "title": "搭建 3x3 精密电阻阵列验证 programmable projection",
+      "why": "先用低风险平台证明可编程物理投影前端的 R2 和坏点鲁棒性。",
+      "output": "Ksum/Kx/Ky/Klap/Kring/Kcorner hardware vs software projection report.",
+      "due": ""
+    }
+  ]
+}
