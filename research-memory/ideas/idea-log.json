@@ -77,40 +77,6 @@
       "profile_update_recommendation": "Accept after at least two tolerance metrics beat controls."
     },
     {
-      "id": "idea-2026-07-14-83c429ed3232",
-      "status": "candidate",
-      "grade": "B",
-      "track": "P4",
-      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
-      "source": "Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception",
-      "source_papers": [
-        {
-          "paper_id": "paper-711d36cffdfeb77e",
-          "title": "Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception",
-          "doi": "10.1002/smll.74524",
-          "url": "https://doi.org/10.1002/smll.74524"
-        }
-      ],
-      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
-      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
-      "controls": [
-        "raw scanning",
-        "software projection",
-        "fixed hardware kernel",
-        "programmable hardware kernel"
-      ],
-      "success_metrics": [
-        "hardware-software R2",
-        "linearity",
-        "kernel switching error",
-        "ADC count",
-        "latency"
-      ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T05:06:29.040920+00:00"
-    },
-    {
       "id": "idea-2026-07-14-f3577c266130",
       "status": "candidate",
       "grade": "B",
@@ -142,7 +108,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T05:06:29.040939+00:00"
+      "created_at": "2026-07-14T08:10:26.343826+00:00"
     },
     {
       "id": "idea-2026-07-14-3ee11837e718",
@@ -176,7 +142,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T05:06:29.040947+00:00"
+      "created_at": "2026-07-14T08:10:26.343847+00:00"
     },
     {
       "id": "idea-2026-07-14-f4aae77423de",
@@ -210,21 +176,55 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T05:06:29.040953+00:00"
+      "created_at": "2026-07-14T08:10:26.343854+00:00"
     },
     {
-      "id": "idea-2026-07-14-a2709fbaaab4",
+      "id": "idea-2026-07-14-83c429ed3232",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception",
+      "source_papers": [
+        {
+          "paper_id": "paper-711d36cffdfeb77e",
+          "title": "Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception",
+          "doi": "10.1002/smll.74524",
+          "url": "https://doi.org/10.1002/smll.74524"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-14T08:10:26.343860+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-c88f880c67e3",
       "status": "candidate",
       "grade": "B",
       "track": "P6",
       "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
-      "source": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
+      "source": "Mechanical multiaxis force sensor for directly bridging sensing and fluidic actuation",
       "source_papers": [
         {
-          "paper_id": "paper-eb9282b5c24ccb1c",
-          "title": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
-          "doi": "10.1088/2631-7990/ae83ec",
-          "url": "https://doi.org/10.1088/2631-7990/ae83ec"
+          "paper_id": "paper-c842b9e77db14c23",
+          "title": "Mechanical multiaxis force sensor for directly bridging sensing and fluidic actuation",
+          "doi": "10.1126/sciadv.aeb8052",
+          "url": "https://doi.org/10.1126/sciadv.aeb8052"
         }
       ],
       "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
@@ -242,7 +242,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T05:06:29.040958+00:00"
+      "created_at": "2026-07-14T08:10:26.343866+00:00"
     }
   ]
 }

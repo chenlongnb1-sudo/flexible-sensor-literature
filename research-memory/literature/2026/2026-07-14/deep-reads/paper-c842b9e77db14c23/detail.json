@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "paper-c842b9e77db14c23",
+  "title": "Mechanical multiaxis force sensor for directly bridging sensing and fluidic actuation",
+  "authors": [
+    "Zhexin Xie",
+    "Kelu Yu",
+    "Peiyi Wang",
+    "Si Li",
+    "Shaohua Ling",
+    "Zhihang Qin",
+    "Yu Zhang",
+    "Jingyi Yang",
+    "Ceng Zhang",
+    "Wei Zhang",
+    "Wenci Xin",
+    "Yaonan Gu"
+  ],
+  "venue": "Science Advances",
+  "date": "2026-07-10",
+  "doi": "10.1126/sciadv.aeb8052",
+  "source_url": "https://doi.org/10.1126/sciadv.aeb8052",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-07-14T08:11:14.006343+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Robots are the intelligent systems that connect sensors and actuators. Many sensorimotor architectures use close-loop control codes that arbitrate sensing signals, entailing processing modules. Reactive architectures minimize computational demands by establishing direct sensor-actuator connections and have proven to be effective and robust. Here, we introduce a mechanical analogy of such reactive systems: a fluidic-based multiaxis mechanical soft force sensor (ME-SOFS) that directly couples sensory signals with fluidic actuation, eliminating the need for external computation or energy input. The ME-SOFS can be easily reconfigured and integrated to endow robots with somatosensory multiaxis force sensing capabilities. Based on fluid transduction, ME-SOFS converts applied force into mechanical output for fluidic actuators. We demonstrate this sensing-actuation loop in three scenarios: directional droplet manipulation, unified bending of cilia-like array guided by detected force vectors, and haptic feedback system that accelerates robotic grasping learning. ME-SOFSs demonstrate how fluidic approach can realize multiaxis force sensing for soft robots, and enable simplified, closed sensing-actuation loops and haptic human-machine interfaces.",
+    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。当前未从摘要提取到可比较数值。"
+  },
+  "innovation_points": [
+    "Robots are the intelligent systems that connect sensors and actuators.",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "优先核查是否有 hardware output 与 software projection 的同步一致性证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-07-14/deep-reads/paper-c842b9e77db14c23/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

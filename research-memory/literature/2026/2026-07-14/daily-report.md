@@ -2,21 +2,21 @@
 
 ## 今日结论
 
-本次从 OpenAlex、Crossref、Semantic Scholar 和 arXiv 检索最近 30 天结果，去重并排除历史已收录论文后保留 7 篇。
+本次从 OpenAlex、Crossref、Semantic Scholar 和 arXiv 检索最近 30 天结果，去重并排除历史已收录论文后保留 14 篇。
 期刊等级采用硬门槛：仅保留 Nature/Science/Cell 子刊、Advanced Materials 系列及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。
 通过期刊门槛后，再优先考虑 ADC 前模拟触觉、矢量/剪切/摩擦读出、低冗余阵列、物理投影和容错迁移。
 
 - 今日必看：1 篇
-- 值得追踪：4 篇
+- 值得追踪：6 篇
 - 新增可评估 idea：5 个
 - 历史重复排除：0 篇
-- 期刊等级排除：65 篇
+- 期刊等级排除：66 篇
 
 ## 今日必看
 
 ### 1. [Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network](https://doi.org/10.1038/s41378-026-01355-5)
 
-- 来源：Microsystems & Nanoengineering；2026-06-15；评分 65/100
+- 来源：Microsystems & Nanoengineering；2026-06-15；评分 66/100
 - 为什么重要：可用于低离散/装配容差触觉界面的结构与对照设计；涉及低冗余阵列、空间特征或读出通道压缩
 - 摘要级结论：该工作提出一种无标记的视觉触觉传感器：在透明 PDMS/石墨-PDMS 双层弹性体中加工十字微沟槽，用受压后透光图案的变化在器件端放大接触特征，再由轻量卷积网络同时反演接触位置、法向位移和力。系统使用商用摄像头，可检测低于 5 mN 的力并达到毫米级单点空间分辨率；仅使用一层卷积的模型即可将平均绝对误差控制在 0.05 mm 以下。其核心不是单独提高材料灵敏度，而是通过微结构与算法协同设计降低后端特征提取负担。
 - 方法：This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performance while reducing computational load.
@@ -30,35 +30,34 @@
 | 评分 | 轨道 | 论文 | 建议 |
 |---:|---|---|---|
 | 65 | P4 | [Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception](https://doi.org/10.1002/smll.74524) | skim |
+| 65 | P6, P2, P5 | [Mechanical multiaxis force sensor for directly bridging sensing and fluidic actuation](https://doi.org/10.1126/sciadv.aeb8052) | skim |
 | 63 | P6, P1, P4 | [Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity](https://doi.org/10.1088/2631-7990/ae83ec) | skim |
 | 63 | P2, P4, P6 | [Triboelectric Wearable Sensors for Human-Centric Smart Electronics: From Self-Powered Sensing to Artificial Intelligence-Assisted Human–Machine Interface Systems](https://doi.org/10.1007/s40820-026-02263-z) | skim |
+| 63 | P2, P5, P6 | [Intelligent soft robotic gripper for non-destructive grasping and attribute recognition via multi-modal waveguide tactile sensors](https://doi.org/10.1038/s41378-026-01364-4) | skim |
 | 62 | P4 | [Biomimetic 3D Tactile Sensor System With Neuromorphic Encoding for Fascicle‐Level Feedback](https://doi.org/10.1002/aisy.70458) | skim |
 
 ## 方法与指标速览
 
 | 论文 | 方法（摘要证据） | 可核实数值 | 画像价值 |
 |---|---|---|---|
-| Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception | By constructing a force–frequency‐dependent conductance map and defining a reference current window, tactile conditions are encoded into stable state regimes, allowing threshold‐based discrimination based on accumulated  | 摘要未给出 | 涉及 in-sensor/物理计算或可编程触觉前端 |
 | Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network | This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performa | 5 mN、0.05 mm | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及低冗余阵列、空间特征或读出通道压缩 |
+| Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception | By constructing a force–frequency‐dependent conductance map and defining a reference current window, tactile conditions are encoded into stable state regimes, allowing threshold‐based discrimination based on accumulated  | 摘要未给出 | 涉及 in-sensor/物理计算或可编程触觉前端 |
+| Mechanical multiaxis force sensor for directly bridging sensing and fluidic actuation | Based on fluid transduction, ME-SOFS converts applied force into mechanical output for fluidic actuators. | 摘要未给出 | 提供机器人、可穿戴或电子皮肤系统任务证据；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出 |
 | Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity | Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signa | 6414 kPa、800 kPa、3.4 Pa、30 ms | 提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计 |
 | Triboelectric Wearable Sensors for Human-Centric Smart Electronics: From Self-Powered Sensing to Artificial Intelligence-Assisted Human–Machine Interface Systems | Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptabl | 摘要未给出 | 涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及 in-sensor/物理计算或可编程触觉前端 |
+| Intelligent soft robotic gripper for non-destructive grasping and attribute recognition via multi-modal waveguide tactile sensors | Herein, we present a soft robotic gripper integrated with slender elastic optical waveguide sensors (EOWS) and equipped with a closed-loop feedback control module to achieve intelligent grasping and object attribute reco | 0.273%、0.843%、1.064%、97% | 涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及坏点、漂移、跨器件迁移或少样本校准 |
 | Biomimetic 3D Tactile Sensor System With Neuromorphic Encoding for Fascicle‐Level Feedback | This study presents a biomimetic 3D tactile sensor system designed to convert skin‐like mechanical interactions into functionally selective neural stimulation patterns at the fascicle level. | 摘要未给出 | 涉及 in-sensor/物理计算或可编程触觉前端 |
 | Wearable Electro‐Thermal Haptic Stimulator Driven by a Self‐Powered Tactile Sensor for Realistic Stimulus Replication | Here, we present a stimulus‐replicating system that translates real‐world tactile events into biomimetic sensations. | 81.7%、72% | 提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计 |
+| High-resolution real-time mechanochromic tactile sensors | Finer resolutions can be achieved with vision-based tactile sensors using just a camera, although the computation required to transform raw images into three-dimensional contact maps inherently introduces latency. | 摘要未给出 | 涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据 |
+| Impedance characteristics in iontronic tactile sensors enabling intrinsic temperature-pressure decoupling | Based on these insights, a thermal‒mechanical decoupling method is proposed. | 99.4%、96.4% | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出 |
+| Novel Haptic Electronic Yarn for Wearable Textiles: Vibrotactile Feedback via Knitted Channels for Skin-Based Communication | By embedding miniature vibrotactile motors at the yarn level and employing robust encapsulation techniques, the design ensures durability and compatibility with everyday wear. | 5%、40% | 提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计 |
 | A Textile-Integrated Pixelated Tactile Sensor Array Based on Interwoven Heterogeneous Polymer Optical Fibers | 当前题录没有摘要，需打开原文核实方法。 | 摘要未给出 | 涉及低冗余阵列、空间特征或读出通道压缩 |
+| Transforming static interfaces into tactile channels with steerable transdermal foci | Here, we introduce transdermal all-directional targeting (TADT), a static-contact interface design strategy that converts passive grip surfaces into active tactile displays, allowing users to grasp stably while receiving | 30%、80% | 涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据 |
+| Concurrent control of natural and robotic limbs through a tactile-encoded brain-computer interface | Here, we propose a tactile-encoded BCI that leverages sensory afferents through a tactile-evoked P300 paradigm, allowing reliable decoding of supernumerary motor intentions even when superimposed with voluntary actions. | 摘要未给出 | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |
 
 ## 今日创新点候选
 
-### Idea 1：把论文机制映射为 3x3 可编程物理触觉投影核
-
-- 对应轨道：P4；分级：B
-- 来源论文：Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception
-- 核心假设：Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。
-- 最小实验：先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。
-- 对照：raw scanning；software projection；fixed hardware kernel；programmable hardware kernel
-- 成功指标：hardware-software R2；linearity；kernel switching error；ADC count；latency
-- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝
-
-### Idea 2：把论文中的结构机制转成偏移/旋转/接触半径容差地图
+### Idea 1：把论文中的结构机制转成偏移/旋转/接触半径容差地图
 
 - 对应轨道：P1；分级：B
 - 来源论文：Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network
@@ -68,7 +67,7 @@
 - 成功指标：CV；shift sensitivity；rotation sensitivity；contact-radius sensitivity；signal void ratio
 - 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝
 
-### Idea 3：把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照
+### Idea 2：把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照
 
 - 对应轨道：P3；分级：B
 - 来源论文：Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network
@@ -78,7 +77,7 @@
 - 成功指标：channel count；latency；power；edge/shape accuracy；direction accuracy
 - 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝
 
-### Idea 4：把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验
+### Idea 3：把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验
 
 - 对应轨道：P5；分级：B
 - 来源论文：Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network
@@ -88,10 +87,20 @@
 - 成功指标：accuracy degradation；feature drift；calibration samples；fault ratio；cross-device variance
 - 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝
 
+### Idea 4：把论文机制映射为 3x3 可编程物理触觉投影核
+
+- 对应轨道：P4；分级：B
+- 来源论文：Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception
+- 核心假设：Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。
+- 最小实验：先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。
+- 对照：raw scanning；software projection；fixed hardware kernel；programmable hardware kernel
+- 成功指标：hardware-software R2；linearity；kernel switching error；ADC count；latency
+- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝
+
 ### Idea 5：把论文系统任务压缩成不拖累主线的最小闭环演示
 
 - 对应轨道：P6；分级：B
-- 来源论文：Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity
+- 来源论文：Mechanical multiaxis force sensor for directly bridging sensing and fluidic actuation
 - 核心假设：一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。
 - 最小实验：选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。
 - 对照：raw signal；z-only；front-end vector/projection
@@ -100,41 +109,56 @@
 
 ## 检索记录
 
-| 来源 | 查询 | 命中 | 状态 |
-|---|---|---:|---|
-| arxiv | `electronic skin fault tolerant transferable calibration domain adaptation` | 4 | ok |
-| crossref | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |
-| openalex | `electronic skin fault tolerant transferable calibration domain adaptation` | 1 | ok |
-| semantic_scholar | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | failed |
-| arxiv | `electronic skin tactile array compressed readout low channel` | 4 | ok |
-| crossref | `electronic skin tactile array compressed readout low channel` | 25 | ok |
-| openalex | `electronic skin tactile array compressed readout low channel` | 7 | ok |
-| semantic_scholar | `electronic skin tactile array compressed readout low channel` | 0 | failed |
-| arxiv | `near-sensor analog computing tactile sensing electronic skin` | 1 | ok |
-| crossref | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |
-| openalex | `near-sensor analog computing tactile sensing electronic skin` | 17 | ok |
-| semantic_scholar | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |
-| crossref | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 25 | ok |
-| openalex | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 22 | ok |
-| semantic_scholar | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | failed |
-| arxiv | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |
-| crossref | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |
-| openalex | `tactile sensor physical computing analog computing programmable projection` | 5 | ok |
-| semantic_scholar | `tactile sensor physical computing analog computing programmable projection` | 0 | failed |
-| arxiv | `tactile sensor analog front-end in-sensor computing` | 25 | ok |
-| crossref | `tactile sensor analog front-end in-sensor computing` | 25 | ok |
-| openalex | `tactile sensor analog front-end in-sensor computing` | 21 | ok |
-| semantic_scholar | `tactile sensor analog front-end in-sensor computing` | 0 | failed |
-| crossref | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |
-| openalex | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 2 | ok |
-| semantic_scholar | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | failed |
-| crossref | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |
-| openalex | `flexible tactile sensor vector shear friction slip direction` | 2 | ok |
-| semantic_scholar | `flexible tactile sensor vector shear friction slip direction` | 0 | failed |
+| 来源 | 目标期刊 | 查询 | 命中 | 状态 |
+|---|---|---|---:|---|
+| arxiv | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 4 | ok |
+| crossref | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |
+| openalex | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 1 | ok |
+| semantic_scholar | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | failed |
+| arxiv | - | `electronic skin tactile array compressed readout low channel` | 4 | ok |
+| crossref | - | `electronic skin tactile array compressed readout low channel` | 25 | ok |
+| openalex | - | `electronic skin tactile array compressed readout low channel` | 7 | ok |
+| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |
+| arxiv | - | `near-sensor analog computing tactile sensing electronic skin` | 1 | ok |
+| crossref | - | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |
+| openalex | - | `near-sensor analog computing tactile sensing electronic skin` | 17 | ok |
+| semantic_scholar | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |
+| crossref | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 25 | ok |
+| openalex | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 22 | ok |
+| semantic_scholar | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | failed |
+| arxiv | - | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |
+| crossref | - | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |
+| openalex | - | `tactile sensor physical computing analog computing programmable projection` | 5 | ok |
+| semantic_scholar | - | `tactile sensor physical computing analog computing programmable projection` | 0 | ok |
+| arxiv | - | `tactile sensor analog front-end in-sensor computing` | 25 | ok |
+| crossref | - | `tactile sensor analog front-end in-sensor computing` | 25 | ok |
+| openalex | - | `tactile sensor analog front-end in-sensor computing` | 21 | ok |
+| semantic_scholar | - | `tactile sensor analog front-end in-sensor computing` | 0 | failed |
+| crossref | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |
+| openalex | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 2 | ok |
+| semantic_scholar | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | failed |
+| crossref | - | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |
+| openalex | - | `flexible tactile sensor vector shear friction slip direction` | 2 | ok |
+| semantic_scholar | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |
+| crossref | Cell Reports Physical Science | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 1 | ok |
+| crossref | Communications Engineering | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 0 | ok |
+| crossref | Communications Materials | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 3 | ok |
+| crossref | Device | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor computing` | 0 | ok |
+| crossref | Matter | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 3 | ok |
+| crossref | Microsystems & Nanoengineering | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 8 | ok |
+| crossref | Nature Biomedical Engineering | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 1 | ok |
+| crossref | Nature Communications | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 25 | ok |
+| crossref | Nature Electronics | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 3 | ok |
+| crossref | Nature Machine Intelligence | `tactile electronic skin neuromorphic sensor computing robotic perception` | 2 | ok |
+| crossref | Nature Materials | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 2 | ok |
+| crossref | Nature Nanotechnology | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 1 | ok |
+| crossref | npj Flexible Electronics | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 12 | ok |
+| crossref | Science Advances | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 16 | ok |
+| crossref | Science Robotics | `tactile electronic skin flexible sensor haptic robotic perception` | 0 | ok |
 
 ## 数据源异常
 
-- semantic_scholar：8 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
+- semantic_scholar：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
 
 ## 纳入与排除标准
 

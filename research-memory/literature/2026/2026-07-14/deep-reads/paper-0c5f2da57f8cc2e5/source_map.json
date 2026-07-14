@@ -1,0 +1,2404 @@
+{
+  "paper": {
+    "title": "Impedance characteristics in iontronic tactile sensors enabling intrinsic temperature-pressure decoupling",
+    "venue": "npj Flexible Electronics",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-07-14/papers/paper-0c5f2da57f8cc2e5.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": "npj | flexible electronics Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        18.09,
+        561.36,
+        35.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "Published in partnership with Nanjing Tech University",
+      "translation": "",
+      "bbox": [
+        39.69,
+        45.42,
+        218.32,
+        52.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Impedance characteristics in iontronic tactile sensors enabling intrinsic temperature-pressure decoupling",
+      "translation": "",
+      "bbox": [
+        39.69,
+        96.65,
+        561.31,
+        195.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "Check for updates",
+      "translation": "",
+      "bbox": [
+        494.59,
+        214.34,
+        561.24,
+        222.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "Funing Hou1, Chenxing Mu2, Qinghai Zhang1, Qianqian Tian2, Song Gao2, Mengqi Shi2, Gang Li2, Dianpeng Qi3, Wei Yu2, Jixiao Liu2 & Shijie Guo1,2",
+      "translation": "",
+      "bbox": [
+        39.69,
+        229.58,
+        438.34,
+        252.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "1234567890():,;",
+      "translation": "",
+      "bbox": [
+        6.87,
+        300.96,
+        11.85,
+        334.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "1234567890():,;",
+      "translation": "",
+      "bbox": [
+        17.56,
+        300.83,
+        22.54,
+        334.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "Iontronic tactile sensors intrinsically respond to both thermal and mechanical stimuli and hold promise for skin-like multimodal tactile sensing owing to their sensitive response. However, the decoupling of temperature and pressure remains elusive due to an unclear understanding of the thermal‒ mechanical‒coupled impedance characteristics, which hinders accurate pressure measurement under temperature fluctuations and limits the practical use of iontronic tactile sensors. This study elucidates the thermal-mechanical impedance characteristics of iontronic tactile sensors, by resolving nine impedance elements associated with sensor structure and ion migration pattern. Based on these insights, a thermal‒mechanical decoupling method is proposed. A temperature‒pressure linear relationship behind the impedance responses uncovers the intrinsic decoupling signatures: the pressure-insensitive root and the temperature-insensitive capacitance variation. These signatures enable high-accuracy decoupling with 99.4% for temperature and 96.4% for pressure, allowing the acquisition of temperature‒pressure distributions using tactile sensing arrays. The study lays a mechanistic foundation for iontronic sensors, opening a pathway for integrating additional modalities, such as strain and humidity, into iontronic tactile sensors.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        279.62,
+        476.2,
+        470.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "Resistive response15,16 can be employed to separate temperature and pressure,as implemented in piezoresistive sensors17,18. However, decoupling the two physical issues via resistance alone is fundamentally ill-posed, as both pressure and temperature may change resistance. As a result, stacked multilayer structures are usually used to solve the problem of temperature–pressure coupling in the design of iontronic tactile sensors, where a high-stiffness (pressure-insensitive) layer is implemented for temperature sensing19–24. An alternative design is introduced that combines a temperature-sensitive iontronic layer and a pressure-sensitive triboelectric layer into a two-ply configuration25. However, these stacking strategies suffer from bulky structures and require uniform multilayer materials and lamination.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        494.97,
+        561.33,
+        625.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "Efforts toward multimodal decoupling have leveraged the relaxation time (τ) of impedance in the iontronic tactile sensor26, where temperature and tension-induced strains are decoupled using the electrochemical impedance spectroscopy (EIS) with an equivalent circuit considering electrode resistance, bulk impedance, and ion-migrating-induced electric double layer (EDL) impedance. Under thermal‒mechanical stimuli",
+      "translation": "",
+      "bbox": [
+        306.14,
+        627.24,
+        561.25,
+        689.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "Iontronic tactile sensors, owing to their skin-like sensing mechanism and ultrahigh sensitivity to pressure1, have shown promising application prospects in object recognition2,3, human‒robot interaction4, prosthetic sensation5, virtual reality6, and neuromorphic computing7. They utilise the impedance change caused byionmovement8,where pressure modulates the connectivity of ion channels within the sensing layer (Fig. 1a, b), thereby decreasing resistance (R) and increasing capacitance (C). This mechanism leads to sensitive capacitive responses that are hundreds of times larger than those of conventional capacitive tactile sensors9–11. However, in practical application scenarios of pressure measurement, temperature fluctuations exist and also cause impedance changes. The impedance changes caused by temperature and pressure stimuli are intrinsically intertwined, and it is difficult to decouple them solely through signal processing, resulting in the inability of the sensor’s high sensitivity to achieve high-accuracy measurements under temperature fluctuations12–14. Decoupling temperature and pressure fromimpedanceresponsesprovidesa directroute toovercomethis problem and further endows iontronic tactile sensors with multimodal sensing capabilities.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        498.72,
+        294.84,
+        689.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 1,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": "1College of Intelligent Robotics and Advanced Manufacturing, Fudan University, Shanghai, China. 2School of Mechanical Engineering, Hebei University of Technology, Tianjin, China. 3School of Chemistry and Chemical Engineering, Harbin Institute of Technology, Harbin, China. e-mail: liujixiao@hebut.edu.cn; guoshijie@fudan.edu.cn",
+      "translation": "",
+      "bbox": [
+        39.69,
+        712.91,
+        556.59,
+        742.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 1,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 1",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 2,
+      "type": "paragraph",
+      "order": 14,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 2,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "responses. d DRT response derived from EIS, showing six magnitude (γ) peaks with relaxation times (τ), which indicates that temperature dissociates ions and that pressure alters ion channels. e Linearity derived from the DRT. The pressureinduced impedance point slides along the line determined by the temperature. f Intrinsic decoupling signatures. Root (q) and normalised capacitance variation (ΔC/ΔC0) are sensitive to temperature and pressure, respectively. g Spatialresolution adjustable (DPI dots per inch), thin, flexible, and scalable structures. h Decoupled temperature and pressure distributions.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        455.94,
+        561.24,
+        533.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 2,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": "Fig. 1 | Iontronic tactile sensor with intrinsic temperature‒pressure decoupling. a Sandwiched structure of the iontronic tactile sensor, consisting of a top electrode, an ionic film (the sensing layer), and a bottom electrode. The ionic film contains connected and disconnected ion channels, where electrically-driven ion motions generate multiple impedances. b Coupling process of multimodal impedance information. Under mechanical and thermal stimuli, either capacitance (C) or resistance (R) exhibits the same trend, which challenges the decoupling of temperature and pressure. c EIS response. Both temperature and pressure affect the measured impedance (real part Zre and imaginary part Zim), resulting in similar EIS",
+      "translation": "",
+      "bbox": [
+        39.68,
+        455.77,
+        294.79,
+        545.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 2,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "Supplementary Figs. 6–7) clarifies the influence of thermal and mechanical stimuli on impedances (Fig. 1c, d). In the complex impedance plane (real partZreandimaginarypartZim),atemperature‒pressurelinearity(T‒Pline) is derived from DRT characteristics (Fig. 1e): temperature-induced impedance exhibits a line, while pressure-induced impedance slides along the line. It is noted that the root of T‒P line (Fig. 1f) serves as a temperature indicator, and the normalised capacitance variation (ΔC/ΔC0) serves as a pressure indicator. These characteristics are intrinsic, requiring no elaborate structure fabrication (Fig. 1g). Based on the above findings, decoupling is conducted on a sensor array (Fig. 1h and Supplementary Movie 1).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        562.36,
+        561.37,
+        668.35
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 2,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": "(Supplementary Figs. 1–4, and Supplementary Table 1), decoupling temperature and pressure needs to account for more impedances related to ion migration, since pressure is applied along the ion-migrating direction (Supplementary Note 1 and Supplementary Fig. 5). Distribution of relaxation times (DRT) provides a tool for separating multiple impedances based on each impedance’s relaxation time27–30, but the impedance distribution in iontronic tactile sensors remains poorly understood. Data-driven deep learning methods provide shortcuts for modelling the relationship between impedance responses and multimodal stimuli31–33, but exhaustive data acquisition across all operating conditions is impractical. Consequently, a mechanistic understanding of impedance characteristics under pressure and temperature remains lacking, which limits the temperature–pressure decoupling of iontronic tactile sensors.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        562.36,
+        294.94,
+        700.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 2,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "A comparison of multimodal iontronic tactile sensors is provided in Supplementary Table 2, which shows that intrinsic temperature‒pressure decoupling is successfully achieved. Thus, this study establishes a fundamental strategy for accurately measuring pressure under temperature fluctuations, and furthermore, for measuring temperature or pressure without mutual interference. The findings in this study lay a foundation for the development of bionic tactile sensing systems.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        670.1,
+        561.28,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 2,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": "This study reveals the fundamental impedance characteristics associated with pressure and temperature. Based on the EIS of the iontronic tactile sensor with a simple electrode‒electrolyte‒electrode structure (Fig. 1a and Supplementary Fig. 1), the DRT (Supplementary Note 2,",
+      "translation": "",
+      "bbox": [
+        39.69,
+        702.19,
+        294.81,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 2,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 2",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 3,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 3,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "specific part of the impedance. g Peak evolution with concentration. h Heat-induced ion dissociation, equivalent to increasing concentration. i Continuous peak evolution under combined concentration and temperature conditions, showing an evolving consistency between the DRT and the equivalent circuit. j Impedance map in DRT. k Impedance variation with voltage. Peaks with longer relaxation times show higher sensitivity to voltage, where the sensitivity is evaluated by Δγ/(γ0 ∙Δu) = (γ1V-γ0.2V)/(γ0.2V ∙1.8 V) at each peak. l Impedance variation with ionic film thickness. m Consistent sensitivity across all the peaks to electrode width.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        537.92,
+        561.23,
+        615.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 3,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "Fig. 2 |Ion-migrating pattern and impedance variation with physical parameters. a Simulated pattern of intrafilm ion migration under step signal excitation. The curve represents the mean molarity cmol at each depth. Dynamic ion behaviours indicate specific impedances: interfacial ion dispersion Z2 and intrapore ion transfer Z3. The scattered distribution contributes weakly to the impedance response. Simulated pattern under sine signal excitation, indicating ion polarisation Z5 (b), counterion exchange Z4 (c), and ion diffusion Z6 (d). e Ion-migrating pattern mapped to hierarchical AC impedances, distributed across the cross-section of the iontronic tactile sensor. f Equivalent circuit model. The superscript of Z indicates the",
+      "translation": "",
+      "bbox": [
+        39.68,
+        538.2,
+        294.82,
+        625.68
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 3,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": "theion-migratingpatterncanbedescribedbyanequivalentcircuitwithnine impedance elements (Z1-Z8 and R∞).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        648.67,
+        561.19,
+        669.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 3,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": "Results Impedance representation of the ion-migrating pattern Simulation of ion migration in an iontronic tactile sensor (Fig. 2a–d) reveals that ions move under electric fields to form a migrating pattern (Fig. 2e). Thermal‒mechanical stimuli affect the ion-migrating pattern, leading to different impedance characteristics. Hence, the foundation for extracting multimodal tactile information lies in mapping the ion-migrating pattern to impedance distribution. As shown in Fig. 2e, f, each ion-migrating behaviour occupies a distinct layer, mapped by a specific impedance. Ultimately,",
+      "translation": "",
+      "bbox": [
+        39.68,
+        647.24,
+        294.82,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 3,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "Some of the impedances are determined by PVDF structure, including the dielectric PVDF skeleton (Z8), the electrode‒PVDF contact (Z1), and the PVDF‒solvent contact (Z7). Constrained by ion-migrating speed, the intrafilm impedances have a longer relaxation time (τ) than the solidcontact impedance Z1 (τ > τ1), which facilitates the visualisation of the intrafilm impedances. Relaxation time τ reflects the duration of energy accumulation and dissipation. Hence, each ion-migrating behaviour",
+      "translation": "",
+      "bbox": [
+        306.14,
+        670.1,
+        561.29,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 3,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 3",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 4,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 4,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": "evolution, which contains six processes evolving in accordance with the equivalentcircuit.Itshouldbenotedthateachconcentrationcorrespondsto anindependentlyfabricatedionicfilm.Despitethis,theDRTpeakevolution in Fig. 2g and Supplementary Fig. 9 exhibits consistent trends across different samples, indicating that the observed impedance behaviours are reproducible and governed by intrinsic ion-migration mechanisms rather than sample-specific variations.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        48.91,
+        561.29,
+        122.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 4,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "corresponds to a specific impedance, which can be indicated by the pattern of dissociated-ion molarity (cmol) (Supplementary Movie 2). Regarding the case with short τ, a step signal is used to capture the transient ion behaviours (Fig. 2a), where counterions transfer within channel pores (Z3) and ions disperse on the (electrode‒film) interface (Z2). Notably, although intrafilm counterion transfer produces a scattered distribution in Fig. 2a, this distribution does not significantly change the mean ion concentration (Δcmol = 0) and therefore contributes weakly to the impedance response. Thus, Z3 is associated with counterion transfer in ion channels near the interface. Additionally, the migrating stabilisation on the geometrically constrained interface is faster than that in the intrafilm space (τ2 < τ3).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        48.33,
+        294.82,
+        166.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 4,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "As shown in Fig. 2i, Supplementary Note 3, and Supplementary Tables 3–5, when the concentration increases, the trends of processes (1) and (6) decrease due to the ion-quantity-driven increase in conductance, and process (2) transitions as the interfacial solvent-filled space is gradually occupied by ions. Additionally, processes (3)-(5) exhibit splits with decreasing relaxation time τ, as the close-to-interface impedances decrease more significantly than the far-from-interface impedances do (Supplementary Fig. 8e, f). A simulation is subsequently conducted to explain the evolution, as shown in Supplementary Fig. 10. According to the corresponding equivalent-circuit evolution in Fig. 2i and Supplementary Fig. 10, this peak evolution reflects a change in the relative contributions of parallel impedances. As concentration increases, the close-to-interface impedance with a shorter relaxation time becomes more prominent, causing the DRT peak to evolve toward the shorter-τ region. The consistency between the simulated result (Supplementary Fig. 10i) and the experiment in Fig. 2k supports the explanation of the peak evolution.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        123.85,
+        561.35,
+        293.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 4,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "Subsequent behaviours with τ > τ3 are observed using a sine signal. During a half period (with a positive electric field), extensive ions polarise towards the electrode to balance the electric field (Z5 in Fig. 2b). When the electric field is reversed, intensive counterion exchange occurs at the interface (Z4 in Fig. 2c), and the finite ion-migration speed maintains the intrafilm state balanced by Z5. Hence, the electric field reversion drives the interface ions more forcefully than the intrafilm ions do, resulting in a faster response of Z4 than Z5 (τ4 < τ5). After a whole sine period, the concentration-gradient-driven ion diffusion (Z6) emerges in Fig. 2d (extending away from the interface), which refreshes the ion distribution disorderedbytheelectricfield,causingalongerrelaxationtimeofτ6thanthe electric-excited impedances (τ5 < τ6).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        166.14,
+        294.86,
+        294.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 4,
+      "type": "paragraph",
+      "order": 34,
+      "original_text": "Thus, under the alternating current (AC) source, the impedance hierarchyandthecorrespondingequivalentcircuitareorganisedasFig.2e,f, wherethehierarchyofZ4-Z6isobtainedvia Fig.2d.Notably,ionsdisperseat the interface (attributed to Z2), so Z5 does not reach the interface. Since Fig. 2a shows that the intrapore-ion-transfer Z3 occupies the channel where counterionsexchange,theZ3undertheACsourceoverlapsapartoftheionexchange Z4. Then, the ions within Z3 near the interface disperse at the interface,formingZ2.Additionally,Z7islocatedattheinterface,sopartofZ2 parallels Z7. The impedances Z2-Z7 are contained within the PVDF-based film, so they are parallel with the dielectric-PVDF Z8. Then, the interfacecontact Z1 is in series with the film impedances Z2-Z8. Additionally, the conduction of the ionic film is represented by the electrolyte resistance(R∞), which is related to the bulk resistance at infinite frequency (f∞), where Z1-Z8 are shortcircuits.Hence, R∞is in serieswith theimpedance networkformed by Z1-Z8.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        295.24,
+        294.89,
+        454.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 4,
+      "type": "paragraph",
+      "order": 35,
+      "original_text": "The DRT at a relatively high concentration (20%) is shown in Fig. 2j and Supplementary Fig. 11. Based on the final state of impedance evolution in Fig. 2g–i, the DRT peaks τ1-τ6 are attributed to Z1-Z6. As a result, when Fig.2jiscomparedwithFig.2e,theimpedancefartherfromtheinterfacehas a longer relaxation time. As the measuring voltage increases, the DRT peaks decrease (Fig. 2k), and the peak at a longer τ is more sensitive to voltage, as explained in Supplementary Fig. 8d, e. The DRT analyses of measuring voltage indicate that increasing voltage reduces the magnitude of the impedance elements, while preserving the peak distribution and relaxationtime order, suggesting that voltage modulates the response amplitude without substantially altering the underlying ion-transport mechanisms. As the ionic film thickness increases (Fig. 2l), the electric field becomes weak, which causes an increase in impedance; additionally, the ion channels are prolonged, which hinders ion transport to the interface, leading to a peak evolution similar to the concentration-decreasing evolution in Fig. 2g. As the electrode width increases (Fig. 2m), all impedance layers share an identical area, resulting in similar sensitivities across the peaks. As shown in Supplementary Fig. 12, the bulk R∞response follows the resistance equation R = ρd/w2, where ρ is the resistivity.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        295.24,
+        561.27,
+        496.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 4,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "Factors affecting impedance DRTisemployedtoestimateimpedancemagnitudesbasedonaconsecutive circuit model and derived from EIS, as demonstrated in Supplementary Fig. 8a–c. Additionally, the DRT at 0%, shown in Fig. 2g, represents the pure PVDF impedance Z8, which is significantly larger (near 108 Ω) than the other impedances. Hence, Z8, as a parallel impedance, is neglected in this study.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        466.32,
+        294.79,
+        539.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 4,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "Thermal‒mechanical coupling mechanism The thermal‒mechanical coupling mechanism is illustrated in Fig. 3a, b, showing the relationship between impedance characteristics and multimodal responses, where temperature dissociates ions in channels. Notably, the impedance distribution stabilises when ion concentration exceeds 20% (Fig.2g).Therefore,inthisstudy,atactilesensorwitha25%concentrationis selected to observe impedance response characteristics, thereby preventing impedance distortion at low temperatures. The responses to temperature are shown in Fig. 3d, where the impedance decreases across τ1-τ4 but increases across τ5-τ6 due to ion motion activation at high concentrations (Supplementary Fig. 8f, g). Additionally, the decrease in τ1 suggested that a high concentration promoted interfacial charge transfer. The heat-induced increase in ions hinders ion motion in the channel and at the interface, which delays the balance of states, resulting in the rightward shift of peaks τ2-τ6.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        509.04,
+        561.36,
+        669.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 4,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "To elucidate the impedance distributions across the ionic film, this study investigates the effects of key physical factors, including the concentration (c), voltage (u), ionic film thickness (d), and electrode width (w). Notably, the simulations at 5% concentration in Fig. 2a–d were used to qualitatively visualise the initial ion-migration behaviours and to introduce the possible origins of the impedance elements, whereas the impedance evolution from 5 to 25% was analysed based on the experimental DRT peak evolution in Fig. 2g–i. As ion concentration increases, continuous peakevolving trajectories are observed (Fig. 2g). However, the limited step size of concentration results in sparse DRT curves, so partial evolution remains untracked. Although the ionic film contains ions at a specific concentration, the electric field drives the migration of dissociated ions rather than undissociated species. Hence, to improve the peak-evolving resolution, the thermal effect is used to refine the step size of the dissociated concentration (Fig. 2h). Supplementary Fig. 9a–f shows the consistency between the lowconcentration high-temperature DRTs and the high-concentration lowtemperature DRTs, which provides direct evidence that temperature affects iontronic tactile sensor impedances by dissociating ions. Representing the 2D projection in Supplementary Fig. 9g, Fig. 2i shows the complete peak",
+      "translation": "",
+      "bbox": [
+        39.69,
+        540.99,
+        294.89,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 4,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": "When a pressure is applied, as shown in Supplementary Fig. 13a–d, the ionic film becomes thinner, but this deformation is not significant (with a strain of −1.0% under 200 kPa) due to the high stiffness of the ionic film (with a Young’s modulus of ~20 MPa), which suggests that the impedance response to pressure is not determined by the distance between the electrodes. However, the compressed structure induces changes in the connectivity of inner ion channels, increasing conductance with a τ-",
+      "translation": "",
+      "bbox": [
+        306.14,
+        669.51,
+        561.29,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 4,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 4",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 5,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 5,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": "Fig. 3 | Impedance response to temperature and pressure. a Schematic of the ion distribution in the film channels. b Multimodal coupling mechanism. Z0 represents the impedance of the channel element. The temperature dissociates ions, and the pressure increases the quantity of parallel channels. c Linear response (T‒P line), determined by the disparate impedance-response characteristics to temperature and pressure. DRT peak responses under various temperatures (d) and pressures (e). f Electrolyte resistance R∞response, showing greater sensitivity to temperature than to pressure. g Equivalent measurement circuit and theoretical pressure response at",
+      "translation": "",
+      "bbox": [
+        39.68,
+        553.39,
+        294.76,
+        630.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 5,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "frequency f. As the pressure increases, the T‒P line forms due to the proportional decrease in impedance. Linear slope (h) and root (i) affected by temperature. The root and slope converge at f1 and f2, respectively. j Singularity analysis. For f ∈(f1, f2], different temperature‒pressure conditions cannot result in the same impedance. k Linear fit at eigenfrequency f = f2. Slope k converges to kmean, whereas root q decreases with heating. l Temperature-invariant linearity with a pressureproportional response. The error bars represent the standard deviation of three tests using a tactile sensor.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        551.62,
+        561.25,
+        631.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 5,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": "hindered, Z2 is dominated by the process where interfacial ions occupy the solvent space, leading to a leftward shift of τ2 under low pressure or low temperature.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        646.29,
+        561.26,
+        679.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 5,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "independentratiorG(SupplementaryNote4andSupplementaryFig.13e,f), which leads to proportional impedance decreases across τ2-τ6 (Fig. 3e). Additionally, τ1 is insensitive to pressure due to the stable interface-contact state, and pressure does not affect the quantity of dissociated ions in each channel, thus maintaining ion motion and relaxation times τ3-τ6. However, the pressure-induced increase in the quantity of channels results in the transport of more ions to reach the space-constrained interface, which hinders interfacial ion motion, causing a rightward shift in τ2, similar to the effect of heating. Conversely, before interfacial ion motion is severely",
+      "translation": "",
+      "bbox": [
+        39.68,
+        646.29,
+        294.85,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 5,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "Furthermore, at f∞, no ion passes through the channels (Supplementary Fig. 13i–l), so the pressure-induced channel conductivity does not affect the impedance, resulting in a pressure-insensitive R∞(Fig. 3f). Hence, the temperature can potentially be decoupled using R∞. However, as a theoretically fitted result at f∞, R∞is impractical for direct measurement.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        678.43,
+        561.26,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 5,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 5",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 6,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 6,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "(supplementary equation (63)), where Rerror is the relative error. The error bars represent the standard deviation of five tests from five tactile sensors. e Decoupling under stable pressure. f Decoupling under stable temperature. g Decoupling under both temperature and pressure variations.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        402.46,
+        561.2,
+        442.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 6,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "Fig. 4 | Principle of decoupling temperature and pressure. a Schematic of the decoupling principle based on the T-P line. b Exponential relationship between root (q) and temperature (T), where the root is insensitive to pressure. c Linear relationship between ΔC/ΔC0 and pressure (p), where ΔC/ΔC0 is insensitive to temperature. d Static decoupling performance. The accuracy (a) is defined as a = 1-Rerror",
+      "translation": "",
+      "bbox": [
+        39.68,
+        404.23,
+        294.77,
+        452.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 6,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "high samplingrate, the measuringfrequencyisset equaltof2,where theroot is sensitive to temperature and the stable slope provides a constant parameter for decouplingmodalities. Furthermore,similartrends were observed at different concentrations (Supplementary Fig. 15), where f2 increased with increasing concentration (Supplementary Fig. 16), suggesting that the frequencyshould be tuned to match the stableslope ata specific concentration. According to the experimental results shown in Fig. 3k, l, the Zim-Zre relationship remains linear (T‒P line) across temperature-pressure conditions, where the T‒P line is translated by temperature (Fig. 3k). Additionally, the pressure-proportional characteristic was also reflected in Fig. 3l, which suggests a linear relationship between ΔC/ΔC0 and pressure, as explained in Supplementary Note 5. Furthermore, the results of repeated tests conducted over 15 days are 94.3% consistent, indicating long-term stability (Supplementary Fig. 17a). However, although the linearity remains stable under pressuresupto1 MPa(SupplementaryFig.17b),deviationmayoccurunder miniscule pressures (<8.7 kPa) due to poor interfacial contact (Supplementary Fig. 13g, h), which can be mitigated by applying preload or tight integration.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        474.91,
+        561.38,
+        668.35
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 6,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "The above thermal‒mechanical coupling mechanisms suggest that all the impedances are sensitive to temperature. However, some impedances with structural stability, such as the electrode‒film interfacial impedance Z1 and the electrolyte resistance R∞, are insensitive to pressure. These different sensitivitiestotemperatureandpressureprovidethephysicalfoundationfor decoupling temperature and pressure. Although DRT reveals the different sensitivities of impedance elements to temperature and pressure, directly resolvingmultipleimpedanceelements isnotconvenientforpracticaltactile sensing. Therefore, this study further extracts the linearity inherent in the impedance response (Fig. 3c), which condenses the multiple-impedance responses into simplified measurable signatures for temperature–pressure decoupling. As shown in Fig. 3g, when the measuring frequency (f) equals the relaxation frequency (1/(2πτy)) of an impedance Zy, Zy exhibits an impedance arc with a radius of Ry/2. The impedances with lower τ are equivalent to a resistance Re, and the impedances with longer τ are shortcircuited. The T‒P line subsequently emerges as the impedances decrease in proportion to the pressure. The slope and the root are affected by temperature(Fig.3h,i),showingtwo eigenfrequencies:f1 (maintainingthe root) and f2 (maintaining the slope). A detailed derivation is provided in Supplementary Note 5 and Supplementary Fig. 14, suggesting that the root is dominated bythe pressure-insensitive impedance (Zins) and thattheslope is caused by the pressure-induced variations in Re and Zy.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        476.7,
+        294.84,
+        712.68
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 6,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "According to the frequency-induced trends of the slope and the root, singularities do not exist within the range (f1, f2], i.e., different temperature‒ pressure conditions cannot yield the same impedance (Fig. 3j). To ensure a",
+      "translation": "",
+      "bbox": [
+        39.68,
+        712.9,
+        294.81,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 6,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "Temperature‒pressure decoupling The T‒P line enables temperature–pressure decoupling from individual impedance response, as shown in Fig. 4a. The decoupling process employs two calibrated functions: an exponential function between the root and temperature (Fig. 4b), and a linear function between ΔC/ΔC0 and pressure (Fig. 4c). Thus, the root and ΔC/ΔC0 are the intrinsic signatures for",
+      "translation": "",
+      "bbox": [
+        306.14,
+        680.43,
+        561.3,
+        744.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 6,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 6",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 7,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 7,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "interference, and a commercial thermometer provides the temperature reference (Tc). The gripper fixes the motor when holding the steel cube and releases when the preset safety threshold is exceeded. h Severe force increasing under thermal interference without decoupling. i Measured pressure increasing while heating. j Decoupled result. The measured force remains stable while the temperature is monitored. k Decoupled temperature‒pressure distribution, while measured pressure remains stable.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        391.2,
+        561.21,
+        458.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 7,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "Fig. 5 | Performance and demonstration with Tactile sensing arrays. a Setup for weighting. Decoupled spatial distributions of temperature (b) and pressure (c) using an impedance-separating readout circuit42. Mean contact temperature (Tdcp) and force (Fdcp) are consistent with applied stimuli. d Setup for finger pressing, where the commercial sensor measures normal force (Fc). e Acquired temporal temperature‒ pressure signal with pressure stages of 5–20 N. The dotted red line represents the mean contact temperature. f Spatial variations of contact area and pressure during finger pressing. g Setup for robotic gripping, where hot air generates thermal",
+      "translation": "",
+      "bbox": [
+        39.68,
+        390.91,
+        294.8,
+        468.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 7,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "and 11.2 kPa (Fig. 4g), and Supplementary Movie 3 demonstrates the correspondence between the impedance and the decoupled result, which verifies the effectiveness of the intrinsic signatures in the decoupling modalities.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        487.99,
+        561.28,
+        529.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 7,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "decoupling temperature and pressure, respectively. Although the Zim-Zre relationship in Fig. 3l can also decouple pressure, the linear ΔC/ΔC0-pressurerelationshipdoesnotdecreasethe sensitivitytopressure.Asaresult,the temperature (20–60 °C) and pressure (40–200 kPa) were decoupled with accuracies of 99.4% and 96.4%, respectively (Fig. 4d). The detailed calibrating and decoupling processes are provided in Supplementary Note 6 and Supplementary Fig. 18.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        485.62,
+        294.8,
+        561.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 7,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "To analyse the dynamic decoupling response, variable thermal and mechanical stimuli were applied. The decoupling cycle rate reached 8.6 Hz using the impedance analyser and a MATLAB program, which can be further improved by optimising the signal-acquisition hardware, the calibration functions, and the decoupling algorithm. Under stable pressure, the temperature is accurately decoupled with a mean error of less than 1 °C. However, pressure drift emerges (Fig. 4e and Supplementary Fig. 19a–d) due to the creep properties of the materials. At a stable temperature of 20°C, the decoupled pressure aligns with the applied pressure (Fig. 4f). However, as the temperature increases, the alignment deteriorates (Supplementary Fig. 19e–h), as temperature can affect material creep. Notably, the high temperature-decoupling accuracies across the test conditions suggest that, during the drift of the decoupled pressure, the impedance is still located on the T‒P line determined by the applied temperature, which can guide future improvements in pressure measurement. Although the current pressure measurement still faces conventional material mechanics limitations, both temperature and pressure variations are acquired with mean errors of 0.5 °C",
+      "translation": "",
+      "bbox": [
+        39.68,
+        562.95,
+        294.86,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 7,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "Development of sensing arrays for measuring temperature‒ pressure distribution With an impedance-separating array readout circuit41, the single-unit decoupling principle can be extended to a tactile sensing array to measure temperature‒pressure distributions (Fig. 5a–c, Supplementary Note 7, and Supplementary Figs. 20–22). The 8 × 8 tactile sensor, with 5-mm-wide and 1-mm-gap electrodes, exhibited 86.0% consistency across its sensing units (Supplementary Fig. 22a–d). When pressed by blocks with “C”, “N”, and “O” shapes, the tactile distribution shows corresponding horizontal–vertical, diagonal, and circular profiles, and the decoupled mean contact temperature and force are consistent with the applied stimuli (Supplementary Fig. 23). This sensing capability can be scaled to an array of 32 × 32 (Supplementary Fig. 24). However, since the tactile sensor is calibrated based on a unit completely in contact with the pressing head, the incomplete-contact units shown in Supplementary Fig. 21c can affect the decoupling accuracy, and these units supporting small force possess large impedance.Hence,underastableforce,asheataggravatespressuredriftand reduces the minimum detectable pressure (Supplementary Fig. 22e,f), more incomplete-contact units are recruited, resulting in the decoupled force",
+      "translation": "",
+      "bbox": [
+        306.14,
+        541.19,
+        561.3,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 7,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 7",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 8,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 8,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "increasing more significantly with heating than without heating (Supplementary Fig. 25 and Supplementary Movie 4).",
+      "translation": "",
+      "bbox": [
+        39.69,
+        48.33,
+        294.83,
+        68.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 8,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "Improving the spatial resolution is a way to mitigate the incompletecontact effect. Owing to the intrinsic decoupling signatures, the multimodal tactile sensor does not require the integration of individual temperaturesensing or pressure-sensing units. Hence, higher spatial resolution can be easily achieved by narrowing the width or gap of the electrode. A 16 × 16 tactile sensor, with 1-mm-wide and 1-mm-gap electrodes, was used to capture finger contact information (Fig. 5d–f, Supplementary Fig. 26, and Supplementary Movie 5). The decoupled temperature remains stable under force variation, which is attributed tothe constant temperature of the finger. Additionally, with pressing, both the local pressure and the contact area increase due to the elastic structure of the finger. Repeated tests varying with applied force are recorded in Supplementary Fig. 27, and the decoupled force is aligned with commercial sensor measurements, showing the potential for analysing tactile‒motorial biomechanics during human interactions.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        70.34,
+        294.88,
+        229.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 8,
+      "type": "paragraph",
+      "order": 67,
+      "original_text": "migration processes may involve coupled contributions, and more detailed relationships between ion dynamics and impedance elements remain to be further revealed. Future work will develop more refined equivalent circuits, dedicated experimental methods for directly observing local ion migration, and strategies for independently modulating individual impedance elements. The performance of the thermostat and the readout circuit will be improved to enhance the working range and dynamic response. Since temperature can affect material mechanical properties such as swelling and creep,thepressureresponse maydeteriorate atelevated temperaturesdue to creep-induced drift and pressure nonlinearity. Therefore, long-term durability under cyclic loading and continuous operation remains to be systematically evaluated. These issues can be mitigated by improving the anticreep mechanical stability of the ionic film (e.g., optimising the polymer network and encapsulation structure) and establishing a pressurecorrection model calibrated under different temperatures and loading durations to compensate for pressure nonlinearity and time-dependent drift. As the eigenfrequency shifts with ionic concentration, factors such as solvent evaporation, humidity, and material ageing can alter the eigenfrequency by changing the ionic concentration; a tight encapsulation can mitigate this influence. Additional latent factors affecting the decoupling signatures will be examined to improve the reliability. Although this study uses a PVDF-HFP/EMIM-TFSI ionic film as a model system, the proposed decoupling principle may be applicable to other iontronic systems with distinguishable thermal and mechanical impedance responses, while the DRT peak distribution, eigenfrequency, T–P line, and calibration functions should be recalibrated for each specific formulation.",
+      "translation": "",
+      "bbox": [
+        306.15,
+        48.91,
+        561.37,
+        325.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 8,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "Finally, this study demonstrates the necessity of decoupling iontronic tactile sensors through robot gripping experiments (Fig. 5g–k, Supplementary Fig. 28, and Supplementary Movie 6). Iontronic tactile sensors typicallymeasurepressurewhileneglectingthermalinterference34–36anduse capacitance (calibrated at a fixed temperature) to quantify the magnitude of pressure, as shown in Supplementary Fig. 29. This approach attributes all capacitance enhancements to pressure contributions. However, thermal stimuli also contribute to the capacitance response, which can cause significant pressure-measurement errors (up to 778.0%). Hence, without decoupling, when the gripper with a fixed aperture (maintaining a stable force) is heated, only force is obtained and culminates to the preset safety thresholdtriggeringtoreleasethegrippedcube(Fig.5h).AsshowninFig.5i, heating causes the mean pressure to increase ~2-fold (163.5 kPa to 324.1 kPa). In contrast, with decoupling, the pressure remains stable, which maintains the force(Fig. 5j–k). However, the force slightly increases because of the marginal units recruited with heating, due to the limited range of the readout circuit. Nevertheless, temperature and pressure are synchronously obtained.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        230.95,
+        294.88,
+        422.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 8,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "While this study establishes a principle for temperature‒pressure decoupling, future efforts will focus on systematically integrating multimodal iontronic sensing into practical applications. The proposed intrinsic decoupling principle may be extended to thinner multimodal sensors for space-constrained applications such as robotic skin and invasive biomedical monitoring, while the sensor structure and calibration process may require optimisation after thickness reduction. This principle also provides guidance for developing multimodal tactile sensors with higher spatial resolution (even to fibre morphology). Furthermore, the distinct stimuli‒ response characteristics among the multiple impedance elements suggest opportunities to extend iontronic tactile sensing to additional modalities such as strain and humidity.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        326.73,
+        561.28,
+        454.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 8,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "Discussion By revealing the fundamental impedance characteristics associated with pressure and temperature, this study addresses a long-standing challenge in iontronic tactile sensing—achieving accurate pressure measurements under temperature fluctuations while enabling synchronous multimodal sensing. By resolving the ion-migrating pattern into nine impedances, an equivalent circuit model has been established to capture the whole impedance landscape of the iontronic tactile sensor. Subsequent DRT analysis reveals the influence of physical factors on impedances, thereby elucidating how thermal and mechanicalstimuli affect impedances. The intrinsic correlation amongionmigration,impedancecharacteristics,andmultimodalresponses enables accurate acquisition of both temperature and pressure information using a single sensing layer. Moreover, a trial development of sensing arrays demonstrates the prospects of this study in biomechanics and robotics, highlighting the necessity of intrinsic multimodal decoupling for practical iontronic tactile sensors.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        433.06,
+        294.89,
+        604.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 8,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": "Methods Preparation of the ionic film The preparation procedure is illustrated in Supplementary Fig. 1. Poly(- vinylidene fluoride-co-hexafluoropropylene) (PVDF-HFP, Shanghai Aichun Biological Technology) and the ionic liquid 1-ethyl-3methylimidazolium bis((trifluoromethyl)sulphonyl)imide (EMIM-TFSI, Lanzhou Greanchem) were mixed with the solvent N,N-dimethylacetamide (DMAC, Xilong Scientific). The weight ratio of PVDF-HFP to DMAC was 1:4, ensuring complete dissolution of the PVDF-HFP. The ionic film concentration was defined as the weight percentage (%) of the ionic liquid relative to the total weight of the PVDF-HFP and the ionic liquid, i.e., the PVDF-ion concentration. The mixture was homogenised by stirring at 300 rpm for 2 h in a 60 °C silicone oil bath using a stirrer (DF-101S, Shanghai LICHEN). Then, the solution was poured into a mould fabricated by adhering nanotapes (1 mm thickness, Sitoo) to the adhesive surface of a polyethene terephthalate (PET) release film (100 μm thickness, Huahong). The mould height could be adjusted by stacking multiple nanotape layers. After the surface of the poured solution was scraped, the solution was degassed at a pressure of −0.05 MPa for 5 h in a vacuum chamber (DZF6050A, Shanghai SHKTYQ). The solution was then thermally cured at 120 °C for 2 h on a heating plate (TBJ-X3-XB, NBchao) to evaporate the DMAC. Finally, the ionic film was peeled off the PET.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        465.15,
+        561.4,
+        700.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 8,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "As specific structural design can affect sensing performance, in the future, the temperature-pressure decoupling performance will be improved by optimising the sensor structure. While preliminary simulations have determined general ion behaviours, a detailed quantitative simulation covering different ionic concentrations would be valuable for further analysing ion behaviours, and comprehensive multiphysics simulations remain essential to provide criteria for designing tactile sensors with controllable impedance responses. The proposed equivalent circuit provides a mechanism-guided framework for understanding the impedance distribution of iontronic tactile sensors. Although the impedance elements are associated withdifferention-migrationbehavioursbased ontheconsistency among finite-element simulation, DRT peak evolution, and theoretical analysis, the correspondence between impedance elements and local ion-",
+      "translation": "",
+      "bbox": [
+        39.69,
+        605.22,
+        294.92,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 8,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "Characterisation of the ionic film structure The structural images of the ionic films shown in Supplementary Fig. 2a were captured using a microscope (Eclipse TI-S, Nikon). To assess the",
+      "translation": "",
+      "bbox": [
+        306.14,
+        712.52,
+        561.29,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 8,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 8",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 9,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 9,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "stability of the structure under pressure, a 300-μm-thick ionic film was stacked on a polyurethane (PU) substrate. A 200 g weight was then applied to the ionic film. Consequently, if the connection of the PVDF molecular chains is loose, indicating insufficient structural stability, the solution encapsulated within the ionic film will leak out, producing a visible imprint on the PU substrate. This study set the PVDF-ion concentration to below 30% to ensure the structural stability of the ionic film. This loading method qualitatively assesses the ionic film’s ability to withstand pressure, which reflects the influence of concentration on the structure of the ionic film. It provides a basic method for future analysis and optimisation of film stability under varying temperature or pressure conditions.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        48.33,
+        294.91,
+        164.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 9,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": "conductor reached a preset temperature threshold, with the feedback of a temperature probe (XH-T110-NTC-10 k, CHADEPINGGUO). Cooling and heating modes (controlled by the parameter “P1” denoted in the controller) were switched by reversing the current polarity. The thermostat was activated when the actual temperature deviated beyond a hysteresis (“P2” denoted in the controller) from the preset temperature threshold, as shown in Supplementary Fig. 3d. Excess heat was dissipated by an aluminium heatsink (100 × 90 × 25 mm, Zave) with a fan (9025–12 V, Zave). The thermostat was powered by a 12 V switching supply (S-200-12, Weizhen). The control parameter settings for the target temperatures in this study are provided in Supplementary Table 1, which is an empirical reference at a room temperature of 23 °C and should be adjusted for specific circumstances. The temperature accuracy was evaluated using a thermometer (YET610L, YOWEXA) with a surface temperature probe (K-type, ZOTO). The tactile sensor was adhered to the thermal conductor, using double-sided tape (−40 to 80 °C temperature tolerance, 9080, 3 M) to receive thermal stimuli.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        48.91,
+        561.31,
+        229.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 9,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "Assembly of the iontronic tactile sensor The layout of the flexible-printed-circuit (FPC) electrode was designed using the printed circuit design software LCEDA, with predefined electrode widths and gap geometries. The FPC product, with a temperature tolerance of−20to80 °C,wasmanufacturedbytheShenzhenJLCTechnologyGroup and consists of 50-μm-thick polyimide (PI) substrates and 12-μm-thick copper (Cu) electrodes coated with 25-μm-thick gold (Au). The impedance response of the iontronic tactile sensor originates from ion migration processes at the electrode‒film interface, making the quality of the interface contact condition critical to the performance of the tactile sensor. To ensure a uniform and clean interface contact, the electrode and ionic film surfaces were cleaned with 75% ethanol using a dust-free swab (YL-664XB, ANDAXIA). The top FPC electrode, the ionic film, and the bottom FPC electrode were subsequently sandwiched together to assemble the tactile sensor.Thefinaldevicewasencapsulatedwith60-μm-thickPETscotchtape (−40 to 130 °C temperature tolerance, BENYIDA).",
+      "translation": "",
+      "bbox": [
+        39.69,
+        177.19,
+        294.93,
+        347.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 9,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": "Preparation of the thermal insulator The temperature of the tactile sensor should remain stable during calibration.However,iftheheated tactilesensordirectlycontactsthecoldstainlesssteel pressing head (~15 W/m ∙K thermal conductivity39), thermal interference can be introduced. To reduce the thermal interference, as shown in Supplementary Fig. 3a, a thermal insulator made of Ecoflex (~0.2 W/m ∙K thermal conductivity40) was implemented to insulate the tactile sensor from the pressing head. Asshown in SupplementaryFig.4, the Ecoflex precursors (00-50, Smooth-On), Part A and Part B, were mixed at a 1:1 weight ratio. Then, a 2-mm-deep polylactic acid (PLA) mould was 3D-printed using a printer (A1, Bambu Lab), and the mixture was pouredinto the mould. After the mould filled with the mixture was degassed in a vacuum chamber (−0.05 MPa, 20 min), the Ecoflex was cured in the mould for 5 h to form a thermal insulator (witha Young’s modulus of 428.0 kPa). Then, the thermal insulator was adhered to the tactile sensing area. Finally, polytetrafluoroethylene (PTFE) tape (3269, Oumai) was applied to the upper surface of the thermal insulator, to prevent pressure head adhesion during mechanical stimulation.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        241.42,
+        561.31,
+        432.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 9,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "Simulation of ion migration The ion migration in the ionic film was simulated using the finite element analysis software COMSOL Multiphysics (version 6.1, COMSOL), with the module “Transport of Diluted Species in Porous Media”. For the PVDF material with an electrical conductivity of 0 S/m (ideal insulator), the geometric dimensions (width, thickness, and out-of-plane thickness) of the ionic film were set to 300 μm. The DMAC was evaporated, so the porosity was setto the experimental PVDF-ion concentration (5% in this study), and the ions were fully dissociated in the simulation. According to the chemical bondlength37,thesizesofthecation( + 1charge)andtheanion(−1charge) were 0.93 nm and 0.97 nm, respectively. The initial anion and cation concentrations were the ionic liquid molarity (3893.6 mol/m3, denoted as c0 in Fig. 2b). The isotropic diffusion coefficient was set to the species-in-liquid reference value38 of1.602 × 10−9 m2/s. Boundaryconditionsassigned thetop to the electric potential and the bottom to the electrical ground. For sinesignalexcitation,theamplitudewassetto1 V,andthefrequencywas1 Hzto observe ion polarisation. For step-signal excitation, the signal was smoothed using a hyperbolic tangent (tanh) function to prevent iterating instability from discontinuous numerical transitions as:",
+      "translation": "",
+      "bbox": [
+        39.68,
+        359.23,
+        294.92,
+        561.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 9,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "\u0001 \u0003 \u0001 \u0003",
+      "translation": "",
+      "bbox": [
+        147.34,
+        566.45,
+        242.78,
+        575.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 9,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "Vstep",
+      "translation": "",
+      "bbox": [
+        129.03,
+        570.1,
+        145.34,
+        582.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 9,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": "ð1Þ",
+      "translation": "",
+      "bbox": [
+        284.54,
+        579.09,
+        294.78,
+        588.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 9,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "Vsmooth ¼",
+      "translation": "",
+      "bbox": [
+        91.73,
+        577.29,
+        126.57,
+        590.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 9,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "2 1 þ tanh t \u0002 tlocation wtransition",
+      "translation": "",
+      "bbox": [
+        135.27,
+        571.23,
+        229.21,
+        596.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 9,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "Mechanical stimulation A material testing machine (ZQ-990B, ZHIQU) was used to apply mechanical stimuli (force or pressure). The machine controlled the force through a screw-driven pressing head, with a contact area of 10 mm × 10 mm,whichgeneratedaspecimen-deformingreactionforce.To reduce pressure shock during loading, the elastic Ecoflex thermal insulator serves another function of providing a broader deformation range than the tactile sensor itself. The pressing head moved at a speed of 0.5 mm/s (~1 kPa/s) to maintain a quasistatic tactile sensor state. For the stablepressure experiments, the machine compressed the sample (tactile sensor with a thermal insulator) until the target pressure was reached and then fixed the pressing head position during the impedance measurement. After data acquisition of a target pressure, the pressing head moved in reverse to detach the sample, and then compressed again to reach the subsequent target pressure. For the continuous-pressing experiments (Fig. 4f, g), the pressure was cycled between the preset extreme values.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        444.89,
+        561.31,
+        614.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 9,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "where Vstep is the amplitude (1 V) of the ideal step signal, tlocation is the initial time(5 × 10−5s),wtransitionisthetransitionwidth(2.5 × 10−5s)usedtoadjust the steepness, and Vsmooth is the resulting signal. The step-excited concentration distribution was analysed over the output time range of (0, 10−5s, 5 × 10−3s), during which the concentration did not change significantly, so the concentration was presented as the variation Δcmol.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        603.43,
+        294.81,
+        669.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 9,
+      "type": "paragraph",
+      "order": 88,
+      "original_text": "Measurement of ionic film deformation The material testing machine can measure sample deformation by tracking the displacement of the pressing head. However, direct measurement of the ionic film thickness under pressure was hindered by the concurrent deformation of the elastic thermal insulator. To address this issue, this study used a micrometer (with a range of 0–12.7 mm, KOSLO) to measure the ionic film thickness. The machine pressed the micrometer supported by a sponge, as shown in Supplementary Fig. 13a, c. During the compression process, the micrometer structure deformed, introducing measurement error. Hence, to correct the systematic error, pressure-induced micrometer deformation was recorded before the ionic film was held. The ionic film",
+      "translation": "",
+      "bbox": [
+        306.14,
+        626.85,
+        561.29,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 9,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "Thermal stimulation The thermostat components are illustrated in Supplementary Fig. 3b. A thermoelectric (Peltier) element (TEC1-12706-12 V-51 W, Seebeck) was used as the thermal source, heating or cooling a 2-mm-thick Cu plate (as a thermal conductor). A programmable controller (XH-21540, YourCee) delivered current to the Peltier element until the thermal",
+      "translation": "",
+      "bbox": [
+        39.69,
+        680.56,
+        294.83,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 9,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 9",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 10,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 10,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "thickness was subsequently calculated by subtracting the micrometer deformation from the raw measurement.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        48.91,
+        294.74,
+        68.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 10,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "commercial force sensor (Mini40-E, INDUSTRIAL AUTOMATION). Then, while both sensors output synchronously based on a standard time (Beijing time), a finger tapped the sensing area at 0.5 Hz, facilitating the readout circuit to capture full-period signals. The response duration of the tactile sensor was used to characterise the real-time, referring to the normal force measured by the commercial sensor.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        48.91,
+        561.27,
+        111.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 10,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "Block weighting demonstration The tactile sensor was adhered to the thermostat by masking tape (2214, 3 M), as shown in Supplementary Fig. 21. The thermometer recorded the temperature reference, and mechanical stimuli were applied using weights of 1 kg and 0.5 kg. The blocks (“C”, “N”, and “O”, ~3 g weight) were 3Dprinted using polyethene terephthalate glycol-modified (PETG). The selected block was subsequently stacked on the tactile sensor. For the stabletemperature experiment, weights were applied to the block after the thermostat reached the preset temperature. For the dynamic-temperature experiment, the thermostat started to heat after the pressure stabilised.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        123.61,
+        561.27,
+        229.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 10,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "Impedance measurement The impedance parameters Rs (real part Zre) and X (imaginary part Zim) were measured using an impedance analyser (IM3570, HIOKI) with a fourterminal probe (L2000, HIOKI). The electrode ends of the tactile sensor were folded to ensure electrical contact with the four probe terminals. The measurement speed was set to “MEDIUM”. When the pressure reached the preset value, the impedance was measured once the thermostat stopped to prevent thermal shock. For the EIS frequency sweep (ranging from 4 Hz to 4 MHz) measurement, impedance sampling was initiated while the thermostat was switched OFF. For single-impedance calibration, the impedance was sampled once the temperature stabilised at the target. For the electrode width experiments (Fig. 2m and Supplementary Fig. 12c, d), to maintain consistent experimental conditions (such asionic filmproperties,electrode‒ film interface contact, and applied pressure distribution), the electrode width was adjusted by selecting channels of a tactile sensing array, and the selected rows (columns) were connected in parallel to the impedance analyser probe.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        80.81,
+        294.84,
+        261.35
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 10,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "Finger pressing demonstration To match the impedance of the higher-spatial-resolution tactile sensor, this study adjusted the sampling resistor R0 to a higher value of 10 kΩ to amplify the sampled signal. After being calibrated, as shown in Supplementary Fig. 26, the tactile sensor was adhered to the commercial force sensor. Then, the finger pressed the tactile sensor until the commercial sensor reached the target force. The modalities were decoupled synchronously while the commercial sensor recorded data, where the infrared image was captured using a camera (K20, HIKMICRO).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        241.42,
+        561.39,
+        336.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 10,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "Robot gripping demonstration The robot demonstration was conducted using a motor-driven (TDD8135MG, TIANKONGRC) gripper (SNM3200, MarkerBuying) mounted on a robotic arm (UR5e, Universal Robots), as shown in Supplementary Fig. 28. The gripper aperture was modulated by a controller (KSP-32, Hangzhou Xingbei Technology). To integrate the sensors into the gripper, 2-mm-thick 3D-printed PETG plates were adhered to both gripper sides to support the sensors. The tactile sensor was adhered to one side to capture distributed tactile information, whereas the thermometer detected the temperature of the opposite side. Additionally, a 2-mm-thick Ecoflex layer was adhered between the tactile sensor and the plate to achieve uniform pressure and facilitate force adjustment.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        348.51,
+        561.39,
+        475.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 10,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "System establishment of tactile sensing arrays The tactile sensing architecture is shown in Supplementary Fig. 20. The array distribution of temperature‒pressure tactile information was measured using the readout circuit presented in our previous work41, with a measurement error of less than 20%. In this study, full-frequency EIS and DRT analyses were used for impedance-characteristic analysis, whereas practical sensing was performed by setting the sine frequency (f0) as the eigenfrequency f2 (14.4 kHz) of the tactile sensor, achieving an array sampling speed of ~12,500 units per second. Additionally, the sampling resistor (R0)ofthereadoutcircuitwassetto510Ω.Foraspecifictactilesensor,f0and R0 should be adjusted to match its impedance response, and the measurement speed may be furtherimproved by optimising the impedance-readout principle and adopting faster array-scanning strategies. However, low pressure or temperature results in high impedance of the tactile sensor, weakening the readout signal and increasing the capacitance-resistance decoupling error. Thus, this study classified the sampled impedance exceeding 100 × R0 as overload. For the overload condition, the temperature‒pressure decoupling lost reliable impedance input, so the overloaded temperature and pressure were assigned as 23 °C and 0 kPa, respectively. While the readout circuit measured impedance based on these settings, the multimodal data processing and tactile information measurement were programmed via MATLAB (R2024b, MathWorks). Then, the result was displayed in the graphical user interface (GUI) created with the MATLAB APP Designer.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        273.56,
+        294.92,
+        529.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 10,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "To generate thermal interference, a hot air blower (560 C, DES) served as a heat source, where the target temperature was set to 120 °C, at an air speed of 5. The gripped object was a 27-mm-long steel cube, guiding heat to both sensors. To facilitate infrared camera recording, the cube was sprayed with black paint (Matte Black, SENFINECO) to prevent thermal radiation from the environment.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        477.28,
+        561.39,
+        539.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 10,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "During the heating experiment, the distance between the hot air outlet and the cube was 40 mm. The gripper then approached the cube, and the motor (aperture) was fixed when the gripper reached a preset position (~20 N force). Then, the hot air blower was activated to heat the cube, and the gripper released the cube when the detected force reached the safety threshold of 100 N.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        541.57,
+        561.27,
+        604.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 10,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "Performance evaluation The array-measurement performance of a tactile sensor was evaluated with 5-mm-wide electrodes. As shown in Supplementary Fig. 22a, consistency was evaluated using eight sensing units distributedat the corner (unit 1), the inner region (units 2–4), and the edges (units 5-8). Under a specific temperature‒pressure condition, the consistency κ is evaluated based on the deviation from the mean as:",
+      "translation": "",
+      "bbox": [
+        39.68,
+        541.32,
+        294.8,
+        614.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 10,
+      "type": "paragraph",
+      "order": 102,
+      "original_text": "X nunit\u0002selected",
+      "translation": "",
+      "bbox": [
+        143.66,
+        624.26,
+        170.31,
+        634.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 10,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "× 100% ð2Þ",
+      "translation": "",
+      "bbox": [
+        230.51,
+        634.42,
+        294.78,
+        644.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 10,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "1 \u0002 j xi \u0002 \u0001x \u0001x j \u0001 \u0003",
+      "translation": "",
+      "bbox": [
+        170.7,
+        621.78,
+        229.0,
+        649.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 10,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "κðxÞ ¼ 1 nunit\u0002selected",
+      "translation": "",
+      "bbox": [
+        77.38,
+        628.94,
+        141.65,
+        651.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 10,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "i¼1",
+      "translation": "",
+      "bbox": [
+        152.39,
+        644.9,
+        161.97,
+        652.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 10,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "Data availability All data supporting the findings of this study are included in the article and theSupplementaryInformation.Correspondenceandrequestsformaterials should be addressed to Shijie Guo and Jixiao Liu.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        615.1,
+        561.26,
+        657.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 10,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": "Received: 26 February 2026; Accepted: 24 May 2026;",
+      "translation": "",
+      "bbox": [
+        306.14,
+        667.72,
+        501.66,
+        676.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 10,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "where nunit-selected is the number of selected units, i indicates the sensing units 1–8, and x is the evaluated item Zre or Zim. The array-measurement consistency (86.0% in Supplementary Fig. 22b) was defined as the mean of the Zre and Zim consistencies (Supplementary Fig. 22c, d).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        657.01,
+        294.82,
+        701.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 10,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "References 1. Xiong, Y., Han, J., Wang, Y., Wang, Z. & Sun, Q. Emerging iontronic sensing: Materials, mechanisms, and applications. Research 2022, 9867378 (2022).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        700.76,
+        561.29,
+        742.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 10,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "To evaluate the minimum detectable pressure, at a stable temperature, pressure was applied to a sensing unit, and the slow pressing speed ensured that the readout circuit synchronously recorded the impedance. For realtime evaluation, after being calibrated, the tactile sensor was adhered to a",
+      "translation": "",
+      "bbox": [
+        39.68,
+        702.24,
+        294.92,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 10,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 10",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.27,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 11,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0114",
+      "page": 11,
+      "type": "paragraph",
+      "order": 114,
+      "original_text": "25. Zhang, H. et al. Bioinspired chromotropic ionic skin with in-plane strain/temperature/pressure multimodal sensing and ultrahigh stimuli discriminability. Adv. Funct. Mater. 32, 2208362 (2022). 26. You, I. et al. Artificial multimodal receptors based on ion relaxation dynamics. Science 370, 961–965 (2020). 27. Wan, T. H., Saccoccio, M., Chen, C. & Ciucci, F. Influence of the discretisation methods on the distribution of relaxation times deconvolution: implementing radial basis functions with DRTtools. Electrochim. Acta 184, 483–499 (2015). 28. Chen, J., Quattrocchi, E., Ciucci, F. & Chen, Y. Charging processes in lithium-oxygen batteries unraveled through the lens of the distribution of relaxation times. Chem. 9, 2267–2281 (2023). 29. Lu, Y., Zhao, C., Huang, J. & Zhang, Q. The timescale identification decoupling complicated kinetic processes in lithium batteries. Joule 6, 1172–1198 (2022). 30. Zhang, Q. et al. An electrochemical impedance model of lithium-ion battery for electric vehicle application. J. Energy Storage 50, 104182 (2022). 31. Guo, X., Sun, Z., Zhu, Y. & Lee, C. Zero-biased bionic fingertip E-Skin with multimodal tactile perception and artificial intelligence for augmented touch awareness. Adv. Mater. 36, 2406778 (2024). 32. Lv, D. et al. Microphase-separated elastic and ultrastretchable ionogel for reliable ionic skin with multimodal sensation. Adv. Mater. 36, 2309821 (2024). 33. Yang, Q. et al. Machine learning-enhanced modular ionic skin for broad-Spectrum multimodal discriminability in bidirectional human–robot interaction. Adv. Mater. 37, e08795 (2025). 34. Bai, N. et al. A robotic sensory system with high spatiotemporal resolution for texture recognition. Nat. Commun. 14, 7121 (2023). 35. Wang, D., Li, B., Niu, S., Han, Z. & Ren, L. Novel iontronic pressure sensor coupling high sensitivity and wide-range for stiffness identification and long-distance precise motion control. Adv. Funct. Mater. 35, 2413551 (2025). 36. Li, Z. et al. Ultrafast readout, crosstalk suppression iontronic array enabled by frequency-coding architecture. npj Flex. Electron. 8, 9 (2024). 37. Vyas, S. et al. Electronic structure and spectroscopic analysis of 1ethyl-3-methylimidazolium bis (trifluoromethylsulfonyl) imide ion pair. J. Phys. Chem. A 118, 6873–6882 (2014). 38. Riquelme, R., Lira, I., Perez-Lopez, C., Rayas, J. & Rodriguez-Vera, R. Interferometric measurement of a diffusion coefficient: comparison of two methods and uncertainty analysis. J. Phys. D: Appl. Phys. 40, 2769 (2007). 39. Zhang, Z. et al. Polyvinyl alcohol/fluorographene/ carboxylated multiwalled carbon nanotubes composites with excellent insulation and ultra-high thermal conductivity prepared by confined self-assembly. Appl. Mater. Today 43, 102629 (2025). 40. Hou, Y., Zhang, H. & Zhou, K. Ultraflexible sensor development via 4D printing: enhanced sensitivity to strain, temperature, and magnetic fields. Adv. Sci. 12, 2411584 (2025). 41. Hou, F. et al. Crosstalk-free impedance-separating array measurement with error compensation for iontronic tactile sensors. IEEE Sens. J. 24, 24533–24547 (2024). 42. Sun, W. et al. Heat source recognition sensor mimicking the thermosensation function of human skin. Innovation 5, 100673 (2024).",
+      "translation": "",
+      "bbox": [
+        306.13,
+        49.35,
+        561.3,
+        646.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0115",
+      "page": 11,
+      "type": "paragraph",
+      "order": 115,
+      "original_text": "Acknowledgements This work was supported by the National Natural Science Foundation of China (grant nos. U23A20344, 52475014, and 5257055109). We thank Ziqi Zhang for providing advice on improving the performance stability of tactile sensors. We also appreciate the assistance of Jian Ma, Maotong Guan, and Hongbo Li in the establishment of the experimental setup.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        657.96,
+        561.28,
+        732.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0116",
+      "page": 11,
+      "type": "paragraph",
+      "order": 116,
+      "original_text": "2. Shi, J. et al. Embedment of sensing elements for robust, highly sensitive, and cross-talk–free iontronic skins for robotics applications. Sci. Adv. 9, eadf8831 (2023). 3. Wang, T., Zhang, Y. & Wang, Q. A flexible iontronic capacitive sensing array for hand gesture recognition using deep convolutional neural networks. Soft Robot. 10, 443–453 (2023). 4. Hou, J. F., Liu, K., Liu, P., Wang, G. & Li, S. Guo, 3-D-curved iontronic tactile sensor and denoising method for physical human–robot interactions. IEEE Sens. J. 23, 7667–7682 (2023). 5. Shen, Z., Zhu, X., Majidi, C. & Gu, G. Cutaneous ionogel mechanoreceptors for soft machines, physiological sensing, and amputee prostheses. Adv. Mater. 33, 2102069 (2021). 6. Xu, R. et al. Skin-friendly and wearable iontronic touch panel for virtual-real handwriting interaction. ACS Nano 17, 8293–8302 (2023). 7. Dai, S. et al. Emerging iontronic neural devices for neuromorphic sensory computing. Adv. Mater. 35, 2300329 (2023). 8. Luo, J., Remy, A. & Zhang, Y. Iontronic devices from biological nanopores to artificial systems: emerging applications and future perspectives. Chem. Rev. 125, 11840–11877 (2025). 9. Nie, B., Li, R., Cao, J., Brandt, J. D. & Pan, T. Flexible transparent iontronic film for interfacial capacitive pressure sensing. Adv. Mater. 27, 6055–6062 (2015). 10. Huang, Y. et al. Programmable high-sensitivity iontronic pressure sensors support broad human-interactive perception and identification. npj Flex. Electron. 9, 41 (2025). 11. Gao, L. et al. Highly sensitive pseudocapacitive iontronic pressure sensor with broad sensing range. Nano-Micro Lett. 13, 140 (2021). 12. Li, F. et al. Energy landscape–engineered iontronics enable artificial thermoreceptors for augmented bioinspired thermosensation. Sci. Adv. 11, eady2547 (2025). 13. Li, J., Liu, W., Zhang, Y., Mei, D. & Wang, Y. Development of highly sensitive iontronic-based tri-modal tactile sensor for proximitypressure-temperature sensing. Adv. Mater. Technol. e00861 (2025). 14. Zheng, Y. et al. Transparent ionogel balancing rigidity and flexibility with prolonged stability for ultra-high sensitivity temperature sensing. Chem. Eng. J. 494, 152695 (2024). 15. Sun, J. et al. Robust physically linked double-network ionogel as a flexible bimodal sensor. ACS Appl. Mater. Interfaces 12, 14272–14279 (2020). 16. Shi, X. et al. Machine learning assisted electronic/ionic skin recognition of thermal stimuli and mechanical deformation for soft robots. Adv. Sci. 11, 2401123 (2024). 17. Lee, J. H. et al. A behavior-learned cross-reactive sensor matrix for intelligent skin perception. Adv. Mater. 32, 2000969 (2020). 18. Ma, C. et al. 3D-printing of conductive inks based flexible tactile sensor for monitoring of temperature, strain and pressure. J. Manuf. Process. 87, 1–10 (2023). 19. Gao, N. et al. Biomimetic ion channel regulation for temperaturepressure decoupled tactile perception. Small 20, 2302440 (2024). 20. Zhu, H., Luo, H., Cai, M. & Song, J. A multifunctional flexible tactile sensor based on resistive effect for simultaneous sensing of pressure and temperature. Adv. Sci. 11, 2307693 (2024). 21. Li, G., Liu, S., Wang, L. & Rong, Z. Skin-inspired quadruple tactile sensors integrated on a robot hand enable object recognition. Sci. Robot. 5, eabc8134 (2020). 22. Liu, Y. et al. Triboelectric tactile sensor for pressure and temperature sensing in high-temperature applications. Nat. Comm. 16, 383 (2025). 23. He, Q. et al. Skin-inspired flexible and printediontronic sensor enables bimodal sensing of robot skin for machine-learning-assisted object recognition. Nano Energy 134, 110583 (2025). 24. Cao, Y. et al. Intrinsically soft and fully recyclable robotic sensors with quadruple sensing functions for reliable human-robot interactions. Sci. Bull. 70, 2784–2796 (2025).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.34,
+        294.89,
+        732.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0117",
+      "page": 11,
+      "type": "paragraph",
+      "order": 117,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 11",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.27,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0118",
+      "page": 12,
+      "type": "paragraph",
+      "order": 118,
+      "original_text": "https://doi.org/10.1038/s41528-026-00604-x Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0119",
+      "page": 12,
+      "type": "paragraph",
+      "order": 119,
+      "original_text": "Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        49.13,
+        533.03,
+        68.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0120",
+      "page": 12,
+      "type": "paragraph",
+      "order": 120,
+      "original_text": "Author contributions F.N.H. proposed the original idea and designed the experiments. F.N.H. and C.X.M. designed the sensor and established the heat-press setup. F.N.H. and Q.H.Z. analysed the impedance distribution. F.N.H., Q.Q.T., and S.G. establishedthe finger-pressandtheroboticsetups.F.N.H.,M.Q.S.,andG.L. modulatedthearrayreadoutcircuit.F.N.H.wrotethemanuscript.D.P.Q.and W.Y. reviewed the manuscript. J.X.L. and S.J.G. supervised this study and edited the manuscript.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        47.49,
+        294.8,
+        132.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0121",
+      "page": 12,
+      "type": "paragraph",
+      "order": 121,
+      "original_text": "Competing interests The authors declare no competing interests.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        143.87,
+        190.88,
+        164.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0122",
+      "page": 12,
+      "type": "paragraph",
+      "order": 122,
+      "original_text": "Additional information Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41528-026-00604-x.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        176.01,
+        235.1,
+        218.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0123",
+      "page": 12,
+      "type": "paragraph",
+      "order": 123,
+      "original_text": "Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material isnot includedin thearticle’s CreativeCommons licenceandyour intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/bync-nd/4.0/.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.39,
+        561.32,
+        239.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0124",
+      "page": 12,
+      "type": "paragraph",
+      "order": 124,
+      "original_text": "Correspondence and requests for materials should be addressed to Jixiao Liu or Shijie Guo.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        231.29,
+        275.94,
+        250.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0125",
+      "page": 12,
+      "type": "paragraph",
+      "order": 125,
+      "original_text": "© The Author(s) 2026",
+      "translation": "",
+      "bbox": [
+        306.14,
+        252.81,
+        378.4,
+        260.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0126",
+      "page": 12,
+      "type": "paragraph",
+      "order": 126,
+      "original_text": "Reprints and permissions information is available at http://www.nature.com/reprints",
+      "translation": "",
+      "bbox": [
+        39.68,
+        263.44,
+        225.44,
+        282.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0127",
+      "page": 12,
+      "type": "paragraph",
+      "order": 127,
+      "original_text": "npj Flexible Electronics | (2026) 10:80 12",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.27,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011",
+        "S0012",
+        "S0013"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0014",
+        "S0015",
+        "S0016",
+        "S0017",
+        "S0018",
+        "S0019",
+        "S0020",
+        "S0021"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0022",
+        "S0023",
+        "S0024",
+        "S0025",
+        "S0026",
+        "S0027",
+        "S0028"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0029",
+        "S0030",
+        "S0031",
+        "S0032",
+        "S0033",
+        "S0034",
+        "S0035",
+        "S0036",
+        "S0037",
+        "S0038",
+        "S0039",
+        "S0040"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0041",
+        "S0042",
+        "S0043",
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0048",
+        "S0049",
+        "S0050",
+        "S0051",
+        "S0052",
+        "S0053",
+        "S0054",
+        "S0055"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0056",
+        "S0057",
+        "S0058",
+        "S0059",
+        "S0060",
+        "S0061",
+        "S0062",
+        "S0063"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069",
+        "S0070",
+        "S0071",
+        "S0072",
+        "S0073",
+        "S0074"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0075",
+        "S0076",
+        "S0077",
+        "S0078",
+        "S0079",
+        "S0080",
+        "S0081",
+        "S0082",
+        "S0083",
+        "S0084",
+        "S0085",
+        "S0086",
+        "S0087",
+        "S0088",
+        "S0089",
+        "S0090"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S0091",
+        "S0092",
+        "S0093",
+        "S0094",
+        "S0095",
+        "S0096",
+        "S0097",
+        "S0098",
+        "S0099",
+        "S0100",
+        "S0101",
+        "S0102",
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106",
+        "S0107",
+        "S0108",
+        "S0109",
+        "S0110",
+        "S0111",
+        "S0112"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S0113",
+        "S0114",
+        "S0115",
+        "S0116",
+        "S0117"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S0118",
+        "S0119",
+        "S0120",
+        "S0121",
+        "S0122",
+        "S0123",
+        "S0124",
+        "S0125",
+        "S0126",
+        "S0127"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 2,
+      "caption_original": "Fig. 1 | Iontronic tactile sensor with intrinsic temperature‒pressure decoupling. a Sandwiched structure of the iontronic tactile sensor, consisting of a top electrode, an ionic film (the sensing layer), and a bottom electrode. The ionic film contains connected and disconnected ion channels, where electrically-driven ion motions generate multiple impedances. b Coupling process of multimodal impedance information. Under mechanical and thermal stimuli, either capacitance (C) or resistance (R) exhibits the same trend, which challenges the decoupling of temperature and pressure. c EIS response. Both temperature and pressure affect the measured impedance (real part Zre and imaginary part Zim), resulting in similar EIS",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Sandwiched structure of the iontronic tactile sensor, consisting of a top electrode, an ionic film (the sensing layer), and a bottom electrode. The ionic film contains connected and disconnected ion channels, where electrically-driven ion motions generate multiple impedances",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Coupling process of multimodal impedance information. Under mechanical and thermal stimuli, either capacitance (C) or resistance (R) exhibits the same trend, which challenges the decoupling of temperature and pressure",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "EIS response. Both temperature and pressure affect the measured impedance (real part Zre and imaginary part Zim), resulting in similar EIS",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 981,
+      "image_height": 818,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        44.72,
+        545.45,
+        453.21
+      ],
+      "image_path": "papers/paper-0c5f2da57f8cc2e5/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 3,
+      "caption_original": "Fig. 2 |Ion-migrating pattern and impedance variation with physical parameters. a Simulated pattern of intrafilm ion migration under step signal excitation. The curve represents the mean molarity cmol at each depth. Dynamic ion behaviours indicate specific impedances: interfacial ion dispersion Z2 and intrapore ion transfer Z3. The scattered distribution contributes weakly to the impedance response. Simulated pattern under sine signal excitation, indicating ion polarisation Z5 (b), counterion exchange Z4 (c), and ion diffusion Z6 (d). e Ion-migrating pattern mapped to hierarchical AC impedances, distributed across the cross-section of the iontronic tactile sensor. f Equivalent circuit model. The superscript of Z indicates the",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [],
+      "image_filename": "figure-02.png",
+      "image_width": 981,
+      "image_height": 982,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        44.72,
+        545.45,
+        535.19
+      ],
+      "image_path": "papers/paper-0c5f2da57f8cc2e5/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 5,
+      "caption_original": "Fig. 3 | Impedance response to temperature and pressure. a Schematic of the ion distribution in the film channels. b Multimodal coupling mechanism. Z0 represents the impedance of the channel element. The temperature dissociates ions, and the pressure increases the quantity of parallel channels. c Linear response (T‒P line), determined by the disparate impedance-response characteristics to temperature and pressure. DRT peak responses under various temperatures (d) and pressures (e). f Electrolyte resistance R∞response, showing greater sensitivity to temperature than to pressure. g Equivalent measurement circuit and theoretical pressure response at",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of the ion distribution in the film channels",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Multimodal coupling mechanism. Z0 represents the impedance of the channel element. The temperature dissociates ions, and the pressure increases the quantity of parallel channels",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        },
+        {
+          "label": "c",
+          "original": "Linear response (T‒P line), determined by the disparate impedance-response characteristics to temperature and pressure. DRT peak responses under various temperatures (d) and pressures (e). f Electrolyte resistance R∞response, showing greater sensitivity to temperature than to pressure. g Equivalent measurement circuit and theoretical pressure response at",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 981,
+      "image_height": 1012,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        44.72,
+        545.45,
+        550.39
+      ],
+      "image_path": "papers/paper-0c5f2da57f8cc2e5/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 4",
+      "page": 6,
+      "caption_original": "Fig. 4 | Principle of decoupling temperature and pressure. a Schematic of the decoupling principle based on the T-P line. b Exponential relationship between root (q) and temperature (T), where the root is insensitive to pressure. c Linear relationship between ΔC/ΔC0 and pressure (p), where ΔC/ΔC0 is insensitive to temperature. d Static decoupling performance. The accuracy (a) is defined as a = 1-Rerror",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of the decoupling principle based on the T-P line",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Exponential relationship between root (q) and temperature (T), where the root is insensitive to pressure",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Linear relationship between ΔC/ΔC0 and pressure (p), where ΔC/ΔC0 is insensitive to temperature",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Static decoupling performance. The accuracy (a) is defined as a = 1-Rerror",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 981,
+      "image_height": 714,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        44.72,
+        545.45,
+        401.23
+      ],
+      "image_path": "papers/paper-0c5f2da57f8cc2e5/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 5",
+      "page": 7,
+      "caption_original": "Fig. 5 | Performance and demonstration with Tactile sensing arrays. a Setup for weighting. Decoupled spatial distributions of temperature (b) and pressure (c) using an impedance-separating readout circuit42. Mean contact temperature (Tdcp) and force (Fdcp) are consistent with applied stimuli. d Setup for finger pressing, where the commercial sensor measures normal force (Fc). e Acquired temporal temperature‒ pressure signal with pressure stages of 5–20 N. The dotted red line represents the mean contact temperature. f Spatial variations of contact area and pressure during finger pressing. g Setup for robotic gripping, where hot air generates thermal",
+      "caption_zh": "Fig. 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "b",
+          "original": "and pressure",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "using an impedance-separating readout circuit42. Mean contact temperature (Tdcp) and force (Fdcp) are consistent with applied stimuli. d Setup for finger pressing, where the commercial sensor measures normal force (Fc). e Acquired temporal temperature‒ pressure signal with pressure stages of 5–20",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "n",
+          "original": "The dotted red line represents the mean contact temperature. f Spatial variations of contact area and pressure during finger pressing. g Setup for robotic gripping, where hot air generates thermal",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 981,
+      "image_height": 687,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        44.72,
+        545.45,
+        387.9
+      ],
+      "image_path": "papers/paper-0c5f2da57f8cc2e5/figures/figure-05.png"
+    }
+  ],
+  "glossary": []
+}

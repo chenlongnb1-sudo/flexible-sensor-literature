@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "paper-4889cddc418c8a51",
+  "title": "High-resolution real-time mechanochromic tactile sensors",
+  "authors": [
+    "Giacomo Sasso",
+    "Alessandro Pagani",
+    "Aaron M. Duncan",
+    "Gianni Pedrizzetti",
+    "Nicola Pugno",
+    "James J. C. Busfield",
+    "Federico Carpi"
+  ],
+  "venue": "Science Advances",
+  "date": "2026-07-03",
+  "doi": "10.1126/sciadv.aee5236",
+  "source_url": "https://doi.org/10.1126/sciadv.aee5236",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-07-14T08:11:20.883354+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "High-resolution, real-time tactile sensing is essential for robotic tasks that demand accurate, dynamic detection of contact morphology and pressure distribution, such as grasping and manipulation of delicate, slippery, or irregularly shaped objects. Existing technologies, however, face a fundamental trade-off between spatial resolution and response speed. Taxel-based sensors (e.g., capacitive, resistive, or piezoelectric) operate in real time but are intrinsically limited in resolution by taxel size, spacing, wiring, and cross-talk; even deep learning–based tactile super-resolutions rarely surpass ∼1 millimeter. Finer resolutions can be achieved with vision-based tactile sensors using just a camera, although the computation required to transform raw images into three-dimensional contact maps inherently introduces latency. Here, we present mechanochromic tactile sensors that directly encode mechanical strain into spatially resolved structural colors, enabling vision-based tactile sensing with an unprecedented combination of high resolution, real-time operation, and intrinsic simplicity. The devices consist of a stretchable mechanochromic Bragg reflector embedded between two soft silicone layers, whose thickness can be tailored to precisely map contact pressure or strain. As an example, we present topological maps of a fingertip, a one-penny coin, and a leaf, with ∼100 micrometer resolution. In comparison to the most performing vision-based tactile sensors, this was achieved without requiring any deep learning–based data enhancement and without introducing any computational latency. The straightforward applicability of this mechanochromic strategy to enhance vision-based tactile sensing in a simple yet powerful way underscores its transformative potential for uses as diverse as robotic gripping and handling, tactile product inspection, and enhanced human-robot interaction.",
+    "zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。"
+  },
+  "innovation_points": [
+    "High-resolution, real-time tactile sensing is essential for robotic tasks that demand accurate, dynamic detection of contact morphology and pressure distribution, such as grasping and manipulation of delicate, slippery, or irregularly shaped objects.",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "inspirations": [
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "优先核查是否有 hardware output 与 software projection 的同步一致性证据"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-07-14/deep-reads/paper-4889cddc418c8a51/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
