@@ -3,7 +3,7 @@
   "updated_at": "2026-07-14",
   "latest_report_date": "2026-07-14",
   "profile_markdown": "# 用户研究画像\n\n更新日期：2026-07-13  \n背景来源：根据 `E:\\BaiduSyncdisk\\博` 文件夹目录、毕业总控文件、Paper A 项目上下文、可编程触觉投影论文思路等本地材料归纳。\n\n## 当前研究方向\n\n用户当前博士主线不是普通“高灵敏柔性压力传感器”，而是围绕 **柔性电子皮肤前端触觉计算** 展开：\n\n- 结构-传感器-模拟前端-阵列-闭环协同设计。\n- 低离散/容差触觉界面。\n- ADC 前模拟矢量触觉读出。\n- 低冗余矢量触觉阵列。\n- 可编程物理触觉投影前端。\n- 容错、可迁移、少样本校准的电子皮肤。\n- 面向摩擦/纹理/滑移/三维力或方向相关触觉线索的柔性传感系统。\n\n## 已有工作基础\n\n### Paper A：低离散界面 + ADC 前模拟矢量触觉单元\n\n核心身份：\n\n> Analog vector tactile preprocessing before digitization for friction-aware soft electronic skins.\n\n中文主张：\n\n> 结构层降低输入离散性，模拟前端层把四象限响应压缩成方向相关矢量特征，服务纹理/摩擦识别和可靠决策。\n\n已看到的关键证据：\n\n- HCP/Hex 微结构与梯度叉指电极用于降低器件级响应离散性。\n- G1-G4 对照中已有灵敏度和 CV 数据：G4 CV 可低至约 0.77%。\n- 四象限压阻单元计划输出 Kz/Kx/Ky 或 Fz/Fx/Fy。\n- 纹理识别/通道消融已有基础，vector/tangential 特征优于 z-only 或 reference force。\n\n需要继续补强：\n\n- raw A/B/C/D 与 hardware Kz/Kx/Ky 同步记录。\n- hardware vector 与 software projection 一致性分析。\n- Kx/Ky 方向相关标定。\n- PSD/SNR、共模扰动、ADC 通道数、功耗或延迟对比。\n\n### P1：非公度/低离散结构容差触觉界面\n\n核心主张：\n\n> HCP 微结构与梯度/非周期叉指电极降低装配偏移、旋转和接触半径变化导致的响应离散性。\n\n重点关键词：\n\n- low-dispersion tactile interface\n- assembly tolerance\n- gradient interdigitated electrodes\n- non-periodic electrodes\n- HCP/hexagonal microstructures\n- response dispersion\n- shift/rotation/contact-radius tolerance\n\n### P2：模拟矢量触觉单元与 ADC 前方向解耦\n\n核心主张：\n\n> 四象限压阻单元通过模拟求和/差分，在 ADC 前输出 Kz/Kx/Ky，实现方向相关触觉预处理。\n\n重点关键词：\n\n- analog tactile preprocessing\n- vector tactile sensing\n- before digitization / pre-ADC\n- summation and differencing circuit\n- friction-aware sensing\n- shear/friction cues\n- direction-aware tactile readout\n\n注意：如果没有纯三轴力标定矩阵，不应写 full 3D force sensor；应写 direction-related 或 vector-like tactile features。\n\n### P3：低冗余矢量触觉阵列\n\n核心主张：\n\n> 2x2 单元作为 hardware vector macro-pixel，用 Kz/Kx/Ky 代替逐像素 raw readout，实现边缘、形状、接触图案或滑移方向感知。\n\n重点关键词：\n\n- hardware vector macro-pixel\n- low-redundancy tactile array\n- edge perception\n- tactile array readout\n- spatial tactile feature\n- readout count reduction\n- latency and power reduction\n\n### P4：可编程物理触觉投影前端\n\n核心主张：\n\n> 3x3 压阻阵列通过可编程权重电压和电流求和电路，在 ADC 前直接生成 Ksum/Kx/Ky/Klap/Kring/Kcorner 等空间投影特征。\n\n一句话：\n\n> 不是采集后学习可迁移特征，而是在 ADC 前用电路把可迁移触觉特征物理算出来。\n\n重点关键词：\n\n- programmable physical tactile projection\n- tactile front-end computing\n- in-sensor computing\n- spatial projection features\n- current summation circuit\n- single ADC tactile readout\n- fault-tolerant tactile sensing\n- transferable force perception\n- cross-sensor calibration\n\n### 应用与平台\n\n本地文件显示还涉及：\n\n- 柔性三维力传感器文献汇报。\n- 离子传感器。\n- 榫卯结构传感器。\n- 陀螺仪/惯性或方向感知结构。\n- 鞋垫/足底压力或步态相关传感。\n- 机械臂和触觉闭环平台。\n- 空间站/太空人体项目中的皮肤顺应柔性电生理电极。\n- 审稿/项目材料表明用户持续关注柔性电极、电子皮肤和可穿戴传感方向。\n\n## 材料体系与器件结构\n\n已出现或可作为候选的体系：\n\n- PDMS / Ecoflex / TPU 等柔性基底或微结构。\n- HCP/Hex 微结构、棱台、泡沫、榫卯、鞋垫结构。\n- PEDOT:PSS/EG、碳黑、CNT、MXene、AgNW、液态金属等导电材料需按实际数据筛选。\n- PI/Cu、柔性 PCB、叉指电极、梯度叉指电极、非周期电极。\n- 四象限压阻单元、2x2 macro-pixel、3x3 压阻阵列、4x4 阵列。\n- 模拟求和/差分电路、可编程权重电压、电流求和、TIA、MUX、单 ADC 读出。\n\n## 当前瓶颈\n\n- 高配 Paper A 需要硬件 Kz/Kx/Ky 的 ADC 前证据，否则只能降级为后处理 vector features。\n- 需要更系统的方向标定、PSD/SNR、共模抑制、功耗/延迟/ADC 通道数证据。\n- P1 需要 shift、rotation、contact-radius、signal void ratio 等容差证据，而不是只证明灵敏度高。\n- P3/P4 需要从单器件推进到阵列层面的边缘/形状/容错/迁移指标。\n- 机器人闭环和滑移防护应用风险高，应作为最小演示，不应拖累 P1-P3 主线。\n\n## 每日文献筛选优先级\n\n每日自动文献任务应优先筛选以下论文：\n\n1. ADC 前、模拟前端、in-sensor computing、sensor-near computing 相关触觉/电子皮肤论文。\n2. 矢量触觉、剪切力/摩擦/滑移方向、三维力或 direction-aware tactile sensing。\n3. 柔性触觉阵列的低通道读出、压缩读出、macro-pixel、edge/shape perception。\n4. 可编程物理计算、投影核、模拟矩阵/电流求和、单 ADC 读出。\n5. 电子皮肤容错、坏点鲁棒、跨器件迁移、少样本校准、domain adaptation。\n6. 低离散结构、装配容差、微结构/电极结构协同设计。\n7. 面向机械臂、鞋垫、可穿戴、空间人体监测的触觉/柔性电极系统，但必须能服务前端触觉计算主线。\n\n## 不希望重复的方向\n\n- 不要把用户方向简化成普通 flexible pressure sensor。\n- 不要优先推荐只提高灵敏度、缺少结构机制或系统价值的材料论文。\n- 没有标定证据时，不要把方向相关读出夸大成完整三维力重建。\n- 不要把后端机器学习分类论文当成核心，除非它能和 ADC 前/传感器近端计算形成对照或启发。\n- 不要让复杂机器人闭环应用压过器件、前端、阵列主线。\n\n## 可迁移的创新方向\n\n- 将 2x2 四象限矢量单元扩展为 3x3 可编程物理投影前端。\n- 用硬件投影核生成 Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释空间特征。\n- 用 normalized projection 特征降低跨器件差异和老化/坏点影响。\n- 建立 hardware projection vs software projection 的一致性与失效边界。\n- 做 raw pixel scanning、scalar downsampling、software gradient、hardware vector macro-pixel 的系统对照。\n- 将摩擦/纹理/滑移方向线索作为 ADC 前矢量特征的任务价值，而不是只追求力数值重建。\n",
-  "daily_report_markdown": "# 2026-07-14 柔性电子皮肤前端触觉计算文献日报\n\n## 今日结论\n\n本次从 OpenAlex、Crossref、Semantic Scholar 和 arXiv 检索最近 30 天结果，去重并排除历史已收录论文后保留 5 篇。\n排序优先考虑 ADC 前模拟触觉、矢量/剪切/摩擦读出、低冗余阵列、物理投影和容错迁移；只强调材料灵敏度而缺少系统价值的论文已降权。\n\n- 今日必看：1 篇\n- 值得追踪：1 篇\n- 新增可评估 idea：5 个\n- 历史重复排除：0 篇\n\n## 今日必看\n\n### 1. [GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition](http://arxiv.org/abs/2607.05241v1)\n\n- 来源：arXiv；2026-07-06；评分 85/100\n- 为什么重要：涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准\n- 摘要级结论：Neuromorphic visuo-tactile sensing offers a promising paradigm for low-latency and low-power robotic perception.\n- 方法：This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC).\n- 摘要数值：96.3%、80 ms、19.6 mW\n- 可迁移：涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准；可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗\n- 风险：当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。\n- 建议操作：read\n\n## 值得追踪\n\n| 评分 | 轨道 | 论文 | 建议 |\n|---:|---|---|---|\n| 62 | P1, P3 | [Self Capacitive Tactile Sensor System designed for Companion Robots](http://arxiv.org/abs/2606.25348v1) | skim |\n\n## 方法与指标速览\n\n| 论文 | 方法（摘要证据） | 可核实数值 | 画像价值 |\n|---|---|---|---|\n| GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition | This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC). | 96.3%、80 ms、19.6 mW | 涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Self Capacitive Tactile Sensor System designed for Companion Robots | However, the design of such systems remains challenging. | 10 Hz、100 Hz、1000 Hz | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及低冗余阵列、空间特征或读出通道压缩 |\n| Geometric Reconstruction of Extrinsic Contact Trajectories using Tactile Sensing and Proprioception for Tool Manipulation | In this work, we reconstruct the trajectory of extrinsic tool-tip contact using tactile sensing and robot proprioception. | 8.59 +/- 2.41 mm、5.96 +/- 1.16 mm、14.00 +/- 4.11 Hz | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出 |\n| Closing the Reality Gap: Zero-Shot Sim-to-Real Deployment for Dexterous Force-Based Grasping and Manipulation | We present a sim-to-real reinforcement learning method that leverages dense tactile feedback combined with joint torque sensing to explicitly regulate physical interactions. | 摘要未给出 | 涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Metallic Ultrasound Waveguides as a Distributed Tactile Sensing Platform for Contact Localization, Force Estimation, and Material Class Discrimination | Using cylindrical indenters, we characterized the acoustic response to single and multi-point contacts with varying forces and contact materials. | 摘要未给出 | 涉及坏点、漂移、跨器件迁移或少样本校准 |\n\n## 今日创新点候选\n\n### Idea 1：把论文机制映射为 3x3 可编程物理触觉投影核\n\n- 对应轨道：P4；分级：A\n- 来源论文：GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition\n- 核心假设：Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。\n- 最小实验：先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。\n- 对照：raw scanning；software projection；fixed hardware kernel；programmable hardware kernel\n- 成功指标：hardware-software R2；linearity；kernel switching error；ADC count；latency\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 2：把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验\n\n- 对应轨道：P5；分级：A\n- 来源论文：GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition\n- 核心假设：归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。\n- 最小实验：设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。\n- 对照：raw readout；software projection；hardware projection；hardware projection + few-shot calibration\n- 成功指标：accuracy degradation；feature drift；calibration samples；fault ratio；cross-device variance\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 3：把论文系统任务压缩成不拖累主线的最小闭环演示\n\n- 对应轨道：P6；分级：A\n- 来源论文：GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition\n- 核心假设：一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。\n- 最小实验：选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。\n- 对照：raw signal；z-only；front-end vector/projection\n- 成功指标：task accuracy；response time；channel count；failure cases\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 4：把论文中的结构机制转成偏移/旋转/接触半径容差地图\n\n- 对应轨道：P1；分级：B\n- 来源论文：Self Capacitive Tactile Sensor System designed for Companion Robots\n- 核心假设：若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。\n- 最小实验：在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。\n- 对照：周期电极+常规微结构；周期电极+HCP；梯度/非周期电极+常规微结构；目标结构\n- 成功指标：CV；shift sensitivity；rotation sensitivity；contact-radius sensitivity；signal void ratio\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 5：把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照\n\n- 对应轨道：P3；分级：B\n- 来源论文：Self Capacitive Tactile Sensor System designed for Companion Robots\n- 核心假设：可解释的局部矢量/空间投影能以更少读出通道保持边缘、形状和滑移方向信息。\n- 最小实验：在同一阵列输入上比较 raw scanning、scalar pooling、software gradient 与 hardware macro-pixel。\n- 对照：raw pixel scanning；scalar pooling；software gradient；hardware macro-pixel\n- 成功指标：channel count；latency；power；edge/shape accuracy；direction accuracy\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n## 检索记录\n\n| 来源 | 查询 | 命中 | 状态 |\n|---|---|---:|---|\n| arxiv | `electronic skin fault tolerant transferable calibration domain adaptation` | 4 | ok |\n| crossref | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |\n| arxiv | `electronic skin tactile array compressed readout low channel` | 4 | ok |\n| crossref | `electronic skin tactile array compressed readout low channel` | 25 | ok |\n| arxiv | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |\n| crossref | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |\n| arxiv | `tactile sensor analog front-end in-sensor computing` | 25 | ok |\n| crossref | `tactile sensor analog front-end in-sensor computing` | 25 | ok |\n| crossref | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |\n| crossref | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |\n\n## 数据源异常\n\n- openalex：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: Too Many Requests。其余来源已继续运行。\n- semantic_scholar：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。\n\n## 纳入与排除标准\n\n- 纳入：论文能服务 P1-P6 至少一条主线，并能形成机制、前端、阵列、系统任务或可验证对照。\n- 降权：只强调 sensitivity、gauge factor 或材料配方，而缺少读出、阵列、校准、鲁棒性或任务证据。\n- 排除：历史已收录、题录明显偏题、来源元数据不足且无法核实。\n- 可信度边界：本日报首先完成题录/摘要级筛选；数值、机理和优先级需在点击“精读”后核查全文。\n",
+  "daily_report_markdown": "# 2026-07-14 柔性电子皮肤前端触觉计算文献日报\n\n## 今日结论\n\n本次检索最近 30 天文献。人工硬门控后仅保留 1 篇直接 sensor-to-chip 神经形态触觉系统。PFL 协作机器人计量综述、飞秒激光高灵敏压力传感器、视觉触觉 CNN、摩擦电穿戴综述，以及上一轮出现的工具轨迹重建、sim-to-real 强化学习和金属超声波导均因缺少用户 P1-P6 所需的前端/阵列证据被移除。没有用弱匹配或通用高灵敏材料论文填充日报。\n\n- 今日必看：1 篇\n- 值得追踪：0 篇\n- 新增候选 idea：1 个\n- 用户研究画像：未修改\n\n## 今日必看\n\n### 1. [GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition](https://arxiv.org/abs/2607.05241)\n\n- 对应 P4/P6：直接把 GelSight Mini 的 DVS 事件送入 Speck2f 上的 INT8 SCNN，活动推理不依赖主机预处理，可作为前端计算路径和最小任务演示的系统基线。\n- 方法：1 ms 事件分箱；硬件感知权重裁剪；INT8 量化；映射到 9 个物理处理核；15 类天然纹理硬件在环验证。\n- 指标：96.3%（芯片）对 99.0%（PC）；80 ms；19.6 mW 板级活动功耗。全文对照 GelSight handcrafted/PC、Evetac、NeuroTac/Loihi2、NeuroTac/Speck2f 以及 CPU/GPU 功耗。\n- 局限：光学事件触觉并非压阻阵列 ADC 前模拟计算；1 ms 时间离散受 BPTT 内存约束；INT8 映射仍有精度损失；芯片串扰和热噪声未被离线噪声完全覆盖；滑移闭环尚未验证。\n- 可迁移：对 Paper A/P4 建立 raw/host software/hardware vector/physical projection 的 accuracy-latency-power-channel 联合消融。未见深度泛化只能作为工况鲁棒性参考，不能写成跨器件迁移或坏点容错。\n\n## 今日创新点候选\n\n`candidate`，P4/P6：建立 raw acquisition、host software feature、hardware vector、programmable hardware projection 的联合消融。成功指标包括任务精度、ADC/通道数、端到端延迟、前端功耗与 hardware-software R2。该想法未写入用户画像。\n\n## 数据源异常\n\n- Semantic Scholar：6 个查询失败，HTTP 429。\n- arXiv：4 个查询超时；其他 arXiv 查询及已有题录仍可用。\n- OpenAlex、Crossref：本次最新并发运行正常返回；最终保留论文来自 arXiv，并已用合法下载全文核验。\n\n## 纳入与排除标准\n\n- 纳入：能服务 P1-P6，且提供前端、阵列、系统路径、资源权衡或可验证任务证据。\n- 排除：仅关键词命中；通用高灵敏材料；纯后端机器人算法；与柔性电子皮肤前端无关的刚性或计量平台。\n- 证据边界：保留论文已核对下载全文；新 idea 仅为 `candidate`，未修改 `user-research-profile.md`。\n",
   "papers": [
     {
       "id": "paper-c1ebbe0c7b587881",
@@ -15,305 +15,63 @@
         "Houcheng Li",
         "Long Cheng"
       ],
-      "venue": "arXiv",
+      "venue": "arXiv (Cornell University)",
       "date": "2026-07-06",
       "doi": "",
-      "url": "http://arxiv.org/abs/2607.05241v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.05241v1",
+      "url": "https://arxiv.org/abs/2607.05241",
+      "pdf_url": "https://arxiv.org/pdf/2607.05241",
       "local_pdf": "research-memory/literature/2026/2026-07-14/papers/paper-c1ebbe0c7b587881.pdf",
       "is_open_access": true,
       "paper_type": "preprint",
       "sources": [
-        "arXiv"
+        "OpenAlex"
       ],
       "query_ids": [
-        "physical-projection",
         "tactile-front-end-computing"
       ],
       "tracks": [
         "P4",
-        "P5",
         "P6"
       ],
-      "relevance_score": 85,
+      "relevance_score": 88,
       "score_breakdown": {
-        "topic_relevance": 74,
+        "topic_relevance": 71,
         "evidence_strength": 81,
         "transferability": 80,
         "innovation_density": 55,
         "material_only_penalty": 0
       },
       "relevance_reasons": [
-        "涉及 in-sensor/物理计算或可编程触觉前端",
-        "涉及坏点、漂移、跨器件迁移或少样本校准",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
+        "直接将光学凝胶触觉事件送入 Speck2f，形成无需主机预处理的 sensor-to-chip 路径",
+        "提供精度、延迟、板级功耗与硬件部署基线，可服务 P4 前端计算和 P6 最小任务演示"
       ],
-      "core_claim": "Neuromorphic visuo-tactile sensing offers a promising paradigm for low-latency and low-power robotic perception.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：96.3%、80 ms、19.6 mW。",
-      "method_summary": "This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC).",
+      "core_claim": "GelSight Mini 的标记运动被 DVS 事件化并直接送入 Speck2f 上的 INT8 SCNN，在无需主机预处理的条件下完成纹理识别。",
+      "summary_zh": "直接 sensor-to-chip 神经形态触觉系统在 15 类天然纹理上达到 96.3% 硬件在环准确率，推理窗口 80 ms，板级活动功耗 19.6 mW。",
+      "method_summary": "GelSight Mini 弹性体光学前端配合 Speck2f 内置 DVS，以 1 ms 时间分箱生成事件；SCNN 经硬件感知权重裁剪、INT8 量化并映射到 9 个物理处理核。",
       "key_metrics": [
-        "96.3%",
-        "80 ms",
-        "19.6 mW"
+        "15 类纹理：96.3%",
+        "推理窗口：80 ms",
+        "板级活动功耗：19.6 mW",
+        "PC/芯片准确率：99.0%/96.3%"
       ],
       "transferable_points": [
-        "涉及 in-sensor/物理计算或可编程触觉前端",
-        "涉及坏点、漂移、跨器件迁移或少样本校准",
-        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+        "把 raw/host preprocessing 与直接 sensor-to-chip 路径作为 P4 系统对照",
+        "沿用 accuracy-latency-power-channel 联合指标评估 ADC 前物理投影或矢量前端",
+        "用未见接触深度测试工况泛化，但不能等同于跨器件迁移或坏点容错"
       ],
       "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
+        "输入是光学 GelSight/DVS，而非压阻阵列 ADC 前模拟计算，属于系统基线而非同类器件方案。",
+        "1 ms 时间离散受 BPTT 内存限制；INT8 映射仍有精度损失；真实芯片串扰和热噪声未被合成噪声完全覆盖。",
+        "当前仅验证纹理分类，滑移检测与闭环控制仍是未来工作。"
       ],
       "source_abstract": "Neuromorphic visuo-tactile sensing offers a promising paradigm for low-latency and low-power robotic perception. However, existing systems still rely heavily on a host computer for event readout, preprocessing, or relaying prior to chip inference. This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC). Contact-induced marker motions are captured as dynamic vision sensor (DVS) events and routed through the on-chip network to a spiking convolutional neural network (SCNN) classifier. To mitigate accuracy degradation during 8-bit deployment, a hardware-aware weight clamping strategy is introduced. Evaluated on a 15-class natural texture recognition task, hardware-in-the-loop testing on the physical chip achieves a 96.3% accuracy within an 80 ms inference window. Notably, the system consumes only 19.6 mW of board-level active power-over three orders of magnitude lower than conventional CPU/GPU baselines on the same benchmark. GelNeuro also exhibits robust generalization across unseen contact depths, demonstrating the viability of direct sensor-to-chip tactile recognition on edge neuromorphic hardware.",
       "cited_by_count": 0,
       "decision_hint": "read",
-      "verification_status": "metadata_abstract_screened"
-    },
-    {
-      "id": "paper-111b8e5432862b60",
-      "title": "Self Capacitive Tactile Sensor System designed for Companion Robots",
-      "authors": [
-        "Mohsin Ali",
-        "Hidenobu Sumioka",
-        "Shuhei Ikemoto"
-      ],
-      "venue": "arXiv",
-      "date": "2026-06-24",
-      "doi": "",
-      "url": "http://arxiv.org/abs/2606.25348v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.25348v1",
-      "local_pdf": "research-memory/literature/2026/2026-07-14/papers/paper-111b8e5432862b60.pdf",
-      "is_open_access": true,
-      "paper_type": "preprint",
-      "sources": [
-        "arXiv"
-      ],
-      "query_ids": [
-        "physical-projection",
-        "tactile-front-end-computing"
-      ],
-      "tracks": [
-        "P1",
-        "P3"
-      ],
-      "relevance_score": 62,
-      "score_breakdown": {
-        "topic_relevance": 62,
-        "evidence_strength": 90,
-        "transferability": 60,
-        "innovation_density": 25,
-        "material_only_penalty": 0
-      },
-      "relevance_reasons": [
-        "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "涉及低冗余阵列、空间特征或读出通道压缩"
-      ],
-      "core_claim": "Tactile sensing is essential for humanoid robots to achieve safe physical interaction, dexterous manipulation, and truly human-like responsiveness.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及低冗余阵列、空间特征或读出通道压缩。摘要可核实数值包括：10 Hz、100 Hz、1000 Hz。",
-      "method_summary": "However, the design of such systems remains challenging.",
-      "key_metrics": [
-        "10 Hz",
-        "100 Hz",
-        "1000 Hz"
-      ],
-      "transferable_points": [
-        "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "涉及低冗余阵列、空间特征或读出通道压缩"
-      ],
-      "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
-      ],
-      "source_abstract": "Tactile sensing is essential for humanoid robots to achieve safe physical interaction, dexterous manipulation, and truly human-like responsiveness. However, the design of such systems remains challenging. Conventional approaches often suffer from complex multilayer structures, intricate wiring, high cost, and poor scalability, making it difficult to realize full-body tactile sensing with real-time, low-latency detection while maintaining minimal computational load on the robot's main processor. In this work, we present a simple, scalable and hardware friendly tactile sensing system for a companion humanoid robot based on the self-capacitance principle. The proposed sensor system employs a single conductive fabric layer with a conductive fabric wire architecture and does not require intricate electrode patterning. Scalability was demonstrated by fabricating a 100-point sensor array on a flexible printed circuit (FPC). Evaluation across sampling frequencies showed that 10 Hz is insufficient and misses transient events, whereas 100 Hz and 1000 Hz reliably capture and clearly distinguish all interaction types: gentle touch, slow tapping, fast tapping, and hitting. A decision-tree classifier was implemented directly on the FPGA, offloading real-time inference from the Raspberry Pi 4 with minimal latency and negligible power overhead. This design fully meets the tactile sensing requirements of the HIRO-chan robot and is well-suited for full-body tactile sensing in HIRO-chan and other companion robots.",
-      "cited_by_count": 0,
-      "decision_hint": "skim",
-      "verification_status": "metadata_abstract_screened"
-    },
-    {
-      "id": "paper-e283f7043e4a9d7f",
-      "title": "Geometric Reconstruction of Extrinsic Contact Trajectories using Tactile Sensing and Proprioception for Tool Manipulation",
-      "authors": [
-        "Seojung Min",
-        "Yoonjin Kim",
-        "Jeong-Jung Kim",
-        "Jung Kim"
-      ],
-      "venue": "arXiv",
-      "date": "2026-06-20",
-      "doi": "",
-      "url": "http://arxiv.org/abs/2606.22251v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.22251v1",
-      "local_pdf": "research-memory/literature/2026/2026-07-14/papers/paper-e283f7043e4a9d7f.pdf",
-      "is_open_access": true,
-      "paper_type": "preprint",
-      "sources": [
-        "arXiv"
-      ],
-      "query_ids": [
-        "physical-projection",
-        "tactile-front-end-computing"
-      ],
-      "tracks": [
-        "P1",
-        "P2",
-        "P5"
-      ],
-      "relevance_score": 54,
-      "score_breakdown": {
-        "topic_relevance": 54,
-        "evidence_strength": 63,
-        "transferability": 55,
-        "innovation_density": 35,
-        "material_only_penalty": 0
-      },
-      "relevance_reasons": [
-        "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
-        "涉及坏点、漂移、跨器件迁移或少样本校准"
-      ],
-      "core_claim": "Tactile sensing enables robots to perceive rich contact information at the grasp, supporting tasks such as object recognition, in-hand pose estimation, and slip detection.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。摘要可核实数值包括：8.59 +/- 2.41 mm、5.96 +/- 1.16 mm、14.00 +/- 4.11 Hz。",
-      "method_summary": "In this work, we reconstruct the trajectory of extrinsic tool-tip contact using tactile sensing and robot proprioception.",
-      "key_metrics": [
-        "8.59 +/- 2.41 mm",
-        "5.96 +/- 1.16 mm",
-        "14.00 +/- 4.11 Hz"
-      ],
-      "transferable_points": [
-        "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
-        "优先核查是否有 hardware output 与 software projection 的同步一致性证据",
-        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
-      ],
-      "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
-      ],
-      "source_abstract": "Tactile sensing enables robots to perceive rich contact information at the grasp, supporting tasks such as object recognition, in-hand pose estimation, and slip detection. However, in many tool-mediated manipulation tasks, the interaction that determines task success occurs at the tool tip, away from the tactile sensor, making direct sensing of tool-environment contact difficult, particularly when the contact moves during interaction. In this work, we reconstruct the trajectory of extrinsic tool-tip contact using tactile sensing and robot proprioception. We formulate tool-tip trajectory reconstruction as a geometric inference problem under a single-point contact assumption. Our method first estimates the global tool-tip contact location from a calibration segment designed to approximate fixed-point behavior, and then reconstructs the full trajectory by composing relative tool motion estimated from tactile marker observations under continuous contact. Across n=51 trials with multiple trajectories, tools, wrist poses, and grasp configurations, the proposed pipeline achieves a trajectory RMSE of 8.59 +/- 2.41 mm in the world frame and a shape RMSE of 5.96 +/- 1.16 mm, while operating online at 14.00 +/- 4.11 Hz. Overall, the results show that extrinsic tool-tip trajectory geometry can be recovered consistently from grasp-level tactile sensing, with trajectory shape remaining stable across variations in tools, wrist poses, and grasp configurations.",
-      "cited_by_count": 0,
-      "decision_hint": "ignore",
-      "verification_status": "metadata_abstract_screened"
-    },
-    {
-      "id": "paper-28bbbe46c1a5c132",
-      "title": "Closing the Reality Gap: Zero-Shot Sim-to-Real Deployment for Dexterous Force-Based Grasping and Manipulation",
-      "authors": [
-        "Zhe Zhao",
-        "Zhibin Li",
-        "Yilin Ou",
-        "Mengshi Qi"
-      ],
-      "venue": "arXiv",
-      "date": "2026-07-06",
-      "doi": "",
-      "url": "http://arxiv.org/abs/2607.04940v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.04940v1",
-      "local_pdf": "",
-      "is_open_access": true,
-      "paper_type": "preprint",
-      "sources": [
-        "arXiv"
-      ],
-      "query_ids": [
-        "physical-projection",
-        "tactile-front-end-computing"
-      ],
-      "tracks": [
-        "P5",
-        "P6"
-      ],
-      "relevance_score": 50,
-      "score_breakdown": {
-        "topic_relevance": 50,
-        "evidence_strength": 63,
-        "transferability": 45,
-        "innovation_density": 45,
-        "material_only_penalty": 0
-      },
-      "relevance_reasons": [
-        "涉及坏点、漂移、跨器件迁移或少样本校准",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
-      ],
-      "core_claim": "Human-like dexterous hands with multiple fingers offer human-level manipulation capabilities but remain difficult to train the control policies that can deploy on real hardware due to contact-rich physics and imperfect actuation.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
-      "method_summary": "We present a sim-to-real reinforcement learning method that leverages dense tactile feedback combined with joint torque sensing to explicitly regulate physical interactions.",
-      "key_metrics": [],
-      "transferable_points": [
-        "涉及坏点、漂移、跨器件迁移或少样本校准",
-        "提供机器人、可穿戴或电子皮肤系统任务证据",
-        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
-      ],
-      "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
-      ],
-      "source_abstract": "Human-like dexterous hands with multiple fingers offer human-level manipulation capabilities but remain difficult to train the control policies that can deploy on real hardware due to contact-rich physics and imperfect actuation. We present a sim-to-real reinforcement learning method that leverages dense tactile feedback combined with joint torque sensing to explicitly regulate physical interactions. To enable effective sim-to-real transfer, we introduce (i) a computationally fast tactile simulation that computes distances between dense virtual tactile units and the object via parallel forward kinematics, providing high-rate, high-resolution touch signals needed by RL; (ii) a current-to-torque calibration that eliminates the need for torque sensors on dexterous hands by mapping motor current to joint torque; and (iii) actuator dynamics modeling with randomization to account for non-ideal torque-speed effects and bridge the actuation gaps. Using an asymmetric actor-critic PPO pipeline, we train policies entirely in simulation and deploy them directly to a five-finger hand. The resulting policies demonstrate two essential human-hand skills: (1) command-based controllable grasp force tracking and (2) reorientation of objects in the hand, both of which are robustly executed without fine-tuning on the robot. By combining tactile and torque in the observation space with scalable sensing and actuation modeling, our system provides a practical solution to achieve reliable dexterous manipulation. To our knowledge, this is the first demonstration of controllable grasping on a multi-finger dexterous hand trained entirely in simulation and transferred zero-shot on real hardware.",
-      "cited_by_count": 0,
-      "decision_hint": "ignore",
-      "verification_status": "metadata_abstract_screened"
-    },
-    {
-      "id": "paper-0dd7eaf03de8642d",
-      "title": "Metallic Ultrasound Waveguides as a Distributed Tactile Sensing Platform for Contact Localization, Force Estimation, and Material Class Discrimination",
-      "authors": [
-        "Alexandros Rosakis",
-        "Alessio Tamborini",
-        "Basile Fakhoury",
-        "Cole Bailey",
-        "Morteza Gharib"
-      ],
-      "venue": "arXiv",
-      "date": "2026-07-02",
-      "doi": "",
-      "url": "http://arxiv.org/abs/2607.02827v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.02827v1",
-      "local_pdf": "",
-      "is_open_access": true,
-      "paper_type": "preprint",
-      "sources": [
-        "arXiv"
-      ],
-      "query_ids": [
-        "physical-projection",
-        "tactile-front-end-computing"
-      ],
-      "tracks": [
-        "P5"
-      ],
-      "relevance_score": 50,
-      "score_breakdown": {
-        "topic_relevance": 46,
-        "evidence_strength": 81,
-        "transferability": 45,
-        "innovation_density": 35,
-        "material_only_penalty": 0
-      },
-      "relevance_reasons": [
-        "涉及坏点、漂移、跨器件迁移或少样本校准"
-      ],
-      "core_claim": "Tactile sensing is central to how robotic systems interact with the real world, yet current solutions face a tradeoff between sensing area and system complexity.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
-      "method_summary": "Using cylindrical indenters, we characterized the acoustic response to single and multi-point contacts with varying forces and contact materials.",
-      "key_metrics": [],
-      "transferable_points": [
-        "涉及坏点、漂移、跨器件迁移或少样本校准",
-        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
-      ],
-      "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
-      ],
-      "source_abstract": "Tactile sensing is central to how robotic systems interact with the real world, yet current solutions face a tradeoff between sensing area and system complexity. This work investigates metallic ultrasound waveguides as distributed tactile sensors fully interrogated from a single proximal transducer. Using cylindrical indenters, we characterized the acoustic response to single and multi-point contacts with varying forces and contact materials. For single point indentation, the applied force was well captured by a linear relationship with the ratio of the reflection to transmission coefficients (F = a * R/T) across all nine tested materials (R2 >= 0.95). The calibration slope, a, correlated strongly with the material's effective contact modulus (log--log Pearson r=-0.98). The reflected energy partition was found to be a load-independent parameter related to the contacting material's properties, enabling material classification independent of force. For the two-indenter experiment, both contact forces were recovered from the waveguide signal and were in close agreement with reference load cell measurements (contact 1, R2 = 0.97; contact 2, R2=0.95). The approach was extended to two-dimensional metallic sheets, confirming both contact localization and material-dependent effects. Overall, these results validate metallic waveguides as a robust platform for distributed tactile sensing, providing contact localization, force estimation, and material-class discrimination for the contacting body.",
-      "cited_by_count": 0,
-      "decision_hint": "ignore",
-      "verification_status": "metadata_abstract_screened"
+      "verification_status": "full_text_verified"
     }
   ],
   "query_log": [
     {
-      "source": "arxiv",
-      "query_id": "fault-transfer-calibration",
-      "query": "electronic skin fault tolerant transferable calibration domain adaptation",
-      "result_count": 4,
-      "status": "ok"
-    },
-    {
       "source": "crossref",
       "query_id": "fault-transfer-calibration",
       "query": "electronic skin fault tolerant transferable calibration domain adaptation",
@@ -321,11 +79,18 @@
       "status": "ok"
     },
     {
-      "source": "arxiv",
-      "query_id": "low-redundancy-array",
-      "query": "electronic skin tactile array compressed readout low channel",
-      "result_count": 4,
+      "source": "openalex",
+      "query_id": "fault-transfer-calibration",
+      "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+      "result_count": 1,
       "status": "ok"
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "fault-transfer-calibration",
+      "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+      "result_count": 0,
+      "status": "failed"
     },
     {
       "source": "crossref",
@@ -335,11 +100,18 @@
       "status": "ok"
     },
     {
-      "source": "arxiv",
-      "query_id": "physical-projection",
-      "query": "tactile sensor physical computing analog computing programmable projection",
-      "result_count": 25,
+      "source": "openalex",
+      "query_id": "low-redundancy-array",
+      "query": "electronic skin tactile array compressed readout low channel",
+      "result_count": 7,
       "status": "ok"
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "low-redundancy-array",
+      "query": "electronic skin tactile array compressed readout low channel",
+      "result_count": 0,
+      "status": "failed"
     },
     {
       "source": "crossref",
@@ -349,11 +121,18 @@
       "status": "ok"
     },
     {
-      "source": "arxiv",
-      "query_id": "tactile-front-end-computing",
-      "query": "tactile sensor analog front-end in-sensor computing",
-      "result_count": 25,
+      "source": "openalex",
+      "query_id": "physical-projection",
+      "query": "tactile sensor physical computing analog computing programmable projection",
+      "result_count": 5,
       "status": "ok"
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "physical-projection",
+      "query": "tactile sensor physical computing analog computing programmable projection",
+      "result_count": 0,
+      "status": "failed"
     },
     {
       "source": "crossref",
@@ -361,6 +140,20 @@
       "query": "tactile sensor analog front-end in-sensor computing",
       "result_count": 25,
       "status": "ok"
+    },
+    {
+      "source": "openalex",
+      "query_id": "tactile-front-end-computing",
+      "query": "tactile sensor analog front-end in-sensor computing",
+      "result_count": 21,
+      "status": "ok"
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "tactile-front-end-computing",
+      "query": "tactile sensor analog front-end in-sensor computing",
+      "result_count": 0,
+      "status": "failed"
     },
     {
       "source": "crossref",
@@ -370,50 +163,43 @@
       "status": "ok"
     },
     {
+      "source": "openalex",
+      "query_id": "tolerance-interface",
+      "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+      "result_count": 2,
+      "status": "ok"
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "tolerance-interface",
+      "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+      "result_count": 0,
+      "status": "failed"
+    },
+    {
       "source": "crossref",
       "query_id": "vector-shear-friction-slip",
       "query": "flexible tactile sensor vector shear friction slip direction",
       "result_count": 25,
       "status": "ok"
+    },
+    {
+      "source": "openalex",
+      "query_id": "vector-shear-friction-slip",
+      "query": "flexible tactile sensor vector shear friction slip direction",
+      "result_count": 2,
+      "status": "ok"
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "vector-shear-friction-slip",
+      "query": "flexible tactile sensor vector shear friction slip direction",
+      "result_count": 0,
+      "status": "failed"
     }
   ],
   "source_errors": [
     {
-      "source": "openalex",
-      "query_id": "vector-shear-friction-slip",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
-      "source": "openalex",
-      "query_id": "tactile-front-end-computing",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
-      "source": "openalex",
-      "query_id": "low-redundancy-array",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "low-redundancy-array",
-      "error": "HTTPError: HTTP Error 429: "
-    },
-    {
-      "source": "openalex",
-      "query_id": "physical-projection",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
-      "source": "openalex",
-      "query_id": "fault-transfer-calibration",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
-      "source": "openalex",
-      "query_id": "tolerance-interface",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
       "source": "semantic_scholar",
       "query_id": "tactile-front-end-computing",
       "error": "HTTPError: HTTP Error 429: "
@@ -425,7 +211,7 @@
     },
     {
       "source": "semantic_scholar",
-      "query_id": "physical-projection",
+      "query_id": "low-redundancy-array",
       "error": "HTTPError: HTTP Error 429: "
     },
     {
@@ -436,6 +222,31 @@
     {
       "source": "semantic_scholar",
       "query_id": "tolerance-interface",
+      "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "arxiv",
+      "query_id": "tactile-front-end-computing",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "source": "arxiv",
+      "query_id": "low-redundancy-array",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "source": "arxiv",
+      "query_id": "physical-projection",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "source": "arxiv",
+      "query_id": "fault-transfer-calibration",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "physical-projection",
       "error": "HTTPError: HTTP Error 429: "
     }
   ],
@@ -516,172 +327,37 @@
       "profile_update_recommendation": "Accept after at least two tolerance metrics beat controls."
     },
     {
-      "id": "idea-2026-07-14-6d61ef8f0eee",
+      "id": "idea-2026-07-14-direct-path-ablation",
       "status": "candidate",
       "grade": "A",
-      "track": "P4",
-      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "track": "P4/P6",
+      "title": "建立前端路径的 accuracy-latency-power 消融",
       "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
       "source_papers": [
         {
           "paper_id": "paper-c1ebbe0c7b587881",
           "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
           "doi": "",
-          "url": "http://arxiv.org/abs/2607.05241v1"
+          "url": "https://arxiv.org/abs/2607.05241"
         }
       ],
-      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
-      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "hypothesis": "ADC 前矢量或物理投影若真正减少数据搬运，应在相同后端任务下同时降低通道数、延迟和功耗，而非只保持分类精度。",
+      "minimum_experiment": "固定纹理/滑移任务和分类器，对比 raw 四通道、软件矢量、硬件 Kz/Kx/Ky 与可编程投影路径。",
       "controls": [
-        "raw scanning",
-        "software projection",
-        "fixed hardware kernel",
-        "programmable hardware kernel"
-      ],
-      "success_metrics": [
-        "hardware-software R2",
-        "linearity",
-        "kernel switching error",
-        "ADC count",
-        "latency"
-      ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-13T19:40:26.770376+00:00"
-    },
-    {
-      "id": "idea-2026-07-14-a23c3d1f9bb4",
-      "status": "candidate",
-      "grade": "A",
-      "track": "P5",
-      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
-      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-      "source_papers": [
-        {
-          "paper_id": "paper-c1ebbe0c7b587881",
-          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-          "doi": "",
-          "url": "http://arxiv.org/abs/2607.05241v1"
-        }
-      ],
-      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
-      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
-      "controls": [
-        "raw readout",
-        "software projection",
-        "hardware projection",
-        "hardware projection + few-shot calibration"
-      ],
-      "success_metrics": [
-        "accuracy degradation",
-        "feature drift",
-        "calibration samples",
-        "fault ratio",
-        "cross-device variance"
-      ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-13T19:40:26.770393+00:00"
-    },
-    {
-      "id": "idea-2026-07-14-8f8f8ad61e52",
-      "status": "candidate",
-      "grade": "A",
-      "track": "P6",
-      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
-      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-      "source_papers": [
-        {
-          "paper_id": "paper-c1ebbe0c7b587881",
-          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-          "doi": "",
-          "url": "http://arxiv.org/abs/2607.05241v1"
-        }
-      ],
-      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
-      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
-      "controls": [
-        "raw signal",
-        "z-only",
-        "front-end vector/projection"
+        "raw acquisition",
+        "host software feature",
+        "hardware vector",
+        "programmable hardware projection"
       ],
       "success_metrics": [
         "task accuracy",
-        "response time",
-        "channel count",
-        "failure cases"
+        "ADC/channel count",
+        "end-to-end latency",
+        "front-end power",
+        "hardware-software R2"
       ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-13T19:40:26.770403+00:00"
-    },
-    {
-      "id": "idea-2026-07-14-90d036ffa380",
-      "status": "candidate",
-      "grade": "B",
-      "track": "P1",
-      "title": "把论文中的结构机制转成偏移/旋转/接触半径容差地图",
-      "source": "Self Capacitive Tactile Sensor System designed for Companion Robots",
-      "source_papers": [
-        {
-          "paper_id": "paper-111b8e5432862b60",
-          "title": "Self Capacitive Tactile Sensor System designed for Companion Robots",
-          "doi": "",
-          "url": "http://arxiv.org/abs/2606.25348v1"
-        }
-      ],
-      "hypothesis": "若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。",
-      "minimum_experiment": "在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。",
-      "controls": [
-        "周期电极+常规微结构",
-        "周期电极+HCP",
-        "梯度/非周期电极+常规微结构",
-        "目标结构"
-      ],
-      "success_metrics": [
-        "CV",
-        "shift sensitivity",
-        "rotation sensitivity",
-        "contact-radius sensitivity",
-        "signal void ratio"
-      ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-13T19:40:26.770411+00:00"
-    },
-    {
-      "id": "idea-2026-07-14-8a94698b7f37",
-      "status": "candidate",
-      "grade": "B",
-      "track": "P3",
-      "title": "把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照",
-      "source": "Self Capacitive Tactile Sensor System designed for Companion Robots",
-      "source_papers": [
-        {
-          "paper_id": "paper-111b8e5432862b60",
-          "title": "Self Capacitive Tactile Sensor System designed for Companion Robots",
-          "doi": "",
-          "url": "http://arxiv.org/abs/2606.25348v1"
-        }
-      ],
-      "hypothesis": "可解释的局部矢量/空间投影能以更少读出通道保持边缘、形状和滑移方向信息。",
-      "minimum_experiment": "在同一阵列输入上比较 raw scanning、scalar pooling、software gradient 与 hardware macro-pixel。",
-      "controls": [
-        "raw pixel scanning",
-        "scalar pooling",
-        "software gradient",
-        "hardware macro-pixel"
-      ],
-      "success_metrics": [
-        "channel count",
-        "latency",
-        "power",
-        "edge/shape accuracy",
-        "direction accuracy"
-      ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-13T19:40:26.770421+00:00"
+      "risk": "GelNeuro 是光学事件触觉系统，迁移时只能借鉴系统指标和路径消融，不能直接借用其器件结论。",
+      "profile_update_recommendation": "保持 candidate；获得本地硬件延迟/功耗证据后再提出画像更新。"
     }
   ],
   "decisions": [
@@ -718,19 +394,12 @@
   "reports": [
     {
       "date": "2026-07-14",
-      "paper_count": 5,
+      "paper_count": 1,
       "idea_count": 5,
-      "top_score": 85,
-      "report_markdown": "# 2026-07-14 柔性电子皮肤前端触觉计算文献日报\n\n## 今日结论\n\n本次从 OpenAlex、Crossref、Semantic Scholar 和 arXiv 检索最近 30 天结果，去重并排除历史已收录论文后保留 5 篇。\n排序优先考虑 ADC 前模拟触觉、矢量/剪切/摩擦读出、低冗余阵列、物理投影和容错迁移；只强调材料灵敏度而缺少系统价值的论文已降权。\n\n- 今日必看：1 篇\n- 值得追踪：1 篇\n- 新增可评估 idea：5 个\n- 历史重复排除：0 篇\n\n## 今日必看\n\n### 1. [GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition](http://arxiv.org/abs/2607.05241v1)\n\n- 来源：arXiv；2026-07-06；评分 85/100\n- 为什么重要：涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准\n- 摘要级结论：Neuromorphic visuo-tactile sensing offers a promising paradigm for low-latency and low-power robotic perception.\n- 方法：This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC).\n- 摘要数值：96.3%、80 ms、19.6 mW\n- 可迁移：涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准；可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗\n- 风险：当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。\n- 建议操作：read\n\n## 值得追踪\n\n| 评分 | 轨道 | 论文 | 建议 |\n|---:|---|---|---|\n| 62 | P1, P3 | [Self Capacitive Tactile Sensor System designed for Companion Robots](http://arxiv.org/abs/2606.25348v1) | skim |\n\n## 方法与指标速览\n\n| 论文 | 方法（摘要证据） | 可核实数值 | 画像价值 |\n|---|---|---|---|\n| GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition | This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC). | 96.3%、80 ms、19.6 mW | 涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Self Capacitive Tactile Sensor System designed for Companion Robots | However, the design of such systems remains challenging. | 10 Hz、100 Hz、1000 Hz | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及低冗余阵列、空间特征或读出通道压缩 |\n| Geometric Reconstruction of Extrinsic Contact Trajectories using Tactile Sensing and Proprioception for Tool Manipulation | In this work, we reconstruct the trajectory of extrinsic tool-tip contact using tactile sensing and robot proprioception. | 8.59 +/- 2.41 mm、5.96 +/- 1.16 mm、14.00 +/- 4.11 Hz | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出 |\n| Closing the Reality Gap: Zero-Shot Sim-to-Real Deployment for Dexterous Force-Based Grasping and Manipulation | We present a sim-to-real reinforcement learning method that leverages dense tactile feedback combined with joint torque sensing to explicitly regulate physical interactions. | 摘要未给出 | 涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Metallic Ultrasound Waveguides as a Distributed Tactile Sensing Platform for Contact Localization, Force Estimation, and Material Class Discrimination | Using cylindrical indenters, we characterized the acoustic response to single and multi-point contacts with varying forces and contact materials. | 摘要未给出 | 涉及坏点、漂移、跨器件迁移或少样本校准 |\n\n## 今日创新点候选\n\n### Idea 1：把论文机制映射为 3x3 可编程物理触觉投影核\n\n- 对应轨道：P4；分级：A\n- 来源论文：GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition\n- 核心假设：Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。\n- 最小实验：先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。\n- 对照：raw scanning；software projection；fixed hardware kernel；programmable hardware kernel\n- 成功指标：hardware-software R2；linearity；kernel switching error；ADC count；latency\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 2：把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验\n\n- 对应轨道：P5；分级：A\n- 来源论文：GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition\n- 核心假设：归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。\n- 最小实验：设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。\n- 对照：raw readout；software projection；hardware projection；hardware projection + few-shot calibration\n- 成功指标：accuracy degradation；feature drift；calibration samples；fault ratio；cross-device variance\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 3：把论文系统任务压缩成不拖累主线的最小闭环演示\n\n- 对应轨道：P6；分级：A\n- 来源论文：GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition\n- 核心假设：一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。\n- 最小实验：选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。\n- 对照：raw signal；z-only；front-end vector/projection\n- 成功指标：task accuracy；response time；channel count；failure cases\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 4：把论文中的结构机制转成偏移/旋转/接触半径容差地图\n\n- 对应轨道：P1；分级：B\n- 来源论文：Self Capacitive Tactile Sensor System designed for Companion Robots\n- 核心假设：若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。\n- 最小实验：在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。\n- 对照：周期电极+常规微结构；周期电极+HCP；梯度/非周期电极+常规微结构；目标结构\n- 成功指标：CV；shift sensitivity；rotation sensitivity；contact-radius sensitivity；signal void ratio\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n### Idea 5：把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照\n\n- 对应轨道：P3；分级：B\n- 来源论文：Self Capacitive Tactile Sensor System designed for Companion Robots\n- 核心假设：可解释的局部矢量/空间投影能以更少读出通道保持边缘、形状和滑移方向信息。\n- 最小实验：在同一阵列输入上比较 raw scanning、scalar pooling、software gradient 与 hardware macro-pixel。\n- 对照：raw pixel scanning；scalar pooling；software gradient；hardware macro-pixel\n- 成功指标：channel count；latency；power；edge/shape accuracy；direction accuracy\n- 用户操作：加入画像提案 / 观察 / 转任务 / 拒绝\n\n## 检索记录\n\n| 来源 | 查询 | 命中 | 状态 |\n|---|---|---:|---|\n| arxiv | `electronic skin fault tolerant transferable calibration domain adaptation` | 4 | ok |\n| crossref | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |\n| arxiv | `electronic skin tactile array compressed readout low channel` | 4 | ok |\n| crossref | `electronic skin tactile array compressed readout low channel` | 25 | ok |\n| arxiv | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |\n| crossref | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |\n| arxiv | `tactile sensor analog front-end in-sensor computing` | 25 | ok |\n| crossref | `tactile sensor analog front-end in-sensor computing` | 25 | ok |\n| crossref | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |\n| crossref | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |\n\n## 数据源异常\n\n- openalex：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: Too Many Requests。其余来源已继续运行。\n- semantic_scholar：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。\n\n## 纳入与排除标准\n\n- 纳入：论文能服务 P1-P6 至少一条主线，并能形成机制、前端、阵列、系统任务或可验证对照。\n- 降权：只强调 sensitivity、gauge factor 或材料配方，而缺少读出、阵列、校准、鲁棒性或任务证据。\n- 排除：历史已收录、题录明显偏题、来源元数据不足且无法核实。\n- 可信度边界：本日报首先完成题录/摘要级筛选；数值、机理和优先级需在点击“精读”后核查全文。\n",
+      "top_score": 88,
+      "report_markdown": "# 2026-07-14 柔性电子皮肤前端触觉计算文献日报\n\n## 今日结论\n\n本次检索最近 30 天文献。人工硬门控后仅保留 1 篇直接 sensor-to-chip 神经形态触觉系统。PFL 协作机器人计量综述、飞秒激光高灵敏压力传感器、视觉触觉 CNN、摩擦电穿戴综述，以及上一轮出现的工具轨迹重建、sim-to-real 强化学习和金属超声波导均因缺少用户 P1-P6 所需的前端/阵列证据被移除。没有用弱匹配或通用高灵敏材料论文填充日报。\n\n- 今日必看：1 篇\n- 值得追踪：0 篇\n- 新增候选 idea：1 个\n- 用户研究画像：未修改\n\n## 今日必看\n\n### 1. [GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition](https://arxiv.org/abs/2607.05241)\n\n- 对应 P4/P6：直接把 GelSight Mini 的 DVS 事件送入 Speck2f 上的 INT8 SCNN，活动推理不依赖主机预处理，可作为前端计算路径和最小任务演示的系统基线。\n- 方法：1 ms 事件分箱；硬件感知权重裁剪；INT8 量化；映射到 9 个物理处理核；15 类天然纹理硬件在环验证。\n- 指标：96.3%（芯片）对 99.0%（PC）；80 ms；19.6 mW 板级活动功耗。全文对照 GelSight handcrafted/PC、Evetac、NeuroTac/Loihi2、NeuroTac/Speck2f 以及 CPU/GPU 功耗。\n- 局限：光学事件触觉并非压阻阵列 ADC 前模拟计算；1 ms 时间离散受 BPTT 内存约束；INT8 映射仍有精度损失；芯片串扰和热噪声未被离线噪声完全覆盖；滑移闭环尚未验证。\n- 可迁移：对 Paper A/P4 建立 raw/host software/hardware vector/physical projection 的 accuracy-latency-power-channel 联合消融。未见深度泛化只能作为工况鲁棒性参考，不能写成跨器件迁移或坏点容错。\n\n## 今日创新点候选\n\n`candidate`，P4/P6：建立 raw acquisition、host software feature、hardware vector、programmable hardware projection 的联合消融。成功指标包括任务精度、ADC/通道数、端到端延迟、前端功耗与 hardware-software R2。该想法未写入用户画像。\n\n## 数据源异常\n\n- Semantic Scholar：6 个查询失败，HTTP 429。\n- arXiv：4 个查询超时；其他 arXiv 查询及已有题录仍可用。\n- OpenAlex、Crossref：本次最新并发运行正常返回；最终保留论文来自 arXiv，并已用合法下载全文核验。\n\n## 纳入与排除标准\n\n- 纳入：能服务 P1-P6，且提供前端、阵列、系统路径、资源权衡或可验证任务证据。\n- 排除：仅关键词命中；通用高灵敏材料；纯后端机器人算法；与柔性电子皮肤前端无关的刚性或计量平台。\n- 证据边界：保留论文已核对下载全文；新 idea 仅为 `candidate`，未修改 `user-research-profile.md`。\n",
       "query_log": [
         {
-          "source": "arxiv",
-          "query_id": "fault-transfer-calibration",
-          "query": "electronic skin fault tolerant transferable calibration domain adaptation",
-          "result_count": 4,
-          "status": "ok"
-        },
-        {
           "source": "crossref",
           "query_id": "fault-transfer-calibration",
           "query": "electronic skin fault tolerant transferable calibration domain adaptation",
@@ -738,11 +407,18 @@
           "status": "ok"
         },
         {
-          "source": "arxiv",
-          "query_id": "low-redundancy-array",
-          "query": "electronic skin tactile array compressed readout low channel",
-          "result_count": 4,
+          "source": "openalex",
+          "query_id": "fault-transfer-calibration",
+          "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+          "result_count": 1,
           "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "fault-transfer-calibration",
+          "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+          "result_count": 0,
+          "status": "failed"
         },
         {
           "source": "crossref",
@@ -752,11 +428,18 @@
           "status": "ok"
         },
         {
-          "source": "arxiv",
-          "query_id": "physical-projection",
-          "query": "tactile sensor physical computing analog computing programmable projection",
-          "result_count": 25,
+          "source": "openalex",
+          "query_id": "low-redundancy-array",
+          "query": "electronic skin tactile array compressed readout low channel",
+          "result_count": 7,
           "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "low-redundancy-array",
+          "query": "electronic skin tactile array compressed readout low channel",
+          "result_count": 0,
+          "status": "failed"
         },
         {
           "source": "crossref",
@@ -766,11 +449,18 @@
           "status": "ok"
         },
         {
-          "source": "arxiv",
-          "query_id": "tactile-front-end-computing",
-          "query": "tactile sensor analog front-end in-sensor computing",
-          "result_count": 25,
+          "source": "openalex",
+          "query_id": "physical-projection",
+          "query": "tactile sensor physical computing analog computing programmable projection",
+          "result_count": 5,
           "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "physical-projection",
+          "query": "tactile sensor physical computing analog computing programmable projection",
+          "result_count": 0,
+          "status": "failed"
         },
         {
           "source": "crossref",
@@ -778,6 +468,20 @@
           "query": "tactile sensor analog front-end in-sensor computing",
           "result_count": 25,
           "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "tactile-front-end-computing",
+          "query": "tactile sensor analog front-end in-sensor computing",
+          "result_count": 21,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "tactile-front-end-computing",
+          "query": "tactile sensor analog front-end in-sensor computing",
+          "result_count": 0,
+          "status": "failed"
         },
         {
           "source": "crossref",
@@ -787,50 +491,43 @@
           "status": "ok"
         },
         {
+          "source": "openalex",
+          "query_id": "tolerance-interface",
+          "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "tolerance-interface",
+          "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
           "source": "crossref",
           "query_id": "vector-shear-friction-slip",
           "query": "flexible tactile sensor vector shear friction slip direction",
           "result_count": 25,
           "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "vector-shear-friction-slip",
+          "query": "flexible tactile sensor vector shear friction slip direction",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "vector-shear-friction-slip",
+          "query": "flexible tactile sensor vector shear friction slip direction",
+          "result_count": 0,
+          "status": "failed"
         }
       ],
       "source_errors": [
         {
-          "source": "openalex",
-          "query_id": "vector-shear-friction-slip",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "source": "openalex",
-          "query_id": "tactile-front-end-computing",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "source": "openalex",
-          "query_id": "low-redundancy-array",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "source": "semantic_scholar",
-          "query_id": "low-redundancy-array",
-          "error": "HTTPError: HTTP Error 429: "
-        },
-        {
-          "source": "openalex",
-          "query_id": "physical-projection",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "source": "openalex",
-          "query_id": "fault-transfer-calibration",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "source": "openalex",
-          "query_id": "tolerance-interface",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
           "source": "semantic_scholar",
           "query_id": "tactile-front-end-computing",
           "error": "HTTPError: HTTP Error 429: "
@@ -842,7 +539,7 @@
         },
         {
           "source": "semantic_scholar",
-          "query_id": "physical-projection",
+          "query_id": "low-redundancy-array",
           "error": "HTTPError: HTTP Error 429: "
         },
         {
@@ -853,6 +550,31 @@
         {
           "source": "semantic_scholar",
           "query_id": "tolerance-interface",
+          "error": "HTTPError: HTTP Error 429: "
+        },
+        {
+          "source": "arxiv",
+          "query_id": "tactile-front-end-computing",
+          "error": "TimeoutError: The read operation timed out"
+        },
+        {
+          "source": "arxiv",
+          "query_id": "low-redundancy-array",
+          "error": "TimeoutError: The read operation timed out"
+        },
+        {
+          "source": "arxiv",
+          "query_id": "physical-projection",
+          "error": "TimeoutError: The read operation timed out"
+        },
+        {
+          "source": "arxiv",
+          "query_id": "fault-transfer-calibration",
+          "error": "TimeoutError: The read operation timed out"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "physical-projection",
           "error": "HTTPError: HTTP Error 429: "
         }
       ]
@@ -863,9 +585,9 @@
     "icon_image2": true
   },
   "stats": {
-    "papers_today": 5,
+    "papers_today": 1,
     "must_read": 1,
-    "pending_ideas": 8,
+    "pending_ideas": 4,
     "pending_proposals": 0,
     "open_tasks": 2
   }
