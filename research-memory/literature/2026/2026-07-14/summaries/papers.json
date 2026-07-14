@@ -1,6 +1,6 @@
 {
   "date": "2026-07-14",
-  "searched_at": "2026-07-14T04:48:54.826586+00:00",
+  "searched_at": "2026-07-14T05:06:51.370397+00:00",
   "search_window_days": 30,
   "query_log": [
     {
@@ -21,8 +21,8 @@
       "source": "openalex",
       "query_id": "fault-transfer-calibration",
       "query": "electronic skin fault tolerant transferable calibration domain adaptation",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 1,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -49,8 +49,8 @@
       "source": "openalex",
       "query_id": "low-redundancy-array",
       "query": "electronic skin tactile array compressed readout low channel",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 7,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -77,8 +77,8 @@
       "source": "openalex",
       "query_id": "near-sensor-tactile-computing",
       "query": "near-sensor analog computing tactile sensing electronic skin",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 17,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -98,8 +98,8 @@
       "source": "openalex",
       "query_id": "neuromorphic-tactile-encoding",
       "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 22,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -126,8 +126,8 @@
       "source": "openalex",
       "query_id": "physical-projection",
       "query": "tactile sensor physical computing analog computing programmable projection",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 5,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -154,8 +154,8 @@
       "source": "openalex",
       "query_id": "tactile-front-end-computing",
       "query": "tactile sensor analog front-end in-sensor computing",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 21,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -175,8 +175,8 @@
       "source": "openalex",
       "query_id": "tolerance-interface",
       "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 2,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -196,8 +196,8 @@
       "source": "openalex",
       "query_id": "vector-shear-friction-slip",
       "query": "flexible tactile sensor vector shear friction slip direction",
-      "result_count": 0,
-      "status": "failed"
+      "result_count": 2,
+      "status": "ok"
     },
     {
       "source": "semantic_scholar",
@@ -214,24 +214,9 @@
       "error": "HTTPError: HTTP Error 429: "
     },
     {
-      "source": "openalex",
-      "query_id": "near-sensor-tactile-computing",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
-      "source": "openalex",
-      "query_id": "neuromorphic-tactile-encoding",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
       "source": "semantic_scholar",
       "query_id": "neuromorphic-tactile-encoding",
       "error": "HTTPError: HTTP Error 429: "
-    },
-    {
-      "source": "openalex",
-      "query_id": "tactile-front-end-computing",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "source": "semantic_scholar",
@@ -239,19 +224,9 @@
       "error": "HTTPError: HTTP Error 429: "
     },
     {
-      "source": "openalex",
-      "query_id": "vector-shear-friction-slip",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
       "source": "semantic_scholar",
       "query_id": "vector-shear-friction-slip",
       "error": "HTTPError: HTTP Error 429: "
-    },
-    {
-      "source": "openalex",
-      "query_id": "low-redundancy-array",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "source": "semantic_scholar",
@@ -259,29 +234,14 @@
       "error": "HTTPError: HTTP Error 429: "
     },
     {
-      "source": "openalex",
-      "query_id": "physical-projection",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
       "source": "semantic_scholar",
       "query_id": "physical-projection",
       "error": "HTTPError: HTTP Error 429: "
     },
     {
-      "source": "openalex",
-      "query_id": "fault-transfer-calibration",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
       "source": "semantic_scholar",
       "query_id": "fault-transfer-calibration",
       "error": "HTTPError: HTTP Error 429: "
-    },
-    {
-      "source": "openalex",
-      "query_id": "tolerance-interface",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "source": "semantic_scholar",
@@ -382,19 +342,21 @@
       "paper_type": "journal-article",
       "venue_quality": "elite_subjournal_or_am_level",
       "sources": [
-        "Crossref"
+        "Crossref",
+        "OpenAlex"
       ],
       "query_ids": [
-        "near-sensor-tactile-computing"
+        "near-sensor-tactile-computing",
+        "tactile-front-end-computing"
       ],
       "tracks": [
         "P1",
         "P3",
         "P5"
       ],
-      "relevance_score": 63,
+      "relevance_score": 65,
       "score_breakdown": {
-        "topic_relevance": 63,
+        "topic_relevance": 66,
         "evidence_strength": 73,
         "transferability": 65,
         "innovation_density": 45,
@@ -430,6 +392,159 @@
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-8dd8aa82559e2447",
       "detail_json": "data/paper-details/paper-8dd8aa82559e2447.json"
+    },
+    {
+      "id": "paper-eb9282b5c24ccb1c",
+      "title": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
+      "authors": [
+        "Zechao Han",
+        "Daozhi Shen",
+        "Linglan Guo",
+        "Peicheng Han",
+        "Gangli Zhao",
+        "Haotian Luo",
+        "Jiaxing Huo",
+        "Dingyun Zhang",
+        "Q Gu",
+        "Ran Tang",
+        "Honghao Zhang",
+        "Hyun Ho Kim"
+      ],
+      "venue": "International Journal of Extreme Manufacturing",
+      "date": "2026-06-29",
+      "doi": "10.1088/2631-7990/ae83ec",
+      "url": "https://doi.org/10.1088/2631-7990/ae83ec",
+      "pdf_url": "https://iopscience.iop.org/article/10.1088/2631-7990/ae83ec/pdf",
+      "pdf_candidates": [
+        "https://iopscience.iop.org/article/10.1088/2631-7990/ae83ec/pdf"
+      ],
+      "local_pdf": "research-memory/literature/2026/2026-07-14/papers/paper-eb9282b5c24ccb1c.pdf",
+      "is_open_access": true,
+      "paper_type": "article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "OpenAlex"
+      ],
+      "query_ids": [
+        "low-redundancy-array"
+      ],
+      "tracks": [
+        "P6",
+        "P1",
+        "P4"
+      ],
+      "relevance_score": 63,
+      "score_breakdown": {
+        "topic_relevance": 69,
+        "evidence_strength": 64,
+        "transferability": 50,
+        "innovation_density": 65,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及 in-sensor/物理计算或可编程触觉前端"
+      ],
+      "core_claim": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span.",
+      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：6414 kPa、800 kPa、3.4 Pa、30 ms。",
+      "method_summary": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span.",
+      "key_metrics": [
+        "6414 kPa",
+        "800 kPa",
+        "3.4 Pa",
+        "30 ms"
+      ],
+      "transferable_points": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+      ],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
+      ],
+      "source_abstract": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span. Here, we demonstrate a femtosecond laser engraving approach that directly constructs programmable hybrid micro/nanostructures on metallic electrodes in a single, mask-free step. This top-down laser patterning process produces dual-scale micro/nanostructures, significantly expanding the interfacial coupling region and enhancing sensor performance. The resulting iontronic pressure sensors exhibit extreme capabilities, characterized by a maximum sensitivity reaching 6414 kPa -1 , a wide sensing range up to 800 kPa, a low detection threshold of 3.4 Pa, rapid signal response (~30 ms), and excellent cycling stability. For demonstration, the sensors were integrated into a wearable multi-octave glove system, validating their robustness in multifunctional pressure recognition. This work highlights the femtosecond laser-based approach as an efficient and scalable manufacturing method for tunable, hybrid micro/nanostructures, opening new opportunities for advanced electronic skins, intelligent robotics, and human-machine interfaces.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened",
+      "pdf_source_url": "https://iopscience.iop.org/article/10.1088/2631-7990/ae83ec/pdf",
+      "pdf_version": "repository_or_author_copy",
+      "pdf_version_label": "作者或机构仓储合法公开版本",
+      "deep_read_status": "fulltext_draft",
+      "detail_path": "paper.html?id=paper-eb9282b5c24ccb1c",
+      "detail_json": "data/paper-details/paper-eb9282b5c24ccb1c.json"
+    },
+    {
+      "id": "paper-dc68dea1322aea5f",
+      "title": "Triboelectric Wearable Sensors for Human-Centric Smart Electronics: From Self-Powered Sensing to Artificial Intelligence-Assisted Human–Machine Interface Systems",
+      "authors": [
+        "Yoonsang Ra",
+        "Sumin Cho",
+        "Xinge Guo",
+        "Dongwhi Choi",
+        "Chengkuo Lee"
+      ],
+      "venue": "Nano-Micro Letters",
+      "date": "2026-06-16",
+      "doi": "10.1007/s40820-026-02263-z",
+      "url": "https://doi.org/10.1007/s40820-026-02263-z",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf",
+      "pdf_candidates": [
+        "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf"
+      ],
+      "local_pdf": "research-memory/literature/2026/2026-07-14/papers/paper-dc68dea1322aea5f.pdf",
+      "is_open_access": true,
+      "paper_type": "article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "OpenAlex"
+      ],
+      "query_ids": [
+        "near-sensor-tactile-computing",
+        "neuromorphic-tactile-encoding",
+        "tactile-front-end-computing"
+      ],
+      "tracks": [
+        "P2",
+        "P4",
+        "P6"
+      ],
+      "relevance_score": 63,
+      "score_breakdown": {
+        "topic_relevance": 61,
+        "evidence_strength": 73,
+        "transferability": 70,
+        "innovation_density": 45,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+        "涉及 in-sensor/物理计算或可编程触觉前端",
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
+      ],
+      "core_claim": "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions.",
+      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。",
+      "method_summary": "Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptable to body-interfaced formats.",
+      "key_metrics": [],
+      "transferable_points": [
+        "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+        "涉及 in-sensor/物理计算或可编程触觉前端",
+        "优先核查是否有 hardware output 与 software projection 的同步一致性证据",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+      ],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
+      ],
+      "source_abstract": "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions. Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptable to body-interfaced formats. In this review, wearability refers to body-mounted, skin-interfaced, textile-integrated, or otherwise human-attached triboelectric sensing platforms, whereas human-centric smart electronics refers to downstream electronic systems that remain functionally anchored to human-originated sensing, interpretation, feedback, or control. From this perspective, we review triboelectric wearable sensors from fundamentals to applications, covering working principles, material selection, device architectures, and fabrication strategies. We further discuss artificial intelligence-assisted signal processing, triboelectric artificial synapses, and neuromorphic computing as key bridges from self-powered sensing to intelligent HMI. Representative application spaces, including health care, gesture recognition, device control, immersive virtual interaction, wearable-to-robotic extensions, and intelligent transportation are discussed only when wearable triboelectric sensing serves as the primary human-input interface. Finally, the remaining challenges and future directions toward next-generation human-centric smart electronics are outlined.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened",
+      "pdf_source_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf",
+      "pdf_version": "publisher_pdf",
+      "pdf_version_label": "出版社开放获取 PDF",
+      "deep_read_status": "fulltext_draft",
+      "detail_path": "paper.html?id=paper-dc68dea1322aea5f",
+      "detail_json": "data/paper-details/paper-dc68dea1322aea5f.json"
     },
     {
       "id": "paper-39f3c43900fde1b0",
@@ -666,7 +781,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551246+00:00"
+      "created_at": "2026-07-14T05:06:29.040920+00:00"
     },
     {
       "id": "idea-2026-07-14-f3577c266130",
@@ -700,7 +815,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551257+00:00"
+      "created_at": "2026-07-14T05:06:29.040939+00:00"
     },
     {
       "id": "idea-2026-07-14-3ee11837e718",
@@ -734,7 +849,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551261+00:00"
+      "created_at": "2026-07-14T05:06:29.040947+00:00"
     },
     {
       "id": "idea-2026-07-14-f4aae77423de",
@@ -768,7 +883,39 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551264+00:00"
+      "created_at": "2026-07-14T05:06:29.040953+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-a2709fbaaab4",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
+      "source_papers": [
+        {
+          "paper_id": "paper-eb9282b5c24ccb1c",
+          "title": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
+          "doi": "10.1088/2631-7990/ae83ec",
+          "url": "https://doi.org/10.1088/2631-7990/ae83ec"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-14T05:06:29.040958+00:00"
     }
   ]
 }

@@ -108,7 +108,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551246+00:00"
+      "created_at": "2026-07-14T05:06:29.040920+00:00"
     },
     {
       "id": "idea-2026-07-14-f3577c266130",
@@ -142,7 +142,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551257+00:00"
+      "created_at": "2026-07-14T05:06:29.040939+00:00"
     },
     {
       "id": "idea-2026-07-14-3ee11837e718",
@@ -176,7 +176,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551261+00:00"
+      "created_at": "2026-07-14T05:06:29.040947+00:00"
     },
     {
       "id": "idea-2026-07-14-f4aae77423de",
@@ -210,7 +210,39 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T04:48:22.551264+00:00"
+      "created_at": "2026-07-14T05:06:29.040953+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-a2709fbaaab4",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
+      "source_papers": [
+        {
+          "paper_id": "paper-eb9282b5c24ccb1c",
+          "title": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
+          "doi": "10.1088/2631-7990/ae83ec",
+          "url": "https://doi.org/10.1088/2631-7990/ae83ec"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-14T05:06:29.040958+00:00"
     }
   ]
 }
