@@ -1,6 +1,6 @@
 {
   "date": "2026-07-14",
-  "searched_at": "2026-07-14T01:04:50.671019+00:00",
+  "searched_at": "2026-07-14T01:45:16.336538+00:00",
   "search_window_days": 30,
   "query_log": [
     {
@@ -18,13 +18,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "fault-transfer-calibration",
-      "query": "electronic skin fault tolerant transferable calibration domain adaptation",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "crossref",
       "query_id": "low-redundancy-array",
       "query": "electronic skin tactile array compressed readout low channel",
@@ -37,13 +30,6 @@
       "query": "electronic skin tactile array compressed readout low channel",
       "result_count": 7,
       "status": "ok"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "low-redundancy-array",
-      "query": "electronic skin tactile array compressed readout low channel",
-      "result_count": 0,
-      "status": "failed"
     },
     {
       "source": "crossref",
@@ -60,13 +46,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "physical-projection",
-      "query": "tactile sensor physical computing analog computing programmable projection",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "crossref",
       "query_id": "tactile-front-end-computing",
       "query": "tactile sensor analog front-end in-sensor computing",
@@ -81,13 +60,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "tactile-front-end-computing",
-      "query": "tactile sensor analog front-end in-sensor computing",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "crossref",
       "query_id": "tolerance-interface",
       "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
@@ -102,13 +74,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "tolerance-interface",
-      "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "crossref",
       "query_id": "vector-shear-friction-slip",
       "query": "flexible tactile sensor vector shear friction slip direction",
@@ -121,13 +86,6 @@
       "query": "flexible tactile sensor vector shear friction slip direction",
       "result_count": 2,
       "status": "ok"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "vector-shear-friction-slip",
-      "query": "flexible tactile sensor vector shear friction slip direction",
-      "result_count": 0,
-      "status": "failed"
     }
   ],
   "source_errors": [
@@ -148,6 +106,11 @@
     },
     {
       "source": "semantic_scholar",
+      "query_id": "physical-projection",
+      "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "semantic_scholar",
       "query_id": "fault-transfer-calibration",
       "error": "HTTPError: HTTP Error 429: "
     },
@@ -175,18 +138,13 @@
       "source": "arxiv",
       "query_id": "fault-transfer-calibration",
       "error": "TimeoutError: The read operation timed out"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "physical-projection",
-      "error": "HTTPError: HTTP Error 429: "
     }
   ],
   "screening_policy": {
     "profile": "flexible electronic skin front-end tactile computing",
     "minimum_score": 48,
     "material_only_papers_are_downranked": true,
-    "verification_level": "top paper verified against downloaded full text"
+    "verification_level": "metadata and abstract screening"
   },
   "papers": [
     {
@@ -215,9 +173,10 @@
       ],
       "tracks": [
         "P4",
+        "P5",
         "P6"
       ],
-      "relevance_score": 88,
+      "relevance_score": 83,
       "score_breakdown": {
         "topic_relevance": 71,
         "evidence_strength": 81,
@@ -226,32 +185,281 @@
         "material_only_penalty": 0
       },
       "relevance_reasons": [
-        "直接将光学凝胶触觉事件送入 Speck2f，形成无需主机预处理的 sensor-to-chip 路径",
-        "提供精度、延迟、板级功耗与硬件部署基线，可服务 P4 前端计算和 P6 最小任务演示"
+        "涉及 in-sensor/物理计算或可编程触觉前端",
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
-      "core_claim": "GelSight Mini 的标记运动被 DVS 事件化并直接送入 Speck2f 上的 INT8 SCNN，在无需主机预处理的条件下完成纹理识别。",
-      "summary_zh": "直接 sensor-to-chip 神经形态触觉系统在 15 类天然纹理上达到 96.3% 硬件在环准确率，推理窗口 80 ms，板级活动功耗 19.6 mW。",
-      "method_summary": "GelSight Mini 弹性体光学前端配合 Speck2f 内置 DVS，以 1 ms 时间分箱生成事件；SCNN 经硬件感知权重裁剪、INT8 量化并映射到 9 个物理处理核。",
+      "core_claim": "Neuromorphic visuo-tactile sensing offers a promising paradigm for low-latency and low-power robotic perception.",
+      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：96.3%、80 ms、19.6 mW。",
+      "method_summary": "This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC).",
       "key_metrics": [
-        "15 类纹理：96.3%",
-        "推理窗口：80 ms",
-        "板级活动功耗：19.6 mW",
-        "PC/芯片准确率：99.0%/96.3%"
+        "96.3%",
+        "80 ms",
+        "19.6 mW"
       ],
       "transferable_points": [
-        "把 raw/host preprocessing 与直接 sensor-to-chip 路径作为 P4 系统对照",
-        "沿用 accuracy-latency-power-channel 联合指标评估 ADC 前物理投影或矢量前端",
-        "用未见接触深度测试工况泛化，但不能等同于跨器件迁移或坏点容错"
+        "涉及 in-sensor/物理计算或可编程触觉前端",
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
       ],
       "risks": [
-        "输入是光学 GelSight/DVS，而非压阻阵列 ADC 前模拟计算，属于系统基线而非同类器件方案。",
-        "1 ms 时间离散受 BPTT 内存限制；INT8 映射仍有精度损失；真实芯片串扰和热噪声未被合成噪声完全覆盖。",
-        "当前仅验证纹理分类，滑移检测与闭环控制仍是未来工作。"
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
       ],
       "source_abstract": "Neuromorphic visuo-tactile sensing offers a promising paradigm for low-latency and low-power robotic perception. However, existing systems still rely heavily on a host computer for event readout, preprocessing, or relaying prior to chip inference. This paper presents GelNeuro, a fully integrated sensing-computing visuo-tactile system that directly pairs a GelSight Mini-based optical tactile front end with the Speck2f neuromorphic system-on-chip (SoC). Contact-induced marker motions are captured as dynamic vision sensor (DVS) events and routed through the on-chip network to a spiking convolutional neural network (SCNN) classifier. To mitigate accuracy degradation during 8-bit deployment, a hardware-aware weight clamping strategy is introduced. Evaluated on a 15-class natural texture recognition task, hardware-in-the-loop testing on the physical chip achieves a 96.3% accuracy within an 80 ms inference window. Notably, the system consumes only 19.6 mW of board-level active power-over three orders of magnitude lower than conventional CPU/GPU baselines on the same benchmark. GelNeuro also exhibits robust generalization across unseen contact depths, demonstrating the viability of direct sensor-to-chip tactile recognition on edge neuromorphic hardware.",
       "cited_by_count": 0,
       "decision_hint": "read",
-      "verification_status": "full_text_verified"
+      "verification_status": "metadata_abstract_screened"
+    },
+    {
+      "id": "paper-f5a0563071e2ecf4",
+      "title": "Design, Validation, and Metrological Limits of Biofidelic Instrumentation in PFL Collaborative Robotics: A Systematic Review of Longitudinal Trends and Future Paradigms",
+      "authors": [
+        "Daniel Hartmann",
+        "Kristýna Hamříková",
+        "Aleš Vysocký",
+        "Vendula Laciok",
+        "Aleš Bernatík"
+      ],
+      "venue": "Sensors",
+      "date": "2026-06-23",
+      "doi": "10.3390/s26133984",
+      "url": "https://doi.org/10.3390/s26133984",
+      "pdf_url": "https://www.mdpi.com/1424-8220/26/13/3984/pdf?version=1782265162",
+      "local_pdf": "",
+      "is_open_access": true,
+      "paper_type": "article",
+      "sources": [
+        "OpenAlex"
+      ],
+      "query_ids": [
+        "physical-projection",
+        "tactile-front-end-computing"
+      ],
+      "tracks": [
+        "P6",
+        "P1",
+        "P5"
+      ],
+      "relevance_score": 64,
+      "score_breakdown": {
+        "topic_relevance": 68,
+        "evidence_strength": 100,
+        "transferability": 50,
+        "innovation_density": 25,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及坏点、漂移、跨器件迁移或少样本校准"
+      ],
+      "core_claim": "The integration of collaborative robots into industrial environments requires rigorous safety validation under the Power and Force Limiting (PFL) regime.",
+      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。当前未从摘要提取到可比较数值。",
+      "method_summary": "This review article systematically maps the technological and normative development of certified Pressure and Force Measurement Devices (PFMDs) and experimental biofidelic instruments for Physical Human–Robot Interaction (pHRI) between the years 2011 and 2026.",
+      "key_metrics": [],
+      "transferable_points": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+      ],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "开放获取链接未返回 PDF，已仅保留来源链接。"
+      ],
+      "source_abstract": "The integration of collaborative robots into industrial environments requires rigorous safety validation under the Power and Force Limiting (PFL) regime. This review article systematically maps the technological and normative development of certified Pressure and Force Measurement Devices (PFMDs) and experimental biofidelic instruments for Physical Human–Robot Interaction (pHRI) between the years 2011 and 2026. A quantitative screening of 68 studies revealed a publication peak in impact metrology in 2021. This peak occurred with a five-year latency after the release of the ISO/TS 15066 technical specification. Although global interest in collaborative robotics steadily grows, the publication trend indicates a gradual shift in scientific focus from reactive testing toward proactive prevention. A methodological deconstruction of four Research Questions (RQs) identifies persistent limitations in safety evaluation. The findings demonstrate that the internal structure of conventional sensors induces nonlinear shock filtering and parasitic oscillations (RQ1). Furthermore, the rigid fixation of test stands generates unrealistic pressure spikes. This physical limitation forces a transition to flexible and pendulum-based configurations (RQ2). Commercial flat films physically fail due to sensor saturation and introduced stiffness. Such failures accelerate the development of conformable electronic skins (e-skins) and multimodal test manikins (RQ3). To ensure interlaboratory reproducibility within the current ISO 10218-2:2025 standard, the text defines imperative metrological parameters. These parameters strictly include frequency response, calibration protocols, and volumetric mapping of inertial masses (RQ4). Furthermore, the analysed publications were systematically stratified into distinct technological categories, strictly reflecting their primary engineering domains, ranging from empirical metrological evaluation and sensor hardware design to advanced numerical modeling. Finally, the vision for future research anticipates a definitive shift toward proactive anti-collision technologies, encompassing Artificial Intelligence (AI), machine vision, and Augmented Reality/Virtual Reality/Mixed reality (AR/VR/MR). Future methodologies must also consider demographic anisotropies and the cognitive fatigue of the human operator.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened"
+    },
+    {
+      "id": "paper-eb9282b5c24ccb1c",
+      "title": "Femtosecond laser-engraved ultra-broad-range pressure sensors with enhanced sensitivity",
+      "authors": [
+        "Zechao Han",
+        "Daozhi Shen",
+        "Linglan Guo",
+        "Peicheng Han",
+        "Gangli Zhao",
+        "Haotian Luo",
+        "Jiaxing Huo",
+        "Dingyun Zhang",
+        "Q Gu",
+        "Ran Tang",
+        "Honghao Zhang",
+        "Hyun Ho Kim"
+      ],
+      "venue": "International Journal of Extreme Manufacturing",
+      "date": "2026-06-29",
+      "doi": "10.1088/2631-7990/ae83ec",
+      "url": "https://doi.org/10.1088/2631-7990/ae83ec",
+      "pdf_url": "https://iopscience.iop.org/article/10.1088/2631-7990/ae83ec/pdf",
+      "local_pdf": "research-memory/literature/2026/2026-07-14/papers/paper-eb9282b5c24ccb1c.pdf",
+      "is_open_access": true,
+      "paper_type": "article",
+      "sources": [
+        "OpenAlex"
+      ],
+      "query_ids": [
+        "low-redundancy-array"
+      ],
+      "tracks": [
+        "P6",
+        "P1",
+        "P4"
+      ],
+      "relevance_score": 63,
+      "score_breakdown": {
+        "topic_relevance": 69,
+        "evidence_strength": 64,
+        "transferability": 50,
+        "innovation_density": 65,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及 in-sensor/物理计算或可编程触觉前端"
+      ],
+      "core_claim": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span.",
+      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：6414 kPa、800 kPa、3.4 Pa、30 ms。",
+      "method_summary": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span.",
+      "key_metrics": [
+        "6414 kPa",
+        "800 kPa",
+        "3.4 Pa",
+        "30 ms"
+      ],
+      "transferable_points": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+      ],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
+      ],
+      "source_abstract": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span. Here, we demonstrate a femtosecond laser engraving approach that directly constructs programmable hybrid micro/nanostructures on metallic electrodes in a single, mask-free step. This top-down laser patterning process produces dual-scale micro/nanostructures, significantly expanding the interfacial coupling region and enhancing sensor performance. The resulting iontronic pressure sensors exhibit extreme capabilities, characterized by a maximum sensitivity reaching 6414 kPa -1 , a wide sensing range up to 800 kPa, a low detection threshold of 3.4 Pa, rapid signal response (~30 ms), and excellent cycling stability. For demonstration, the sensors were integrated into a wearable multi-octave glove system, validating their robustness in multifunctional pressure recognition. This work highlights the femtosecond laser-based approach as an efficient and scalable manufacturing method for tunable, hybrid micro/nanostructures, opening new opportunities for advanced electronic skins, intelligent robotics, and human-machine interfaces.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened"
+    },
+    {
+      "id": "paper-8dd8aa82559e2447",
+      "title": "Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network",
+      "authors": [
+        "Mayue Shi",
+        "Yu Zhang",
+        "Xiaotong Guo",
+        "Eric M. Yeatman"
+      ],
+      "venue": "Microsystems & Nanoengineering",
+      "date": "2026-06-15",
+      "doi": "10.1038/s41378-026-01355-5",
+      "url": "https://doi.org/10.1038/s41378-026-01355-5",
+      "pdf_url": "",
+      "local_pdf": "",
+      "is_open_access": true,
+      "paper_type": "article",
+      "sources": [
+        "OpenAlex"
+      ],
+      "query_ids": [
+        "tactile-front-end-computing"
+      ],
+      "tracks": [
+        "P1",
+        "P3",
+        "P5"
+      ],
+      "relevance_score": 63,
+      "score_breakdown": {
+        "topic_relevance": 63,
+        "evidence_strength": 73,
+        "transferability": 65,
+        "innovation_density": 45,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及低冗余阵列、空间特征或读出通道压缩",
+        "涉及坏点、漂移、跨器件迁移或少样本校准"
+      ],
+      "core_claim": "Tactile sensing can provide a critical function in advanced interactive systems by emulating the human sense of touch to detect stimuli.",
+      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及低冗余阵列、空间特征或读出通道压缩。摘要可核实数值包括：5 mN、0.05 mm。",
+      "method_summary": "This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performance while reducing computational load.",
+      "key_metrics": [
+        "5 mN",
+        "0.05 mm"
+      ],
+      "transferable_points": [
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及低冗余阵列、空间特征或读出通道压缩",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+      ],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
+      ],
+      "source_abstract": "Tactile sensing can provide a critical function in advanced interactive systems by emulating the human sense of touch to detect stimuli. Vision-based tactile sensors are promising for providing multimodal capabilities and high robustness, yet existing technologies still have limitations in sensitivity, spatial resolution and the high computational demands of deep learning-based image processing. This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performance while reducing computational load. Without traditional tracking markers, our sensor incorporates a surface with micromachined trenches, as an example of microstructures which can modulate light transmission and amplify the visual response to applied force. The amplified image features can be extracted by an ultra-lightweight convolutional neural network to accurately infer contact location, displacement, and applied force with high precision. Through theoretical analysis, we demonstrate that the micro trenches significantly amplify the visual effects of surface deformation. Using only a commercial webcam, the sensor system effectively detected forces below 5 mN and achieved a millimetre-level single-point spatial resolution. Using a model with only one convolutional layer, a mean absolute error below 0.05 mm was achieved. The compliant sensor body and optical readout design make the system inherently compatible with soft robotic integration and immune to electrical crosstalk or electromagnetic interference that often affects electronic tactile arrays. These characteristics highlight its potential for reliable operation in complex human-machine environments.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened"
+    },
+    {
+      "id": "paper-dc68dea1322aea5f",
+      "title": "Triboelectric Wearable Sensors for Human-Centric Smart Electronics: From Self-Powered Sensing to Artificial Intelligence-Assisted Human–Machine Interface Systems",
+      "authors": [
+        "Yoonsang Ra",
+        "Sumin Cho",
+        "Xinge Guo",
+        "Dongwhi Choi",
+        "Chengkuo Lee"
+      ],
+      "venue": "Nano-Micro Letters",
+      "date": "2026-06-16",
+      "doi": "10.1007/s40820-026-02263-z",
+      "url": "https://doi.org/10.1007/s40820-026-02263-z",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf",
+      "local_pdf": "",
+      "is_open_access": true,
+      "paper_type": "article",
+      "sources": [
+        "OpenAlex"
+      ],
+      "query_ids": [
+        "tactile-front-end-computing"
+      ],
+      "tracks": [
+        "P2",
+        "P6"
+      ],
+      "relevance_score": 53,
+      "score_breakdown": {
+        "topic_relevance": 47,
+        "evidence_strength": 73,
+        "transferability": 55,
+        "innovation_density": 45,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
+      ],
+      "core_claim": "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions.",
+      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "method_summary": "Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptable to body-interfaced formats.",
+      "key_metrics": [],
+      "transferable_points": [
+        "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "优先核查是否有 hardware output 与 software projection 的同步一致性证据"
+      ],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "开放获取链接未返回 PDF，已仅保留来源链接。"
+      ],
+      "source_abstract": "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions. Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptable to body-interfaced formats. In this review, wearability refers to body-mounted, skin-interfaced, textile-integrated, or otherwise human-attached triboelectric sensing platforms, whereas human-centric smart electronics refers to downstream electronic systems that remain functionally anchored to human-originated sensing, interpretation, feedback, or control. From this perspective, we review triboelectric wearable sensors from fundamentals to applications, covering working principles, material selection, device architectures, and fabrication strategies. We further discuss artificial intelligence-assisted signal processing, triboelectric artificial synapses, and neuromorphic computing as key bridges from self-powered sensing to intelligent HMI. Representative application spaces, including health care, gesture recognition, device control, immersive virtual interaction, wearable-to-robotic extensions, and intelligent transportation are discussed only when wearable triboelectric sensing serves as the primary human-input interface. Finally, the remaining challenges and future directions toward next-generation human-centric smart electronics are outlined.",
+      "cited_by_count": 0,
+      "decision_hint": "ignore",
+      "verification_status": "metadata_abstract_screened"
     }
   ],
   "generated_ideas": [
@@ -287,7 +495,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:04:46.273221+00:00"
+      "created_at": "2026-07-14T01:45:14.558505+00:00"
     },
     {
       "id": "idea-2026-07-14-a23c3d1f9bb4",
@@ -321,7 +529,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:04:46.273237+00:00"
+      "created_at": "2026-07-14T01:45:14.558524+00:00"
     },
     {
       "id": "idea-2026-07-14-8f8f8ad61e52",
@@ -353,7 +561,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:04:46.273247+00:00"
+      "created_at": "2026-07-14T01:45:14.558532+00:00"
     },
     {
       "id": "idea-2026-07-14-edb730fbd17e",
@@ -387,7 +595,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:04:46.273255+00:00"
+      "created_at": "2026-07-14T01:45:14.558538+00:00"
     },
     {
       "id": "idea-2026-07-14-3ee11837e718",
@@ -421,7 +629,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:04:46.273263+00:00"
+      "created_at": "2026-07-14T01:45:14.558543+00:00"
     }
   ]
 }
