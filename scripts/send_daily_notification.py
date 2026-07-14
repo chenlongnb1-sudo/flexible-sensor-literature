@@ -36,21 +36,32 @@ def latest_day(requested: str = "") -> Path | None:
 def build_message(day: Path) -> tuple[str, str, str]:
     payload = read_json(day / "summaries" / "papers.json", {"papers": [], "generated_ideas": []})
     papers = payload.get("papers", [])
-    ideas = payload.get("generated_ideas", [])
     title = f"{day.name} 柔性电子皮肤文献日报"
-    lines = [
-        f"今日筛选 {len(papers)} 篇，创新点候选 {len(ideas)} 个。",
-        "",
-        "优先论文：",
-    ]
+    lines = []
     for index, paper in enumerate(papers[:3], 1):
-        link = paper.get("url") or (f"https://doi.org/{paper.get('doi')}" if paper.get("doi") else "")
-        lines.append(f"{index}. {paper.get('title', '')}（{paper.get('relevance_score', 0)} 分）")
-        if link:
-            lines.append(link)
+        detail_path = ROOT / "web" / str(paper.get("detail_json") or "")
+        detail = read_json(detail_path, {}) if detail_path.is_file() else {}
+        link = (
+            "https://chenlongnb1-sudo.github.io/flexible-sensor-literature/"
+            f"paper.html?id={urllib.parse.quote(str(paper.get('id') or ''))}"
+        )
+        lines.append(f"{index}. {paper.get('title', '')}")
+        abstract = (detail.get("abstract") or {}).get("zh")
+        lines.append(f"摘要：{abstract or paper.get('summary_zh') or paper.get('core_claim') or '待精读'}")
+        innovations = detail.get("innovation_points") or [
+            paper.get("core_claim", ""), *paper.get("relevance_reasons", [])
+        ]
+        innovations = [item for item in innovations if item][:2]
+        if innovations:
+            lines.append(f"创新点：{'；'.join(innovations)}")
+        inspirations = detail.get("inspirations") or paper.get("transferable_points", [])
+        inspirations = [item for item in inspirations if item][:2]
+        if inspirations:
+            lines.append(f"对你的启发：{'；'.join(inspirations)}")
+        lines.append(f"详情：{link}")
+        lines.append("")
     if not papers:
         lines.append("今日没有达到门槛的新论文，系统未用偏题结果凑数。")
-    lines.extend(["", "打开网页处理 idea 和画像提案。"])
     plain = "\n".join(lines)
     html_content = "<br>".join(html.escape(line) for line in lines)
     return title, plain, html_content

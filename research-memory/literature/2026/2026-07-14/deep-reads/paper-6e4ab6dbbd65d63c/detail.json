@@ -1,0 +1,514 @@
+{
+  "schema_version": 1,
+  "id": "paper-6e4ab6dbbd65d63c",
+  "title": "Single-Pixel Tactile Skin via compressive sampling",
+  "authors": [
+    "Ariel Slepyan",
+    "Laura Xing",
+    "Rudy Zhang",
+    "Nitish V. Thakor"
+  ],
+  "venue": "Communications Engineering",
+  "date": "2026-06-03",
+  "doi": "10.1038/s44172-026-00697-2",
+  "source_url": "https://doi.org/10.1038/s44172-026-00697-2",
+  "pdf_source_url": "https://arxiv.org/pdf/2511.16898v1",
+  "pdf_version": "author_preprint",
+  "pdf_version_label": "作者公开预印本（非期刊排版版）",
+  "status": "fulltext_draft",
+  "generated_at": "2026-07-14T03:08:02.546844+00:00",
+  "page_count": 24,
+  "abstract": {
+    "original": "Large-area, high-speed tactile skins could improve robotics, prosthetics, and human-machine interfaces, but scaling them is limited by wiring complexity and readout bandwidth. We introduce Single-Pixel Tactile Skin (SPTS), a flexible, daisy-chainable tactile array that implements compressive sampling directly in hardware. Each sensing element uses a miniature low-cost microcontroller to apply programmable analog weights, while all pixel currents are summed into a single output channel. Repeating this process yields global projections from which tactile images are reconstructed using sparse recovery, reducing the measurements required relative to raster scanning. In a 10×10 array, SPTS achieved ≥98% object classification accuracy with 20 measurements, corresponding to an effective 3500 FPS, and captured an 8 ms projectile impact in 23 reconstructed frames. Because reconstruction quality improves progressively with measurement count, SPTS can rapidly localize contact from sparse data and refine tactile images over time, enabling scalable, responsive tactile sensing for physical interaction and control.",
+    "zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及低冗余阵列、空间特征或读出通道压缩。摘要可核实数值包括：98%、3500 FPS、8 ms。"
+  },
+  "innovation_points": [
+    "Large-area, high-speed tactile skins could improve robotics, prosthetics, and human-machine interfaces, but scaling them is limited by wiring complexity and readout bandwidth.",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及低冗余阵列、空间特征或读出通道压缩"
+  ],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 2,
+      "category_zh": "材料混合与分散",
+      "original": "CS works by linearly mixing sensor outputs into a small number of global measurements, exploiting signal sparsity to reconstruct the full signal with high fidelity.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.2 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 2,
+      "category_zh": "图形化与结构成形",
+      "original": "Tactile interactions exhibit significant spatiotemporal sparsity and structured patterns [25], [26] which makes them highly compressible.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.2 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 3,
+      "category_zh": "图形化与结构成形",
+      "original": "The conceptual process of SPTS, where the tactile pressure pattern is multiplied by a series of pseudorandom weight masks (Φ).",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 4,
+      "category_zh": "成膜与沉积",
+      "original": "Compressed sensing is achieved by dedicating a low-cost small footprint microcontroller for each pixel of the tactile array and programming it to output a sequence of random analog voltages defined by a pre-loaded random seed which is loaded by a globally shared I2C bus.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "Each pixel of SPTS uses a low-cost, small-footprint microcontroller (ATtiny412) to produce a pseudorandom driving voltage for each sensing pixel.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "To quantitatively evaluate these capabilities, we assessed SPTS performance using a diverse library of 17 objects, encompassing common household items and 3D-printed geometric shapes.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 7,
+      "category_zh": "成膜与沉积",
+      "original": "UR5 indented 17 different daily and 3D printed objects in the tactile sensor array.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 12,
+      "category_zh": "固化与热处理",
+      "original": "This hierarchical information processing allows for a paradigm where a robot could, for example, prioritize initial contact localization to secure a grip, followed by subsequent refinement to a higherresolution tactile image by acquiring and processing additional measurements (M=25 for <1-pixel localization error) to discern finer object features.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.12 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 12,
+      "category_zh": "成膜与沉积",
+      "original": "The Single-Pixel Tactile Skin (SPTS) was constructed using modular, flexible printed circuit board (FPCB) units.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.12 原文为准。"
+    },
+    {
+      "step": 10,
+      "page": 12,
+      "category_zh": "成膜与沉积",
+      "original": "These electrodes are then uniformly coated with a piezoresistive layer of Velostat (3M).",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.12 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 2,
+      "text": "An alternative approach is compressed sensing (CS), which offers the potential to reduce both hardware and computational requirements. CS works by linearly mixing sensor outputs into a small number of global measurements, exploiting signal sparsity to reconstruct the full signal with high fidelity. This paradigm has already shown success in applications like high-speed imaging [16] and low-power sensing systems [17]. However, applying CS to large-area tactile sensing has remained largely impractical. Traditional CS implementations require individual electrical access to each sensor element for encoding, which is incompatible with flexible, large-area tactile skins due to wiring and packaging complexity. As a result, most prior work in compressive tactile sensing remains limited to simulations [18], [19], [20], [21], [22] or very small-scale rigid setups [23], [24].",
+      "bbox": [
+        40.62,
+        403.41,
+        516.35,
+        527.12
+      ]
+    },
+    {
+      "page": 2,
+      "text": "Despite these challenges, tactile signals are inherently well-suited for compressive sampling. Tactile interactions exhibit significant spatiotemporal sparsity and structured patterns [25], [26] which makes them highly compressible.",
+      "bbox": [
+        40.62,
+        533.64,
+        516.35,
+        574.51
+      ]
+    },
+    {
+      "page": 3,
+      "text": "Figure 1. Single-Pixel Tactile Skin. A. Single-pixel tactile skin configured as a 10x10 tactile sensor matrix, with N=100 pixels. B. SPTS cells output a random projection of the tactile signal onto a single output wire. C. A lowcost, low-rate ADC captures the projection measurements over time obtaining a few measurements M that is significantly less than the total number of sensors N . D. Sparse recovery algorithm calculates the reconstructed tactile image with N pixels using the projection matrix used for obtaining y measurements and a pre-collected tactile dictionary. E. The conceptual process of SPTS, where the tactile pressure pattern is multiplied by a series of pseudorandom weight masks (Φ). Each multiplication yields a 'single-pixel' summed output (y), representing a unique random projection of the image. A small number of these successive measurements (M<<N) are then used to reconstruct the entire tactile image.",
+      "bbox": [
+        48.03,
+        634.24,
+        508.05,
+        746.53
+      ]
+    },
+    {
+      "page": 4,
+      "text": "Compressed sensing is achieved by dedicating a low-cost small footprint microcontroller for each pixel of the tactile array and programming it to output a sequence of random analog voltages defined by a pre-loaded random seed which is loaded by a globally shared I2C bus. A shared clock signal, which sets the overall measurement rate of the system, tells the sensors when to progress to their next analog voltage value.",
+      "bbox": [
+        40.62,
+        49.93,
+        516.35,
+        118.42
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Figure 2. SPTS Sensors and Readout. A. SPTS covering the UR5 robotic arm. Zoom-in shows the front and back of a single ‘cell’. B. Each pixel of SPTS uses a low-cost, small-footprint microcontroller (ATtiny412) to produce a pseudorandom driving voltage for each sensing pixel. An amplifier circuit centers the voltage at 0V to ensure the voltage sum does not contain a high DC offset. The output of each tactile sensor is wired together, and sensor output is combined using a summing circuit. SPTS cells are daisy-chained together to share an I2C bus for loading random seeds and share a ‘CLOCK’ signal that cycles the cells to proceed to the next random driving voltage signal.",
+      "bbox": [
+        48.03,
+        468.21,
+        508.05,
+        546.08
+      ]
+    },
+    {
+      "page": 5,
+      "text": "The reduced number of measurements (M) inherent to the SPTS design directly translates to accelerated object reconstruction and classification without a significant compromise in accuracy. To quantitatively evaluate these capabilities, we assessed SPTS performance using a diverse library of 17 objects, encompassing common household items and 3D-printed geometric shapes. As depicted in Figure 3A, these objects were systematically indented into the SPTS sensor array by a robotic arm (Universal Robots UR5 Robot). For each object, 10 indentation trials were conducted, acquiring data in SPTS mode across various compressive measurement levels (M) and, for control, using a traditional raster-scan mode.",
+      "bbox": [
+        40.62,
+        576.46,
+        516.35,
+        686.36
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Figure 3. Rapid Tactile Reconstruction and Classification. A. UR5 indented 17 different daily and 3D printed objects in the tactile sensor array. Data was collected using SPTS-mode at different measurement levels and also raster-scan mode as a control. B. Overall accuracy of SPTS in object classification. Raster-scanned signal was down-sampled and interpolated to achieve equivalent comparison points. C. Overall accuracy of SPTS in reconstructing the support of the indented object compared to equivalent interpolated down-sampled raster-scan image. D. Frequency of reconstruction, in kilohertz, using different measurement levels for SPTS. E. Rapid classification of object at initial contact using low measurement levels. M=25 can classify the indented object within 0.4msec of data collection with 80% accuracy.",
+      "bbox": [
+        48.03,
+        292.76,
+        511.85,
+        393.66
+      ]
+    },
+    {
+      "page": 12,
+      "text": "approximate location of contact across the entire array, long before a full scan could be completed. This hierarchical information processing allows for a paradigm where a robot could, for example, prioritize initial contact localization to secure a grip, followed by subsequent refinement to a higherresolution tactile image by acquiring and processing additional measurements (M=25 for <1-pixel localization error) to discern finer object features. This hierarchical information processing mirrors efficiencies found in biological sensory systems [27], [28] and offers a flexible paradigm for resource-constrained robotic perception. The potential to refine reconstructions by cumulating measurements, as suggested by the improved classification with M=50 at t=0.8ms, points towards implementations of \"anytime\" sensing algorithms, where information quality improves continuously with available sensing time or measurement count, a valuable feature for dynamic decision-making.",
+      "bbox": [
+        40.62,
+        49.93,
+        516.35,
+        201.24
+      ]
+    },
+    {
+      "page": 12,
+      "text": "The Single-Pixel Tactile Skin (SPTS) was constructed using modular, flexible printed circuit board (FPCB) units. Each FPCB unit hosts four individual sensor pixels. A single sensor pixel comprises an ATtiny412 microcontroller (Microchip Technology) and a TLV9362 operational amplifier (Texas Instruments) with associated passive components. This op-amp circuit is configured to amplify, level-shift, and directly drive the sensor element with the microcontroller's processed DAC output. The microcontroller is programmed to generate unipolar analog voltages (0 to 3.3V) via its DAC. This DAC output serves as the input to the op-amp circuit, which transforms it into a bipolar weighting voltage spanning approximately -3.3V to +3.3V. This transformation is crucial to ensure that the sequence of pseudorandom weighting voltages has a mean close to zero, preventing DC offset accumulation in the subsequent analog summation stage, and to utilize a wider dynamic range for encoding.",
+      "bbox": [
+        40.62,
+        557.03,
+        516.35,
+        708.37
+      ]
+    },
+    {
+      "page": 12,
+      "text": "The sensing element itself is integrated on the reverse side of the FPCB with interdigitated copper electrodes. These electrodes are then uniformly coated with a piezoresistive layer of Velostat (3M).",
+      "bbox": [
+        40.62,
+        714.88,
+        516.35,
+        741.97
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 3,
+      "caption_original": "Figure 1. Single-Pixel Tactile Skin. A. Single-pixel tactile skin configured as a 10x10 tactile sensor matrix, with N=100 pixels. B. SPTS cells output a random projection of the tactile signal onto a single output wire. C. A lowcost, low-rate ADC captures the projection measurements over time obtaining a few measurements M that is significantly less than the total number of sensors N . D. Sparse recovery algorithm calculates the reconstructed tactile image with N pixels using the projection matrix used for obtaining y measurements and a pre-collected tactile dictionary. E. The conceptual process of SPTS, where the tactile pressure pattern is multiplied by a series of pseudorandom weight masks (Φ). Each multiplication yields a 'single-pixel' summed output (y), representing a unique random projection of the image. A small number of these successive measurements (M<<N) are then used to reconstruct the entire tactile image.",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Single-pixel tactile skin configured as a 10x10 tactile sensor matrix, with N=100 pixels",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "b",
+          "original": "SPTS cells output a random projection of the tactile signal onto a single output wire",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "A lowcost, low-rate ADC captures the projection measurements over time obtaining a few measurements M that is significantly less than the total number of sensors N",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Sparse recovery algorithm calculates the reconstructed tactile image with N pixels using the projection matrix used for obtaining y measurements and a pre-collected tactile dictionary",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "e",
+          "original": "The conceptual process of SPTS, where the tactile pressure pattern is multiplied by a series of pseudorandom weight masks (Φ). Each multiplication yields a 'single-pixel' summed output (y), representing a unique random projection of the image. A small number of these successive measurements (M<<N) are then used to reconstruct the entire tactile image",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        631.24
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 2",
+      "page": 5,
+      "caption_original": "Figure 2. SPTS Sensors and Readout. A. SPTS covering the UR5 robotic arm. Zoom-in shows the front and back of a single ‘cell’. B. Each pixel of SPTS uses a low-cost, small-footprint microcontroller (ATtiny412) to produce a pseudorandom driving voltage for each sensing pixel. An amplifier circuit centers the voltage at 0V to ensure the voltage sum does not contain a high DC offset. The output of each tactile sensor is wired together, and sensor output is combined using a summing circuit. SPTS cells are daisy-chained together to share an I2C bus for loading random seeds and share a ‘CLOCK’ signal that cycles the cells to proceed to the next random driving voltage signal.",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "SPTS covering the UR5 robotic arm. Zoom-in shows the front and back of a single ‘cell’",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "b",
+          "original": "Each pixel of SPTS uses a low-cost, small-footprint microcontroller (ATtiny412) to produce a pseudorandom driving voltage for each sensing pixel. An amplifier circuit centers the voltage at 0V to ensure the voltage sum does not contain a high DC offset. The output of each tactile sensor is wired together, and sensor output is combined using a summing circuit. SPTS cells are daisy-chained together to share an I2C bus for loading random seeds and share a ‘CLOCK’ signal that cycles the cells to proceed to the next random driving voltage signal",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        465.21
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 3",
+      "page": 7,
+      "caption_original": "Figure 3. Rapid Tactile Reconstruction and Classification. A. UR5 indented 17 different daily and 3D printed objects in the tactile sensor array. Data was collected using SPTS-mode at different measurement levels and also raster-scan mode as a control. B. Overall accuracy of SPTS in object classification. Raster-scanned signal was down-sampled and interpolated to achieve equivalent comparison points. C. Overall accuracy of SPTS in reconstructing the support of the indented object compared to equivalent interpolated down-sampled raster-scan image. D. Frequency of reconstruction, in kilohertz, using different measurement levels for SPTS. E. Rapid classification of object at initial contact using low measurement levels. M=25 can classify the indented object within 0.4msec of data collection with 80% accuracy.",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "UR5 indented 17 different daily and 3D printed objects in the tactile sensor array. Data was collected using SPTS-mode at different measurement levels and also raster-scan mode as a control",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "b",
+          "original": "Overall accuracy of SPTS in object classification. Raster-scanned signal was down-sampled and interpolated to achieve equivalent comparison points",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "c",
+          "original": "Overall accuracy of SPTS in reconstructing the support of the indented object compared to equivalent interpolated down-sampled raster-scan image",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "d",
+          "original": "Frequency of reconstruction, in kilohertz, using different measurement levels for SPTS",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Rapid classification of object at initial contact using low measurement levels. M=25 can classify the indented object within 0.4msec of data collection with 80% accuracy",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        289.76
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 4",
+      "page": 8,
+      "caption_original": "Figure 4. Adaptive Reconstruction. As additional voltage measurements are recorded, the reconstruction accuracy of the tactile image improves. 15 voltage measurements are shown, and tactile image reconstructions are calculated using progressively more of the measurements: with only the first 2 measurements, through using all 15 measurements. Measurements and their reconstructions are associated with colored groupings. The indented object, the shape “T”, is shown as an inset on the sensor.",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [],
+      "image_filename": "figure-04.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        545.01
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Figure 5",
+      "page": 9,
+      "caption_original": "Figure 5. High-Speed Projectile Tracking. A. Tennis ball is bounced on the sensor array, making contact with the array for only ~8msec. B. Lower measurement levels capture the dynamic signal with higher accuracy due to higher frame rates, and the average change (Δ) in pressure value is plotted. Higher measurement levels have lower frame rates and accordingly have larger average pressure changes per frame. C. Evolution of maximum pressure during a tennis ball bounce versus measurement level. Lower measurement levels (M=25) ‘notice’ the bounce of the ball earlier, and track the deformation pressure with finer granularity than higher measurement levels (M=100).",
+      "caption_zh": "Figure 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Tennis ball is bounced on the sensor array, making contact with the array for only ~8msec",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "b",
+          "original": "Lower measurement levels capture the dynamic signal with higher accuracy due to higher frame rates, and the average change (Δ) in pressure value is plotted. Higher measurement levels have lower frame rates and accordingly have larger average pressure changes per frame",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Evolution of maximum pressure during a tennis ball bounce versus measurement level. Lower measurement levels (M=25) ‘notice’ the bounce of the ball earlier, and track the deformation pressure with finer granularity than higher measurement levels (M=100)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        565.04
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Figure 6",
+      "page": 10,
+      "caption_original": "Figure 6. Rapid Contact Localization. Center of contact can be estimated with fewer measurements than accurate object reconstruction requires. During various tennis ball bounces, the average distance from true contact location was estimated using a low measurement level. As the level increase, the contact localization accuracy improves and plateaus after 25 measurements. Within 7 measurements, the objects location can be accurately estimated within span of 2 pixels error.",
+      "caption_zh": "Figure 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [],
+      "image_filename": "figure-06.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        625.24
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-06.png"
+    },
+    {
+      "id": "F007",
+      "label": "Figure S1",
+      "page": 19,
+      "caption_original": "Figure S1. SPTS array assembly",
+      "caption_zh": "Figure S1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [],
+      "image_filename": "figure-07.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        505.43
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-07.png"
+    },
+    {
+      "id": "F008",
+      "label": "Figure S2",
+      "page": 20,
+      "caption_original": "Figure S2. SPTS cell schematic and board layout.",
+      "caption_zh": "Figure S2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-08.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        675.09
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-08.png"
+    },
+    {
+      "id": "F009",
+      "label": "Figure S3",
+      "page": 21,
+      "caption_original": "Figure S3. Component list for SPTS cell.",
+      "caption_zh": "Figure S3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-09.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        296.58
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-09.png"
+    },
+    {
+      "id": "F010",
+      "label": "Figure S4",
+      "page": 22,
+      "caption_original": "Figure S4. Example tactile reconstructions of SPTS at various measurement levels.",
+      "caption_zh": "Figure S4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-10.png",
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        448.41
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-10.png"
+    },
+    {
+      "id": "F011",
+      "label": "Figure S5",
+      "page": 23,
+      "caption_original": "Figure S5. Picture of 17 objects used in object classification test.",
+      "caption_zh": "Figure S5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [],
+      "image_filename": "figure-11.png",
+      "crop_confidence": "high",
+      "bbox": [
+        35.8,
+        44.5,
+        518.3,
+        374.21
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-11.png"
+    },
+    {
+      "id": "F012",
+      "label": "Figure S6",
+      "page": 24,
+      "caption_original": "Figure S6. Learned tactile dictionary for sparse recovery of tactile signals.",
+      "caption_zh": "Figure S6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-12.png",
+      "crop_confidence": "high",
+      "bbox": [
+        35.5,
+        44.5,
+        518.0,
+        520.64
+      ],
+      "image_path": "papers/paper-6e4ab6dbbd65d63c/figures/figure-12.png"
+    }
+  ],
+  "original_pdf": "papers/paper-6e4ab6dbbd65d63c/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-07-14/deep-reads/paper-6e4ab6dbbd65d63c/paper.md",
+  "source_map": "research-memory/literature/2026/2026-07-14/deep-reads/paper-6e4ab6dbbd65d63c/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ]
+}

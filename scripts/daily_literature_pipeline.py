@@ -9,13 +9,16 @@ from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import http.cookiejar
 import hashlib
 import html
+import io
 import json
 import os
 import re
 import subprocess
 import sys
+import tarfile
 import time
 import urllib.error
 import urllib.parse
@@ -23,8 +26,14 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any, Iterable
+
+try:
+    from .build_paper_deep_reads import build_deep_reads
+except ImportError:
+    from build_paper_deep_reads import build_deep_reads
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,6 +42,10 @@ CONFIG_PATH = ROOT / "config" / "literature-queries.json"
 USER_AGENT = "FlexibleSensorResearchIntelligence/1.0 (mailto:{})"
 DEFAULT_MAILTO = os.environ.get("OPENALEX_MAILTO", "").strip()
 OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "").strip()
+UNPAYWALL_EMAIL = os.environ.get(
+    "UNPAYWALL_EMAIL",
+    DEFAULT_MAILTO or "chenlongnb1-sudo@users.noreply.github.com",
+).strip()
 
 TRACK_TERMS: dict[str, tuple[str, ...]] = {
     "P1": (
@@ -53,6 +66,7 @@ TRACK_TERMS: dict[str, tuple[str, ...]] = {
         "physical computing", "analog computing", "programmable", "projection",
         "current summation", "computational sensor", "sensor computing", "on-chip",
         "feature extraction", "end-to-end", "integrated tactile", "adaptive tactile",
+        "neuromorphic", "synaptic", "encoding",
     ),
     "P5": (
         "fault tolerant", "fault-tolerant", "robust", "drift", "transferable",
@@ -74,6 +88,7 @@ SYSTEM_TERMS = (
     "front-end", "frontend", "readout", "array", "computing", "circuit", "adc",
     "vector", "shear", "friction", "slip", "calibration", "fault", "system",
     "feature extraction", "on-chip", "end-to-end", "integrated", "reconfiguration",
+    "neuromorphic", "synaptic", "encoding",
 )
 MATERIAL_TERMS = (
     "mxene", "graphene", "hydrogel", "ionogel", "nanocomposite", "nanofiber",
@@ -83,6 +98,21 @@ EVIDENCE_TERMS = (
     "comparison", "benchmark", "statistical", "array", "circuit", "latency",
     "power", "calibration", "classification", "robot", "experiment", "validation",
 )
+
+ELITE_VENUE_EXACT = {
+    "nature", "nature communications", "nature electronics", "nature materials",
+    "nature machine intelligence", "communications engineering", "communications materials",
+    "communications physics", "communications chemistry", "microsystems & nanoengineering",
+    "microsystems and nanoengineering", "science", "science advances", "science robotics",
+    "science translational medicine", "cell", "cell reports physical science", "matter",
+    "joule", "device", "advanced materials", "advanced functional materials",
+    "advanced science", "advanced intelligent systems", "advanced electronic materials",
+    "advanced materials technologies", "advanced fiber materials", "small", "small methods",
+    "nano-micro letters", "acs nano", "nano letters", "materials horizons",
+    "national science review", "proceedings of the national academy of sciences",
+    "international journal of extreme manufacturing",
+}
+PREPRINT_VENUES = ("arxiv", "biorxiv", "medrxiv", "research square", "ssrn")
 
 
 @dataclass(frozen=True)
@@ -123,10 +153,13 @@ def request_bytes(
     }
     if extra_headers:
         headers.update(extra_headers)
+    opener = urllib.request.build_opener(
+        urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar())
+    )
     last_error: Exception | None = None
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=timeout) as response:
+            with opener.open(urllib.request.Request(url, headers=headers), timeout=timeout) as response:
                 return response.read(), response.headers.get("Content-Type", "")
         except urllib.error.HTTPError as error:
             last_error = error
@@ -190,6 +223,181 @@ def clean_markup(value: str | None) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+class CitationMetaParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.pdf_urls: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() != "meta":
+            return
+        values = {key.lower(): value or "" for key, value in attrs}
+        name = (values.get("name") or values.get("property") or "").lower()
+        if name in {"citation_pdf_url", "wkhealth_pdf_url"} and values.get("content"):
+            self.pdf_urls.append(values["content"])
+
+
+def unique_urls(urls: Iterable[str]) -> list[str]:
+    seen: set[str] = set()
+    result = []
+    for value in urls:
+        url = str(value or "").strip()
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        result.append(url)
+    return result
+
+
+def classify_pdf_version(url: str) -> tuple[str, str]:
+    """Label a PDF conservatively without treating every repository copy as the version of record."""
+    value = str(url or "").lower()
+    if "arxiv.org/" in value:
+        return "author_preprint", "作者公开预印本（非期刊排版版）"
+    if any(
+        marker in value
+        for marker in (
+            "nature.com/articles/", "link.springer.com/content/pdf/",
+            "onlinelibrary.wiley.com/doi/pdf", "science.org/doi/pdf",
+            "cell.com/", "sciencedirect.com/science/article/pii/",
+        )
+    ):
+        return "publisher_pdf", "出版社开放获取 PDF"
+    if any(
+        marker in value
+        for marker in ("pmc.ncbi.nlm.nih.gov/", "ncbi.nlm.nih.gov/pmc/", "ftp.ncbi.nlm.nih.gov/")
+    ):
+        return "repository_copy", "公共全文库合法存档版本"
+    return "repository_or_author_copy", "作者或机构仓储合法公开版本"
+
+
+def citation_pdf_urls(landing_url: str) -> list[str]:
+    raw, content_type = request_bytes(
+        landing_url,
+        accept="text/html,application/xhtml+xml",
+        timeout=20,
+    )
+    if "html" not in content_type.lower() and not raw.lstrip().startswith(b"<"):
+        return []
+    parser = CitationMetaParser()
+    parser.feed(raw.decode("utf-8", errors="replace"))
+    return unique_urls(urllib.parse.urljoin(landing_url, url) for url in parser.pdf_urls)
+
+
+def pmc_oa_pdf_urls(landing_url: str) -> list[str]:
+    match = re.search(r"PMC\d+", landing_url, flags=re.IGNORECASE)
+    if not match:
+        return []
+    pmcid = match.group(0).upper()
+    raw, _ = request_bytes(
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?" + urllib.parse.urlencode({"id": pmcid}),
+        accept="application/xml,text/xml",
+        timeout=20,
+    )
+    root = ET.fromstring(raw)
+    urls = []
+    for link in root.findall(".//link"):
+        if link.attrib.get("format") not in {"pdf", "tgz"} or not link.attrib.get("href"):
+            continue
+        href = link.attrib["href"]
+        urls.extend([href.replace("ftp://ftp.ncbi.nlm.nih.gov", "https://ftp.ncbi.nlm.nih.gov"), href])
+    return unique_urls(urls)
+
+
+def pdf_from_oa_package(raw: bytes) -> bytes | None:
+    """Read a PDF from a lawful PMC OA tarball without extracting arbitrary paths."""
+    try:
+        with tarfile.open(fileobj=io.BytesIO(raw), mode="r:gz") as archive:
+            members = [
+                member
+                for member in archive.getmembers()
+                if member.isfile() and member.name.lower().endswith(".pdf")
+            ]
+            members.sort(key=lambda member: ("supp" in member.name.lower(), member.size))
+            for member in members:
+                if member.size > 40 * 1024 * 1024:
+                    continue
+                source = archive.extractfile(member)
+                candidate = source.read() if source else b""
+                if candidate.startswith(b"%PDF"):
+                    return candidate
+    except (tarfile.TarError, OSError):
+        return None
+    return None
+
+
+def request_pdf_bytes(url: str, timeout: int = 45) -> tuple[bytes, str]:
+    first_error: Exception | None = None
+    try:
+        raw, content_type = request_bytes(url, accept="application/pdf", timeout=timeout)
+    except Exception as error:  # noqa: BLE001 - curl may handle publisher redirects better
+        first_error = error
+        raw, content_type = b"", ""
+    if raw.startswith(b"%PDF"):
+        return raw, content_type
+    if urllib.parse.urlparse(url).scheme not in {"http", "https"}:
+        return raw, content_type
+    try:
+        completed = subprocess.run(
+            [
+                "curl", "--fail", "--location", "--silent", "--show-error",
+                "--max-time", str(timeout), "--user-agent", "Mozilla/5.0",
+                "--header", "Accept: application/pdf", url,
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+            timeout=timeout + 5,
+        )
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return raw, content_type
+    if completed.returncode == 0 and completed.stdout.startswith(b"%PDF"):
+        return completed.stdout, "application/pdf"
+    if first_error is not None:
+        raise first_error
+    return raw, content_type
+
+
+def legal_pdf_candidates(paper: dict[str, Any]) -> list[str]:
+    doi = normalize_doi(paper.get("doi"))
+    candidates: list[str] = []
+    if doi.startswith("10.1038/"):
+        candidates.append(f"https://www.nature.com/articles/{doi.split('/', 1)[1]}.pdf")
+    if doi.startswith("10.1007/"):
+        candidates.append(f"https://link.springer.com/content/pdf/{doi}.pdf")
+    candidates.append(str(paper.get("pdf_url") or ""))
+    candidates.extend(paper.get("pdf_candidates") or [])
+
+    if doi and UNPAYWALL_EMAIL:
+        try:
+            url = "https://api.unpaywall.org/v2/" + urllib.parse.quote(doi, safe="")
+            url += "?" + urllib.parse.urlencode({"email": UNPAYWALL_EMAIL})
+            payload = json.loads(request_bytes(url, timeout=20)[0])
+            locations = [payload.get("best_oa_location") or {}, *(payload.get("oa_locations") or [])]
+            candidates.extend(location.get("url_for_pdf") or "" for location in locations)
+            for location in locations:
+                landing = str(location.get("url") or "")
+                if landing and not location.get("url_for_pdf"):
+                    try:
+                        candidates.extend(citation_pdf_urls(landing))
+                    except Exception:
+                        pass
+                    try:
+                        candidates.extend(pmc_oa_pdf_urls(landing))
+                    except Exception:
+                        pass
+        except Exception:
+            pass
+
+    if doi:
+        landing_url = f"https://doi.org/{doi}"
+        try:
+            candidates.extend(citation_pdf_urls(landing_url))
+        except Exception:
+            pass
+    return unique_urls(candidates)
+
+
 def search_openalex(job: SearchJob) -> list[dict[str, Any]]:
     params = {
         "search": job.query,
@@ -221,6 +429,10 @@ def search_openalex(job: SearchJob) -> list[dict[str, Any]]:
                 "doi": normalize_doi(item.get("doi")),
                 "url": primary.get("landing_page_url") or item.get("id") or "",
                 "pdf_url": best_oa.get("pdf_url") or "",
+                "pdf_candidates": unique_urls(
+                    (location or {}).get("pdf_url") or ""
+                    for location in [best_oa, primary, *(item.get("locations") or [])]
+                ),
                 "is_open_access": bool((item.get("open_access") or {}).get("is_oa")),
                 "paper_type": item.get("type") or "",
                 "abstract": reconstruct_abstract(item.get("abstract_inverted_index")),
@@ -237,7 +449,7 @@ def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
     params = {
         "query.bibliographic": job.query,
         "filter": f"from-pub-date:{job.from_date.isoformat()},until-pub-date:{job.to_date.isoformat()}",
-        "sort": "published",
+        "sort": "relevance",
         "order": "desc",
         "rows": "25",
         "mailto": DEFAULT_MAILTO,
@@ -257,11 +469,16 @@ def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
             {
                 "title": clean_markup(title_values[0] if title_values else ""),
                 "authors": authors,
-                "venue": (item.get("container-title") or [""])[0],
+                "venue": clean_markup((item.get("container-title") or [""])[0]),
                 "date": iso_date(published),
                 "doi": normalize_doi(item.get("DOI")),
                 "url": item.get("URL") or "",
                 "pdf_url": "",
+                "pdf_candidates": unique_urls(
+                    link.get("URL") or ""
+                    for link in item.get("link", [])
+                    if "pdf" in str(link.get("content-type") or "").lower()
+                ),
                 "is_open_access": False,
                 "paper_type": item.get("type") or "",
                 "abstract": clean_markup(item.get("abstract")),
@@ -314,6 +531,7 @@ def search_arxiv(job: SearchJob) -> list[dict[str, Any]]:
                 "doi": normalize_doi(entry.findtext("arxiv:doi", default="", namespaces=namespace)),
                 "url": entry_url,
                 "pdf_url": pdf_url,
+                "pdf_candidates": [pdf_url] if pdf_url else [],
                 "is_open_access": True,
                 "paper_type": "preprint",
                 "abstract": clean_markup(entry.findtext("atom:summary", default="", namespaces=namespace)),
@@ -355,6 +573,7 @@ def search_semantic_scholar(job: SearchJob) -> list[dict[str, Any]]:
                 "doi": normalize_doi(external.get("DOI")),
                 "url": item.get("url") or "",
                 "pdf_url": oa_pdf.get("url") or "",
+                "pdf_candidates": [oa_pdf.get("url")] if oa_pdf.get("url") else [],
                 "is_open_access": bool(oa_pdf.get("url")),
                 "paper_type": ", ".join(item.get("publicationTypes") or []),
                 "abstract": clean_markup(item.get("abstract")),
@@ -401,10 +620,29 @@ def merge_records(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
         current["sources"] = sorted(
             set(current.get("sources", [current.get("source", "")]) + [record.get("source", "")])
         )
-        for field in ("abstract", "authors", "venue", "date", "url", "pdf_url", "doi"):
+        current["pdf_candidates"] = unique_urls(
+            [*current.get("pdf_candidates", []), *record.get("pdf_candidates", [])]
+        )
+        current_is_preprint = (
+            "preprint" in str(current.get("paper_type", "")).lower()
+            or any(term in str(current.get("venue", "")).lower() for term in PREPRINT_VENUES)
+        )
+        candidate_is_preprint = (
+            "preprint" in str(record.get("paper_type", "")).lower()
+            or any(term in str(record.get("venue", "")).lower() for term in PREPRINT_VENUES)
+        )
+        prefer_candidate_metadata = current_is_preprint and not candidate_is_preprint
+        for field in ("abstract", "authors", "venue", "date", "url", "pdf_url", "doi", "paper_type"):
             existing = current.get(field)
             candidate = record.get(field)
-            if not existing or (field == "abstract" and len(candidate or "") > len(existing or "")):
+            replace_with_journal = prefer_candidate_metadata and field in {
+                "authors", "venue", "date", "url", "doi", "paper_type"
+            }
+            if (
+                not existing
+                or replace_with_journal
+                or (field == "abstract" and len(candidate or "") > len(existing or ""))
+            ):
                 current[field] = candidate
         current["is_open_access"] = bool(current.get("is_open_access") or record.get("is_open_access"))
         current["cited_by_count"] = max(int(current.get("cited_by_count") or 0), int(record.get("cited_by_count") or 0))
@@ -422,6 +660,11 @@ def count_terms(text: str, terms: Iterable[str]) -> int:
 def is_on_topic(record: dict[str, Any]) -> bool:
     """Hard gate before scoring so broad Crossref matches cannot pollute the report."""
     text = " ".join((record.get("title", ""), record.get("abstract", ""))).lower()
+    title = str(record.get("title", ""))
+    if "issue information" in title.lower() or re.search(
+        r"\((?:adv\.|advanced)\s+[^)]*\d+/\d{4}\)\s*$", title, re.IGNORECASE
+    ):
+        return False
     direct_tactile = any(
         term in text
         for term in ("tactile", "electronic skin", "electronic-skin", "e-skin", "artificial skin")
@@ -430,6 +673,30 @@ def is_on_topic(record: dict[str, Any]) -> bool:
     front_end_context = count_terms(text, SYSTEM_TERMS) > 0
     track_context = sum(count_terms(text, terms) for terms in TRACK_TERMS.values())
     return direct_tactile or (sensor_context and front_end_context and track_context >= 1)
+
+
+def venue_quality_tier(record: dict[str, Any]) -> str:
+    venue = re.sub(r"\s+", " ", html.unescape(str(record.get("venue", "")))).lower().strip()
+    paper_type = str(record.get("paper_type", "")).lower()
+    if "preprint" in paper_type or any(term in venue for term in PREPRINT_VENUES):
+        return "excluded_preprint"
+    if venue in ELITE_VENUE_EXACT or venue.startswith("nature ") or venue.startswith("npj "):
+        return "elite_subjournal_or_am_level"
+    return "below_venue_threshold"
+
+
+def meets_venue_quality(record: dict[str, Any]) -> bool:
+    return venue_quality_tier(record) == "elite_subjournal_or_am_level"
+
+
+def is_actionable_candidate(record: dict[str, Any], today: date) -> bool:
+    score = score_record(record, today)["relevance_score"]
+    if score >= 48:
+        return True
+    if score < 32:
+        return False
+    title = str(record.get("title", "")).lower()
+    return "tactile" in title and count_terms(title, SYSTEM_TERMS) >= 1
 
 
 def score_record(record: dict[str, Any], today: date) -> dict[str, Any]:
@@ -590,9 +857,11 @@ def enrich_record(record: dict[str, Any], today: date) -> dict[str, Any]:
         "doi": doi,
         "url": record.get("url", "") or (f"https://doi.org/{doi}" if doi else ""),
         "pdf_url": record.get("pdf_url", ""),
+        "pdf_candidates": record.get("pdf_candidates", []),
         "local_pdf": "",
         "is_open_access": bool(record.get("is_open_access")),
         "paper_type": record.get("paper_type", ""),
+        "venue_quality": venue_quality_tier(record),
         "sources": record.get("sources", []),
         "query_ids": record.get("query_ids", []),
         "tracks": tracks,
@@ -741,24 +1010,35 @@ def download_open_access_pdfs(papers: list[dict[str, Any]], output_dir: Path, li
     for paper in papers:
         if downloaded >= limit:
             break
-        pdf_url = paper.get("pdf_url", "")
-        if not (paper.get("is_open_access") and pdf_url):
-            continue
-        try:
-            raw, content_type = request_bytes(pdf_url, accept="application/pdf", timeout=35)
-            if len(raw) > 40 * 1024 * 1024:
-                paper.setdefault("risks", []).append("开放获取 PDF 超过 40 MB，未保存到仓库。")
-                continue
-            if not (raw.startswith(b"%PDF") or "application/pdf" in content_type.lower()):
-                paper.setdefault("risks", []).append("开放获取链接未返回 PDF，已仅保留来源链接。")
-                continue
-            filename = f"{paper['id']}.pdf"
-            path = output_dir / filename
-            path.write_bytes(raw)
-            paper["local_pdf"] = str(path.relative_to(ROOT)).replace("\\", "/")
-            downloaded += 1
-        except Exception as error:  # noqa: BLE001 - one failed publisher must not abort the daily run
-            paper.setdefault("risks", []).append(f"开放获取 PDF 下载失败：{type(error).__name__}。")
+        errors = []
+        for pdf_url in legal_pdf_candidates(paper):
+            try:
+                raw, content_type = request_pdf_bytes(pdf_url, timeout=40)
+                if len(raw) > 40 * 1024 * 1024:
+                    errors.append("PDF 超过 40 MB")
+                    continue
+                if not raw.startswith(b"%PDF") and (
+                    pdf_url.lower().endswith((".tar.gz", ".tgz"))
+                    or "gzip" in content_type.lower()
+                ):
+                    raw = pdf_from_oa_package(raw) or raw
+                if not (raw.startswith(b"%PDF") or "application/pdf" in content_type.lower()):
+                    errors.append("链接未返回 PDF")
+                    continue
+                path = output_dir / f"{paper['id']}.pdf"
+                path.write_bytes(raw)
+                paper["pdf_url"] = pdf_url
+                paper["pdf_source_url"] = pdf_url
+                paper["pdf_version"], paper["pdf_version_label"] = classify_pdf_version(pdf_url)
+                paper["is_open_access"] = True
+                paper["local_pdf"] = str(path.relative_to(ROOT)).replace("\\", "/")
+                downloaded += 1
+                break
+            except Exception as error:  # noqa: BLE001 - try the next lawful OA candidate
+                errors.append(type(error).__name__)
+        if not paper.get("local_pdf"):
+            summary = "、".join(dict.fromkeys(errors)) if errors else "未找到合法开放获取 PDF"
+            paper.setdefault("risks", []).append(f"开放获取 PDF 下载失败：{summary}。")
 
 
 def append_ideas(ideas: list[dict[str, Any]], run_date: date) -> None:
@@ -777,6 +1057,18 @@ def append_ideas(ideas: list[dict[str, Any]], run_date: date) -> None:
     write_json(path, payload)
 
 
+def retain_existing_results_on_empty_refresh(
+    papers: list[dict[str, Any]],
+    ideas: list[dict[str, Any]],
+    existing_payload: dict[str, Any],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], bool]:
+    """Keep a same-day result set when a repeat refresh yields no eligible papers."""
+    existing_papers = existing_payload.get("papers") or []
+    if papers or not existing_papers:
+        return papers, ideas, False
+    return existing_papers, existing_payload.get("generated_ideas") or [], True
+
+
 def report_markdown(
     run_date: date,
     window_days: int,
@@ -785,21 +1077,33 @@ def report_markdown(
     ideas: list[dict[str, Any]],
     source_errors: list[dict[str, str]],
     excluded_seen: int,
+    excluded_venue: int,
 ) -> str:
-    must_read = [paper for paper in papers if paper["relevance_score"] >= 80][:3]
-    tracking = [paper for paper in papers if 60 <= paper["relevance_score"] < 80][:8]
+    must_read = [
+        paper
+        for paper in papers
+        if paper["relevance_score"] >= 80 or paper.get("decision_hint") == "read"
+    ][:3]
+    must_read_ids = {paper["id"] for paper in must_read}
+    tracking = [
+        paper
+        for paper in papers
+        if 60 <= paper["relevance_score"] < 80 and paper["id"] not in must_read_ids
+    ][:8]
     lines = [
         f"# {run_date.isoformat()} 柔性电子皮肤前端触觉计算文献日报",
         "",
         "## 今日结论",
         "",
         f"本次从 OpenAlex、Crossref、Semantic Scholar 和 arXiv 检索最近 {window_days} 天结果，去重并排除历史已收录论文后保留 {len(papers)} 篇。",
-        "排序优先考虑 ADC 前模拟触觉、矢量/剪切/摩擦读出、低冗余阵列、物理投影和容错迁移；只强调材料灵敏度而缺少系统价值的论文已降权。",
+        "期刊等级采用硬门槛：仅保留 Nature/Science/Cell 子刊、Advanced Materials 系列及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。",
+        "通过期刊门槛后，再优先考虑 ADC 前模拟触觉、矢量/剪切/摩擦读出、低冗余阵列、物理投影和容错迁移。",
         "",
         f"- 今日必看：{len(must_read)} 篇",
         f"- 值得追踪：{len(tracking)} 篇",
         f"- 新增可评估 idea：{len(ideas)} 个",
         f"- 历史重复排除：{excluded_seen} 篇",
+        f"- 期刊等级排除：{excluded_venue} 篇",
         "",
         "## 今日必看",
         "",
@@ -814,7 +1118,7 @@ def report_markdown(
                 "",
                 f"- 来源：{paper.get('venue') or '未标注'}；{paper.get('date') or '日期未知'}；评分 {paper['relevance_score']}/100",
                 f"- 为什么重要：{'；'.join(paper['relevance_reasons'][:2])}",
-                f"- 摘要级结论：{paper['core_claim']}",
+                f"- 摘要级结论：{paper.get('summary_zh') or paper['core_claim']}",
                 f"- 方法：{paper.get('method_summary', '需精读原文核实')}",
                 f"- 摘要数值：{'、'.join(paper.get('key_metrics', [])) or '未提取到可比较数值'}",
                 f"- 可迁移：{'；'.join(paper['transferable_points'][:3])}",
@@ -983,6 +1287,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--date", dest="run_date", help="Run date in YYYY-MM-DD format")
     parser.add_argument("--max-papers", type=int, default=0, help="Override maximum paper count")
+    parser.add_argument(
+        "--lookback-days",
+        type=int,
+        default=0,
+        help="Force one search window, for example 30 for a monthly backfill",
+    )
     parser.add_argument("--no-pdf", action="store_true", help="Do not download legal open-access PDFs")
     parser.add_argument("--git-sync", action="store_true", help="Commit and push generated artifacts")
     parser.add_argument("--dry-run", action="store_true", help="Search and score without writing files")
@@ -1000,8 +1310,14 @@ def main() -> int:
     seen_error_keys: set[tuple[str, str]] = set()
     disabled_sources: set[str] = set()
     excluded_seen = 0
+    excluded_venue = 0
     used_window = int(config.get("lookback_windows_days", [30])[-1])
-    for window in config.get("lookback_windows_days", [3, 7, 30]):
+    search_windows = (
+        [args.lookback_days]
+        if args.lookback_days > 0
+        else config.get("lookback_windows_days", [3, 7, 30])
+    )
+    for window in search_windows:
         records, query_log, errors, fully_failed = search_window(
             config, run_date, int(window), disabled_sources
         )
@@ -1009,21 +1325,24 @@ def main() -> int:
         merged = merge_records(records)
         on_topic = [record for record in merged if is_on_topic(record)]
         fresh = [record for record in on_topic if paper_key(record) not in seen]
-        chosen_records = fresh
+        qualified = [record for record in fresh if meets_venue_quality(record)]
+        actionable = [record for record in qualified if is_actionable_candidate(record, run_date)]
+        chosen_records = actionable
         final_log = query_log
         excluded_seen = len(on_topic) - len(fresh)
+        excluded_venue = len(fresh) - len(qualified)
         for error in errors:
             key = (error["source"], error["query_id"])
             if key not in seen_error_keys:
                 final_errors.append(error)
                 seen_error_keys.add(key)
         used_window = int(window)
-        if len(fresh) >= minimum:
+        if len(actionable) >= minimum:
             break
 
     enriched = [enrich_record(record, run_date) for record in chosen_records]
     enriched.sort(key=lambda item: (item["relevance_score"], item.get("date", "")), reverse=True)
-    papers = [paper for paper in enriched if paper["relevance_score"] >= 48][:maximum]
+    papers = enriched[:maximum]
 
     ideas = make_ideas(papers, run_date, minimum=3) if papers else []
     day_dir = MEMORY / "literature" / str(run_date.year) / run_date.isoformat()
@@ -1034,12 +1353,18 @@ def main() -> int:
         print(json.dumps({"window_days": used_window, "papers": papers, "ideas": ideas, "errors": final_errors}, ensure_ascii=False, indent=2))
         return 0
 
+    existing_payload = load_json(papers_path, {})
+    papers, ideas, retained_existing = retain_existing_results_on_empty_refresh(
+        papers, ideas, existing_payload
+    )
+
     if not args.no_pdf:
         download_open_access_pdfs(
             papers,
             day_dir / "papers",
             int(config.get("open_access_pdf_limit", 3)),
         )
+    build_deep_reads(papers, day_dir)
     payload = {
         "date": run_date.isoformat(),
         "searched_at": datetime.now(timezone.utc).isoformat(),
@@ -1049,8 +1374,15 @@ def main() -> int:
         "screening_policy": {
             "profile": "flexible electronic skin front-end tactile computing",
             "minimum_score": 48,
+            "minimum_venue_level": "Nature/Science/Cell subjournal or Advanced Materials equivalent",
+            "preprints_and_conference_papers_excluded": True,
             "material_only_papers_are_downranked": True,
             "verification_level": "metadata and abstract screening",
+            "refresh_status": (
+                "retained_existing_results_after_empty_refresh"
+                if retained_existing
+                else "fresh_results"
+            ),
         },
         "papers": papers,
         "generated_ideas": ideas,
@@ -1058,7 +1390,16 @@ def main() -> int:
     write_json(papers_path, payload)
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(
-        report_markdown(run_date, used_window, final_log, papers, ideas, final_errors, excluded_seen),
+        report_markdown(
+            run_date,
+            used_window,
+            final_log,
+            papers,
+            ideas,
+            final_errors,
+            excluded_seen,
+            excluded_venue,
+        ),
         encoding="utf-8",
     )
     append_ideas(ideas, run_date)

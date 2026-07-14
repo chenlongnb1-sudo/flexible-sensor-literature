@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "id": "paper-8dd8aa82559e2447",
+  "title": "Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network",
+  "authors": [
+    "Mayue Shi",
+    "Yongqi Zhang",
+    "Xiaotong Guo",
+    "Eric M. Yeatman"
+  ],
+  "venue": "Microsystems & Nanoengineering",
+  "date": "2026-06-15",
+  "doi": "10.1038/s41378-026-01355-5",
+  "source_url": "https://doi.org/10.1038/s41378-026-01355-5",
+  "pdf_source_url": "https://www.nature.com/articles/s41378-026-01355-5.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-07-14T04:51:29.699103+00:00",
+  "page_count": 15,
+  "abstract": {
+    "original": "Abstract Tactile sensing can provide a critical function in advanced interactive systems by emulating the human sense of touch to detect stimuli. Vision-based tactile sensors are promising for providing multimodal capabilities and high robustness, yet existing technologies still have limitations in sensitivity, spatial resolution and the high computational demands of deep learning-based image processing. This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performance while reducing computational load. Without traditional tracking markers, our sensor incorporates a surface with micromachined trenches, as an example of microstructures which can modulate light transmission and amplify the visual response to applied force. The amplified image features can be extracted by an ultra-lightweight convolutional neural network to accurately infer contact location, displacement, and applied force with high precision. Through theoretical analysis, we demonstrate that the micro trenches significantly amplify the visual effects of surface deformation. Using only a commercial webcam, the sensor system effectively detected forces below 5 mN and achieved a millimetre-level single-point spatial resolution. Using a model with only one convolutional layer, a mean absolute error below 0.05 mm was achieved. The compliant sensor body and optical readout design make the system inherently compatible with soft robotic integration and immune to electrical crosstalk or electromagnetic interference that often affects electronic tactile arrays. These characteristics highlight its potential for reliable operation in complex human–machine environments.",
+    "zh": "该工作提出一种无标记的视觉触觉传感器：在透明 PDMS/石墨-PDMS 双层弹性体中加工十字微沟槽，用受压后透光图案的变化在器件端放大接触特征，再由轻量卷积网络同时反演接触位置、法向位移和力。系统使用商用摄像头，可检测低于 5 mN 的力并达到毫米级单点空间分辨率；仅使用一层卷积的模型即可将平均绝对误差控制在 0.05 mm 以下。其核心不是单独提高材料灵敏度，而是通过微结构与算法协同设计降低后端特征提取负担。"
+  },
+  "innovation_points": [
+    "利用受压微沟槽调制透射光，把接触形变在传感器结构内转换为更易分辨的图像特征，形成器件级物理特征放大。",
+    "将微结构、光学读出和轻量 CNN 联合设计，用同一输入同时估计接触 x/y 位置、法向位移和作用力，而不依赖传统跟踪标记。",
+    "通过模型深度消融证明硬件产生的强特征允许极浅网络工作：一层卷积模型仍可达到低于 0.05 mm 的平均绝对误差，并保持低于 5 mN 的力检测能力。"
+  ],
+  "inspirations": [
+    "把论文的“微结构先放大任务相关特征”迁移到你的电极/微结构前端：目标不只是提高灵敏度，而是在 ADC 前增强方向、接触位置或纹理可分性。",
+    "建立 raw pixel、软件特征和硬件物理特征三组对照，同时比较精度、ADC 通道数、模型参数量、延迟和功耗，形成前端计算证据链。",
+    "借鉴其位置误差分布和模型深度消融，在你的器件中增加偏移、旋转、接触半径及坏点比例下的性能地图，证明结构特征对装配误差和器件离散的容忍度。",
+    "该论文是光学视觉触觉方案，不能直接证明电阻式阵列的 ADC 前计算价值；可迁移的是器件-信息-算法协同设计方法和消融框架。"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 14,
+      "category_zh": "制备与实验操作",
+      "original": "Device fabrication We first fabricated a thin PDMS substrate film.",
+      "explanation_zh": "先制备一层薄的透明 PDMS 基底膜，作为后续石墨复合层和微沟槽结构的承载层。"
+    },
+    {
+      "step": 2,
+      "page": 14,
+      "category_zh": "材料混合与分散",
+      "original": "The PDMS base and curing agent (Dow Corning, SYLGARD 184 silicone elastomer) were mixed in a ratio of 10:1 (w/ w), after which the mixture was spin-coated on a plate before being transferred to an oven for curing at 70 °C for 2 h.",
+      "explanation_zh": "按质量比 10:1 混合 Sylgard 184 的 PDMS 基胶与固化剂，旋涂到平板后在 70 °C 烘箱中固化 2 h。"
+    },
+    {
+      "step": 3,
+      "page": 14,
+      "category_zh": "材料混合与分散",
+      "original": "To prepare the graphite/PDMS composite, 10 wt% graphite (Sigma-Aldrich, 282863) was fully mixed with uncured PDMS (base: curing agent = 10:1, w/w) to form a black composite, enhancing image contrast.",
+      "explanation_zh": "将 10 wt% 石墨加入未固化 PDMS（基胶:固化剂 = 10:1）并充分混合，得到用于增强图像对比度的黑色石墨/PDMS 复合物。"
+    },
+    {
+      "step": 4,
+      "page": 14,
+      "category_zh": "材料混合与分散",
+      "original": "Toluene was added to the mixture to assist in uniform dispersion and adjust its viscosity.",
+      "explanation_zh": "向石墨/PDMS 混合物加入甲苯，以改善均匀分散并调节旋涂黏度；原文未在该句给出甲苯用量。"
+    },
+    {
+      "step": 5,
+      "page": 14,
+      "category_zh": "材料混合与分散",
+      "original": "The mixture was spin-coated on the transparent PDMS film (300 rpm, 60 s) to ensure uniformity.",
+      "explanation_zh": "将复合物旋涂到透明 PDMS 薄膜上，参数为 300 rpm、60 s，以形成均匀的第二层。"
+    },
+    {
+      "step": 6,
+      "page": 14,
+      "category_zh": "固化与热处理",
+      "original": "The film was transferred to an oven at 70 °C for 4 h.",
+      "explanation_zh": "把双层薄膜转移到 70 °C 烘箱中继续固化 4 h。"
+    },
+    {
+      "step": 7,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "After preparing a double-layer elastomer film, the micro trenches were fabricated with high-precision ultraviolet laser cutting.",
+      "explanation_zh": "在固化后的双层弹性体上使用高精度紫外激光切割微沟槽；相邻方法原文给出的激光波长为 355 nm。"
+    },
+    {
+      "step": 8,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "As shown in Fig. S4b, the multi-layer film was first placed on a glass plate, after which the film was patterned with the cross-shaped trench structure using a computer-controlled laser cutter.",
+      "explanation_zh": "将多层薄膜放在玻璃板上，使用计算机控制的激光切割机加工十字形沟槽阵列；结构位置见原文 Fig. S4b。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 14,
+      "text": "Device fabrication We first fabricated a thin PDMS substrate film. The PDMS base and curing agent (Dow Corning, SYLGARD 184 silicone elastomer) were mixed in a ratio of 10:1 (w/ w), after which the mixture was spin-coated on a plate before being transferred to an oven for curing at 70 °C for 2 h. To prepare the graphite/PDMS composite, 10 wt% graphite (Sigma-Aldrich, 282863) was fully mixed with uncured PDMS (base: curing agent = 10:1, w/w) to form a black composite, enhancing image contrast. Toluene was added to the mixture to assist in uniform dispersion and adjust its viscosity. The mixture was spin-coated on the transparent PDMS film (300 rpm, 60 s) to ensure uniformity. The film was transferred to an oven at 70 °C for",
+      "bbox": [
+        56.69,
+        551.93,
+        290.57,
+        732.24
+      ]
+    },
+    {
+      "page": 14,
+      "text": "4 h. After preparing a double-layer elastomer film, the micro trenches were fabricated with high-precision ultraviolet laser cutting. The wavelength of the UV laser was 355 nm. As shown in Fig. S4b, the multi-layer film was first placed on a glass plate, after which the film was patterned with the cross-shaped trench structure using a computer-controlled laser cutter.",
+      "bbox": [
+        304.72,
+        88.34,
+        538.6,
+        170.35
+      ]
+    },
+    {
+      "page": 14,
+      "text": "Experimental set-up The bespoke experimental setup aims to repeatedly apply vertical forces onto the sensor with a given displacement. The setup’s actuation mechanism consists of a magnetic linear motor (Faulhaber LM038004001) and a 3-D printed cone-shaped probe (1 mm tip diameter). The position sensor in the linear motor provides highly accurate displacement measurements with a precision of 1 μm and is capable of outputting and recording displacement data. The probe driven by the linear motor enables applying a controllable and high-precision displacement against the sensor surface.",
+      "bbox": [
+        304.72,
+        184.67,
+        538.6,
+        325.75
+      ]
+    },
+    {
+      "page": 14,
+      "text": "Calibration of the force–displacement relationship We placed the targeted sensing point at the centre of the bespoke probe. A high-precision scale (MAXREFDES82) was placed beneath the VBTS, which measures the forces applied. Subsequently, the position of the probe was adjusted to a height where it just contacted the sensor body. This scale module integrates a precision strain gauge sensor and a 24-bit ADC, capable of measuring forces in the millinewton range with high resolution and stability. The sensor was connected to a laptop via USB for real-time data acquisition. It was calibrated using standard weights before use. By initialising the linear motor with a pre-set displacement, we were able to measure the change of forces with the scale. We measured the force, and the sensing points located at the top left corner of the sensor were tested: (1,1), (2,1), (2,2), (3,1), (3,2), and (3,3). Hence, the rest sensing points can be estimated symmetrically. For each sensing point, displacements of 0.5, 1.0, 1.5, and 1.75 mm were applied. And each force application was repeated for 10 s with a frequency of 0.5 Hz.",
+      "bbox": [
+        304.72,
+        339.82,
+        538.6,
+        588.81
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 4,
+      "caption_original": "Fig. 1 Structural schematic diagram and system design. a Structural design of the sensor body, and a sectional view showing trench structures in the film (scale bar: 200 μm). b Optical images of the sensor under different applied forces. Left: no force is applied. Right: a 30 mN force is applied at the circled cross centre in row 3, column 3. Diameter of contact area: 1 mm. c System design. i. Sensor body with micro trench patterns modulates light under pressure. ii. Camera captures images with transmitted light patterns and then iii. the images are pre-processed, and iv. feed into a lightweight CNN for analysis. v. Four outputs of CNN represent vertical displacement, applied force, and the location of the contact point on the sensor surface",
+      "caption_zh": "传感器结构与完整信息链：微沟槽弹性体在受压时改变透光图案，摄像头采集后由轻量 CNN 输出位置、位移和力。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Structural design of the sensor body, and a sectional view showing trench structures in the film (scale bar: 200 μm)",
+          "explanation_zh": "展示传感器本体及薄膜截面中的沟槽结构，比例尺为 200 μm，用于说明物理特征调制发生的位置。"
+        },
+        {
+          "label": "b",
+          "original": "Optical images of the sensor under different applied forces. Left: no force is applied. Right: a 30 mN force is applied at the circled cross centre in row 3, column 3. Diameter of contact area: 1 mm",
+          "explanation_zh": "对比无载荷与在第 3 行第 3 列施加 30 mN、1 mm 接触直径时的光学图像，直接显示受压后图案变化。"
+        },
+        {
+          "label": "c",
+          "original": "System design. i. Sensor body with micro trench patterns modulates light under pressure. ii. Camera captures images with transmitted light patterns and then iii. the images are pre-processed, and iv. feed into a lightweight CNN for analysis. v. Four outputs of CNN represent vertical displacement, applied force, and the location of the contact point on the sensor surface",
+          "explanation_zh": "给出从微沟槽调光、摄像头采集、图像预处理到轻量 CNN 的完整链路，最终输出法向位移、力和接触位置。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 851,
+      "image_height": 658,
+      "crop_confidence": "high",
+      "bbox": [
+        87.35,
+        99.33,
+        512.35,
+        427.87
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-01.png",
+      "explanation_zh": "这张总览图定义了论文主张：微结构不是被动敏感层，而是先在物理域调制光，再把更易处理的特征交给轻量模型。"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 5,
+      "caption_original": "Fig. 2 Principle of structure-enhanced vision-based sensor. a No applied force; b with applied force. The deformation allows light to transmit, forming specific patterns captured by the camera. c Scanning electron micrograph of a trench",
+      "caption_zh": "微沟槽增强视觉触觉的工作机理与沟槽形貌。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "No applied force",
+          "explanation_zh": "无外力时沟槽保持初始形态，透光图案作为基线。"
+        },
+        {
+          "label": "b",
+          "original": "with applied force. The deformation allows light to transmit, forming specific patterns captured by the camera",
+          "explanation_zh": "受力后局部形变允许更多或不同分布的光透过，形成可供算法识别的特征。"
+        },
+        {
+          "label": "c",
+          "original": "Scanning electron micrograph of a trench",
+          "explanation_zh": "沟槽的扫描电镜图用于核实实际加工形貌，而不是只依赖示意图。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 681,
+      "image_height": 199,
+      "crop_confidence": "high",
+      "bbox": [
+        127.19,
+        100.17,
+        467.08,
+        199.0
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-02.png",
+      "explanation_zh": "该图把“结构为何能产生可学习信号”讲清楚：压力使沟槽区域形变并改变透光，摄像头因此获得与载荷相关的空间图案。"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 6,
+      "caption_original": "Fig. 3 Modelling and simulation analysis. a, b Modelling of the sensor body structure. a Provides the illustration of simplified stress concentration. c Local stress distribution at location A under applied force based on FEA analysis. The deformation pattern of the notched beam at locations d A, e B, and f C simulated using COMSOL Multiphysics. The load range analysed was from 0 to 80 mN. Comparison between the simulated (black) and modelled (red) deformations demonstrates our model consistently predicts a slightly larger deformation at both edges, with discrepancies within 13% across varying applied loads. The average diagonal length (g, i) and deformation (h, j) of all 25 micro trenches under an applied force of 60 mN at location (3, 3) and location (2, 2)",
+      "caption_zh": "解析模型与有限元分析验证微沟槽的应力集中和形变放大机制。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a,b",
+          "original": "Modelling of the sensor body structure. a Provides the illustration of simplified stress concentration",
+          "explanation_zh": "建立带缺口梁的简化模型并说明应力集中来源，为结构放大机制提供解析解释。"
+        },
+        {
+          "label": "c",
+          "original": "Local stress distribution at location A under applied force based on FEA analysis. The deformation pattern of the notched beam at locations d A, e B, and f C simulated using COMSOL Multiphysics. The load range analysed was from 0 to 80 mN. Comparison between the simulated (black) and modelled (red) deformations demonstrates our model consistently predicts a slightly larger deformation at both edges, with discrepancies within 13% across varying applied loads. The average diagonal length (g, i) and deformation (h, j) of all 25 micro trenches under an applied force of 60 mN at location (3, 3) and location (2, 2)",
+          "explanation_zh": "展示位置 A 在载荷下的局部应力分布，用有限元结果验证高应力区域。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 805,
+      "image_height": 680,
+      "crop_confidence": "high",
+      "bbox": [
+        110.63,
+        201.42,
+        512.59,
+        540.64
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-03.png",
+      "explanation_zh": "模型和 COMSOL 结果共同说明沟槽边缘会放大局部形变；0-80 mN 范围内模型与仿真的差异不超过约 13%，并比较了不同加载位置下 25 个沟槽的响应分布。"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 4",
+      "page": 7,
+      "caption_original": "Fig. 4 Sensor response to applied force. a Structure and parameters of the sensor body. b–d Optical images captured using a camera at three typical locations. The data above each image indicates the contact location and the displacement of the linear motor toward the sensor. For example, (3,3) indicates the applied force was at the cross centre in row 3, column 3. Diameter of contact area: 1 mm. e Brightness of the central region (3,3) and linear regression on the displacement–brightness data. f–h The force–displacement calibration of a testing point (3,3). f Displacement and g force were measured to calibrate the coefficient k33. h Comparison of the measured force and the calculated force according to the displacement over time (k33 = 85.4 mN/mm)",
+      "caption_zh": "传感器在不同接触位置和载荷下的光学响应、亮度线性及力-位移标定。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Structure and parameters of the sensor body",
+          "explanation_zh": "列出传感器几何结构和关键尺寸，作为后续位置与标定结果的结构基准。"
+        },
+        {
+          "label": "b-d",
+          "original": "Optical images captured using a camera at three typical locations. The data above each image indicates the contact location and the displacement of the linear motor toward the sensor. For example, (3,3) indicates the applied force was at the cross centre in row 3, column 3. Diameter of contact area: 1 mm",
+          "explanation_zh": "展示三个典型位置受压时的相机图像，图上同时标注接触坐标和电机位移，用于验证空间编码能力。"
+        },
+        {
+          "label": "e",
+          "original": "Brightness of the central region (3,3) and linear regression on the displacement–brightness data",
+          "explanation_zh": "对中心位置 (3,3) 的亮度与位移做线性回归，检验光学特征能否稳定表征形变。"
+        },
+        {
+          "label": "f-h",
+          "original": "The force–displacement calibration of a testing point (3,3). f Displacement and g force were measured to calibrate the coefficient k33. h Comparison of the measured force and the calculated force according to the displacement over time (k33 = 85.4 mN/mm)",
+          "explanation_zh": "用同步位移和力测量标定 k33，并比较实测力与由位移计算的力随时间变化是否一致。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 933,
+      "image_height": 686,
+      "crop_confidence": "high",
+      "bbox": [
+        66.38,
+        99.99,
+        532.18,
+        442.24
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-04.png",
+      "explanation_zh": "该图把图像变化连接到可量化物理量：先验证位置相关光学图案，再用亮度-位移关系和 k33 = 85.4 mN/mm 的标定系数重建力。"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 5",
+      "page": 8,
+      "caption_original": "Fig. 5 Architecture of the CNN model. a Pre-processed image as input. b Model architecture with 5 CNN layers (CNN_5). c A comparison between the predicted values by the CNN model and the true values for the first 100 images in the test set. x and y coordinates: contact position in units of inter-trench spacing (2 mm/unit); z coordinates: out-of-plane displacement (mm)",
+      "caption_zh": "CNN 输入、五层卷积网络结构以及前 100 个测试样本的预测与真值对比。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Pre-processed image as input",
+          "explanation_zh": "展示送入网络的预处理光学图像。"
+        },
+        {
+          "label": "b",
+          "original": "Model architecture with 5 CNN layers (CNN_5)",
+          "explanation_zh": "给出五层卷积模型 CNN_5 的结构，作为后续模型深度消融的高容量基线。"
+        },
+        {
+          "label": "c",
+          "original": "A comparison between the predicted values by the CNN model and the true values for the first 100 images in the test set. x and y coordinates: contact position in units of inter-trench spacing (2 mm/unit); z coordinates: out-of-plane displacement (mm)",
+          "explanation_zh": "比较前 100 个测试样本的预测值与真值，观察接触位置和法向位移的跟随情况。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 871,
+      "image_height": 596,
+      "crop_confidence": "high",
+      "bbox": [
+        99.17,
+        106.11,
+        534.01,
+        403.87
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-05.png",
+      "explanation_zh": "这张图说明算法端并非只做分类，而是联合回归 x、y、z；位置单位为 2 mm 的沟槽间距，z 为法向位移。"
+    },
+    {
+      "id": "F006",
+      "label": "Fig. 6",
+      "page": 10,
+      "caption_original": "Fig. 6 Statistical evaluation of model performance. a Scatter plots comparing the predicted values to the true values. b Histograms of the prediction errors. c Distribution of displacement prediction errors across different ranges of actual values",
+      "caption_zh": "模型预测误差的统计评估。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Scatter plots comparing the predicted values to the true values",
+          "explanation_zh": "预测值对真值散点图用于检查线性一致性和离群点。"
+        },
+        {
+          "label": "b",
+          "original": "Histograms of the prediction errors",
+          "explanation_zh": "误差直方图用于观察误差中心、离散程度和长尾。"
+        },
+        {
+          "label": "c",
+          "original": "Distribution of displacement prediction errors across different ranges of actual values",
+          "explanation_zh": "按真实位移区间统计误差，判断不同载荷/形变区间的鲁棒性。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 883,
+      "image_height": 704,
+      "crop_confidence": "high",
+      "bbox": [
+        91.58,
+        95.25,
+        532.9,
+        446.62
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-06.png",
+      "explanation_zh": "散点、误差直方图和分区误差共同检查模型是否存在系统偏差，以及误差是否随真实位移区间变化。"
+    },
+    {
+      "id": "F007",
+      "label": "Fig. 7",
+      "page": 11,
+      "caption_original": "Fig. 7 Error distribution for location resolution across different positions of the sensor",
+      "caption_zh": "传感器不同空间位置的接触定位误差分布。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [],
+      "image_filename": "figure-07.png",
+      "image_width": 898,
+      "image_height": 748,
+      "crop_confidence": "high",
+      "bbox": [
+        80.6,
+        191.13,
+        529.36,
+        564.52
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-07.png",
+      "explanation_zh": "该图用于判断模型是否只在中心位置表现良好，还是能覆盖整个沟槽阵列；对你的课题可直接类比为位置、装配偏移和接触半径误差地图。"
+    },
+    {
+      "id": "F008",
+      "label": "Fig. 8",
+      "page": 12,
+      "caption_original": "Fig. 8 Comparison of performance for different CNN models. a–c Performance metrics for models with varying numbers of convolutional layers. d–k The experimental testing results and error analysis at location (3,3) using CNN_1 (blue) and CNN_5 (green). Specifically, ground truth and model predictions for d displacement and e calculated force in z-direction, f x and g y-coordinate results are shown. The shaded amber region highlights a low-force segment, with zoomed-in views provided on the right. h–k The error distributions and boxplots to evaluate prediction accuracy for this sensor system",
+      "caption_zh": "不同 CNN 深度的性能消融，以及一层与五层模型在位置 (3,3) 的动态预测和误差比较。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a-c",
+          "original": "Performance metrics for models with varying numbers of convolutional layers",
+          "explanation_zh": "比较不同卷积层数模型的总体性能，回答增加网络深度是否真正必要。"
+        },
+        {
+          "label": "d-k",
+          "original": "The experimental testing results and error analysis at location (3,3) using CNN_1 (blue) and CNN_5 (green). Specifically, ground truth and model predictions for d displacement and e calculated force in z-direction, f x and g y-coordinate results are shown. The shaded amber region highlights a low-force segment, with zoomed-in views provided on the right. h–k The error distributions and boxplots to evaluate prediction accuracy for this sensor system",
+          "explanation_zh": "在位置 (3,3) 对比 CNN_1 与 CNN_5 的位移、法向力、x/y 坐标及误差分布；黄色区域放大低力段，检查最困难工况。"
+        }
+      ],
+      "image_filename": "figure-08.png",
+      "image_width": 888,
+      "image_height": 646,
+      "crop_confidence": "high",
+      "bbox": [
+        86.12,
+        96.96,
+        529.75,
+        419.23
+      ],
+      "image_path": "papers/paper-8dd8aa82559e2447/figures/figure-08.png",
+      "explanation_zh": "这是支撑“物理结构可降低计算负担”的关键图：比较不同卷积层数，并特别检查低力区间，验证浅层模型是否仍能保持位移、力和位置预测。"
+    }
+  ],
+  "original_pdf": "papers/paper-8dd8aa82559e2447/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-07-14/deep-reads/paper-8dd8aa82559e2447/paper.md",
+  "source_map": "research-memory/literature/2026/2026-07-14/deep-reads/paper-8dd8aa82559e2447/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "agent_reviewed_source_grounded"
+}

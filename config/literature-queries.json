@@ -1,9 +1,21 @@
 {
-  "lookback_windows_days": [3, 7, 30, 365],
-  "minimum_candidates": 6,
+  "lookback_windows_days": [3, 7, 30],
+  "minimum_candidates": 3,
   "maximum_candidates": 12,
-  "open_access_pdf_limit": 3,
+  "open_access_pdf_limit": 12,
   "queries": [
+    {
+      "id": "near-sensor-tactile-computing",
+      "query": "near-sensor analog computing tactile sensing electronic skin",
+      "tracks": ["P2", "P4"],
+      "sources": ["openalex", "crossref", "semantic_scholar", "arxiv"]
+    },
+    {
+      "id": "neuromorphic-tactile-encoding",
+      "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
+      "tracks": ["P2", "P4", "P6"],
+      "sources": ["openalex", "crossref", "semantic_scholar"]
+    },
     {
       "id": "tactile-front-end-computing",
       "query": "tactile sensor analog front-end in-sensor computing",

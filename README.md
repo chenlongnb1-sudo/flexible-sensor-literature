@@ -60,7 +60,9 @@ python scripts\daily_literature_pipeline.py --date 2026-07-14
 python scripts\daily_literature_pipeline.py --git-sync
 ```
 
-流水线先查最近 3 天；强相关结果不足时扩到 7、30、365 天。只保存 OpenAlex、Semantic Scholar 或 arXiv 明确给出的合法开放获取 PDF；其余论文保留 DOI 和来源链接。
+流水线先查最近 3 天；强相关结果不足时扩到 7 天和 30 天，不会为了凑数回溯到更早年份。只保存出版社、Unpaywall、PMC/DOAJ 或作者/机构仓储可合法取得且通过 `%PDF` 校验的全文；其余论文保留 DOI、摘要级详情页和来源链接。
+
+每篇入选论文都生成可点击详情页。取得合法全文时，详情页包含页码锚定的方法/制备步骤、主图与分图解释、PDF 版本标签和内嵌 PDF；没有合法全文时只展示摘要、创新点和课题启发，不生成或猜测方法、图版与 PDF。
 
 ## 每日 09:00 自动化
 

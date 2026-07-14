@@ -5,12 +5,14 @@ import unittest
 from pathlib import Path
 
 from scripts.daily_literature_pipeline import is_on_topic
+from scripts.send_daily_notification import build_message
 
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "research-memory" / "literature" / "2026" / "2026-07-14" / "summaries" / "papers.json"
 IDEAS_PATH = ROOT / "research-memory" / "ideas" / "idea-log.json"
 BUNDLE_PATH = ROOT / "web" / "data" / "research-bundle.json"
+DETAILS_DIR = ROOT / "web" / "data" / "paper-details"
 HERO_PATH = ROOT / "web" / "assets" / "tactile-front-end-image2.webp"
 ICON_PATH = ROOT / "web" / "assets" / "research-intelligence-icon-image2.png"
 
@@ -54,7 +56,14 @@ class DataContractTests(unittest.TestCase):
         bundle = json.loads(BUNDLE_PATH.read_text(encoding="utf-8"))
         self.assertEqual(bundle["schema_version"], 2)
         self.assertEqual(bundle["stats"]["papers_today"], len(bundle["papers"]))
-        self.assertEqual(bundle["stats"]["must_read"], sum(1 for paper in bundle["papers"] if paper["relevance_score"] >= 80))
+        self.assertEqual(
+            bundle["stats"]["must_read"],
+            sum(
+                1
+                for paper in bundle["papers"]
+                if paper["relevance_score"] >= 80 or paper["decision_hint"] == "read"
+            ),
+        )
         self.assertEqual(bundle["stats"]["pending_proposals"], sum(1 for item in bundle["profile_proposals"] if item["status"] == "pending"))
 
     def test_image2_assets_are_present_and_web_ready(self) -> None:
@@ -69,6 +78,50 @@ class DataContractTests(unittest.TestCase):
         bundle = json.loads(BUNDLE_PATH.read_text(encoding="utf-8"))
         self.assertTrue(bundle["assets"]["hero_image2"])
         self.assertTrue(bundle["assets"]["icon_image2"])
+
+    def test_deep_read_assets_and_pdf_match_detail_contract(self) -> None:
+        bundle = json.loads(BUNDLE_PATH.read_text(encoding="utf-8"))
+        detail_paths = [
+            ROOT / "web" / paper["detail_json"]
+            for paper in bundle["papers"]
+            if paper.get("detail_json")
+        ]
+        self.assertTrue(detail_paths, "expected at least one deep-read detail bundle")
+        required = {
+            "schema_version", "id", "title", "status", "page_count", "abstract",
+            "innovation_points", "inspirations", "preparation_steps", "method_blocks",
+            "figures", "original_pdf", "pdf_version", "pdf_version_label",
+        }
+        for detail_path in detail_paths:
+            detail = json.loads(detail_path.read_text(encoding="utf-8"))
+            self.assertTrue(required <= detail.keys(), detail_path)
+            if detail["original_pdf"]:
+                self.assertGreater(detail["page_count"], 0)
+                pdf = ROOT / "web" / detail["original_pdf"]
+                self.assertTrue(pdf.is_file(), pdf)
+                self.assertTrue(pdf.read_bytes().startswith(b"%PDF"), pdf)
+            else:
+                self.assertEqual(detail["status"], "metadata_only_no_legal_pdf")
+                self.assertEqual(detail["page_count"], 0)
+                self.assertFalse(detail["preparation_steps"])
+                self.assertFalse(detail["figures"])
+            for figure in detail["figures"]:
+                self.assertGreater(figure.get("image_width", 0), 0)
+                self.assertGreater(figure.get("image_height", 0), 0)
+                image = ROOT / "web" / figure["image_path"]
+                self.assertTrue(image.is_file(), image)
+                self.assertGreater(image.stat().st_size, 1_000, image)
+                self.assertEqual(image.read_bytes()[:8], b"\x89PNG\r\n\x1a\n", image)
+
+    def test_notification_uses_curated_brief_without_methods_or_figures(self) -> None:
+        day = PAPERS_PATH.parents[1]
+        _, plain, _ = build_message(day)
+        self.assertIn("摘要：", plain)
+        self.assertIn("创新点：", plain)
+        self.assertIn("对你的启发：", plain)
+        self.assertIn("无标记的视觉触觉传感器", plain)
+        self.assertNotIn("制备步骤", plain)
+        self.assertNotIn("逐图", plain)
 
 
 if __name__ == "__main__":

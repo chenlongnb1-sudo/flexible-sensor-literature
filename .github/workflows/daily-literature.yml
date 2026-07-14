@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "15 1 * * *"
   workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Optional backfill window in days"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -15,7 +20,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,6 +29,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Install PDF parser
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
 
       - name: Check whether the primary Codex run already produced today
         id: daily_gate
@@ -45,7 +53,14 @@ jobs:
           OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
-        run: python scripts/daily_literature_pipeline.py
+          LOOKBACK_DAYS: ${{ inputs.lookback_days }}
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "$LOOKBACK_DAYS" ]]; then
+            args+=(--lookback-days "$LOOKBACK_DAYS")
+          fi
+          python scripts/daily_literature_pipeline.py "${args[@]}"
 
       - name: Run invariant tests
         if: steps.daily_gate.outputs.skip != 'true'
@@ -65,7 +80,7 @@ jobs:
         run: |
           git config user.name "research-intelligence-bot"
           git config user.email "research-intelligence-bot@users.noreply.github.com"
-          git add research-memory/literature research-memory/ideas/idea-log.json web/data/research-bundle.json
+          git add research-memory/literature research-memory/ideas/idea-log.json web/data/research-bundle.json web/data/paper-details web/papers
           if git diff --cached --quiet; then
             echo "No new literature artifacts to commit."
           else

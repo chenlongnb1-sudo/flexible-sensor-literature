@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17212b" />
+    <title>论文精读｜科研情报中枢</title>
+    <link rel="icon" type="image/png" href="./assets/research-intelligence-icon-image2.png" />
+    <link rel="stylesheet" href="./styles.css?v=8" />
+    <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  </head>
+  <body class="paper-detail-page">
+    <header class="paper-detail-topbar">
+      <a class="icon-btn" href="./" aria-label="返回论文列表" title="返回论文列表"><i data-lucide="arrow-left"></i></a>
+      <div>
+        <p class="eyebrow">Source-grounded paper reader</p>
+        <strong>论文精读</strong>
+      </div>
+      <a id="sourceLink" class="secondary-btn" href="#" target="_blank" rel="noreferrer" hidden><i data-lucide="external-link"></i><span>原始来源</span></a>
+    </header>
+
+    <main id="paperDetail" class="paper-detail-shell" aria-live="polite">
+      <div class="detail-loading"><span class="status-dot online"></span>正在读取论文详情</div>
+    </main>
+
+    <script src="./paper-detail.js?v=2"></script>
+  </body>
+</html>

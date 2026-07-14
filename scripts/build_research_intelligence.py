@@ -117,7 +117,11 @@ def build_bundle(preferred_date: date | None = None) -> dict[str, Any]:
         },
         "stats": {
             "papers_today": len(paper_items),
-            "must_read": sum(1 for item in paper_items if item.get("relevance_score", 0) >= 80),
+            "must_read": sum(
+                1
+                for item in paper_items
+                if item.get("relevance_score", 0) >= 80 or item.get("decision_hint") == "read"
+            ),
             "pending_ideas": sum(1 for item in idea_items if item.get("status") in {"candidate", "watch", "proposed"}),
             "pending_proposals": sum(1 for item in proposal_items if item.get("status") == "pending"),
             "open_tasks": sum(1 for item in tasks.get("tasks", []) if item.get("status") not in {"done", "cancelled"}),

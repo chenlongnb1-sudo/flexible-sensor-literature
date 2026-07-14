@@ -77,18 +77,18 @@
       "profile_update_recommendation": "Accept after at least two tolerance metrics beat controls."
     },
     {
-      "id": "idea-2026-07-14-6d61ef8f0eee",
+      "id": "idea-2026-07-14-83c429ed3232",
       "status": "candidate",
-      "grade": "A",
+      "grade": "B",
       "track": "P4",
       "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
-      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
+      "source": "Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception",
       "source_papers": [
         {
-          "paper_id": "paper-c1ebbe0c7b587881",
-          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-          "doi": "",
-          "url": "https://arxiv.org/abs/2607.05241"
+          "paper_id": "paper-711d36cffdfeb77e",
+          "title": "Direct Triboelectric Programming of a Ferroelectric Synaptic Transistor for Neuromorphic Tactile Perception",
+          "doi": "10.1002/smll.74524",
+          "url": "https://doi.org/10.1002/smll.74524"
         }
       ],
       "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
@@ -108,87 +108,21 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:45:14.558505+00:00"
+      "created_at": "2026-07-14T04:48:22.551246+00:00"
     },
     {
-      "id": "idea-2026-07-14-a23c3d1f9bb4",
-      "status": "candidate",
-      "grade": "A",
-      "track": "P5",
-      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
-      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-      "source_papers": [
-        {
-          "paper_id": "paper-c1ebbe0c7b587881",
-          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-          "doi": "",
-          "url": "https://arxiv.org/abs/2607.05241"
-        }
-      ],
-      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
-      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
-      "controls": [
-        "raw readout",
-        "software projection",
-        "hardware projection",
-        "hardware projection + few-shot calibration"
-      ],
-      "success_metrics": [
-        "accuracy degradation",
-        "feature drift",
-        "calibration samples",
-        "fault ratio",
-        "cross-device variance"
-      ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:45:14.558524+00:00"
-    },
-    {
-      "id": "idea-2026-07-14-8f8f8ad61e52",
-      "status": "candidate",
-      "grade": "A",
-      "track": "P6",
-      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
-      "source": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-      "source_papers": [
-        {
-          "paper_id": "paper-c1ebbe0c7b587881",
-          "title": "GelNeuro: A Sensing-Computing Integrated Neuromorphic Tactile System for Texture Recognition",
-          "doi": "",
-          "url": "https://arxiv.org/abs/2607.05241"
-        }
-      ],
-      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
-      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
-      "controls": [
-        "raw signal",
-        "z-only",
-        "front-end vector/projection"
-      ],
-      "success_metrics": [
-        "task accuracy",
-        "response time",
-        "channel count",
-        "failure cases"
-      ],
-      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
-      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:45:14.558532+00:00"
-    },
-    {
-      "id": "idea-2026-07-14-edb730fbd17e",
+      "id": "idea-2026-07-14-f3577c266130",
       "status": "candidate",
       "grade": "B",
       "track": "P1",
       "title": "把论文中的结构机制转成偏移/旋转/接触半径容差地图",
-      "source": "Design, Validation, and Metrological Limits of Biofidelic Instrumentation in PFL Collaborative Robotics: A Systematic Review of Longitudinal Trends and Future Paradigms",
+      "source": "Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network",
       "source_papers": [
         {
-          "paper_id": "paper-f5a0563071e2ecf4",
-          "title": "Design, Validation, and Metrological Limits of Biofidelic Instrumentation in PFL Collaborative Robotics: A Systematic Review of Longitudinal Trends and Future Paradigms",
-          "doi": "10.3390/s26133984",
-          "url": "https://doi.org/10.3390/s26133984"
+          "paper_id": "paper-8dd8aa82559e2447",
+          "title": "Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network",
+          "doi": "10.1038/s41378-026-01355-5",
+          "url": "https://doi.org/10.1038/s41378-026-01355-5"
         }
       ],
       "hypothesis": "若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。",
@@ -208,7 +142,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:45:14.558538+00:00"
+      "created_at": "2026-07-14T04:48:22.551257+00:00"
     },
     {
       "id": "idea-2026-07-14-3ee11837e718",
@@ -242,7 +176,41 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-07-14T01:45:14.558543+00:00"
+      "created_at": "2026-07-14T04:48:22.551261+00:00"
+    },
+    {
+      "id": "idea-2026-07-14-f4aae77423de",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P5",
+      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
+      "source": "Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network",
+      "source_papers": [
+        {
+          "paper_id": "paper-8dd8aa82559e2447",
+          "title": "Vision-based tactile sensing enhanced by microstructures and lightweight convolutional neural network",
+          "doi": "10.1038/s41378-026-01355-5",
+          "url": "https://doi.org/10.1038/s41378-026-01355-5"
+        }
+      ],
+      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
+      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
+      "controls": [
+        "raw readout",
+        "software projection",
+        "hardware projection",
+        "hardware projection + few-shot calibration"
+      ],
+      "success_metrics": [
+        "accuracy degradation",
+        "feature drift",
+        "calibration samples",
+        "fault ratio",
+        "cross-device variance"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-14T04:48:22.551264+00:00"
     }
   ]
 }

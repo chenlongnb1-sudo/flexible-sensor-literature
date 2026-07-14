@@ -123,6 +123,7 @@ async function postJson(url, payload) {
 }
 
 function paperLink(paper) { return safeUrl(paper.url) || (paper.doi ? `https://doi.org/${paper.doi}` : ""); }
+function paperDetailLink(paper) { return `./paper.html?id=${encodeURIComponent(paper.id || "")}`; }
 function localPdfLink(paper) {
   if (!paper.local_pdf) return "";
   if (state.apiMode) return `./files/${paper.local_pdf}`;
@@ -131,6 +132,7 @@ function localPdfLink(paper) {
 
 function paperCard(paper, compact = false) {
   const link = paperLink(paper);
+  const detailLink = paperDetailLink(paper);
   const pdfLink = localPdfLink(paper);
   const authors = (paper.authors || []).slice(0, 4).join(", ");
   const scoreTone = paper.relevance_score >= 80 ? "high" : paper.relevance_score >= 60 ? "medium" : "low";
@@ -141,7 +143,7 @@ function paperCard(paper, compact = false) {
     <article class="paper-card ${compact ? "compact" : ""}">
       <div class="paper-main">
         <div class="paper-topline"><div class="tags">${(paper.tracks || []).map((item) => tag(item, "blue")).join("")}${tag(actionLabels[paper.decision_hint] || paper.decision_hint || "待判断", "amber")}${sources}</div><span class="paper-date">${formatDate(paper.date)}</span></div>
-        <h3>${link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${escapeHtml(paper.title)}</a>` : escapeHtml(paper.title)}</h3>
+        <h3><a href="${escapeHtml(detailLink)}">${escapeHtml(paper.title)}</a></h3>
         <div class="paper-meta"><span>${escapeHtml(paper.venue || "来源未标注")}</span>${authors ? `<span>${escapeHtml(authors)}${(paper.authors || []).length > 4 ? " et al." : ""}</span>` : ""}</div>
         <p class="paper-claim">${escapeHtml(paper.summary_zh || paper.core_claim || "等待摘要分析")}</p>
         ${compact ? "" : `<details><summary>迁移价值与风险</summary><div class="detail-grid"><div><strong>可迁移</strong><ul>${transfers || "<li>需精读后判断</li>"}</ul></div><div><strong>边界</strong><ul>${risks || "<li>需精读后判断</li>"}</ul></div></div></details>`}
@@ -149,6 +151,8 @@ function paperCard(paper, compact = false) {
           <button class="small-btn" data-paper-action="read" data-id="${escapeHtml(paper.id)}">${icon("book-open-check")}精读</button>
           <button class="small-btn" data-paper-action="add_to_ideas" data-id="${escapeHtml(paper.id)}">${icon("lightbulb")}加入 idea</button>
           <button class="small-btn quiet-action" data-paper-action="ignore" data-id="${escapeHtml(paper.id)}">${icon("archive")}忽略</button>
+          <a class="small-btn primary-action" href="${escapeHtml(detailLink)}">${icon("book-open-text")}详情</a>
+          ${link ? `<a class="small-btn" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${icon("external-link")}来源</a>` : ""}
           ${pdfLink ? `<a class="small-btn" href="${escapeHtml(pdfLink)}" target="_blank" rel="noreferrer">${icon("file-down")}PDF</a>` : ""}
         </div>
       </div>
@@ -381,7 +385,7 @@ function bindEvents() {
       sendDecision("paper", paperButton.dataset.id, action);
       if (action === "read") {
         const paper = state.bundle.papers.find((item) => item.id === paperButton.dataset.id);
-        const link = paper && paperLink(paper); if (link) window.open(link, "_blank", "noopener");
+        const link = paper && paperDetailLink(paper); if (link) window.open(link, "_blank", "noopener");
       }
       return;
     }

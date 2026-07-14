@@ -1,9 +1,11 @@
-const CACHE = "research-intelligence-v6";
+const CACHE = "research-intelligence-v8";
 const CORE = [
   "./",
   "./index.html",
-  "./styles.css?v=6",
-  "./app.js?v=6",
+  "./styles.css?v=8",
+  "./app.js?v=8",
+  "./paper.html",
+  "./paper-detail.js?v=2",
   "./manifest.webmanifest",
   "./data/research-bundle.json",
   "./assets/tactile-front-end.svg",
