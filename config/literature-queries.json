@@ -1,7 +1,7 @@
 {
   "lookback_windows_days": [3, 7, 30],
   "minimum_candidates": 3,
-  "maximum_candidates": 12,
+  "maximum_candidates": 15,
   "open_access_pdf_limit": 12,
   "queries": [
     {
@@ -51,6 +51,128 @@
       "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
       "tracks": ["P1"],
       "sources": ["openalex", "crossref", "semantic_scholar"]
+    }
+  ],
+  "targeted_venue_queries": [
+    {
+      "id": "venue-nature-materials",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Nature Materials",
+      "issn": "1476-1122",
+      "tracks": ["P1", "P2", "P4", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-nature-nanotechnology",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Nature Nanotechnology",
+      "issn": "1748-3387",
+      "tracks": ["P1", "P2", "P4", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-nature-electronics",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Nature Electronics",
+      "issn": "2520-1131",
+      "tracks": ["P2", "P3", "P4", "P5", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-nature-communications",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Nature Communications",
+      "issn": "2041-1723",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-nature-biomedical-engineering",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Nature Biomedical Engineering",
+      "issn": "2157-846X",
+      "tracks": ["P2", "P4", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-nature-machine-intelligence",
+      "query": "tactile electronic skin neuromorphic sensor computing robotic perception",
+      "container_title": "Nature Machine Intelligence",
+      "issn": "2522-5839",
+      "tracks": ["P4", "P5", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-npj-flexible-electronics",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "npj Flexible Electronics",
+      "issn": "2397-4621",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-microsystems-nanoengineering",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Microsystems & Nanoengineering",
+      "issn": "2055-7434",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-communications-engineering",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Communications Engineering",
+      "issn": "2731-3395",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-communications-materials",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Communications Materials",
+      "issn": "2662-4443",
+      "tracks": ["P1", "P2", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-science-advances",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Science Advances",
+      "issn": "2375-2548",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-science-robotics",
+      "query": "tactile electronic skin flexible sensor haptic robotic perception",
+      "container_title": "Science Robotics",
+      "issn": "2470-9476",
+      "tracks": ["P2", "P3", "P4", "P5", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-cell-reports-physical-science",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Cell Reports Physical Science",
+      "issn": "2666-3864",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-matter",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",
+      "container_title": "Matter",
+      "issn": "2590-2385",
+      "tracks": ["P1", "P2", "P4", "P6"],
+      "sources": ["crossref"]
+    },
+    {
+      "id": "venue-device",
+      "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor computing",
+      "container_title": "Device",
+      "issn": "2666-9986",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"],
+      "sources": ["crossref"]
     }
   ]
 }

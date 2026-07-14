@@ -37,15 +37,24 @@ def build_message(day: Path) -> tuple[str, str, str]:
     payload = read_json(day / "summaries" / "papers.json", {"papers": [], "generated_ideas": []})
     papers = payload.get("papers", [])
     title = f"{day.name} 柔性电子皮肤文献日报"
+    targeted = [
+        paper
+        for paper in papers
+        if any(str(query_id).startswith("venue-") for query_id in paper.get("query_ids", []))
+    ]
+    selected = targeted[:5]
+    selected_ids = {paper.get("id") for paper in selected}
+    selected.extend(paper for paper in papers if paper.get("id") not in selected_ids)
+    selected = selected[:5]
     lines = []
-    for index, paper in enumerate(papers[:3], 1):
+    for index, paper in enumerate(selected, 1):
         detail_path = ROOT / "web" / str(paper.get("detail_json") or "")
         detail = read_json(detail_path, {}) if detail_path.is_file() else {}
         link = (
             "https://chenlongnb1-sudo.github.io/flexible-sensor-literature/"
             f"paper.html?id={urllib.parse.quote(str(paper.get('id') or ''))}"
         )
-        lines.append(f"{index}. {paper.get('title', '')}")
+        lines.append(f"{index}. [{paper.get('venue') or '期刊待核验'}] {paper.get('title', '')}")
         abstract = (detail.get("abstract") or {}).get("zh")
         lines.append(f"摘要：{abstract or paper.get('summary_zh') or paper.get('core_claim') or '待精读'}")
         innovations = detail.get("innovation_points") or [

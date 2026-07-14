@@ -123,6 +123,8 @@ class SearchJob:
     tracks: tuple[str, ...]
     from_date: date
     to_date: date
+    container_title: str = ""
+    issn: str = ""
 
 
 def load_json(path: Path, fallback: Any) -> Any:
@@ -189,6 +191,10 @@ def normalize_doi(value: str | None) -> str:
     value = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", value)
     match = re.search(r"10\.\d{4,9}/\S+", value)
     return match.group(0).rstrip(".,);]") if match else ""
+
+
+def normalize_venue_name(value: str | None) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", html.unescape(value or "").lower()).strip()
 
 
 def normalize_title(value: str) -> str:
@@ -454,11 +460,19 @@ def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
         "rows": "25",
         "mailto": DEFAULT_MAILTO,
     }
-    url = "https://api.crossref.org/works?" + urllib.parse.urlencode(params)
+    if job.container_title:
+        params["query.container-title"] = job.container_title
+    endpoint = "https://api.crossref.org/works"
+    if job.issn:
+        endpoint = f"https://api.crossref.org/journals/{urllib.parse.quote(job.issn)}/works"
+    url = endpoint + "?" + urllib.parse.urlencode(params)
     payload = json.loads(request_bytes(url)[0])
     records = []
     for item in payload.get("message", {}).get("items", []):
         title_values = item.get("title") or []
+        venue = clean_markup((item.get("container-title") or [""])[0])
+        if job.container_title and normalize_venue_name(venue) != normalize_venue_name(job.container_title):
+            continue
         authors = []
         for author in item.get("author", [])[:12]:
             name = " ".join(part for part in (author.get("given", ""), author.get("family", "")) if part)
@@ -469,7 +483,7 @@ def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
             {
                 "title": clean_markup(title_values[0] if title_values else ""),
                 "authors": authors,
-                "venue": clean_markup((item.get("container-title") or [""])[0]),
+                "venue": venue,
                 "date": iso_date(published),
                 "doi": normalize_doi(item.get("DOI")),
                 "url": item.get("URL") or "",
@@ -689,9 +703,15 @@ def meets_venue_quality(record: dict[str, Any]) -> bool:
     return venue_quality_tier(record) == "elite_subjournal_or_am_level"
 
 
+def is_targeted_venue_record(record: dict[str, Any]) -> bool:
+    return any(str(query_id).startswith("venue-") for query_id in record.get("query_ids", []))
+
+
 def is_actionable_candidate(record: dict[str, Any], today: date) -> bool:
     score = score_record(record, today)["relevance_score"]
     if score >= 48:
+        return True
+    if is_targeted_venue_record(record) and score >= 28:
         return True
     if score < 32:
         return False
@@ -755,6 +775,8 @@ def score_record(record: dict[str, Any], today: date) -> dict[str, Any]:
     elif total >= 68:
         hint = "add_to_ideas"
     elif total >= 58:
+        hint = "skim"
+    elif is_targeted_venue_record(record) and total >= 28:
         hint = "skim"
     else:
         hint = "ignore"
@@ -1170,12 +1192,16 @@ def report_markdown(
         [
             "## 检索记录",
             "",
-            "| 来源 | 查询 | 命中 | 状态 |",
-            "|---|---|---:|---|",
+            "| 来源 | 目标期刊 | 查询 | 命中 | 状态 |",
+            "|---|---|---|---:|---|",
         ]
     )
     for item in query_log:
-        lines.append(f"| {item['source']} | `{item['query']}` | {item['result_count']} | {item['status']} |")
+        target_venue = item.get("container_title") or "-"
+        lines.append(
+            f"| {item['source']} | {target_venue} | `{item['query']}` | "
+            f"{item['result_count']} | {item['status']} |"
+        )
     if source_errors:
         lines.extend(["", "## 数据源异常", ""])
         grouped_errors: dict[str, list[dict[str, str]]] = {}
@@ -1226,7 +1252,11 @@ def search_window(
     disabled_sources = disabled_sources or set()
     jobs = []
     from_date = run_date - timedelta(days=window_days)
-    for query in config.get("queries", []):
+    configured_queries = [
+        *config.get("queries", []),
+        *config.get("targeted_venue_queries", []),
+    ]
+    for query in configured_queries:
         for source in query.get("sources", []):
             if source in SEARCHERS and source not in disabled_sources:
                 jobs.append(
@@ -1237,6 +1267,8 @@ def search_window(
                         tracks=tuple(query.get("tracks", [])),
                         from_date=from_date,
                         to_date=run_date,
+                        container_title=str(query.get("container_title") or ""),
+                        issn=str(query.get("issn") or ""),
                     )
                 )
     records: list[dict[str, Any]] = []
@@ -1254,6 +1286,7 @@ def search_window(
                         "source": job.source,
                         "query_id": job.query_id,
                         "query": job.query,
+                        "container_title": job.container_title,
                         "result_count": len(found),
                         "status": "ok",
                     }
@@ -1266,6 +1299,7 @@ def search_window(
                         "source": job.source,
                         "query_id": job.query_id,
                         "query": job.query,
+                        "container_title": job.container_title,
                         "result_count": 0,
                         "status": "failed",
                     }

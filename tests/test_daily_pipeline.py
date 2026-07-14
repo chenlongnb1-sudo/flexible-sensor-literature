@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import io
+import json
 import tarfile
 import unittest
 from datetime import date
+from unittest.mock import patch
+from urllib.parse import parse_qs, urlparse
 
 from scripts.daily_literature_pipeline import (
     classify_pdf_version,
@@ -15,6 +18,8 @@ from scripts.daily_literature_pipeline import (
     merge_records,
     pdf_from_oa_package,
     retain_existing_results_on_empty_refresh,
+    SearchJob,
+    search_crossref,
     venue_quality_tier,
 )
 
@@ -89,6 +94,42 @@ class DailyPipelineTests(unittest.TestCase):
         record = {"venue": "Device", "paper_type": "journal-article"}
         self.assertTrue(meets_venue_quality(record))
 
+    def test_crossref_targeted_query_uses_container_title(self) -> None:
+        job = SearchJob(
+            query_id="venue-nature-electronics",
+            query="flexible tactile electronic skin sensor",
+            source="crossref",
+            tracks=("P4",),
+            from_date=date(2026, 6, 14),
+            to_date=date(2026, 7, 14),
+            container_title="Nature Electronics",
+            issn="2520-1131",
+        )
+        response = json.dumps(
+            {
+                "message": {
+                    "items": [
+                        {
+                            "title": ["Matching tactile paper"],
+                            "container-title": ["Nature Electronics"],
+                            "type": "journal-article",
+                        },
+                        {
+                            "title": ["Off-target tactile paper"],
+                            "container-title": ["Advanced Science"],
+                            "type": "journal-article",
+                        },
+                    ]
+                }
+            }
+        ).encode("utf-8")
+        with patch("scripts.daily_literature_pipeline.request_bytes", return_value=(response, "application/json")) as request:
+            records = search_crossref(job)
+        params = parse_qs(urlparse(request.call_args.args[0]).query)
+        self.assertEqual(params["query.container-title"], ["Nature Electronics"])
+        self.assertIn("/journals/2520-1131/works", request.call_args.args[0])
+        self.assertEqual([record["title"] for record in records], ["Matching tactile paper"])
+
     def test_missing_abstract_can_enter_fulltext_verification_from_specific_title(self) -> None:
         record = {
             "title": "Biomimetic tactile sensor system with neuromorphic encoding",
@@ -98,6 +139,19 @@ class DailyPipelineTests(unittest.TestCase):
             "date": date.today().isoformat(),
             "query_ids": ["neuromorphic-tactile-encoding"],
         }
+        self.assertTrue(is_actionable_candidate(record, date.today()))
+
+    def test_targeted_subjournal_tactile_paper_enters_observation_queue(self) -> None:
+        record = {
+            "title": "Impedance characteristics in iontronic tactile sensors",
+            "abstract": "A flexible electronic skin decouples temperature and pressure.",
+            "venue": "npj Flexible Electronics",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-npj-flexible-electronics"],
+            "query_tracks": ["P1", "P2"],
+        }
+        self.assertTrue(is_on_topic(record))
         self.assertTrue(is_actionable_candidate(record, date.today()))
 
     def test_missing_abstract_material_only_title_stays_excluded(self) -> None:
