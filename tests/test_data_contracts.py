@@ -15,9 +15,22 @@ BUNDLE_PATH = ROOT / "web" / "data" / "research-bundle.json"
 DETAILS_DIR = ROOT / "web" / "data" / "paper-details"
 HERO_PATH = ROOT / "web" / "assets" / "tactile-front-end-image2.webp"
 ICON_PATH = ROOT / "web" / "assets" / "research-intelligence-icon-image2.png"
+WORKFLOW_PATH = ROOT / ".github" / "workflows" / "daily-literature.yml"
+TODAY_PATH = ROOT / "research-memory" / "literature" / "2026" / "2026-07-15"
 
 
 class DataContractTests(unittest.TestCase):
+    def test_daily_report_push_triggers_notification_without_search(self) -> None:
+        workflow = WORKFLOW_PATH.read_text(encoding="utf-8")
+        self.assertIn('research-memory/literature/**/daily-report.md', workflow)
+        self.assertIn("Daily report push detected", workflow)
+        self.assertIn("github.event_name == 'push'", workflow)
+        self.assertIn("research-intelligence-bot@users.noreply.github.com", workflow)
+
+    def test_zero_result_day_still_builds_status_notification(self) -> None:
+        _, plain, _ = build_message(TODAY_PATH)
+        self.assertIn("今日没有达到门槛的新论文", plain)
+
     def test_daily_papers_match_runtime_contract(self) -> None:
         payload = json.loads(PAPERS_PATH.read_text(encoding="utf-8"))
         self.assertTrue({"date", "searched_at", "search_window_days", "query_log", "papers", "generated_ideas"} <= payload.keys())

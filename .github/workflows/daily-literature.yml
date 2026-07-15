@@ -1,6 +1,10 @@
 name: Daily literature intelligence
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "research-memory/literature/**/daily-report.md"
   schedule:
     - cron: "15 1 * * *"
   workflow_dispatch:
@@ -40,7 +44,10 @@ jobs:
           DAY=$(TZ=Asia/Shanghai date +%F)
           YEAR=$(TZ=Asia/Shanghai date +%Y)
           echo "day=$DAY" >> "$GITHUB_OUTPUT"
-          if [[ "${{ github.event_name }}" == "schedule" && -f "research-memory/literature/$YEAR/$DAY/daily-report.md" ]]; then
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Daily report push detected; search skipped and notification routing evaluated."
+          elif [[ "${{ github.event_name }}" == "schedule" && -f "research-memory/literature/$YEAR/$DAY/daily-report.md" ]]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "Primary 09:00 Codex run already produced $DAY; fallback skipped."
           else
@@ -67,7 +74,10 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Send optional briefing notification
-        if: steps.daily_gate.outputs.skip != 'true'
+        if: >-
+          (github.event_name == 'workflow_dispatch') ||
+          (github.event_name == 'schedule' && steps.daily_gate.outputs.skip != 'true') ||
+          (github.event_name == 'push' && github.event.head_commit.author.email != 'research-intelligence-bot@users.noreply.github.com')
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
@@ -94,6 +104,7 @@ jobs:
         run: |
           echo "## Daily literature intelligence" >> "$GITHUB_STEP_SUMMARY"
           echo "- Schedule: 09:15 Asia/Shanghai fallback after the 09:00 Codex run" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Trigger: ${{ github.event_name }}" >> "$GITHUB_STEP_SUMMARY"
           echo "- Fallback skipped: ${{ steps.daily_gate.outputs.skip }}" >> "$GITHUB_STEP_SUMMARY"
           echo "- Profile: flexible electronic skin front-end tactile computing" >> "$GITHUB_STEP_SUMMARY"
           echo "- Report date: ${{ steps.daily_gate.outputs.day }}" >> "$GITHUB_STEP_SUMMARY"
