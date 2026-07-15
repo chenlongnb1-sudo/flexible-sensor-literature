@@ -1,6 +1,6 @@
 {
   "date": "2026-07-15",
-  "searched_at": "2026-07-15T01:02:24.537638+00:00",
+  "searched_at": "2026-07-15T01:52:06.322646+00:00",
   "search_window_days": 30,
   "query_log": [
     {
@@ -28,14 +28,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "fault-transfer-calibration",
-      "query": "electronic skin fault tolerant transferable calibration domain adaptation",
-      "container_title": "",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "arxiv",
       "query_id": "low-redundancy-array",
       "query": "electronic skin tactile array compressed readout low channel",
@@ -58,14 +50,6 @@
       "container_title": "",
       "result_count": 7,
       "status": "ok"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "low-redundancy-array",
-      "query": "electronic skin tactile array compressed readout low channel",
-      "container_title": "",
-      "result_count": 0,
-      "status": "failed"
     },
     {
       "source": "arxiv",
@@ -92,14 +76,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "near-sensor-tactile-computing",
-      "query": "near-sensor analog computing tactile sensing electronic skin",
-      "container_title": "",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "crossref",
       "query_id": "neuromorphic-tactile-encoding",
       "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
@@ -114,14 +90,6 @@
       "container_title": "",
       "result_count": 22,
       "status": "ok"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "neuromorphic-tactile-encoding",
-      "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
-      "container_title": "",
-      "result_count": 0,
-      "status": "failed"
     },
     {
       "source": "arxiv",
@@ -148,14 +116,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "physical-projection",
-      "query": "tactile sensor physical computing analog computing programmable projection",
-      "container_title": "",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "arxiv",
       "query_id": "tactile-front-end-computing",
       "query": "tactile sensor analog front-end in-sensor computing",
@@ -180,14 +140,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "tactile-front-end-computing",
-      "query": "tactile sensor analog front-end in-sensor computing",
-      "container_title": "",
-      "result_count": 0,
-      "status": "failed"
-    },
-    {
       "source": "crossref",
       "query_id": "tolerance-interface",
       "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
@@ -204,14 +156,6 @@
       "status": "ok"
     },
     {
-      "source": "semantic_scholar",
-      "query_id": "tolerance-interface",
-      "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
-      "container_title": "",
-      "result_count": 0,
-      "status": "ok"
-    },
-    {
       "source": "crossref",
       "query_id": "vector-shear-friction-slip",
       "query": "flexible tactile sensor vector shear friction slip direction",
@@ -225,14 +169,6 @@
       "query": "flexible tactile sensor vector shear friction slip direction",
       "container_title": "",
       "result_count": 2,
-      "status": "ok"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "vector-shear-friction-slip",
-      "query": "flexible tactile sensor vector shear friction slip direction",
-      "container_title": "",
-      "result_count": 0,
       "status": "ok"
     },
     {
@@ -374,6 +310,11 @@
     },
     {
       "source": "semantic_scholar",
+      "query_id": "vector-shear-friction-slip",
+      "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "semantic_scholar",
       "query_id": "low-redundancy-array",
       "error": "HTTPError: HTTP Error 429: "
     },
@@ -385,6 +326,11 @@
     {
       "source": "semantic_scholar",
       "query_id": "fault-transfer-calibration",
+      "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "tolerance-interface",
       "error": "HTTPError: HTTP Error 429: "
     }
   ],

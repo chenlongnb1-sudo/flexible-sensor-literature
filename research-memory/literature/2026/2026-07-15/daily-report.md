@@ -36,32 +36,24 @@
 | arxiv | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 4 | ok |
 | crossref | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |
 | openalex | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 1 | ok |
-| semantic_scholar | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | failed |
 | arxiv | - | `electronic skin tactile array compressed readout low channel` | 4 | ok |
 | crossref | - | `electronic skin tactile array compressed readout low channel` | 25 | ok |
 | openalex | - | `electronic skin tactile array compressed readout low channel` | 7 | ok |
-| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |
 | arxiv | - | `near-sensor analog computing tactile sensing electronic skin` | 1 | ok |
 | crossref | - | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |
 | openalex | - | `near-sensor analog computing tactile sensing electronic skin` | 17 | ok |
-| semantic_scholar | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |
 | crossref | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 25 | ok |
 | openalex | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 22 | ok |
-| semantic_scholar | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | failed |
 | arxiv | - | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |
 | crossref | - | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |
 | openalex | - | `tactile sensor physical computing analog computing programmable projection` | 5 | ok |
-| semantic_scholar | - | `tactile sensor physical computing analog computing programmable projection` | 0 | failed |
 | arxiv | - | `tactile sensor analog front-end in-sensor computing` | 25 | ok |
 | crossref | - | `tactile sensor analog front-end in-sensor computing` | 25 | ok |
 | openalex | - | `tactile sensor analog front-end in-sensor computing` | 21 | ok |
-| semantic_scholar | - | `tactile sensor analog front-end in-sensor computing` | 0 | failed |
 | crossref | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |
 | openalex | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 2 | ok |
-| semantic_scholar | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | ok |
 | crossref | - | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |
 | openalex | - | `flexible tactile sensor vector shear friction slip direction` | 2 | ok |
-| semantic_scholar | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |
 | crossref | Cell Reports Physical Science | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 1 | ok |
 | crossref | Communications Engineering | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 0 | ok |
 | crossref | Communications Materials | `flexible tactile electronic skin wearable pressure haptic neuromorphic sensor` | 3 | ok |
@@ -80,7 +72,7 @@
 
 ## 数据源异常
 
-- semantic_scholar：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
+- semantic_scholar：8 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
 
 ## 纳入与排除标准
 
