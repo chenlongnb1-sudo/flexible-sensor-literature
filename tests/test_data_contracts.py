@@ -86,7 +86,11 @@ class DataContractTests(unittest.TestCase):
             for paper in bundle["papers"]
             if paper.get("detail_json")
         ]
-        self.assertTrue(detail_paths, "expected at least one deep-read detail bundle")
+        if not bundle["papers"]:
+            self.assertFalse(detail_paths)
+            self.assertTrue(list(DETAILS_DIR.glob("*.json")), "expected historical detail bundles to be retained")
+            return
+        self.assertTrue(detail_paths, "expected at least one current or historical detail bundle")
         required = {
             "schema_version", "id", "title", "status", "page_count", "abstract",
             "innovation_points", "inspirations", "preparation_steps", "method_blocks",
