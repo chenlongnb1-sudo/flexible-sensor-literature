@@ -2,12 +2,12 @@
 
 ## 今日结论
 
-本次从 OpenAlex、Crossref、Semantic Scholar 和 arXiv 检索最近 30 天结果，去重并排除历史已收录论文后保留 0 篇。
+本次先直接核验 Nature、Science、Cell 和 Wiley 系列官网在 2026-07-11 至 2026-07-17 发布的相关论文，再以 OpenAlex、Crossref、Semantic Scholar 和 arXiv 补全与去重，最终保留 1 篇。
 期刊等级采用硬门槛：仅保留 Nature/Science/Cell 子刊、Advanced Materials 系列及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。
 通过期刊门槛后，再优先考虑 ADC 前模拟触觉、矢量/剪切/摩擦读出、低冗余阵列、物理投影和容错迁移。
 
 - 今日必看：0 篇
-- 值得追踪：0 篇
+- 值得追踪：1 篇
 - 新增可评估 idea：0 个
 - 历史重复排除：11 篇
 - 期刊等级排除：38 篇
@@ -20,13 +20,13 @@
 
 | 评分 | 轨道 | 论文 | 建议 |
 |---:|---|---|---|
-| - | - | 今日无新增候选 | - |
+| 78 | P3/P4/P6 | [A spike–language dual framework bridges fast perception and deep reasoning in artificial tactile somatosensory systems](https://www.nature.com/articles/s44460-026-00108-1) | 略读；作为分层触觉编码与路由的系统对照 |
 
 ## 方法与指标速览
 
 | 论文 | 方法（摘要证据） | 可核实数值 | 画像价值 |
 |---|---|---|---|
-| - | 今日无通过期刊与主题双重门槛的论文 | - | - |
+| A spike–language dual framework bridges fast perception and deep reasoning in artificial tactile somatosensory systems | 皮肤式触觉阵列的时序数据同时编码为 SNN 脉冲和 LLM 自然语言提示，并由置信度门控路由 | 官网摘要未给出 | 可启发 P4 输出后的双通路事件编码，但不是 ADC 前模拟计算证据 |
 
 ## 今日创新点候选
 
@@ -81,6 +81,8 @@
 
 ## 数据源异常
 
+- Wiley 官网：站内搜索触发 Cloudflare 验证，未能完成可复现的官网结果页抓取；已用公开索引核查候选，但不将其冒充官网完整检索。
+- Science 与 Cell 官网：本周未发现通过主题门槛的条目。
 - semantic_scholar：7 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
 - arxiv：5 个查询失败；首个错误为 HTTPError: HTTP Error 429: Unknown Error。其余来源已继续运行。
 

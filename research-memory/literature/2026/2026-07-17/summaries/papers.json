@@ -427,6 +427,78 @@
     "verification_level": "metadata and abstract screening",
     "refresh_status": "fresh_results"
   },
-  "papers": [],
+  "papers": [
+    {
+      "id": "paper-0e5f42c01a3bcb79",
+      "title": "A spike–language dual framework bridges fast perception and deep reasoning in artificial tactile somatosensory systems",
+      "authors": [
+        "Hao Sun",
+        "Xin Gao",
+        "Wanhao Niu",
+        "Longwei Li",
+        "Yutong Song",
+        "Lei Liu",
+        "Huaidong Zhou",
+        "Huaping Liu",
+        "Zhong Lin Wang",
+        "Xiong Pu",
+        "Fuchun Sun"
+      ],
+      "venue": "Nature Sensors",
+      "date": "2026-07-15",
+      "doi": "10.1038/s44460-026-00108-1",
+      "url": "https://www.nature.com/articles/s44460-026-00108-1",
+      "pdf_url": "",
+      "pdf_candidates": [],
+      "local_pdf": "",
+      "is_open_access": false,
+      "paper_type": "journal-article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "Nature official website"
+      ],
+      "query_ids": [
+        "official-nature-weekly-rerun"
+      ],
+      "tracks": [
+        "P3",
+        "P4",
+        "P6"
+      ],
+      "relevance_score": 78,
+      "score_breakdown": {
+        "topic_relevance": 84,
+        "evidence_strength": 66,
+        "transferability": 76,
+        "innovation_density": 88,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "使用仿生机械感受器和温度感受器的皮肤式传感阵列",
+        "同一触觉时序同时编码为脉冲和自然语言，形成快感知与深推理双通路",
+        "可作为硬件投影前端与分层事件编码/语义路由的系统级对照"
+      ],
+      "core_claim": "A spike-language dual encoding strategy combines fast SNN classification with LLM-based semantic reasoning on tactile time-series data from a robotic skin-like sensor array.",
+      "summary_zh": "该研究在机器人皮肤式多模态传感阵列上提出脉冲—语言双编码框架：同一触觉时序一方面转换为脉冲供 SNN 快速分类，另一方面转换为自然语言提示供大模型进行开放集语义推理，并通过置信度门控在快速反射与深度推理之间自适应路由。",
+      "method_summary": "Official abstract metadata only; full text is subscription content.",
+      "key_metrics": [],
+      "transferable_points": [
+        "将 P4 的硬件投影输出进一步组织为事件脉冲与语义特征两条可切换通路",
+        "用置信度门控决定简单任务走低延迟路径、未知触觉走高成本推理路径",
+        "可设计 hardware projection、raw array、SNN-only 与双通路方案的延迟和开放集识别对照"
+      ],
+      "risks": [
+        "官网仅公开摘要和图题，未获得合法全文，不能据此补写器件工艺、实验参数或图中细节。",
+        "核心创新偏系统编码与后端推理，不能直接视为 ADC 前模拟计算证据。"
+      ],
+      "source_abstract": "The human somatosensory system achieves both rapid tactile perception and high-level cognitive reasoning through a hierarchical architecture, yet robotic tactile systems still lack the integration between multimodal sensory hardware and semantic computing frameworks, leaving a gap between fast perception and deep cognition. Here we present a spike–language dual encoding strategy for embodied somatosensory systems, implemented on a robotic skin-like sensor array that mimics human mechanoreceptors and thermoreceptors. Tactile time-series data are simultaneously encoded into spikes for a spiking neural network, enabling fast object classification, and into natural language prompts for a large language model, supporting semantic reasoning. A confidence-based gating mechanism adaptively routes sensory data, ensuring reflexive responses for routine tasks while reserving computationally intensive reasoning for open-set recognition—an underexplored capability in tactile systems. This dual-pathway framework provides a foundation for human-like somatosensation and advancing the development of autonomous, cognitively capable robots.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "publisher_abstract_screened",
+      "deep_read_status": "metadata_only_no_legal_pdf",
+      "detail_path": "paper.html?id=paper-0e5f42c01a3bcb79",
+      "detail_json": "data/paper-details/paper-0e5f42c01a3bcb79.json"
+    }
+  ],
   "generated_ideas": []
 }
