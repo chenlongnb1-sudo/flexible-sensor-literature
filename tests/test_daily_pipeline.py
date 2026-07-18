@@ -130,7 +130,7 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertIn("/journals/2520-1131/works", request.call_args.args[0])
         self.assertEqual([record["title"] for record in records], ["Matching tactile paper"])
 
-    def test_missing_abstract_can_enter_fulltext_verification_from_specific_title(self) -> None:
+    def test_specific_tactile_computing_title_can_clear_relevance_threshold(self) -> None:
         record = {
             "title": "Biomimetic tactile sensor system with neuromorphic encoding",
             "abstract": "",
@@ -141,7 +141,21 @@ class DailyPipelineTests(unittest.TestCase):
         }
         self.assertTrue(is_actionable_candidate(record, date.today()))
 
-    def test_targeted_subjournal_tactile_paper_enters_observation_queue(self) -> None:
+    def test_targeted_elite_venue_does_not_bypass_relevance_threshold(self) -> None:
+        record = {
+            "title": "Reduction of appearance artifacts in wearable on-skin electronics",
+            "abstract": (
+                "Invisible electrodes monitor facial electrooculogram, electromyogram, "
+                "and electroencephalogram signals for health monitoring."
+            ),
+            "venue": "Science Advances",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-science-advances"],
+        }
+        self.assertFalse(is_actionable_candidate(record, date.today()))
+
+    def test_targeted_subjournal_record_still_requires_relevance_threshold(self) -> None:
         record = {
             "title": "Impedance characteristics in iontronic tactile sensors",
             "abstract": "A flexible electronic skin decouples temperature and pressure.",
@@ -152,7 +166,7 @@ class DailyPipelineTests(unittest.TestCase):
             "query_tracks": ["P1", "P2"],
         }
         self.assertTrue(is_on_topic(record))
-        self.assertTrue(is_actionable_candidate(record, date.today()))
+        self.assertFalse(is_actionable_candidate(record, date.today()))
 
     def test_missing_abstract_material_only_title_stays_excluded(self) -> None:
         record = {

@@ -709,14 +709,7 @@ def is_targeted_venue_record(record: dict[str, Any]) -> bool:
 
 def is_actionable_candidate(record: dict[str, Any], today: date) -> bool:
     score = score_record(record, today)["relevance_score"]
-    if score >= 48:
-        return True
-    if is_targeted_venue_record(record) and score >= 28:
-        return True
-    if score < 32:
-        return False
-    title = str(record.get("title", "")).lower()
-    return "tactile" in title and count_terms(title, SYSTEM_TERMS) >= 1
+    return score >= 48
 
 
 def score_record(record: dict[str, Any], today: date) -> dict[str, Any]:
