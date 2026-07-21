@@ -1,0 +1,1307 @@
+{
+  "schema_version": 1,
+  "id": "paper-02d02b33979edfd1",
+  "title": "Multiscale artificial spider web for comprehensive pressure sensing and human-machine interaction",
+  "authors": [
+    "Jing Dai",
+    "Kwan‐Nyeong Kim",
+    "Guangzhong Xie",
+    "Dong-Su Choi",
+    "Shee Chia Lee",
+    "E. Yoon",
+    "Chan‐Yul Park",
+    "Han Dai",
+    "S Kim",
+    "Hyun-Haeng Lee",
+    "Tae‐Woo Lee"
+  ],
+  "venue": "Nature Communications",
+  "date": "2026-07-04",
+  "doi": "10.1038/s41467-026-74200-y",
+  "source_url": "https://doi.org/10.1038/s41467-026-74200-y",
+  "pdf_source_url": "https://www.nature.com/articles/s41467-026-74200-y_reference.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-07-21T17:04:59.775691+00:00",
+  "page_count": 37,
+  "abstract": {
+    "original": "Abstract Flexible pressure sensors are key components of Internet of Things systems for monitoring environmental and physiological signals, yet simultaneously achieving a high sensitivity, a fast response time, and a high mechanical durability remains challenging owing to the lack of sophisticated structural designs that balance sensing performance and robustness. Here, we demonstrate a multiscale artificial spider web (MASW) fabricated via copper-mesh-assisted electrospinning of biodegradable polylactic acid, forming a nanofiber network that efficiently transmits stress while enhancing mechanical stability. The resulting pressure sensor simultaneously shows a high sensitivity of 39.85 [kPa] −1 , a fast response of 42 ms and high durability over 6000 loading cycles, enabling reliable and versatile neural-network-assisted real-time monitoring of multiple physiological signals, including pulse, breathing, and vocalization. Furthermore, leveraging precise joint movement signal acquisition, a human-machine interaction system was developed with potential applications in fine motor rehabilitation for Parkinson’s disease, suggesting strong promise for sustainable healthcare and IoT systems.",
+    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；材料性能词较多、前端/阵列/系统证据偏少，已降权。摘要可核实数值包括：42 ms。"
+  },
+  "innovation_points": [
+    "Abstract Flexible pressure sensors are key components of Internet of Things systems for monitoring environmental and physiological signals, yet simultaneously achieving a high sensitivity, a fast response time, and a high mechanical durability remains challenging owing to the lack of sophisticated structural designs that balance sensing performance and robustness.",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+  ],
+  "inspirations": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 18,
+      "category_zh": "材料混合与分散",
+      "original": "Fabrication of MASW ARTICLE IN PRESS Fabrication of electrospun fiber membranes: 2.4 g PLA granules were dissolved in 20 mL of a DCM/DMF mixture (7:3 v/v) and stirred in a water bath at 40 °C for 2 h to obtain a uniform spinning solution (10 wt%).",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.18 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 19,
+      "category_zh": "材料混合与分散",
+      "original": "Fabrication of pressure-sensitive layers: A 10 wt% carbon ink/ethanol solution and a 0.1 wt% AgNWs/IPA solution were prepared and mixed at a mass ratio of 10:1, followed by stirring at",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.19 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 19,
+      "category_zh": "成膜与沉积",
+      "original": "Repeated dip-coating cycles were performed to regulate the utilization of ARTICLE IN PRESS the sensitive material.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.19 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 19,
+      "category_zh": "制备与实验操作",
+      "original": "(Figure S10) Assembly of sensors: Plain conductive fabric was cut into 0.8 × 0.8 cm pieces and used as flexible electrodes.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.19 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 19,
+      "category_zh": "固化与热处理",
+      "original": "Copper wires were fixed at one corner of the electrodes with graphite conductive adhesive and cured at 40 °C for 2 h.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.19 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 19,
+      "category_zh": "组装与封装",
+      "original": "The electrodes were laminated above and below the pressure-sensitive layer, and the entire structure was encapsulated with polyurethane (PU) to form a sandwich-type device.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.19 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 18,
+      "text": "Materials",
+      "bbox": [
+        84.02,
+        429.2,
+        136.34,
+        442.48
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Polylactic acid (PLA, 4032D) was purchased from NatureWorks (USA). Dichloromethane",
+      "bbox": [
+        84.02,
+        456.82,
+        542.8,
+        470.1
+      ]
+    },
+    {
+      "page": 18,
+      "text": "(DCM, ≥99.5%) and N,N-dimethylformamide (DMF, ≥99.5%) were purchased from Sigma-",
+      "bbox": [
+        72.02,
+        484.78,
+        540.14,
+        498.25
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Aldrich, Carbon ink (particle size ~60 nm) was supplied by Platinum Pen Co., Ltd. (Japan), and",
+      "bbox": [
+        72.02,
+        516.82,
+        543.08,
+        530.1
+      ]
+    },
+    {
+      "page": 18,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 18,
+      "text": "silver nanowires (AgNWs, length ~30 μ m) were purchased from Novarials. Graphite",
+      "bbox": [
+        72.02,
+        544.9,
+        543.08,
+        558.37
+      ]
+    },
+    {
+      "page": 18,
+      "text": "conductive adhesive (A528) was obtained from Xinwei Electronic Materials Co., Ltd. (China),",
+      "bbox": [
+        72.02,
+        576.94,
+        543.09,
+        590.22
+      ]
+    },
+    {
+      "page": 18,
+      "text": "and plain conductive fabric was purchased from Qingdao Shir Textile Co., Ltd. (China). Deionized",
+      "bbox": [
+        72.02,
+        604.54,
+        543.08,
+        617.82
+      ]
+    },
+    {
+      "page": 18,
+      "text": "(DI) water was purchased from Samchun Chemical (Korea), and isopropyl alcohol (IPA) was",
+      "bbox": [
+        72.02,
+        632.17,
+        542.65,
+        645.45
+      ]
+    },
+    {
+      "page": 18,
+      "text": "purchased from Fisher Scientific (USA).",
+      "bbox": [
+        72.02,
+        659.77,
+        269.93,
+        673.05
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Fabrication of MASW",
+      "bbox": [
+        84.02,
+        687.37,
+        201.77,
+        700.65
+      ]
+    },
+    {
+      "page": 19,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 19,
+      "text": "Fabrication of electrospun fiber membranes: 2.4 g PLA granules were dissolved in 20 mL of a",
+      "bbox": [
+        84.02,
+        125.57,
+        542.94,
+        138.85
+      ]
+    },
+    {
+      "page": 19,
+      "text": "DCM/DMF mixture (7:3 v/v) and stirred in a water bath at 40 °C for 2 h to obtain a uniform",
+      "bbox": [
+        72.02,
+        153.17,
+        542.69,
+        166.45
+      ]
+    },
+    {
+      "page": 19,
+      "text": "spinning solution (10 wt%). A 10 mL syringe with a 21G needle was used for electrospinning",
+      "bbox": [
+        72.02,
+        180.77,
+        542.76,
+        194.05
+      ]
+    },
+    {
+      "page": 19,
+      "text": "under environmental conditions of 35 °C and 55% RH. The electrospinning parameters were as",
+      "bbox": [
+        72.02,
+        208.37,
+        542.71,
+        221.65
+      ]
+    },
+    {
+      "page": 19,
+      "text": "follows: receiving distance, 12 cm; feeding rate, 0.8 μL/min; applied voltage, 6.0 kV. Copper",
+      "bbox": [
+        72.02,
+        235.97,
+        543.12,
+        249.25
+      ]
+    },
+    {
+      "page": 19,
+      "text": "meshes with mesh sizes of 10, 20, and 30 (10×10 cm) were placed on the collector. After 2 h of",
+      "bbox": [
+        72.02,
+        263.57,
+        542.74,
+        276.85
+      ]
+    },
+    {
+      "page": 19,
+      "text": "electrospinning, PLA nanofiber films with embedded mesh-like skeletons were obtained. The",
+      "bbox": [
+        72.02,
+        291.2,
+        543.0,
+        304.48
+      ]
+    },
+    {
+      "page": 19,
+      "text": "films were dried at 50 °C for 6 h, carefully peeled off from the copper mesh, and cut into 1.0 × 1.0",
+      "bbox": [
+        72.02,
+        318.8,
+        543.01,
+        332.08
+      ]
+    },
+    {
+      "page": 19,
+      "text": "cm sheets for subsequent use.",
+      "bbox": [
+        72.02,
+        346.4,
+        217.37,
+        359.68
+      ]
+    },
+    {
+      "page": 19,
+      "text": "Fabrication of pressure-sensitive layers: A 10 wt% carbon ink/ethanol solution and a 0.1 wt%",
+      "bbox": [
+        84.02,
+        374.0,
+        542.92,
+        387.28
+      ]
+    },
+    {
+      "page": 19,
+      "text": "AgNWs/IPA solution were prepared and mixed at a mass ratio of 10:1, followed by stirring at",
+      "bbox": [
+        72.02,
+        401.6,
+        542.68,
+        414.88
+      ]
+    },
+    {
+      "page": 19,
+      "text": "30 °C for 10 min to obtain a homogeneous carbon ink/AgNWs solution. The PLA textile films",
+      "bbox": [
+        72.02,
+        429.2,
+        542.76,
+        442.48
+      ]
+    },
+    {
+      "page": 19,
+      "text": "were immersed in solutions containing carbon nanoparticles, AgNWs, or their mixture for 2 min,",
+      "bbox": [
+        72.02,
+        456.82,
+        542.7,
+        470.1
+      ]
+    },
+    {
+      "page": 19,
+      "text": "dried at 50 °C for 2 h, and yielded uniform conductive black films with core-shell/core-shell-",
+      "bbox": [
+        72.02,
+        484.3,
+        540.14,
+        497.58
+      ]
+    },
+    {
+      "page": 19,
+      "text": "network architectures. Repeated dip-coating cycles were performed to regulate the utilization of",
+      "bbox": [
+        72.02,
+        511.9,
+        542.85,
+        525.18
+      ]
+    },
+    {
+      "page": 19,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 19,
+      "text": "the sensitive material. (Figure S10)",
+      "bbox": [
+        72.02,
+        539.5,
+        244.01,
+        552.78
+      ]
+    },
+    {
+      "page": 19,
+      "text": "Assembly of sensors: Plain conductive fabric was cut into 0.8 × 0.8 cm pieces and used as",
+      "bbox": [
+        84.02,
+        567.1,
+        542.79,
+        580.38
+      ]
+    },
+    {
+      "page": 19,
+      "text": "flexible electrodes. Copper wires were fixed at one corner of the electrodes with graphite",
+      "bbox": [
+        72.02,
+        594.7,
+        542.74,
+        607.98
+      ]
+    },
+    {
+      "page": 19,
+      "text": "conductive adhesive and cured at 40 °C for 2 h. The electrodes were laminated above and below",
+      "bbox": [
+        72.02,
+        622.33,
+        542.75,
+        635.61
+      ]
+    },
+    {
+      "page": 19,
+      "text": "the pressure-sensitive layer, and the entire structure was encapsulated with polyurethane (PU) to",
+      "bbox": [
+        72.02,
+        649.93,
+        543.04,
+        663.21
+      ]
+    },
+    {
+      "page": 19,
+      "text": "form a sandwich-type device.",
+      "bbox": [
+        72.02,
+        677.53,
+        217.01,
+        690.81
+      ]
+    },
+    {
+      "page": 19,
+      "text": "Characterization and Performance Testing of the MASW",
+      "bbox": [
+        84.02,
+        705.13,
+        381.07,
+        718.41
+      ]
+    },
+    {
+      "page": 20,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 20,
+      "text": "The surface morphologies of the samples were characterized using field-emission scanning",
+      "bbox": [
+        84.02,
+        125.57,
+        543.04,
+        138.85
+      ]
+    },
+    {
+      "page": 20,
+      "text": "electron microscopy (FESEM, ZEISS, Germany). The X-Ray Photoelectron Spectroscope (XPS)",
+      "bbox": [
+        72.02,
+        153.17,
+        543.06,
+        166.45
+      ]
+    },
+    {
+      "page": 20,
+      "text": "was measured using AXIS-His (KRATOS). The Fourier Transform Infrared (FTIR) was measured",
+      "bbox": [
+        72.02,
+        180.77,
+        542.94,
+        194.05
+      ]
+    },
+    {
+      "page": 20,
+      "text": "using Nicolet iS50 (Thermo Fisher Scientific). The Energy Dispersive Spectroscopy (EDS) was",
+      "bbox": [
+        72.02,
+        208.37,
+        542.89,
+        221.65
+      ]
+    },
+    {
+      "page": 20,
+      "text": "measured suing Field-Emission Scanning Electronic Microscopy AURIGA (Carl Zeiss) The",
+      "bbox": [
+        72.02,
+        235.97,
+        543.09,
+        249.25
+      ]
+    },
+    {
+      "page": 20,
+      "text": "surface topology and phase were examined with an atomic force microscope (AFM, NX-10, Park",
+      "bbox": [
+        72.02,
+        263.57,
+        543.08,
+        276.85
+      ]
+    },
+    {
+      "page": 20,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 20,
+      "text": "Systems). The electrical properties of the devices were measured with a semiconductor parameter",
+      "bbox": [
+        72.02,
+        291.2,
+        542.89,
+        304.48
+      ]
+    },
+    {
+      "page": 20,
+      "text": "analyzer (Keithley B1500A, Keysight). During dynamic response measurements, a constant bias",
+      "bbox": [
+        72.02,
+        318.8,
+        542.91,
+        332.08
+      ]
+    },
+    {
+      "page": 20,
+      "text": "voltage of 1 V was applied across the sensor, and the corresponding output current was recorded",
+      "bbox": [
+        72.02,
+        346.4,
+        542.75,
+        359.68
+      ]
+    },
+    {
+      "page": 20,
+      "text": "in real time. The participants provided their informed consent to participate in this study and the",
+      "bbox": [
+        72.02,
+        374.0,
+        542.83,
+        387.28
+      ]
+    },
+    {
+      "page": 20,
+      "text": "informed signed consent was obtained from the volunteer.",
+      "bbox": [
+        72.02,
+        401.6,
+        354.31,
+        414.88
+      ]
+    },
+    {
+      "page": 20,
+      "text": "The model was meshed with triangular elements (Figure S11). During the simulation, different",
+      "bbox": [
+        84.02,
+        456.82,
+        543.0,
+        470.1
+      ]
+    },
+    {
+      "page": 20,
+      "text": "pressure were applied to the upper and lower boundaries, while the remaining boundaries were left",
+      "bbox": [
+        72.02,
+        484.3,
+        543.08,
+        497.58
+      ]
+    },
+    {
+      "page": 20,
+      "text": "free. Stress distribution of multilayer mesh structures (1.0 × 1.0 cm, with varying mesh sizes) were",
+      "bbox": [
+        72.02,
+        511.9,
+        542.8,
+        525.18
+      ]
+    },
+    {
+      "page": 20,
+      "text": "simulated under applied pressure ranging from 0 to 200 N.",
+      "bbox": [
+        72.02,
+        539.5,
+        356.35,
+        552.78
+      ]
+    },
+    {
+      "page": 20,
+      "text": "The sensitivity of the sensor reported in this work refers to the normalized sensitivity, defined",
+      "bbox": [
+        84.02,
+        594.7,
+        542.95,
+        607.98
+      ]
+    },
+    {
+      "page": 20,
+      "text": "Where ∆𝐼 is the relative current variation, 𝐼0 is the initial current without applied pressure,",
+      "bbox": [
+        84.02,
+        676.33,
+        542.92,
+        691.31
+      ]
+    },
+    {
+      "page": 20,
+      "text": "and ∆𝑃 is the applied pressure variation. the sensitivity is not constant over the entire pressure",
+      "bbox": [
+        72.02,
+        704.53,
+        542.88,
+        717.88
+      ]
+    },
+    {
+      "page": 20,
+      "text": "range due to the nonlinear contact evolution and conductive pathway reconstruction under",
+      "bbox": [
+        72.02,
+        732.36,
+        542.77,
+        745.65
+      ]
+    },
+    {
+      "page": 20,
+      "text": "Finite Element Simulation",
+      "bbox": [
+        84.02,
+        429.2,
+        221.81,
+        442.48
+      ]
+    },
+    {
+      "page": 20,
+      "text": "Parameter Definition",
+      "bbox": [
+        84.02,
+        567.1,
+        196.01,
+        580.38
+      ]
+    },
+    {
+      "page": 20,
+      "text": "as:",
+      "bbox": [
+        72.02,
+        622.33,
+        88.34,
+        635.61
+      ]
+    },
+    {
+      "page": 20,
+      "text": "∆𝐼/𝐼0",
+      "bbox": [
+        321.67,
+        650.4,
+        338.2,
+        658.59
+      ]
+    },
+    {
+      "page": 20,
+      "text": "∆𝑃 (7)",
+      "bbox": [
+        325.63,
+        652.83,
+        542.59,
+        668.29
+      ]
+    },
+    {
+      "page": 20,
+      "text": "𝑆=",
+      "bbox": [
+        300.89,
+        653.94,
+        320.24,
+        663.91
+      ]
+    },
+    {
+      "page": 21,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 21,
+      "text": "compression. In this work, the reported sensitivity represents the average sensitivity within the 0-",
+      "bbox": [
+        72.02,
+        125.57,
+        540.14,
+        138.85
+      ]
+    },
+    {
+      "page": 21,
+      "text": "100 kPa pressure range, calculated from the slope of the best linear fitting of the corresponding",
+      "bbox": [
+        72.02,
+        153.17,
+        542.76,
+        166.45
+      ]
+    },
+    {
+      "page": 21,
+      "text": "pressure-response curve.",
+      "bbox": [
+        72.02,
+        180.77,
+        193.73,
+        194.05
+      ]
+    },
+    {
+      "page": 21,
+      "text": "The linearity of the sensor was evaluated by fitting the measured pressure-response curve using",
+      "bbox": [
+        84.02,
+        208.37,
+        543.05,
+        221.65
+      ]
+    },
+    {
+      "page": 21,
+      "text": "the least-squares method. The coefficient of determination (R2) of the linear fit was calculated to",
+      "bbox": [
+        72.02,
+        236.21,
+        542.95,
+        249.56
+      ]
+    },
+    {
+      "page": 21,
+      "text": "quantify the linearity.",
+      "bbox": [
+        72.02,
+        264.05,
+        184.7,
+        277.33
+      ]
+    },
+    {
+      "page": 21,
+      "text": "The response time was defined as the time required for the output signal to increase from 0% to",
+      "bbox": [
+        84.02,
+        291.68,
+        542.96,
+        304.96
+      ]
+    },
+    {
+      "page": 21,
+      "text": "90% of its steady-state value (T90).",
+      "bbox": [
+        72.02,
+        319.28,
+        242.33,
+        332.67
+      ]
+    },
+    {
+      "page": 21,
+      "text": "Neural Network Model",
+      "bbox": [
+        84.02,
+        346.88,
+        205.73,
+        360.16
+      ]
+    },
+    {
+      "page": 21,
+      "text": "A neural network model using the Transformer architecture was employed. The Transformer",
+      "bbox": [
+        84.02,
+        374.48,
+        542.91,
+        387.76
+      ]
+    },
+    {
+      "page": 21,
+      "text": "relies entirely on self-attention mechanisms to model input and output waveform representations,",
+      "bbox": [
+        72.02,
+        402.08,
+        542.78,
+        415.36
+      ]
+    },
+    {
+      "page": 21,
+      "text": "without using sequence-aligned recurrent neural networks (RNNs) or convolutional operations.",
+      "bbox": [
+        72.02,
+        429.68,
+        542.87,
+        442.96
+      ]
+    },
+    {
+      "page": 21,
+      "text": "This design enables efficient modeling of long-range dependencies while allowing parallel",
+      "bbox": [
+        72.02,
+        457.3,
+        542.87,
+        470.58
+      ]
+    },
+    {
+      "page": 21,
+      "text": "computation during training, thereby improving computational efficiency.",
+      "bbox": [
+        72.02,
+        484.9,
+        430.27,
+        498.18
+      ]
+    },
+    {
+      "page": 21,
+      "text": "Raw signals were first interpolated to ensure a uniform number of data points across different",
+      "bbox": [
+        84.02,
+        512.5,
+        542.72,
+        525.78
+      ]
+    },
+    {
+      "page": 21,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 21,
+      "text": "samples. Subsequently, dimensionality reduction was performed using an autoencoder to extract",
+      "bbox": [
+        72.02,
+        540.1,
+        542.74,
+        553.38
+      ]
+    },
+    {
+      "page": 21,
+      "text": "compact latent representations and reduce redundancy in the original feature space. The",
+      "bbox": [
+        72.02,
+        567.7,
+        542.81,
+        580.98
+      ]
+    },
+    {
+      "page": 21,
+      "text": "compressed features were then fed into a softmax classifier for pressure signal recognition and",
+      "bbox": [
+        72.02,
+        595.3,
+        543.0,
+        608.58
+      ]
+    },
+    {
+      "page": 21,
+      "text": "movement state identification.",
+      "bbox": [
+        72.02,
+        622.93,
+        220.73,
+        636.21
+      ]
+    },
+    {
+      "page": 21,
+      "text": "For pulse signal monitoring and recognition, the classifier consisted of one input layer (200",
+      "bbox": [
+        84.02,
+        650.53,
+        542.76,
+        663.81
+      ]
+    },
+    {
+      "page": 21,
+      "text": "neurons), two hidden layers (50 and 20 neurons), and one output layer (8 neurons). Eight distinct",
+      "bbox": [
+        72.02,
+        678.13,
+        542.8,
+        691.41
+      ]
+    },
+    {
+      "page": 21,
+      "text": "pulse categories were included, with 300 samples collected per category, resulting in a total of",
+      "bbox": [
+        72.02,
+        705.73,
+        542.7,
+        719.01
+      ]
+    },
+    {
+      "page": 21,
+      "text": "2400 samples.",
+      "bbox": [
+        72.02,
+        733.32,
+        143.66,
+        746.61
+      ]
+    },
+    {
+      "page": 22,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 22,
+      "text": "For laryngeal movement monitoring and recognition, the classifier included one input layer (100",
+      "bbox": [
+        84.02,
+        125.57,
+        542.9,
+        138.85
+      ]
+    },
+    {
+      "page": 22,
+      "text": "neurons), two hidden layers (50 and 20 neurons), and one output layer (6 neurons). Six different",
+      "bbox": [
+        72.02,
+        153.17,
+        542.94,
+        166.45
+      ]
+    },
+    {
+      "page": 22,
+      "text": "laryngeal movement categories were involved, with 300 samples per category, yielding a total of",
+      "bbox": [
+        72.02,
+        180.77,
+        542.74,
+        194.05
+      ]
+    },
+    {
+      "page": 22,
+      "text": "1800 samples.",
+      "bbox": [
+        72.02,
+        208.37,
+        143.66,
+        221.65
+      ]
+    },
+    {
+      "page": 22,
+      "text": "The activation function used in all hidden layers was the Rectified Linear Unit (ReLU), while",
+      "bbox": [
+        84.02,
+        235.97,
+        542.74,
+        249.25
+      ]
+    },
+    {
+      "page": 22,
+      "text": "the output layer employed the softmax activation function to generate probability distributions",
+      "bbox": [
+        72.02,
+        263.57,
+        542.73,
+        276.85
+      ]
+    },
+    {
+      "page": 22,
+      "text": "over the target classes.",
+      "bbox": [
+        72.02,
+        291.2,
+        183.62,
+        304.48
+      ]
+    },
+    {
+      "page": 22,
+      "text": "The dataset was randomly divided using stratified sampling, with 80% of the data used for",
+      "bbox": [
+        84.02,
+        318.8,
+        542.75,
+        332.08
+      ]
+    },
+    {
+      "page": 22,
+      "text": "training (cross-validation) and 20% reserved for independent testing. For pulse recognition, this",
+      "bbox": [
+        72.02,
+        346.4,
+        542.94,
+        359.68
+      ]
+    },
+    {
+      "page": 22,
+      "text": "corresponds to 1920 training samples and 480 testing samples. For laryngeal movement",
+      "bbox": [
+        72.02,
+        374.0,
+        542.74,
+        387.28
+      ]
+    },
+    {
+      "page": 22,
+      "text": "recognition, 1440 samples were used for training and 360 for testing.",
+      "bbox": [
+        72.02,
+        401.6,
+        406.39,
+        414.88
+      ]
+    },
+    {
+      "page": 22,
+      "text": "The model was trained using the Adam optimizer with an initial learning rate of 1 × 10-3. The",
+      "bbox": [
+        84.02,
+        428.17,
+        543.09,
+        442.48
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 31,
+      "caption_original": "Figure 1. Design, fabrication, and structural characterization of the MASW. (a) Hierarchical structures of the natural spider web and spider predation processes; (b) Hierarchical structures of multiscale artificial spider web and pressure-sensitive mechanisms; (c) Copper-mesh-assisted",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Hierarchical structures of the natural spider web and spider predation processes",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Hierarchical structures of multiscale artificial spider web and pressure-sensitive mechanisms",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "c",
+          "original": "Copper-mesh-assisted",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 928,
+      "image_height": 1145,
+      "crop_confidence": "high",
+      "bbox": [
+        74.22,
+        105.85,
+        537.77,
+        677.56
+      ],
+      "image_path": "papers/paper-02d02b33979edfd1/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 2",
+      "page": 32,
+      "caption_original": "Figure 2. Biodegradability and breathability of MASWs. (a) Schematic illustration of the degradation process of PLA-based pressure-sensitive layers; (b) Optical images of MASWs before and after degradation; (c) FTIR spectra of MASWs before and after degradation; (d) Elemental compositions and chemical bonding states of MASWs before and after degradation based on XPS analysis;(e) XPS peak fitting of carbon in PLA@CI/AgNWs before and after degradation; (f) Breathability verification of the MASWs.",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic illustration of the degradation process of PLA-based pressure-sensitive layers",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Optical images of MASWs before and after degradation",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "c",
+          "original": "FTIR spectra of MASWs before and after degradation",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Elemental compositions and chemical bonding states of MASWs before and after degradation based on XPS analysis",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "XPS peak fitting of carbon in PLA@CI/AgNWs before and after degradation",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "Breathability verification of the MASWs",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 928,
+      "image_height": 819,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        158.52,
+        530.6,
+        567.52
+      ],
+      "image_path": "papers/paper-02d02b33979edfd1/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 3",
+      "page": 33,
+      "caption_original": "Figure 3. Pressure-sensing performance optimization of MASWs. (a) Schematic illustration of the fabrication of MASWs with different dip-coating cycles; Pressure-sensing performance of MASWs prepared with different dip-coating cycles: (b) Pressure-response curves; (c) Sensitivity; (d) Linearity; (e) Schematic illustration of MASWs fabricated with different conductive fillers; Pressure-sensing performance of MASWs with different conductive fillers: (f) Pressure-response curves; (g) Sensitivity; (h) Linearity; Comparison of pressure-sensing performance between MASWs with different mesh skeleton sizes: (i) Pressure-response curves; (j) Sensitivity and linearity; (k) Finite element simulations of stress distribution in MASWs with different mesh skeleton sizes.",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic illustration of the fabrication of MASWs with different dip-coating cycles; Pressure-sensing performance of MASWs prepared with different dip-coating cycles",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Pressure-response curves",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "c",
+          "original": "Sensitivity",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "d",
+          "original": "Linearity",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "e",
+          "original": "Schematic illustration of MASWs fabricated with different conductive fillers; Pressure-sensing performance of MASWs with different conductive fillers",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "f",
+          "original": "Pressure-response curves",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "g",
+          "original": "Sensitivity",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "h",
+          "original": "Linearity; Comparison of pressure-sensing performance between MASWs with different mesh skeleton sizes",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "i",
+          "original": "Pressure-response curves",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "j",
+          "original": "Sensitivity and linearity",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "k",
+          "original": "Finite element simulations of stress distribution in MASWs with different mesh skeleton sizes",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 928,
+      "image_height": 775,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        105.85,
+        530.6,
+        492.65
+      ],
+      "image_path": "papers/paper-02d02b33979edfd1/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 6",
+      "page": 36,
+      "caption_original": "Figure 6. Human-machine interaction enabled by MASW. (a) Illustration of Parkinson’s disease symptoms; (b) Correction strategies via human-machine interaction; (c) Monitoring of finger movements with varying angles, forces, and repetitions; (d) Circuit diagram for MASWcontrolled robotic hand; (e) Adjustable robotic hand control using sensitivity factors; MASW-",
+      "caption_zh": "Figure 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Illustration of Parkinson’s disease symptoms",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Correction strategies via human-machine interaction",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Monitoring of finger movements with varying angles, forces, and repetitions",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "d",
+          "original": "Circuit diagram for MASWcontrolled robotic hand",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "e",
+          "original": "Adjustable robotic hand control using sensitivity factors; MASW-",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 928,
+      "image_height": 1154,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        105.85,
+        530.6,
+        682.2
+      ],
+      "image_path": "papers/paper-02d02b33979edfd1/figures/figure-04.png"
+    }
+  ],
+  "original_pdf": "papers/paper-02d02b33979edfd1/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-07-21/deep-reads/paper-02d02b33979edfd1/paper.md",
+  "source_map": "research-memory/literature/2026/2026-07-21/deep-reads/paper-02d02b33979edfd1/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}
