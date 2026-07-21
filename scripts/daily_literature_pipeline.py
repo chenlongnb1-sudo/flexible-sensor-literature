@@ -59,8 +59,10 @@ TRACK_TERMS: dict[str, tuple[str, ...]] = {
     ),
     "P2": (
         "analog front-end", "analog frontend", "pre-adc", "before digitization",
-        "vector tactile", "shear", "friction", "slip", "direction", "differential",
-        "summation", "decoupling", "three-axis", "triaxial",
+        "vector tactile", "shear force", "shear sensing", "shear sensor",
+        "tangential force", "friction sensing", "friction sensor", "incipient slip",
+        "slip detection", "slip sensing", "slip direction", "direction-aware tactile",
+        "directional tactile", "differential readout", "analog summation", "three-axis", "triaxial",
     ),
     "P3": (
         "tactile array", "sensor array", "compressed readout", "readout channel",
@@ -147,15 +149,30 @@ FLEXIBLE_CATEGORY_TERMS: dict[str, tuple[str, tuple[str, ...]]] = {
         ("flexible", "stretchable", "soft electronic", "organic transistor", "hydrogel", "ionogel", "mxene", "graphene", "nanofiber", "electrode"),
     ),
 }
-STRONG_PROJECT_TERMS = (
+FRONT_END_PROJECT_TERMS = (
     "analog front-end", "analog frontend", "pre-adc", "readout", "readout channel",
-    "tactile array", "sensor array", "compressed", "multiplex", "low channel",
-    "macro-pixel", "vector tactile", "shear", "friction", "slip", "decoupling",
-    "three-axis", "triaxial", "in-sensor", "near-sensor", "physical computing",
-    "analog computing", "sensor computing", "neuromorphic", "synaptic", "projection",
-    "calibration", "drift", "device variation", "cross-device", "fault tolerant",
-    "few-shot", "self-calibration", "feature extraction",
+    "compressed readout", "multiplex", "low channel", "macro-pixel",
 )
+DIRECTIONAL_PROJECT_TERMS = (
+    "vector tactile", "shear force", "shear sensing", "shear sensor", "tangential force",
+    "friction sensing", "friction sensor", "incipient slip", "slip detection", "slip sensing",
+    "slip direction", "direction-aware tactile", "directional tactile", "three-axis", "triaxial",
+)
+COMPUTING_PROJECT_TERMS = (
+    "in-sensor computing", "in sensor computing", "near-sensor computing", "physical computing",
+    "analog computing", "sensor computing", "computational sensor", "physical projection",
+)
+RELIABILITY_PROJECT_TERMS = (
+    "calibration", "drift", "device variation", "device-to-device", "cross-device",
+    "fault tolerant", "fault-tolerant", "few-shot", "few shot", "self-calibration",
+    "batch calibration", "heterogeneity",
+)
+FABRICATION_PROJECT_TERMS = (
+    "high-fidelity microstructure", "high fidelity microstructure", "fabrication consistency",
+    "manufacturing consistency", "device uniformity", "response uniformity", "reproducibility",
+    "repeatability", "misalignment", "assembly tolerance",
+)
+MATCH_TEXT_TRANSLATION = str.maketrans({char: "-" for char in "‐‑‒–—−"})
 
 ELITE_VENUE_EXACT = {
     "nature", "nature communications", "nature electronics", "nature materials",
@@ -887,12 +904,16 @@ def merge_records(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def count_terms(text: str, terms: Iterable[str]) -> int:
-    lowered = text.lower()
+    lowered = text.lower().translate(MATCH_TEXT_TRANSLATION)
     return sum(1 for term in terms if term in lowered)
 
 
+def normalized_match_text(*values: Any) -> str:
+    return " ".join(str(value or "") for value in values).lower().translate(MATCH_TEXT_TRANSLATION)
+
+
 def is_flexible_electronics_record(record: dict[str, Any]) -> bool:
-    text = " ".join((record.get("title", ""), record.get("abstract", ""))).lower()
+    text = normalized_match_text(record.get("title"), record.get("abstract"))
     if any(term in text for term in FLEXIBLE_ELECTRONICS_TERMS):
         return True
     if any(
@@ -918,11 +939,16 @@ def is_flexible_electronics_record(record: dict[str, Any]) -> bool:
 
 
 def classify_flexible_categories(record: dict[str, Any]) -> tuple[str, str, list[str]]:
-    title = str(record.get("title", "")).lower()
-    text = " ".join((title, record.get("abstract", ""))).lower()
+    title = normalized_match_text(record.get("title"))
+    text = normalized_match_text(title, record.get("abstract"))
     ranked = []
     for index, (category_id, (label, terms)) in enumerate(FLEXIBLE_CATEGORY_TERMS.items()):
         score = count_terms(text, terms) + 3 * count_terms(title, terms)
+        if category_id == "tactile_e_skin" and any(
+            term in title
+            for term in ("tactile", "electronic skin", "e-skin", "artificial skin", "haptic")
+        ):
+            score += 4
         if category_id == "flexible_energy" and any(
             term in text
             for term in ("battery", "supercapacitor", "energy harvesting", "generator", "solar cell")
@@ -939,39 +965,89 @@ def classify_flexible_categories(record: dict[str, Any]) -> tuple[str, str, list
     return ranked[0][2], ranked[0][3], categories
 
 
-def is_strong_project_match(record: dict[str, Any]) -> bool:
-    text = " ".join((record.get("title", ""), record.get("abstract", ""))).lower()
-    sensor_context = any(
+def project_signal_flags(record: dict[str, Any]) -> dict[str, bool]:
+    text = normalized_match_text(record.get("title"), record.get("abstract"))
+    direct_tactile = any(
         term in text
         for term in (
-            "tactile", "sensor", "electronic skin", "e-skin", "haptic", "pressure",
-            "force sensing", "readout", "array", "human-machine", "robotic perception",
+            "tactile", "electronic skin", "e-skin", "haptic", "pressure sensor",
+            "pressure sensing", "force sensor", "force sensing", "strain sensor",
         )
     )
-    return is_flexible_electronics_record(record) and sensor_context and any(
-        (re.search(r"\bslip(?:page|ping)?\b", text) is not None) if term == "slip" else term in text
-        for term in STRONG_PROJECT_TERMS
+    sensor_context = direct_tactile or any(
+        term in text
+        for term in (
+            "sensor", "sensing", "readout", "array", "human-machine", "robotic perception",
+            "bioelectronic interface",
+        )
+    )
+    front_end = any(term in text for term in FRONT_END_PROJECT_TERMS) and (
+        direct_tactile
+        or any(term in text for term in ("physically encode", "physical encoding", "at source"))
+    )
+    directional = any(term in text for term in DIRECTIONAL_PROJECT_TERMS) or (
+        re.search(r"\bslip(?:page|ping)?\b", text) is not None
+        and any(term in text for term in ("detect", "sense", "tactile", "friction", "incipient"))
+    )
+    array_readout = "tactile array" in text or (
+        "array" in text
+        and any(term in text for term in ("readout", "channel", "multiplex", "compressed", "macro-pixel"))
+    )
+    computing = any(term in text for term in COMPUTING_PROJECT_TERMS)
+    tactile_neuromorphic = direct_tactile and any(term in text for term in ("neuromorphic", "synaptic"))
+    reliability = sensor_context and any(term in text for term in RELIABILITY_PROJECT_TERMS)
+    fabrication = direct_tactile and any(term in text for term in FABRICATION_PROJECT_TERMS)
+    multimodal_decoupling = "decoupl" in text and direct_tactile and any(
+        term in text for term in ("temperature", "thermal", "light", "optical", "humidity", "chemical")
+    )
+    source_decoupling = sensor_context and any(
+        term in text for term in ("at source", "physically encode", "physical encoding", "source-side")
+    ) and any(term in text for term in ("decoupl", "interference", "signal segmentation", "noise suppression"))
+    return {
+        "sensor_context": sensor_context,
+        "front_end": front_end,
+        "directional": directional,
+        "array_readout": array_readout,
+        "computing": computing,
+        "tactile_neuromorphic": tactile_neuromorphic,
+        "reliability": reliability,
+        "fabrication": fabrication,
+        "multimodal_decoupling": multimodal_decoupling,
+        "source_decoupling": source_decoupling,
+    }
+
+
+def is_strong_project_match(record: dict[str, Any]) -> bool:
+    flags = project_signal_flags(record)
+    return is_flexible_electronics_record(record) and flags["sensor_context"] and any(
+        flags[name]
+        for name in (
+            "front_end", "directional", "array_readout", "computing", "tactile_neuromorphic",
+            "reliability", "fabrication", "multimodal_decoupling", "source_decoupling",
+        )
     )
 
 
 def innovation_suggestions(record: dict[str, Any]) -> list[str]:
     if not is_strong_project_match(record):
         return []
-    text = " ".join((record.get("title", ""), record.get("abstract", ""))).lower()
+    text = normalized_match_text(record.get("title"), record.get("abstract"))
+    flags = project_signal_flags(record)
     suggestions = []
-    if any(term in text for term in ("tolerance", "variation", "repeatability", "microstructure", "assembly")):
+    if flags["fabrication"] or any(term in text for term in ("tolerance", "device variation", "misalignment")):
         suggestions.append("把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。")
-    directional_match = any(
-        term in text for term in ("vector", "shear", "friction", "decoupling", "three-axis", "triaxial")
-    ) or re.search(r"\bslip(?:page|ping)?\b", text)
-    if directional_match:
+    if flags["directional"]:
         suggestions.append("将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。")
-    if any(term in text for term in ("array", "readout", "multiplex", "compressed", "low channel", "macro-pixel")):
+    if flags["array_readout"] or flags["front_end"]:
         suggestions.append("在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。")
-    if any(term in text for term in ("in-sensor", "near-sensor", "physical computing", "analog computing", "sensor computing", "neuromorphic", "synaptic", "projection", "feature extraction")):
+    if flags["computing"] or flags["tactile_neuromorphic"]:
         suggestions.append("把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。")
-    if any(term in text for term in ("calibration", "drift", "device variation", "cross-device", "fault tolerant", "few-shot", "self-calibration")):
+    if flags["reliability"]:
         suggestions.append("加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。")
+    if flags["multimodal_decoupling"]:
+        suggestions.append("把论文的跨模态解耦机制迁移为法向/切向通道设计，并分别验证结构解耦、模拟前端解耦和软件解耦的增益。")
+    if flags["source_decoupling"]:
+        suggestions.append("把其传感源端的物理编码或抗干扰机制抽象为 ADC 前投影，对比源端输出与采样后软件补偿的信噪比和通道成本。")
     return suggestions[:3]
 
 
@@ -1350,6 +1426,19 @@ def download_open_access_pdfs(papers: list[dict[str, Any]], output_dir: Path, li
     for paper in papers:
         if downloaded >= limit:
             break
+        existing_path = output_dir / f"{paper['id']}.pdf"
+        with existing_path.open("rb") if existing_path.is_file() else io.BytesIO() as source:
+            existing_is_pdf = source.read(4) == b"%PDF"
+        if existing_is_pdf:
+            paper["local_pdf"] = str(existing_path.relative_to(ROOT)).replace("\\", "/")
+            paper["is_open_access"] = True
+            source_url = paper.get("pdf_url") or next(iter(paper.get("pdf_candidates", [])), "")
+            if source_url:
+                paper["pdf_url"] = source_url
+                paper["pdf_source_url"] = source_url
+                paper["pdf_version"], paper["pdf_version_label"] = classify_pdf_version(source_url)
+            downloaded += 1
+            continue
         errors = []
         for pdf_url in legal_pdf_candidates(paper):
             try:

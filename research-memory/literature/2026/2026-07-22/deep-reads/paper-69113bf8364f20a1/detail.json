@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "paper-69113bf8364f20a1",
+  "title": "Anion‐Engineered Organic Electrochemical Transistors With Multi‐Timescale Synaptic Dynamics for Task‐Adaptive Spiking Neural Networks",
+  "authors": [
+    "Ziyu Wan",
+    "Jiakun Xue",
+    "Guowei Liu",
+    "Jiaqi Ding",
+    "Yu Zhang",
+    "Zhenqi Gong",
+    "Chengyuan Peng",
+    "Wenpei Shi",
+    "Jiale Su",
+    "Shuyu Liu",
+    "Jiangnan Xia",
+    "Huipeng Chen"
+  ],
+  "venue": "Small",
+  "primary_category": "神经形态与传感计算",
+  "categories": [
+    "神经形态与传感计算"
+  ],
+  "strongly_related": false,
+  "date": "2026-07-03",
+  "doi": "10.1002/smll.74398",
+  "source_url": "https://doi.org/10.1002/smll.74398",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-07-21T18:21:06.830862+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Biological synapses process complex temporal information through a diverse range of excitatory postsynaptic current (EPSC) decay scales. However, conventional neuromorphic hardware often employs homogeneous synaptic models, limiting its capacity for multi‐scale temporal tasks. Here, we present a material‐to‐system co‐design strategy to emulate biological temporal heterogeneity using anion‐engineered organic electrochemical transistors (OECTs). By tailoring the anion species within a solid‐state ion‐gel electrolyte utilizing BF 4 − , TFSI − , and MeSO 4 − , we demonstrate precise control over ionic reverse diffusion kinetics, realizing the controllable tuning of synaptic decay constants (from 0.275 s to 1.059 s). These stateful synapses act as intrinsic leaky integrators, embedding short‐term memory directly into the device hardware. We evaluate these devices across diverse spiking neural network (SNN) architectures, including feedforward SNNs and liquid state machines (LSMs), using four benchmark datasets. Our results reveal a critical timescale‐matching effect: fast‐decaying synapses optimize spoken digit recognition (TI‐46, 89.4%), while slow‐decaying synapses are essential for long‐term event integration (DVS Gesture, 88.5%). By transforming synapses from passive transmitters into active physical regulators of network computation, this work provides a versatile hardware platform for constructing task‐adaptive neuromorphic systems capable of processing complex spatiotemporal information.",
+    "zh": "涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：0.275 s、1.059 s、89.4%、88.5%。"
+  },
+  "innovation_points": [
+    "ABSTRACT Biological synapses process complex temporal information through a diverse range of excitatory postsynaptic current (EPSC) decay scales.",
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-07-22/deep-reads/paper-69113bf8364f20a1/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

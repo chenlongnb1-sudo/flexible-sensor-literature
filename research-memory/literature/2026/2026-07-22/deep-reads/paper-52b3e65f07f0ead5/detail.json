@@ -1,0 +1,1276 @@
+{
+  "schema_version": 1,
+  "id": "paper-52b3e65f07f0ead5",
+  "title": "Flexible Dual-Modal Sensing Transistor Enabled by Deep Learning Decoupling for Independent Light and Temperature Reconstruction",
+  "authors": [
+    "Shilin Lu",
+    "Ji Hoon Han",
+    "Dong Keun Lee",
+    "Sun Min Song",
+    "Huixin Yu",
+    "Sujin Jung",
+    "Lu Zhang",
+    "Zhao Yao",
+    "Jong Bin An",
+    "Hyun Jae Kim"
+  ],
+  "venue": "Nano-Micro Letters",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "柔性材料与器件"
+  ],
+  "strongly_related": true,
+  "date": "2026-07-07",
+  "doi": "10.1007/s40820-026-02285-7",
+  "source_url": "https://doi.org/10.1007/s40820-026-02285-7",
+  "pdf_source_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02285-7.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-07-21T18:21:06.797778+00:00",
+  "page_count": 18,
+  "abstract": {
+    "original": "Abstract Herein, a flexible dual-modal sensing transistor (FDST) is reported, based on zinc oxide nanofibers (ZnO NFs) integrated onto an indium–gallium–zinc–oxide thin-film transistor, and combined with a deep learning-based signal decoupling strategy. Defect-mediated subgap excitation and thermally activated interfacial potential modulation enable high sensitivity dual-modal responses, delivering a broadband photoresponsivity ( $$R$$ R ) up to 2.69 A W −1 and a temperature coefficient ( $${TC}$$ TC ) of 0.071 °C −1 . To enable reliable discrimination and simultaneous reconstruction of light and temperature, a multibias readout physically encodes the coupled stimuli into a high-dimensional current fingerprint, which is decoded by a lightweight multilayer perceptron. This synergistic approach enables accurate and independent reconstruction of light intensity and temperature, achieving coefficients of determination ( R 2 ) around 0.99. The FDST exhibits exceptional mechanical robustness under 10,000 bending cycles and severe bending (2 mm radius). Furthermore, a wearable system based on a low-power microcontroller demonstrates real-time monitoring with negligible cross-interference between optical and thermal modalities under uncontrolled outdoor conditions. This work establishes a general strategy for resolving cross-sensitivity, paving the way for robust and intelligent artificial perception systems.",
+    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：2.69 A、2 mm。"
+  },
+  "innovation_points": [
+    "Abstract Herein, a flexible dual-modal sensing transistor (FDST) is reported, based on zinc oxide nanofibers (ZnO NFs) integrated onto an indium–gallium–zinc–oxide thin-film transistor, and combined with a deep learning-based signal decoupling strategy.",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。",
+    "把其传感源端的物理编码或抗干扰机制抽象为 ADC 前投影，对比源端输出与采样后软件补偿的信噪比和通道成本。"
+  ],
+  "inspirations": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。",
+    "把其传感源端的物理编码或抗干扰机制抽象为 ADC 前投影，对比源端输出与采样后软件补偿的信噪比和通道成本。"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 4,
+      "category_zh": "制备与实验操作",
+      "original": "Among all conditions, the fibers fabricated at 15 kV exhibit the smallest standard deviation (37.6 nm), compared to 49.0 nm at 17 kV.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 4,
+      "category_zh": "材料混合与分散",
+      "original": "When the voltage is further increased to 17 kV, a slight increase in diameter dispersion is observed, which is likely associated with jet instability and enhanced whipping behavior under an excessively strong electric field.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 4,
+      "category_zh": "固化与热处理",
+      "original": "The effect of annealing treatment on fiber morphology was analyzed using atomic force microscopy (AFM), as shown in Fig. S4.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 4,
+      "category_zh": "固化与热处理",
+      "original": "The AFM height profiles indicate a clear morphological evolution after annealing, while the measured root-mean-square (RMS) roughness remains nearly unchanged.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 4,
+      "category_zh": "成膜与沉积",
+      "original": "An optimal electrospinning deposition time of 40 s is identified for the ZnO NFs (Fig. S5 and Note S1).",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 4,
+      "category_zh": "图形化与结构成形",
+      "original": "c XRD pattern of the ZnO NFs.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 4,
+      "category_zh": "图形化与结构成形",
+      "original": "g Relative content of VO and M–OH as a function of etching time.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 4,
+      "category_zh": "图形化与结构成形",
+      "original": "i UPS spectra of the ZnO and IGZO layers evolution of In, Ga, Zn, and O as a function of etching time is presented in Fig. S6.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 4,
+      "category_zh": "图形化与结构成形",
+      "original": "The evolution of O 1s spectra during the etching process is shown in Fig. 2e.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 10,
+      "page": 4,
+      "category_zh": "组装与封装",
+      "original": "By combining the UPS-derived parameters with the optical bandgaps obtained from Tauc analysis, the complete energy level alignment of the ZnO/IGZO heterojunction was constructed (Fig. S8).",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 11,
+      "page": 6,
+      "category_zh": "制备与实验操作",
+      "original": "3.2 \u0007Optical Sensing Performance of the FDST To clarify the role of the ZnO NFs sensing layer, a pristine IGZO TFT and a fabricated FDST are first presented in Fig. S9.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    },
+    {
+      "step": 12,
+      "page": 6,
+      "category_zh": "组装与封装",
+      "original": "The transfer curves of nine devices are shown in Fig. S10a, from which the average saturation mobility is 11.65 ± 0.24 cm2 V−1 s−1, the threshold voltage (Vth) is 1.15 ± 0.18 V, the Ion/Ioff ratio is (1.35 ± 0.85) × 108, and the subthreshold swing is 0.44 ± 0.01 V dec−1.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    },
+    {
+      "step": 13,
+      "page": 6,
+      "category_zh": "组装与封装",
+      "original": "The transfer curves remain largely overlapped during cycling, while the dual-sweep curves show negligible displacement.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    },
+    {
+      "step": 14,
+      "page": 6,
+      "category_zh": "组装与封装",
+      "original": "As shown in Fig. S11a, the transfer characteristics of the pristine IGZO TFT measured under dark conditions and under whitelight illumination with intensities ranging from 0.1 to 1 mW mm−2 are nearly identical, indicating negligible photoresponse in the absence of the ZnO sensing layer.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    },
+    {
+      "step": 15,
+      "page": 6,
+      "category_zh": "组装与封装",
+      "original": "As the light intensity increases from dark to 1 mW mm−2, the transfer curves shift progressively toward negative gate voltage.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    },
+    {
+      "step": 16,
+      "page": 6,
+      "category_zh": "组装与封装",
+      "original": "a Transfer characteristics measured under different white-light illumination intensities.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 4,
+      "text": "For the ZnO NFs sensing layer, electrospun nanofibers were employed to provide a high surface-to-volume ratio and enhanced environmental interaction, making their microstructural uniformity critical for stable sensing performance [40–43]. Fiber diameter distributions obtained under different electrospinning voltages are shown in Fig. S2, and the corresponding statistical results are summarized in Fig. S3 as mean ± standard deviation (SD). With increasing electrospinning voltage from 8 to 17 kV, the average fiber diameter decreases monotonically from 644.6 ± 111.3 to 547.7 ± 49.0 nm. Among all conditions, the fibers fabricated at 15 kV exhibit the smallest standard deviation (37.6 nm), compared to 49.0 nm at 17 kV. Although the average diameters at 15 and 17 kV are comparable, the diameter distribution at 15 kV is narrower and more symmetric, indicating improved structural uniformity of the ZnO NFs. When the voltage is further increased to 17 kV, a slight increase in diameter dispersion is observed, which is likely associated with jet instability and enhanced whipping behavior under an excessively strong electric field. Based on these results, and considering the improved structural uniformity, 15 kV was selected as the optimal electrospinning voltage for subsequent experiments. The effect of annealing treatment on fiber morphology was analyzed using atomic force microscopy (AFM), as shown in Fig. S4. The AFM height profiles indicate a clear morphological evolution after annealing, while the measured root-mean-square (RMS) roughness remains nearly unchanged. This morphological evolution is mainly attributed to the removal of residual solvents and organic components from the precursor, resulting in a stable inorganic fiber framework. Large-area optical microscopy (Fig. 2b) confirms that the electrospun ZnO NFs form a random yet continuous network under the optimized processing conditions. The ZnO NFs were characterized by X-ray diffraction (XRD), as shown in Fig. 2c. All diffraction peaks can be indexed to the hexagonal wurtzite phase of ZnO (JCPDS No. 36-1451), with no detectable impurity-related phases. An optimal electrospinning deposition time of 40 s is identified for the ZnO NFs (Fig. S5 and Note S1). To resolve the spatial distribution of elements within the heterostructure, X-ray photoelectron spectroscopy (XPS) depth profiling was performed. The atomic concentration",
+      "bbox": [
+        306.11,
+        81.39,
+        546.9,
+        726.48
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Nano-Micro Lett. (2026) 18:429 Page 5 of 18 429",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Fig. 2 Structural architecture and material characterization of the FDST. a Schematic illustration of the FDST structure and layer stack. b Optical microscope image of the electrospun ZnO NFs network. c XRD pattern of the ZnO NFs. d Deconvoluted O 1s XPS spectrum of the ZnO sensing layer. e Depth-dependent O 1s XPS spectra across the ZnO/IGZO stack presented as a waterfall plot. f Deconvoluted O 1s XPS spectrum of the IGZO layer. g Relative content of VO and M–OH as a function of etching time. h UV–Vis absorption spectra of ZnO and IGZO measured over the wavelength range of 250–900 nm after linear background subtraction and normalization. i UPS spectra of the ZnO and IGZO layers",
+      "bbox": [
+        51.02,
+        515.7,
+        546.44,
+        569.35
+      ]
+    },
+    {
+      "page": 5,
+      "text": "evolution of In, Ga, Zn, and O as a function of etching time is presented in Fig. S6. A sharp decrease in the Zn signal at approximately 800 s, accompanied by the emergence and stabilization of In and Ga signals, clearly identifies the transition from the ZnO nanofiber layer to the underlying IGZO channel. Based on the compositional transition identified from depth profiling, high-resolution O 1s spectra were extracted for the ZnO and IGZO regions. The O 1s spectrum of the ZnO layer (Fig. 2d) can be deconvoluted into",
+      "bbox": [
+        51.02,
+        593.8,
+        291.68,
+        720.89
+      ]
+    },
+    {
+      "page": 5,
+      "text": "three components centered at 530.0 ± 0.2, 531.0 ± 0.2, and 532.0 ± 0.2 eV, corresponding to lattice oxygen (M–O), oxygen vacancy (VO), and surface hydroxyl species (M–OH), with relative fractions of 46.13%, 31.07%, and 22.80%, respectively. In contrast, the O 1s spectrum of the IGZO layer (Fig. 2f) is dominated by lattice oxygen (83.74%), while VO and M–OH components account for only 13.48% and 2.78%, respectively. This marked difference between the two regions reflects distinct chemical-state distributions",
+      "bbox": [
+        306.14,
+        593.8,
+        546.93,
+        720.89
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Nano-Micro Lett. (2026) 18:429 429 Page 6 of 18",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ]
+    },
+    {
+      "page": 6,
+      "text": "https://doi.org/10.1007/s40820-026-02285-7 © The authors",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ]
+    },
+    {
+      "page": 6,
+      "text": "across the heterostructure. The evolution of O 1s spectra during the etching process is shown in Fig. 2e. The spectral shape remains stable within the ZnO region and progressively shifts as the interface is approached, before stabilizing again in the IGZO region. The quantitative depth-dependent variation of oxygen-related components is summarized in Fig. 2g, where the fractions of VO and M–OH decrease sharply after crossing the interface. The consistent trends observed in both spectral evolution and quantitative analysis further confirm the well-defined stratification of the ZnO/ IGZO stack. The optical absorption spectra of ZnO and IGZO are shown in Fig. 2h. For reliable spectral comparison, the spectra were processed by linear background subtraction followed by normalization prior to analysis. The corresponding Tauc plots derived from these spectra are presented in Fig. S7, from which the optical bandgaps were extracted as 2.71 and 3.57 eV, respectively. Ultraviolet photoelectron spectroscopy (UPS) was employed to determine the electronic energy levels (Fig. 2i). The secondary electron cutoff energies (Ecut-off) are 17.07 eV for ZnO and 17.42 eV for IGZO. Using Φ = hν − Ecut-off (hν = 21.22 eV), the corresponding work functions are calculated to be approximately 4.15 and 3.80 eV, respectively. The valence band maxima (EVBM) relative to the Fermi level are 2.61 eV for ZnO and 3.04 eV for IGZO. By combining the UPS-derived parameters with the optical bandgaps obtained from Tauc analysis, the complete energy level alignment of the ZnO/IGZO heterojunction was constructed (Fig. S8).",
+      "bbox": [
+        51.02,
+        81.39,
+        291.78,
+        488.48
+      ]
+    },
+    {
+      "page": 6,
+      "text": "3.2 \u0007Optical Sensing Performance of the FDST",
+      "bbox": [
+        51.02,
+        515.48,
+        247.75,
+        531.55
+      ]
+    },
+    {
+      "page": 6,
+      "text": "To clarify the role of the ZnO NFs sensing layer, a pristine IGZO TFT and a fabricated FDST are first presented in Fig. S9. Both devices share an identical layer structure and channel geometry, except for the presence of the ZnO NFs in the FDST. The channel length (L) and width (W) are 150 and 1000 μm, respectively. The electrical properties of the FDST were evaluated under dark conditions. The transfer curves of nine devices are shown in Fig. S10a, from which the average saturation mobility is 11.65 ± 0.24 cm2 V−1 s−1, the threshold voltage (Vth) is 1.15 ± 0.18 V, the Ion/Ioff ratio is (1.35 ± 0.85) × 108, and the subthreshold swing is 0.44 ± 0.01 V dec−1. Continuous cyclic testing for 3000 cycles (Fig. S10b) and dual-sweep measurement (Fig. S10c) were also performed",
+      "bbox": [
+        51.02,
+        543.8,
+        291.72,
+        726.89
+      ]
+    },
+    {
+      "page": 6,
+      "text": "to evaluate operational stability and hysteresis. The transfer curves remain largely overlapped during cycling, while the dual-sweep curves show negligible displacement. Control experiments were further conducted using a pristine IGZO TFT to identify the source of the multimodal response. As shown in Fig. S11a, the transfer characteristics of the pristine IGZO TFT measured under dark conditions and under whitelight illumination with intensities ranging from 0.1 to 1 mW mm−2 are nearly identical, indicating negligible photoresponse in the absence of the ZnO sensing layer. In contrast, the FDST incorporating electrospun ZnO NFs exhibits pronounced light-dependent modulation (Fig. 3a). As the light intensity increases from dark to 1 mW mm−2, the transfer curves shift progressively toward negative gate voltage. This systematic shift confirms that optical excitation modulates channel conductivity through the ZnO sensing layer. To comprehensively quantify the photodetection performance, three key metrics were introduced: photoresponsivity ( R ), photosensitivity ( S ), and apparent specific detectivity ( D∗ app ) [44–46].",
+      "bbox": [
+        306.14,
+        81.39,
+        546.91,
+        348.81
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Under broadband white-light illumination, R and S are defined as:",
+      "bbox": [
+        306.14,
+        348.91,
+        546.76,
+        378.0
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Ilight −Idark",
+      "bbox": [
+        325.99,
+        382.47,
+        369.67,
+        397.1
+      ]
+    },
+    {
+      "page": 6,
+      "text": "(1) R =",
+      "bbox": [
+        306.27,
+        391.31,
+        544.25,
+        406.7
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Pin ⋅A",
+      "bbox": [
+        335.35,
+        398.05,
+        360.81,
+        412.25
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Ilight Idark",
+      "bbox": [
+        324.65,
+        426.12,
+        340.83,
+        455.9
+      ]
+    },
+    {
+      "page": 6,
+      "text": "(2) S =",
+      "bbox": [
+        305.97,
+        434.96,
+        544.25,
+        450.4
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Here, Ilight and Idark denote the drain current under illumination and in the dark, respectively; Pin is the incident white-light power density; A is the effective illuminated area, which was defined by a physical aperture mask exposing only the FDST channel region. Based on these definitions, the FDST exhibits a maximum broadband R of 2.69 A W−1 in the saturation regime, reflecting efficient photocarrier generation and collection. Under weak illumination at gate voltage (VG) = 0 V, the S reaches 6.96 × 103, ensuring a high signal-to-noise ratio in optical signal readout. To evaluate the noise-limited detection capability, the dark-current fluctuation was experimentally characterized at a representative operating condition (VG = − 0.1 V). As shown in Fig. S12, the time-domain dark-current traces exhibit stable fluctuations without noticeable drift, and the corresponding histograms follow Gaussian-like distributions, indicating stationary noise behavior. The root-mean-square (RMS) noise",
+      "bbox": [
+        306.14,
+        476.81,
+        546.86,
+        715.9
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Nano-Micro Lett. (2026) 18:429 Page 7 of 18 429",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Fig. 3 Optical sensing performance and mechanism of the FDST. a Transfer characteristics measured under different white-light illumination intensities. b Dynamic drain-current response under sequential light-intensity modulation. c Transient drain-current response to a single light on/ off pulse. d Repetitive drain-current response under periodic white-light illumination, with insets showing enlarged cycles. e Schematic of subgap defect excitation and carrier trapping in ZnO under white-light illumination. f FEA-simulated potential distribution in the ZnO/IGZO stack as a function of light intensity. g Benchmark comparison of responsivity versus response time with representative reports",
+      "bbox": [
+        51.02,
+        532.02,
+        546.41,
+        585.66
+      ]
+    },
+    {
+      "page": 7,
+      "text": "( Ii −I )2 where B is the effective noise bandwidth. Based on the experimentally extracted parameters summarized in Table S1, the FDST exhibits an apparent specific detectivity of 1.1 × 108 Jones. Following recent guidelines for photodetector evaluation, this value is reported as D∗ app , as it is derived from time-domain noise analysis rather than a",
+      "bbox": [
+        130.91,
+        645.5,
+        546.84,
+        724.61
+      ]
+    },
+    {
+      "page": 7,
+      "text": "current was extracted from the steady-state current fluctuation, defined as:",
+      "bbox": [
+        51.02,
+        606.3,
+        289.15,
+        635.39
+      ]
+    },
+    {
+      "page": 7,
+      "text": "√ √ √ √ 1 N −1",
+      "bbox": [
+        76.85,
+        643.04,
+        113.46,
+        677.97
+      ]
+    },
+    {
+      "page": 7,
+      "text": "N ∑",
+      "bbox": [
+        116.33,
+        645.32,
+        129.25,
+        673.68
+      ]
+    },
+    {
+      "page": 7,
+      "text": "(3) irms =",
+      "bbox": [
+        50.53,
+        654.05,
+        289.14,
+        669.79
+      ]
+    },
+    {
+      "page": 7,
+      "text": "i=1",
+      "bbox": [
+        117.67,
+        669.1,
+        127.91,
+        677.62
+      ]
+    },
+    {
+      "page": 7,
+      "text": "where I is the average current over the selected steady-state time window. The D∗ app can thus be written as:",
+      "bbox": [
+        51.02,
+        686.55,
+        291.73,
+        714.46
+      ]
+    },
+    {
+      "page": 7,
+      "text": "√",
+      "bbox": [
+        343.77,
+        610.3,
+        353.06,
+        628.85
+      ]
+    },
+    {
+      "page": 7,
+      "text": "(4) D∗ app = R",
+      "bbox": [
+        306.23,
+        610.81,
+        544.25,
+        633.31
+      ]
+    },
+    {
+      "page": 7,
+      "text": "AB irms",
+      "bbox": [
+        344.5,
+        610.81,
+        365.28,
+        638.61
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Nano-Micro Lett. (2026) 18:429 429 Page 8 of 18",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ]
+    },
+    {
+      "page": 8,
+      "text": "https://doi.org/10.1007/s40820-026-02285-7 © The authors",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ]
+    },
+    {
+      "page": 8,
+      "text": "rigorous frequency-domain noise characterization or an evaluation based on noise equivalent power [46]. The lightintensity-resolving capability was examined under stepwise and mixed-intensity sequences (Fig. 3b). Distinct steadystate current plateaus are observed and correlate with the incident white-light intensity. Notably, when high-intensity pulses are inserted into a sequence with random intensity fluctuations, the current rapidly returns to the steady-state level corresponding to the subsequent lower intensity without discernible hysteresis or residual memory. The transient response under a single light-intensity step is shown in Fig. 3c. The rise time (τrise) and relax time (τrelax) are defined as the durations required for the current to transition between 10 and 90% of the response amplitude [44, 45]. These two key threshold levels are defined as follows:",
+      "bbox": [
+        51.02,
+        81.39,
+        291.77,
+        271.48
+      ]
+    },
+    {
+      "page": 8,
+      "text": "(5) I90% = Imin + (Imax −Imin ) × 0.9",
+      "bbox": [
+        51.1,
+        272.22,
+        289.15,
+        305.73
+      ]
+    },
+    {
+      "page": 8,
+      "text": "(6) I10% = Imin + (Imax −Imin ) × 0.1",
+      "bbox": [
+        51.1,
+        303.37,
+        289.13,
+        336.88
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Here, Imax and Imin represent the steady-state current after stimulus application (maximum response) and the initial baseline current, respectively. Based on this definition, the FDST exhibits rapid current transitions when illumination is switched on or off: τrise and τrelax are as short as 83 and 110 ms, respectively. Long-term cycling stability was evaluated under a white-light intensity of 1 mW cm−2 at a switching frequency of 0.1 Hz (Fig. 3d). Quantitative analysis based on the extracted current values reveals that the average on-state current decreases by only 2.8% after 100 cycles, indicating highly stable and reproducible optical switching behavior. The enlarged views of representative early and late cycles further confirm the nearly identical waveform characteristics, demonstrating the robust operational stability of the device. The opticalresponse mechanism is illustrated in Fig. 3e. Oxygenvacancy-related subgap defect states in ZnO introduce localized levels within the bandgap, enabling visible-light absorption below the intrinsic bandgap energy [47–49]. To further support this defect-mediated interpretation, the spectral distribution of the white LED used in Fig. 3a is provided in Fig. S13, confirming broadband emission in the visible range. In addition, wavelength-dependent transient photocurrent responses under monochromatic illumination at 405, 532 and 635 nm are presented in Fig. S14. Clear and reversible responses are observed at all three wavelengths, consistent with defect-assisted subgap excitation in the ZnO NFs sensing layer. Under illumination,",
+      "bbox": [
+        51.03,
+        332.69,
+        291.8,
+        725.78
+      ]
+    },
+    {
+      "page": 8,
+      "text": "photogenerated holes are preferentially trapped by deep defect states and act as fixed positive charge centers, elevating the local electrostatic potential of the ZnO layer [50, 51]. Through capacitive coupling across the ZnO/ IGZO interface, this light-induced surface potential effectively acts as an additional internal gate bias. Specifically, the accumulation of trapped positive charges lowers the potential barrier for electron transport in the underlying IGZO channel, leading to the observed negative Vth shift rather than a direct increase in bulk channel conductance. This photogating-dominated response is consistent with the parallel shift of the transfer curves and the nearly constant on-state drain current observed in Fig. 3a [52]. Finite element analysis (FEA) was conducted to simulate the light-intensity-dependent potential distribution within the ZnO/IGZO stack (Fig. 3f). In the model, light-induced surface-charge modulation was applied exclusively to the ZnO layer, and the resulting electrostatic potential was self-consistently propagated to the underlying IGZO channel through capacitive coupling. The simulation solves the Poisson equation with surface-charge boundary conditions, and the detailed governing equations and phenomenological descriptions are provided in Table S2 and Note S2. Using a saturation-type light-dependent surface-charge model, the simulated potential maps show a monotonic increase in surface and interfacial potential with increasing illumination intensity, consistent with the experimentally observed light-induced conductivity enhancement. To benchmark the overall white-light photodetection performance, responsivity versus response time is compared with representative white-light photodetectors reported in the literature (Fig. 3g and Table S3) [53–63]. The FDST resides in a region characterized by a balanced combination of high responsivity and relatively fast response dynamics.",
+      "bbox": [
+        306.14,
+        81.39,
+        546.96,
+        572.48
+      ]
+    },
+    {
+      "page": 8,
+      "text": "3.3 \u0007Thermal Sensing Performance of the FDST",
+      "bbox": [
+        306.16,
+        602.57,
+        508.6,
+        618.64
+      ]
+    },
+    {
+      "page": 8,
+      "text": "The temperature-dependent electrical characteristics of the FDST were systematically examined over the range of 20–80 °C. For comparison, a pristine IGZO TFT without ZnO nanofiber integration was measured under identical conditions. As shown in Fig. S11b, the transfer curves of the reference device remain nearly unchanged across the",
+      "bbox": [
+        306.16,
+        630.89,
+        546.93,
+        715.98
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Nano-Micro Lett. (2026) 18:429 Page 9 of 18 429",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ]
+    },
+    {
+      "page": 9,
+      "text": "entire temperature range, indicating that the IGZO channel itself exhibits negligible intrinsic thermal sensitivity. In contrast, the FDST displays a clear and continuous modulation of its transfer characteristics with increasing temperature. As shown in Fig. 4a, the transfer curves shift progressively toward negative gate voltage, accompanied by a monotonic increase in the turn-on current. This systematic evolution reflects an enhancement of channel conductivity induced by thermal stimulation. We employ the temperature coefficient ( TC ) to quantify the device’s thermal response, defined as:",
+      "bbox": [
+        51.02,
+        81.39,
+        291.73,
+        236.48
+      ]
+    },
+    {
+      "page": 9,
+      "text": "(7) TC = ΔI∕I0",
+      "bbox": [
+        50.43,
+        241.47,
+        289.14,
+        263.48
+      ]
+    },
+    {
+      "page": 9,
+      "text": "ΔT × 100%",
+      "bbox": [
+        81.4,
+        251.01,
+        134.51,
+        268.01
+      ]
+    },
+    {
+      "page": 9,
+      "text": "where I0 is the drain current at the initial temperature, ΔI represents the temperature-induced current variation, and ΔT is the corresponding temperature change [64]. Within the tested range, the FDST exhibits a TC of 0.071 °C−1 in its typical operating state. Dynamic tests under sequential temperature modulations (Fig. 4b) demonstrate the device’s ability to distinguish varying thermal gradients, where the current plateaus accurately correspond to specific temperature increments (ΔT from 0.5 to 5.0 °C). The stepwise temperature response (Fig. 4c) further confirms the thermal tracking capability of the FDST. Using the same criteria defined in Eqs. (5) and (6), the FDST maintains a secondlevel response speed (τrise ≈ 0.36 s; τrelax ≈ 1.52 s), despite the inherently slower ionic relaxation involved in thermochemical processes, enabling it to effectively capture rapid fluctuations in ambient temperature fields. Long-term stability under repeated thermal switching is shown in Fig. 4d, where the averaged steady-state drain current for each cycle is plotted over 100 cycles between 30 and 40 °C. The FDST exhibits negligible degradation, with the relative variation remaining within 1.5% and no observable monotonic decay trend. Enlarged views further confirm nearly unchanged amplitude and waveform shape, demonstrating excellent cyclic stability. The thermally induced interfacial modulation mechanism is illustrated in Fig. 4e. In the initial state, the ZnO surface is rich in adsorbed oxygen species ( O− 2 ) and hydroxyl groups (–OH), which introduce electron trapping on the surface of the n-type semiconductor. The resulting negatively charged surface layer establishes an electrostatic potential that induces upward band bending and electron depletion in the IGZO channel through capacitive coupling, thereby suppressing the dark-state conductivity [65]. Upon thermal stimulation, surface adsorption–desorption processes are activated on the ZnO surface. In particular, the desorption of surface-adsorbed oxygen species releases",
+      "bbox": [
+        50.54,
+        274.14,
+        291.78,
+        714.23
+      ]
+    },
+    {
+      "page": 9,
+      "text": "previously trapped electrons back into the conduction band [66–68], as described below:",
+      "bbox": [
+        306.14,
+        81.39,
+        546.76,
+        108.98
+      ]
+    },
+    {
+      "page": 9,
+      "text": "(8) O− 2 (ads) ⇌O2(g) + e−",
+      "bbox": [
+        305.8,
+        113.97,
+        544.25,
+        130.38
+      ]
+    },
+    {
+      "page": 9,
+      "text": "where ads and g denote the adsorbed and gaseous states, respectively. As the O− 2 species desorb, the electron depletion layer at the surface becomes thinner, leading to increased carrier concentration. Meanwhile, surface –OH undergoes a dehydration condensation reaction. Driven primarily by thermal activation, this dehydroxylation process is enabled by the thermal energy supplied at elevated temperatures, which facilitates the removal of surface hydroxyl groups and the healing of surface VO [69]. The reaction kinetics are described as follows:",
+      "bbox": [
+        306.14,
+        135.44,
+        546.86,
+        263.03
+      ]
+    },
+    {
+      "page": 9,
+      "text": "(9) 2OH−(ads) ⇌H2O(g) + O2−(lattice)",
+      "bbox": [
+        305.85,
+        269.89,
+        544.25,
+        284.98
+      ]
+    },
+    {
+      "page": 9,
+      "text": "The O2− generated in the forward reaction refills VO at the surface, is electrostatically compensated by the lattice field, and no longer acts as an additional negative charge center. The reduction in surface negative charge density leads to a gradual flattening of the upward band bending and a positive shift in the interfacial electrostatic potential, which is capacitively coupled to the IGZO channel as a temperature-dependent electrical modulation. When the heat source is removed (cooling) or the device returns to its initial equilibrium state, the above reactions proceed in reverse, leading to the reformation of the surface depletion layer and endowing the device with good reversibility. Figure 4f, with detailed data listed in Table S4, presents a six-dimensional comparison between the FDST and representative flexible temperature sensors [70–73], encompassing sensitivity, response and recovery times, resolution, temperature range, and bending cycles. Rather than excelling in a single parameter, the FDST maintains competitive performance across all metrics, highlighting its multiparameter optimization. As the thermal response is closely related to surface adsorption–desorption processes, the influence of ambient humidity (relative humidity, RH) was further evaluated. As shown in Fig. S15a–c, the transfer characteristics measured at 20, 40, and 60 °C under different RH levels (30%–70%) exhibit only minor variations, including a slight positive shift in threshold voltage and a marginal reduction in on-current as RH increases from 30% to 70%. The dynamic thermal responses under repeated temperature cycling (Fig. S15d) further demonstrate that the waveform shape and reversibility are well preserved across different RH conditions, with only a slight reduction in response amplitude",
+      "bbox": [
+        306.14,
+        304.59,
+        546.95,
+        725.68
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Nano-Micro Lett. (2026) 18:429 429 Page 10 of 18",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Fig. 4 Thermal sensing performance and mechanism of the FDST. a Transfer characteristics measured under different temperatures. b Dynamic drain-current response under sequential temperature steps. c Transient drain-current response to a single-step thermal pulse. d Cycling stability under repeated temperature switching; insets show representative cycles. e Schematic illustration of thermally activated surface processes and capacitive coupling between ZnO and the IGZO channel. f Radar comparison of thermal sensing metrics among representative flexible temperature sensors. g FEA-simulated temperature-dependent potential distribution in the ZnO/IGZO stack",
+      "bbox": [
+        51.02,
+        524.7,
+        546.38,
+        578.34
+      ]
+    },
+    {
+      "page": 10,
+      "text": "https://doi.org/10.1007/s40820-026-02285-7 © The authors",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ]
+    },
+    {
+      "page": 10,
+      "text": "observed at higher humidity. The TC as a function of RH (Fig. S15e) shows a gradual decrease with increasing humidity. Notably, the TC at 80% RH exhibits a maximum reduction of approximately 13.7% compared to that at 30% RH. These results suggest that moisture introduces a bounded perturbation rather than significantly disrupting the thermally activated sensing mechanism. Finally, the temperature-dependent potential evolution was examined by FEA (Fig. 4g). Thermal modulation was introduced at the ZnO surface through",
+      "bbox": [
+        51.02,
+        593.84,
+        291.8,
+        720.93
+      ]
+    },
+    {
+      "page": 10,
+      "text": "a temperature-dependent surface-charge model, and the induced electrostatic variation was subsequently transferred to the IGZO channel via interfacial capacitive coupling. The governing equations and boundary conditions are summarized in Table S2 and Note S2, while the main text focuses on the agreement between simulation and experimental observations.",
+      "bbox": [
+        306.14,
+        593.79,
+        546.89,
+        678.88
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Nano-Micro Lett. (2026) 18:429 Page 11 of 18 429",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ]
+    },
+    {
+      "page": 11,
+      "text": "3.4 \u0007Mechanical Robustness and Response Stability under Dynamic Deformation",
+      "bbox": [
+        51.02,
+        81.21,
+        270.53,
+        111.28
+      ]
+    },
+    {
+      "page": 11,
+      "text": "To evaluate the mechanical tolerance and operational reliability of the FDST under dynamic deformation, systematic flexibility tests were performed using a customized bending platform (Fig. S16a). Figure S16b depicts the transfer characteristics measured before and after 10,000 bending cycles at a small bending radius of 2 mm under three combined photothermal conditions: darkness at 20 °C, 0.1 mW mm−2 at 40 °C, and 0.3 mW mm−2 at 60 °C. Notably, even after extensive mechanical fatigue, the on-current, subthreshold region, and off-state noise floor exhibited negligible degradation, demonstrating the stable operation of the FDST for long-term operation. Beyond basic electrical survival, we further evaluated whether mechanical strain perturbs the dual-modal sensing outputs. Under tensile bending (Fig. S17a), the maximum R (Max.R ) maintains a narrow range of 2.65–2.70 A W−1 across the entire bendingradius range (from 7 to 1 mm). The TC also remained stable (0.068–0.071 °C⁻1) without discernible drift. A consistent robustness was observed under compressive bending (Fig. S17b), where Max. R (2.64–2.71 A W−1) and TC (0.069–0.071 °C−1) exhibit only minor and reversible variations with curvature. To further examine the device morphology after repeated mechanical deformation, enlarged optical micrographs were recorded before and after 10,000 bending cycles (Fig. S18). No observable cracks or disruption of the ZnO nanofiber network were detected within the imaged region. These results collectively indicate that the FDST maintains stable photothermal transduction with limited sensitivity to mechanical deformation. Such robustness supports reliable dual-modal sensing under conditions relevant to flexible and wearable applications. To place the demonstrated performance in the context of existing multimodal sensing technologies, a quantitative comparison across key metrics is summarized in Table S5.",
+      "bbox": [
+        51.02,
+        123.53,
+        291.8,
+        600.62
+      ]
+    },
+    {
+      "page": 11,
+      "text": "3.5 \u0007Multibias Electrical Fingerprinting for Stimulus Reconstruction",
+      "bbox": [
+        51.02,
+        618.21,
+        276.93,
+        648.28
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Although the FDST exhibits pronounced conductance modulation under both optical and thermal stimuli, the drain current measured at a single gate bias does not provide a bijective mapping to the stimulus pair. As evidenced",
+      "bbox": [
+        51.02,
+        660.53,
+        291.81,
+        717.62
+      ]
+    },
+    {
+      "page": 11,
+      "text": "in Fig. S19, distinct light–temperature combinations may generate nearly identical current values at a specific bias despite corresponding to fundamentally different physical states. This degeneracy arises because the optical and thermal perturbations, though governed by distinct physical mechanisms, are projected onto a one-dimensional current axis where their responses partially overlap. To eliminate the intrinsic ambiguity associated with singlepoint sampling, we construct a three-bias readout vector X = [ID (− 3.3 V), ID (0 V), ID (+ 3.3 V)], which serves as a high-dimensional electrical fingerprint encoding the coupled optical–thermal response. These three gate biases were selected because they sample distinct regions of the transfer characteristics, exhibiting different sensitivities to optical and thermal perturbations. A detailed justification of this bias selection, together with a systematic ablation study over different bias combinations, is provided in Note S4 and Table S6, which confirms that the selected triplet achieves the optimal trade-off between decoupling accuracy and hardware constraints. This multibias strategy effectively transforms the modal coupling problem into a feature-separable representation problem, thereby rendering systematic model-based decoupling feasible. Recent IGZO-based sensing systems have increasingly incorporated machine learning and high-dimensional response engineering to enhance intelligent sensing and signal recognition. As summarized in Table S7, representative approaches include visual–tactile perception using IGZO TFTs integrated with an external triboelectric nanogenerator (TENG) [74], optoelectronic associative learning and neuromorphic pattern recognition in charge-trapping a-IGZO TFTs [75], optical-response-fingerprint-assisted gas recognition [76], and multidimensional gas discrimination based on complementary response signals from p-Cu2O/n-IGZO sensor arrays [77]. These approaches mainly rely on external modules, array-level architectures, or distinguishable response features for perception, classification, and neuromorphic learning. In contrast to these studies, our work focuses on coupled-stimulus decoupling and independent signal reconstruction within a single sensing channel. To determine the representational capacity required for accurate decoupling, we benchmarked several regression families with distinct modeling characteristics, including linear regression (LR), polynomial regression (PR), support vector regression (SVR), gradient-boosted decision trees (XGBoost), and an MLP (Fig. 5a) [77–79].",
+      "bbox": [
+        306.14,
+        81.39,
+        546.94,
+        726.48
+      ]
+    },
+    {
+      "page": 12,
+      "text": "Nano-Micro Lett. (2026) 18:429 429 Page 12 of 18",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ]
+    },
+    {
+      "page": 12,
+      "text": "https://doi.org/10.1007/s40820-026-02285-7 © The authors",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ]
+    },
+    {
+      "page": 12,
+      "text": "The corresponding architectures and mathematical formulations are detailed in Fig. S20 and Note S3. The coefficient of determination (R2) in Fig. 5b indicates that architectures beyond linear regression achieve higher predictive accuracy, suggesting that the mapping between electrical fingerprints and physical stimuli involves higher-order dependencies within this dataset. Among the candidates, the MLP yields the highest R2 for both light intensity and temperature, a result further supported by the minimal mean absolute error (MAE) shown in Fig. 5c. This consistent performance is corroborated by the final loss values summarized in Fig. S21 and the minimized mean squared error (MSE) shown in Fig. S22. Based on these evaluation results, a compact three-layer MLP (128–64–32 neurons) was implemented for final decoupling (Fig. 5d). The training loss rapidly converges within the first few hundred epochs (Fig. 5e), while the R2 during optimization consistently approaches unity (Fig. 5f). To visually compare the predictive behaviors across models, the parity plots for light intensity (0–5 mW/mm−2) are provided in Fig. S23 for LR, PR, SVR, and XGBoost, with the corresponding analysis for the MLP presented in Fig. 5g. Similarly, the parity plots for temperature (20–80 °C) for the alternative models are detailed in Fig. S24, while the MLP result is shown in Fig. 5h. On the independent test set, the MLP achieves R2 values of 0.992 and 0.989 for light intensity and temperature prediction, respectively. The narrow and symmetrically centered residual distributions (Fig. 5i) confirm unbiased and precise decoupling. To further evaluate modal decoupling, we first examined the residual trends with respect to the non-target modality, as shown in Fig. S25 [80]. In both cases, the residual distributions were smoothed using locally weighted scatterplot smoothing (LOWESS) to reveal the underlying trend, and the resulting curves remain nearly horizontal with only moderate fluctuations, indicating weak systematic dependence of the prediction errors on variations in the other sensing variable. To further quantify the decoupling performance, cross-sensitivity ( CS ), crosstalk error ( CE ), and modal orthogonality index ( OI ) were evaluated (definitions in Note S5). The values of CST←L and CSL←T were 0.11 °C (mW/mm2)−1 and 0.0028 mW mm−2 °C⁻1, respectively, while CET←L and CEL←T were 0.55 °C and 0.17 mW mm−2. In addition, the OI reached 0.94, indicating strong modal separation between the two sensing channels.",
+      "bbox": [
+        51.02,
+        81.39,
+        291.76,
+        726.48
+      ]
+    },
+    {
+      "page": 12,
+      "text": "3.6 \u0007System Integration and Real‑World Environmental Monitoring",
+      "bbox": [
+        306.14,
+        81.21,
+        544.24,
+        111.28
+      ]
+    },
+    {
+      "page": 12,
+      "text": "Building upon the high-precision predictions of the MLPbased decoupling model, we developed a wearable sensing system capable of synchronous acquisition, decoupling, and real-time display of ambient light and temperature signals under practical usage conditions (Fig. 6a). To accommodate the wide dynamic range of drain currents spanning several orders of magnitude under different gate biases (VG = − 3.3, 0, and + 3.3 V), the system architecture incorporates a threechannel readout circuit with tailored gain settings. This configuration prevents amplifier saturation and ensures high-resolution signal acquisition across all operating regimes. The analog front-end utilizes transimpedance amplifiers (TIA, OPA657) for current-to-voltage conversion, followed by digitization via a multichannel 16-bit ADC (ADS1115). An STM32 microcontroller (MCU) collects the data and directly executes the pretrained MLP model to infer light intensity and temperature without the need for further retraining. Aligning with the intrinsic second-level response time of the FDST to thermal stimuli, the WDMS updates the displayed results at a 1 s interval, which effectively captures the real-time environmental variations while filtering out high-frequency noise. To rigorously validate the WDMS’s robustness under uncontrolled real-world conditions, we benchmarked our system against commercial sensors across three progressively challenging scenarios: baseline sunlight, shadow occlusion, and compound photothermal stimulation. The light intensity and temperature values were benchmarked against commercial reference instruments, namely a Thorlabs PM100D optical power meter (Thorlabs, USA) and a Fluke 54 II digital thermometer (Fluke Corporation, USA), respectively. Initially, under direct sunlight (Fig. 6b), the system demonstrated high-fidelity tracking, yielding values (21.8 °C, 12 mW cm−2) nearly identical to the commercial reference (22.0 °C, 12.5 mW cm−2), thereby establishing a solid accuracy baseline. Crucially, the system’s decoupling capability was tested by introducing a shadow (Fig. 6c). While the commercial sensor recorded a sharp illumination drop to 2.3 mW cm−2, our system accurately reproduced this transition (2 mW cm−2) without inducing any erroneous thermal drift (maintaining a stable output at 21.4 °C). This result highlights the independence of the predicted optical signal from thermal interference. Finally, in the",
+      "bbox": [
+        306.14,
+        123.53,
+        546.91,
+        726.62
+      ]
+    },
+    {
+      "page": 13,
+      "text": "Nano-Micro Lett. (2026) 18:429 Page 13 of 18 429",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ]
+    },
+    {
+      "page": 13,
+      "text": "Fig. 5 Evaluation and implementation of regression models for decoupled light intensity and temperature sensing. a Schematic comparison of regression algorithms, including LR, PR, SVR, XGBoost, and MLP. b R2 for light intensity and temperature prediction across models. c MAE for light intensity and temperature prediction across models. d Architecture of the MLP. e Training loss as a function of epoch for the MLP. f Evolution of R2 during MLP training. g Parity plot of predicted versus true light intensity using the MLP. h Parity plot of predicted versus true temperature using the MLP. i Residual distributions for MLP-based light intensity and temperature predictions",
+      "bbox": [
+        51.02,
+        607.38,
+        546.39,
+        661.03
+      ]
+    },
+    {
+      "page": 13,
+      "text": "most demanding scenario involving simultaneous intense irradiation and local heating (Fig. 6d), the system successfully resolved a high target temperature (38.8 °C) against a",
+      "bbox": [
+        51.02,
+        681.3,
+        291.78,
+        724.39
+      ]
+    },
+    {
+      "page": 13,
+      "text": "high-light background (13 mW cm−2), matching the reference (39.1 °C, 13.4 mW cm−2) with minimal error. This confirms that the MLP-based model achieves excellent modal",
+      "bbox": [
+        306.14,
+        680.37,
+        546.76,
+        724.39
+      ]
+    },
+    {
+      "page": 14,
+      "text": "Nano-Micro Lett. (2026) 18:429 429 Page 14 of 18",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ]
+    },
+    {
+      "page": 14,
+      "text": "Fig. 6 Design, integration, and application of the WDMS. a Photograph and system block diagram of the WDMS. b–d Real-world outdoor demonstrations of the WDMS under different scenarios: b direct sunlight, c shaded conditions, and d combined photothermal stimulation, benchmarked against commercial sensor references. e Time-resolved light intensity and temperature during shadow–recovery and heating– removal cycles",
+      "bbox": [
+        51.02,
+        473.82,
+        546.38,
+        516.9
+      ]
+    },
+    {
+      "page": 14,
+      "text": "https://doi.org/10.1007/s40820-026-02285-7 © The authors",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ]
+    },
+    {
+      "page": 14,
+      "text": "orthogonality, effectively eliminating crosstalk even within a wide dynamic range of compound environmental stimuli. To further evaluate the system’s robustness under continuous dynamic conditions, we recorded a real-time demonstration covering complete “shadow–recovery” and “heating–removal” cycles (Video S1), with corresponding temporal data presented in Fig. 6e. Throughout the dynamic testing, the system exhibits fast transient response, accurately tracking abrupt optical occlusion and temperature rise events with negligible hysteresis during the subsequent recovery phases. Importantly, the sensing platform maintains strict modal independence: pronounced variations in one environmental parameter produce no measurable",
+      "bbox": [
+        51.02,
+        531.3,
+        291.71,
+        714.39
+      ]
+    },
+    {
+      "page": 14,
+      "text": "perturbation in the other. These results confirm that the system achieves real-time, crosstalk-free decoupling even under compound, time-varying environmental stimuli.",
+      "bbox": [
+        306.14,
+        531.3,
+        546.73,
+        574.39
+      ]
+    },
+    {
+      "page": 14,
+      "text": "4 \u0007Conclusions",
+      "bbox": [
+        306.14,
+        599.28,
+        380.16,
+        618.57
+      ]
+    },
+    {
+      "page": 14,
+      "text": "In this work, we developed a flexible dual-modal sensing transistor (FDST) capable of simultaneously detecting light intensity and temperature within a single sensing unit. By integrating electrospun ZnO nanofibers with an IGZO thinfilm transistor, the device leverages defect-mediated optical excitation and thermally activated interfacial potential",
+      "bbox": [
+        306.14,
+        629.71,
+        546.73,
+        714.8
+      ]
+    },
+    {
+      "page": 15,
+      "text": "Nano-Micro Lett. (2026) 18:429 Page 15 of 18 429",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ]
+    },
+    {
+      "page": 15,
+      "text": "modulation to generate strong photothermal responses. As a result, the FDST achieves a broadband responsivity of up to 2.69 A W−1 and a temperature coefficient of 0.071 °C−1, demonstrating reliable sensitivity to both optical and thermal stimuli. To resolve the intrinsic coupling between these signals, a multibias electrical readout strategy was introduced to encode the stimuli into a bias-dependent current fingerprint. A lightweight MLP was then employed to decode these electrical features, enabling accurate reconstruction of light intensity and temperature with coefficients of determination of 0.992 and 0.989, respectively. Importantly, the FDST exhibits excellent mechanical robustness, maintaining stable sensing performance even after 10,000 bending cycles at a bending radius of 2 mm, highlighting its suitability for flexible and wearable electronics. Furthermore, the device was integrated into a wearable dual-modal monitoring system that enables real-time environmental sensing with negligible modal cross-interference under outdoor conditions. Overall, this work demonstrates a compact device-algorithm co-design strategy for multimodal sensing, providing a scalable pathway toward intelligent wearable perception systems and next-generation electronic skins.",
+      "bbox": [
+        51.02,
+        81.39,
+        291.83,
+        390.48
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 3,
+      "caption_original": "Fig. 1 Design and implementation of the FDST. a Conceptual illustration of optical and thermal perception from biological systems toward integrated artificial sensing and intelligent applications. b Representative previous single-pixel devices for dual-modal light and temperature sensing based on thermoelectric effects (left, [28–30]) and pyroelectric effects (right, [31]). c This work on a flexible dual-modal sensing transistor for light and temperature sensing",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Conceptual illustration of optical and thermal perception from biological systems toward integrated artificial sensing and intelligent applications",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "b",
+          "original": "Representative previous single-pixel devices for dual-modal light and temperature sensing based on thermoelectric effects (left, [28–30]) and pyroelectric effects (right, [31])",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "c",
+          "original": "This work on a flexible dual-modal sensing transistor for light and temperature sensing",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 996,
+      "image_height": 932,
+      "crop_confidence": "high",
+      "bbox": [
+        48.86,
+        80.0,
+        546.42,
+        545.64
+      ],
+      "image_path": "papers/paper-52b3e65f07f0ead5/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 5,
+      "caption_original": "Fig. 2 Structural architecture and material characterization of the FDST. a Schematic illustration of the FDST structure and layer stack. b Optical microscope image of the electrospun ZnO NFs network. c XRD pattern of the ZnO NFs. d Deconvoluted O 1s XPS spectrum of the ZnO sensing layer. e Depth-dependent O 1s XPS spectra across the ZnO/IGZO stack presented as a waterfall plot. f Deconvoluted O 1s XPS spectrum of the IGZO layer. g Relative content of VO and M–OH as a function of etching time. h UV–Vis absorption spectra of ZnO and IGZO measured over the wavelength range of 250–900 nm after linear background subtraction and normalization. i UPS spectra of the ZnO and IGZO layers",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic illustration of the FDST structure and layer stack",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Optical microscope image of the electrospun ZnO NFs network",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "c",
+          "original": "XRD pattern of the ZnO NFs",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Deconvoluted O 1s XPS spectrum of the ZnO sensing layer",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Depth-dependent O 1s XPS spectra across the ZnO/IGZO stack presented as a waterfall plot",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "Deconvoluted O 1s XPS spectrum of the IGZO layer",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "g",
+          "original": "Relative content of VO and M–OH as a function of etching time",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "h",
+          "original": "UV–Vis absorption spectra of ZnO and IGZO measured over the wavelength range of 250–900 nm after linear background subtraction and normalization",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "UPS spectra of the ZnO and IGZO layers",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 996,
+      "image_height": 853,
+      "crop_confidence": "high",
+      "bbox": [
+        48.86,
+        80.0,
+        546.42,
+        506.28
+      ],
+      "image_path": "papers/paper-52b3e65f07f0ead5/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 7,
+      "caption_original": "Fig. 3 Optical sensing performance and mechanism of the FDST. a Transfer characteristics measured under different white-light illumination intensities. b Dynamic drain-current response under sequential light-intensity modulation. c Transient drain-current response to a single light on/ off pulse. d Repetitive drain-current response under periodic white-light illumination, with insets showing enlarged cycles. e Schematic of subgap defect excitation and carrier trapping in ZnO under white-light illumination. f FEA-simulated potential distribution in the ZnO/IGZO stack as a function of light intensity. g Benchmark comparison of responsivity versus response time with representative reports",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Transfer characteristics measured under different white-light illumination intensities",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Dynamic drain-current response under sequential light-intensity modulation",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "c",
+          "original": "Transient drain-current response to a single light on/ off pulse",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "d",
+          "original": "Repetitive drain-current response under periodic white-light illumination, with insets showing enlarged cycles",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "e",
+          "original": "Schematic of subgap defect excitation and carrier trapping in ZnO under white-light illumination",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "f",
+          "original": "FEA-simulated potential distribution in the ZnO/IGZO stack as a function of light intensity",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "g",
+          "original": "Benchmark comparison of responsivity versus response time with representative reports",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 996,
+      "image_height": 886,
+      "crop_confidence": "high",
+      "bbox": [
+        48.86,
+        80.0,
+        546.42,
+        522.6
+      ],
+      "image_path": "papers/paper-52b3e65f07f0ead5/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 4",
+      "page": 10,
+      "caption_original": "Fig. 4 Thermal sensing performance and mechanism of the FDST. a Transfer characteristics measured under different temperatures. b Dynamic drain-current response under sequential temperature steps. c Transient drain-current response to a single-step thermal pulse. d Cycling stability under repeated temperature switching; insets show representative cycles. e Schematic illustration of thermally activated surface processes and capacitive coupling between ZnO and the IGZO channel. f Radar comparison of thermal sensing metrics among representative flexible temperature sensors. g FEA-simulated temperature-dependent potential distribution in the ZnO/IGZO stack",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Transfer characteristics measured under different temperatures",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Dynamic drain-current response under sequential temperature steps",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "c",
+          "original": "Transient drain-current response to a single-step thermal pulse",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "d",
+          "original": "Cycling stability under repeated temperature switching; insets show representative cycles",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Schematic illustration of thermally activated surface processes and capacitive coupling between ZnO and the IGZO channel",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "f",
+          "original": "Radar comparison of thermal sensing metrics among representative flexible temperature sensors",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "g",
+          "original": "FEA-simulated temperature-dependent potential distribution in the ZnO/IGZO stack",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 968,
+      "image_height": 871,
+      "crop_confidence": "high",
+      "bbox": [
+        55.94,
+        80.0,
+        539.34,
+        515.28
+      ],
+      "image_path": "papers/paper-52b3e65f07f0ead5/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 5",
+      "page": 13,
+      "caption_original": "Fig. 5 Evaluation and implementation of regression models for decoupled light intensity and temperature sensing. a Schematic comparison of regression algorithms, including LR, PR, SVR, XGBoost, and MLP. b R2 for light intensity and temperature prediction across models. c MAE for light intensity and temperature prediction across models. d Architecture of the MLP. e Training loss as a function of epoch for the MLP. f Evolution of R2 during MLP training. g Parity plot of predicted versus true light intensity using the MLP. h Parity plot of predicted versus true temperature using the MLP. i Residual distributions for MLP-based light intensity and temperature predictions",
+      "caption_zh": "Fig. 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic comparison of regression algorithms, including LR, PR, SVR, XGBoost, and MLP",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "R2 for light intensity and temperature prediction across models",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        },
+        {
+          "label": "c",
+          "original": "MAE for light intensity and temperature prediction across models",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        },
+        {
+          "label": "d",
+          "original": "Architecture of the MLP",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "e",
+          "original": "Training loss as a function of epoch for the MLP",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "Evolution of R2 during MLP training",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "g",
+          "original": "Parity plot of predicted versus true light intensity using the MLP",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "h",
+          "original": "Parity plot of predicted versus true temperature using the MLP",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "Residual distributions for MLP-based light intensity and temperature predictions",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 996,
+      "image_height": 1036,
+      "crop_confidence": "high",
+      "bbox": [
+        48.86,
+        80.0,
+        546.42,
+        597.96
+      ],
+      "image_path": "papers/paper-52b3e65f07f0ead5/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Fig. 6",
+      "page": 14,
+      "caption_original": "Fig. 6 Design, integration, and application of the WDMS. a Photograph and system block diagram of the WDMS. b–d Real-world outdoor demonstrations of the WDMS under different scenarios: b direct sunlight, c shaded conditions, and d combined photothermal stimulation, benchmarked against commercial sensor references. e Time-resolved light intensity and temperature during shadow–recovery and heating– removal cycles",
+      "caption_zh": "Fig. 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Photograph and system block diagram of the WDMS",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b-d",
+          "original": "Real-world outdoor demonstrations of the WDMS under different scenarios: b direct sunlight, c shaded conditions, and d combined photothermal stimulation, benchmarked against commercial sensor references",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Time-resolved light intensity and temperature during shadow–recovery and heating– removal cycles",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 741,
+      "image_height": 769,
+      "crop_confidence": "high",
+      "bbox": [
+        112.64,
+        80.0,
+        482.64,
+        464.4
+      ],
+      "image_path": "papers/paper-52b3e65f07f0ead5/figures/figure-06.png"
+    }
+  ],
+  "original_pdf": "papers/paper-52b3e65f07f0ead5/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-07-22/deep-reads/paper-52b3e65f07f0ead5/paper.md",
+  "source_map": "research-memory/literature/2026/2026-07-22/deep-reads/paper-52b3e65f07f0ead5/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}

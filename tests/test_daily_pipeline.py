@@ -268,6 +268,66 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertFalse(paper["strongly_related"])
         self.assertEqual(paper["innovation_suggestions"], [])
 
+    def test_unicode_hyphen_eskin_keeps_tactile_category(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Printable E‐Skin for wireless human-machine interaction",
+                "abstract": "A flexible electronic skin measures pressure for wearable control.",
+                "venue": "Advanced Functional Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-functional-materials"],
+            },
+            date.today(),
+        )
+        self.assertEqual(paper["primary_category"], "电子皮肤与触觉")
+
+    def test_shear_thinning_eskin_does_not_trigger_directional_idea(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Printable E-Skin Hydrogel for Wound Monitoring",
+                "abstract": "A flexible electronic skin uses a shear-thinning ink and measures compression.",
+                "venue": "Advanced Functional Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-functional-materials"],
+            },
+            date.today(),
+        )
+        self.assertFalse(paper["strongly_related"])
+        self.assertEqual(paper["innovation_suggestions"], [])
+
+    def test_cross_modal_decoupling_gets_specific_non_directional_idea(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Flexible Dual-Modal Sensor for Decoupled Temperature and Pressure Sensing",
+                "abstract": "A flexible pressure sensor uses separated electrodes to decouple temperature and pressure.",
+                "venue": "Advanced Functional Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-functional-materials"],
+            },
+            date.today(),
+        )
+        self.assertTrue(paper["strongly_related"])
+        self.assertTrue(any("跨模态解耦" in item for item in paper["innovation_suggestions"]))
+        self.assertFalse(any("PSD/SNR" in item for item in paper["innovation_suggestions"]))
+
+    def test_generic_flexible_neuromorphic_photodetector_is_not_strong(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Flexible Photodetector with Neuromorphic Perception",
+                "abstract": "A soft ionic gel sensor detects light and emulates synaptic plasticity.",
+                "venue": "Small",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-small"],
+            },
+            date.today(),
+        )
+        self.assertFalse(paper["strongly_related"])
+        self.assertEqual(paper["innovation_suggestions"], [])
+
     def test_targeted_afm_pressure_sensor_enters_watch_queue(self) -> None:
         record = {
             "title": "Flexible Pressure Sensor for Biological Signal Acquisition",

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -167,6 +168,44 @@ class DataContractTests(unittest.TestCase):
         self.assertIn("无标记的视觉触觉传感器", plain)
         self.assertNotIn("制备步骤", plain)
         self.assertNotIn("逐图", plain)
+
+    def test_notification_groups_categories_and_prioritizes_strong_matches(self) -> None:
+        papers = [
+            {
+                "id": "robot-related",
+                "title": "Robot related",
+                "primary_category": "软体机器人与人机交互",
+                "strongly_related": False,
+                "relevance_score": 90,
+            },
+            {
+                "id": "tactile-related",
+                "title": "Tactile related",
+                "primary_category": "电子皮肤与触觉",
+                "strongly_related": False,
+                "relevance_score": 95,
+            },
+            {
+                "id": "robot-strong",
+                "title": "Robot strong",
+                "primary_category": "软体机器人与人机交互",
+                "strongly_related": True,
+                "relevance_score": 60,
+            },
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            day = Path(directory) / "2026-07-22"
+            summaries = day / "summaries"
+            summaries.mkdir(parents=True)
+            (summaries / "papers.json").write_text(
+                json.dumps({"papers": papers}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            _, plain, _ = build_message(day)
+
+        self.assertEqual(plain.count("【软体机器人与人机交互】"), 1)
+        self.assertLess(plain.index("【电子皮肤与触觉】"), plain.index("【软体机器人与人机交互】"))
+        self.assertLess(plain.index("Robot strong"), plain.index("Robot related"))
 
 
 if __name__ == "__main__":

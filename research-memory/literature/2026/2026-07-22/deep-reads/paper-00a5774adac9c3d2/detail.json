@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "paper-00a5774adac9c3d2",
+  "title": "A Structurally Robust Framework for Intelligent Graphene Thermometry via Few‐Shot Transfer Learning and Algorithm‐Hardware Co‐Design",
+  "authors": [
+    "Jun Yang",
+    "Wenchao Luo",
+    "Jun Lu",
+    "Yueran Ding",
+    "Xubing Li",
+    "Zirui Tian",
+    "Qingrou Liang",
+    "Hao Sun",
+    "Yihui Tao",
+    "Yulong Chen",
+    "Yuan Jia"
+  ],
+  "venue": "Small",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "软体机器人与人机交互",
+    "柔性材料与器件"
+  ],
+  "strongly_related": true,
+  "date": "2026-07-06",
+  "doi": "10.1002/smll.74380",
+  "source_url": "https://doi.org/10.1002/smll.74380",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-07-21T18:21:02.371266+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT While ultrathin graphene sensors hold promise for flexible electronics, their applicability faces a challenging arising from the unavoidable nanoscale stochasticity and structural variability of compliant substrates. Features like intrinsic grain boundaries and microscopic wrinkles inevitably create pronounced device‐to‐device heterogeneity, rendering traditional batch calibration unreliable for high‐precision applications. Rather than eliminating these inherent physical imperfections, we introduce a variability‐resilient sensing framework built on an algorithm‐hardware co‐design. By employing a few‐shot transfer learning architecture with a frozen‐backbone neural network, our system effectively learns the universal physics of graphene carrier scattering from a source array and can rapidly adapt to the unique electrical footprint of new, uncalibrated devices using less than 1% of conventional calibration data ( R 2 > 0.99). This framework not only enables high‐precision graphene‐based flexible thermometry for the first time (±0.2°C), but also supports real‐time temperature inference across wide‐range robotic perception in harsh environments up to 200°C. Furthermore, we demonstrate that graphene's high intrinsic sensitivity remains functionally robust despite structural discrepancies, as a 1D convolutional neural network decodes complex physiological waveforms directly from raw signals with 94.95% accuracy. Collectively, this sensing‐as‐inference paradigm transforms graphene into a viable, calibration‐efficient material for intelligent wearable thermometry.",
+    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：1%、94.95%。"
+  },
+  "innovation_points": [
+    "ABSTRACT While ultrathin graphene sensors hold promise for flexible electronics, their applicability faces a challenging arising from the unavoidable nanoscale stochasticity and structural variability of compliant substrates.",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "inspirations": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-07-22/deep-reads/paper-00a5774adac9c3d2/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

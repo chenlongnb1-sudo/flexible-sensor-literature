@@ -1,0 +1,2705 @@
+{
+  "paper": {
+    "title": "Ion Compensation-Assisted Photolithography Enables High-Resolution Electrolytes for Neuromorphic Transistors",
+    "venue": "Nano-Micro Letters",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-07-22/papers/paper-8fa2997604ff0af3.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": "e-ISSN 2150-5551 CN 31-2103/TB",
+      "translation": "",
+      "bbox": [
+        480.03,
+        34.78,
+        544.25,
+        57.19
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4",
+      "translation": "",
+      "bbox": [
+        399.74,
+        73.83,
+        542.29,
+        85.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "ARTICLE",
+      "translation": "",
+      "bbox": [
+        55.28,
+        68.32,
+        116.56,
+        89.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "Ion Compensation‑Assisted Photolithography Enables High‑Resolution Electrolytes for Neuromorphic Transistors",
+      "translation": "",
+      "bbox": [
+        182.83,
+        103.47,
+        496.74,
+        167.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "Cite as Nano-Micro Lett. (2026) 18:434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        143.46,
+        116.58,
+        176.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "Wenjing Zhang1, Xiaoci Liang1, Sixing Chen1, Xiuquan Ma4, Chen Chen3 *, Songjia Han2 *, Chuan Liu1 *",
+      "translation": "",
+      "bbox": [
+        182.83,
+        183.19,
+        494.74,
+        213.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "Received: 13 March 2026 Accepted: 20 June 2026 © The Author(s) 2026",
+      "translation": "",
+      "bbox": [
+        51.02,
+        186.87,
+        135.45,
+        217.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "HIGHLIGHTS",
+      "translation": "",
+      "bbox": [
+        51.02,
+        239.75,
+        123.62,
+        257.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "• Ion compensation–assisted photolithography (ICAP) combines UV-triggered dual crosslinking with a post-patterning ion replenish-",
+      "translation": "",
+      "bbox": [
+        53.86,
+        269.64,
+        541.4,
+        284.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "ment step, enabling patterned electrolytes with a spatial resolution of 2 μm, a capacitance of 15.6 μF cm−2.",
+      "translation": "",
+      "bbox": [
+        67.04,
+        283.81,
+        454.09,
+        298.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "• ICAP-patterned electrolytes provide array-level ionic isolation by spatially confining ion transport, suppressing lateral ionic leakage",
+      "translation": "",
+      "bbox": [
+        53.86,
+        298.64,
+        543.69,
+        313.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 1,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": "and inter-device crosstalk in organic electrochemical transistor arrays.",
+      "translation": "",
+      "bbox": [
+        67.04,
+        313.65,
+        320.71,
+        327.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 1,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "• ICAP process is broadly compatible with p-type PEDOT:PSS, n-type benzimidazo-benzophenanthroline, and inorganic WO3, estab-",
+      "translation": "",
+      "bbox": [
+        53.86,
+        327.64,
+        541.41,
+        343.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 1,
+      "type": "paragraph",
+      "order": 14,
+      "original_text": "lishing a versatile electrolyte-patterning strategy for high-density electrolyte-gated devices.",
+      "translation": "",
+      "bbox": [
+        67.04,
+        342.65,
+        397.39,
+        356.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 1,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "ABSTRACT High-density organic electrochemical transistor (OECT) arrays are essential for neuromorphic computing and bioelectronic interfaces, but progress has been limited by the low resolution of electrolyte patterning. Although conventional photolithography offers high feature resolution, it involves a fundamental trade-off among spatial resolution, ionic capacitance, and stability in the electrolyte. Here we report an ion compensationassisted photolithography (ICAP) strategy that yields electrolyte micro-patterns combining high precision, high capacitance and high stability. A molecularly engineered electrolyte forms, under UV exposure, a physicochemical dual cross-linked network with strong solvent resistance and hydrophobicity, which suppresses swelling during both aqueous development and the subsequent ioncompensation step, preserving pattern fidelity. Ion compensation then restores and enhances the mobile-ion content, increasing areal capacitance. The resulting electrolytes achieve a record 2 μm resolution, 15.6 μF cm−2 capacitance, and strong thermal stability from − 50 to 200 °C. Integrated into OECTs, the ICAP-patterned electrolytes suppress crosstalk by 97.6% and boost on/off ratios by 325%, reducing parasitic coupling by more than 40 times compared to unpatterned arrays. The method is compatible with p-type and n-type organic semiconductors and inorganic oxides, providing a versatile route to scalable neuromorphic circuits and advanced bioelectronics.",
+      "translation": "",
+      "bbox": [
+        51.0,
+        375.37,
+        546.5,
+        617.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 1,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": "KEYWORDS Organic electrochemical transistors; Photolithography; Electrolyte; Synaptic transistor",
+      "translation": "",
+      "bbox": [
+        51.0,
+        624.45,
+        418.46,
+        638.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 1,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "* Chen Chen, angela_chen@nudt.edu.cn; Songjia Han, hansongjia@scau.edu.cn; Chuan Liu, liuchuan5@mail.sysu.edu.cn 1 State Key Laboratory of Optoelectronic Materials and Technologies and Guangdong Province Key Laboratory of Display Material and Technology, School of Electronics and Information Technology, Sun Yat-Sen University, Guangzhou 510275, People’s Republic of China 2 College of Artificial Intelligence and Low‑Altitude Technology, South China Agricultural University, Guangzhou 510642, People’s Republic of China 3 Science and Technology on Advanced Ceramic Fibers and Composites Laboratory, College of Aerospace Science and Engineering, National University of Defense Technology, Changsha 410073, People’s Republic of China 4 Guangdong Provincial Key Laboratory of Digital Manufacturing Equipment, Guangdong HUST Industrial Technology Research Institute, Dongguan 523000, People’s Republic of China",
+      "translation": "",
+      "bbox": [
+        50.42,
+        644.09,
+        544.27,
+        726.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 1,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": "Vol.:(0123456789)",
+      "translation": "",
+      "bbox": [
+        482.6,
+        736.8,
+        543.55,
+        748.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 2,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 2 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 2,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": "1 Introduction",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.34,
+        128.22,
+        100.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 2,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "Moreover, beyond the need to simultaneously achieve high patterning resolution and high capacitance, temperature stability also represents a critical requirement for practical device operation. Conventional hydrogel-based electrolytes offer excellent ionic transport and high capacitance but suffer from rapid water loss at small scales, leading to structural instability and device degradation. In contrast, polyelectrolytes, though more stable, exhibit slow ion mobility, resulting in hysteretic behavior and limited response speed [16, 21]. Thus, the trade-off among high resolution, high capacitance, and high stability arises not only from intrinsic material limitations, but more fundamentally from the incompatibility between traditional patterning processes and the ionic functionality required for electrolyte-gated operation. To date, no electrolyte has been reported that simultaneously satisfies the requirements for both high capacitance and stability under miniaturized conditions [22, 23]. Here, we introduce an ion compensation-assisted photolithography (ICAP) strategy to address the long-standing trade-off among patterning resolution, ionic capacitance, and operational stability in miniaturized electrolytes. The key conceptual advance of ICAP is that it decouples two requirements that are usually incompatible in conventional electrolyte patterning: precise structural definition during photolithography and high mobile-ion content for effective electrolyte gating. To implement this concept, we developed a photolithographic electrolyte (PLE) that forms a solvent-resistant physicochemical dual cross-linked network upon UV irradiation. This network enables accurate photopatterning with minimal swelling, while the subsequent ion-compensation step replenishes mobile ions after lithographic fixation, improving the capacitance of the electrolyte without compromising structural integrity. Using ICAP, we achieve patterned electrolytes with a spatial resolution of 2 μm, a large capacitance of 15.6 μF cm−2, and exceptional stability across an ultrawide temperature range (− 50–200 °C). When integrated into OECTs, the well-defined ICAP-electrolytes boost the on/ off ratio by 325% and suppress inter-device crosstalk by 97.6% compared to unpatterned counterparts. The ICAPpatterned electrolyte is broadly compatible with p-type and n-type organic semiconductors and inorganic oxide semiconductors, underscoring its versatility across diverse material systems. The ICAP strategy provides a scalable platform for high-performance electrolyte-gated transistors",
+      "translation": "",
+      "bbox": [
+        306.14,
+        82.27,
+        546.94,
+        713.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 2,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": "Organic electrochemical transistors (OECTs) have emerged as a distinctive class of transistors that combine low-voltage operation, high transconductance, flexibility, and biocompatibility [1]. These unique advantages make OECTs highly promising for applications ranging from neuromorphic computing to bioelectronic interfaces and flexible integrated circuits [2–4]. Conductivity modulation is achieved through the electrolyte-to-channel ion injection, which dynamically alters the doping state of the semiconductor [5, 6]. The very property that enables OECTs, their dependence on mobile ionic electrolytes, also introduces significant challenges for miniaturization and large-scale integration. The presence of unpatterned electrolyte in densely packed arrays can degrade the on/off ratio, increase power consumption, and induce severe inter-device crosstalk due to parasitic ionic currents and capacitive coupling [7]. To fully exploit their properties in large-scale integrated circuits, OECT arrays need to achieve high integration density while maintaining robust electrical isolation. However, recent research has predominantly focused on single-OECT architectures, and the inability to precisely pattern electrolytes has critically limited the development of scalable, integrated circuits based on highdensity OECT arrays [8, 9]. Multiple strategies have been explored to address this issue. Printing-based techniques such as screen printing, inkjet printing, self-assembly, and transfer printing allow straightforward electrolyte patterning, yet they suffer from limited resolution, low yield, and poor throughput [10–14]. Standard mask-based photolithography has recently enabled tens-of-micrometer-scale patterned electrolyte features by using photo-assisted crosslinking to form an insoluble resistlike network upon UV exposure [15–17]. However, the continued shrinking of electrolyte dimensions imposes stringent requirements on mobile-ion density, because micropatterned electrolytes must retain a high capacitance to drive OECT operation. In conventional photolithographic approaches, the highly cross-linked networks needed to preserve high-resolution patterns often restrict mobile-ion content and transport, thereby reducing ionic conductivity and capacitance. While increasing the ion concentration in the precursor formulation can improve capacitance, it generally compromises the mechanical integrity of the patterned electrolyte and makes precise lithographic definition more challenging [18–20].",
+      "translation": "",
+      "bbox": [
+        51.02,
+        111.77,
+        291.85,
+        714.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 2,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 3,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 3 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 3,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": "and neuromorphic electronics, providing a viable route to high-density, wafer-scale hybrid integrated OECT-based electronics.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.39,
+        291.74,
+        124.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 3,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": "2 \u0007Experimental Section",
+      "translation": "",
+      "bbox": [
+        51.02,
+        152.46,
+        173.54,
+        171.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 3,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "2.1 \u0007Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        182.57,
+        109.67,
+        198.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 3,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "this treatment only removes the water, preserving EC within the polymer matrix to function as the plasticizing phase. Subsequent cooling to room temperature solidified the EC, yielding a solid film. The samples were then exposed to ultraviolet light (SEN PL17-110) through a quartz mask for 5 min, followed by development in water to yield patterned structures. The patterned electrolytes were immersed in LiCl solutions (10, 30, and 50 mg mL−1) for 4 h to enhance their capacitance. The residual LiCl solution was removed by blowing with a N2 gun.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.39,
+        546.77,
+        223.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 3,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "2.2.3 \u0007Fabrication of P‑type OECTs",
+      "translation": "",
+      "bbox": [
+        306.14,
+        244.65,
+        450.6,
+        258.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 3,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": "Hydroxypropyl cellulose (HPC), lithium chloride (LiCl, ≥ 99.8%), ethylene carbonate (EC), epichlorohydrin (ECH), and tungsten hexachloride (WCl6) were obtained from Aladdin. benzimidazo-benzophenanthroline (BBL), methanesulfonic acid (MSA), and Irgacure 754 were sourced from Sigma-Aldrich. Poly(3,4-ethylenedioxythiophene)- poly(styrenesulfonate) (PEDOT:PSS) was acquired from Heraeus Germany. Dimethyl sulfoxide (DMSO) was purchased from Macklin Biochemical Co., Ltd., Methylene blue was purchased from Tokyo Chemical Industry.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        210.89,
+        291.76,
+        351.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 3,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "2.2 \u0007Fabrication of ICAP‑Patterned Electrolytes and OECTs",
+      "translation": "",
+      "bbox": [
+        51.02,
+        369.57,
+        256.0,
+        399.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 3,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "The PET substrate was subjected to plasma treatment to enhance surface hydrophilicity. Subsequently, source, drain, and gate electrodes (5 nm Cr, 50 nm Au) were deposited via thermal evaporation, with channel dimensions defined as 50 μm in length and 1000 μm in width. PEDOT:PSS doped with 10 wt% DMSO was printed using a Sonoplot Microplotter II system. The printed film was then annealed at 100 °C for 15 min to remove residual solvents. The average thickness of the PEDOT:PSS was 347 nm. Finally, the PLE layer was patterned via ICAP process.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        272.46,
+        546.82,
+        413.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 3,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "2.2.1 \u0007PLE Precursor Preparation",
+      "translation": "",
+      "bbox": [
+        51.02,
+        412.08,
+        190.03,
+        425.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 3,
+      "type": "paragraph",
+      "order": 34,
+      "original_text": "2.2.4 \u0007Fabrication of N‑type OECTs",
+      "translation": "",
+      "bbox": [
+        306.14,
+        431.65,
+        451.58,
+        445.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 3,
+      "type": "paragraph",
+      "order": 35,
+      "original_text": "First, HPC (125 mg mL−1) and LiCl (5 mg mL−1) were dissolved in an aqueous mixture of EC and water (10:90, w/w). The mixture was stirred at 90 °C for 2 h and then cooled to room temperature to yield the HPC/EC solution. Separately, Irgacure 754 was diluted with an equal volume of ethanol. Subsequently, the HPC/EC solution, Irgacure 754 solution, and ECH were mixed in a volume ratio of 2:7:1. The mixture was vortex-mixed for 30 s to obtain a homogeneous, optically transparent precursor solution.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        438.96,
+        291.76,
+        566.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 3,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "2.2.2 \u0007Standard Mask‑Based UV Photolithography",
+      "translation": "",
+      "bbox": [
+        51.02,
+        589.15,
+        258.55,
+        602.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 3,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "The glass substrate was sequentially cleaned by ultrasonication in isopropanol, ethanol, and deionized water for 10 min each, followed by nitrogen gas drying. Source, drain, and gate electrodes were then deposited via thermal evaporation, with channel dimensions defined as 50 μm in length and 1000 μm in width. A hydrophobic organic solution was spincoated onto the substrate at 2000 rpm for 30 s, and annealed at 100 °C for 10 min to remove residual solvents, forming a hydrophobic film. Thereafter, the substrate, covered with a shadow mask, was then treated with 70 W oxygen plasma etching for 300 s. BBL solution (5 mg mL−1 in MSA) was spin-coated at 2000 rpm for 30 s. The sample was immersed in DI water for 4 h to remove the MSA, followed by annealing on a hot plate at 140 °C for 30 min. A uniform BBL film with an average thickness of 71 nm was obtained. Finally, the PLE layer was patterned via ICAP process to yield the BBL-OECT.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        459.46,
+        546.86,
+        698.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 3,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "Polyethylene terephthalate (PET) or silicon wafer substrates were treated with vacuum plasma (SUNJUNE PLASMA PT-5S) to enhance surface hydrophilicity. Then, the PLE precursor was spin-coated onto the substrate at 2000 rpm for 30 s. The film was then subjected to a two-stage annealing (125 °C for 5 min and 85 °C for 40 min). Given the higher volatility of water compared to the high-boiling-point EC,",
+      "translation": "",
+      "bbox": [
+        51.02,
+        616.96,
+        291.71,
+        716.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 4,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 4 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 4,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "2.2.5 \u0007Fabrication of WO3‑OECTs",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.65,
+        190.68,
+        96.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 4,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "second pulses, respectively. The PPF index as a function of inter-pulse interval follows a double-exponential decay:",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.39,
+        546.9,
+        110.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 4,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": ")",
+      "translation": "",
+      "bbox": [
+        412.22,
+        110.84,
+        419.72,
+        120.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 4,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "(",
+      "translation": "",
+      "bbox": [
+        459.26,
+        110.84,
+        466.76,
+        120.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 4,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": ")",
+      "translation": "",
+      "bbox": [
+        486.18,
+        110.84,
+        493.69,
+        120.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 4,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "(",
+      "translation": "",
+      "bbox": [
+        385.29,
+        110.84,
+        392.8,
+        120.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 4,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "−Δt",
+      "translation": "",
+      "bbox": [
+        466.76,
+        119.53,
+        484.81,
+        135.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 4,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "−Δt",
+      "translation": "",
+      "bbox": [
+        392.79,
+        119.53,
+        410.84,
+        135.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 4,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": "+ C2 exp",
+      "translation": "",
+      "bbox": [
+        421.94,
+        125.32,
+        457.59,
+        137.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 4,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "(1) PPF = C0 + C1 exp",
+      "translation": "",
+      "bbox": [
+        305.98,
+        123.99,
+        544.25,
+        139.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 4,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "휏1",
+      "translation": "",
+      "bbox": [
+        401.72,
+        132.13,
+        409.64,
+        144.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 4,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "휏2",
+      "translation": "",
+      "bbox": [
+        475.69,
+        132.13,
+        483.61,
+        144.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 4,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "where C1 and C2 denote the slow and rapid phases, respectively. The pulse interval is denoted as Δt,while휏1 and 휏2 represent the PPF relaxation times for the slow and rapid phases, respectively.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        151.34,
+        546.75,
+        203.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 4,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "2.4.2 \u0007Dots Per Inch (dpi) Measurement",
+      "translation": "",
+      "bbox": [
+        306.14,
+        222.03,
+        469.34,
+        235.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 4,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "The WO3-OECTs were fabricated on Si/SiO2 wafers. The substrate cleaning procedure was identical to that described for glass substrates. Gate, source, and drain electrodes (5 nm Cr, 50 nm Au) were deposited onto the substrate via thermal evaporation. 0.1 mol L−1 WCl6 precursor solution was prepared and spin-coated at 4000 rpm for 30 s. Then, the sample was annealed in air at 200 °C for 10 min, followed by 400 °C for 1 h, yielding a WO3 film with an average thickness of 28 nm. The WO3 channel was patterned by dry etching using SF6 and O2. The PLE was subsequently deposited and patterned to produce the WO3-OECT.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        109.46,
+        291.81,
+        265.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 4,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "2.3 \u0007Characterization",
+      "translation": "",
+      "bbox": [
+        51.03,
+        282.14,
+        141.3,
+        298.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 4,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": "The dpi of the patterned electrolyte is calculated based on the number of electrolyte features (e.g., dots, lines) deposited within a unit length of the substrate. The formula is given by:",
+      "translation": "",
+      "bbox": [
+        306.14,
+        249.84,
+        546.9,
+        306.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 4,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "(2) dpi = N∕L",
+      "translation": "",
+      "bbox": [
+        306.0,
+        312.74,
+        544.25,
+        327.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 4,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "where N denotes the total number of electrolytes counted along a specified direction and L represents the corresponding physical length in inches.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        332.39,
+        546.8,
+        372.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 4,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "2.4.3 \u0007TCAD Simulation",
+      "translation": "",
+      "bbox": [
+        306.14,
+        390.58,
+        405.55,
+        404.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 4,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "Two-dimensional TCAD simulations were performed to compare OECT structures with unpatterned and patterned electrolyte configurations. The simulated model consisted of a semiconductor channel, source/drain electrodes, a gate electrode, and an electrolyte region. Ion transport in the electrolyte was described by the Nernst–Planck drift–diffusion equation coupled with the Poisson equation:",
+      "translation": "",
+      "bbox": [
+        306.14,
+        418.39,
+        546.86,
+        531.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 4,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "(3) 휕ci",
+      "translation": "",
+      "bbox": [
+        306.14,
+        538.01,
+        544.25,
+        558.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 4,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "휕t = −∇⋅Ji",
+      "translation": "",
+      "bbox": [
+        308.1,
+        543.24,
+        359.59,
+        562.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 4,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "(4) Ji = −Di∇ci −zi휇iqci∇휙",
+      "translation": "",
+      "bbox": [
+        306.2,
+        577.24,
+        544.25,
+        592.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 4,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": "The microstructure of the patterned electrolyte was examined using a polarization microscope (Leica DM2700P). The infrared spectra of the synthesized materials were analyzed by Fourier-transform infrared spectroscopy (FTIR, Thermo Fisher Nicolet iS5). X-ray photoelectron spectroscopy (XPS) measurements were carried out by Thermo Scientific ESCALAB Xi + . The structure and elemental composition of the patterned electrolyte were analyzed using a scanning electron microscope (SEM, Carl Zeiss, SUPRA 60). The physical properties of the materials were evaluated using differential scanning calorimetry (DSC, Netzsch 204 F1) and thermogravimetric analysis (TGA, Netzsch TG209F1 Libra). The electrical properties of the OECTs were assessed with a Semiconductor Parameter Analyzer (PDA FS Pro). The thermal endurance of the devices was evaluated by electrical characterization using a temperature-controlled hot plate in combination with a Semiconductor Parameter Analyzer [24]. Electrochemical properties were investigated using an electrochemical workstation (CHI660E, Shanghai Chenhua) with an applied alternating current voltage of 5 mV and a scanning frequency range of 105 to 1 Hz. Contact angles of the electrolytes were quantitatively analyzed using a contact angle goniometer (Data Physics OCA 15 EC).",
+      "translation": "",
+      "bbox": [
+        51.02,
+        310.46,
+        291.76,
+        619.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 4,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "(5) ∇⋅(휀∇휙) = −휌",
+      "translation": "",
+      "bbox": [
+        305.51,
+        603.94,
+        544.25,
+        620.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 4,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "2.4 \u0007Computational Details",
+      "translation": "",
+      "bbox": [
+        51.02,
+        637.14,
+        164.84,
+        653.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 4,
+      "type": "paragraph",
+      "order": 67,
+      "original_text": "2.4.1 \u0007PPF Measurement",
+      "translation": "",
+      "bbox": [
+        51.02,
+        665.65,
+        153.91,
+        679.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 4,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "where ci , Di , 휇i , and zi are the concentration, diffusion coefficient, mobility, and charge number of mobile ion species i , respectively; 휙 is the electrostatic potential, q is the elementary charge, and 휀 is the permittivity. The electronic transport in the semiconductor was described using the semiconductor drift–diffusion model. The detail material and structure parameters are summarized.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        624.34,
+        546.75,
+        714.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 4,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "Applying two sequential voltage pulses, PPF was defined as A2/A1, where A1 and A2 are the peak IDS of the first and",
+      "translation": "",
+      "bbox": [
+        51.02,
+        693.46,
+        291.64,
+        723.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 4,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 5,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 5 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 5,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "3 \u0007Results and Discussion",
+      "translation": "",
+      "bbox": [
+        51.02,
+        80.45,
+        179.52,
+        99.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 5,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "3.1 \u0007Resolving the Resolution–Capacitance Trade‑off via ICAP Electrolytes",
+      "translation": "",
+      "bbox": [
+        51.02,
+        110.56,
+        276.39,
+        140.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 5,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": "via nucleophilic substitution, thereby establishing a dual physicochemical network with enhanced solvent resistance and hydrophobicity [26]. This robust network allows the patterned films to be processed entirely in water, enabling high-resolution patterning without the need for additional photoresists or dry etching steps. The patterned electrolyte can then be immersed in a concentrated LiCl solution for enhanced electrical performance, achieved through ion compensation. Thus, the combined effect of dual crosslinking and ion-compensation ensures structural fidelity while maintaining high electrochemical performance, which is essential for scaling OECT arrays. This aqueous development, resistfree approach also avoids damage to active semiconductors, ensuring broad material compatibility across both organic and inorganic systems, such as PEDOT:PSS, BBL, and WO3 (Fig. 1b). SEM images and optical microscopy (OM) images reveal that the patterned PLE supports minimum linewidths of 2 μm (Figs. 2a–c and S1). Demonstrating its scalability, we achieved wafer-level fabrication of a uniform electrolyte array at a high density of 508 dpi (Fig. 2d). These results position our technique among the highest resolution electrolyte patterning methods reported to date (Fig. 2e) [16, 17, 27–44]. Figure S2 shows an array-level demonstration of ICAP-patterned OECTs with various channel lengths, highlighting the importance of micrometer-scale electrolyte",
+      "translation": "",
+      "bbox": [
+        306.12,
+        81.39,
+        546.94,
+        446.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 5,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "A persistent challenge in integrating OECTs into highdensity circuits is the long-standing trade-off between patterning resolution, ionic capacitance, and stability of the electrolytes, which fundamentally constrains device miniaturization and performance. To overcome this limitation, we developed an ion compensation-assisted photolithography (ICAP) strategy, which integrates UV-triggered dual physicochemical crosslinking with a post-patterning ion replenishment step. In Fig. 1a, the thick blue lines denote the HPC chains, which serve as the backbone of the electrolyte matrix. Upon UV irradiation, radicals generated from Irgacure 754 become covalently grafted onto the HPC chains, introducing hydrophobic moieties into the polymer structure. These hydrophobic moieties subsequently induce reversible non-covalent associations within the polymer matrix, including hydrophobic interactions and chain entanglement, forming a hydrophobically associated physical crosslinking network [25]. This physical crosslinking network enhances the swelling resistance, structural stability, and pattern fidelity of the electrolyte. Concurrently, ECH reacts with the hydroxyl groups of HPC, forming chemical crosslinks",
+      "translation": "",
+      "bbox": [
+        51.02,
+        152.88,
+        291.76,
+        447.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 5,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "Fig. 1 Fabrication and basic characteristics of ICAP-patterned photolithographic electrolytes (PLEs). a Schematic of ICAP-patterned electrolyte fabrication. b Compatibility of aqueous development with organic and inorganic semiconductors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        703.68,
+        546.4,
+        727.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 6,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 6 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 6,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "patterning for future highly integrated OECT arrays. By defining well-confined electrolyte regions, such patterning can suppress lateral ionic diffusion, parasitic ionic currents, and capacitive coupling between adjacent devices, thus enabling isolated electrolyte islands and narrow inter-device isolation gaps. These features are essential for reducing crosstalk in dense arrays. Electrochemical impedance spectroscopy (EIS) confirms that the patterned PLE achieves a capacitance of 15.6 μF cm−2 (Fig. S3), significantly surpassing the reported solid-state electrolytes by 3–15-fold improvement (Fig. 2f)",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.39,
+        291.78,
+        236.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 6,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": "[17, 45–52]. To benchmark the ICAP-fabricated electrolyte against reported state-of-the-art electrolytes, key parameters including minimum feature size, capacitance, and ionic conductivity are summarized in Table S1. The ICAP-fabricated electrolyte shows a combined improvement in patterning resolution, capacitance, and ionic conductivity, highlighting the balanced and enhanced performance enabled by the ICAP method. Moreover, the PLE maintains stable capacitance across an ultrawide thermal window from − 50 to 200 °C (Figs. 2g and S4), expanding the operational window by approximately",
+      "translation": "",
+      "bbox": [
+        306.12,
+        81.39,
+        546.89,
+        236.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 6,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "Fig. 2 a SEM images and b OM images showing 2 μm resolution features. c OM images showing complex features. d Photograph of the waferscale fabrication of ICAP-patterned electrolyte array. e Benchmark comparison of electrolyte patterning resolution. f Benchmark comparison of electrolyte patterning capacitance. g Thermal stability (− 50 to 200 °C) of the capacitance. h Summary of multifunctional advantages: high resolution, capacitance, large-scale fabrication capability, compatibility and thermal tolerance",
+      "translation": "",
+      "bbox": [
+        51.02,
+        683.44,
+        546.38,
+        726.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 6,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 7,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 7 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 7,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": "100 °C compared to typical hydrogel electrolytes (~ 167% of their window). This high thermal stability is attributed to the ethylene carbonate (EC)-plasticized matrix. EC’s high boiling point (~ 248 °C) limits solvent loss at elevated temperatures, while the dual cross-linked network retains mechanical integrity. To further evaluate device-level thermal robustness, we measured the transfer characteristics of ICAP electrolyte-based OECTs over a temperature range of 25 to 150 °C (Fig. S5). The OECTs were fabricated with PEDOT:PSS as the semiconductor on flexible PEN substrates. The devices retained gate modulation up to 125 °C, indicating that the ICAP electrolyte can support OECT operation under moderately elevated temperatures. At 150 °C, the transfer characteristics degraded with reduced initial channel current and weakened gate modulation. This degradation suggests that the thermal limit of the present OECT is governed by the full device stack rather than the electrolyte alone. Possible contributing factors include changes at the electrode/electrolyte interface, semiconductor layer, contact region, or bias-induced interfacial electrochemical reactions. Overall, these results demonstrate that ICAP provides a robust and scalable solution for electrolyte patterning and successfully addresses the long-standing trade-off among structural fidelity, electrochemical performance, and stability in photolithographic electrolytes. This combination of high resolution, capacitance, wafer-scale processability, material compatibility and thermal robustness have, to our knowledge, not been demonstrated together previously (Fig. 2h). This capability enables the monolithic integration of OECTs with electrochemical random-access memory (ECRAM), and/or CMOS, making feasible highdensity, wafer-scale hybrid integrated circuits.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.39,
+        291.76,
+        530.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 7,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "3.2 \u0007Mechanistic Insights into Dual Crosslinking and Ion Compensation",
+      "translation": "",
+      "bbox": [
+        51.02,
+        557.48,
+        257.95,
+        587.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 7,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "methyl 2-oxo-2-phenylacetate radicals, which react with the hydroxyl groups of HPC to produce hydrophobic side chains [55, 56]. These side chains enhance in situ chain entanglement and induce physical crosslinking nodes (Fig. S6). At the same time, ECH undergoes nucleophilic substitution with the hydroxyl groups on HPC, initiating epoxide ring opening and forming additional chemical crosslinks [57]. As shown in Figs. 3b and S7, the crosslinked electrolyte exhibits an interconnected porous structure, with pore/free-volume features mainly distributed in the range of approximately 10–20 μm. Since these pore/ free-volume features are much larger than solvated lithium ions, they present minimal resistance to ion migration. Therefore, the interconnected pore/free-volume features provide continuous ion-transport channels, allowing the electrolyte to maintain high ionic conductivity despite the presence of the cross-linked network. Moreover, during the ion-compensation process, the porous structure facilitates the diffusion of ions from the compensation solution into the interior of the gel electrolyte under a concentration gradient, thereby increasing the ion content throughout the electrolyte. Therefore, the microporous structure of the electrolyte enhances its electrochemical performance by preserving efficient ion transport and promoting effective ion compensation. Spectroscopic analyses confirm the occurrence of these reactions. X-ray photoelectron spectroscopy (XPS) (Fig. 3c, d) reveals an enhanced intensity ratio of C–C (284.8 eV) to C–O (286.4 eV), consistent with hydroxyl group consumption via etherification [58]. Similarly, Fourier-transform infrared spectroscopy (FTIR) (Fig. 3e) shows a distinct reduction in the C–Cl stretching band (~ 750 cm−1) and the epoxy vibration (~ 850 cm−1), validating the epoxide ring-opening mechanism [59]. Additional O 1s XPS spectra (Fig. S8) demonstrate the appearance of C=O peaks at 531.5 eV relative to C–O–H at 532.5 eV, supporting the phenylacetate grafting hypothesis [60]. The disappearance of the O–H stretching band at 3340 cm−1 further corroborates hydroxyl substitution along the HPC backbone (Fig. 3e) [61]. The macroscopic film properties further reflect these chemical modifications. The contact angle of the PLE increases markedly from 16.3° to 62° (Fig. S9), indicating reduced surface hydroxyl content and enhanced hydrophobicity. Notably, the combined physical and chemical crosslinking network enhances the structural stability of the electrolyte films and suppresses their swelling during aqueous processing. As shown in Fig. S10, the patterned electrolyte",
+      "translation": "",
+      "bbox": [
+        306.13,
+        81.39,
+        546.95,
+        726.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 7,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "To understand the molecular origin of the exceptional performance of ICAP-patterned electrolytes, we systematically investigated the underlying dual crosslinking chemistry and ion-compensation mechanism (Fig. 3a). The PLE leverages HPC as the structural backbone due to its biocompatibility and mechanical robustness, with EC selected as the solvent owing to its wide electrochemical stability window and high boiling point [53, 54]. Upon UV exposure, Irgacure 754 undergoes photolysis to generate",
+      "translation": "",
+      "bbox": [
+        51.02,
+        599.8,
+        291.73,
+        726.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 8,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 8 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 8,
+      "type": "paragraph",
+      "order": 88,
+      "original_text": "Fig. 3 Mechanistic and spectroscopic evidence of PLE crosslinking and ion compensation. a Schematic of dual crosslinking mechanism: radical grafting via photoinitiator and etherification via epichlorohydrin. b SEM image of microporous structure facilitating ion transport. c, d XPS spectra showing hydroxyl consumption and ether bond formation. e FTIR spectra confirming epoxy ring opening and hydroxyl substitution. f, g EDS mapping and spectra before and after LiCl ion compensation. h Capacitance–frequency curves of PLEs treated with different LiCl concentrations. i Evolution of ionic conductivity during immersion in LiCl and DI water (different concentrations). j Thermogravimetric measurement demonstrating thermal stability up to 200 °C",
+      "translation": "",
+      "bbox": [
+        51.02,
+        666.3,
+        546.38,
+        729.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 8,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 9,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 9 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 9,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "electrolyte, which is crucial for suppressing crosstalk and improving the on/off ratio in transistor arrays.",
+      "translation": "",
+      "bbox": [
+        306.15,
+        81.39,
+        546.84,
+        110.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 9,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "3.3 \u0007Suppression of Leakage and Crosstalk in High‑Density OECT Arrays",
+      "translation": "",
+      "bbox": [
+        306.15,
+        128.07,
+        489.69,
+        158.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 9,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "For practical integration of OECT arrays, suppressing leakage current and minimizing electrical crosstalk between neighboring devices is critical but remains challenging due to uncontrolled ion migration in unpatterned electrolytes. As illustrated in Fig. 4a, unpatterned OECT arrays allow mobile ions to migrate freely across adjacent transistors, which leads to substantial leakage current (IL) and strong inter-device coupling. These parasitic effects limit circuit scalability and result in unpredictable logic behavior. To overcome this limitation, we fabricated OECT arrays using ICAP-patterned electrolytes, which spatially confine ion transport and establish robust electrical isolation between neighboring channels. To clarify the role of electrolyte patterning in suppressing ionic crosstalk, two-dimensional TCAD simulations were performed to compare ion distribution and leakage-current pathways in OECT with continuous and patterned electrolytes (Fig. 4b, see Table S4 for details). For the continuous-electrolyte configuration, the electrolyte was modeled as an unpatterned film covering the channel region and overlapping with the source/drain electrodes. In contrast, for the patterned electrolyte configuration, the electrolyte was confined to the active channel region without direct contact with the source/drain electrodes, and the surrounding gap region was treated as ion-blocking. The simulations show that the continuous electrolyte leads to pronounced lateral ionic diffusion and leakage-current pathways, whereas the ICAP-patterned electrolyte effectively confines mobile ions near the addressed channel and suppresses leakage current. Additionally, as the channel length decreases (Fig. 4c, d), unpatterned devices exhibit sharply rising leakage currents, whereas patterned OECTs maintain consistently low IL values, confirming the isolation effect of the patterned electrolytes. To further verify the impact of leakage current and electrical crosstalk in practical devices, patterned and unpatterned OECT arrays were fabricated with PEDOT:PSS as the channel semiconductor. In unpatterned devices (Fig. 4e), large leakage currents introduce an additional ionic conduction pathway, such that RSD reflects the combined contributions",
+      "translation": "",
+      "bbox": [
+        306.14,
+        170.39,
+        546.92,
+        718.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 9,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "retained clear boundaries and well-defined stripe structures after development and ICAP treatment, with no obvious delamination, peeling, or pattern collapse. The profilometer profiles further confirm that the electrolyte film underwent minor thickness variations throughout the process. In addition, after 24 h of immersion in DI water and subsequent water flushing, the patterned electrolyte remained intact without obvious deformation or pattern loss (Fig. S11). These results indicate that the cross-linked network endows the patterned electrolyte with sufficient structural and interfacial stability to withstand aqueous development and ICAP treatment. During the compensation step, Li+ ions diffuse into the microporous matrix and form stable Li+–EC solvation complexes, effectively improving thermal and electrochemical stability [62]. Energy-dispersive X-ray spectroscopy (EDS) mapping (Figs. 3f and S12) reveals a significant enhancement of the Cl signal both on the electrolyte surface and across the electrolyte cross section after ion compensation. Although Li cannot be directly detected by EDS, the enhanced Cl signal serves as indirect evidence of LiCl incorporation, indicating that the compensation process occurs throughout the electrolyte film rather than being confined to the surface. Consistently, EDS and XPS analyses (Figs. 3g and S13, Tables S2 and S3) show a markedly increased Cl content after compensation, further supporting successful ion incorporation. Electrochemical impedance measurements reveal that immersion of the PLE in deionized (DI) water depletes mobile ions, leading to a marked reduction in capacitance and thus degraded electrochemical performance. In contrast, capacitance and conductivity increase steadily with increasing LiCl concentration (10, 30, and 50 mg mL−1) in the compensation solution and with immersion duration (Fig. 3h, i), indicating progressive ion uptake by the electrolyte. These findings demonstrate that the ICAP strategy not only restores the electrochemical performance of the patterned electrolyte but also enables continuous tuning of its capacitance by adjusting the concentration of the compensation solution. Finally, TGA/DSC were performed on the ion-compensated films (post-LiCl), which retain ≥ 90% mass up to 200 °C; capacitance–temperature measurements were taken on the same film, ensuring a like-for-like comparison (Figs. 3j and S14). In summary, dual crosslinking ensures structural robustness and localized ionic confinement, whereas ion-compensation restores and increases the mobile-ion content of the patterned electrolyte to enhance its electrochemical performance. By integrating these two mechanisms, the ICAP strategy enables a high-precision, high-capacitance patterned",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.39,
+        291.83,
+        726.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 10,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 10 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 10,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "OECTs generate correct logic outputs, reliably switching between logical “0” (Iout < 7.5 mA) and “1” (Iout > 7.5 mA) under input signals (Vin = 1.5 V/ − 0.5 V). These devices also exhibit strong immunity against crosstalk from adjacent inputs. These findings demonstrate that precise ionic confinement in ICAP-patterned electrolytes effectively suppresses leakage and minimizes crosstalk. This dual benefit directly addresses the fundamental limitations of OECT miniaturization, positioning ICAP as a practical route to scalable neuromorphic computing and logic circuits. By eliminating parasitic capacitive pathways while maintaining high ionic capacitance, ICAP provides a robust framework for the next generation of low-power, high-performance OECT electronics.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.39,
+        546.86,
+        278.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 10,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "3.4 \u0007Broad Material Compatibility and Neuromorphic Applications of ICAP Electrolytes",
+      "translation": "",
+      "bbox": [
+        306.14,
+        305.48,
+        537.96,
+        335.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 10,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "of the channel and electrolyte resistance (i.e., Rch and Rion). This results in a non-monotonic RSD–VGS dependence, showing an initial increase followed by a decrease as ionic conduction dominates. By contrast, ICAP-patterned devices effectively suppress IL, ensuring that RSD is governed solely by the semiconductor channel. Consequently, the on/off ratio of patterned OECTs improves by 325% compared to unpatterned counterparts. Compared with previous strategies, ICAP suppresses leakage currents by spatially confining mobile ions without relying on encapsulation layers, whose complex processes often increase the difficulty of integrated circuit manufacturing [63, 64]. In addition, the crosstalk behavior of OECT arrays was quantitatively evaluated by biasing OECT2 as the aggressor gate while monitoring the parasitic current in the neighboring OECT1 (Fig. 4f). In unpatterned configurations, increasing the aggressor gate bias (Vcrosstalk) causes a substantial rise in the victim current (Icrosstalk), defined as Icrosstalk = I0 − I, where I0 and I represent the initial and instantaneous currents of OECT1, respectively. This response originates from lateral ionic conduction and capacitive coupling within the shared electrolyte. In sharp contrast, ICAP-patterned arrays exhibit negligible parasitic response, achieving a 97.6% suppression of crosstalk under Vcrosstalk = 1.5 V, corresponding to more than 40-fold reduction in parasitic coupling relative to unpatterned devices. Transient measurements further emphasize the benefits of electrolyte isolation (Fig. 4g). For unpatterned arrays, switching Vcrosstalk between + 1.5 and − 0.5 V (with Vvictim = 0 V) yields a signal-to-noise ratio (SNR) of − 7.75 dB, meaning that noise dominates the victim device response. Such negative SNR values indicate that inter-device crosstalk severely distorts signals and renders them indistinguishable from noise. In contrast, patterned arrays strongly suppress parasitic ionic currents, ensuring that the victim device remains electrically quiescent even under large aggressor gate swings, thereby preserving signal integrity. The functional impact of ICAP is further demonstrated in pseudo-PMOS inverter circuits (Fig. 4h, i). In unpatterned arrays, parasitic ion capacitance through the shared electrolyte introduces wiring faults, producing NAND-like erroneous outputs instead of the expected inverter transfer characteristics. This malfunction arises because stray ionic coupling alters the effective gate bias of neighboring transistors, distorting logic thresholds and corrupting the truth table. In contrast, inverters constructed with ICAP-patterned",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.39,
+        291.81,
+        726.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 10,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "Beyond array-level integration, neuromorphic electronics demand electrolytes that are universally compatible with both organic and inorganic semiconductors. To assess this universality and reproducibility, we systematically evaluated the ICAP-patterned electrolyte across three representative semiconductors: p-type PEDOT:PSS, n-type BBL, and inorganic WO3. For each material system, five devices were independently fabricated and characterized. These systems cover the majority of OECT architectures, where ion capacitance critically governs performance and hybrid circuit functionality. For the p-type device, PEDOT:PSS films were precisely deposited using Sonoplot microplotter printing (Fig. 5a). The transfer and output characteristics (Fig. 5b, c) exhibit the expected depletion-mode behavior, where the drain current (IDS) decreases with increasing gate bias (VGS). Notably, with the ICAP-patterned electrolyte, PEDOT-OECTs achieve an on/off ratio of 104 and an average transconductance of 16.5 ± 1.12 mS, nearly 10 times higher than conventional PEDOT:PSS OECTs (typically 102 ~ 103) [65]. This performance enhancement originates from the precise ionic confinement and high ionic capacitance in ICAPpatterned electrolytes, which suppress the off-state current and improves gate-channel coupling. Additionally, Fig. S15 shows the performance of the PEDOT-OECTs after bending. The devices were separately subjected to 200 bending cycles (bending radius of 5 mm) parallel and perpendicular",
+      "translation": "",
+      "bbox": [
+        306.13,
+        347.8,
+        546.9,
+        726.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 10,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 11,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 11 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 11,
+      "type": "paragraph",
+      "order": 102,
+      "original_text": "Fig. 4 Suppression of leakage and electrical crosstalk in OECT arrays via ICAP electrolytes. a Schematics of unpatterned vs patterned OECT arrays. b TCAD simulations of ion distributions. c, d Leakage current (IL) as a function of channel length (simulated). e RSD–VGS characteristics fitted with equivalent circuit models. f Crosstalk current (Icrosstalk) versus crosstalk voltage (Vcrosstalk), showing 97.6% suppression in patterned arrays. g Transient crosstalk measurements for unpatterned vs patterned OECTs (vertical axis: the victim current Iv), demonstrating suppression of crosstalk effect in the latter. h, i Pseudo-PMOS inverter operation: unpatterned devices exhibit NAND-like erroneous outputs, whereas patterned devices yield correct inverter logic with strong noise immunity",
+      "translation": "",
+      "bbox": [
+        51.02,
+        614.94,
+        546.38,
+        678.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 12,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 12 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 12,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "The ICAP-patterned BBL-OECT achieves an on/off ratio exceeding 105, nearly 10 times higher than conventional planar n-type OECTs (typically 103 ~ 104), while maintaining an average transconductance of 40 ± 8 μS [66, 67]. Dynamic neuromorphic responses are equally robust. The excitatory postsynaptic current (EPSC) scales with pulse amplitude (Figs. 5i and S17a), and the device achieves ~ 1 ms temporal resolution. Synaptic functionalities, including PPF and LTP, are faithfully reproduced (Fig. S17b, c), and the device retains 85.3% of its initial IDS after 5000 pulsing cycles (Fig. 5j), confirming excellent operational stability. These results together demonstrate that ICAP-patterned electrolytes are universally compatible with both p-type and n-type organic semiconductors, while enabling high on/off ratios, millisecond-scale synaptic responses, and long-term operational endurance. To further validate the universality, we fabricated a fully lithographically defined OECT using WO3 as the channel semiconductor (Fig. 6a). The transfer and output curves (Fig. 6b, c) confirm accumulation-mode operation, with an on/off ratio of 105 and an average transconductance of 3.4 ± 0.6 mS. Importantly, WO3 exhibits clear electrochromic modulation, where increasing VGS reduces optical transmittance (Fig. S18). This provides a direct spectroscopic signature of ion-driven doping via the redox transition from W6+ to W5+ [68], and indicates a direct connection between ionic transport, redox activity, and tunable conductance states in WO3 film. These devices also exhibit robust neuromorphic behavior, including long-term potentiation (LTP) and longterm depression (LTD) under excitatory and inhibitory pulse trains (Figs. 6d and S19). The conductance states of the device scale proportionally with both pulse amplitude and pulse number, enabling precise analog modulation of synaptic weight and making it highly suitable for hardware-based synaptic learning. With + 3/ − 0.3 V pulse trains, programmable conductance states persist over 3000 consecutive stimulation cycles (Fig. 6e). Compared with previously reported oxide-based ECTs (on/off < 103) [69], ICAP-enabled WO3-OECT achieves an order-of-magnitude improvement in switching range. Together with the PEDOT:PSS-based p-type and BBL-based n-type OECTs, the demonstration of WO3-OECTs validates the universal compatibility of ICAP-patterned electrolytes across both organic and inorganic semiconductors. Unlike conventional polymer electrolytes that often suffer from poor adhesion or",
+      "translation": "",
+      "bbox": [
+        306.13,
+        81.39,
+        546.94,
+        726.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 12,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "to the channel length, after which the transfer characteristics remained comparable to those of the initial state. This result indicates that the ICAP-patterned electrolyte can maintain effective gate coupling under mechanical deformation. The bending stability is attributed to the balanced structure of the electrolyte: the dual cross-linked HPC framework provides sufficient structural integrity to suppress delamination or severe deformation. In addition, the patterned electrolyte may help reduce stress accumulation compared with a largearea continuous-electrolyte film. These results suggest that ICAP-patterned electrolytes possess promising mechanical robustness for flexible OECTs. Beyond conventional transistor behavior, PEDOT-OECTs also emulate synaptic behaviors relevant to neuromorphic systems. In this configuration, the gate electrode functions as a presynaptic neuron, while the channel acts as the postsynaptic neuron. Applying a positive VGS drives cations into the PEDOT:PSS film, generating an inhibitory postsynaptic current (IPSC). Upon bias removal, IDS rapidly returns to baseline, demonstrating short-term plasticity (STP) with ~ 1 ms temporal resolution enabled by the efficient ion transport of ICAP-patterned electrolytes (Fig. 5d). The brief negative transient at the leading edge arises from capacitive displacement current and interfacial charging, a common feature in EGT/OECT dynamics. The IPSC increases with pulse intensity, resembling synaptic weight modulation in biological neurotransmission (Fig. S16a). Furthermore, when two sequential voltage pulses are applied (Fig. S16b), the second evokes a stronger response than the first, indicative of paired-pulse facilitation (PPF), where a fitted relaxation time of τ1 = 44.8 ms and τ2 = 679.3 ms, consistent with the reported biological synaptic dynamics. With an increasing number of pulses, IDS gradually declines, marking the transition from STP to long-term plasticity (LTP) (Fig. S16c). Furthermore, the devices exhibit excellent operational endurance by retaining more than 95% of their initial current response after 10,000 continuous pulsing cycles as shown in Fig. 5e. This high level of cyclic reliability indicates that the ICAP-based OECT can sustain repeated synaptic weight updates without performance degradation. Such robust endurance is a key requirement for the practical devices in long-term neuromorphic computing tasks. Complementarily, we fabricated n-type BBL-OECTs using the same ICAP-patterned electrolyte (Fig. 5f). The transfer and output curves (Fig. 5g, h) exhibit accumulation-mode behavior, where IDS increases with positive VGS.",
+      "translation": "",
+      "bbox": [
+        51.01,
+        81.39,
+        291.83,
+        727.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 12,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 13,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 13 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 13,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": "Fig. 5 Compatibility of ICAP electrolytes with organic semiconductors and neuromorphic emulation. a Schematic of PEDOT-OECT fabrication. b, c Transfer and output curves demonstrating depletion-mode behavior with on/off ratio of 104. d Inhibitory postsynaptic current (IPSC) responses showing millisecond-scale resolution and paired-pulse facilitation fitted with double-exponential function. e Long-term endurance with < 4.7% degradation after 10,000 cycles. f Fabrication schematic of BBL-OECT. g, h Transfer and output curves confirming accumulationmode operation with on/off > 105. i Excitatory postsynaptic current (EPSC) responses with 1 ms temporal resolution. j Endurance performance showing 85.3% current retention after 5000 cycles",
+      "translation": "",
+      "bbox": [
+        51.02,
+        630.54,
+        546.4,
+        693.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 14,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 14 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 14,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "and outstanding electrical properties. The electrolyte demonstrates excellent interfacial stability with a range of functional materials, including organic semiconductors (e.g., PEDOT:PSS, BBL) and inorganic oxides (e.g., WO3). All transistors fabricated using this electrolyte show high on/ off ratios, superior transconductance, and excellent longterm stability. These characteristics are not only comparable to but often surpass those of previously reported devices (Table S5). Looking forward, given its material versatility and stable device performance, the ICAP process is expected to ensure compatibility and integration with CMOS circuits, facilitating the development of more advanced and intelligent neuromorphic architectures beyond handwritten digit recognition, including temporal sequence learning and multimodal sensory fusion [76, 77].",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.39,
+        546.94,
+        292.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 14,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "unstable interfaces on oxide surfaces [70], the ICAP electrolyte can be fully lithographically defined without damaging the semiconductor films. This cross-material compatibility lays the foundation for implementing large-scale neuromorphic circuits where reliable and reproducible synaptic behaviors are essential [3, 71, 72]. Finally, the experimentally measured synaptic responses were further used in an MNIST recognition simulation as a preliminary application-level evaluation of possible neuromorphic computing use (Fig. S20). After 50 training epochs, the artificial neural network (ANN) achieved classification accuracies of 99.7% (PEDOT-OECT), 98.97% (WO3-OECT), and 90.7% (BBL-OECT) (Fig. S21). These recognition accuracies are comparable to, and in some cases exceed, previously reported OECT-based neuromorphic systems (~ 85%–96%) [3, 73, 74], approaching the performance of leading inorganic memristor benchmarks [75]. We have successfully developed an ICAP-patterned electrolyte that exhibits both exceptional material compatibility",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.39,
+        291.72,
+        348.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 14,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "Fig. 6 Compatibility of ICAP electrolytes with inorganic semiconductors and system-level neuromorphic applications. a Fabrication of WO3-OECT. b, c Transfer and output curves showing on/off ratio of 105. d Long-term potentiation (LTP) and depression (LTD) characteristics under varying pulse amplitudes (VD = 0.5 V, tP = 0.75 s, Δt = 2 s). e Endurance of programmable conductance states over 3000 cycles",
+      "translation": "",
+      "bbox": [
+        51.02,
+        693.08,
+        546.39,
+        726.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 14,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0114",
+      "page": 15,
+      "type": "paragraph",
+      "order": 114,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 15 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0115",
+      "page": 15,
+      "type": "paragraph",
+      "order": 115,
+      "original_text": "4 \u0007Conclusions",
+      "translation": "",
+      "bbox": [
+        51.02,
+        80.45,
+        125.04,
+        99.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0116",
+      "page": 15,
+      "type": "paragraph",
+      "order": 116,
+      "original_text": "permission directly from the copyright holder. To view a copy of this licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.75,
+        546.48,
+        106.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0117",
+      "page": 15,
+      "type": "paragraph",
+      "order": 117,
+      "original_text": "Supplementary Information The online version contains supplementary material available at https://​doi.​org/​10.​1007/​ s40820-​026-​02288-4.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        125.06,
+        546.5,
+        160.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0118",
+      "page": 15,
+      "type": "heading",
+      "order": 118,
+      "original_text": "References",
+      "translation": "",
+      "bbox": [
+        306.14,
+        193.35,
+        362.27,
+        212.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0119",
+      "page": 15,
+      "type": "paragraph",
+      "order": 119,
+      "original_text": "In conclusion, we developed an ion compensation-assisted photolithography strategy for high-resolution patterning of solid electrolytes in OECTs. By combining photopatterning with post-patterning ion replenishment, ICAP overcomes a long-standing trade-off between electrolyte patternability and ionic functionality, enabling finely patterned structures retaining high capacitance and operational stability. This capability supports reliable transistor operation, reduced parasitic coupling, and scalable array integration across multiple semiconductor materials. Beyond device-level operation, ICAP also enables neuromorphic functions, underscoring its broader applicability in complex circuits. Overall, ICAP provides a versatile and practical framework for high-density electrolyte-gated electronics, and opens new opportunities for integrated neuromorphic, flexible, and bioelectronic systems.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        110.88,
+        291.78,
+        335.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0120",
+      "page": 15,
+      "type": "paragraph",
+      "order": 120,
+      "original_text": "Acknowledgements The authors gratefully acknowledge the financial support of Guangdong Science and Technology Program (No. 2025A0505080014), the National Natural Science Foundation of China (No. 62104262), the open research fund of Suzhou Laboratory (No. SZLAB-1208-2025-TS025), the Foundation of Science and Technology on Advanced Ceramic Fibers and Composites Laboratory (Grant No. 6142907240402), and the Innovation Research Foundation of National University of Defense Technology (Innovation Research Foundation of NUDT).",
+      "translation": "",
+      "bbox": [
+        51.02,
+        345.09,
+        291.5,
+        446.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0121",
+      "page": 15,
+      "type": "paragraph",
+      "order": 121,
+      "original_text": "Author Contributions W.Z., S.H., and C.L. conceived the concept and designed the study. W.Z. designed and conducted the experiments, and analyzed the data. X.L. contributed to TCAD simulations. S.C. contributed to ANN simulations. W.Z., S.H., and C.L. wrote the draft. C.C., X.M., and C.L. supervised this work.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        456.55,
+        291.32,
+        514.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0122",
+      "page": 15,
+      "type": "paragraph",
+      "order": 122,
+      "original_text": "Declarations",
+      "translation": "",
+      "bbox": [
+        51.02,
+        521.07,
+        99.42,
+        534.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0123",
+      "page": 15,
+      "type": "paragraph",
+      "order": 123,
+      "original_text": "Conflict of interest The authors declare no conflict of interest. They have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        546.03,
+        291.28,
+        579.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0124",
+      "page": 15,
+      "type": "paragraph",
+      "order": 124,
+      "original_text": "1. L. Lu, X. Liu, P. Gu, Z. Hu, X. Liang et al., Stretchable all-gel organic electrochemical transistors. Nat. Commun. 16, 3831 (2025). https://​doi.​org/​10.​1038/​s41467-​025-​59240-0 2. Y. Wang, A. Koklu, Y. Zhong, T. Chang, K. Guo et al., Acceptor functionalization via green chemistry enables high-performance n-type organic electrochemical transistors for biosensing, memory applications. Adv. Funct. Mater. 34(15), 2304103 (2024). https://​doi.​org/​10.​1002/​adfm.​20230​4103 3. Z. Zhu, Y. Pang, Y. Li et al., The rising of flexible organic electrochemical transistors in sensors and intelligent circuits. ACS Nano 19(4), 4084–4120 (2025). https://​doi.​org/​10.​1021/​ acsna​no.​4c128​92 4. Y. Liang, H. Li, H. Tang, C. Zhang, D. Men et al., Bioinspired electrolyte-gated organic synaptic transistors: From fundamental requirements to applications. Nano-Micro Lett. 17(1), 198 (2025). https://​doi.​org/​10.​1007/​s40820-​025-​01708-1 5. V.N. Le, J.H. Bombile, G.S. Rupasinghe, K.N. Baustert, R. Li et al., New chemical dopant and counterion mechanism for organic electrochemical transistors and organic mixed ionic– electronic conductors. Adv. Sci. 10(27), 2207694 (2023). https://​doi.​org/​10.​1002/​advs.​20220​7694 6. Y. She, H. Liu, H. Yuan, Y. Li, X. Liu et al., Artificial intelligence-assisted conductive hydrogel dressings for refractory wounds monitoring. Nano-Micro Lett. 17(1), 319 (2025). https://​doi.​org/​10.​1007/​s40820-​025-​01834-w 7. P.C. Harikesh, C.-Y. Yang, D. Tu, J.Y. Gerasimov, A.M. Dar et al., Organic electrochemical neurons and synapses with ion mediated spiking. Nat. Commun. 13, 901 (2022). https://​doi.​ org/​10.​1038/​s41467-​022-​28483-6 8. D. Won, J. Kim, J. Choi, H. Kim, S. Han et al., Digital selective transformation and patterning of highly conductive hydrogel bioelectronics by laser-induced phase separation. Sci. Adv. 8(23), eabo3209 (2022). https://​doi.​org/​10.​1126/​sciadv.​abo32​ 09 9. J.H. Kim, R. Halaksa, I.-Y. Jo, H. Ahn, P.A. Gilhooly-Finn et al., Peculiar transient behaviors of organic electrochemical transistors governed by ion injection directionality. Nat. Commun. 14, 7577 (2023). https://​doi.​org/​10.​1038/​ s41467-​023-​42840-z 10. C.-H. Kim, M. Azimi, J. Fan, H. Nagarajan, M. Wang et al., All-printed and stretchable organic electrochemical transistors using a hydrogel electrolyte. Nanoscale 15(7), 3263–3272 (2023). https://​doi.​org/​10.​1039/​d2nr0​6731e",
+      "translation": "",
+      "bbox": [
+        306.11,
+        217.8,
+        546.62,
+        710.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0125",
+      "page": 15,
+      "type": "paragraph",
+      "order": 125,
+      "original_text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain",
+      "translation": "",
+      "bbox": [
+        51.02,
+        588.98,
+        291.54,
+        712.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0126",
+      "page": 16,
+      "type": "paragraph",
+      "order": 126,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 16 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0127",
+      "page": 16,
+      "type": "paragraph",
+      "order": 127,
+      "original_text": "23. L. Huang, Z. Wang, J. Chen, B. Wang, Y. Chen et al., Porous semiconducting polymers enable high-performance electrochemical transistors. Adv. Mater. 33(14), 2007041 (2021). https://​doi.​org/​10.​1002/​adma.​20200​7041 24. S. Doshi, M.O.A. Forner, P. Wang, S. El Hadwe, A.T. Jin et al., Thermal processing creates water-stable PEDOT: PSS films for bioelectronics. Adv. Mater. 37(13), 2415827 (2025). https://​doi.​org/​10.​1002/​adma.​20241​5827 25. G.-S. Liu, F. Yang, J. Xu, Y. Kong, H. Zheng et al., Ultrasonically patterning silver nanowire–acrylate composite for highly sensitive and transparent strain sensors based on parallel cracks. ACS Appl. Mater. Interfaces 12(42), 47729–47738 (2020). https://​doi.​org/​10.​1021/​acsami.​0c118​15 26. Y. Fu, L. Yang, M. Zhang, Z. Lin, Z. Shen, Recent advances in cellulose-based polymer electrolytes. Cellulose 29(17), 8997– 9034 (2022). https://​doi.​org/​10.​1007/​s10570-​022-​04834-w 27. G.H. Kim, H. Nam, W. Choi, T. An, G. Lim, Electrospinning nanofiber on an insulating surface with a patterned functional electrolyte electrode. Adv. Mater. Interfaces 5(5), 1701204 (2018). https://​doi.​org/​10.​1002/​admi.​20170​1204 28. Y. Zhong, G.T.M. Nguyen, C. Plesse, F. Vidal, E.W.H. Jager, Highly conductive, photolithographically patternable ionogels for flexible and stretchable electrochemical devices. ACS Appl. Mater. Interfaces 10(25), 21601–21611 (2018). https://​ doi.​org/​10.​1021/​acsami.​8b035​37 29. J.H. Lee, Y.S. Park, S. Cho, I.S. Kang, J.K. Kim et al., Output voltage modulation in triboelectric nanogenerator by printed ion gel capacitors. Nano Energy 54, 367–374 (2018). https://​ doi.​org/​10.​1016/j.​nanoen.​2018.​10.​016 30. C. Lee, S.S. Shin, J. Choi, J. Kim, J.-W. Son et al., A micropatterned electrode/electrolyte interface fabricated by softlithography for facile oxygen reduction in solid oxide fuel cells. J. Mater. Chem. A 8(32), 16534–16541 (2020). https://​ doi.​org/​10.​1039/​d0ta0​3997g 31. I. Bae, B. Kim, D.-Y. Kim, H. Kim, K.-H. Oh, In-plane 2-D patterning of microporous layer by inkjet printing for water management of polymer electrolyte fuel cell. Renew. Energy 146, 960–967 (2020). https://​doi.​org/​10.​1016/j.​renene.​2019.​ 07.​003 32. R. Umezaki, J. Murata, Electrochemical imprint lithography on Si surface using a patterned polymer electrolyte membrane. Mater. Chem. Phys. 259, 124081 (2021). https://​doi.​org/​10.​ 1016/j.​match​emphys.​2020.​124081 33. C. Timurkutluk, T. Altan, S. Onbilgin, F. Yildirim, M. Yagiz et al., Mesh patterned electrolyte supports for high-performance solid oxide fuel cells. Int. J. Energy Res. 46(8), 10689– 10703 (2022). https://​doi.​org/​10.​1002/​er.​7872 34. C. Lee, S.S. Shin, J. Kim, J. Choi, M. Choi et al., Tailoring an interface microstructure for high-performance reversible protonic ceramic electrochemical cells via soft lithography. ACS Appl. Mater. Interfaces 14(28), 32124–32133 (2022). https://​doi.​org/​10.​1021/​acsami.​2c089​18 35. H. Lee, H. Seo, S.K. Kim, I. Bae, Aligned proton transport highway of hierarchically structured proton-exchange membranes constructed via capillary force lithography. ACS Appl.",
+      "translation": "",
+      "bbox": [
+        306.16,
+        81.67,
+        546.68,
+        712.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0128",
+      "page": 16,
+      "type": "paragraph",
+      "order": 128,
+      "original_text": "11. J. Cai, Y. Wang, Q. Li, L. Cui, J. Wu et al., DMSO-doped polymer hydrogel electrolyte-based freeze-resistant flexible supercapacitors with high capacitance retention at low temperatures. Electrochim. Acta 530, 146136 (2025). https://​doi.​ org/​10.​1016/j.​elect​acta.​2025.​146136 12. K.H. Lee, S. Zhang, Y. Gu, T.P. Lodge, C.D. Frisbie, Transfer printing of thermoreversible ion gels for flexible electronics. ACS Appl. Mater. Interfaces 5(19), 9522–9527 (2013). https://​ doi.​org/​10.​1021/​am402​200n 13. A. Savva, R. Hallani, C. Cendra, J. Surgailis, T.C. Hidalgo et al., Balancing ionic and electronic conduction for highperformance organic electrochemical transistors. Adv. Funct. Mater. 30(11), 1907657 (2020). https://​doi.​org/​10.​1002/​adfm.​ 20190​7657 14. J. Cui, F. An, J. Qian, Y. Wu, L.L. Sloan et al., CMOS-compatible electrochemical synaptic transistor arrays for deep learning accelerators. Nat. Electron. 6(4), 292–300 (2023). https://​ doi.​org/​10.​1038/​s41928-​023-​00939-7 15. L. Chen, P. Liu, B. Feng, Z. Shu, H. Liang et al., Dry-transferable photoresist enabled reliable conformal patterning for ultrathin flexible electronics. Adv. Mater. 35(38), 2303513 (2023). https://​doi.​org/​10.​1002/​adma.​20230​3513 16. M. Xiong, C.-Y. Yang, J. Ji, A.S. Caravaca, Q. Guo et al., A photo-patternable solid-state electrolyte for high-performance, miniaturized, and implantable organic electrochemical transistor-based circuits. Adv. Mater. 37(44), e09314 (2025). https://​ doi.​org/​10.​1002/​adma.​20250​9314 17. L. Yuan, T. Zhao, J. Dai, L. Xue, X. Zhang et al., High-density, crosstalk-free, flexible electrolyte-gated synaptic transistors array via all-photolithography for multimodal neuromorphic computing. Adv. Funct. Mater. 35(13), 2418052 (2025). https://​doi.​org/​10.​1002/​adfm.​20241​8052 18. J.-S. Yang, M.-K. Chung, J.-Y. Yoo, M.-U. Kim, B.-J. Kim et al., Interference-free nanogap pressure sensor array with high spatial resolution for wireless human-machine interfaces applications. Nat. Commun. 16, 2024 (2025). https://​doi.​org/​ 10.​1038/​s41467-​025-​57232-8 19. V.N. Le, K.N. Baustert, M.R. Brown, J.H. Bombile, L.Q. Flagg et al., Improved organic electrochemical transistor stability using solvent degassing and chemical doping. Nat. Electron. 8(2), 116–126 (2025). https://​doi.​org/​10.​1038/​ s41928-​024-​01297-8 20. N.P. Menezes, T. Nicolini, M. Barker, A.A. Mariano, C.A. Dartora et al., Improved stability of organic electrochemical transistor performance with a low swelling mixed conducting polymer: a comparative study with PEDOT: PSS. J. Mater. Chem. C 11(19), 6296–6300 (2023). https://​doi.​org/​10.​1039/​ d3tc0​0108c 21. L. Gao, Y. Cho, R. Wang et al., Broadly applicable hydrophilic additive enhances electrochemical transistor function. Proc. Natl. Acad. Sci. U. S. A. 123(10), e2523877123 (2026). https://​doi.​org/​10.​1073/​pnas.​25238​77123 22. S. Zhang, R. Chen, D. Kong, Y. Chen, W. Liu et al., Photovoltaic nanocells for high-performance large-scale-integrated organic phototransistors. Nat. Nanotechnol. 19(9), 1323–1332 (2024). https://​doi.​org/​10.​1038/​s41565-​024-​01707-0",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.75,
+        291.53,
+        721.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0129",
+      "page": 16,
+      "type": "paragraph",
+      "order": 129,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0130",
+      "page": 17,
+      "type": "paragraph",
+      "order": 130,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 Page 17 of 18 434",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        536.75,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0131",
+      "page": 17,
+      "type": "paragraph",
+      "order": 131,
+      "original_text": "Energy Mater. 5(5), 6256–6264 (2022). https://​doi.​org/​10.​ 1021/​acsaem.​2c006​22 36. A. Weissbach, L.M. Bongartz, M. Cucchi, H. Tseng, K. Leo et al., Photopatternable solid electrolyte for integrable organic electrochemical transistors: Operation and hysteresis. J. Mater. Chem. C 10(7), 2656–2662 (2022). https://​doi.​org/​10.​1039/​ d1tc0​4230k 37. Q. Kang, Z. Zhuang, Y. Liu, Z. Liu, Y. Li et al., Engineering the structural uniformity of gel polymer electrolytes via pattern-guided alignment for durable, safe solid-state lithium metal batteries. Adv. Mater. 35(38), e2303460 (2023). https://​ doi.​org/​10.​1002/​adma.​20230​3460 38. J. Kang, K.Y. Kim, S. Kim, H. Hong, B.-S. Bae et al., A conformable microneedle sensor with photopatternable skin adhesive and gel electrolyte for continuous glucose monitoring. Device 1(4), 100112 (2023). https://​doi.​org/​10.​1016/j.​device.​ 2023.​100112 39. L. Zheng, R. Xu, J. Zhang, F. Yu, C. Li et al., Enhanced electrochemical performance by structural design of electrolyte surface combining 3D printing technology with multi-physical modelling. Chem. Eng. J. 451, 139038 (2023). https://​ doi.​org/​10.​1016/j.​cej.​2022.​139038 40. Y.J. Jo, Y.-S. Ye, S. Choi, J.H. Shin, J.U. Kim et al., Choline ionic liquid for long-term stable organic electrochemical transistors. Adv. Mater. 38(4), e12163 (2026). https://​doi.​ org/​10.​1002/​adma.​20251​2163 41. T. Li, Z. Qu, J. Si, Y. Lee, V.K. Bandari et al., Monolithically integrated solid-state vertical organic electrochemical transistors switching between neuromorphic and logic functions. Sci. Adv. 11(11), eadt5186 (2025). https://​doi.​org/​10.​ 1126/​sciadv.​adt51​86 42. Q.-G. Chen, W.-T. Liao, R.-Y. Li, I. Sanjuán, N.-C. Hsiao et al., Organic solid-state electrolyte synaptic transistors with photoinduced thiol–ene cross-linked polymer electrolytes for deep neural networks. ACS Mater. Lett. 7(2), 682–691 (2025). https://​doi.​org/​10.​1021/​acsma​teria​lslett.​ 4c025​11 43. L. Tang, X. Zheng, M. Sun, X. Ren, W. Huang et al., Photopatternable gel electrolytes for stretchable solid-state organic electrochemical transistors. Sci. China Mater. 68(9), 3212– 3218 (2025). https://​doi.​org/​10.​1007/​s40843-​025-​3429-x 44. M. Li, W. Zhang, X. Lv, X. Liang, M. Wang et al., Regionally controlled ion-doping of organic electrochemical transistors for computing-memory co-integrated neuromorphic systems. npj Flex. Electron. 10, 11 (2026). https://​doi.​org/​10.​1038/​ s41528-​025-​00511-7 45. A. Mukherjee, S. Sagar, S. Parveen, B.C. Das, Superionic rubidium silver iodide gated low voltage synaptic transistor. Appl. Phys. Lett. 119(25), 253502 (2021). https://​doi.​org/​10.​ 1063/5.​00694​78 46. L.Q. Guo, H. Han, L.Q. Zhu, Y.B. Guo, F. Yu et al., Oxide neuromorphic transistors gated by polyvinyl alcohol solid electrolytes with ultralow power consumption. ACS Appl. Mater. Interfaces 11(31), 28352–28358 (2019). https://​doi.​ org/​10.​1021/​acsami.​9b057​17",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.46,
+        291.55,
+        710.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0132",
+      "page": 17,
+      "type": "paragraph",
+      "order": 132,
+      "original_text": "47. J. Yu, G. Gao, J. Huang, X. Yang, J. Han et al., Contact-electrification-activated artificial afferents at femtojoule energy. Nat. Commun. 12(1), 1581 (2021). https://​doi.​org/​10.​1038/​ s41467-​021-​21890-1 48. L.Q. Guo, J. Tao, L.Q. Zhu, H. Xiao, W.T. Gao et al., Starchbased biopolymer electrolyte gated oxide synaptic transistors. Org. Electron. 61, 312–317 (2018). https://​doi.​org/​10.​1016/j.​ orgel.​2018.​06.​009 49. S.-H. Kim, W.-J. Cho, Artificial synapses based on bovine milk biopolymer electric-double-layer transistors. Polymers 14(7), 1372 (2022). https://​doi.​org/​10.​3390/​polym​14071​372 50. X. Yang, Z. Liu, J. Luo, C. Zhang, Y. He et al., Freestanding multi-gate amorphous oxide-based TFTs on graphene oxide enhanced electrolyte membranes. IEEE Electron Device Lett. 41(9), 1360–1363 (2020). https://​doi.​org/​10.​1109/​LED.​2020.​ 30100​19 51. G. Wu, P. Feng, X. Wan, L. Zhu, Y. Shi et al., Artificial synaptic devices based on natural chicken albumen coupled electric-double-layer transistors. Sci. Rep. 6, 23578 (2016). https://​doi.​org/​10.​1038/​srep2​3578 52. F.Z. Li, H.R. Liu, J.M. Guo, X.Y. Zhou, K.K. Liu et al., An artificial thermal nociceptor based on xanthan gum-gated synaptic transistors to emulate human thermal nociception. Adv. Intell. Syst. 4(12), 2200233 (2022). https://​doi.​org/​10.​ 1002/​aisy.​20220​0233 53. C. Wu, J. Li, Y.-Q. Zhang, X. Li, S.-Y. Wang et al., Cellulose dissolution, modification, and the derived hydrogel: A review. Chemsuschem 16(21), e202300518 (2023). https://​ doi.​org/​10.​1002/​cssc.​20230​0518 54. K. He, S.H. Cheng, J. Hu, Y. Zhang, H. Yang et al., In-situ intermolecular interaction in composite polymer electrolyte for ultralong life quasi-solid-state lithium metal batteries. Angew. Chem. Int. Ed. 60(21), 12116–12123 (2021). https://​ doi.​org/​10.​1002/​anie.​20210​3403 55. G.-S. Liu, T. Wang, Y. Wang, H. Zheng, Y. Chen et al., Onestep plasmonic welding and photolithographic patterning of silver nanowire network by UV-programable surface atom diffusion. Nano Res. 15(3), 2582–2591 (2022). https://​doi.​ org/​10.​1007/​s12274-​021-​3796-y 56. S.N. Fernandes, Y. Geng, S. Vignolini, B.J. Glover, A.C. Trindade et al., Structural color and iridescence in transparent sheared cellulosic films. Macromol. Chem. Phys. 214(1), 25–32 (2013). https://​doi.​org/​10.​1002/​macp.​20120​0351 57. P. Wei, X. Yu, Y. Fang, L. Wang, H. Zhang et al., Strong and tough cellulose hydrogels via solution annealing and dual cross-linking. Small 19(28), e2301204 (2023). https://​doi.​ org/​10.​1002/​smll.​20230​1204 58. C. Han, M. Cao, J. Yu, S. Wang, X. Zhou et al., Carboxymethyl cellulose-based composite polymer hydrogels crosslinked with epichlorohydrin and application for Cu(II) removal. ACS Appl. Polym. Mater. 5(3), 2070–2078 (2023). https://​doi.​org/​10.​1021/​acsapm.​2c020​84 59. H. Zhang, X. Gan, Y. Yan, J. Zhou, A sustainable dual crosslinked cellulose hydrogel electrolyte for high-performance zinc-metal batteries. Nano-Micro Lett. 16(1), 106 (2024). https://​doi.​org/​10.​1007/​s40820-​024-​01329-0",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.68,
+        546.68,
+        723.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0133",
+      "page": 18,
+      "type": "paragraph",
+      "order": 133,
+      "original_text": "Nano-Micro Lett. (2026) 18:434 434 Page 18 of 18",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.49,
+        511.19,
+        68.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0134",
+      "page": 18,
+      "type": "paragraph",
+      "order": 134,
+      "original_text": "69. H. Kwak, N. Kim, S. Jeon, S. Kim, J. Woo, Electrochemical random-access memory: Recent advances in materials, devices, and systems towards neuromorphic computing. Nano Convergence 11(1), 9 (2024). https://​doi.​org/​10.​1186/​ s40580-​024-​00415-8 70. C.-S. Yang, D.-S. Shang, N. Liu, E.J. Fuller, S. Agrawal et al., All-solid-state synaptic transistor with ultralow conductance for neuromorphic computing. Adv. Funct. Mater. 28(42), 1804170 (2018). https://​doi.​org/​10.​1002/​adfm.​ 20180​4170 71. Z. Tian, Z. Zhao, F. Yan, Organic electrochemical transistor in wearable bioelectronics: Profiles, applications, and integration. Wearable Electron. 1, 1–25 (2024). https://​doi.​ org/​10.​1016/j.​wees.​2024.​03.​002 72. L. Huang, D. Zhao, X. Yan, X. Liu, Q. Sun et al., Organic electrochemical transistors: From lithography to large-scale printing. Adv. Electron. Mater. 11(3), 2400474 (2025). https://​doi.​org/​10.​1002/​aelm.​20240​0474 73. P. Langner, F. Chiabrera, N. Alayo, P. Nizet, L. Morrone et al., Solid-state oxide-ion synaptic transistor for neuromorphic computing. Adv. Mater. 37(7), e2415743 (2025). https://​doi.​org/​10.​1002/​adma.​20241​5743 74. S. Zhang, J. Zhu, R. Qiu, D. Liu, Q. Ren et al., Flexible tunable-plasticity synaptic transistors for mimicking dynamic cognition and reservoir computing. Adv. Mater. 37(24), e2418418 (2025). https://​doi.​org/​10.​1002/​adma.​20241​8418 75. X. Duan, Z. Cao, K. Gao, W. Yan, S. Sun et al., Memristorbased neuromorphic chips. Adv. Mater. 36(14), 2310704 (2024). https://​doi.​org/​10.​1002/​adma.​20231​0704 76. Y. Zhu, H. Mao, Y. Zhu, X. Wang, C. Fu et al., CMOScompatible neuromorphic devices for neuromorphic perception and computing: A review. Int. J. Extreme Manuf. 5(4), 042010 (2023). https://​doi.​org/​10.​1088/​2631-​7990/​acef79 77. C. Zhao, J. Yang, W. Ma, Transient response and ionic dynamics in organic electrochemical transistors. NanoMicro Lett. 16(1), 233 (2024). https://​doi.​org/​10.​1007/​ s40820-​024-​01452-y",
+      "translation": "",
+      "bbox": [
+        306.15,
+        81.7,
+        546.62,
+        506.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0135",
+      "page": 18,
+      "type": "paragraph",
+      "order": 135,
+      "original_text": "Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        516.1,
+        546.37,
+        539.19
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0136",
+      "page": 18,
+      "type": "paragraph",
+      "order": 136,
+      "original_text": "60. Z.-H. Hu, A.M. Omer, X. Ouyang, D. Yu, Fabrication of carboxylated cellulose nanocrystal/sodium alginate hydrogel beads for adsorption of Pb(II) from aqueous solution. Int. J. Biol. Macromol. 108, 149–157 (2018). https://​doi.​org/​10.​ 1016/j.​ijbio​mac.​2017.​11.​171 61. S. Yu, X. Dong, P. Zhao, Z. Luo, Z. Sun et al., Decoupled temperature and pressure hydrothermal synthesis of carbon sub-micron spheres from cellulose. Nat. Commun. 13, 3616 (2022). https://​doi.​org/​10.​1038/​s41467-​022-​31352-x 62. Q. Li, Z. Cao, W. Wahyudi, G. Liu, G.-T. Park et al., Unraveling the new role of an ethylene carbonate solvation shell in rechargeable metal ion batteries. ACS Energy Lett. 6(1), 69–78 (2021). https://​doi.​org/​10.​1021/​acsen​ergyl​ett.​0c021​ 40 63. I. Uguz, D. Ohayon, V. Arslan, R. Sheelamanthula, S. Griggs et al., Flexible switch matrix addressable electrode arrays with organic electrochemical transistor and pn diode technology. Nat. Commun. 15, 533 (2024). https://​doi.​org/​10.​ 1038/​s41467-​023-​44024-1 64. HFd.P. Barbosa, A. Asyuda, M. Skowrons, A. Schander, B. Lüssem, Processing of organic electrochemical transistors. MRS Commun. 14(2), 132–148 (2024). https://​doi.​org/​10.​ 1557/​s43579-​024-​00521-y 65. N. Mukhin, A. Dietzel, V. Issakov, L. Bakhchova, Balancing performance and stability characteristics in organic electrochemical transistor. Biosens. Bioelectron. 281, 117476 (2025). https://​doi.​org/​10.​1016/j.​bios.​2025.​117476 66. J. Guo, L.Q. Flagg, D.K. Tran, S.E. Chen, R. Li et al., Hydration of a side-chain-free n-type semiconducting ladder polymer driven by electrochemical doping. J. Am. Chem. Soc. 145(3), 1866–1876 (2023). https://​doi.​org/​10.​1021/​ jacs.​2c114​68 67. K.G. Cho, S.J. Kim, D.H. Park et al., Band filling, electrochemical reaction, and re-entrant insulating behavior in electrolyte-gated BBL polymer semiconductor films. ACS Appl. Mater. Interfaces 17(10), 15718–15727 (2025). https://​doi.​ org/​10.​1021/​acsami.​4c228​52 68. R. Zhang, Q. Zhou, S. Huang, Y. Zhang, R.-T. Wen, Capturing ion trapping and detrapping dynamics in electrochromic thin films. Nat. Commun. 15, 2294 (2024). https://​doi.​org/​ 10.​1038/​s41467-​024-​46500-8",
+      "translation": "",
+      "bbox": [
+        51.02,
+        81.75,
+        291.56,
+        550.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0137",
+      "page": 18,
+      "type": "paragraph",
+      "order": 137,
+      "original_text": "https://doi.org/10.1007/s40820-026-02288-4 © The authors",
+      "translation": "",
+      "bbox": [
+        51.02,
+        751.83,
+        544.13,
+        764.1
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011",
+        "S0012",
+        "S0013",
+        "S0014",
+        "S0015",
+        "S0016",
+        "S0017",
+        "S0018"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0019",
+        "S0020",
+        "S0021",
+        "S0022",
+        "S0023"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0024",
+        "S0025",
+        "S0026",
+        "S0027",
+        "S0028",
+        "S0029",
+        "S0030",
+        "S0031",
+        "S0032",
+        "S0033",
+        "S0034",
+        "S0035",
+        "S0036",
+        "S0037",
+        "S0038"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0039",
+        "S0040",
+        "S0041",
+        "S0042",
+        "S0043",
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047",
+        "S0048",
+        "S0049",
+        "S0050",
+        "S0051",
+        "S0052",
+        "S0053",
+        "S0054",
+        "S0055",
+        "S0056",
+        "S0057",
+        "S0058",
+        "S0059",
+        "S0060",
+        "S0061",
+        "S0062",
+        "S0063",
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069",
+        "S0070"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0071",
+        "S0072",
+        "S0073",
+        "S0074",
+        "S0075",
+        "S0076"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0077",
+        "S0078",
+        "S0079",
+        "S0080",
+        "S0081"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0082",
+        "S0083",
+        "S0084",
+        "S0085",
+        "S0086"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0087",
+        "S0088",
+        "S0089"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0090",
+        "S0091",
+        "S0092",
+        "S0093",
+        "S0094"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S0095",
+        "S0096",
+        "S0097",
+        "S0098",
+        "S0099",
+        "S0100"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S0101",
+        "S0102"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S0107",
+        "S0108"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S0109",
+        "S0110",
+        "S0111",
+        "S0112",
+        "S0113"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S0114",
+        "S0115",
+        "S0116",
+        "S0117",
+        "S0118",
+        "S0119",
+        "S0120",
+        "S0121",
+        "S0122",
+        "S0123",
+        "S0124",
+        "S0125"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S0126",
+        "S0127",
+        "S0128",
+        "S0129"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S0130",
+        "S0131",
+        "S0132"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S0133",
+        "S0134",
+        "S0135",
+        "S0136",
+        "S0137"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 5,
+      "caption_original": "Fig. 1 Fabrication and basic characteristics of ICAP-patterned photolithographic electrolytes (PLEs). a Schematic of ICAP-patterned electrolyte fabrication. b Compatibility of aqueous development with organic and inorganic semiconductors",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of ICAP-patterned electrolyte fabrication",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Compatibility of aqueous development with organic and inorganic semiconductors",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 998,
+      "image_height": 456,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        466.71,
+        546.78,
+        694.27
+      ],
+      "image_path": "papers/paper-8fa2997604ff0af3/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 6,
+      "caption_original": "Fig. 2 a SEM images and b OM images showing 2 μm resolution features. c OM images showing complex features. d Photograph of the waferscale fabrication of ICAP-patterned electrolyte array. e Benchmark comparison of electrolyte patterning resolution. f Benchmark comparison of electrolyte patterning capacitance. g Thermal stability (− 50 to 200 °C) of the capacitance. h Summary of multifunctional advantages: high resolution, capacitance, large-scale fabrication capability, compatibility and thermal tolerance",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-02.png",
+      "image_width": 998,
+      "image_height": 835,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        257.23,
+        546.78,
+        674.03
+      ],
+      "image_path": "papers/paper-8fa2997604ff0af3/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 8,
+      "caption_original": "Fig. 3 Mechanistic and spectroscopic evidence of PLE crosslinking and ion compensation. a Schematic of dual crosslinking mechanism: radical grafting via photoinitiator and etherification via epichlorohydrin. b SEM image of microporous structure facilitating ion transport. c, d XPS spectra showing hydroxyl consumption and ether bond formation. e FTIR spectra confirming epoxy ring opening and hydroxyl substitution. f, g EDS mapping and spectra before and after LiCl ion compensation. h Capacitance–frequency curves of PLEs treated with different LiCl concentrations. i Evolution of ionic conductivity during immersion in LiCl and DI water (different concentrations). j Thermogravimetric measurement demonstrating thermal stability up to 200 °C",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of dual crosslinking mechanism: radical grafting via photoinitiator and etherification via epichlorohydrin",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "SEM image of microporous structure facilitating ion transport",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "c,d",
+          "original": "XPS spectra showing hydroxyl consumption and ether bond formation",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "FTIR spectra confirming epoxy ring opening and hydroxyl substitution",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f,g",
+          "original": "EDS mapping and spectra before and after LiCl ion compensation",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "h",
+          "original": "Capacitance–frequency curves of PLEs treated with different LiCl concentrations",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "Evolution of ionic conductivity during immersion in LiCl and DI water (different concentrations)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "j",
+          "original": "Thermogravimetric measurement demonstrating thermal stability up to 200 °C",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 832,
+      "image_height": 1154,
+      "crop_confidence": "high",
+      "bbox": [
+        89.84,
+        80.0,
+        505.44,
+        656.88
+      ],
+      "image_path": "papers/paper-8fa2997604ff0af3/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 4",
+      "page": 11,
+      "caption_original": "Fig. 4 Suppression of leakage and electrical crosstalk in OECT arrays via ICAP electrolytes. a Schematics of unpatterned vs patterned OECT arrays. b TCAD simulations of ion distributions. c, d Leakage current (IL) as a function of channel length (simulated). e RSD–VGS characteristics fitted with equivalent circuit models. f Crosstalk current (Icrosstalk) versus crosstalk voltage (Vcrosstalk), showing 97.6% suppression in patterned arrays. g Transient crosstalk measurements for unpatterned vs patterned OECTs (vertical axis: the victim current Iv), demonstrating suppression of crosstalk effect in the latter. h, i Pseudo-PMOS inverter operation: unpatterned devices exhibit NAND-like erroneous outputs, whereas patterned devices yield correct inverter logic with strong noise immunity",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematics of unpatterned vs patterned OECT arrays",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "TCAD simulations of ion distributions",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        },
+        {
+          "label": "c,d",
+          "original": "Leakage current (IL) as a function of channel length (simulated)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "RSD–VGS characteristics fitted with equivalent circuit models",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        },
+        {
+          "label": "f",
+          "original": "Crosstalk current (Icrosstalk) versus crosstalk voltage (Vcrosstalk), showing 97.6% suppression in patterned arrays",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "g",
+          "original": "Transient crosstalk measurements for unpatterned vs patterned OECTs (vertical axis: the victim current Iv), demonstrating suppression of crosstalk effect in the latter",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "h,i",
+          "original": "Pseudo-PMOS inverter operation: unpatterned devices exhibit NAND-like erroneous outputs, whereas patterned devices yield correct inverter logic with strong noise immunity",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 998,
+      "image_height": 1052,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        80.0,
+        546.78,
+        605.52
+      ],
+      "image_path": "papers/paper-8fa2997604ff0af3/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 5",
+      "page": 13,
+      "caption_original": "Fig. 5 Compatibility of ICAP electrolytes with organic semiconductors and neuromorphic emulation. a Schematic of PEDOT-OECT fabrication. b, c Transfer and output curves demonstrating depletion-mode behavior with on/off ratio of 104. d Inhibitory postsynaptic current (IPSC) responses showing millisecond-scale resolution and paired-pulse facilitation fitted with double-exponential function. e Long-term endurance with < 4.7% degradation after 10,000 cycles. f Fabrication schematic of BBL-OECT. g, h Transfer and output curves confirming accumulationmode operation with on/off > 105. i Excitatory postsynaptic current (EPSC) responses with 1 ms temporal resolution. j Endurance performance showing 85.3% current retention after 5000 cycles",
+      "caption_zh": "Fig. 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of PEDOT-OECT fabrication",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b,c",
+          "original": "Transfer and output curves demonstrating depletion-mode behavior with on/off ratio of 104",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Inhibitory postsynaptic current (IPSC) responses showing millisecond-scale resolution and paired-pulse facilitation fitted with double-exponential function",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "e",
+          "original": "Long-term endurance with < 4.7% degradation after 10,000 cycles",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "Fabrication schematic of BBL-OECT",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "g,h",
+          "original": "Transfer and output curves confirming accumulationmode operation with on/off > 105",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "Excitatory postsynaptic current (EPSC) responses with 1 ms temporal resolution",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "j",
+          "original": "Endurance performance showing 85.3% current retention after 5000 cycles",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 998,
+      "image_height": 1083,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        80.0,
+        546.78,
+        621.12
+      ],
+      "image_path": "papers/paper-8fa2997604ff0af3/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Fig. 6",
+      "page": 14,
+      "caption_original": "Fig. 6 Compatibility of ICAP electrolytes with inorganic semiconductors and system-level neuromorphic applications. a Fabrication of WO3-OECT. b, c Transfer and output curves showing on/off ratio of 105. d Long-term potentiation (LTP) and depression (LTD) characteristics under varying pulse amplitudes (VD = 0.5 V, tP = 0.75 s, Δt = 2 s). e Endurance of programmable conductance states over 3000 cycles",
+      "caption_zh": "Fig. 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Fabrication of WO3-OECT",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b,c",
+          "original": "Transfer and output curves showing on/off ratio of 105",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Long-term potentiation (LTP) and depression (LTD) characteristics under varying pulse amplitudes (VD = 0.5 V, tP = 0.75 s, Δt = 2 s)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Endurance of programmable conductance states over 3000 cycles",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 997,
+      "image_height": 631,
+      "crop_confidence": "high",
+      "bbox": [
+        48.56,
+        368.51,
+        546.72,
+        683.67
+      ],
+      "image_path": "papers/paper-8fa2997604ff0af3/figures/figure-06.png"
+    }
+  ],
+  "glossary": []
+}

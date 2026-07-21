@@ -15,6 +15,16 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 MEMORY = ROOT / "research-memory"
+CATEGORY_ORDER = (
+    "电子皮肤与触觉",
+    "可穿戴健康与生理监测",
+    "柔性材料与器件",
+    "柔性能源与自供能",
+    "软体机器人与人机交互",
+    "神经形态与传感计算",
+    "制造、封装与可靠性",
+    "多模态与生化传感",
+)
 
 
 def read_json(path: Path, fallback: Any) -> Any:
@@ -40,11 +50,13 @@ def build_message(day: Path) -> tuple[str, str, str]:
     selected = sorted(
         papers,
         key=lambda paper: (
-            bool(paper.get("strongly_related")),
-            int(paper.get("relevance_score") or 0),
-            str(paper.get("date") or ""),
+            CATEGORY_ORDER.index(paper.get("primary_category"))
+            if paper.get("primary_category") in CATEGORY_ORDER
+            else len(CATEGORY_ORDER),
+            0 if paper.get("strongly_related") else 1,
+            -int(paper.get("relevance_score") or 0),
+            str(paper.get("title") or ""),
         ),
-        reverse=True,
     )
     strong_count = sum(bool(paper.get("strongly_related")) for paper in selected)
     lines = [f"共 {len(selected)} 篇，强相关 {strong_count} 篇。", ""] if selected else []
