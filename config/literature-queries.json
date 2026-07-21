@@ -1,7 +1,7 @@
 {
   "lookback_windows_days": [3, 7, 30],
   "minimum_candidates": 3,
-  "maximum_candidates": 15,
+  "maximum_candidates": 30,
   "open_access_pdf_limit": 12,
   "journal_database": "config/elite-journals.json",
   "targeted_venue_query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
@@ -53,6 +53,32 @@
       "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
       "tracks": ["P1"],
       "sources": ["openalex", "crossref", "semantic_scholar"]
+    }
+  ],
+  "official_site_queries": [
+    {
+      "id": "science-official-electronic-skin",
+      "query": "electronic skin",
+      "tracks": ["P2", "P3", "P4", "P5", "P6"],
+      "sources": ["science_official"]
+    },
+    {
+      "id": "science-official-tactile-sensor",
+      "query": "tactile sensor",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"],
+      "sources": ["science_official"]
+    },
+    {
+      "id": "science-official-haptic-sensor",
+      "query": "haptic sensor",
+      "tracks": ["P2", "P4", "P6"],
+      "sources": ["science_official"]
+    },
+    {
+      "id": "science-official-flexible-sensor",
+      "query": "flexible sensor",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"],
+      "sources": ["science_official"]
     }
   ],
   "legacy_targeted_venue_queries": [

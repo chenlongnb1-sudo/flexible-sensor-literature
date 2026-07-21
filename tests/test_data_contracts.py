@@ -36,7 +36,9 @@ class DataContractTests(unittest.TestCase):
                 "Advanced Functional Materials",
                 "Advanced Science",
                 "Advanced Electronic Materials",
+                "Nature",
                 "Nature Sensors",
+                "Science",
                 "ACS Nano",
                 "Nano Letters",
             }
@@ -55,7 +57,7 @@ class DataContractTests(unittest.TestCase):
 
     def test_zero_result_day_still_builds_status_notification(self) -> None:
         _, plain, _ = build_message(TODAY_PATH)
-        self.assertIn("今日没有达到门槛的新论文", plain)
+        self.assertIn("今日没有达到期刊与柔性电子主题双重门槛的新论文", plain)
 
     def test_daily_papers_match_runtime_contract(self) -> None:
         payload = json.loads(PAPERS_PATH.read_text(encoding="utf-8"))
@@ -160,7 +162,7 @@ class DataContractTests(unittest.TestCase):
         day = PAPERS_PATH.parents[1]
         _, plain, _ = build_message(day)
         self.assertIn("摘要：", plain)
-        self.assertIn("创新点：", plain)
+        self.assertIn("论文创新：", plain)
         self.assertIn("对你的启发：", plain)
         self.assertIn("无标记的视觉触觉传感器", plain)
         self.assertNotIn("制备步骤", plain)

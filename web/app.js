@@ -142,7 +142,7 @@ function paperCard(paper, compact = false) {
   return `
     <article class="paper-card ${compact ? "compact" : ""}">
       <div class="paper-main">
-        <div class="paper-topline"><div class="tags">${(paper.tracks || []).map((item) => tag(item, "blue")).join("")}${tag(actionLabels[paper.decision_hint] || paper.decision_hint || "待判断", "amber")}${sources}</div><span class="paper-date">${formatDate(paper.date)}</span></div>
+        <div class="paper-topline"><div class="tags">${tag(paper.primary_category || "柔性材料与器件")}${tag(paper.strongly_related ? "强相关" : "相关", paper.strongly_related ? "amber" : "")}${(paper.tracks || []).map((item) => tag(item, "blue")).join("")}${tag(actionLabels[paper.decision_hint] || paper.decision_hint || "待判断", "amber")}${sources}</div><span class="paper-date">${formatDate(paper.date)}</span></div>
         <h3><a href="${escapeHtml(detailLink)}">${escapeHtml(paper.title)}</a></h3>
         <div class="paper-meta"><span>${escapeHtml(paper.venue || "来源未标注")}</span>${authors ? `<span>${escapeHtml(authors)}${(paper.authors || []).length > 4 ? " et al." : ""}</span>` : ""}</div>
         <p class="paper-claim">${escapeHtml(paper.summary_zh || paper.core_claim || "等待摘要分析")}</p>

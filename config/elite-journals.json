@@ -1,9 +1,17 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-07-22",
-  "policy": "Nature, Science and Cell subjournals; Wiley Advanced Materials and Advanced Functional Materials families; and curated journals at a comparable level that regularly publish flexible electronics, tactile sensing, electronic skin, haptics or sensor-computing work.",
+  "policy": "Nature and Science flagships; Nature, Science and Cell subjournals; Wiley Advanced Materials and Advanced Functional Materials families; and curated journals at a comparable level that regularly publish flexible electronics, tactile sensing, electronic skin, haptics or sensor-computing work.",
   "default_query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
   "journals": [
+    {
+      "id": "nature",
+      "title": "Nature",
+      "issn": "1476-4687",
+      "publisher": "Springer Nature",
+      "tier": "nature_flagship",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
     {
       "id": "nature-materials",
       "title": "Nature Materials",
@@ -109,6 +117,14 @@
       "publisher": "Springer Nature",
       "tier": "nature_subjournal",
       "tracks": ["P1", "P2", "P6"]
+    },
+    {
+      "id": "science",
+      "title": "Science",
+      "issn": "1095-9203",
+      "publisher": "AAAS",
+      "tier": "science_flagship",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
     },
     {
       "id": "science-advances",

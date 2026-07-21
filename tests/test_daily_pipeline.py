@@ -21,6 +21,8 @@ from scripts.daily_literature_pipeline import (
     retain_existing_results_on_empty_refresh,
     SearchJob,
     search_crossref,
+    science_official_feed_url,
+    search_science_official,
     venue_quality_tier,
 )
 
@@ -139,8 +141,62 @@ class DailyPipelineTests(unittest.TestCase):
             records = search_crossref(job)
         params = parse_qs(urlparse(request.call_args.args[0]).query)
         self.assertEqual(params["query.container-title"], ["Nature Electronics"])
+        self.assertEqual(params["rows"], ["1000"])
+        self.assertTrue(params["mailto"][0])
+        self.assertNotIn("query.bibliographic", params)
         self.assertIn("/journals/2520-1131/works", request.call_args.args[0])
         self.assertEqual([record["title"] for record in records], ["Matching tactile paper"])
+
+    def test_science_official_feed_recovers_newly_published_article(self) -> None:
+        job = SearchJob(
+            query_id="science-official-tactile-sensor",
+            query="tactile sensor",
+            source="science_official",
+            tracks=("P3", "P6"),
+            from_date=date(2026, 6, 21),
+            to_date=date(2026, 7, 21),
+        )
+        rss = b'''<?xml version="1.0" encoding="UTF-8"?>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:rss="http://purl.org/rss/1.0/"
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">
+          <rss:item>
+            <rss:title>High-resolution real-time mechanochromic tactile sensors</rss:title>
+            <dc:identifier>doi:10.1126/sciadv.aee5236</dc:identifier>
+            <dc:date>2026-07-03T07:00:00Z</dc:date>
+            <dc:type>Research Article</dc:type>
+            <dc:creator>Giacomo Sasso, Alessandro Pagani</dc:creator>
+            <prism:publicationName>Science Advances</prism:publicationName>
+            <prism:doi>10.1126/sciadv.aee5236</prism:doi>
+            <prism:url>https://www.science.org/doi/abs/10.1126/sciadv.aee5236</prism:url>
+          </rss:item>
+        </rdf:RDF>'''
+        crossref = json.dumps(
+            {
+                "message": {
+                    "type": "journal-article",
+                    "abstract": "A real-time tactile sensor for robotic grasping.",
+                    "author": [{"given": "Giacomo", "family": "Sasso"}],
+                    "link": [
+                        {
+                            "URL": "https://www.science.org/doi/pdf/10.1126/sciadv.aee5236",
+                            "content-type": "unspecified",
+                        }
+                    ],
+                }
+            }
+        ).encode("utf-8")
+        with patch(
+            "scripts.daily_literature_pipeline.request_bytes",
+            side_effect=[(rss, "application/xml"), (crossref, "application/json")],
+        ):
+            records = search_science_official(job)
+        self.assertIn("Earliest", science_official_feed_url(job))
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["venue"], "Science Advances")
+        self.assertIn("robotic grasping", records[0]["abstract"])
+        self.assertTrue(records[0]["is_open_access"])
 
     def test_specific_tactile_computing_title_can_clear_relevance_threshold(self) -> None:
         record = {
@@ -153,7 +209,7 @@ class DailyPipelineTests(unittest.TestCase):
         }
         self.assertTrue(is_actionable_candidate(record, date.today()))
 
-    def test_targeted_elite_venue_does_not_bypass_relevance_threshold(self) -> None:
+    def test_targeted_elite_flexible_electronics_enters_general_queue(self) -> None:
         record = {
             "title": "Reduction of appearance artifacts in wearable on-skin electronics",
             "abstract": (
@@ -165,7 +221,7 @@ class DailyPipelineTests(unittest.TestCase):
             "date": date.today().isoformat(),
             "query_ids": ["venue-science-advances"],
         }
-        self.assertFalse(is_actionable_candidate(record, date.today()))
+        self.assertTrue(is_actionable_candidate(record, date.today()))
 
     def test_targeted_subjournal_direct_tactile_record_enters_watch_queue(self) -> None:
         record = {
@@ -179,6 +235,38 @@ class DailyPipelineTests(unittest.TestCase):
         }
         self.assertTrue(is_on_topic(record))
         self.assertTrue(is_actionable_candidate(record, date.today()))
+
+    def test_strong_match_gets_category_and_innovation_suggestions(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Flexible tactile sensor array with compressed readout and calibration",
+                "abstract": "A wearable electronic skin uses low-channel multiplexed readout for robotic grasping.",
+                "venue": "Advanced Functional Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-functional-materials"],
+            },
+            date.today(),
+        )
+        self.assertEqual(paper["primary_category"], "电子皮肤与触觉")
+        self.assertTrue(paper["strongly_related"])
+        self.assertTrue(paper["innovation_suggestions"])
+
+    def test_broad_flexible_energy_paper_is_related_without_forced_idea(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Stretchable battery for wearable electronics",
+                "abstract": "A flexible device stores energy during repeated deformation.",
+                "venue": "Advanced Energy Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-energy-materials"],
+            },
+            date.today(),
+        )
+        self.assertEqual(paper["primary_category"], "柔性能源与自供能")
+        self.assertFalse(paper["strongly_related"])
+        self.assertEqual(paper["innovation_suggestions"], [])
 
     def test_targeted_afm_pressure_sensor_enters_watch_queue(self) -> None:
         record = {
@@ -206,7 +294,7 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertTrue(is_on_topic(record))
         self.assertTrue(is_actionable_candidate(record, date.today()))
 
-    def test_missing_abstract_material_only_title_stays_excluded(self) -> None:
+    def test_material_only_tactile_title_enters_general_queue(self) -> None:
         record = {
             "title": "MXene tactile sensor with ultrahigh sensitivity",
             "abstract": "",
@@ -215,7 +303,7 @@ class DailyPipelineTests(unittest.TestCase):
             "date": date.today().isoformat(),
             "query_ids": ["tolerance-interface"],
         }
-        self.assertFalse(is_actionable_candidate(record, date.today()))
+        self.assertTrue(is_actionable_candidate(record, date.today()))
 
     def test_merge_prefers_complete_duplicate(self) -> None:
         records = [

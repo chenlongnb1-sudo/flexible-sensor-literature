@@ -55,7 +55,7 @@ function renderPaper(paper, detail) {
   const status = detail?.status === "fulltext_draft" ? "全文已解析" : "仅摘要级";
   detailRoot.innerHTML = `
     <section class="paper-title-band">
-      <div class="tags"><span class="tag">${escapeHtml(paper.venue || "来源未标注")}</span><span class="tag amber">${escapeHtml(status)}</span>${(paper.tracks || []).map((track) => `<span class="tag blue">${escapeHtml(track)}</span>`).join("")}</div>
+      <div class="tags"><span class="tag">${escapeHtml(paper.venue || "来源未标注")}</span><span class="tag">${escapeHtml(paper.primary_category || "柔性材料与器件")}</span>${paper.strongly_related ? '<span class="tag amber">强相关</span>' : '<span class="tag">相关</span>'}<span class="tag amber">${escapeHtml(status)}</span>${(paper.tracks || []).map((track) => `<span class="tag blue">${escapeHtml(track)}</span>`).join("")}</div>
       <h1>${escapeHtml(paper.title)}</h1>
       <p class="paper-detail-meta">${escapeHtml((paper.authors || []).join(", "))}<span>${escapeHtml(paper.date || "")}</span>${paper.doi ? `<span>DOI ${escapeHtml(paper.doi)}</span>` : ""}</p>
       <nav class="paper-section-nav"><a href="#summary">摘要</a><a href="#methods">制备步骤</a><a href="#figures">图解</a><a href="#pdf">PDF</a></nav>
@@ -66,6 +66,7 @@ function renderPaper(paper, detail) {
       <div class="paper-summary-grid">
         <article><h3>中文摘要</h3><p>${escapeHtml(detail?.abstract?.zh || paper.summary_zh || "等待摘要分析")}</p></article>
         <article><h3>创新点</h3>${list(detail?.innovation_points || [paper.core_claim].filter(Boolean))}</article>
+        ${(detail?.innovation_suggestions || paper.innovation_suggestions || []).length ? `<article><h3>给你的创新建议</h3>${list(detail?.innovation_suggestions || paper.innovation_suggestions)}</article>` : ""}
         <article><h3>对你的启发</h3>${list(detail?.inspirations || paper.transferable_points)}</article>
       </div>
       <details class="abstract-original"><summary>查看原始摘要</summary><p>${escapeHtml(detail?.abstract?.original || paper.source_abstract || "未获取原始摘要")}</p></details>

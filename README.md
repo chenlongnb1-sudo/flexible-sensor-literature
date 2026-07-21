@@ -62,7 +62,9 @@ python scripts\daily_literature_pipeline.py --git-sync
 
 流水线先查最近 3 天；强相关结果不足时扩到 7 天和 30 天，不会为了凑数回溯到更早年份。只保存出版社、Unpaywall、PMC/DOAJ 或作者/机构仓储可合法取得且通过 `%PDF` 校验的全文；其余论文保留 DOI、摘要级详情页和来源链接。
 
-除主题关键词检索外，系统还读取 `config/elite-journals.json`，通过 ISSN 对 43 本目标期刊执行期刊专属检索。数据库覆盖 Nature/Science/Cell 相关子刊、Advanced Materials、Advanced Functional Materials、Advanced Science 及相关 Advanced/Small 系列，以及 ACS Nano、Nano Letters、Nano Energy、Nano-Micro Letters、Materials Horizons、InfoMat、Research、NSR、PNAS 等同等级来源。数据库命中且标题明确涉及柔性触觉、电子皮肤、压力/力传感或触觉交互的论文可进入观察队列；PushPlus 优先推送其中与研究画像最相关的 5 篇。
+除主题关键词检索外，系统还读取 `config/elite-journals.json`，通过 ISSN 对 45 本目标期刊抓取日期窗口内的完整题录，再在本地执行柔性电子主题分类。数据库覆盖 Nature 与 Science 旗舰刊、Nature/Science/Cell 相关子刊、Advanced Materials、Advanced Functional Materials、Advanced Science 及相关 Advanced/Small 系列，以及 ACS Nano、Nano Letters、Nano Energy、Nano-Micro Letters、Materials Horizons、InfoMat、Research、NSR、PNAS 等同等级来源。Science 系列另通过官网 RSS 补检新上线但尚未被聚合数据库完整收录的论文。
+
+达到期刊门槛的柔性电子论文按电子皮肤与触觉、可穿戴健康、柔性材料与器件、柔性能源、软体机器人与人机交互、神经形态与传感计算、制造封装与可靠性、多模态与生化传感分类推送。与阵列读出、矢量触觉、ADC 前处理、传感计算、校准漂移和跨器件迁移直接相关的论文标为强相关，并额外生成可验证的项目创新建议。
 
 每篇入选论文都生成可点击详情页。取得合法全文时，详情页包含页码锚定的方法/制备步骤、主图与分图解释、PDF 版本标签和内嵌 PDF；没有合法全文时只展示摘要、创新点和课题启发，不生成或猜测方法、图版与 PDF。
 

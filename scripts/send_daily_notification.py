@@ -36,17 +36,19 @@ def latest_day(requested: str = "") -> Path | None:
 def build_message(day: Path) -> tuple[str, str, str]:
     payload = read_json(day / "summaries" / "papers.json", {"papers": [], "generated_ideas": []})
     papers = payload.get("papers", [])
-    title = f"{day.name} 柔性电子皮肤文献日报"
-    targeted = [
-        paper
-        for paper in papers
-        if any(str(query_id).startswith("venue-") for query_id in paper.get("query_ids", []))
-    ]
-    selected = targeted[:5]
-    selected_ids = {paper.get("id") for paper in selected}
-    selected.extend(paper for paper in papers if paper.get("id") not in selected_ids)
-    selected = selected[:5]
-    lines = []
+    title = f"{day.name} 柔性电子高水平文献日报"
+    selected = sorted(
+        papers,
+        key=lambda paper: (
+            bool(paper.get("strongly_related")),
+            int(paper.get("relevance_score") or 0),
+            str(paper.get("date") or ""),
+        ),
+        reverse=True,
+    )
+    strong_count = sum(bool(paper.get("strongly_related")) for paper in selected)
+    lines = [f"共 {len(selected)} 篇，强相关 {strong_count} 篇。", ""] if selected else []
+    current_category = ""
     for index, paper in enumerate(selected, 1):
         detail_path = ROOT / "web" / str(paper.get("detail_json") or "")
         detail = read_json(detail_path, {}) if detail_path.is_file() else {}
@@ -54,23 +56,35 @@ def build_message(day: Path) -> tuple[str, str, str]:
             "https://chenlongnb1-sudo.github.io/flexible-sensor-literature/"
             f"paper.html?id={urllib.parse.quote(str(paper.get('id') or ''))}"
         )
-        lines.append(f"{index}. [{paper.get('venue') or '期刊待核验'}] {paper.get('title', '')}")
+        category = paper.get("primary_category") or detail.get("primary_category") or "柔性材料与器件"
+        if category != current_category:
+            lines.append(f"【{category}】")
+            current_category = category
+        relation = "强相关" if paper.get("strongly_related") else "相关"
+        lines.append(f"{index}. [{relation}｜{paper.get('venue') or '期刊待核验'}] {paper.get('title', '')}")
         abstract = (detail.get("abstract") or {}).get("zh")
         lines.append(f"摘要：{abstract or paper.get('summary_zh') or paper.get('core_claim') or '待精读'}")
-        innovations = detail.get("innovation_points") or [
-            paper.get("core_claim", ""), *paper.get("relevance_reasons", [])
-        ]
-        innovations = [item for item in innovations if item][:2]
+        innovations = [
+            item
+            for item in (detail.get("innovation_points") or paper.get("relevance_reasons", []))
+            if item and any("\u4e00" <= char <= "\u9fff" for char in str(item))
+        ][:2]
         if innovations:
-            lines.append(f"创新点：{'；'.join(innovations)}")
-        inspirations = detail.get("inspirations") or paper.get("transferable_points", [])
-        inspirations = [item for item in inspirations if item][:2]
+            lines.append(f"论文创新：{'；'.join(innovations)}")
+        suggestions = detail.get("innovation_suggestions") or paper.get("innovation_suggestions", [])
+        if paper.get("strongly_related") and suggestions:
+            lines.append(f"给你的创新建议：{'；'.join(suggestions[:2])}")
+        inspirations = [
+            item
+            for item in (detail.get("inspirations") or paper.get("transferable_points", []))
+            if item and item not in suggestions
+        ][:2]
         if inspirations:
             lines.append(f"对你的启发：{'；'.join(inspirations)}")
         lines.append(f"详情：{link}")
         lines.append("")
     if not papers:
-        lines.append("今日没有达到门槛的新论文，系统未用偏题结果凑数。")
+        lines.append("今日没有达到期刊与柔性电子主题双重门槛的新论文。")
     plain = "\n".join(lines)
     html_content = "<br>".join(html.escape(line) for line in lines)
     return title, plain, html_content

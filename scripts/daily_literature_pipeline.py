@@ -19,6 +19,7 @@ import re
 import subprocess
 import sys
 import tarfile
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -47,6 +48,9 @@ UNPAYWALL_EMAIL = os.environ.get(
     "UNPAYWALL_EMAIL",
     DEFAULT_MAILTO or "chenlongnb1-sudo@users.noreply.github.com",
 ).strip()
+CROSSREF_MIN_INTERVAL_SECONDS = 0.35
+CROSSREF_REQUEST_LOCK = threading.Lock()
+CROSSREF_LAST_REQUEST_AT = 0.0
 
 TRACK_TERMS: dict[str, tuple[str, ...]] = {
     "P1": (
@@ -98,6 +102,59 @@ MATERIAL_TERMS = (
 EVIDENCE_TERMS = (
     "comparison", "benchmark", "statistical", "array", "circuit", "latency",
     "power", "calibration", "classification", "robot", "experiment", "validation",
+)
+FLEXIBLE_ELECTRONICS_TERMS = (
+    "flexible electronic", "stretchable electronic", "soft electronic",
+    "wearable electronic", "epidermal electronic", "biointegrated electronic",
+    "skin-interfaced", "skin interfaced", "on-skin", "electronic skin", "e-skin",
+    "artificial skin", "flexible sensor", "stretchable sensor", "wearable sensor",
+    "textile sensor", "electronic textile", "e-textile", "smart textile",
+    "flexible transistor", "stretchable transistor", "organic electrochemical transistor",
+    "flexible electrode", "stretchable electrode", "iontronic", "conformal sensor",
+    "flexible circuit", "stretchable circuit", "soft robotics", "soft robot",
+)
+FLEXIBLE_CATEGORY_TERMS: dict[str, tuple[str, tuple[str, ...]]] = {
+    "tactile_e_skin": (
+        "电子皮肤与触觉",
+        ("tactile", "electronic skin", "e-skin", "artificial skin", "touch sensor", "haptic", "pressure sensor", "force sensor"),
+    ),
+    "neuromorphic_sensor_computing": (
+        "神经形态与传感计算",
+        ("neuromorphic", "synaptic", "in-sensor", "near-sensor", "sensor computing", "analog computing", "feature extraction", "encoding"),
+    ),
+    "soft_robotics_hmi": (
+        "软体机器人与人机交互",
+        ("soft robot", "robotic", "human-machine", "human machine", "hmi", "prosthetic", "grasp", "teleoperation", "haptic feedback"),
+    ),
+    "wearable_health": (
+        "可穿戴健康与生理监测",
+        ("wearable", "epidermal", "on-skin", "skin-interfaced", "physiological", "health monitoring", "biomedical", "rehabilitation"),
+    ),
+    "multimodal_bio_chemical": (
+        "多模态与生化传感",
+        ("multimodal", "multi-modal", "biosensor", "biochemical", "chemical sensing", "sweat", "glucose", "ion sensing", "temperature sensing"),
+    ),
+    "manufacturing_reliability": (
+        "制造、封装与可靠性",
+        ("fabrication", "manufacturing", "printing", "electrospinning", "laser pattern", "encapsulation", "packaging", "durability", "reliability", "self-healing"),
+    ),
+    "flexible_energy": (
+        "柔性能源与自供能",
+        ("self-powered", "energy harvesting", "triboelectric", "piezoelectric", "solar cell", "battery", "supercapacitor", "generator"),
+    ),
+    "flexible_materials_devices": (
+        "柔性材料与器件",
+        ("flexible", "stretchable", "soft electronic", "organic transistor", "hydrogel", "ionogel", "mxene", "graphene", "nanofiber", "electrode"),
+    ),
+}
+STRONG_PROJECT_TERMS = (
+    "analog front-end", "analog frontend", "pre-adc", "readout", "readout channel",
+    "tactile array", "sensor array", "compressed", "multiplex", "low channel",
+    "macro-pixel", "vector tactile", "shear", "friction", "slip", "decoupling",
+    "three-axis", "triaxial", "in-sensor", "near-sensor", "physical computing",
+    "analog computing", "sensor computing", "neuromorphic", "synaptic", "projection",
+    "calibration", "drift", "device variation", "cross-device", "fault tolerant",
+    "few-shot", "self-calibration", "feature extraction",
 )
 
 ELITE_VENUE_EXACT = {
@@ -160,7 +217,11 @@ def write_json(path: Path, payload: Any) -> None:
 
 
 def configured_search_queries(config: dict[str, Any]) -> list[dict[str, Any]]:
-    queries = [*config.get("queries", []), *config.get("targeted_venue_queries", [])]
+    queries = [
+        *config.get("queries", []),
+        *config.get("official_site_queries", []),
+        *config.get("targeted_venue_queries", []),
+    ]
     database_path = ROOT / str(config.get("journal_database") or "config/elite-journals.json")
     database = load_json(database_path, {"journals": []})
     default_query = str(
@@ -202,22 +263,39 @@ def request_bytes(
         urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar())
     )
     last_error: Exception | None = None
-    for attempt in range(3):
+    for attempt in range(4):
         try:
             with opener.open(urllib.request.Request(url, headers=headers), timeout=timeout) as response:
                 return response.read(), response.headers.get("Content-Type", "")
         except urllib.error.HTTPError as error:
             last_error = error
+            retry_after = str(error.headers.get("Retry-After") or "").strip()
             error.close()
             if error.code not in {429, 500, 502, 503, 504}:
                 break
-            if attempt < 2:
-                time.sleep(1.2 * (attempt + 1))
+            if attempt < 3:
+                delay = 1.5 * (2**attempt)
+                if retry_after.isdigit():
+                    delay = max(delay, min(float(retry_after), 30.0))
+                time.sleep(delay)
         except (urllib.error.URLError, TimeoutError) as error:
             last_error = error
-            if attempt < 2:
-                time.sleep(1.2 * (attempt + 1))
+            if attempt < 3:
+                time.sleep(1.5 * (2**attempt))
     raise RuntimeError(f"{type(last_error).__name__}: {last_error}")
+
+
+def request_crossref_bytes(url: str) -> tuple[bytes, str]:
+    """Keep ISSN searches in Crossref's polite request envelope."""
+    global CROSSREF_LAST_REQUEST_AT
+    with CROSSREF_REQUEST_LOCK:
+        elapsed = time.monotonic() - CROSSREF_LAST_REQUEST_AT
+        if elapsed < CROSSREF_MIN_INTERVAL_SECONDS:
+            time.sleep(CROSSREF_MIN_INTERVAL_SECONDS - elapsed)
+        try:
+            return request_bytes(url)
+        finally:
+            CROSSREF_LAST_REQUEST_AT = time.monotonic()
 
 
 def reconstruct_abstract(index: dict[str, list[int]] | None) -> str:
@@ -496,20 +574,21 @@ def search_openalex(job: SearchJob) -> list[dict[str, Any]]:
 
 def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
     params = {
-        "query.bibliographic": job.query,
         "filter": f"from-pub-date:{job.from_date.isoformat()},until-pub-date:{job.to_date.isoformat()}",
-        "sort": "relevance",
+        "sort": "published" if job.issn else "relevance",
         "order": "desc",
-        "rows": "100" if job.issn else "25",
-        "mailto": DEFAULT_MAILTO,
+        "rows": "1000" if job.issn else "25",
+        "mailto": DEFAULT_MAILTO or UNPAYWALL_EMAIL,
     }
+    if not job.issn:
+        params["query.bibliographic"] = job.query
     if job.container_title:
         params["query.container-title"] = job.container_title
     endpoint = "https://api.crossref.org/works"
     if job.issn:
         endpoint = f"https://api.crossref.org/journals/{urllib.parse.quote(job.issn)}/works"
     url = endpoint + "?" + urllib.parse.urlencode(params)
-    payload = json.loads(request_bytes(url)[0])
+    payload = json.loads(request_crossref_bytes(url)[0])
     records = []
     for item in payload.get("message", {}).get("items", []):
         title_values = item.get("title") or []
@@ -643,11 +722,109 @@ def search_semantic_scholar(job: SearchJob) -> list[dict[str, Any]]:
     return records
 
 
+def science_official_feed_url(job: SearchJob) -> str:
+    exact_phrase = f'"{job.query.strip().strip(chr(34))}"'
+    date_filter = (
+        f"[{job.from_date.strftime('%Y%m%d')} TO {job.to_date.strftime('%Y%m%d')}2359]"
+    )
+    search_state = "&" + urllib.parse.urlencode(
+        {"AllField": exact_phrase, "Earliest": date_filter, "target": "default"}
+    )
+    encoded_state = urllib.parse.quote_plus(urllib.parse.quote_plus(search_state))
+    return (
+        "https://www.science.org/action/showFeed"
+        f"?ui=0&mi=qdz30i&type=search&feed=rss&query={encoded_state}"
+    )
+
+
+def crossref_doi_metadata(doi: str) -> dict[str, Any]:
+    if not doi:
+        return {}
+    endpoint = "https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="")
+    payload = json.loads(request_crossref_bytes(endpoint)[0])
+    return payload.get("message") or {}
+
+
+def search_science_official(job: SearchJob) -> list[dict[str, Any]]:
+    raw, _ = request_bytes(
+        science_official_feed_url(job),
+        accept="application/rss+xml,application/xml,text/xml",
+    )
+    root = ET.fromstring(raw)
+    namespace = {
+        "rss": "http://purl.org/rss/1.0/",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "prism": "http://prismstandard.org/namespaces/basic/2.0/",
+    }
+    records = []
+    for item in root.findall("rss:item", namespace):
+        title = clean_markup(item.findtext("rss:title", default="", namespaces=namespace))
+        doi = normalize_doi(
+            item.findtext("prism:doi", default="", namespaces=namespace)
+            or item.findtext("dc:identifier", default="", namespaces=namespace)
+        )
+        venue = clean_markup(
+            item.findtext("prism:publicationName", default="", namespaces=namespace)
+        )
+        publication_date = (
+            item.findtext("dc:date", default="", namespaces=namespace) or ""
+        )[:10]
+        landing_url = item.findtext("prism:url", default="", namespaces=namespace) or ""
+        creators = item.findtext("dc:creator", default="", namespaces=namespace) or ""
+        paper_type = item.findtext("dc:type", default="", namespaces=namespace) or ""
+        metadata: dict[str, Any] = {}
+        try:
+            metadata = crossref_doi_metadata(doi)
+        except Exception:  # noqa: BLE001 - official metadata is still a valid fallback
+            pass
+        authors = []
+        for author in metadata.get("author", [])[:12]:
+            name = " ".join(
+                part for part in (author.get("given", ""), author.get("family", "")) if part
+            )
+            if name:
+                authors.append(name)
+        if not authors:
+            authors = [name.strip() for name in creators.split(",") if name.strip()][:12]
+        pdf_candidates = unique_urls(
+            [
+                *(
+                    link.get("URL") or ""
+                    for link in metadata.get("link", [])
+                    if "pdf" in str(link.get("URL") or "").lower()
+                    or "pdf" in str(link.get("content-type") or "").lower()
+                ),
+                f"https://www.science.org/doi/pdf/{doi}" if doi else "",
+            ]
+        )
+        records.append(
+            {
+                "title": title,
+                "authors": authors,
+                "venue": venue,
+                "date": publication_date,
+                "doi": doi,
+                "url": landing_url.split("?", 1)[0],
+                "pdf_url": "",
+                "pdf_candidates": pdf_candidates,
+                "is_open_access": normalize_venue_name(venue) == "science advances",
+                "paper_type": metadata.get("type") or paper_type,
+                "abstract": clean_markup(metadata.get("abstract")),
+                "cited_by_count": int(metadata.get("is-referenced-by-count") or 0),
+                "source": "Science.org official RSS",
+                "query_ids": [job.query_id],
+                "query_tracks": list(job.tracks),
+            }
+        )
+    return records
+
+
 SEARCHERS = {
     "openalex": search_openalex,
     "crossref": search_crossref,
     "semantic_scholar": search_semantic_scholar,
     "arxiv": search_arxiv,
+    "science_official": search_science_official,
 }
 
 
@@ -714,38 +891,98 @@ def count_terms(text: str, terms: Iterable[str]) -> int:
     return sum(1 for term in terms if term in lowered)
 
 
-def is_on_topic(record: dict[str, Any]) -> bool:
-    """Hard gate before scoring so broad Crossref matches cannot pollute the report."""
+def is_flexible_electronics_record(record: dict[str, Any]) -> bool:
     text = " ".join((record.get("title", ""), record.get("abstract", ""))).lower()
+    if any(term in text for term in FLEXIBLE_ELECTRONICS_TERMS):
+        return True
+    if any(
+        term in text
+        for term in (
+            "tactile", "electronic skin", "electronic-skin", "e-skin", "artificial skin",
+            "haptic sensor", "haptic feedback", "iontronic sensor", "robotic skin",
+        )
+    ):
+        return True
+    return bool(
+        re.search(
+            r"\b(?:flexible|stretchable|wearable|epidermal|conformal|textile|"
+            r"fiber[- ]shaped|skin[- ](?:mounted|interfaced)|soft)\s+"
+            r"(?:[a-z0-9-]+\s+){0,2}"
+            r"(?:electronic(?:s)?|sensor(?:s)?|device(?:s)?|transistor(?:s)?|"
+            r"electrode(?:s)?|circuit(?:s)?|photodetector(?:s)?|actuator(?:s)?|"
+            r"battery|batteries|supercapacitor(?:s)?|generator(?:s)?|solar cell(?:s)?|"
+            r"bioelectronic(?:s)?)\b",
+            text,
+        )
+    )
+
+
+def classify_flexible_categories(record: dict[str, Any]) -> tuple[str, str, list[str]]:
+    title = str(record.get("title", "")).lower()
+    text = " ".join((title, record.get("abstract", ""))).lower()
+    ranked = []
+    for index, (category_id, (label, terms)) in enumerate(FLEXIBLE_CATEGORY_TERMS.items()):
+        score = count_terms(text, terms) + 3 * count_terms(title, terms)
+        if category_id == "flexible_energy" and any(
+            term in text
+            for term in ("battery", "supercapacitor", "energy harvesting", "generator", "solar cell")
+        ):
+            score += 2
+        if category_id == "flexible_materials_devices":
+            score = min(score, 1)
+        if score:
+            ranked.append((score, -index, category_id, label))
+    ranked.sort(reverse=True)
+    if not ranked:
+        return "flexible_materials_devices", "柔性材料与器件", ["柔性材料与器件"]
+    categories = [item[3] for item in ranked[:3]]
+    return ranked[0][2], ranked[0][3], categories
+
+
+def is_strong_project_match(record: dict[str, Any]) -> bool:
+    text = " ".join((record.get("title", ""), record.get("abstract", ""))).lower()
+    sensor_context = any(
+        term in text
+        for term in (
+            "tactile", "sensor", "electronic skin", "e-skin", "haptic", "pressure",
+            "force sensing", "readout", "array", "human-machine", "robotic perception",
+        )
+    )
+    return is_flexible_electronics_record(record) and sensor_context and any(
+        (re.search(r"\bslip(?:page|ping)?\b", text) is not None) if term == "slip" else term in text
+        for term in STRONG_PROJECT_TERMS
+    )
+
+
+def innovation_suggestions(record: dict[str, Any]) -> list[str]:
+    if not is_strong_project_match(record):
+        return []
+    text = " ".join((record.get("title", ""), record.get("abstract", ""))).lower()
+    suggestions = []
+    if any(term in text for term in ("tolerance", "variation", "repeatability", "microstructure", "assembly")):
+        suggestions.append("把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。")
+    directional_match = any(
+        term in text for term in ("vector", "shear", "friction", "decoupling", "three-axis", "triaxial")
+    ) or re.search(r"\bslip(?:page|ping)?\b", text)
+    if directional_match:
+        suggestions.append("将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。")
+    if any(term in text for term in ("array", "readout", "multiplex", "compressed", "low channel", "macro-pixel")):
+        suggestions.append("在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。")
+    if any(term in text for term in ("in-sensor", "near-sensor", "physical computing", "analog computing", "sensor computing", "neuromorphic", "synaptic", "projection", "feature extraction")):
+        suggestions.append("把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。")
+    if any(term in text for term in ("calibration", "drift", "device variation", "cross-device", "fault tolerant", "few-shot", "self-calibration")):
+        suggestions.append("加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。")
+    return suggestions[:3]
+
+
+def is_on_topic(record: dict[str, Any]) -> bool:
+    """Keep the full flexible-electronics field while rejecting journal boilerplate."""
     title = str(record.get("title", ""))
     if "issue information" in title.lower() or re.search(
         r"\((?:adv\.|advanced)\s+[^)]*\d+/\d{4}\)\s*$", title, re.IGNORECASE
     ):
         return False
-    direct_tactile = any(
-        term in text
-        for term in ("tactile", "electronic skin", "electronic-skin", "e-skin", "artificial skin")
-    )
-    sensor_context = count_terms(text, CORE_TERMS) > 0
-    front_end_context = count_terms(text, SYSTEM_TERMS) > 0
-    track_context = sum(count_terms(text, terms) for terms in TRACK_TERMS.values())
-    targeted_venue = any(
-        str(query_id).startswith("venue-") for query_id in record.get("query_ids", [])
-    )
-    targeted_sensor_system = (
-        targeted_venue
-        and any(term in title.lower() for term in ("pressure sensor", "force sensor", "strain sensor"))
-        and any(
-            term in text
-            for term in (
-                "wearable", "robotic", "signal acquisition", "human monitoring",
-                "human-machine", "array", "readout", "decoupl", "biological signal",
-            )
-        )
-    )
-    return direct_tactile or targeted_sensor_system or (
-        sensor_context and front_end_context and track_context >= 1
-    )
+    return is_flexible_electronics_record(record)
 
 
 def venue_quality_tier(record: dict[str, Any]) -> str:
@@ -772,6 +1009,8 @@ def is_targeted_venue_record(record: dict[str, Any]) -> bool:
 
 
 def is_actionable_candidate(record: dict[str, Any], today: date) -> bool:
+    if is_targeted_venue_record(record) and is_flexible_electronics_record(record):
+        return True
     score = score_record(record, today)["relevance_score"]
     if score >= 48:
         return True
@@ -926,6 +1165,9 @@ def extract_metrics(record: dict[str, Any]) -> list[str]:
 def enrich_record(record: dict[str, Any], today: date) -> dict[str, Any]:
     scoring = score_record(record, today)
     tracks = scoring["tracks"]
+    category_id, primary_category, categories = classify_flexible_categories(record)
+    strong_match = is_strong_project_match(record)
+    project_suggestions = innovation_suggestions(record)
     title = record.get("title", "")
     doi = normalize_doi(record.get("doi"))
     transfer = [track_reason(track) for track in tracks[:2]]
@@ -933,6 +1175,7 @@ def enrich_record(record: dict[str, Any], today: date) -> dict[str, Any]:
         transfer.append("优先核查是否有 hardware output 与 software projection 的同步一致性证据")
     if "P4" in tracks or "P5" in tracks:
         transfer.append("可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗")
+    transfer.extend(item for item in project_suggestions if item not in transfer)
     risks = ["当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"]
     metrics = extract_metrics(record)
     if scoring["score_breakdown"]["material_only_penalty"]:
@@ -955,6 +1198,11 @@ def enrich_record(record: dict[str, Any], today: date) -> dict[str, Any]:
         "venue_quality": venue_quality_tier(record),
         "sources": record.get("sources", []),
         "query_ids": record.get("query_ids", []),
+        "category_id": category_id,
+        "primary_category": primary_category,
+        "categories": categories,
+        "relevance_level": "strong" if strong_match else "related",
+        "strongly_related": strong_match,
         "tracks": tracks,
         "relevance_score": scoring["relevance_score"],
         "score_breakdown": scoring["score_breakdown"],
@@ -968,6 +1216,7 @@ def enrich_record(record: dict[str, Any], today: date) -> dict[str, Any]:
         "method_summary": method_summary(record),
         "key_metrics": metrics,
         "transferable_points": transfer,
+        "innovation_suggestions": project_suggestions,
         "risks": risks,
         "source_abstract": record.get("abstract", ""),
         "cited_by_count": int(record.get("cited_by_count") or 0),
@@ -1170,31 +1419,28 @@ def report_markdown(
     excluded_seen: int,
     excluded_venue: int,
 ) -> str:
-    must_read = [
-        paper
-        for paper in papers
-        if paper["relevance_score"] >= 80 or paper.get("decision_hint") == "read"
-    ][:3]
+    must_read = [paper for paper in papers if paper.get("strongly_related")][:5]
     must_read_ids = {paper["id"] for paper in must_read}
-    tracking = [
-        paper
-        for paper in papers
-        if 60 <= paper["relevance_score"] < 80 and paper["id"] not in must_read_ids
-    ][:8]
+    tracking = [paper for paper in papers if paper["id"] not in must_read_ids][:12]
+    category_counts: dict[str, int] = {}
+    for paper in papers:
+        category = paper.get("primary_category") or "柔性材料与器件"
+        category_counts[category] = category_counts.get(category, 0) + 1
     lines = [
-        f"# {run_date.isoformat()} 柔性电子皮肤前端触觉计算文献日报",
+        f"# {run_date.isoformat()} 柔性电子高水平文献日报",
         "",
         "## 今日结论",
         "",
-        f"本次从 OpenAlex、Crossref、Semantic Scholar 和 arXiv 检索最近 {window_days} 天结果，去重并排除历史已收录论文后保留 {len(papers)} 篇。",
-        "期刊等级采用硬门槛：仅保留 Nature/Science/Cell 子刊、Advanced Materials 系列及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。",
-        "通过期刊门槛后，再优先考虑 ADC 前模拟触觉、矢量/剪切/摩擦读出、低冗余阵列、物理投影和容错迁移。",
+        f"本次从 OpenAlex、Crossref、Semantic Scholar、arXiv 和 Science 官网 RSS 检索最近 {window_days} 天结果，去重并排除历史已收录论文后保留 {len(papers)} 篇。",
+        "期刊等级采用硬门槛：仅保留 Nature/Science 旗舰与子刊、Cell 子刊、Advanced Materials/AFM 及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。",
+        "所有柔性电子相关论文均进入分类日报；与 ADC 前模拟触觉、矢量读出、低冗余阵列、物理投影和容错迁移直接相关的论文标为强相关并生成创新建议。",
         "",
         f"- 今日必看：{len(must_read)} 篇",
         f"- 值得追踪：{len(tracking)} 篇",
         f"- 新增可评估 idea：{len(ideas)} 个",
         f"- 历史重复排除：{excluded_seen} 篇",
         f"- 期刊等级排除：{excluded_venue} 篇",
+        f"- 小类分布：{'；'.join(f'{name} {count} 篇' for name, count in category_counts.items()) or '无'}",
         "",
         "## 今日必看",
         "",
@@ -1207,22 +1453,23 @@ def report_markdown(
             [
                 f"### {index}. [{paper['title']}]({link})" if link else f"### {index}. {paper['title']}",
                 "",
-                f"- 来源：{paper.get('venue') or '未标注'}；{paper.get('date') or '日期未知'}；评分 {paper['relevance_score']}/100",
+                f"- 来源：{paper.get('venue') or '未标注'}；{paper.get('date') or '日期未知'}；分类：{paper.get('primary_category') or '柔性材料与器件'}；评分 {paper['relevance_score']}/100",
                 f"- 为什么重要：{'；'.join(paper['relevance_reasons'][:2])}",
                 f"- 摘要级结论：{paper.get('summary_zh') or paper['core_claim']}",
                 f"- 方法：{paper.get('method_summary', '需精读原文核实')}",
                 f"- 摘要数值：{'、'.join(paper.get('key_metrics', [])) or '未提取到可比较数值'}",
                 f"- 可迁移：{'；'.join(paper['transferable_points'][:3])}",
+                f"- 给你的创新建议：{'；'.join(paper.get('innovation_suggestions', [])) or '需精读后再提出'}",
                 f"- 风险：{'；'.join(paper['risks'][:2])}",
                 f"- 建议操作：{paper['decision_hint']}",
                 "",
             ]
         )
-    lines.extend(["## 值得追踪", "", "| 评分 | 轨道 | 论文 | 建议 |", "|---:|---|---|---|"])
+    lines.extend(["## 其他柔性电子相关论文", "", "| 分类 | 评分 | 论文 | 建议 |", "|---|---:|---|---|"])
     for paper in tracking:
         link = paper.get("url") or (f"https://doi.org/{paper['doi']}" if paper.get("doi") else "")
         title = f"[{paper['title']}]({link})" if link else paper["title"]
-        lines.append(f"| {paper['relevance_score']} | {', '.join(paper['tracks'])} | {title} | {paper['decision_hint']} |")
+        lines.append(f"| {paper.get('primary_category') or '柔性材料与器件'} | {paper['relevance_score']} | {title} | {paper['decision_hint']} |")
     if not tracking:
         lines.append("| - | - | 今日无新增候选 | - |")
     lines.extend(
@@ -1284,8 +1531,10 @@ def report_markdown(
             "",
             "## 纳入与排除标准",
             "",
-            "- 纳入：论文能服务 P1-P6 至少一条主线，并能形成机制、前端、阵列、系统任务或可验证对照。",
-            "- 降权：只强调 sensitivity、gauge factor 或材料配方，而缺少读出、阵列、校准、鲁棒性或任务证据。",
+            "- 纳入：达到期刊等级门槛，且属于柔性/可拉伸/可穿戴/皮肤界面电子、柔性器件、软体机器人、自供能或相关传感系统。",
+            "- 分类：电子皮肤与触觉、可穿戴健康、柔性材料与器件、柔性能源、软体机器人与 HMI、神经形态/传感计算、制造封装与可靠性、多模态生化传感。",
+            "- 强相关：命中阵列读出、矢量/剪切、ADC 前处理、传感计算、校准漂移或跨器件迁移时，额外生成可验证创新建议。",
+            "- 降权但保留：只强调 sensitivity、gauge factor 或材料配方，而缺少读出、阵列、校准、鲁棒性或任务证据。",
             "- 排除：历史已收录、题录明显偏题、来源元数据不足且无法核实。",
             "- 可信度边界：本日报首先完成题录/摘要级筛选；数值、机理和优先级需在点击“精读”后核查全文。",
             "",
@@ -1471,11 +1720,12 @@ def main() -> int:
         "query_log": final_log,
         "source_errors": final_errors,
         "screening_policy": {
-            "profile": "flexible electronic skin front-end tactile computing",
-            "minimum_score": 48,
+            "profile": "broad flexible electronics with strong-match tactile-computing layer",
+            "general_scope": "all flexible-electronics papers that pass the elite venue gate",
+            "strong_match_scope": "array readout, vector tactile sensing, pre-ADC processing, sensor computing, calibration, drift and cross-device transfer",
             "minimum_venue_level": "Nature/Science/Cell subjournal or Advanced Materials equivalent",
             "preprints_and_conference_papers_excluded": True,
-            "material_only_papers_are_downranked": True,
+            "material_only_papers_are_downranked_not_excluded": True,
             "verification_level": "metadata and abstract screening",
             "refresh_status": (
                 "retained_existing_results_after_empty_refresh"
