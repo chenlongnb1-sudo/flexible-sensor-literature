@@ -3,6 +3,8 @@
   "minimum_candidates": 3,
   "maximum_candidates": 15,
   "open_access_pdf_limit": 12,
+  "journal_database": "config/elite-journals.json",
+  "targeted_venue_query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
   "queries": [
     {
       "id": "near-sensor-tactile-computing",
@@ -53,7 +55,7 @@
       "sources": ["openalex", "crossref", "semantic_scholar"]
     }
   ],
-  "targeted_venue_queries": [
+  "legacy_targeted_venue_queries": [
     {
       "id": "venue-nature-materials",
       "query": "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor",

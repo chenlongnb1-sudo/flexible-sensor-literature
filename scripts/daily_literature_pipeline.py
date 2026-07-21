@@ -39,6 +39,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 MEMORY = ROOT / "research-memory"
 CONFIG_PATH = ROOT / "config" / "literature-queries.json"
+JOURNAL_DB_PATH = ROOT / "config" / "elite-journals.json"
 USER_AGENT = "FlexibleSensorResearchIntelligence/1.0 (mailto:{})"
 DEFAULT_MAILTO = os.environ.get("OPENALEX_MAILTO", "").strip()
 OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "").strip()
@@ -112,6 +113,22 @@ ELITE_VENUE_EXACT = {
     "national science review", "proceedings of the national academy of sciences",
     "international journal of extreme manufacturing",
 }
+try:
+    _journal_database = json.loads(JOURNAL_DB_PATH.read_text(encoding="utf-8"))
+except (OSError, json.JSONDecodeError):
+    _journal_database = {"journals": []}
+ELITE_VENUE_EXACT.update(
+    str(name).lower().strip()
+    for journal in _journal_database.get("journals", [])
+    for name in [journal.get("title"), *(journal.get("aliases") or [])]
+    if name
+)
+TARGETED_VENUE_EXACT = {
+    str(name).lower().strip()
+    for journal in _journal_database.get("journals", [])
+    for name in [journal.get("title"), *(journal.get("aliases") or [])]
+    if name
+}
 PREPRINT_VENUES = ("arxiv", "biorxiv", "medrxiv", "research square", "ssrn")
 
 
@@ -140,6 +157,32 @@ def write_json(path: Path, payload: Any) -> None:
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     os.replace(temporary, path)
+
+
+def configured_search_queries(config: dict[str, Any]) -> list[dict[str, Any]]:
+    queries = [*config.get("queries", []), *config.get("targeted_venue_queries", [])]
+    database_path = ROOT / str(config.get("journal_database") or "config/elite-journals.json")
+    database = load_json(database_path, {"journals": []})
+    default_query = str(
+        config.get("targeted_venue_query")
+        or database.get("default_query")
+        or "flexible tactile electronic skin wearable pressure haptic neuromorphic sensor"
+    )
+    for journal in database.get("journals", []):
+        if journal.get("search_enabled", True) is False:
+            continue
+        queries.append(
+            {
+                "id": f"venue-{journal['id']}",
+                "query": journal.get("query") or default_query,
+                "container_title": journal["title"],
+                "issn": journal["issn"],
+                "tracks": journal.get("tracks") or ["P1", "P2", "P3", "P4", "P5", "P6"],
+                "sources": ["crossref"],
+            }
+        )
+    deduplicated = {query["id"]: query for query in queries}
+    return list(deduplicated.values())
 
 
 def request_bytes(
@@ -457,7 +500,7 @@ def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
         "filter": f"from-pub-date:{job.from_date.isoformat()},until-pub-date:{job.to_date.isoformat()}",
         "sort": "relevance",
         "order": "desc",
-        "rows": "25",
+        "rows": "100" if job.issn else "25",
         "mailto": DEFAULT_MAILTO,
     }
     if job.container_title:
@@ -686,7 +729,23 @@ def is_on_topic(record: dict[str, Any]) -> bool:
     sensor_context = count_terms(text, CORE_TERMS) > 0
     front_end_context = count_terms(text, SYSTEM_TERMS) > 0
     track_context = sum(count_terms(text, terms) for terms in TRACK_TERMS.values())
-    return direct_tactile or (sensor_context and front_end_context and track_context >= 1)
+    targeted_venue = any(
+        str(query_id).startswith("venue-") for query_id in record.get("query_ids", [])
+    )
+    targeted_sensor_system = (
+        targeted_venue
+        and any(term in title.lower() for term in ("pressure sensor", "force sensor", "strain sensor"))
+        and any(
+            term in text
+            for term in (
+                "wearable", "robotic", "signal acquisition", "human monitoring",
+                "human-machine", "array", "readout", "decoupl", "biological signal",
+            )
+        )
+    )
+    return direct_tactile or targeted_sensor_system or (
+        sensor_context and front_end_context and track_context >= 1
+    )
 
 
 def venue_quality_tier(record: dict[str, Any]) -> str:
@@ -704,12 +763,29 @@ def meets_venue_quality(record: dict[str, Any]) -> bool:
 
 
 def is_targeted_venue_record(record: dict[str, Any]) -> bool:
-    return any(str(query_id).startswith("venue-") for query_id in record.get("query_ids", []))
+    venue = re.sub(
+        r"\s+", " ", html.unescape(str(record.get("venue", "")))
+    ).lower().strip()
+    return venue in TARGETED_VENUE_EXACT or any(
+        str(query_id).startswith("venue-") for query_id in record.get("query_ids", [])
+    )
 
 
 def is_actionable_candidate(record: dict[str, Any], today: date) -> bool:
     score = score_record(record, today)["relevance_score"]
-    return score >= 48
+    if score >= 48:
+        return True
+    if not is_targeted_venue_record(record) or score < 30:
+        return False
+    title = str(record.get("title", "")).lower()
+    return any(
+        term in title
+        for term in (
+            "tactile", "electronic skin", "e-skin", "artificial skin", "iontronic skin",
+            "haptic", "pressure sensor", "pressure sensing", "force sensor",
+            "human-machine interaction", "robotic perception",
+        )
+    )
 
 
 def score_record(record: dict[str, Any], today: date) -> dict[str, Any]:
@@ -1245,11 +1321,7 @@ def search_window(
     disabled_sources = disabled_sources or set()
     jobs = []
     from_date = run_date - timedelta(days=window_days)
-    configured_queries = [
-        *config.get("queries", []),
-        *config.get("targeted_venue_queries", []),
-    ]
-    for query in configured_queries:
+    for query in configured_search_queries(config):
         for source in query.get("sources", []):
             if source in SEARCHERS and source not in disabled_sources:
                 jobs.append(

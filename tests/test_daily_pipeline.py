@@ -10,6 +10,7 @@ from urllib.parse import parse_qs, urlparse
 
 from scripts.daily_literature_pipeline import (
     classify_pdf_version,
+    configured_search_queries,
     enrich_record,
     is_actionable_candidate,
     is_on_topic,
@@ -25,6 +26,17 @@ from scripts.daily_literature_pipeline import (
 
 
 class DailyPipelineTests(unittest.TestCase):
+    def test_elite_journal_database_drives_am_afm_searches(self) -> None:
+        config = {
+            "journal_database": "config/elite-journals.json",
+            "queries": [],
+        }
+        queries = {query["id"]: query for query in configured_search_queries(config)}
+        self.assertGreaterEqual(len(queries), 40)
+        self.assertEqual(queries["venue-advanced-materials"]["issn"], "1521-4095")
+        self.assertEqual(queries["venue-advanced-functional-materials"]["issn"], "1616-3028")
+        self.assertEqual(queries["venue-nature-sensors"]["issn"], "3059-4499")
+
     def test_broad_fault_keyword_does_not_admit_motor_paper(self) -> None:
         record = {
             "title": "Inter-turn fault detection in induction motors",
@@ -155,7 +167,7 @@ class DailyPipelineTests(unittest.TestCase):
         }
         self.assertFalse(is_actionable_candidate(record, date.today()))
 
-    def test_targeted_subjournal_record_still_requires_relevance_threshold(self) -> None:
+    def test_targeted_subjournal_direct_tactile_record_enters_watch_queue(self) -> None:
         record = {
             "title": "Impedance characteristics in iontronic tactile sensors",
             "abstract": "A flexible electronic skin decouples temperature and pressure.",
@@ -166,7 +178,33 @@ class DailyPipelineTests(unittest.TestCase):
             "query_tracks": ["P1", "P2"],
         }
         self.assertTrue(is_on_topic(record))
-        self.assertFalse(is_actionable_candidate(record, date.today()))
+        self.assertTrue(is_actionable_candidate(record, date.today()))
+
+    def test_targeted_afm_pressure_sensor_enters_watch_queue(self) -> None:
+        record = {
+            "title": "Flexible Pressure Sensor for Biological Signal Acquisition",
+            "abstract": "A wearable pressure sensor records pulse signals for human monitoring.",
+            "venue": "Advanced Functional Materials",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-functional-materials"],
+            "query_tracks": ["P1", "P6"],
+        }
+        self.assertTrue(is_on_topic(record))
+        self.assertTrue(is_actionable_candidate(record, date.today()))
+
+    def test_database_venue_is_targeted_even_when_found_by_generic_query(self) -> None:
+        record = {
+            "title": "Artificial spider web for comprehensive pressure sensing",
+            "abstract": "The electronic skin supports human-machine interaction.",
+            "venue": "Nature Communications",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["tolerance-interface"],
+            "query_tracks": ["P1"],
+        }
+        self.assertTrue(is_on_topic(record))
+        self.assertTrue(is_actionable_candidate(record, date.today()))
 
     def test_missing_abstract_material_only_title_stays_excluded(self) -> None:
         record = {

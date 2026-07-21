@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-22",
+  "policy": "Nature, Science and Cell subjournals; Wiley Advanced Materials and Advanced Functional Materials families; and curated journals at a comparable level that regularly publish flexible electronics, tactile sensing, electronic skin, haptics or sensor-computing work.",
+  "default_query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+  "journals": [
+    {
+      "id": "nature-materials",
+      "title": "Nature Materials",
+      "issn": "1476-1122",
+      "publisher": "Springer Nature",
+      "tier": "nature_flagship",
+      "tracks": ["P1", "P2", "P4", "P6"]
+    },
+    {
+      "id": "nature-nanotechnology",
+      "title": "Nature Nanotechnology",
+      "issn": "1748-3387",
+      "publisher": "Springer Nature",
+      "tier": "nature_flagship",
+      "tracks": ["P1", "P2", "P4", "P6"]
+    },
+    {
+      "id": "nature-electronics",
+      "title": "Nature Electronics",
+      "issn": "2520-1131",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "nature-sensors",
+      "title": "Nature Sensors",
+      "issn": "3059-4499",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "nature-communications",
+      "title": "Nature Communications",
+      "issn": "2041-1723",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "nature-biomedical-engineering",
+      "title": "Nature Biomedical Engineering",
+      "issn": "2157-846X",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P2", "P4", "P6"]
+    },
+    {
+      "id": "nature-machine-intelligence",
+      "title": "Nature Machine Intelligence",
+      "issn": "2522-5839",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "query": "tactile electronic skin neuromorphic sensor computing robotic perception",
+      "tracks": ["P4", "P5", "P6"]
+    },
+    {
+      "id": "npj-flexible-electronics",
+      "title": "npj Flexible Electronics",
+      "issn": "2397-4621",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "microsystems-nanoengineering",
+      "title": "Microsystems & Nanoengineering",
+      "aliases": ["Microsystems and Nanoengineering"],
+      "issn": "2055-7434",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "communications-engineering",
+      "title": "Communications Engineering",
+      "issn": "2731-3395",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "communications-materials",
+      "title": "Communications Materials",
+      "issn": "2662-4443",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P6"]
+    },
+    {
+      "id": "communications-physics",
+      "title": "Communications Physics",
+      "issn": "2399-3650",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P4"]
+    },
+    {
+      "id": "communications-chemistry",
+      "title": "Communications Chemistry",
+      "issn": "2399-3669",
+      "publisher": "Springer Nature",
+      "tier": "nature_subjournal",
+      "tracks": ["P1", "P2", "P6"]
+    },
+    {
+      "id": "science-advances",
+      "title": "Science Advances",
+      "issn": "2375-2548",
+      "publisher": "AAAS",
+      "tier": "science_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "science-robotics",
+      "title": "Science Robotics",
+      "issn": "2470-9476",
+      "publisher": "AAAS",
+      "tier": "science_subjournal",
+      "query": "tactile electronic skin flexible sensor haptic robotic perception",
+      "tracks": ["P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "science-translational-medicine",
+      "title": "Science Translational Medicine",
+      "issn": "1946-6234",
+      "publisher": "AAAS",
+      "tier": "science_subjournal",
+      "tracks": ["P2", "P4", "P6"]
+    },
+    {
+      "id": "cell-reports-physical-science",
+      "title": "Cell Reports Physical Science",
+      "issn": "2666-3864",
+      "publisher": "Cell Press",
+      "tier": "cell_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "matter",
+      "title": "Matter",
+      "issn": "2590-2385",
+      "publisher": "Cell Press",
+      "tier": "cell_subjournal",
+      "tracks": ["P1", "P2", "P4", "P6"]
+    },
+    {
+      "id": "device",
+      "title": "Device",
+      "issn": "2666-9986",
+      "publisher": "Cell Press",
+      "tier": "cell_subjournal",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "joule",
+      "title": "Joule",
+      "issn": "2542-4351",
+      "publisher": "Cell Press",
+      "tier": "cell_subjournal",
+      "tracks": ["P1", "P2", "P6"]
+    },
+    {
+      "id": "advanced-materials",
+      "title": "Advanced Materials",
+      "issn": "1521-4095",
+      "publisher": "Wiley",
+      "tier": "am_afm_core",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "advanced-functional-materials",
+      "title": "Advanced Functional Materials",
+      "issn": "1616-3028",
+      "publisher": "Wiley",
+      "tier": "am_afm_core",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "advanced-science",
+      "title": "Advanced Science",
+      "issn": "2198-3844",
+      "publisher": "Wiley",
+      "tier": "am_afm_core",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "advanced-electronic-materials",
+      "title": "Advanced Electronic Materials",
+      "issn": "2199-160X",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "advanced-intelligent-systems",
+      "title": "Advanced Intelligent Systems",
+      "issn": "2640-4567",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "advanced-materials-technologies",
+      "title": "Advanced Materials Technologies",
+      "issn": "2365-709X",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P1", "P2", "P3", "P6"]
+    },
+    {
+      "id": "advanced-optical-materials",
+      "title": "Advanced Optical Materials",
+      "issn": "2195-1071",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P1", "P2", "P3", "P6"]
+    },
+    {
+      "id": "advanced-healthcare-materials",
+      "title": "Advanced Healthcare Materials",
+      "issn": "2192-2659",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P1", "P2", "P6"]
+    },
+    {
+      "id": "advanced-energy-materials",
+      "title": "Advanced Energy Materials",
+      "issn": "1614-6840",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P1", "P2", "P6"]
+    },
+    {
+      "id": "small",
+      "title": "Small",
+      "issn": "1613-6829",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "small-methods",
+      "title": "Small Methods",
+      "issn": "2366-9608",
+      "publisher": "Wiley",
+      "tier": "advanced_family",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "advanced-fiber-materials",
+      "title": "Advanced Fiber Materials",
+      "issn": "2524-7921",
+      "publisher": "Springer Nature",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P6"]
+    },
+    {
+      "id": "acs-nano",
+      "title": "ACS Nano",
+      "issn": "1936-086X",
+      "publisher": "American Chemical Society",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "nano-letters",
+      "title": "Nano Letters",
+      "issn": "1530-6984",
+      "publisher": "American Chemical Society",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "nano-energy",
+      "title": "Nano Energy",
+      "issn": "2211-2855",
+      "publisher": "Elsevier",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P4", "P6"]
+    },
+    {
+      "id": "nano-micro-letters",
+      "title": "Nano-Micro Letters",
+      "issn": "2311-6706",
+      "publisher": "Springer Nature",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "materials-horizons",
+      "title": "Materials Horizons",
+      "issn": "2051-6347",
+      "publisher": "Royal Society of Chemistry",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "infomat",
+      "title": "InfoMat",
+      "issn": "2567-3165",
+      "publisher": "Wiley",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "issn": "2639-5274",
+      "publisher": "AAAS",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "international-journal-extreme-manufacturing",
+      "title": "International Journal of Extreme Manufacturing",
+      "issn": "2631-7990",
+      "publisher": "IOP Publishing",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P6"]
+    },
+    {
+      "id": "national-science-review",
+      "title": "National Science Review",
+      "issn": "2053-714X",
+      "publisher": "Oxford University Press",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "pnas",
+      "title": "Proceedings of the National Academy of Sciences",
+      "issn": "1091-6490",
+      "publisher": "National Academy of Sciences",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P5", "P6"]
+    },
+    {
+      "id": "light-science-applications",
+      "title": "Light: Science & Applications",
+      "issn": "2047-7538",
+      "publisher": "Springer Nature",
+      "tier": "elite_equivalent",
+      "tracks": ["P1", "P2", "P3", "P4", "P6"]
+    }
+  ]
+}

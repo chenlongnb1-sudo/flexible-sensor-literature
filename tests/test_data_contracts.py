@@ -17,9 +17,35 @@ HERO_PATH = ROOT / "web" / "assets" / "tactile-front-end-image2.webp"
 ICON_PATH = ROOT / "web" / "assets" / "research-intelligence-icon-image2.png"
 WORKFLOW_PATH = ROOT / ".github" / "workflows" / "daily-literature.yml"
 TODAY_PATH = ROOT / "research-memory" / "literature" / "2026" / "2026-07-15"
+JOURNAL_DB_PATH = ROOT / "config" / "elite-journals.json"
 
 
 class DataContractTests(unittest.TestCase):
+    def test_elite_journal_database_is_unique_and_complete(self) -> None:
+        database = json.loads(JOURNAL_DB_PATH.read_text(encoding="utf-8"))
+        journals = database["journals"]
+        ids = [journal["id"] for journal in journals]
+        issns = [journal["issn"].upper() for journal in journals]
+        titles = {journal["title"] for journal in journals}
+        self.assertGreaterEqual(len(journals), 40)
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(len(issns), len(set(issns)))
+        self.assertTrue(
+            {
+                "Advanced Materials",
+                "Advanced Functional Materials",
+                "Advanced Science",
+                "Advanced Electronic Materials",
+                "Nature Sensors",
+                "ACS Nano",
+                "Nano Letters",
+            }
+            <= titles
+        )
+        for journal in journals:
+            self.assertRegex(journal["issn"], r"^\d{4}-[\dX]{4}$")
+            self.assertTrue(journal["tracks"])
+
     def test_daily_report_push_triggers_notification_without_search(self) -> None:
         workflow = WORKFLOW_PATH.read_text(encoding="utf-8")
         self.assertIn('research-memory/literature/**/daily-report.md', workflow)
