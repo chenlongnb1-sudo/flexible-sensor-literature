@@ -1,0 +1,28 @@
+FIGURE 6 MISSING EXPERIMENTS - CURRENT A1-A4 CONTRACT
+
+1. Instrumented hook-load grasping setup
+   Required output: real setup photograph showing the scaled hook cylinder, tactile sensor, vector AFE/comparators, embedded ADC/MCU, motor controller, external continuous diagnostic DAQ, rail shunts, power monitor, force reference, and motion reference. Deployment tactile electronics, motor-controller electronics, actuator energy, and external instruments must be separated.
+
+2. Frozen two-event grasp protocol
+   Required output: CONTACT edge -> tactile-controller wake/snapshot -> immediate stop/hold command -> optional short burst/log; then calibrated hook-load X/Y edge -> wake/snapshot -> one frozen action-first or short-burst-first policy -> grip command/log -> recovery. Record actual motor-control responsibility and measured MCU_ACTIVE.
+
+3. Same-trial hook-load reflex frames
+   Required output: synchronized real frames for approach, contact stop, calibrated hook loading, bounded grip response, and recovery. A fixed-direction one-dimensional task demonstrates imbalance detection and reflex, not signed direction control.
+
+4. Synchronized disturbance-event-action time series
+   Required output: force reference, Vz/Vx/Vy, CONTACT/X/Y pins, external ADC activity markers, ADC/reference rail current, MCU_ACTIVE, stop/grip commands, motor-controller state, and object slip on one hardware timebase. USB polling cannot define millisecond latency.
+
+5. Task performance and fair Vz-only ablation
+   Required output: independent-trial success, peak grip force, maximum slip, event/control/recovery latency, safety stops, unrecovered trials, and failures. Freeze the strongest calibration-derived Vz absolute/change trigger and use the same post-event action as Full Vz/Vx/Vy. The 160-trial three-day set is descriptive pilot evidence; formal non-inferiority sample size requires pilot-based power calculation.
+
+6. Matched A1-A4 resource, energy, and break-even audit
+   Required output: A1 raw-4 continuous, A2 vector-3 continuous, A3 ADC-first event, and A4 pre-ADC event under identical mechanics and control targets. A3/A4 must share vector AFE, Vz/Vx/Vy ADC inputs, ADC/reference, active rate, physical thresholds, and controller. Record conversions/data, MCU_ACTIVE, communication, ADC/reference energy, total electronics energy per task, per-rail energy, and low/medium/high-event-rate break-even. Report motor-controller electronics and actuator energy separately.
+
+Acceptance boundaries
+- A1-vs-A2 isolates vectorization. A3-vs-A4 isolates event location; A3 is mandatory and is not raw-4.
+- A3 may already gate MCU-main duty and communication. A4-specific hypothesized benefit is avoiding idle quantization; net total-energy change is measured, not assumed.
+- `ADC_EN/CS/DRDY` are external activity evidence only. After P10 selection, define standby/power-down from the datasheet and verify it with ADC/reference rail current. Until then use `standby to be verified`.
+- If A4 still converts continuously, claim only hardware-thresholded event-driven control.
+- The overload hardware-disable path remains `[TO BE VALIDATED]` until P13/P14 polarity, safe power-up/down, fault injection, and overload-to-disable latency pass.
+- Five-percentage-point non-inferiority and 30% energy reduction are candidate engineering targets, not results or powered conclusions.
+- Do not invent n, curves, error bars, success rates, latency, or energy values.

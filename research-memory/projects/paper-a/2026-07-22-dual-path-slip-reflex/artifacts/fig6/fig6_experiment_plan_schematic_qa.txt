@@ -1,0 +1,16 @@
+FIGURE 6 EXPERIMENT-PLANNING SCHEMATIC QA
+
+- Status: PASS as a planning artifact; NOT a measured result figure.
+- Canvas: 183 x 132 mm.
+- Raster export: 3602 x 2598 px.
+- Vector exports: PDF and SVG.
+- Backend: Python/matplotlib only.
+- Visual inspection: full-size review completed after three layout iterations.
+- Panel a: no overlap among gripper/sensor labels, deployment boundary, external observer, power monitor and motor-controller/actuator box.
+- Panel b: CONTACT and LOAD cycles use separate short nodes; conditional notes and planned overload box do not overlap.
+- Panels c-f: no clipped labels or panel-title collisions observed.
+- Evidence integrity: no fake curves, bars, points, sample sizes, latency values, success rates or energy values.
+- Placeholder integrity: all unmeasured outputs are marked [TO BE MEASURED], T.B.M., TBC, T.B.V. or [TO BE VALIDATED].
+- Architecture integrity: A3 is post-ADC/ADC-first event; A4 is pre-ADC event. A3/A4 share the same vector AFE and three-vector ADC path.
+- Control integrity: CONTACT stop is MCU/controller mediated; overload hardware disable is planned and unvalidated.
+- Claim integrity: A4 tests idle digitization/ADC-reference energy. MCU duty, communication and total E_task are measured net outcomes.

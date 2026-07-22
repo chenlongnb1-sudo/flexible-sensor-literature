@@ -1,0 +1,68 @@
+FIGURE 6 BRIEF - HOOK-LOAD GRASP REFLEX AND EVENT-LOCATION ENERGY AUDIT
+
+One-sentence question under test
+Does pre-ADC event formation reduce idle embedded-ADC conversions and ADC/reference
+energy relative to a matched ADC-first event baseline while preserving a
+preregistered grasping-performance boundary, and what is its net effect on MCU duty,
+communication, and total electronics energy per task?
+
+Allowed source slides
+1, 20, 22, 25. Treat slide 25 as preliminary and definition-sensitive. The separate
+experiment-planning schematic is analytic planning material, not measured evidence.
+
+Layout
+Use a 2 x 3 grid, approximately 87.5 mm wide x 39.3 mm high per panel, with
+3 mm horizontal/vertical gutters and 4 mm margins. Preserve room for time-series axes.
+
+Panel contract
+a. Real gripper/sensor/electronics setup. Separate deployment tactile electronics,
+   external continuous diagnostic instruments, motor-controller electronics, and
+   actuator energy. Mark ADC/MCU P10/P12 and the planned overload path as TBC.
+b. Frozen hook-load task with two GPIO event cycles: CONTACT edge -> wake/snapshot ->
+   immediate stop/hold command -> optional burst/log; then X/Y load edge ->
+   wake/snapshot -> one frozen bounded-action/burst policy -> grip/log/recovery.
+c. Same-trial frames of approach, CONTACT stop, calibrated hook load, and bounded grip
+   response/recovery. A one-dimensional gripper supports timed grip increase, not
+   signed x-y correction.
+d. Same-clock slots for load reference, Vz/Vx/Vy, CONTACT/X/Y events, embedded-ADC
+   state, MCU_ACTIVE/commands, motor-controller state, and object slip.
+e. Trial-level performance and a fair Vz-only ablation. Freeze the strongest
+   calibration-derived Vz absolute/change trigger and use the same post-event action.
+f. A1 raw-4 continuous, A2 vector-3 continuous, A3 matched ADC-first event, and A4
+   matched pre-ADC event. A1-vs-A2 isolates vectorization; A3-vs-A4 isolates event
+   location. Report conversions/data, measured MCU duty, communication, ADC/reference
+   energy, total electronics energy per task, per-rail energy, and event-rate break-even.
+
+Exact placeholders
+- Panel a: [TO BE MEASURED] Instrumented hook-load grasping setup
+  Output: real setup photo with deployment boundary, external DAQ, motor controller,
+  rail shunts, power monitor, and motion/force references.
+- Panel b: [TO BE MEASURED] Frozen two-event grasp protocol
+  Output: CONTACT and hook-load event cycles with actual controller division and timing.
+- Panel c: [TO BE MEASURED] Same-trial hook-load reflex frames
+  Output: approach, contact stop, calibrated load, bounded grip response, and recovery.
+- Panel d: [TO BE MEASURED] Synchronized disturbance-event-action time series
+  Output: force, vectors, events, ADC state, MCU_ACTIVE, commands, motor state, and slip.
+- Panel e: [TO BE MEASURED] Task performance and Vz-only causal ablation
+  Output: raw trials, intervals, peak force, slip, latency, failures, and fair ablation.
+- Panel f: [TO BE MEASURED] Matched A1-A4 energy and break-even audit
+  Output: conversions/data, measured MCU duty, communication, ADC/reference and total
+  electronics energy per task, per-rail energy, and break-even versus event rate.
+
+Architecture and claim boundaries
+- A3 and A4 share the same vector AFE, Vz/Vx/Vy ADC inputs, ADC/reference, active
+  sample rate, physical thresholds, and downstream controller. A3 is not raw-4.
+- A3 may already reduce MCU-main duty and communication. A4-specific hypothesized
+  benefit is avoiding idle quantization; net MCU, communication, and total-energy
+  effects must be measured.
+- Write `standby to be verified` until P10 is locked and datasheet-defined standby or
+  power-down is confirmed with ADC/reference rail current. ADC_EN/CS/DRDY alone is
+  insufficient proof of internal converter/reference state.
+- If A4 still converts continuously, downgrade to `hardware-thresholded event-driven
+  control`; do not claim ADC-gated/event-triggered acquisition or reduced conversions.
+- The overload hardware-disable path is planned and `[TO BE VALIDATED]` until P13/P14
+  polarity, power-up/down safety, fault injection, and overload-to-disable latency pass.
+- The 160-trial three-day set is a descriptive pilot. Formal non-inferiority sample
+  size must be recalculated from pilot baseline rate, frozen margin, alpha, and power.
+- Do not present slide-25 values as final without audited states, rails, task window,
+  sampling configuration, and actuator exclusion.

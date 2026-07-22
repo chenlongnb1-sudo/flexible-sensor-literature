@@ -1,0 +1,132 @@
+FIGURE 6 六面板绘制规格（实验规划版）
+
+图级结论
+本图检验 ADC 前三矢量事件接口能否在带挂钩圆柱的可重复突加载荷任务中维持预注册的性能边界，并相对最强 ADC-first 数字事件基线减少空闲期量化与 ADC/reference 能量；MCU 活跃、通信量和每任务总电子能量只作为实测净结果。
+
+图型
+Schematic-led mixed-modality storyboard。当前版本只用于实验规划，不作为论文结果。所有真实照片、曲线、统计点和能耗数值必须由后续实验替换。
+
+阅读路径
+a 测量边界 -> b 任务协议 -> c 同试次动作帧 -> d 同步因果链 -> e 性能与消融 -> f 四路径/A1-A4 资源与能耗。
+
+Panel a - 完整系统和测量边界
+
+现在画什么：
+- 夹爪、标准圆柱、指端四单元菱形传感器。
+- 物理 R1 上/R2 左/R3 下/R4 右及逻辑映射 V1=R4、V2=R1、V3=R2、V4=R3。
+- 模拟矢量前端、常开比较器、嵌入式 ADC/MCU、同步 DAQ/逻辑分析仪、功耗监测。
+- 用虚线明确“部署电子系统”能耗积分边界；执行器电源和连续诊断 DAQ 放在边界之外。
+- 诊断 DAQ 连续采样只用于观察，不代表嵌入式 ADC 连续转换。
+- 区分 tactile/event MCU 与 motor controller。CONTACT 路径为 comparator -> tactile MCU wake -> stop command -> motor controller；OVERLOAD 只画为 planned hardware-disable path `[TO BE VALIDATED]`。
+- Approach 阶段 tactile MCU 是否可休眠取决于实际低层 PWM 分工；Hold/无扰动期是最明确的低占空比窗口。
+- 独立扰动力参考和物体运动参考。
+
+最终替换：
+- 一张能看清所有真实设备和接线的装置照片。
+- 必须标出电子轨测量点、执行器轨、同步触发和坐标系。
+
+预期读图结论：
+测量边界足以把触觉电子能耗与执行器能耗分开，并同步观察事件到动作的完整链路。
+
+Panel b - 冻结的随机扰动任务协议
+
+现在画什么：
+- Approach -> CONTACT stop -> Hold -> sudden calibrated load -> event wake -> timed grip increase/correction -> recovery。
+- 一维夹爪主条件为带挂钩圆柱的无/低/中/高突加载荷；四方向扰动只在真实 x-y 平台可用时扩展。
+- 画成两个事件周期。CONTACT：edge -> tactile MCU wake/snapshot -> immediate stop/hold command -> optional short burst/log。突加载荷：X/Y edge -> wake/snapshot -> 冻结的“先有界动作”或“先短 burst 确认”策略 -> grip command/log -> measured low-power state。
+- OVERLOAD 分支：planned hardware-disable path `[TO BE VALIDATED]`；结果图只有在驱动极性、上电/掉电安全状态、故障注入和 overload-to-disable latency 实测通过后，才能写硬件先切断。
+- 该状态条对应 A4；旁注明确 A3 的 ADC/数字监测链在空闲期仍工作，但 MCU 主核可以休眠。
+- 标注 theta_c、theta_x、theta_y、theta_o 来自 Fig. 5 冻结配置。
+
+最终替换：
+- 保留协议示意，不需要数据替换；把最终冻结的时窗、扰动力波形和控制参数写入 Methods/图注。
+
+预期读图结论：
+每条路径经历相同机械任务，唯一改变的是 ADC 前处理和事件工作方式。
+
+Panel c - 同一真实试次的动作连续帧
+
+现在画什么：
+- 四个框：接近、接触停止、挂钩突加载荷/事件、限时增握与恢复。
+- 用一致物体和相机视角，突出扰动箭头、事件时刻和控制动作。
+- 规划版明确标注“用真实同步帧替换”。
+
+最终替换：
+- 同一试次、同一相机、同一物体的真实帧。
+- 每帧带相对时间；不得拼接不同成功试次。
+- 至少保留一个失败案例在 panel e 或补充图。
+
+预期读图结论：
+事件发生后系统执行了与实际夹爪自由度相符的恢复动作，而不是人工干预；一维夹爪不声称 signed x-y correction。
+
+Panel d - 同一时间轴的同步原始时序
+
+现在画什么：
+- F_dist、Vz、Vx、Vy、CONTACT/X/Y EVENT、embedded ADC state、MCU_ACTIVE/stop-grip command、object x/y 八个槽位。
+- 对齐 CONTACT、DISTURB、EVENT、RECOVER 四个时刻。
+- 明确“无 USB 轮询时序”。
+
+最终替换：
+- 同一次真实试次的未滤波或明确标注处理方式的原始时序。
+- 标出阈值、事件沿、burst 窗、命令沿、恢复容差和延迟定义。
+
+预期读图结论：
+扰动、矢量、事件、计算唤醒、控制命令和物体恢复形成可审计的因果顺序。
+
+Panel e - 任务性能与因果消融
+
+现在画什么：
+- Full Vz/Vx/Vy 与 Vz-only 两条控制逻辑。
+- Full vectors 支持切向不平衡检测；Vz-only 只支持接触/过载。若只有一维夹爪，两者都只能输出增握，但 Full vectors 应在突加载荷检测或滑移恢复上体现因果差异。
+- 指标槽位：成功率、峰值夹持力、最大滑移、响应/恢复延迟、失败案例。
+
+最终替换：
+- 独立试次原始点和区间估计；成功率使用合适的二项区间。
+- 保留所有安全停止和未恢复试次；恢复时间对未恢复试次右删失或单独报告。
+- 加入方向、路径和物体分层，避免只给总体平均值。
+
+预期读图结论：
+完整三矢量的系统收益来自方向相关信息，而不是只用 Vz 也能完成的接触停止。
+
+Panel f - 四路径资源、每任务能耗和 break-even
+
+现在画什么：
+- A1 Raw-4 continuous：4 ADC channels -> digital vectors -> MCU/communication continuous。
+- A2 Vector-3 continuous：analog vectors -> 3 ADC channels -> MCU/communication continuous。
+- A3 ADC-first event：continuous ADC or strongest available DMA/analog-watchdog/low-power monitor -> digital event -> MCU wake。
+- A4 Pre-ADC vector event：analog vectors + comparator before quantization -> embedded ADC/reference standby -> event burst。
+- A3/A4 共享同一 vector AFE、同一 Vz/Vx/Vy 三路 ADC 输入、同一 ADC/reference、活动采样率、阈值物理定义和下游控制器；A3 不得画成 raw-4。
+- 输出槽位：ADC conversions/data、MCU duty、E_task、per-rail energy。
+- 执行器能量单独显示。
+- 增加低/中/高事件率或空闲占空比的 break-even 数据槽；当前只画坐标和 [TO BE MEASURED]。
+
+最终替换：
+- 四路径的独立试次原始点和统计区间。
+- E_task = integral V(t)I(t)dt，按电源轨给出分解。
+- A2-vs-A1 解释矢量化资源变化；A4-vs-A3 解释事件发生位置；不能删除 A3 强基线。
+- MCU/ADC 型号和 watchdog/DMA/differential/PGA 能力标 TBC，正式实验按实际最强数字模式实现。A4 的 ADC 框写 `standby to be verified`。
+- ADC_EN/CS/DRDY 只是外部活动证据；P10 锁定后按 datasheet 定义状态，并用 ADC/reference 分轨电流验证内部 standby/power-down。
+- 明确 A3 已经可以降低 MCU 主核占空比和通信量；A4 的潜在附加收益来自避免空闲期量化，而不是“事件驱动”三个字。
+
+预期读图结论：
+若性能满足非劣效边界，A4 相对 A3 通过量化前事件降低空闲期嵌入式 ADC 转换和电子能量；事件频繁时优势可能消失，break-even 是必须报告的工程边界。
+
+颜色语义
+- Vz / total contact：#222222。
+- Vx / raw digital baseline：#0072B2，实线/方形冗余编码。
+- Vy / secondary vector：#009E73，虚线/三角冗余编码。
+- Proposed event path：#D55E00，实线/圆形冗余编码。
+- Energy / warning：#E69F00。
+- Neutral / inactive：#7A7A7A。
+- Safety / overload：#B2182B。
+
+审稿风险与防护
+1. 风险：手动扰动不可重复。防护：位移台或砝码/滑轮，记录参考力波形。
+2. 风险：四路径机械任务不匹配。防护：固定任务脚本、随机区组和统一时窗。
+3. 风险：USB 轮询制造假延迟。防护：硬件同步采集 GPIO 和命令。
+4. 风险：省略 ADC-first 数字事件基线。防护：保留 A3，并把主要节能检验放在 A4-vs-A3。
+5. 风险：实际 ADC 仍连续采样却写 ADC-gated acquisition。防护：记录 ADC_EN/CS/DRDY；不满足时降级为 hardware-thresholded event-driven control。
+6. 风险：执行器掩盖电子前端。防护：分轨测量和分开报告。
+7. 风险：只展示成功案例。防护：保留失败、安全停止、无扰动误触发和未恢复试次。
+8. 风险：不同物体重新调阈值。防护：Fig. 5 阈值版本冻结，测试集禁止重调。
+9. 风险：高事件率下节能消失。防护：预注册低/中/高事件率并报告 break-even。

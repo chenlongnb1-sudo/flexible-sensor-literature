@@ -1,0 +1,48 @@
+FIGURE 6 QA RECORD - A1-A4 CONTRACT
+
+Artifact identity
+- PASS: fig6_editable.pptx / fig6_preview.png / fig6.pdf are the evidence-placeholder main figure. Missing experimental evidence remains [TO BE MEASURED].
+- PASS: fig6_experiment_plan_schematic.png/.pdf/.svg are experiment-planning artifacts, not result figures. The planning graphic explicitly states that it contains no measured performance or energy data.
+
+Source provenance
+- PASS: authoritative source deck SHA256 remains 6E61FE36895E4F72E58D5FB8012C770B6B2C360CB125008BC3B3661C70DC640E.
+- PASS: only allowed source slides 1, 20, 22 and 25 were used for experimental photographs/context.
+- PASS: no experimental image, number, curve, trace, success rate, latency, or energy value came from another file.
+- PASS: no synthetic experimental data were generated.
+
+Current scientific contract
+- PASS: A1 raw-4 continuous versus A2 vector-3 continuous isolates 4-to-3 vectorization/resource changes.
+- PASS: A3 is the mandatory ADC-first event baseline, not raw-4. A3 can use the strongest supported continuous-ADC/DMA/analog-watchdog/low-power-monitor path and may already gate MCU-main duty and communication.
+- PASS: A4 is the pre-ADC vector-event path. A3/A4 share vector AFE, Vz/Vx/Vy ADC inputs, ADC/reference, active sample rate, physical threshold definitions, burst configuration and downstream controller.
+- PASS: A4-specific hypothesized benefit is avoiding idle quantization and ADC/reference energy. Net MCU duty, communication and total electronics energy remain measured outcomes, not assumed benefits.
+- PASS: if A4 continues embedded-ADC conversion, the claim downgrades to hardware-thresholded event-driven control; ADC-gated/event-triggered acquisition and reduced-conversion claims are prohibited.
+- PASS: ADC_EN/CS/DRDY are treated only as external activity evidence. P10 datasheet state plus ADC/reference rail current must validate standby/power-down; current planning label is standby to be verified.
+- PASS: CONTACT is a GPIO/MCU stop path, not an independent hardware motor gate. The planning figure shows CONTACT wake/snapshot -> immediate stop/hold command -> optional burst/log.
+- PASS: the overload hardware-disable path is planned [TO BE VALIDATED], not an achieved safety result. P13/P14 polarity, safe power-up/down, fault injection and overload-to-disable latency are required.
+- PASS: the three-day 160-trial set is labelled descriptive pilot work. Five-percentage-point non-inferiority and 30% energy reduction are candidate engineering targets requiring preregistration and appropriate sample-size/power analysis.
+- PASS: Vz-only uses the strongest calibration-frozen Vz absolute/change trigger and the same post-event bounded action; it is not a no-event strawman.
+
+Main-figure render and geometry
+- PASS: desktop PowerPoint reopened and normalized the one-slide editable PPTX; the slide contains 46 editable objects.
+- PASS: canvas is 183.003 x 131.983 mm in the editable PPTX.
+- PASS: full-canvas PNG is 3600 x 2597 px.
+- PASS: one-page PDF is 183.007 x 131.995 mm.
+- PASS: programmatic audit found zero out-of-bounds objects, zero non-containment overlaps and zero source-image aspect-ratio errors.
+- PASS: all six panel letters are aligned at the prescribed insets and use lowercase bold Arial at 10 pt.
+- PASS: all editable text uses Arial at 7.5, 8.0, 8.5 or 10 pt.
+- PASS: all six placeholders use #F5F5F5 fill, #7A7A7A 1 pt dashed borders and no shadow.
+- PASS: full-size visual inspection found no clipping, broken wrapping, unintended overlap or fake result graphic.
+
+Experiment-planning schematic render
+- PASS: Python-only drawing/export workflow produced PNG, PDF and SVG.
+- PASS: planning PNG is 3602 x 2598 px; PDF is exactly 183 x 132 mm.
+- PASS: panels a and b were rebuilt after full-size review. The system boundary, three bottom instrument/control boxes, two GPIO event cycles and conditional notes do not intersect.
+- PASS: panels c-f contain only analytic structure, real-data slots and [TO BE MEASURED] labels; no trend, curve, bar or numerical result was invented.
+- PASS: A3/A4 terminology matches the synchronized hardware documents.
+
+Known hardware blockers
+- P10 embedded ADC/reference part and datasheet standby/power-down behavior remain TBC.
+- P12 tactile MCU and its division of responsibility from the motor controller remain TBC; Approach-stage sleep cannot be assumed.
+- P13 motor enable/brake polarity and P14 safety action remain TBC.
+- Event thresholds, event latency, ADC/reference rail energy, MCU_ACTIVE, hook-load control logs, slip data and task success are not measured.
+- The event-rate break-even remains [TO BE MEASURED].

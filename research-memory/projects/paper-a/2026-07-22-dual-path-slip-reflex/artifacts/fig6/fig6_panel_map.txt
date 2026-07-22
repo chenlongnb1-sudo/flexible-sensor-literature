@@ -1,0 +1,52 @@
+FIGURE 6 PANEL MAP - CURRENT A1-A4 CONTRACT
+
+Authoritative experimental source
+[local source deck omitted from public archive]
+SHA256: 6E61FE36895E4F72E58D5FB8012C770B6B2C360CB125008BC3B3661C70DC640E
+
+Artifact distinction
+- fig6_editable.pptx / fig6_preview.png / fig6.pdf: evidence-placeholder main figure. It reuses only allowed source objects and marks every missing experiment [TO BE MEASURED].
+- fig6_experiment_plan_schematic.png/.pdf/.svg: analytic experiment-planning storyboard. It contains no measured performance or energy data and must not be cited as a result.
+
+Canvas and layout
+- 183 x 132 mm, one page/slide, white background.
+- 2 columns x 3 rows, 4 mm outer margins, 3 mm gutters.
+- Calculated panel size: 86.0 x 39.33 mm.
+
+Panel a - System and measurement boundaries
+- Slide 20, shape 1: real analog vector PCB photograph; preserved aspect ratio.
+- Slide 1, shape 30: gripper illustration used only as context.
+- Slide 25, shape 6: preliminary power-monitor photograph; rotated 90 degrees for legibility. No displayed value enters a claim.
+- Missing evidence: real hook-cylinder setup with deployment tactile boundary, external diagnostic instruments, motor-controller/actuator rail, force/motion references, and power rail shunts.
+
+Panel b - Frozen two-event protocol
+- Slide 1, shape 34: gripper-with-glass illustration used only as grasping context.
+- Missing evidence: CONTACT edge -> wake/snapshot -> immediate stop/hold command -> optional burst/log; hook-load X/Y edge -> wake/snapshot -> one frozen action-first or short-burst-first policy -> grip/log/recovery.
+- Planned overload hardware-disable path remains [TO BE VALIDATED].
+
+Panel c - Same-trial hook-load reflex
+- Slide 1, shape 30: gripper illustration used only as action context.
+- Missing evidence: same-trial real frames for approach, CONTACT stop, calibrated hook load, bounded grip response, and recovery.
+- A fixed-direction one-dimensional task cannot support a signed x-y correction claim.
+
+Panel d - Same-clock disturbance-event-action data
+- No matching real trial exists in the allowed source slides.
+- Required rows: load reference, Vz/Vx/Vy, CONTACT/X/Y events, external ADC activity, ADC/reference rail current, MCU_ACTIVE/commands, motor-controller state, and object slip.
+- Slide 22 is excluded because it is not a matched grasp trial and lacks the required synchronized channels.
+
+Panel e - Task performance and fair Vz-only ablation
+- No independent trial dataset exists in the allowed source slides.
+- Vz-only must use the strongest calibration-frozen Vz absolute/change trigger and the same post-event action as Full vectors.
+- The 160-trial three-day set is a descriptive pilot; formal non-inferiority sample size requires pilot-based calculation.
+
+Panel f - A1-A4 energy and break-even
+- A1 raw-4 continuous versus A2 vector-3 continuous isolates vectorization.
+- A3 ADC-first event versus A4 pre-ADC event isolates event location. A3/A4 share the same vector AFE, Vz/Vx/Vy ADC inputs, ADC/reference, active rate, physical thresholds, burst configuration, and downstream controller.
+- Missing evidence: conversions/data, MCU_ACTIVE, communication, ADC/reference energy, total electronics energy per task, per-rail energy, and event-rate break-even.
+- `ADC_EN/CS/DRDY` are external activity evidence only. P10 datasheet state plus ADC/reference rail current must validate standby/power-down.
+- Slide 25 numerical readings remain excluded because operating state, rails, measurement boundary, task window, ADC mode, and actuator exclusion are undefined.
+
+Source-image integrity
+- Source photographs and illustrations retain their original pixel data and aspect ratios.
+- Only whitespace containment and one whole-image 90-degree rotation were applied.
+- No local retouching, contrast adjustment, synthetic reconstruction, or invented experimental data were used.

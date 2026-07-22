@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54mm" height="76mm" viewBox="0 0 540 760" role="img" aria-labelledby="title desc">
+<title id="title">Fig. 5d: Hierarchical hardware events</title>
+<desc id="desc">Frozen thresholds first gate contact, then prioritize overload, then expose signed x and y direction events; task-phase interpretation remains planned firmware.</desc>
+<defs>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; letter-spacing: 0; }
+.panel-letter { font-size: 35.3px; font-weight: 700; fill: #222222; }
+.panel-title { font-size: 30px; font-weight: 700; fill: #222222; }
+.panel-title-compact { font-size: 27px; font-weight: 700; fill: #222222; }
+.label { font-size: 28px; fill: #222222; }
+.small { font-size: 27px; fill: #222222; }
+.tiny { font-size: 26.5px; fill: #7A7A7A; }
+.micro { font-size: 22px; fill: #7A7A7A; }
+.micro-placeholder { font-size: 19px; fill: #7A7A7A; }
+.clock-label { font-size: 20px; fill: #7A7A7A; }
+.formula { font-size: 29px; font-weight: 700; }
+.placeholder-tag { font-size: 27px; font-weight: 700; fill: #7A7A7A; }
+.placeholder-name { font-size: 28px; font-weight: 700; fill: #222222; }
+.placeholder-output { font-size: 26.5px; fill: #7A7A7A; }
+</style>
+<marker id="arrow-black" markerWidth="10" markerHeight="10" refX="8.5" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,3.5 L0,7 Z" fill="#222222"/></marker>
+<marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8.5" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,3.5 L0,7 Z" fill="#0072B2"/></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8.5" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,3.5 L0,7 Z" fill="#009E73"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="8.5" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,3.5 L0,7 Z" fill="#D55E00"/></marker>
+<marker id="arrow-warning" markerWidth="10" markerHeight="10" refX="8.5" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,3.5 L0,7 Z" fill="#E69F00"/></marker>
+</defs>
+<rect x="0" y="0" width="540" height="760" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="12" y="38" class="panel-letter" text-anchor="start">
+<tspan x="12" dy="0">d</tspan>
+</text>
+<text x="56" y="36" class="panel-title" text-anchor="start">
+<tspan x="56" dy="0">Hierarchical hardware events</tspan>
+</text>
+<rect x="35" y="90" width="338" height="88" fill="#FFFFFF" stroke="#222222" stroke-width="4"/>
+<text x="58" y="118" class="small" text-anchor="start" style="font-weight:700">
+<tspan x="58" dy="0">1  CONTACT gate</tspan>
+</text>
+<text x="58" y="150" class="formula" text-anchor="start" style="fill:#222222">
+<tspan x="58" dy="0">Vz &gt; θc</tspan>
+</text>
+<line x1="204" y1="178" x2="204" y2="220" stroke="#222222" stroke-width="4" marker-end="url(#arrow-black)"/>
+<rect x="35" y="225" width="338" height="96" fill="#FFF8E8" stroke="#E69F00" stroke-width="4"/>
+<text x="53" y="260" class="small" text-anchor="start" style="fill:#E69F00;font-weight:700">
+<tspan x="53" dy="0">2  OVERLOAD priority</tspan>
+</text>
+<text x="53" y="292" class="formula" text-anchor="start" style="fill:#222222">
+<tspan x="53" dy="0">Vz &gt; θo</tspan>
+</text>
+<text x="53" y="316" class="tiny" text-anchor="start" style="fill:#E69F00;font-weight:700">
+<tspan x="53" dy="0">OVERLOAD_N asserted</tspan>
+</text>
+<line x1="204" y1="321" x2="204" y2="363" stroke="#222222" stroke-width="4" marker-end="url(#arrow-black)"/>
+<rect x="35" y="368" width="338" height="151" fill="#FFFFFF" stroke="#0072B2" stroke-width="4"/>
+<text x="53" y="405" class="small" text-anchor="start" style="fill:#0072B2;font-weight:700">
+<tspan x="53" dy="0">3  Direction events</tspan>
+</text>
+<text x="53" y="450" class="formula" text-anchor="start" style="fill:#0072B2">
+<tspan x="53" dy="0">Vx → X+ / X-</tspan>
+</text>
+<text x="53" y="495" class="formula" text-anchor="start" style="fill:#009E73">
+<tspan x="53" dy="0">Vy → Y+ / Y-</tspan>
+</text>
+<rect x="397" y="106" width="126" height="310" fill="#FAFAFA" stroke="#7A7A7A" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="460" y="140" class="tiny" text-anchor="middle" style="fill:#7A7A7A;font-weight:700">
+<tspan x="460" dy="0">planned</tspan>
+</text>
+<text x="460" y="174" class="tiny" text-anchor="middle" style="font-weight:700">
+<tspan x="460" dy="0">firmware</tspan>
+<tspan x="460" dy="0.92em">phase</tspan>
+<tspan x="460" dy="0.92em">gate</tspan>
+</text>
+<line x1="460" y1="205" x2="460" y2="248" stroke="#7A7A7A" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow-black)"/>
+<text x="460" y="280" class="tiny" text-anchor="middle">
+<tspan x="460" dy="0">phase</tspan>
+<tspan x="460" dy="1.0em">+ history</tspan>
+</text>
+<line x1="460" y1="340" x2="460" y2="374" stroke="#7A7A7A" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow-black)"/>
+<text x="460" y="401" class="small" text-anchor="middle" style="fill:#7A7A7A;font-weight:700">
+<tspan x="460" dy="0">Fig. 6</tspan>
+</text>
+<rect x="45" y="558" width="210" height="52" fill="#FFFFFF" stroke="#222222" stroke-width="3"/>
+<text x="150" y="593" class="small" text-anchor="middle" style="fill:#222222;font-weight:700">
+<tspan x="150" dy="0">CONTACT</tspan>
+</text>
+<rect x="285" y="558" width="210" height="52" fill="#FFFFFF" stroke="#E69F00" stroke-width="3"/>
+<text x="390" y="593" class="small" text-anchor="middle" style="fill:#E69F00;font-weight:700">
+<tspan x="390" dy="0">OVERLOAD</tspan>
+</text>
+<rect x="45" y="625" width="210" height="52" fill="#FFFFFF" stroke="#0072B2" stroke-width="3"/>
+<text x="150" y="660" class="small" text-anchor="middle" style="fill:#0072B2;font-weight:700">
+<tspan x="150" dy="0">X±</tspan>
+</text>
+<rect x="285" y="625" width="210" height="52" fill="#FFFFFF" stroke="#009E73" stroke-width="3"/>
+<text x="390" y="660" class="small" text-anchor="middle" style="fill:#009E73;font-weight:700">
+<tspan x="390" dy="0">Y±</tspan>
+</text>
+<text x="270" y="714" class="tiny" text-anchor="middle" style="fill:#7A7A7A;font-style:italic">
+<tspan x="270" dy="0">Thresholds frozen before test.</tspan>
+</text>
+<text x="270" y="746" class="tiny" text-anchor="middle" style="fill:#7A7A7A">
+<tspan x="270" dy="0">Task-phase logic → Fig. 6.</tspan>
+</text>
+</svg>
