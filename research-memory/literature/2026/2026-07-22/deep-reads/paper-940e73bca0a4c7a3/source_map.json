@@ -1,0 +1,3352 @@
+{
+  "paper": {
+    "title": "Seed-assisted polarity control of flexible WSe2 transistors and demonstration of CMOS inverter",
+    "venue": "npj Flexible Electronics",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-07-22/papers/paper-940e73bca0a4c7a3.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": "npj | flexible electronics Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        18.09,
+        561.36,
+        35.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "Published in partnership with Nanjing Tech University",
+      "translation": "",
+      "bbox": [
+        39.69,
+        45.42,
+        218.32,
+        52.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Seed-assisted polarity control of flexible WSe2 transistors and demonstration of CMOS inverter",
+      "translation": "",
+      "bbox": [
+        39.69,
+        96.65,
+        561.26,
+        189.81
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "Check for updates",
+      "translation": "",
+      "bbox": [
+        494.59,
+        214.34,
+        561.24,
+        222.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "Quỳnh ThịPhùng1,2, Kha Minh Nguyen3, Ji-Yong Park4 & Alwin Daus 2",
+      "translation": "",
+      "bbox": [
+        39.69,
+        226.68,
+        336.12,
+        239.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "1234567890():,;",
+      "translation": "",
+      "bbox": [
+        6.87,
+        300.96,
+        11.85,
+        334.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "1234567890():,;",
+      "translation": "",
+      "bbox": [
+        17.56,
+        300.83,
+        22.54,
+        334.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "Polarity engineering of transition metal dichalcogenide field-effect transistors (FETs) has become a key requirement for complementary logic. Here, we report the polarity control of flexible tungsten diselenide (WSe2) FETs with atomic layer deposited (ALD) top-gate dielectrics. We identify evaporated WOx as suitable seeds for ALD top-gates enabling p-channel WSe2 FETs, while evaporated Al seeds lead to n-channel FETs. Our flexible p-channel FETs achieve good drain current on/off ratio up to 106, enhancement-mode operation with a negative threshold voltage, and low off-current down to ~6 × 10−7µA/µm, which are important for low-power operation. Combining both seed layers in one fabrication process, we demonstrate flexible WSe2 complementary metal-oxide-semiconductor (CMOS) inverters. Our inverters show good switching behavior with voltage gain up to 65 and total noise margin up to ~88%. Overall, this study provides a strategy on polarity engineering of flexible WSe2 FETs and highlights the potential of flexible complementary WSe2 electronics.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        266.65,
+        476.19,
+        418.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "Two-dimensional (2D) transition metal dichalcogenides (TMDs) have gained increased interest for the next-generation flexible and wearable electronics due to their superior transistor scaling prospects, excellent electrical properties, and outstanding mechanical flexibility1,2. Among the various TMD semiconductors, tungsten diselenide (WSe2) stands out as a particularly versatile channel material. In contrast to other TMDs (e.g., MoS2) which typically exhibit unipolar n-type behavior, WSe2 supports both n-type and p-type transports, making it highly suitable for complementary logic circuits using a single semiconductor3. WSe2 also offers high carrier mobilities, up to 350 cm2V−1s−1 for holes and 150 cm2V−1s−1 for electrons at room temperature3–5, potentially outperforming most flexiblecompatiblesemiconductorssuchasorganicmaterials6,amorphousoxides6,7, and low temperature polysilicon8. Its atomically thin nature suppresses short-channel effects more effectively than other materials, providing a promising route for device scaling, which could lead not only to notable performance improvements but also reduced power consumption9,10. These attributes highlight WSe2 as a promising candidate for high-performance, low-power flexible complementary metal-oxide-semiconductor (CMOS) technologies11. To achieve truly flexible CMOS technology with WSe2, it is important to control the polarity for n-channel and p-channel operation without degrading other field-effect transistor (FET) characteristics. Conventional doping strategies like in silicon are incompatible with the TMD crystal",
+      "translation": "",
+      "bbox": [
+        39.68,
+        445.14,
+        294.83,
+        689.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "structure and substitutional doping has proven difficult due to deterioration of carrier mobility12–14. Thus, other means of doping have been explored, typically on rigid substrates, such as double gate engineering15, contact engineering16, interface charge control17, and chemical doping18. Nevertheless,nopriorworkhasestablishedareliablepolarity-engineeringstrategy for WSe2 implemented on flexible substrates. Related studies on other TMDs including MoS2 and WS2, have demonstrated that dielectric and interface engineering can effectively improve device performance. In particular,high k-dielectric integration has been shown to enhance electrostatic gate control, while interface and contact engineering strategies can reduce Schottky barrier height and contact resistance19–21. Furthermore, chemical doping has been reported to modulate carrier polarity of MoS2 FETs22. These studies highlight the importance of dielectric, interface, and doping engineering for high-performance and polarity tuning of TMD electronics. However, polarity control is harder for top-gates than for back-gates and achievingsuchcontrolinflexibledevicesischallengingduetoseveralfactors such as unintentional doping by top-gate dielectric deposition23,24 and limited processing temperature range for flexible substrates25. Throughout the development of doping strategies, AlOx has been reported as an n-type dopant for TMDs24 and oxidized WSe2 as a p-type dopant26,27. Evaporated WOx has been used as an encapsulation layer28, and adhesion contact layer for p-channel WSe2 FETs on rigid substrates29. Besides that, ultra-thin ( ~1.5 nm) evaporated Al has widely been used as a seed layer for atomic",
+      "translation": "",
+      "bbox": [
+        306.14,
+        444.55,
+        561.38,
+        689.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "1Department of Microsystems Engineering, University of Freiburg, Freiburg, Germany. 2Institute of Semiconductor Engineering, University of Stuttgart, Stuttgart, Germany. 3Research Institute of Basic Science, Ajou University, Suwon, Korea. 4Department of Physics and Department of Energy Systems Research, Ajou University, Suwon, Korea. e-mail: alwin.daus@iht.uni-stuttgart.de",
+      "translation": "",
+      "bbox": [
+        39.69,
+        712.91,
+        561.2,
+        742.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 1,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 1",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 2,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 2,
+      "type": "paragraph",
+      "order": 14,
+      "original_text": "a",
+      "translation": "",
+      "bbox": [
+        160.41,
+        50.83,
+        167.69,
+        63.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 2,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "b",
+      "translation": "",
+      "bbox": [
+        338.28,
+        50.83,
+        346.28,
+        63.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 2,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": "100",
+      "translation": "",
+      "bbox": [
+        323.44,
+        64.99,
+        335.83,
+        75.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 2,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "WOx seed",
+      "translation": "",
+      "bbox": [
+        411.62,
+        66.12,
+        453.86,
+        77.81
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 2,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": "Gate",
+      "translation": "",
+      "bbox": [
+        201.66,
+        93.2,
+        222.55,
+        102.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 2,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "WSe2",
+      "translation": "",
+      "bbox": [
+        157.93,
+        92.7,
+        181.75,
+        103.67
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 2,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": "10-2",
+      "translation": "",
+      "bbox": [
+        321.36,
+        94.16,
+        335.88,
+        104.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 2,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "10-4",
+      "translation": "",
+      "bbox": [
+        321.36,
+        123.33,
+        335.88,
+        133.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 2,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": "30 nm Al2O3",
+      "translation": "",
+      "bbox": [
+        201.94,
+        141.25,
+        255.09,
+        152.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 2,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "10-6",
+      "translation": "",
+      "bbox": [
+        321.36,
+        152.49,
+        335.88,
+        163.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 2,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "1.5 nm WOx",
+      "translation": "",
+      "bbox": [
+        144.33,
+        153.22,
+        196.08,
+        164.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 2,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": "|IG|",
+      "translation": "",
+      "bbox": [
+        344.85,
+        156.01,
+        357.13,
+        165.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 2,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": "|IG| L = 3 µm, W = 4 µm",
+      "translation": "",
+      "bbox": [
+        340.69,
+        172.79,
+        457.56,
+        184.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 2,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "PI Source Drain",
+      "translation": "",
+      "bbox": [
+        148.27,
+        175.76,
+        255.66,
+        186.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 2,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "10-8",
+      "translation": "",
+      "bbox": [
+        321.36,
+        181.66,
+        335.88,
+        192.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 2,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "-20 -10 0 10 20 VGS (V)",
+      "translation": "",
+      "bbox": [
+        332.26,
+        190.0,
+        466.06,
+        211.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 2,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": "e d c",
+      "translation": "",
+      "bbox": [
+        91.0,
+        208.86,
+        424.57,
+        221.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 2,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "10-2",
+      "translation": "",
+      "bbox": [
+        399.25,
+        224.71,
+        413.77,
+        235.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 2,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "100 WOx seed",
+      "translation": "",
+      "bbox": [
+        77.57,
+        226.85,
+        140.83,
+        244.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 2,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "100 WOx seed",
+      "translation": "",
+      "bbox": [
+        238.47,
+        226.85,
+        300.77,
+        244.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 2,
+      "type": "paragraph",
+      "order": 34,
+      "original_text": "Al, flex",
+      "translation": "",
+      "bbox": [
+        419.48,
+        237.76,
+        447.57,
+        247.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 2,
+      "type": "paragraph",
+      "order": 35,
+      "original_text": "10-3",
+      "translation": "",
+      "bbox": [
+        399.25,
+        248.14,
+        413.77,
+        258.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 2,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "Best corner",
+      "translation": "",
+      "bbox": [
+        509.46,
+        260.74,
+        536.05,
+        281.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 2,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "10-4",
+      "translation": "",
+      "bbox": [
+        399.25,
+        271.35,
+        413.77,
+        282.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 2,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "10-1",
+      "translation": "",
+      "bbox": [
+        75.49,
+        287.48,
+        90.01,
+        298.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 2,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": "10-1",
+      "translation": "",
+      "bbox": [
+        236.39,
+        287.65,
+        250.91,
+        298.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 2,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "Ti This work",
+      "translation": "",
+      "bbox": [
+        455.4,
+        286.09,
+        509.8,
+        303.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 2,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "10-5",
+      "translation": "",
+      "bbox": [
+        399.25,
+        294.79,
+        413.77,
+        305.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 2,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": "10-6",
+      "translation": "",
+      "bbox": [
+        399.25,
+        317.94,
+        413.77,
+        328.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 2,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "O-WSe2",
+      "translation": "",
+      "bbox": [
+        454.1,
+        325.99,
+        488.37,
+        337.68
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 2,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": "10-2",
+      "translation": "",
+      "bbox": [
+        75.49,
+        341.16,
+        90.01,
+        351.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 2,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "10-2",
+      "translation": "",
+      "bbox": [
+        236.39,
+        341.27,
+        250.91,
+        351.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 2,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "10-7",
+      "translation": "",
+      "bbox": [
+        399.25,
+        341.38,
+        413.77,
+        352.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 2,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "102 104 106",
+      "translation": "",
+      "bbox": [
+        110.11,
+        349.19,
+        211.34,
+        359.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 2,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": "10-1 100 101",
+      "translation": "",
+      "bbox": [
+        261.9,
+        349.36,
+        382.86,
+        360.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 2,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "102 104 106",
+      "translation": "",
+      "bbox": [
+        427.07,
+        349.47,
+        529.88,
+        360.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 2,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "ID,max / ID,0V ratio",
+      "translation": "",
+      "bbox": [
+        119.21,
+        360.45,
+        189.63,
+        373.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 2,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "ID,max / ID,0V ratio",
+      "translation": "",
+      "bbox": [
+        443.99,
+        360.68,
+        512.06,
+        373.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 2,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "FE,ext (cm2V-1s-1)",
+      "translation": "",
+      "bbox": [
+        283.26,
+        360.38,
+        351.99,
+        375.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 2,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "ID,0V| vs. ID on/off ratio of micron-scale top-gated p-channel WSe2 FETs with different seeds (Al, Ti, oxidized WSe2: O-WSe2). Filled markers present devices on rigid substrates and unfilled markers present flexible devices. Best corner is the desired corner for low-power devices.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        385.24,
+        561.24,
+        422.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 2,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "Fig. 1 | Flexible p-channel WSe2 FETs with WOx seed. a Schematic FET crosssection on polyimide (PI) substrate. b Transfer characteristics of a p-channel WSe2 FET. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS sweeps. c, d |ID,max| extracted at VGS = −20 V, ID on/off ratio and µFE,ext. The µFE,ext were extracted at VDS = −0.1 V. e Benchmarking of off-current |",
+      "translation": "",
+      "bbox": [
+        39.68,
+        385.02,
+        294.82,
+        433.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 2,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "layer deposition (ALD), typically leading to more pronounced n-channel behavior of WSe2 FETs due to the formation of AlOx",
+      "translation": "",
+      "bbox": [
+        39.69,
+        455.86,
+        294.77,
+        477.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 2,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": "to 65 and total noise margin up to ~88%. This approach is demonstrated on both few-layerexfoliated and chemical vapor deposited (CVD) WSe2 which signifiesthebroaderapplicationofthemethod.Overall,ourstudyprovidesa promising strategy on polarity engineering of WSe2 directly on flexible substrates. It also fills a critical gap in the literature by demonstrating a flexible WSe2 CMOS inverter using a seed-assisted top-gate dielectric.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        455.86,
+        561.29,
+        519.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 2,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "30–32. However, evaporated WOx has not been investigated as a seed layer in top-gated devices nor in flexible FETs. We note that for top-gated devices, the seed between the dielectric and channel also acts as nucleation promoter facilitating the top-gate dielectric formation via thermal ALD33. In parallel with the development of complementary FETs, the study on CMOS inverters based on TMDs has also been reported. However, most existing demonstrations either rely on rigid substrates17,34,35 or use different materials for the n- and p-channels (e.g., MoS2 for n-channel, and WSe2 for p-channel)36,37. The investigations into flexible CMOS inverters composed of TMD channel FETs remain very limited. Therefore, more studies are needed, especially toward using one semiconductor for both FET polarities, to realize the full potential of flexible TMD CMOS logic. Overall, above mentioned works have separately provided approaches for WSe2 polarity engineering via WOx or via AlOx deposition. However, there is no directly exchangeable process step established to alter polarity of WSe2 FETs within a unified top-gate fabrication process, which is also applicable to flexible substrates. This has hindered the demonstration of flexible WSe2 CMOS inverters. In this work, we compare two evaporated seed layers (WOx and Al) in flexible top-gated FETs using few-layer WSe2. The ultrathin seed layers facilitate polarity control of flexible WSe2 FETs which has potential for lowpower enhancement-mode operation. The flexible p-channel WSe2 FETs with WOx seed reach good drain current ID on/off ratio up to 106 and low off-current down to ~6 × 10−7µA/µm. We also demonstrate flexible WSe2 CMOS inverters, which show good switching behavior with voltage gain up",
+      "translation": "",
+      "bbox": [
+        39.68,
+        465.11,
+        294.93,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 2,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "Results and discussion Flexible p-channel WSe2 FETs with WOx seed For these devices, the WOx seed layer was chosen to enable p-channel WSe2 FETs. WSe2 was exfoliated from bulk material with thicknesses ranging from 1.8 nm to 6.2 nm (Suppl. Fig. 1). Flexible top-gated FETs were fabricated in a process adapted from our previous works (Suppl. Fig. 2a)32,38. Figure 1a displays the schematic device cross-section. The devices are topgated with staggered architecture. The dielectric stack consists of an evaporated1.5 nmWOxand30 nmAl2O3depositedbyALD.Ramanspectraof WSe2 on flexible polyimide (PI) before and after depositing the seed layer are shown in Suppl. Fig. 2b, indicating no detectable damage to the channel material. Figure 1b displays the transfer characteristics of an exemplary device with gate-source voltage VGS ranging from 20 V to −20 V at two different drain-source voltages VDS. The device shows clear p-channel behavior with a maximum drain current |ID,max| ~1.2 µA/µm, a negative threshold voltage VT ~ −9.8 V at VDS = −1 V, and a low gate leakage current |IG |. The device also shows good switching behavior with an ID on/off ratio of ~106 (ratio of maximum drain current ID,max and off-current ID,0V at VGS = 0 V). We note that the VT has been extracted at a constant |ID| = 10 nA/µm39,40. The",
+      "translation": "",
+      "bbox": [
+        306.14,
+        529.44,
+        561.28,
+        744.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 2,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 2",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 3,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 3,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "a",
+      "translation": "",
+      "bbox": [
+        162.65,
+        50.92,
+        170.5,
+        65.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 3,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "b",
+      "translation": "",
+      "bbox": [
+        337.59,
+        50.92,
+        346.22,
+        65.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 3,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "Al seed",
+      "translation": "",
+      "bbox": [
+        340.38,
+        68.32,
+        374.05,
+        78.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 3,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": "Gate",
+      "translation": "",
+      "bbox": [
+        200.82,
+        92.12,
+        223.35,
+        102.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 3,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "WSe2",
+      "translation": "",
+      "bbox": [
+        153.68,
+        91.58,
+        179.36,
+        103.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 3,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "1.5 nm Al 30 nm Al2O3",
+      "translation": "",
+      "bbox": [
+        143.38,
+        143.94,
+        258.44,
+        166.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 3,
+      "type": "paragraph",
+      "order": 67,
+      "original_text": "IG",
+      "translation": "",
+      "bbox": [
+        357.59,
+        169.66,
+        365.61,
+        181.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 3,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "IG",
+      "translation": "",
+      "bbox": [
+        342.99,
+        179.48,
+        351.01,
+        190.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 3,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "PI Source Drain",
+      "translation": "",
+      "bbox": [
+        143.26,
+        181.14,
+        259.11,
+        192.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 3,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "L = 3 µm, W = 4 µm",
+      "translation": "",
+      "bbox": [
+        412.19,
+        171.58,
+        458.6,
+        195.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 3,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": "c d",
+      "translation": "",
+      "bbox": [
+        162.65,
+        216.89,
+        345.92,
+        232.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 3,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "101",
+      "translation": "",
+      "bbox": [
+        143.56,
+        227.19,
+        156.97,
+        238.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 3,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "Al seed Al seed",
+      "translation": "",
+      "bbox": [
+        251.0,
+        236.54,
+        374.43,
+        246.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 3,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": "ID,max ( A/ m)",
+      "translation": "",
+      "bbox": [
+        127.03,
+        266.72,
+        140.79,
+        329.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 3,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "100",
+      "translation": "",
+      "bbox": [
+        143.56,
+        322.64,
+        156.97,
+        334.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 3,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "102 104 106",
+      "translation": "",
+      "bbox": [
+        152.59,
+        369.24,
+        299.26,
+        380.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 3,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": "ID,max / ID,0V ratio",
+      "translation": "",
+      "bbox": [
+        188.46,
+        381.31,
+        264.32,
+        395.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 3,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "Fig. 2 | Flexible n-channel WSe2 FETs with Al seed. a Schematic FET cross-section on polyimide (PI) substrate. b Transfer characteristics of an n-channel WSe2 FET. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS sweeps. c, d Extraction of ID, max at VGS = 20 V, ID on/off ratio and µFE,ext.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        405.99,
+        561.2,
+        425.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 3,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": "extracted |ID,max| vs. ID on/off ratio of eleven devices are shown in Figure 1c. Figure1ddisplaystheextractedextrinsicfield-effectmobilityµFE,extofeleven devices with a measured gate capacitance density of Cox ~0.25 µF/cm2",
+      "translation": "",
+      "bbox": [
+        39.68,
+        445.14,
+        294.83,
+        477.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 3,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "rather than back-gates. Figure 1e displays the benchmarking of off-current and ID on/off ratio of micron-scale top-gated p-channel WSe2 FETs with different interlayers, demonstrating the competitive performance of our devices38,52,53. Our FETs achieve ID on/off ratio up to 106 and off-current down to ~6 × 10−7 µA/µm at VDS = −1 V which are better than other topgated WSe2 FETs even with devices on rigid substrates, and is not far off from the best comparable back-gated WSe2 FETs (more detailed data in Suppl. Table 1). The transfer characteristics of eleven devices and additional statistics of the ID on/off ratio, off-current and VT are shown in Suppl. Fig. 6.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        445.14,
+        561.28,
+        541.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 3,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "(Suppl. Fig. 3a). Assuming a thickness = 31.5 nm for the gate dielectric, we found a dielectric constant ɛr ~9 and an equivalent oxide thickness (EOT) is ~13.7 nm.DuetoahighdielectricconstantofWOx( >20)27,41,42,Coxandɛrof whole stack are higher compared to the Al seed stack (Suppl. Fig. 3b). The breakdown voltage VGS is ~−25 V for the WOx gate dielectric stack, indicating that the hybrid dielectric stack is of good quality (Suppl. Fig. 4a). The p-doping of WSe2 by WOx is consistent with previous studies43–45, which can be explained with the Fermi level alignment: WOx has a high work function of up to ~6.4 eV46, which is higher than the work function of few-layer WSe2 (~4.5 eV)47. This difference leads to electron transfer from WSe2 to WOx at the interface to align the Fermi levels, resulting band bending in WSe2 promoting its p-doping (Suppl. Fig. 5a)48. Next, we discuss the drain current |ID,0V| at VGS = 0 V, which we define as off-current. We note that often the minimum ID, typically at positive VGS, is used as off-current, but for low-power enhancement mode operation, it is important to reach a low current level at VGS = 0 V49,50. Engineering the channel/dielectric interface has also been used in other works to adjust VT enabling low off-current40,42,51, therefore we have compared our work to other thin interlayers between the ALD dielectric and the channel. Considering the goal of well-behaving enhancement-mode devices, we found thebestresultsforIDon/offratioandoff-currentare~109and~3 × 10−7 µA/ µm, respectively, achieved with oxidized WSe2 interlayer in a back-gated pchannel WSe2 FET and demonstrated on a rigid substrate42. This supports that WOx is a promising interlayer material for this purpose, however, it is generally more difficult to obtain good device performance using top-gates",
+      "translation": "",
+      "bbox": [
+        39.68,
+        477.29,
+        294.83,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 3,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "Flexible n-channel WSe2 FETs with Al seed For these devices, the Al seed layer was chosen to obtain n-channel WSe2 FETs. The thicknesses of exfoliated WSe2 and fabrication process for n-channel FETs are similar as for p-channel FETs. The WSe2 channel was also preserved without noticeable changes in the Raman peak after Al seed deposition (Suppl. Fig. 2c). We note that the thin 1.5 nm Al oxidizes in air forming AlOx. The AlOx is well-known for n-doping of WSe2 FETs, which has been reported in literature32,54–56. Figure 2a displays the cross-section of the top-gated WSe2 FETs with dielectric stack consisting of 1.5 nm Al and 30 nm Al2O3. Figure 2b shows the transfer characteristics of an exemplary device exhibiting n-channel behavior, with VGS ranging from −20 V to 20 V. The device exhibits a good ID on/off ratio of more than 105, VT ~9 V, low off-current ID,0V ~2 × 10-6µA/µm at VDS = 1 V, and low IG. Figure 2c displays the maximum drain current ID,max vs. ID on/off ratio of four n-channeldevicesextractedatVGS = 20 V.Thetransfercharacteristicsofthe four devices are shown in Suppl. Fig. 7a. Our n-type FETs achieve ID,max up to ~7.8 µA/µm (at VDS = 1 V) and µFE,ext up to 5.6 cm2V−1s−1 (extracted at VDS = 0.1 V) (device transfer characteristics in Suppl. Fig. 7b). More",
+      "translation": "",
+      "bbox": [
+        306.14,
+        552.04,
+        561.35,
+        744.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 3,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 3",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 4,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 4,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "~400 µm without notable damage. Due to the facility limitations, cyclic fatigue tests were not performed in this work. However, a previous study on flexible TMD FETs on 5 µm thick PI (same substrate thickness used in our work) has shown stable electrical characteristics over thousands of bending cycles in the millimeter-scale bending radius, suggesting the mechanical robustness of related flexible TMD device platforms36.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        48.91,
+        561.26,
+        111.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 4,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "extracted device data of n-channel FETs, fabricated within the inverter process presented below, can be found in Suppl. Fig. 7c, d. Additional statistics of off-current, ID on/off ratio and VT for ten devices are shown in Suppl. Fig. 7e–g. Figure 2d displays the extrinsic field-effect mobility µFE,ext of four devices with a measured gate capacitance density of Cox ~0.23 µF/ cm2 (Suppl. Fig. 3b). Assuming a thickness of 31.5 nm for the gate dielectric, we found a dielectric constant ɛr ~8 and an EOT ~15.3 nm. The breakdown voltage is ~25 V for Al seed dielectric gate stack which is quite similar to the WOx seed stack (Suppl. Fig. 4b). The AlOx induced n-doping of TMDs has beenfrequentlyreportedand canbeattributed to positivefixed chargesand/ or interface charges24,56,57. A schematic band diagram of the AlOx/WSe2 interface illustrating n-type doping is shown in Suppl. Fig. 5b. Comparing our n- and p-channel FETs, both dielectric stacks show good operation under the VGS ranging from −20 V to 20 V, and become unstable or break at higher VGS of ~± 25 V. The device statistics indicate noticeable variability (eg., ID on/off ratio) for both WOx and Al-seed FETs. This behavior can be associated with variation in WSe2 thickness and surface quality, as well as possible local non-uniformity of the evaporated seed, which further influence the ALD process and contribute to the device variation. Nevertheless, the overall polarity trend remains consistent. The observed polarity is primarily supported by the electrical characteristics which are also consistent with previous literature. However, surfacepotential or chemical-state measurements were not performed in the present study. Possible mechanisms, such as Fermi-level modulation, fixed charges and interface states at the channel and seed interface are therefore discussed as plausible mechanisms based on literature rather than direct verification, which should be verified in future interfacial material characterization studies. Besides that, the hysteresis of FETs with WOx seed is relatively smaller compared to our devices with Al seed, indicating WOx mayformabetterinterfacewithWSe2.TheWOxlayerincreasesthephysical distance between the Al2O3 defect bands and the channel (Suppl. Fig. 8). It may also passivate interface traps, leading to less charge trapping which reduces the hysteresis42. The analysis of hysteresis with different VGS ranges, different VDS and different sweep rates can be found in the Suppl. Fig. 9. Generally, hysteresis exhibits strong dependence on VGS ranges, and less dependence on VDS or sweep rate within the measurement timescale. This indicates that the hysteresis mainly originates from gate-field induced charge trapping. Notably, the hysteresis of both n- and p-channel FETs markedly reduce under pulsed measurements, indicating that slow charge trapping in border traps mainly contributes to hysteresis (Suppl. Fig. 9f, l)58. Overall, the evaporated WOx seed provides promising interfacial behavior, which is similar or better compared to our reference Al-seed FETs. Future studies could investigate this aspect in more detail and explore approaches such as annealing, additional encapsulation, or optimization of the ALD processtominimizethehysteresis.Inaddition,investigatingtheinfluenceof ALD deposition temperature within the thermal budget of PI (typically <300 ⁰C, depending on the type of PI)59 could provide further insight into the device characteristics including hysteresis, threshold voltage, and polarity. However, here we focus on the polarity control of top-gated WSe2 FETs achieved with WOx/Al seeds including a good suppression of the n-branch using WOx. We note that devices on such thin PI substrates are flexible and bendable. The thin substrate effectively minimizes the bending strain according to the equation strain = d/(2·r) where d is the thickness of substrateand r is the bending radius32. We have verifiedthe mechanical stability of our devices at a bending radius of 4 mm corresponding to a strain <0.1%, which allows reliable probing on our probe station. We observed no notable changes in electrical characteristics for both the p-channel and n-channel devices under flat, bent and re-flattened conditions (Suppl. Fig. 10). We further note that we investigated the properties of flexible n-channel TMD transistors under strain in prior work and found that the mobility is enhanced under tensile strain, while changes were reversible and devices remained stable up to strain values of 0.7%60. With this in mind, we can estimate that the devices presented in this study, using substrate thicknesses of only 5 µm, could potentially allow for bending down to a radius of",
+      "translation": "",
+      "bbox": [
+        39.68,
+        48.91,
+        294.92,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 4,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "Flexible CMOS inverters based on WSe2 WiththeabovementionedstrategytocontroltheFETpolarity,wefabricated CMOS inverters based on WSe2 on flexible PI substrates. This complementary circuit was achieved by integrating two WSe2 FETs with the same metal contacts on the same substrate but using the two different seed layers. Figure 3a displays the fabrication process of the flexible inverters, whichfollowsasimilarprocessflowastheflexibleFETsdescribedabove(see Methods section). However, for the inverter, the first seed layer WOx was depositedasablanket,afterthata windowwaspatternedforlift-offtodefine the area of the Al seed. We note that WOx can be conveniently dissolved in AZ726MIFdeveloper,thereforetheWOxlayerinthewindowwasremoved during the development, before depositing Al. Figure 3b shows the cross-sectional schematic of the flexible inverter based on WSe2 channels with different seed layers. The input node is the common gate, and the output node is the shared contact of the two FETs. Figure3c,ddisplaythepictureoftheflexiblePIchipandtheopticalimageof the flexible WSe2 inverter after fabrication. Figure 3e displays exemplary transfer characteristics of the n- and p-channel exfoliated WSe2 FETs used in the same inverter. Consistent with the above demonstration, the FET with WOx exhibits p-channel characteristic and the FET with Al seed exhibits n-channel characteristic in the CMOS inverter integration. Both the n-channel and the p-channel devices have a channel length L = 3 µm, and a channel width W = 12 µm. Figure 3f shows the voltage transfer characteristic (VTC) of the flexible inverter, with output voltage Vout as a function of input voltage Vin, at supply voltage VDD ranging from 2 V to10 V. The VTC demonstrates good rail-to-rail behavior of an inverter with sharp voltage transition: the Vout remains at high level (closetoVDD)forlowVin,andswitchestoalowVoutforhighVin.Similartoa standard inverter, our device operates under positive input voltage. The switching threshold voltage (VM) of the inverter representing the voltage when both n- and p-channel FETs are switched on with an equal |ID|, has also a positive value. The VTC symmetry is not yet well balanced, thus the switching point does not occur at VDD/2 which is due to the difference between electrical properties of the n-channel FET and the p-channel FET (e.g., |ID|, VT). As shown in the transfer characteristics of both FETs in Fig. 3e, the p-channel FET exhibits higher |ID| compared to the n-channel FET whichpullsthe outputmore totheVDDcausingVMshiftingto the right (positive) direction. Balancing the electrical properties of n- and p-channel FETs remains challenging, particularly for exfoliated WSe2 where variations in flake thickness and interfacequality may be present. However, this aspect can be optimized in future work e.g., for CVD material. As discussed below, we show that this method of achieving flexible WSe2 CMOS electronics is also applicable to CVD material. The symmetry could potentially be improved by several approaches, including optimization of FETs dimensions (W/L ratios)61, tuning the seed stoichiometry to adjust doping level46, and contact engineering to tune carrier injection (source/drain) or the use of different gate metal work functions16,62,63.The hysteresis of the inverter for double sweeps is still significant which requires further optimization in the future, possibly by annealing, more encapsulation, and a tuned ALD dielectric deposition process (Suppl. Fig. 11a)64–66. To characterizetheswitchingbehaviorofourinverter,weextracted the voltage gain, which is defined as the derivative of the Vout with respect to the Vin and is an important parameter of the CMOS inverter. A voltage gain larger than unity is essential for cascaded logic operation, as it enables regenerative amplification and improves immunity to noise and signal errors67. Figure 3g displays the gain of the device for the forward sweep which isupto 65atVDD = 10 V.Thisgood gainvalueisreflectedinthesteep voltage transition.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        123.61,
+        561.41,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 4,
+      "type": "paragraph",
+      "order": 88,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 4",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 5,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 5,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "a",
+      "translation": "",
+      "bbox": [
+        82.89,
+        50.83,
+        90.17,
+        63.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 5,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "b",
+      "translation": "",
+      "bbox": [
+        385.95,
+        53.02,
+        393.94,
+        66.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 5,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "Vin",
+      "translation": "",
+      "bbox": [
+        453.86,
+        87.82,
+        465.64,
+        99.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 5,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "1.5 nm Al",
+      "translation": "",
+      "bbox": [
+        482.39,
+        132.0,
+        523.88,
+        141.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 5,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "1.5 nm WOx 30 nm Al2O3",
+      "translation": "",
+      "bbox": [
+        384.04,
+        122.73,
+        481.14,
+        142.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 5,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "GND",
+      "translation": "",
+      "bbox": [
+        497.56,
+        147.9,
+        518.42,
+        157.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 5,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "PI VDD Vout",
+      "translation": "",
+      "bbox": [
+        388.59,
+        146.97,
+        461.49,
+        161.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 5,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "c d e",
+      "translation": "",
+      "bbox": [
+        86.6,
+        203.45,
+        406.82,
+        218.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 5,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "10-2",
+      "translation": "",
+      "bbox": [
+        382.97,
+        226.09,
+        397.48,
+        236.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 5,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "VDD GND",
+      "translation": "",
+      "bbox": [
+        271.52,
+        231.48,
+        342.77,
+        256.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 5,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "10-4",
+      "translation": "",
+      "bbox": [
+        382.97,
+        256.53,
+        397.48,
+        267.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 5,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "WOx seed",
+      "translation": "",
+      "bbox": [
+        214.23,
+        256.93,
+        257.78,
+        268.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 5,
+      "type": "paragraph",
+      "order": 102,
+      "original_text": "Al seed",
+      "translation": "",
+      "bbox": [
+        311.57,
+        275.18,
+        332.91,
+        295.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 5,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "Vin",
+      "translation": "",
+      "bbox": [
+        234.84,
+        285.89,
+        246.62,
+        297.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 5,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "10-6",
+      "translation": "",
+      "bbox": [
+        382.97,
+        286.76,
+        397.48,
+        297.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 5,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "10-8",
+      "translation": "",
+      "bbox": [
+        382.97,
+        317.2,
+        397.48,
+        327.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 5,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "1 cm Vout",
+      "translation": "",
+      "bbox": [
+        106.71,
+        319.56,
+        327.51,
+        334.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 5,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "150 µm",
+      "translation": "",
+      "bbox": [
+        221.92,
+        325.07,
+        253.69,
+        334.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 5,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": "VDS = ±1 V",
+      "translation": "",
+      "bbox": [
+        470.26,
+        323.61,
+        514.21,
+        335.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 5,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "-10 -5 0 5 10 VGS (V)",
+      "translation": "",
+      "bbox": [
+        393.92,
+        343.0,
+        527.59,
+        364.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 5,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "h g f",
+      "translation": "",
+      "bbox": [
+        86.09,
+        358.15,
+        407.54,
+        371.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 5,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "10",
+      "translation": "",
+      "bbox": [
+        74.35,
+        372.78,
+        83.22,
+        380.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 5,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "101",
+      "translation": "",
+      "bbox": [
+        385.44,
+        376.63,
+        397.82,
+        387.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 5,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "VDD = 10 V",
+      "translation": "",
+      "bbox": [
+        264.16,
+        376.14,
+        308.44,
+        387.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0114",
+      "page": 5,
+      "type": "paragraph",
+      "order": 114,
+      "original_text": "VDD = 10 V",
+      "translation": "",
+      "bbox": [
+        87.11,
+        376.75,
+        131.39,
+        388.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0115",
+      "page": 5,
+      "type": "paragraph",
+      "order": 115,
+      "original_text": "8",
+      "translation": "",
+      "bbox": [
+        78.74,
+        396.59,
+        83.17,
+        404.57
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0116",
+      "page": 5,
+      "type": "paragraph",
+      "order": 116,
+      "original_text": "VDD = 8 V",
+      "translation": "",
+      "bbox": [
+        87.78,
+        399.84,
+        126.89,
+        411.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0117",
+      "page": 5,
+      "type": "paragraph",
+      "order": 117,
+      "original_text": "10-1",
+      "translation": "",
+      "bbox": [
+        383.3,
+        414.89,
+        397.87,
+        425.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0118",
+      "page": 5,
+      "type": "paragraph",
+      "order": 118,
+      "original_text": "6",
+      "translation": "",
+      "bbox": [
+        78.74,
+        420.35,
+        83.17,
+        428.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0119",
+      "page": 5,
+      "type": "paragraph",
+      "order": 119,
+      "original_text": "VDD = 6 V",
+      "translation": "",
+      "bbox": [
+        88.17,
+        424.11,
+        127.28,
+        435.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0120",
+      "page": 5,
+      "type": "paragraph",
+      "order": 120,
+      "original_text": "VDD = 8 V",
+      "translation": "",
+      "bbox": [
+        263.94,
+        435.79,
+        303.05,
+        447.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0121",
+      "page": 5,
+      "type": "paragraph",
+      "order": 121,
+      "original_text": "4",
+      "translation": "",
+      "bbox": [
+        78.74,
+        444.11,
+        83.17,
+        452.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0122",
+      "page": 5,
+      "type": "paragraph",
+      "order": 122,
+      "original_text": "VDD = 4 V",
+      "translation": "",
+      "bbox": [
+        87.78,
+        446.57,
+        126.89,
+        458.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0123",
+      "page": 5,
+      "type": "paragraph",
+      "order": 123,
+      "original_text": "VDD = 6 V",
+      "translation": "",
+      "bbox": [
+        254.61,
+        450.73,
+        293.72,
+        462.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0124",
+      "page": 5,
+      "type": "paragraph",
+      "order": 124,
+      "original_text": "10-3",
+      "translation": "",
+      "bbox": [
+        383.3,
+        452.86,
+        397.87,
+        463.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0125",
+      "page": 5,
+      "type": "paragraph",
+      "order": 125,
+      "original_text": "2",
+      "translation": "",
+      "bbox": [
+        78.74,
+        467.93,
+        83.17,
+        475.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0126",
+      "page": 5,
+      "type": "paragraph",
+      "order": 126,
+      "original_text": "VDD = 4 V",
+      "translation": "",
+      "bbox": [
+        250.74,
+        465.11,
+        289.85,
+        476.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0127",
+      "page": 5,
+      "type": "paragraph",
+      "order": 127,
+      "original_text": "VDD = 2 V",
+      "translation": "",
+      "bbox": [
+        86.26,
+        471.52,
+        125.37,
+        483.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0128",
+      "page": 5,
+      "type": "paragraph",
+      "order": 128,
+      "original_text": "VDD = 2 V",
+      "translation": "",
+      "bbox": [
+        242.76,
+        478.03,
+        281.87,
+        489.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0129",
+      "page": 5,
+      "type": "paragraph",
+      "order": 129,
+      "original_text": "10-5",
+      "translation": "",
+      "bbox": [
+        383.3,
+        491.17,
+        397.87,
+        501.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0130",
+      "page": 5,
+      "type": "paragraph",
+      "order": 130,
+      "original_text": "0 2 4 6 8 10 Vin (V)",
+      "translation": "",
+      "bbox": [
+        397.8,
+        499.5,
+        527.98,
+        521.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0131",
+      "page": 5,
+      "type": "paragraph",
+      "order": 131,
+      "original_text": "Vin (V) 0 2 4 6 8 10 0",
+      "translation": "",
+      "bbox": [
+        78.74,
+        491.69,
+        213.47,
+        522.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0132",
+      "page": 5,
+      "type": "paragraph",
+      "order": 132,
+      "original_text": "sweeps. f Voltage transfer characteristics of the flexible inverter. g Gain extraction of flexible inverter. h Static power consumption of flexible inverter. Data in (e–h) are from the same inverter and displayed for different supply voltages VDD. The data in (f–h) of the inverter are for the forward sweep direction.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        531.29,
+        561.25,
+        569.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0133",
+      "page": 5,
+      "type": "paragraph",
+      "order": 133,
+      "original_text": "Fig. 3 | Flexible CMOS inverter based on WSe2. a Integration process of flexible WSe2 inverter. b Architecture of flexible WSe2 inverter. c Picture of flexible chip after the fabrication (circle marks the area with devices). d Optical image of flexible inverter. e Transfer characteristics of the two FETs in the inverter. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS",
+      "translation": "",
+      "bbox": [
+        39.69,
+        531.12,
+        294.75,
+        580.56
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0134",
+      "page": 5,
+      "type": "paragraph",
+      "order": 134,
+      "original_text": "order estimate, the intrinsic switching speed can be approximated from the resistive-capacitive (RC) charging delay td ≈CLVDD/Ion, where CL is load capacitanceandIonison-statecurrentoftheFET67.Usingourmeasuredgate capacitance density (calculated above for each type of FET) and inverter geometry for CL,we could estimate an intrinsic operatingfrequency ranging in the order of 100 kHz for our devices. The practical operating speed is still limited by channel mobility, parasitic overlap capacitance, and possibly contact resistance, which were not optimized in this study70,71. Next,wediscussthenoisemargin,whichistheamountofnoisethatthe device could withstand without any unwanted switching. It was extracted at unity voltage gain to evaluate the robustness of the inverter. The noise margin high is defined as NMH = VOH -VIH, where VOH and VIH are the highest output and input voltages, respectively. The noise margin low is",
+      "translation": "",
+      "bbox": [
+        306.14,
+        605.81,
+        561.31,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0135",
+      "page": 5,
+      "type": "paragraph",
+      "order": 135,
+      "original_text": "Figure 3h displays the static power consumption as function of Vin, following the equation P = VDD × IDD, where IDD is the current through the inverter. The peak of power consumption of the inverter is ~25 nW at VDD = 10 V. However, the power peak reaches 95 pW when VDD = 2 V demonstrating the promise of our approach for WSe2 CMOS technology toward low-power flexible electronics. The static current IDD vs. Vin of this deviceisshowninSuppl.Fig.11b.AthighVDD,IDDshowsanotableincrease at low- and high-Vin levels, which can be attributed to non-ideal off-current, residual ambipolar conduction, FETs mismatch and hysteresis in both nand p-channel FETs. This can be improved by several approaches such as optimizing the symmetry of the transistors18, the overlap between the gate and contacts68, and reduction of EOT69. We note that this work mainly focuses on static inverter operation based on flexible WSe2 FETs. As a first-",
+      "translation": "",
+      "bbox": [
+        39.68,
+        605.81,
+        294.82,
+        744.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0136",
+      "page": 5,
+      "type": "paragraph",
+      "order": 136,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 5",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0137",
+      "page": 6,
+      "type": "paragraph",
+      "order": 137,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0138",
+      "page": 6,
+      "type": "paragraph",
+      "order": 138,
+      "original_text": "b a",
+      "translation": "",
+      "bbox": [
+        166.39,
+        50.8,
+        351.11,
+        63.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0139",
+      "page": 6,
+      "type": "paragraph",
+      "order": 139,
+      "original_text": "0.9",
+      "translation": "",
+      "bbox": [
+        328.75,
+        61.44,
+        339.48,
+        69.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0140",
+      "page": 6,
+      "type": "paragraph",
+      "order": 140,
+      "original_text": "+",
+      "translation": "",
+      "bbox": [
+        453.39,
+        90.48,
+        458.7,
+        99.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0141",
+      "page": 6,
+      "type": "paragraph",
+      "order": 141,
+      "original_text": "0.8",
+      "translation": "",
+      "bbox": [
+        328.75,
+        100.14,
+        339.49,
+        107.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0142",
+      "page": 6,
+      "type": "paragraph",
+      "order": 142,
+      "original_text": "MoS",
+      "translation": "",
+      "bbox": [
+        430.28,
+        101.38,
+        448.99,
+        110.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0143",
+      "page": 6,
+      "type": "paragraph",
+      "order": 143,
+      "original_text": "2",
+      "translation": "",
+      "bbox": [
+        448.97,
+        106.67,
+        452.34,
+        112.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0144",
+      "page": 6,
+      "type": "paragraph",
+      "order": 144,
+      "original_text": "VDD= Vin= 10 V",
+      "translation": "",
+      "bbox": [
+        191.57,
+        109.06,
+        251.48,
+        120.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0145",
+      "page": 6,
+      "type": "paragraph",
+      "order": 145,
+      "original_text": "This work",
+      "translation": "",
+      "bbox": [
+        353.87,
+        129.39,
+        392.75,
+        138.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0146",
+      "page": 6,
+      "type": "paragraph",
+      "order": 146,
+      "original_text": "0.7",
+      "translation": "",
+      "bbox": [
+        328.75,
+        138.83,
+        339.49,
+        146.57
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0147",
+      "page": 6,
+      "type": "paragraph",
+      "order": 147,
+      "original_text": "WSe2+",
+      "translation": "",
+      "bbox": [
+        385.54,
+        153.15,
+        413.96,
+        164.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0148",
+      "page": 6,
+      "type": "paragraph",
+      "order": 148,
+      "original_text": "2",
+      "translation": "",
+      "bbox": [
+        433.71,
+        158.44,
+        437.08,
+        164.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0149",
+      "page": 6,
+      "type": "paragraph",
+      "order": 149,
+      "original_text": "(NMH+NML)/VDD (V/V)",
+      "translation": "",
+      "bbox": [
+        315.25,
+        82.64,
+        327.46,
+        166.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0150",
+      "page": 6,
+      "type": "paragraph",
+      "order": 150,
+      "original_text": "0.6",
+      "translation": "",
+      "bbox": [
+        328.75,
+        177.53,
+        339.49,
+        185.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0151",
+      "page": 6,
+      "type": "paragraph",
+      "order": 151,
+      "original_text": "//",
+      "translation": "",
+      "bbox": [
+        431.15,
+        180.67,
+        436.19,
+        189.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0152",
+      "page": 6,
+      "type": "paragraph",
+      "order": 152,
+      "original_text": "D1 D2 D3 D4 D5",
+      "translation": "",
+      "bbox": [
+        165.41,
+        186.72,
+        277.48,
+        194.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0153",
+      "page": 6,
+      "type": "paragraph",
+      "order": 153,
+      "original_text": "Gain (V/V) 0 20 40 60 100",
+      "translation": "",
+      "bbox": [
+        337.36,
+        188.05,
+        454.07,
+        205.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0154",
+      "page": 6,
+      "type": "paragraph",
+      "order": 154,
+      "original_text": "Fig. 4 | Statistics of flexible WSe2 inverters and benchmarking. a Total noise margin and gain extraction of five inverters. b Benchmarking of flexible inverters based on TMDs (the inverter in the other work with WSe2/WSe2 channels used an ion gel based-dielectric). Our data were extracted from forward sweeps.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        214.21,
+        561.24,
+        233.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0155",
+      "page": 6,
+      "type": "paragraph",
+      "order": 155,
+      "original_text": "optimization of CVD conditions, seed deposition, or post-growth process steps. Overall, these results demonstrate a promising step toward flexible WSe2 CMOS electronics using seed layers for top-gates with solid-state dielectrics. In summary, flexible p-channel WSe2 FETs enabled by evaporated WOx seed layers for ALD top-gates have been presented. This seed layer revealed promising doping effectiveness, leading to unipolar p-channel behavior with good ID on/off ratio up to 106 and low off-current down to 6 × 10−7 µA/µm. Other device properties like the |ID,max| , ID on/off ratio, hysteresis, gate leakage, and gate capacitance were similar or better than for our reference n-channelFETs with Al seeds, the common approach for topgated TMD FETs. By utilizing the two different seeds, our work demonstrated the tuning of polarity of flexible WSe2 FETs compatible with topgated dielectrics. Furthermore,we also combined both Al and WOx seeds in one fabrication process and created flexible WSe2 CMOS inverters. Our inverters show good switching characteristics with voltage gain up to 65 and total noise margin up to ~88%. Compared to previous ion gel dielectrics or hybrid channel integration, this represents a promising route for flexible WSe2 CMOS electronics based on solid-state gate dielectrics. Although our initial result revealed that this fabrication process needs further improvement in the future (e.g., EOT scaling and minimization of hysteresis), we demonstrated effective polarity control and CMOS functionality using the evaporated seed layers. Overall, this work presents a promising step toward flexible CMOS electronics solely with WSe2 as a channel material.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        252.38,
+        561.37,
+        509.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0156",
+      "page": 6,
+      "type": "paragraph",
+      "order": 156,
+      "original_text": "defined as NML = VIL-VOL where VIL and VOL are the lowest input and output voltages, respectively. The total noise margin equals NMH + NML. Our device achieves good total noise margin up to ~88%, demonstrating strong noise tolerance (Suppl. Fig. 11c). We note that this only considers the forward sweep and hysteresis needs to be minimized to fully leverage this potential. Figure 4a displays the total noise margin and gain extraction of five flexible inverters. Our devices show good total noise margin with an average value ~75% and an average gain ~33 extracted from forward sweeps. The inverter-to-inverter variation is consistent with the device-todevice variation observed in the separately characterized n- and p-channel FETs. Because each inverter consists of one n-channel and one p-channel WSe2 FET, variations in threshold voltage and current level of each FETs directly affect the performance of the inverter. Details of device data can be found in Suppl. Fig. 12. The VTC of an inverter under repeated voltage switching is shown in Suppl. Fig. 13a indicating the stability of our device. We note that despite hysteresis, the total noise margin and gain are quite similar for both forward and reverse sweeps (Suppl. Fig. 13b). Given the high potential of TMDs in CMOS technology, numerous studies have demonstrated their application in CMOS inverters. To the best of our knowledge, a CMOS inverter solely based on WSe2 on a rigid substrate has been reported with a highest voltage gain ~340 and a total noise margin ~90%, which uses different source/drain contact integration methods for the n- and p-channel FETs (evaporated Au contacts and transferredAucontacts)72.OthersalsoreportedgoodCMOSinvertersbased on hybrid channels from MoS2/WSe2 inks on rigid substrates with a voltage gain ~460 and a total noise margin ~90%37. So far, the reports on flexible CMOSinvertersbasedonTMDsstillremainverylimited.Puetal.presented the first flexible CMOS inverter based on WSe2 for both n- and p-channels but used an ion gel as a gate dielectric, reporting a gain ~30 and a total noise margin ~62%73. Piacentini et al. demonstrated a flexible CMOS inverter in a back-gate configuration, based on hybrid channel materials (MoS2 and WSe2) with a gain ~30–100 (depending on the Vin sweep step size) and a total noise margin ~87%36. Zou et al. reported flexible inverters based on MoS2/WSe2 inks with gain up to ~61 at VDD = 9 V37. The benchmarking of flexible CMOS inverters based on TMDs, including gain and noise margin, ispresentedinFig.4b.ThisrevealsthescarcityofreportsonCMOSinverters with flexible TMD transistors (details in Suppl. Table S2). Our devices show voltage gain up to 65 and total noise margin up to ~88%, which is competitive to other works. The balance between NMH and NML of our inverters is also comparable to others (Suppl. Fig. 13c). With the same approach, we also demonstrated polarity control of FETs with few-layer CVD WSe2 and realized flexible inverters (Suppl. Fig. 14). We obtained good switching behavior and achieved a gain of ~15 at VDD = 5 V. We note that the inverter with the CVD WSe2 was not stable under higher VDD (e.g., 10 V) which can be due to the WSe2 material properties and dielectric quality. Further improvement can be achieved by",
+      "translation": "",
+      "bbox": [
+        39.68,
+        251.8,
+        294.93,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0157",
+      "page": 6,
+      "type": "paragraph",
+      "order": 157,
+      "original_text": "Methods Material Few-layer WSe2 (1.8 nm to 6.2 nm) were prepared by mechanical exfoliation from a bulk crystal on Si/SiO2 substrates (bulk flux-grown WSe2 was purchased from 2D materials). First, the substrates were cleaned in ozone plasma for 15 minutes (power density of 50 mW/cm2 and flow rate of 500 sccm O2) to remove residues and create a hydrophilic surface for better adhesion with WSe2. Bulk WSe2 was first cleaved using scotch tape (3M Magic)andrepeatedlyfoldedandpeeledtothinthematerial.Thethinlayers were then transferred on the Si/SiO2 substrate by pressing the tape onto the substrate surface and slowly removing it. After transfer, the few-layer WSe2 was inspected using an optical microscope. The actual thickness of WSe2 was measured using atomic force microscopy (AFM). Most devices in this manuscript have been fabricated with exfoliated WSe2, but we have also verified that similar results can be achieved with few-layer CVD WSe2 (see Suppl. Fig. 1 and Suppl. Fig. 14). For the CVD material, WSe2 was synthesized using Se powder as the chalcogen source and a mixture of NaCl and WO2.9 as both the growth promoter and tungsten precursor, respectively. The precursor mixture was positioned at the center of the furnace, while the Se powder was placed upstream to facilitate vapor transport. A SiO2/Si substrate was placed face-",
+      "translation": "",
+      "bbox": [
+        306.14,
+        518.72,
+        561.34,
+        744.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0158",
+      "page": 6,
+      "type": "paragraph",
+      "order": 158,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 6",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0159",
+      "page": 7,
+      "type": "paragraph",
+      "order": 159,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0160",
+      "page": 7,
+      "type": "paragraph",
+      "order": 160,
+      "original_text": "down directly above the tungsten precursor. The growth was conducted at 825 °C for 15 min under a controlled flow of Ar/H2 (50/10 sccm), followed by natural cooling to room temperature74,75.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        48.91,
+        294.91,
+        79.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0161",
+      "page": 7,
+      "type": "paragraph",
+      "order": 161,
+      "original_text": "Flexible top-gated FET fabrication Flexibletop-gatedFETswerefabricatedinasimilarprocessasdemonstrated in our previous works (Figure S2a)32,38. Initially, 50 nm Au source/drain contacts were electron-beam evaporated and patterned by lifted-off. The channel was patterned using a photoresist (PR) mask and etched using O2/ CF4 plasma at gas flows of 10 sccm/30 sccm, 50 W power and ~7 mTorr pressure (PlasmaTherm RIE). The PR was removed in solvent stripper (Technistrip NI555, acetone and iso-propanol). Next, a 5 µm thick polyimide (U-Vanish S, UBE Europe GmbH) layer was spin-coated on top, baked at 120 °C for 2 min and cured in N2 at 250 °C for 30 min. The PI/Au/ WSe2 stack was transferred in deionized water. Subsequently, a 1.5 nmthick seed layer (WOx or Al) was electron-beam evaporated at a rateof 0.1–0.2 Å/ s, followed by the deposition of 30 nm Al2O3 using thermal ALD at 200 °C (trimethylaluminum (TMA) precursor). Finally, a 50 nm Au top-gate was deposited by electron-beam evaporation and lifted-off, and the contacts were opened by wet etching of Al2O3 in standard Al etchant at 40 °C (TechniEtch Al80). During fabrication steps (e.g., lithography), the PI film wastemporarilyattachedtoarigidSisubstrateusingPRtoprovidesufficient mechanical stability for processing76. For lift-off processes, the PI chip was immersed in lift-off solvent for several hours until the unwanted metal was completely detached.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        91.47,
+        294.92,
+        314.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0162",
+      "page": 7,
+      "type": "paragraph",
+      "order": 162,
+      "original_text": "Characterizations Electrical measurements of FETs and inverters were performed in ambient conditions using Keysight B1500A Semiconductor Device Parameter Analyzer. The thicknesses of WSe2 were measured using AC mode imaging (JPK NanoWizard4 AFM system). Raman measurements were performed using an excitation laser of 532 nm, laser power 1 mW (WITec Alpha300R Raman microscope). Extrinsic field-effect mobility µFE,ext was extracted at VDS = ± 0.1 V following the equation of maximum transconductance gm = µFE,extCoxVDSW/L.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        327.08,
+        294.95,
+        423.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0163",
+      "page": 7,
+      "type": "paragraph",
+      "order": 163,
+      "original_text": "Data availability Relevant data supporting the key findings of this study are available within the article and the Supplementary Information file. All raw data generated during the study are available from the corresponding author upon reasonable request.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        433.06,
+        294.92,
+        486.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0164",
+      "page": 7,
+      "type": "paragraph",
+      "order": 164,
+      "original_text": "Received: 18 April 2026; Accepted: 13 July 2026;",
+      "translation": "",
+      "bbox": [
+        39.69,
+        496.34,
+        218.02,
+        505.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0165",
+      "page": 7,
+      "type": "paragraph",
+      "order": 165,
+      "original_text": "9. Myny, K. The development of flexible integrated circuits based on thin-film transistors. Nat. Electron. 1, 30–39 (2018). 10. Wei, T. et al. Two dimensional semiconducting materials for ultimately scaled transistors. iScience 25, 105160 (2022). 11. Jiang, J. et al. Advancing 2D CMOS electronics with highperformance p-type transistors. Nat. Commun. 16, 10233 (2025). 12. Wang, Q. H. et al. Electronics and optoelectronics of two-dimensional transition metal dichalcogenides. Nat. Nanotechnol. 7, 699–712 (2012). 13. Kumar, R. et al. Substitutional doping of 2D transition metal dichalcogenides for device applications: Current status, challenges and prospects. Mater. Sci. Eng. R. Rep. 163, 100946 (2025). 14. Hu, Z. et al. Two-dimensional transition metal dichalcogenides: interface and defect engineering. Chem. Soc. Rev. 47, 3100–3128 (2018). 15. Resta, G. V. et al. Polarity control in WSe2 double-gate transistors. Sci. Rep. 6, 29448 (2016). 16. Le Thi, H. Y. et al. Controlled charge polarity in WSe2 field-effect transistor grown by self-flux method. Phys. Status Solidi (b 262, 2400436 (2024). 17. Wang, A. et al. Controlling the polarity of WSe2 FETs by interface engineering for high-gain CMOS. ACS Appl. Nano Mater. 7, 5507–5512 (2024). 18. Ji, H. G. et al. Chemically tuned p-and n-type WSe2 monolayers with high carrier mobility for advanced electronics. Adv. Mater. 31, 1903613 (2019). 19. Yang, L. et al. Chloride molecular doping technique on 2D materials: WS2 and MoS2. Nano Lett. 14, 6275–6280 (2014). 20. Alharbi, A. et al. Analyzing the effect of high-k dielectric-mediated doping on contact resistance in top-gated monolayer MoS2 transistors. IEEE Trans. Electron Devices 65, 4084–4092 (2018). 21. Liao, L. et al. Interface engineering for high-performance top-gated MoS2 field effect transistors. In 2014. 12th IEEE International Conference on Solid-State and Integrated Circuit Technology (ICSICT) 1–3 (IEEE, 2014). 22. Liu, X. et al. P-type polar transition of chemically doped multilayer MoS2 transistor. Adv. Mater. 28, 2345–2351 (2016). 23. Mahlouji, R. et al. Influence of high-κ dielectrics integration on ALDbased MoS2 field-effect transistor performance. ACS Appl. Nano Mater. 7, 18786–18800 (2024). 24. McClellan, C. J. et al. High current density in monolayer MoS2 doped by AlOx. ACS Nano 15, 1587–1596 (2021). 25. Nathan, A. et al. Flexible electronics: the next ubiquitous platform. Proc. IEEE 100, 1486–1517 (2012). 26. Yamamoto, M. et al. Self-limiting oxides on WSe2 as controlled surface acceptors and low-resistance hole contacts. Nano Lett. 16, 2720–2727 (2016). 27. Li, M.-Z. et al. Top-gated p-MOSFET with CVD-grown WSe2 channels via self-aligned WOx conversion for spacer doping. Nano Lett. 25, 7037–7043 (2025). 28. Hoang, A. T. et al. High-current p-type transistors from precursorengineered synthetic monolayer WSe2. arXiv preprint arXiv:2509.07299 (2025). 29. Urmossy, D. et al. Tungsten oxide adhesion layer for low resistance hole contacts to WSe2. Nano Lett. 26, 2947–2954 (2026). 30. Lau, C. S. et al. Carrier control in 2D transition metal dichalcogenides with Al2O3 dielectric. Sci. Rep. 9, 8769 (2019). 31. Oliva, N. et al. Hysteresis dynamics in double-gated n-type WSe2 FETs with high-k top gate dielectric. IEEE J. Electron Devices Soc. 7, 1163–1169 (2019). 32. Daus, A. et al. High-performance flexible nanoscale transistors based on transition metal dichalcogenides. Nat. Electron. 4, 495–501 (2021). 33. Wirtz, C. et al. Atomic layer deposition on 2D transition metal chalcogenides: layer dependent reactivity and seeding with organic ad-layers. Chem. Commun. 51, 16553–16556 (2015). 34. Kawanago, T. et al. Experimental demonstration of high-gain CMOS inverter operation at low Vdd down to 0.5 V consisting of WSe2 n/p FETs. Jpn. J. Appl. Phys. 61, SC1004 (2022).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        49.13,
+        561.36,
+        742.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0166",
+      "page": 7,
+      "type": "paragraph",
+      "order": 166,
+      "original_text": "References 1. Piacentini, A. et al. Potential of transition metal dichalcogenide transistors for flexible electronics applications. Adv. Electron. Mater. 9, 2300181 (2023). 2. Hoang, A. T. et al. Two-dimensional layered materials and heterostructures for flexible electronics. Matter. 5, 4116–4132 (2022). 3. Wang, Z. et al. The ambipolar transport behavior of WSe2 transistors and its analogue circuits. NPG Asia Mater. 10, 703–712 (2018). 4. Pradhan, N. R. et al. Hall and field-effect mobilities in few layered p-WSe2 field-effect transistors. Sci. Rep. 5, 8979 (2015). 5. Liu, W. et al. Role of metal contacts in designing high-performance monolayer n-type WSe2 field effect transistors. Nano Lett. 13, 1983–1990 (2013). 6. Akinwande, D. et al. Two-dimensional flexible nanoelectronics. Nat. Commun. 5, 5678 (2014). 7. Lu, B. et al. Amorphous oxide semiconductors: from fundamental properties to practical applications. Curr. Opin. Solid State Mater. Sci. 27, 101092 (2023). 8. Chang, T.-C. et al. Flexible low-temperature polycrystalline silicon thin-film transistors. Mater. Today Adv. 5, 100040 (2020).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        529.44,
+        294.89,
+        742.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0167",
+      "page": 7,
+      "type": "paragraph",
+      "order": 167,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 7",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0168",
+      "page": 8,
+      "type": "paragraph",
+      "order": 168,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0169",
+      "page": 8,
+      "type": "paragraph",
+      "order": 169,
+      "original_text": "58. Illarionov, Y. Y. et al. Insulators for 2D nanoelectronics: the gap to bridge. Nat. Commun. 11, 3385 (2020). 59. Lin, J. et al. Applications of flexible polyimide: barrier material, sensor material, and functional material. Soft Sci 3, 2 (2023). 60. Datye, I. M. et al. Strain-enhanced mobility of monolayer MoS2. Nano Lett. 22, 8052–8059 (2022). 61. van Fraassen, N. C. A. et al. Optimisation of geometric aspect ratio of thin film transistors for low-cost flexible CMOS inverters and its practical implementation. Sci. Rep. 12, 16111 (2022). 62. Kim, S. et al. Contact engineering with Selenium interlayers for highperformance p-type two-dimensional WSe2 transistors. Adv. Funct. Mater. 36, e27684 (2026). 63. Wang, H. et al. Integrated circuits based on bilayer MoS2 transistors. Nano Lett. 12, 4674–4680 (2012). 64. Liu, S. et al. Hysteresis-free hexagonal boron nitride encapsulated 2D semiconductor transistors, NMOS and CMOS inverters. Adv. Electron. Mater. 5, 1800419 (2019). 65. Roh, J. et al. Negligible hysteresis of molybdenum disulfide field-effect transistors through thermal annealing. J. Inf. Disp. 17, 103–108 (2016). 66. Jiang, J. et al. Tuning the hysteresis voltage in 2D multilayer MoS2 FETs. Phys. B: Condens. Matter. 498, 76–81 (2016). 67. Weste, N. H. E. & Harris, D. CMOS VLSI Design: A Circuits and Systems Perspective. (Pearson Education India, 2015). 68. Jeon, P. J. et al. Low power consumption complementary inverters with n-MoS2 and p-WSe2 dichalcogenide nanosheets on glass for logic and light-emitting diode circuits. ACS Appl. Mater. Interfaces 7, 22333–22340 (2015). 69. Shin, D.-H. et al. Low-power complementary inverter based on graphene/carbon-nanotube and graphene/MoS2 barristors. Nanomaterials 12, 3820 (2022). 70. Münzenrieder, N. et al. Contact resistance and overlapping capacitance in flexible sub-micron long oxide thin-film transistors for above 100 MHz operation. Appl. Phys. Lett. 105, 263504 (2014). 71. Li, W. et al. Uniform and ultrathin high-ĸ gate dielectrics for twodimensional electronic devices. Nat. Electron. 2, 563–571 (2019). 72. Kong, L. et al. Doping-free complementary WSe2 circuit via van der Waals metal integration. Nat. Commun. 11, 1866 (2020). 73. Pu, J. et al. Highly flexible and high-performance complementary inverters of large-area transition metal dichalcogenide monolayers. Adv. Mater. 28, 4111–4119 (2016). 74. Nguyen, K. M. et al. High-yield synthesis of bilayer WSe2 with enhancedcarrier mobilityvia salt-assisted chemicalvapor deposition. J. Korean Phys. Soc. 88, 586–592 (2026). 75. Nguyen, K. M. et al. Role of quenching in the growth of WSe2 monolayer nanostructures with salt-assisted chemical vapor deposition. ACS Appl. Nano Mater. 8, 6035–6041 (2025). 76. Nassiri Nazif, K. et al. High-specific-power flexible transition metal dichalcogenide solar cells. Nat. Commun. 12, 7034 (2021).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        49.34,
+        561.32,
+        560.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0170",
+      "page": 8,
+      "type": "paragraph",
+      "order": 170,
+      "original_text": "Acknowledgements Q.T.P. thanks Viviane Zurdo Costa and Dr. Koosha Nassiri Nazif for sharing details on their exfoliation methods. A.D. and Q.T.P. acknowledge the support by the German Research Foundation (DFG) through the Emmy Noether Programme (506140715). K.M.N. and J.Y.P. acknowledge the supports by G-LAMP Program (No.RS-2023-00285390) of the National Research Foundation of Korea (NRF) grant funded by the Ministry of Education and by NRF grant funded by the Korea government (MSIT) (No.2022R1A2C1004922).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        572.24,
+        561.29,
+        667.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0171",
+      "page": 8,
+      "type": "paragraph",
+      "order": 171,
+      "original_text": "35. Lee, C. et al. Electrically binary and ternary convertible CMOS inverter and logic gate using complementary field-effect transistors based on vertically stacked MoS2/WSe2 n-/p-field-effect transistors. Adv. Funct. Mater. 36, e10164 (2025). 36. Piacentini, A. et al. Flexible complementary metal-oxidesemiconductor inverter based on 2D p-type WSe2 and n-type MoS2. Phys. Status Solidi (a) 221, 2300913 (2024). 37. Zou, T. et al. Flexible monolithic 3D complementary circuits based on 2D semiconductor inks. Nat. Commun. 16, 11347 (2025). 38. Phung, Q. T. et al. Flexible p-type WSe2 transistors with alumina top-gate dielectric. ACS Appl. Mater. Interfaces 16, 60541–60547 (2024). 39. Das, M. et al. Complementary doping strategy for achieving low contact-resistance in p-type two-dimensional field-effect transistors. Nano Lett. 26, 1171–1180 (2025). 40. Ko, J.-S. et al. Sub-nanometer equivalent oxide thickness and threshold voltage control enabled by silicon seed layer on monolayer MoS2 transistors. Nano Lett. 25, 2587–2593 (2025). 41. Lorenz, M. et al. Tungsten oxide as a gate dielectric for highly transparent and temperature-stable zinc-oxide-based thin-film transistors. Adv. Mater. 23, 5383–5386 (2011). 42. Lan, H.-Y. et al. Improved hysteresis of high-performance p-type WSe2 transistorswith nativeoxideWOx interfaciallayer.NanoLett.25, 5616–5623 (2025). 43. Wu,H. et al.Controllable p-type dopingstrategyfor high-performance 2D material complementary inverters. ACS Appl. Mater. Interfaces 17, 17018–17025 (2025). 44. Wu, H. et al. Controllable p-type doping for 2D-WSe2 and application in charge trap flash. Appl. Phys. Lett. 127, 043101 (2025). 45. Sivan, M. et al. All WSe2 1T1R resistive RAM cell for future monolithic 3D embedded memory integration. Nat. Commun. 10, 5201 (2019). 46. Mews, M. et al. Oxygen vacancies in tungsten oxide and their influence on tungsten oxide/silicon heterojunction solar cells. Sol. Energy Mater. Sol. Cells 158, 77–83 (2016). 47. Kim, H. et al. Thickness dependence of work function, ionization energy, and electron affinity of Mo and W dichalcogenides from DFT and GW calculations. Phys. Rev. B. 103, 085404 (2021). 48. Cai, L. et al. Rapid flame synthesis of atomically thin MoO3 down to monolayer thickness for effective hole doping of WSe2. Nano Lett. 17, 3854–3861 (2017). 49. Ghosh, S. et al. High-performance p-type bilayer WSe2 field effect transistors by nitric oxide doping. Nat. Commun. 16, 5649 (2025). 50. Sen, D. et al. van der Waals dielectrics for threshold engineering in two-dimensional field effect transistors. Nat. Commun. 17, 2840 (2026). 51. Yan, H. et al. A clean van der Waals interface between the high-k dielectric zirconium oxide and two-dimensional molybdenum disulfide. Nat. Electron. 8, 906–912 (2025). 52. Ngo, T. D. et al. The critical role of 2D TMD interfacial layers for pFET performance. in 2024 IEEE International Electron Devices Meeting (IEDM) 1–4 (IEEE, 2024). 53. Pudasaini, P. R. et al. High performance top-gated multilayer WSe2 field effect transistors. Nanotechnol 28, 475202 (2017). 54. Ko, S. et al. Few-layer WSe2 Schottky junction-based photovoltaic devices through site-selective dual doping. ACS Appl. Mater. Interfaces 9, 42912–42918 (2017). 55. Cho, H. et al. Ultrathin Al-assisted Al2O3 passivation layer for highstability tungsten diselenide transistors and their ambipolar inverter. Adv. Electron. Mater. 8, 2101012 (2022). 56. Das, T. et al. Large-scale complementary logic circuit enabled by Al2O3 passivation-induced carrier polarity modulation in tungsten diselenide. ACS Appl. Mater. Interfaces 15, 45116–45127 (2023). 57. Yang, E. et al. Realization of extremely high-gain and low-power in NMOS inverter based on monolayer WS2 transistor operating in subthreshold regime. ACS Nano 18, 22965–22977 (2024).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.34,
+        294.88,
+        742.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0172",
+      "page": 8,
+      "type": "paragraph",
+      "order": 172,
+      "original_text": "Author contributions Q.T.P. performed the device fabrication, characterization, and analysis under the supervision of A.D. K.M.N. performed the CVD of WSe2 and contributed to CVD material characterization. J.Y.P. supervised the CVD of WSe2. A.D. supervised the overall study. A.D. and Q.T.P. wrote the manuscript. All authors read and approved the manuscript.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        679.39,
+        561.34,
+        742.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0173",
+      "page": 8,
+      "type": "paragraph",
+      "order": 173,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 8",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0174",
+      "page": 9,
+      "type": "paragraph",
+      "order": 174,
+      "original_text": "https://doi.org/10.1038/s41528-026-00621-w Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0175",
+      "page": 9,
+      "type": "paragraph",
+      "order": 175,
+      "original_text": "Funding Open Access funding enabled and organized by Projekt DEAL.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        47.49,
+        254.44,
+        68.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0176",
+      "page": 9,
+      "type": "paragraph",
+      "order": 176,
+      "original_text": "Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        49.13,
+        533.03,
+        68.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0177",
+      "page": 9,
+      "type": "paragraph",
+      "order": 177,
+      "original_text": "Competing interests The authors declare no competing interests.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        79.63,
+        190.88,
+        100.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0178",
+      "page": 9,
+      "type": "paragraph",
+      "order": 178,
+      "original_text": "Additional information Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41528-026-00621-w.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        111.72,
+        235.1,
+        154.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0179",
+      "page": 9,
+      "type": "paragraph",
+      "order": 179,
+      "original_text": "Correspondence and requests for materials should be addressed to Alwin Daus.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        167.06,
+        275.94,
+        185.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0180",
+      "page": 9,
+      "type": "paragraph",
+      "order": 180,
+      "original_text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        81.39,
+        561.29,
+        207.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0181",
+      "page": 9,
+      "type": "paragraph",
+      "order": 181,
+      "original_text": "Reprints and permissions information is available at http://www.nature.com/reprints",
+      "translation": "",
+      "bbox": [
+        39.68,
+        199.2,
+        225.44,
+        217.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0182",
+      "page": 9,
+      "type": "paragraph",
+      "order": 182,
+      "original_text": "© The Author(s) 2026",
+      "translation": "",
+      "bbox": [
+        306.14,
+        220.67,
+        378.4,
+        228.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0183",
+      "page": 9,
+      "type": "paragraph",
+      "order": 183,
+      "original_text": "npj Flexible Electronics | (2026) 10:88 9",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011",
+        "S0012"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0013",
+        "S0014",
+        "S0015",
+        "S0016",
+        "S0017",
+        "S0018",
+        "S0019",
+        "S0020",
+        "S0021",
+        "S0022",
+        "S0023",
+        "S0024",
+        "S0025",
+        "S0026",
+        "S0027",
+        "S0028",
+        "S0029",
+        "S0030",
+        "S0031",
+        "S0032",
+        "S0033",
+        "S0034",
+        "S0035",
+        "S0036",
+        "S0037",
+        "S0038",
+        "S0039",
+        "S0040",
+        "S0041",
+        "S0042",
+        "S0043",
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047",
+        "S0048",
+        "S0049",
+        "S0050",
+        "S0051",
+        "S0052",
+        "S0053",
+        "S0054",
+        "S0055",
+        "S0056",
+        "S0057",
+        "S0058",
+        "S0059"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0060",
+        "S0061",
+        "S0062",
+        "S0063",
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069",
+        "S0070",
+        "S0071",
+        "S0072",
+        "S0073",
+        "S0074",
+        "S0075",
+        "S0076",
+        "S0077",
+        "S0078",
+        "S0079",
+        "S0080",
+        "S0081",
+        "S0082",
+        "S0083"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0084",
+        "S0085",
+        "S0086",
+        "S0087",
+        "S0088"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0089",
+        "S0090",
+        "S0091",
+        "S0092",
+        "S0093",
+        "S0094",
+        "S0095",
+        "S0096",
+        "S0097",
+        "S0098",
+        "S0099",
+        "S0100",
+        "S0101",
+        "S0102",
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106",
+        "S0107",
+        "S0108",
+        "S0109",
+        "S0110",
+        "S0111",
+        "S0112",
+        "S0113",
+        "S0114",
+        "S0115",
+        "S0116",
+        "S0117",
+        "S0118",
+        "S0119",
+        "S0120",
+        "S0121",
+        "S0122",
+        "S0123",
+        "S0124",
+        "S0125",
+        "S0126",
+        "S0127",
+        "S0128",
+        "S0129",
+        "S0130",
+        "S0131",
+        "S0132",
+        "S0133",
+        "S0134",
+        "S0135",
+        "S0136"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0137",
+        "S0138",
+        "S0139",
+        "S0140",
+        "S0141",
+        "S0142",
+        "S0143",
+        "S0144",
+        "S0145",
+        "S0146",
+        "S0147",
+        "S0148",
+        "S0149",
+        "S0150",
+        "S0151",
+        "S0152",
+        "S0153",
+        "S0154",
+        "S0155",
+        "S0156",
+        "S0157",
+        "S0158"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0159",
+        "S0160",
+        "S0161",
+        "S0162",
+        "S0163",
+        "S0164",
+        "S0165",
+        "S0166",
+        "S0167"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0168",
+        "S0169",
+        "S0170",
+        "S0171",
+        "S0172",
+        "S0173"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0174",
+        "S0175",
+        "S0176",
+        "S0177",
+        "S0178",
+        "S0179",
+        "S0180",
+        "S0181",
+        "S0182",
+        "S0183"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 2,
+      "caption_original": "Fig. 1 | Flexible p-channel WSe2 FETs with WOx seed. a Schematic FET crosssection on polyimide (PI) substrate. b Transfer characteristics of a p-channel WSe2 FET. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS sweeps. c, d |ID,max| extracted at VGS = −20 V, ID on/off ratio and µFE,ext. The µFE,ext were extracted at VDS = −0.1 V. e Benchmarking of off-current |",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic FET crosssection on polyimide (PI) substrate",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Transfer characteristics of a p-channel WSe2 FET. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS sweeps",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c,d",
+          "original": "|ID,max| extracted at VGS = −20 V, ID on/off ratio and µFE,ext. The µFE,ext were extracted at VDS = −0.1 V",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Benchmarking of off-current |",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 969,
+      "image_height": 563,
+      "crop_confidence": "high",
+      "bbox": [
+        55.25,
+        57.54,
+        539.05,
+        338.53
+      ],
+      "image_path": "papers/paper-940e73bca0a4c7a3/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 3,
+      "caption_original": "Fig. 2 | Flexible n-channel WSe2 FETs with Al seed. a Schematic FET cross-section on polyimide (PI) substrate. b Transfer characteristics of an n-channel WSe2 FET. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS sweeps. c, d Extraction of ID, max at VGS = 20 V, ID on/off ratio and µFE,ext.",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic FET cross-section on polyimide (PI) substrate",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Transfer characteristics of an n-channel WSe2 FET. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS sweeps",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c,d",
+          "original": "Extraction of ID, max at VGS = 20 V, ID on/off ratio and µFE,ext",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 704,
+      "image_height": 699,
+      "crop_confidence": "high",
+      "bbox": [
+        128.36,
+        54.15,
+        479.62,
+        403.0
+      ],
+      "image_path": "papers/paper-940e73bca0a4c7a3/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 5,
+      "caption_original": "Fig. 3 | Flexible CMOS inverter based on WSe2. a Integration process of flexible WSe2 inverter. b Architecture of flexible WSe2 inverter. c Picture of flexible chip after the fabrication (circle marks the area with devices). d Optical image of flexible inverter. e Transfer characteristics of the two FETs in the inverter. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Integration process of flexible WSe2 inverter",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Architecture of flexible WSe2 inverter",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "c",
+          "original": "Picture of flexible chip after the fabrication (circle marks the area with devices)",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "d",
+          "original": "Optical image of flexible inverter",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "e",
+          "original": "Transfer characteristics of the two FETs in the inverter. The solid lines present the off-to-on VGS sweeps and the dashed lines present the on-to-off VGS",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 982,
+      "image_height": 957,
+      "crop_confidence": "high",
+      "bbox": [
+        55.31,
+        47.37,
+        545.59,
+        525.04
+      ],
+      "image_path": "papers/paper-940e73bca0a4c7a3/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 3H",
+      "page": 5,
+      "caption_original": "Figure 3h displays the static power consumption as function of Vin, following the equation P = VDD × IDD, where IDD is the current through the inverter. The peak of power consumption of the inverter is ~25 nW at VDD = 10 V. However, the power peak reaches 95 pW when VDD = 2 V demonstrating the promise of our approach for WSe2 CMOS technology toward low-power flexible electronics. The static current IDD vs. Vin of this deviceisshowninSuppl.Fig.11b.AthighVDD,IDDshowsanotableincrease at low- and high-Vin levels, which can be attributed to non-ideal off-current, residual ambipolar conduction, FETs mismatch and hysteresis in both nand p-channel FETs. This can be improved by several approaches such as optimizing the symmetry of the transistors18, the overlap between the gate and contacts68, and reduction of EOT69. We note that this work mainly focuses on static inverter operation based on flexible WSe2 FETs. As a first-",
+      "caption_zh": "Figure 3H 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "v",
+          "original": "However, the power peak reaches 95 pW when VDD = 2 V demonstrating the promise of our approach for WSe2 CMOS technology toward low-power flexible electronics. The static current IDD vs. Vin of this deviceisshowninSuppl.Fig.11b.AthighVDD,IDDshowsanotableincrease at low- and high-Vin levels, which can be attributed to non-ideal off-current, residual ambipolar conduction, FETs mismatch and hysteresis in both nand p-channel FETs. This can be improved by several approaches such as optimizing the symmetry of the transistors18, the overlap between the gate and contacts68, and reduction of EOT69. We note that this work mainly focuses on static inverter operation based on flexible WSe2 FETs. As a first-",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 982,
+      "image_height": 957,
+      "crop_confidence": "high",
+      "bbox": [
+        55.31,
+        47.37,
+        545.59,
+        525.04
+      ],
+      "image_path": "papers/paper-940e73bca0a4c7a3/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 4",
+      "page": 6,
+      "caption_original": "Fig. 4 | Statistics of flexible WSe2 inverters and benchmarking. a Total noise margin and gain extraction of five inverters. b Benchmarking of flexible inverters based on TMDs (the inverter in the other work with WSe2/WSe2 channels used an ion gel based-dielectric). Our data were extracted from forward sweeps.",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Total noise margin and gain extraction of five inverters",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Benchmarking of flexible inverters based on TMDs (the inverter in the other work with WSe2/WSe2 channels used an ion gel based-dielectric). Our data were extracted from forward sweeps",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 620,
+      "image_height": 275,
+      "crop_confidence": "high",
+      "bbox": [
+        133.43,
+        56.37,
+        442.51,
+        193.48
+      ],
+      "image_path": "papers/paper-940e73bca0a4c7a3/figures/figure-05.png"
+    }
+  ],
+  "glossary": []
+}
