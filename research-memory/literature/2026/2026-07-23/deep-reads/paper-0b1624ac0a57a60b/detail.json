@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "paper-0b1624ac0a57a60b",
+  "title": "A recurrent neural network-enabled 3D dynamic focusing laser for high-fidelity microstructures toward ultrasensitive and linear pressure sensing",
+  "authors": [
+    "Rui Chen",
+    "Qixian Zhang",
+    "Wenjun Xu",
+    "Renpeng Wang",
+    "Tao Luo",
+    "Tianchang Zhao",
+    "Wenzhuo Zhang",
+    "Rui Gao",
+    "Zhenglong Xu",
+    "Baoping Zhang",
+    "Chi Fai Cheung",
+    "Zuankai Wang"
+  ],
+  "venue": "International Journal of Extreme Manufacturing",
+  "primary_category": "制造、封装与可靠性",
+  "categories": [
+    "制造、封装与可靠性",
+    "电子皮肤与触觉",
+    "软体机器人与人机交互"
+  ],
+  "strongly_related": true,
+  "date": "2026-07-22",
+  "doi": "10.1088/2631-7990/ae862d",
+  "source_url": "https://doi.org/10.1088/2631-7990/ae862d",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-07-23T01:06:47.707835+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Abstract The performance of flexible pressure sensors critically depends on the morphology of their microstructures, which governs both sensitivity and linearity. However, owing to the reduced two-dimensional (2D) Z-axis accuracy caused by focal depth mismatch, the rapid and precise laser manufacturing of complex three-dimensional (3D) functional surface microstructures remains a great challenge, limiting sensor performance. Here, we propose a 3D dynamic focusing laser (3D-DFL) fabrication approach driven by a recurrent neural network (RNN), which can directly predict laser processing parameters and adaptively tune laser multi-parameter, overcoming the defocusing limitations of 2D laser and enabling high-precision, customized fabrication of complex 3D surface microstructures. The optimized sensor, featuring a sparse pyramid array, achieves a sensitivity of 104 kPa −1 over a linear range up to 400 kPa ( R 2 = 0.996), with a linear sensing factor (LSF) over 100 times higher than square pyramid structure design. Leveraging its ultra-high sensitivity, this sensor can be applied to robots for damage-free adaptive grasping of slippery jelly. Furthermore, we develop a 4 × 4 sensor array and a crosstalk-free acquisition system (measurement error",
+    "zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及低冗余阵列、空间特征或读出通道压缩。摘要可核实数值包括：104 kPa、400 kPa。"
+  },
+  "innovation_points": [
+    "Abstract The performance of flexible pressure sensors critically depends on the morphology of their microstructures, which governs both sensitivity and linearity.",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [
+    "把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。"
+  ],
+  "inspirations": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-07-23/deep-reads/paper-0b1624ac0a57a60b/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

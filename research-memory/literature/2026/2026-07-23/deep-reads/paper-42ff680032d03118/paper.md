@@ -1,0 +1,509 @@
+# Resting-Potential-Inspired Solid-State Iontronic Osmotic Power Source Enabled by Polarized MXene
+
+- 期刊：Nano-Micro Letters
+- 日期：2026-07-22
+- DOI：10.1007/s40820-026-02310-9
+- 解析状态：fulltext_draft
+
+## 摘要与研究价值
+
+**Original:** Abstract Bio-inspired osmotic energy has shown great potential as a portable energy source or artificial electrical organ for green and sustainable power generation. However, ion-electron decoupling problem and complex structures resulting from over-engineering often limit output power and portability. Here, we propose a comprehensive design strategy that exploits the unique ion-electron coupling properties of polarized MXene to mimic transmembrane ion transport at resting potential, thereby developing an all-MXene solid-state iontronics osmotic power source (IOPS). Density functional theory calculations and multiscale characterizations reveal that its operating mechanism is based on the diffusion dynamics of K + under a concentration gradient and the Fermi level difference between two polarized MXene electrodes. The device achieves an initial open-circuit voltage exceeding 0.57 V and a high volumetric power density of 1030 μW cm −3 . The highly integrated architecture of the IOPS module allows for straightforward scalability and reconfiguration to power commercial electronic devices. This work integrates the principles of biological ion gradients with emerging iontronics, providing a solid-state iontronic design strategy for compact osmotic power source. Here, taking the natural resting potential as a design blueprint, we report a solid-state iontronic osmotic energy generator, termed IOPS, which fully leverages the ion–electron coupling effect in polarized MXene. Its mechanism arises from the diffusion kinetics of K + under an ion gradient and the Fermi level difference between two distinct polarized MXenes at the positive and negative electrodes. An initial open-circuit voltage exceeding 0.57 V and a high volumetric power density of 1030 μW cm -3 were achieved. This work integrates the fundamental principles of biological ion gradients with emerging iontronics technology, offering a paradigm for the practical deployment of osmotic energy.
+
+**中文:** 可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：0.57 V、1030 μW。
+
+## 创新点
+
+- Abstract Bio-inspired osmotic energy has shown great potential as a portable energy source or artificial electrical organ for green and sustainable power generation.
+- 可用于低离散/装配容差触觉界面的结构与对照设计
+
+## 对当前课题的启发
+
+- 可用于低离散/装配容差触觉界面的结构与对照设计
+
+## 制备与实验步骤
+
+### 1. 固化与热处理
+
+**Source:** p.1
+
+**Original:** risks associated with leakage and drying up.
+
+**中文:** 固化与热处理步骤，关键配比、时间、温度和设备参数以 p.1 原文为准。
+
+### 2. 组装与封装
+
+**Source:** p.1
+
+**Original:** to be assembled into a compact osmotic power source using only three building blocks.
+
+**中文:** 组装与封装步骤，关键配比、时间、温度和设备参数以 p.1 原文为准。
+
+### 3. 组装与封装
+
+**Source:** p.2
+
+**Original:** As shown in Fig. 1c, leveraging these unique advantages, we constructed the IOPS negative electrode (N-MXene (K+)) from Ti3C2Tx MXene pre-loaded with K+.
+
+**中文:** 组装与封装步骤，关键配比、时间、温度和设备参数以 p.2 原文为准。
+
+### 4. 成膜与沉积
+
+**Source:** p.2
+
+**Original:** This approach eliminates the risk of solvent evaporation and leakage in IOPS.
+
+**中文:** 成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.2 原文为准。
+
+### 5. 制备与实验操作
+
+**Source:** p.4
+
+**Original:** 2.2 Preparation of N‑MXene Membrane First, 4.00 g of LiF powder was gradually added to 80.0 mL of HCl solution (9.00 M) under an ice bath.
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 6. 材料混合与分散
+
+**Source:** p.4
+
+**Original:** Then 6.40 g of Ti3AlC2 MAX phase was slowly added to the above mixed solution in batches.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 7. 图形化与结构成形
+
+**Source:** p.4
+
+**Original:** The reaction was continued at 35.0 °C for 24.0h to etch the Al atomic layer.
+
+**中文:** 图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 8. 组装与封装
+
+**Source:** p.4
+
+**Original:** 2.3 Preparation of N‑MXene(K+), N‑MXene(Na+) and N‑MXene(Li+) Membranes highly integrated electrode design enables the IOPS device to be assembled into a compact osmotic energy generator using only three building blocks.
+
+**中文:** 组装与封装步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 9. 制备与实验操作
+
+**Source:** p.4
+
+**Original:** The essential reason is that we pre-install the ion storage chamber, which should be an independent module, directly into the electrode material, so the assembly complexity and part count are significantly lower than in comparable studies [12, 17, 18, 22, 32].
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 10. 固化与热处理
+
+**Source:** p.4
+
+**Original:** After drying, the membrane was weighed.
+
+**中文:** 固化与热处理步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 11. 材料混合与分散
+
+**Source:** p.4
+
+**Original:** 2.4 Preparation of P‑MXene Membrane The obtained MXene solution was completely dehydrated by high-speed centrifugation at 10,000 rpm and redispersed in ethanol to prepare a suspension.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 12. 材料混合与分散
+
+**Source:** p.4
+
+**Original:** The P-MXene finally obtained was redispersed in water, and a P-MXene membrane was obtained by vacuum filtration and drying.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。
+
+### 13. 成膜与沉积
+
+**Source:** p.5
+
+**Original:** 2.5 Preparation of Adhesive Ionogel The commercially available cellulose filter was soaked in the ionic liquid [EMIM][TFSI] for 3 min, and then spun at 500 rpm for 5s and 5000 rpm for 30s by a spin coater to remove the excess ionic liquid.
+
+**中文:** 成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。
+
+### 14. 制备与实验操作
+
+**Source:** p.5
+
+**Original:** The cellulose membrane can be quickly prepared into an adhesive ionogel within 1h.
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。
+
+### 15. 制备与实验操作
+
+**Source:** p.5
+
+**Original:** The average weight percentage of the ionic liquid in the prepared adhesive ionogel is about 290%.
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。
+
+### 16. 材料混合与分散
+
+**Source:** p.5
+
+**Original:** Other ionic liquids such as [EMIM][Ac] and [EMIM][OTf] have also been used, however they completely dissolve the cellulose membranes because they completely restructure the inter-cellulose hydrogen bonds.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。
+
+## 方法原文锚点
+
+<a id="M001"></a>
+**Source:** p.1 M001
+
+**Original:** risks associated with leakage and drying up.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M002"></a>
+**Source:** p.1 M002
+
+**Original:** to be assembled into a compact osmotic power source using only three building blocks.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M003"></a>
+**Source:** p.2 M003
+
+**Original:** have evolved optimal energy conversion modes through the spatial arrangement of ion channels and regulation of their local charge environments. Taking the formation of resting potential as an example, its core mechanism depends on potassium leakage channels on the cell membrane [23–26]. These channels establish a transmembrane potential difference by promoting the diffusion of K+ from the inside to the outside of the cell along the concentration gradient (Fig. 1a). In addition, the charge microenvironment of phospholipid molecules on the membrane surface can further regulate the polarity and amplitude of the resting potential (Fig. 1b) [27, 28]. This phenomenon provides important insights for the interface optimization of biomimetic ionic electronic devices. Here, inspired by this natural mechanism, we exploit the unique ion–electron coupling properties of polarized MXene to mimic transmembrane ion transport at resting potential, thereby developing an all-MXene solid-state ion–electron osmotic power source (IOPS). The two-dimensional nanofluidic channels in pristine MXene provide nanoconfinement and co-ion shielding, establishing a key foundation for an “ionic language” system that mimics the biological resting potential generated by concentration gradients [29]. More importantly, MXene exhibits excellent electrical conductivity, typically exceeding 1000 S m−1 for electron conduction, and possesses a rich array of functional terminal groups (–OH,–F, and–O) for ion conduction [30, 31]. These unique properties enable MXene to simultaneously support ion storage, ion gradient transport, and electron transport. As shown in Fig. 1c, leveraging these unique advantages, we constructed the IOPS negative electrode (N-MXene (K+)) from Ti3C2Tx MXene pre-loaded with K+. Meanwhile, we leveraged the chemical tunability of MXene terminal groups to construct the IOPS positive electrode (P-MXene), ensuring a substantial Fermi level difference relative to the negative electrode. The solid-state electrolyte employs a cellulose-based ionogel that contains no water or organic solvents. This approach eliminates the risk of solvent evaporation and leakage in IOPS. Ultimately, the
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M004"></a>
+**Source:** p.4 M004
+
+**Original:** 2.2 Preparation of N‑MXene Membrane
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M005"></a>
+**Source:** p.4 M005
+
+**Original:** First, 4.00 g of LiF powder was gradually added to 80.0 mL of HCl solution (9.00 M) under an ice bath. Then 6.40 g of Ti3AlC2 MAX phase was slowly added to the above mixed solution in batches. The reaction was continued at 35.0 °C for 24.0h to etch the Al atomic layer. After the reaction, centrifuge and wash repeatedly with deionized water until pH > 6.00, at which time the supernatant was dark green. Finally, ultrasonic treatment was performed in an ice bath under N2 atmosphere for 40.0 min, and centrifugation was performed at 3000 rpm for 10.0 min to obtain a MXene solution containing single-layer nanosheets with a concentration of 10.0 mg mL−1. The obtained MXene solution was vacuum filtered and dried to obtain an N-MXene membrane, and its weight was recorded as mPristine.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M006"></a>
+**Source:** p.4 M006
+
+**Original:** 2.3 Preparation of N‑MXene(K+), N‑MXene(Na+) and N‑MXene(Li+) Membranes
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M007"></a>
+**Source:** p.4 M007
+
+**Original:** highly integrated electrode design enables the IOPS device to be assembled into a compact osmotic energy generator using only three building blocks. The essential reason is that we pre-install the ion storage chamber, which should be an independent module, directly into the electrode material, so the assembly complexity and part count are significantly lower than in comparable studies [12, 17, 18, 22, 32]. Figure 1d provides a cross-sectional scanning electron microscopy (SEM) image of the IOPS device. Density functional theory (DFT) calculations and multiscale characterizations reveal that alkali metal ions in the IOPS negative electrode form a distinct solvation structure and exhibit notable diffusion dynamics at the electrode–electrolyte interface. Meanwhile, the substantial energetic asymmetry between the two polarized MXene electrodes is consistent with asymmetric interfacial charge redistribution and EDL-like polarization at the electrode–ionogel interfaces, which contributes to the built-in interfacial potential. This interfacial potential synergizes with the ion diffusion gradient to yield a high initial open-circuit voltage (VOC) exceeding 0.57 V. This design enables the IOPS to achieve a maximum areal power density of 17.5 μW cm−2, an ultra-high volumetric power density of 1030 μW cm−3, and stable performance over 50 charge–discharge cycles (Table S1). In addition, finite element modeling of coupled Nernst–Planck and Poisson equations (Fig. S1, Table S2) quantitatively confirms the IOPS power generation. Figure 1e provides a visualization of the potential distribution in the IOPS (Note S1.1). Dynamic simulation results of 4 ps are used to analyze the diffusion and transport behavior of ions within the IOPS (Fig. 1f), further supporting the proposed mechanism. Thanks to the customizable nature of IOPS, scalable integration of its units can be readily achieved. IOPS arrays can effectively power commercial electronic devices and demonstrate significant potential in portable, responsive power systems. This work is expected to provide a new paradigm for energy storage in ionic electronic devices.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M008"></a>
+**Source:** p.4 M008
+
+**Original:** The obtained N-MXene membranes were immersed in 0.2 M KOH, NaOH or LiOH solutions for different periods of time and sealed. After waiting for the alkali metal ions to be inserted into the MXene interlayer, the membrane was taken out and washed by soaking in ultrapure water, and then the excess solution was removed on a spin coater. After drying, the membrane was weighed. The weight percentage of the inserted alkali metal ions can be calculated approximately as: (mmeta–mPristine)/mPristine.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M009"></a>
+**Source:** p.4 M009
+
+**Original:** 2.4 Preparation of P‑MXene Membrane
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M010"></a>
+**Source:** p.4 M010
+
+**Original:** The obtained MXene solution was completely dehydrated by high-speed centrifugation at 10,000 rpm and redispersed in ethanol to prepare a suspension. Acetic acid was then added to reduce the pH to below 4 and a small amount of ultrapure
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M011"></a>
+**Source:** p.5 M011
+
+**Original:** water was added. APTES was then slowly added dropwise and reacted for 24h. The mass ratio of the additives was MXe ne:H2O:APTES:ethanol = 1:2:2:100. After the reaction was completed, the product was washed with ethanol and water respectively. The P-MXene finally obtained was redispersed in water, and a P-MXene membrane was obtained by vacuum filtration and drying.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M012"></a>
+**Source:** p.5 M012
+
+**Original:** 2.5 Preparation of Adhesive Ionogel
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M013"></a>
+**Source:** p.5 M013
+
+**Original:** The commercially available cellulose filter was soaked in the ionic liquid [EMIM][TFSI] for 3 min, and then spun at 500 rpm for 5s and 5000 rpm for 30s by a spin coater to remove the excess ionic liquid. This step is intended to remove unbound liquid from the surface, not to eliminate the ionic liquid retained within the cellulose ionogel. The retained [EMIM][TFSI] is a necessary component of the solid electrolyte, providing the ion-transport medium, whereas excessive free liquid could cause leakage, variable interfacial contact, and unstable output. The cellulose membrane can be quickly prepared into an adhesive ionogel within 1h. The weight percentage of the ionic liquid is calculated as follows: (mCellulose@IL–mCellulose)/mCellulose. The average weight percentage of the ionic liquid in the prepared adhesive ionogel is about 290%. According to the density of [EMIM][TFSI] (1.53 g cm−3), each square centimeter of cellulose filter can load about 10 μL of ionic liquid. Other ionic liquids such as [EMIM][Ac] and [EMIM][OTf] have also been used, however they completely dissolve the cellulose membranes because they completely restructure the inter-cellulose hydrogen bonds.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M014"></a>
+**Source:** p.5 M014
+
+**Original:** 2.6 Assembly of IOPS
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M015"></a>
+**Source:** p.5 M015
+
+**Original:** All DFT calculations were performed using the generalized gradient approximation (GGA) of the Perdew–Burke–Ernzerhof (PBE) function. The convergence criteria for the ideal optimized structure were set to Fine, with k-points set to 3 × 3 × 1, energy cutoff set to 500 eV, and convergence criteria for the electronic self-consistent loop and force set to 0.01 meV and 0.01 eV Å−1, respectively. The 3 × 3 supercell structures of four MXenes with different terminal groups were constructed, with the K+ terminal occupying the fcc site. The binding energy is calculated as follows:
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M016"></a>
+**Source:** p.5 M016
+
+**Original:** For basic power generation performance testing, the MXenebased membrane was cut into 1.5 cm × 1 cm size and pasted on a single-sided release PI film. Subsequently, the preprepared adhesive ionogel was cut into 1 cm × 1 cm size. Finally, different combinations of MXene-based membrane were pasted on both sides of the ionogel to form an IOPS unit with an effective test area of 1 cm2. It is worth noting that ion diffusion may occur immediately after the device is assembled, so relevant research needs to be carried out immediately after the device is assembled. Other IOPS assembly methods are carried out according to actual application requirements.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M017"></a>
+**Source:** p.6 M017
+
+**Original:** surface, EMXene is the energy of pure MXene, and EK is the energy of a single potassium ion. Ionogel and K+ interaction structures were constructed. K+ diffusion trajectories from the MXene surface to the ionic liquid were constructed (4 ps NVT runs were performed at 298 K). Structural optimization was performed first, followed by binding energy calculations.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M018"></a>
+**Source:** p.6 M018
+
+**Original:** acidic conditions (Note S1.2) [36, 37]. Since APTES contains three ethoxy groups, its products include five forms: monodentate, bidentate, tridentate, lateral polymerization and hydrogen bonding (Fig. S4). The preparation methods of N-MXene(K+) and P-MXene are detailed in Fig. S5 and the Methods section. The microscopic morphologies of N-MXene and P-MXene were revealed by transmission electron microscopy (TEM) and selected area electron diffraction (SAED) (Fig. S6). Ion transport properties across N-MXene and P-MXene membranes were assessed using a dual-chamber electrochemical cell with Ag/AgCl electrodes, capturing I–V curves under a 0.50/0.010 M KCl concentration gradient (Fig. S7). Calculations gave anion and cation migration numbers for P-MXene and N-MXene as tCl = 0.750 and tK = 0.976, respectively (Note S1.3), confirming the transport and storage properties of anions and cations in the two MXene membranes. Figure S8a shows the optical images of the three MXene membranes under natural light. Scanning electron microscopy (SEM) images and elemental mapping by energy dispersive spectroscopy (EDS) show the microstructure and uniform distribution of the main atoms on the surface of the P-MXene and N-MXene (K+) membranes, respectively (Fig. S8b). The zeta potential of N-MXene, N-MXene(K+), and P-MXene solutions (0.1 mg mL−1), as shown in Fig. S8c, reflects the difference in their surface potentials. The Zeta potential results reflect the altered electrokinetic surface environment after KOH treatment and APTES modification. The 2θ angle shift of the X-ray diffraction (XRD) pattern (Fig. S9) reveals the intramembrane spatial differences of N-MXene, N-MXene(K+), and P-MXene (Note S1.4). X-ray photoelectron spectroscopy (XPS) results, shown in Fig. S10 and Table S3, confirm the presence of typical elements: K in N-MXene(K+) and Si and N in P-MXene, indicating successful synthesis (Note S1.5). Characteristic absorption peaks from Fourier transform infrared spectroscopy (FT-IR, Fig. S11) also corroborate these findings (Note S1.6). Sheet resistivity of N-MXene, N-MXene(K+), and P-MXene films was measured using the four-point probe technique (Table S4). Despite undergoing intercalation and chemical modification, the membranes maintained excellent metallic conductivity. For the fabrication of solid polymer electrolytes (SPE), the good thermal stability, low volatility, non-flammability and high ionic conductivity of ionic liquids are fully utilized [38, 39]. Here, we developed a fast method to fabricate adhesive ionogel through random copolymer networks formed
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M019"></a>
+**Source:** p.6 M019
+
+**Original:** The solid-state IOPS device was constructed by two polarized MXene electrodes and a cellulose-based ion gel (Fig. 2a, b). Atomic force microscopy (AFM, Fig. S2) revealed the microstructure of the pristine MXene nanosheets, which were approximately 1.12 nm thick and 1.0 μm in size. The functionalized terminal groups (–F, –O, –OH) of the pristine MXene possess high electronegativity, inducing a surface partial negative character (δ −). Therefore, we designate this electrode as Negative Polarized MXene (N-MXene) [30, 33]. Free-standing membranes can be prepared by vacuumassisted filtration, and the two-dimensional nanosheet confined channels in the membrane can serve as a natural warehouse for the storage of alkali metal ions. The N-MXene(K+) membrane was fabricated by sealing and immersing the N-MXene free-standing membrane in a high-concentration KOH solution (Note S1.2) [20, 34, 35]. The control experiment (Fig. S3) shows that when the immersion time exceeds 48h and the immersion concentration exceeds 0.20 M, the storage capacity of K+ no longer increases, and its maximum storage capacity is about 5.2 wt% (relative to N-MXene membrane). As mentioned above, N-MXene(K+) serves multiple roles in solid-state IOPS, including as a cationselective permeable membrane, ion reservoir, current collector (high conductivity), and negative electrode. Currently, the most widely used synthesis method of Ti3C2Tx MXene is MILD method or direct HF etching, which easily generates negative charges from surface terminals. Consequently, reports on Positive Polarized MXene (P-MXene) featuring positive surface polarity are relatively scarce. In our work, P-MXene was prepared by using the silane coupling agent APTES to form O–Si covalent bonds with the terminal hydroxyl groups of MXene under
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M020"></a>
+**Source:** p.7 M020
+
+**Original:** Fig. 2 Electric output performance of a IOPS unit. a Assembly and testing scheme of IOPS. b Optical photo of the IOPS device under natural light. c Open-circuit voltage (VOC) of IOPS device. d Output short-circuit current (Jsc) after assembling the IOPS device. e Cyclic current and time records of IOPS device shortcircuited and discharged 50 times after 0.5 V constant voltage charging. f Multidimensional data visualization of ion osmotic energy storage from related work. g Voltage and area current density output of an IOPS with a variable resistor. h Maximum power density output of IOPS with variable resistor. i Voltage retention rate of IOPS at different bending angles (based on the initial voltage in the previous text, the same below)
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M021"></a>
+**Source:** p.8 M021
+
+**Original:** by ionic liquids [EMIM][TFSI] and cellulose membranes [40]. As shown in Fig. S12, [EMIM][TFSI] was able to partially restructure the hydrogen bonds of cellulose polysaccharide units and gel the macroscopic cellulose membrane without using any organic solvents. This is a very simple, rapid and direct method for preparing SPE. It should be noted that the ionogel in this study was rapidly prepared using a commercially available cellulose membrane, and the actual membrane thickness determined the final thickness of the ionogel. Therefore, the selected thickness should be considered as a practical design choice based on the rapid preparation method via commercial cellulose membranes, rather than a universally applicable optimal value. The prepared cellulose-based ionogel is essentially a solid mixture in a liquid-like dissipative state. The optical image and SEM image of the adhesive ionogel formation process are shown in Fig. S13. The porous cellulose membrane can quickly form a uniform ion gel within 1h and maintain its original shape after two weeks. Figure S14 shows the conductivitytemperature dependence characteristics of the ion gel at test temperatures of -10 to 80 °C. When it is at room temperature 25 °C, the ionic conductivity can reach 1.07 mS cm−1. In addition, the ion gel has a strain tensile strength of about 160% and a strong adhesion force, and it is not easy to cause interfacial delamination between the electrode and the electrolyte, which ensures its stability when mechanical deformation occurs (Fig. S15). After being stored in ambient conditions for one month, the ion gel still maintains its shape and transparency and has no corrosive effect on metals (Fig. S15c).
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M022"></a>
+**Source:** p.9 M022
+
+**Original:** ion diffusion rate within IOPS. Notably, the device operates effectively across a wide temperature range, from − 10 to 80 °C, with increased temperatures significantly boosting the peak JSC without substantially affecting the voltage (Fig. S18b). The design strategy of IOPS is versatile, making it suitable for fabricating devices with varying working areas. As shown in Fig. S18c, the peak JSC increases with larger working areas.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M023"></a>
+**Source:** p.9 M023
+
+**Original:** discharge cycle (Figs. 2e and S17). This demonstrates that a 0.5 V charging step can restore the non-equilibrium K+ distribution and recover the diffusion potential contribution by driving K+ back to the N-MXene side. We have also visualized data from major recent works related to ion osmotic energy storage, which showed that IOPS is in a relatively leading position in several aspects (Fig. 2f) [12, 17, 18, 32, 43, 44]. Based on the maximum power transfer theorem (MPTT), the system achieves peak power output when load resistor (RLoad) matches the system’s internal resistance. To evaluate the energy harvesting capabilities of IOPS, we measured the electrical energy generated by connecting an adjustable load resistor (RLoad) to an external circuit (Fig. 2g). The peak power density was obtained from the measured P = J × V curve under different external loads. Figure 2h shows that for a 1 cm2 generator, the optimal resistor load is 2 kΩ, which achieves peak power densities of 17.5 μW cm−2 and 1030 μW cm−3 (Table S1). The volumetric power density was calculated from the maximum measured areal power density divided by the effective device thickness (the effective testing area was 1 cm2, and the total device thickness was approximately 170 μm based on the cross-sectional SEM image). Among these, the ultra-high volumetric power density of IOPS is particularly noteworthy, which is due to the ultra-thin thickness of the IOPS device. Additionally, IOPS exhibited a fairly high potential for flexible devices, with only slight performance fluctuations under bending deformation from 0° to 150°, which means it is resistant to mechanical deformation (Fig. 2i). Generally, the performance of ion osmotic energy storage devices is significantly influenced by environmental factors like temperature and humidity due to their impact on the physicochemical properties of the materials involved [45–47]. Temperature variations can alter the ionic conductivity and mobility within the electrolyte, affecting the rate and efficiency of ion transport. Humidity’s impact on ion osmotic energy storage devices arises from its effect on the hydration layers around the ions in the electrolyte and electrode, which can change the diffusion dynamics of ions. The ion solvation in IOPS is provided by ionic liquids and is not disturbed by water. Figure S18a presents result that demonstrates IOPS’s resistance to environmental humidity, confirming its electrical performance remains unaffected by moisture. Previously, we established the temperature dependence of the ionogel, noting that increases in ambient temperature significantly enhance the
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M024"></a>
+**Source:** p.9 M024
+
+**Original:** While generally VOC is the projection of the Fermi level difference in the electrolyte environment, its practical manifestation in the IOPS system emerges from the interplay between interfacial electrode potentials (Eelectrode) and ionic diffusion potentials (Ediff). To decouple these synergistic contributions, we systematically investigated three archetypal electrode configurations through comparative VOC measurements under controlled ion transport conditions. As shown in Fig. 3a, when the positive electrode of the original device [ +]P-MXene/N-MXene(K+)[ −] (purple line) was replaced with N-MXene, the initial VOC showed 0.395 V and dropped rapidly within half an hour (blue line). We analyzed that N-MXene and N-MXene(K+) have similar functional group compositions. The K+ stored in N-MXene(K+) produces entropy-driven ion diffusion behavior under the influence of a resting-potential-mimetic mechanism, so an obvious potential (Ediff) downward trend is generated in the first half an hour. The VOC tends to stabilize after half an hour. This stable potential arises from the distinct Fermi energy levels (or work functions) of N-MXene and N-MXene(K+). Although both possess similar electronegative terminals, the pre-intercalation of K+ induces an electronic n-doping effect, shifting the Fermi level of N-MXene(K+) upwards relative to pristine N-MXene (a difference in surface chemical environment verified by XPS and zeta potential characterization). To further elucidate the devices’ dynamic characteristics, AC electrochemical impedance spectroscopy (EIS) was conducted across a frequency range of 0.01 Hz to 0.1 MHz, evaluating heterogeneous charge transfer parameters. Nyquist plots in Fig. S19a − c show no clear semicircles in the highfrequency regions of the [ +]N-MXene/N-MXene(K+)[ −] and [ +]P-MXene/N-MXene(K+)[ −] devices. This may result from the lower Rs value leads to relatively fast ion transport at the negative electrode interface. Concurrently,
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M025"></a>
+**Source:** p.10 M025
+
+**Original:** diffusion control dominates the system and the charge transfer resistance (Rct) process is not significant. Especially in the low-frequency region, the semicircle is replaced by the oblique line of Warburg impedance. This feature also reflects the fast diffusion kinetics of K+. In addition, the Bode plot
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M026"></a>
+**Source:** p.11 M026
+
+**Original:** cutoff frequencies exhibit faster charging and discharging capabilities. Figure S19f reveals that the electrode’s cutoff frequency in this study is 17 Hz. The corresponding relaxation time constant of approximately 9.4 millis indicates the electrode’s rapid charge transfer and enhanced power transfer capabilities. In order to more intuitively observe the source of IOPS voltage output, Fig. 3b, c displays VOC measurements for devices with various configurations, with Device 1 maintaining the original setup. Devices 2, 3, and 4 showed no electrical signals. These results further indicate that unreasonable structural distribution cannot produce any electrical output: Device 2 shows that both P-MXene and N-MXene(K+) have excellent electronic conductivity, and direct contact will lead to a short circuit; Device 3 shows that the lack of heterogeneous charge structure also cannot generate any electrical signal; Device 4 shows that the mutually offsetting ion diffusion effect will result in no electrical signal being generated. Therefore, only a properly structured distribution, such as in Device 1, can facilitate efficient ion-electron coupling, which is the primary reason for electricity generation. Devices 5 and 6 demonstrate the series and parallel VOC configurations of IOPS, highlighting excellent device scalability. To further explore the working mechanism of this novel type of IOPS power device, we used a variety of characterization techniques to analyze the ion evolution during the discharge process. In the previous section, we have verified through electrical testing that ion diffusion and the Fermi level difference of electrodes are the main driving forces for IOPS energy harvesting. EDS element mapping in Fig. 3d illustrates the distribution of titanium elements in the polarized MXene-based electrodes. After the device was short-circuited for 10 min to dissipate energy, it was clearly observed that the K element diffused from N-MXene (K+) to the ionogel, which verified the formation mechanism of the K+ diffusion current. Furthermore, ICP-OES provided direct evidence of ion transport. The K+ concentration in the ionogel after discharge of five independent devices was measured, increasing from 0 to an average of 7873 ppm (Fig. S20). In order to generate power output, gradient diffusion and directional transport of ions need to be converted into electron transport at the electrode surface. In traditional RED systems, this conversion is typically achieved through the redox reactions at Ag/AgCl electrodes [9, 21, 22, 48]. In hydrovoltaic devices, although the mechanism of current generation has not yet been fully explained, it
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M027"></a>
+**Source:** p.11 M027
+
+**Original:** is preliminarily believed to be achieved through mirrorelectrons or image-electrons [43, 49–51]. In our IOPS system, since both N-MXene(K+) and P-MXene have excellent metallic conductivity, they can directly release and accept electrons to complete this process. Work function is an important term in solid physics and surface science, which represents the minimum energy required to remove an electron from the surface of a material. Specifically, the work function is the energy required to raise an electron from the Fermi level of a material to the vacuum level. When two different electrodes are assembled into a generator, the electrons of the electrode with a lower work function will spontaneously flow to the electrode with a higher work function. This is because electrons tend to occupy states with lower energy. This electron transfer generates a potential difference between the two electrodes until a state of equilibrium is reached. Kelvin probe force microscopy (KPFM) is a high-precision surface measurement technique that can measure local work function changes on the surface of a sample [52, 53]. It can indirectly calculate the work function of the sample surface by measuring the contact potential difference (CPD) between the sample surface and the conductive probe. Figure 3e shows the CPD landscape images of P-MXene, N-MXene, and N-MXene(K+) films within a 2.0 μm × 2.0 μm area, and presents area scan measurements of surface potential changes in the three MXene-based electrodes. The average measured CPDs are 0.0238, − 0.129, and − 0.492 V, respectively. Figure S21 provides the surface morphology images of the corresponding films. In addition, under ideal conditions, the CPD difference is highly positively correlated with the potential difference between the electrodes. This offers a direct method for estimating the VOC of IOPS devices. By calculating the CPD differences between P-MXene, N-MXene, and N-MXene(K+), a positive correlation consistent with the initial VOC of three types of IOPS devices is observed (minor discrepancies may arise from electrochemical effects, interfacial phenomena, and other corrective factors). This confirms the rational design of the IOPS. Furthermore, using a gold standard sample, we determined the KPFM probe’s work function to be approximately 5.0095 eV (Fig. S22). Consequently, the work function of three MXene-based electrodes were calculated to be 5.033 eV for P-MXene, 4.881 eV for N-MXene, and 4.518 eV for N-MXene(K+) (Note S1.7). The APTESderived silane terminals form O-Si bonds with hydroxylated MXene surfaces and introduce amine-containing terminal
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M028"></a>
+**Source:** p.12 M028
+
+**Original:** groups, which can alter the surface electrostatic potential and interfacial dipole/charge distribution; this change is consistent with the KPFM-observed increase in work function and the corresponding lowering of the Fermi level for P-MXene. Therefore, it is easy to discern their propensity to serve as either the positive or negative electrode in IOPS. P-MXene has a relatively high work function and is suitable as a positive electrode, which helps prevent excessive escape of electrons. N-MXene(K+) is very suitable as a negative electrode, which is conducive to releasing ions and providing sufficient electrons. Based on the above observations, we propose the following mechanism for voltage generation driven by thermodynamic synergy. Upon device assembly, the ionogel forms intimate solid-state contact with the two polarized MXene electrodes. The significant difference in work function between P-MXene and N-MXene(K+) induces a potential bias at the device interfaces (Fig. 3f). Concurrently, the preloaded K+ within the N-MXene(K+) tends to dissociate from the interlayer reservoirs and migrate into the ionogel in a solvated state (Fig. 3g). Therefore, the initial open-circuit voltage (Vinitial) of the IOPS should be understood as the combined outcome of the electrode energy asymmetry and the diffusion of K+ driven by the activity gradient, rather than arising from a singular process. As the device progressively approaches equilibrium, the diffusion-related contribution diminishes, and the residual voltage is predominantly sustained by the inherent energy level difference between the two polarized MXene electrodes (for further discussion, please refer to Note S1.8).
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M029"></a>
+**Source:** p.12 M029
+
+**Original:** optimized model of face-centered cubic (fcc) minimum energy configuration was used for calculation [54]. The fcc site is located at the hollow top composed of Ti elements, and no elements exist in the next layer. The MXene molecular structure used in this study can be simplified into four derivative forms. DFT calculations were employed to model the electrostatic potential (ESP) surfaces of N-MXene (with–F,– OH,–O terminals) and P-MXene (with–NH2-like monodentate terminals) (Fig. 4a). The ESP mapping reveals a stark contrast: N-MXene terminals exhibit deep blue/lowpotential regions due to the high electronegativity of oxygen and fluorine atoms, confirming their "Negative Polarized" nature. In contrast, P-MXene displays red/high-potential regions, confirming its "Positive Polarized" nature. This intrinsic polarity difference is the root cause of the work function mismatch (ΔΦ) identified in the previous section. Binding energy (ΔEb) calculations further explain the EDL formation mechanism. As shown in Figs. 4a and S24, N-MXene exhibits a strong affinity for cations (e.g., strong K+–O interaction, ΔEb = − 3.04 eV), energetically favoring the adsorption of EMIM+ and K+ to form the negative-side EDL. Conversely, P-MXene shows weaker interaction with cations but is electrostatically prone to attracting anions (TFSI−). This selective adsorption tendency, dictated by the surface energetic landscape, spontaneously establishes the built-in electric field at the interface upon assembly, thereby validating the Eelectrode contribution to the opencircuit voltage. Simultaneously, the K+ concentration gradient establishes the thermodynamic foundation for the diffusion potential (Ediff). Even in the static state, K+ ions exhibit a strong entropy-driven tendency to diffuse from the reservoir into the ionogel. To understand this process in an anhydrous environment, we analyzed the solvation dynamics. Binding energy calculations (Fig. S25) reveal a much stronger affinity of K+ for TFSI− anions (− 470 kJ mol−1) compared to EMIM+ cations (− 104 kJ mol−1), governing the solvation structure. Unlike aqueous systems, radial distribution function (RDF) analysis (Fig. 4b, c) shows that K+ forms a unique Contact Ion Pair (CIP) structure [55]. The K+ solvation shell mainly comprises TFSI− molecules, with average coordination number of 1.37 TFSI− nitrogen per K+. In addition, the K+ solvation shell also includes 2.35 tightly double-layer coordinated TFSI− oxygen and 0.65 Cellulose
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M030"></a>
+**Source:** p.12 M030
+
+**Original:** To further elucidate the experimentally observed dual-contribution mechanism involving electrode potential and ion diffusion, we performed multi-scale simulations combining DFT and MD. First, we elucidated the microscopic origin of the Fermi level difference (Eelectrode) by analyzing the electronic interactions at the electrode terminals. MXene is characterized by a hexagonal unit cell structure with a well-defined number of layers. Figure S23 describes the construction of unit cell and supercell models without installed end-group configuration to avoid spurious interactions. For the ion terminal occupied sites in the MXene lattice, the
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M031"></a>
+**Source:** p.14 M031
+
+**Original:** oxygen. This implies that K+ does not migrate as a naked ion but moves as a solvated cluster [K(TFSI)x](1−x). The mean square displacement (MSD) yields a diffusion coefficient of 1.09 × 10−7 cm2 s−1 (Fig. 4d). Notably, consistent with Manning’s counterion condensation theory, the cellulose chains facilitate this transport by forming a charge layer that assists the ion dissociation [39, 56]. The cellulose network contributes to the ionogel beyond serving as a passive scaffold. During ionogel formation, [EMIM][TFSI] partially reconstructs the hydrogen-bond network of cellulose, converting the porous membrane into a continuous solid electrolyte while preserving its macroscopic shape. This reconstructed network provides mechanical integrity, adhesion, and resistance to interfacial delamination during deformation. At the same time, the retained ionic liquid supplies the ion-conducting phase, and the cellulose oxygen atoms participate in the local K+ solvation environment according to the RDF analysis. Therefore, the cellulose network helps couple mechanical stability with ionic conductivity by maintaining a continuous ionogel framework and assisting the solvation/ transport environment for K+-containing clusters. To elucidate the dynamic transport mechanism that converts this potential into current, we mapped the microscopic pathway and macroscopic flow. At the atomic level, the diffusion kinetics at the N-MXene/[EMIM][TFSI] interface follow a "hopping" mechanism (H1 → H2 → H3), as visualized by time-lapse trajectories (Fig. S26a, d). Initially, K+ is mainly coordinated with the anchor anion site at a distance of 2.4 Å from MXene-O (state H1). Subsequently, K+ undergoes an intermediate state H2, in which K+ dissociates from the nitrogen center part of the anion and jumps to the vicinity of the adjacent EMIM molecule. In the third step, K+ migrates along the molecular structure, re-forming K–O coordination at a distance of 2.2 Å (state H3). Figure S26b clearly shows the diffusion trajectory of K+ in three-dimensional space, and its migration barrier is about 0.985 eV (Fig. S26c). On a macroscopic scale, MD simulations of the discharge process (Fig. 4f, g and Movie S1, Note S1.9) visualize the collective carrier flow: driven by the electrochemical potential difference, K+ and EMIM+ migrate towards the positive electrode, while TFSI− anions counter-migrate towards the negative electrode. This bidirectional transport confirms that the IOPS current is sustained by the synergistic release of K+ from the reservoir and the global re-balancing of electrolyte ions.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M032"></a>
+**Source:** p.14 M032
+
+**Original:** Our comprehensive study of the IOPS mechanism has enabled the large-scale design and integration of IOPS units, achieving high-performance power output. Using appropriate series and parallel connections allows us to flexibly control the output voltage and current of the IOPS arrays. Figure 5a illustrates the modular design concept of the IOPS arrays. Here, we propose a new design scheme for IOPS units. Unlike the sandwich structure initially demonstrated, this design secures P-MXene, N-MXene(K+), and ionogel to the substrate, enabling more diverse circuit combinations. Figure 5a (middle) shows the dimensions of a single IOPS, with electrode spacings of 2 mm and a contact area of 4 mm × 10 mm between the ionogel and each electrode. Figure 5a (left and right) shows the series connection of 17 IOPS units and the parallel connection of 12 IOPS units assembled on the PI substrate. This configuration generates a VOC of approximately 8.6 V and a maximum ISC of 3.1 mA (Movie S2). This confirms the excellent scalability of the IOPS arrays. Additionally, the energy stored by the IOPS arrays can sufficiently power various commercial electronic products, including an ink screen thermohygrometer. Owing to its excellent environmental stability, the IOPS can power the thermohygrometer outdoors, as depicted in Fig. 5b. Real-time collection of ambient temperature and humidity is achieved. The IOPS arrays were further utilized to power an electrochromic device (ECD), as shown in Fig. 5c. When disconnected from the IOPS arrays, the ECD remains in an atomized state, making the scenery behind it almost invisible. When voltage is applied via the IOPS, the ECD becomes transparent. In addition, since entropy increasedriven ion diffusion occurs immediately after the IOPS device is assembled, it causes the ion diffusion energy in the device to be consumed in advance. To address this issue, we also designed a folding-triggered IOPS that does not dissipate energy when separated, as illustrated in Fig. 5d. In the unfolded state, the ionogel contacts only P-MXene, which does not store ions. Upon folding, it immediately generates power output. Figure 5e shows a folding-triggered IOPS with five units in series, which produces a VOC of approximately 2.83 V when folded. Furthermore, the VOC from the integrated IOPS unit exhibits a nearly linear output. As a proof of concept, we completed the power supply of the IOPS arrays for various application scenarios, underscoring the robust design and broad applicability of IOPS.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M033"></a>
+**Source:** p.15 M033
+
+**Original:** Fig. 5 Extensible integration of IOPS. a Assembly and optical images of an IOPS unit, and schematic diagram of scalable integration of serial and parallel IOPS arrays. b IOPS array powers the thermohygrometer to monitor the ambient temperature and humidity in real time. c IOPS arrays powers the ECD to transform it from an atomization state to a transparent state. d Design concept diagram of the folding-trigger IOPS. e Optical schematic diagram of the unfolding and folding of 5 folding trigger IOPS arrays. The VOC of the integrated IOPS units achieves a nearly linear output
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M034"></a>
+**Source:** p.16 M034
+
+**Original:** Laboratory of Bioinspired Interfacial Science (SZ2024004 (Z.Z.)). The authors thank the Analysis and Testing Center of HUST for the TEM characterizations. Thank the Center of Optoelectronic Micro & Nano Fabrication and Characterizing Facility, Wuhan National Laboratory for Optoelectronics of HUST for the support in the SEM tests.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M035"></a>
+**Source:** p.16 M035
+
+**Original:** In summary, the natural mechanisms of resting potential in biological systems have greatly inspired our comprehensive design strategy. In this study, by leveraging the unique interfacial energetic alignment properties of polarized MXene, we successfully emulated transmembrane ion transport at resting potential, enabling the development of an all-MXene solid-state iontronic osmotic power source. Through innovative working mechanisms and device architecture, the IOPS achieves a peak power density of 17.5 μW cm−2 and a volumetric power density of 1030 μW cm−3, with stable performance over 50 charge–discharge cycles. This performance far exceeds that of existing ion osmotic power source. More specifically, the key groundbreaking features of our study are as follows. (1) Working Mechanism. Unlike osmotic power sources that rely solely on ion gradient transport within stacked cells to generate electricity, the working mechanism of IOPS is the thermodynamic synergy of two simultaneous processes: the substantial energetic asymmetry between the two polarized MXene electrodes is consistent with asymmetric interfacial charge redistribution and EDLlike polarization at the electrode–ionogel interfaces, which contributes to the built-in interfacial potential; meanwhile, the solvated cations dissociate from the negative electrode reservoir and undergo diffusion dynamics under concentration gradient. (2) Device structure. By fully utilizing the ion–electron coupling properties of MXene, the functions of electrodes, current collectors, ion-selective layers, and ion reservoirs are highly integrated into MXene. This novel design enables the IOPS device to be assembled into a compact osmotic power supply using only three building blocks. Compared with similar studies (which typically require 4–7 building blocks), the assembly complexity and number of parts are significantly reduced. (3) Application paradigm. Thanks to the novel architecture and working mechanism, IOPS can easily achieve customized and scalable integration. IOPS arrays can efficiently power commercial electronic devices and show great potential in portable fast-response power systems.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M036"></a>
+**Source:** p.18 M036
+
+**Original:** thermal management and safety solutions. Research 7, 0542 (2024). https://​doi.​org/​10.​34133/​resea​rch.​0542 32. A. Guha, T.J. Kalkus, T.B.H. Schroeder, O.G. Willis, C. Rader et al., Powering electronic devices from salt gradients in AA-battery-sized stacks of hydrogel-infused paper. Adv. Mater. 33(31), 2101757 (2021). https://​doi.​org/​10.​1002/​ adma.​20210​1757 33. Y. An, Y. Tian, H. Shen, Q. Man, S. Xiong et al., Twodimensional MXenes for flexible energy storage devices. Energy Environ. Sci. 16(10), 4191–4250 (2023). https://​ doi.​org/​10.​1039/​d3ee0​1841e 34. X. He, Y. Ni, Y. Li, H. Sun, Y. Lu et al., An MXene-based metal anode with stepped sodiophilic gradient structure enables a large current density for rechargeable Na–O2 batteries. Adv. Mater. 34(15), 2106565 (2022). https://​doi.​org/​10.​ 1002/​adma.​20210​6565 35. S. Zhao, Z. Liu, G. Xie, X. Guo, Z. Guo et al., Achieving high-performance 3D K+-pre-intercalated Ti3C2Tx MXene for potassium-ion hybrid capacitors via regulating electrolyte solvation structure. Angew. Chem. Int. Ed. 60(50), 26246–26253 (2021). https://​doi.​org/​10.​1002/​anie.​20211​ 2090 36. H. Riazi, M. Anayee, K. Hantanasirisakul, A.A. Shamsabadi, B. Anasori et al., Surface modification of a MXene by an aminosilane coupling agent. Adv. Mater. Interfaces 7(6), 1902008 (2020). https://​doi.​org/​10.​1002/​admi.​20190​2008 37. L. Xiong, Y. Wei, C. Chen, X. Chen, Q. Fu et al., Thin lamellar films with enhanced mechanical properties for durable radiative cooling. Nat. Commun. 14, 6129 (2023). https://​doi.​org/​10.​1038/​s41467-​023-​41797-3 38. O. Nordness, J.F. Brennecke, Ion dissociation in ionic liquids and ionic liquid solutions. Chem. Rev. 120(23), 12873– 12902 (2020). https://​doi.​org/​10.​1021/​acs.​chemr​ev.​0c003​73 39. S. Han, P. Wen, H. Wang, Y. Zhou, Y. Gu et al., Sequencing polymers to enable solid-state lithium batteries. Nat. Mater. 22(12), 1515–1522 (2023). https://​doi.​org/​10.​1038/​ s41563-​023-​01693-z 40. C.E. Owens, J. Du, P.B. Sánchez, Understanding the dynamics of cellulose dissolved in an ionic liquid solvent under shear and extensional flows. Biomacromol 23(5), 1958–1969 (2022). https://​doi.​org/​10.​1021/​acs.​biomac.​1c016​23 41. X. Zhao, Z. Fu, X. Zhang, X. Wang, B. Li et al., More is better: high-entropy electrolyte design in rechargeable batteries. Energy Environ. Sci. 17(7), 2406–2430 (2024). https://​doi.​ org/​10.​1039/​d3ee0​3821a 42. R. Yang, L. Mei, Z. Lin, Y. Fan, J. Lim et al., Intercalation in 2D materials and in situ studies. Nat. Rev. Chem. 8(6), 410– 432 (2024). https://​doi.​org/​10.​1038/​s41570-​024-​00605-2 43. X. Liu, T. Ueki, H. Gao, T.L. Woodard, K.P. Nevin et al., Microbial biofilms for electricity generation from water evaporation and power to wearables. Nat. Commun. 13, 4369 (2022). https://​doi.​org/​10.​1038/​s41467-​022-​32105-6 44. W.B. Han, D.-J. Kim, Y.M. Kim, G.-J. Ko, J.-W. Shin et al., Electric eel-inspired soft electrocytes for solid-state power systems. Adv. Funct. Mater. 34(2), 2309781 (2024). https://​ doi.​org/​10.​1002/​adfm.​20230​9781
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+## 图表解读
+
+<a id="F001"></a>
+### Fig. 1
+
+**Source:** p.3
+
+![Fig. 1](assets/figure-01.png)
+
+**Original caption:** Fig. 1 Design inspiration and working principle of solid-state IOPS. a K+ diffuses from ICM to ECM along the concentration gradient through potassium leak channels. b Formation of resting potential mainly depends on the following factors: the difference in ion concentration inside and outside the cell (mainly K+); the different permeability of potassium leak channels to different ions (K+ is the highest). c Schematic diagram of IOPS power generation. d SEM cross-sectional image of the IOPS device (orange and blue areas are P-MXene and N-MXene(K+) respectively). e IOPS potential distribution from finite element simulation. f Ion concentration distributions of K+, EMIM+, and TFSI.– along the IOPS normal (z-axis)
+
+**中文图注:** Fig. 1 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 重点查看器件结构、材料层次、信号路径和制备流程。
+
+- (a) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：K+ diffuses from ICM to ECM along the concentration gradient through potassium leak channels
+- (b) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Formation of resting potential mainly depends on the following factors: the difference in ion concentration inside and outside the cell (mainly K+); the different permeability of potassium leak channels to different ions (K+ is the highest)
+- (c) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：Schematic diagram of IOPS power generation
+- (d) 重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。 原文：SEM cross-sectional image of the IOPS device (orange and blue areas are P-MXene and N-MXene(K+) respectively)
+- (e) 重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。 原文：IOPS potential distribution from finite element simulation
+- (f) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Ion concentration distributions of K+, EMIM+, and TFSI.– along the IOPS normal (z-axis)
+
+<a id="F002"></a>
+### Fig. 2
+
+**Source:** p.7
+
+![Fig. 2](assets/figure-02.png)
+
+**Original caption:** Fig. 2 Electric output performance of a IOPS unit. a Assembly and testing scheme of IOPS. b Optical photo of the IOPS device under natural light. c Open-circuit voltage (VOC) of IOPS device. d Output short-circuit current (Jsc) after assembling the IOPS device. e Cyclic current and time records of IOPS device shortcircuited and discharged 50 times after 0.5 V constant voltage charging. f Multidimensional data visualization of ion osmotic energy storage from related work. g Voltage and area current density output of an IOPS with a variable resistor. h Maximum power density output of IOPS with variable resistor. i Voltage retention rate of IOPS at different bending angles (based on the initial voltage in the previous text, the same below)
+
+**中文图注:** Fig. 2 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 结合正文首次引用位置和原始图注核对该图的证据角色。
+
+- (a) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Assembly and testing scheme of IOPS
+- (b) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Optical photo of the IOPS device under natural light
+- (c) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Open-circuit voltage (VOC) of IOPS device
+- (d) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Output short-circuit current (Jsc) after assembling the IOPS device
+- (e) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Cyclic current and time records of IOPS device shortcircuited and discharged 50 times after 0.5 V constant voltage charging
+- (f) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Multidimensional data visualization of ion osmotic energy storage from related work
+- (g) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Voltage and area current density output of an IOPS with a variable resistor
+- (h) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Maximum power density output of IOPS with variable resistor
+- (i) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Voltage retention rate of IOPS at different bending angles (based on the initial voltage in the previous text, the same below)
+
+<a id="F003"></a>
+### Fig. 3
+
+**Source:** p.10
+
+![Fig. 3](assets/figure-03.png)
+
+**Original caption:** Fig. 3 Working mechanism of the IOPS. a Voltage output of IOPS using different electrode combinations of P-MXene/N-MXene(K+) (purple), N-MXene/N-MXene(K+) (blue), and P-MXene/N-MXene (orange). b, c Initial voltage generated by the combination of various components of IOPS. d SEM cross-sectional image of the IOPS device and EDS spectra of important elements (Ti, K). e Relative surface potentials of P-MXene, N-MXene, and N-MXene(K+) measured by KPFM. f Schematic diagram of the principle of Eelectrode. g Schematic diagram of the principle of Ediff. K+ diffuses through the solvated structure
+
+**中文图注:** Fig. 3 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 重点查看器件结构、材料层次、信号路径和制备流程。
+
+- (a) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Voltage output of IOPS using different electrode combinations of P-MXene/N-MXene(K+) (purple), N-MXene/N-MXene(K+) (blue), and P-MXene/N-MXene (orange)
+- (b,c) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Initial voltage generated by the combination of various components of IOPS
+- (d) 重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。 原文：SEM cross-sectional image of the IOPS device and EDS spectra of important elements (Ti, K)
+- (e) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Relative surface potentials of P-MXene, N-MXene, and N-MXene(K+) measured by KPFM
+- (f) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：Schematic diagram of the principle of Eelectrode
+- (g) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：Schematic diagram of the principle of Ediff. K+ diffuses through the solvated structure
+
+<a id="F004"></a>
+### Fig. 4
+
+**Source:** p.13
+
+![Fig. 4](assets/figure-04.png)
+
+**Original caption:** Fig. 4 Working mechanism under theoretical simulation. a (i-iii) The ability of the molecular structures of three different terminal groups of N-MXene (Ti3C2F2, Ti3C2(OH)2 and Ti3C2O2) to interact with K+, and the molecular electrostatic potential energy surface. iv, The ability of the representative monodentate configuration of P-MXene (Ti3C2[OSi(OH)2CH2CH2CH2NH3) to interact with K+, and the molecular electrostatic potential energy surface. The scale unit is Hartree/e. b Snapshots obtained from MD simulations of ionogel (for specific parameters see Note S1.6). c, d Radial distribution function of K+, and K+ diffusion coefficient derived from MSD results. e The most likely solvation structure and transport mode of K+ in ionogel extracted from MD simulation. f Initial state model and discharge activation state (2 ps) model of IOPS simulated by MD. g Mass density distribution probabilities of K+, EMIM+, and TFSI.− along the IOPS normal (z-axis)
+
+**中文图注:** Fig. 4 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 重点查看器件结构、材料层次、信号路径和制备流程。
+
+- (a) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：(i-iii) The ability of the molecular structures of three different terminal groups of N-MXene (Ti3C2F2, Ti3C2(OH)2 and Ti3C2O2) to interact with K+, and the molecular electrostatic potential energy surface. iv, The ability of the representative monodentate configuration of P-MXene (Ti3C2[OSi(OH)2CH2CH2CH2NH3) to interact with K+, and the molecular electrostatic potential energy surface. The scale unit is Hartree/e
+- (b) 重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。 原文：Snapshots obtained from MD simulations of ionogel (for specific parameters see Note S1.6)
+- (c,d) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Radial distribution function of K+, and K+ diffusion coefficient derived from MSD results
+- (e) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：The most likely solvation structure and transport mode of K+ in ionogel extracted from MD simulation
+- (f) 重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。 原文：Initial state model and discharge activation state (2 ps) model of IOPS simulated by MD
+- (g) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Mass density distribution probabilities of K+, EMIM+, and TFSI.− along the IOPS normal (z-axis)
+
+<a id="F005"></a>
+### Fig. 5
+
+**Source:** p.15
+
+![Fig. 5](assets/figure-05.png)
+
+**Original caption:** Fig. 5 Extensible integration of IOPS. a Assembly and optical images of an IOPS unit, and schematic diagram of scalable integration of serial and parallel IOPS arrays. b IOPS array powers the thermohygrometer to monitor the ambient temperature and humidity in real time. c IOPS arrays powers the ECD to transform it from an atomization state to a transparent state. d Design concept diagram of the folding-trigger IOPS. e Optical schematic diagram of the unfolding and folding of 5 folding trigger IOPS arrays. The VOC of the integrated IOPS units achieves a nearly linear output
+
+**中文图注:** Fig. 5 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 重点查看器件结构、材料层次、信号路径和制备流程。
+
+- (a) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：Assembly and optical images of an IOPS unit, and schematic diagram of scalable integration of serial and parallel IOPS arrays
+- (b) 重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。 原文：IOPS array powers the thermohygrometer to monitor the ambient temperature and humidity in real time
+- (c) 重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。 原文：IOPS arrays powers the ECD to transform it from an atomization state to a transparent state
+- (d) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Design concept diagram of the folding-trigger IOPS
+- (e) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：Optical schematic diagram of the unfolding and folding of 5 folding trigger IOPS arrays. The VOC of the integrated IOPS units achieves a nearly linear output
