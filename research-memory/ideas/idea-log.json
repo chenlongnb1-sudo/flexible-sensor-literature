@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23",
+  "updated_at": "2026-07-24",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -243,6 +243,107 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-07-14T08:10:26.343866+00:00"
+    },
+    {
+      "id": "idea-2026-07-24-9c3127f47ffe",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P2",
+      "title": "把新型矢量/剪切读出转成 ADC 前硬件-软件一致性证据",
+      "source": "Self‐Driven Hybrid Piezomagnetic–Iontronic Mechanoreceptors for Bimodal SA/RA Perception and Tactile Synthesis",
+      "source_papers": [
+        {
+          "paper_id": "paper-9b3b58ccf5b0b7b8",
+          "title": "Self‐Driven Hybrid Piezomagnetic–Iontronic Mechanoreceptors for Bimodal SA/RA Perception and Tactile Synthesis",
+          "doi": "10.1002/smll.74799",
+          "url": "https://doi.org/10.1002/smll.74799"
+        }
+      ],
+      "hypothesis": "ADC 前 Kz/Kx/Ky 类模拟组合应保留任务相关方向信息，并减少后端通道和计算。",
+      "minimum_experiment": "同步记录 raw A/B/C/D、software vector 与 hardware vector，在相同纹理/滑动/剪切输入下做波形、PSD/SNR、R2 和任务消融。",
+      "controls": [
+        "raw four-channel",
+        "z-only",
+        "software vector",
+        "hardware vector",
+        "reference force"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "PSD/SNR",
+        "task accuracy",
+        "latency",
+        "ADC channel count"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-24T04:35:12.013038+00:00"
+    },
+    {
+      "id": "idea-2026-07-24-05655358f031",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "Self‐Driven Hybrid Piezomagnetic–Iontronic Mechanoreceptors for Bimodal SA/RA Perception and Tactile Synthesis",
+      "source_papers": [
+        {
+          "paper_id": "paper-9b3b58ccf5b0b7b8",
+          "title": "Self‐Driven Hybrid Piezomagnetic–Iontronic Mechanoreceptors for Bimodal SA/RA Perception and Tactile Synthesis",
+          "doi": "10.1002/smll.74799",
+          "url": "https://doi.org/10.1002/smll.74799"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-24T04:35:12.013057+00:00"
+    },
+    {
+      "id": "idea-2026-07-24-8b2bfc14c94b",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Self‐Driven Hybrid Piezomagnetic–Iontronic Mechanoreceptors for Bimodal SA/RA Perception and Tactile Synthesis",
+      "source_papers": [
+        {
+          "paper_id": "paper-9b3b58ccf5b0b7b8",
+          "title": "Self‐Driven Hybrid Piezomagnetic–Iontronic Mechanoreceptors for Bimodal SA/RA Perception and Tactile Synthesis",
+          "doi": "10.1002/smll.74799",
+          "url": "https://doi.org/10.1002/smll.74799"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-24T04:35:12.013065+00:00"
     }
   ]
 }

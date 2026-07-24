@@ -1,0 +1,1302 @@
+{
+  "schema_version": 1,
+  "id": "paper-a09f25f88a996209",
+  "title": "All-solution-processable hydrogen-bonded organic framework artificial synapse for neuromorphic application",
+  "authors": [
+    "Jie Tang",
+    "Yanqui Sun",
+    "Jianlong Shao",
+    "Shijie Chen",
+    "Cheng Zhang",
+    "Yiming Liu",
+    "Qifeng Lu",
+    "Tong Tong",
+    "Chen Cao",
+    "Fangchao Li",
+    "Xinli Cheng",
+    "Shiqing Zhao"
+  ],
+  "venue": "International Journal of Extreme Manufacturing",
+  "primary_category": "神经形态与传感计算",
+  "categories": [
+    "神经形态与传感计算",
+    "柔性材料与器件"
+  ],
+  "strongly_related": false,
+  "date": "2026-07-23",
+  "doi": "10.1088/2631-7990/ae8f85",
+  "source_url": "https://doi.org/10.1088/2631-7990/ae8f85",
+  "pdf_source_url": "https://iopscience.iop.org/article/10.1088/2631-7990/ae8f85/pdf",
+  "pdf_version": "repository_or_author_copy",
+  "pdf_version_label": "作者或机构仓储合法公开版本",
+  "status": "fulltext_draft",
+  "generated_at": "2026-07-24T04:35:39.991634+00:00",
+  "page_count": 21,
+  "abstract": {
+    "original": "Abstract Organic materials that exhibit gradient conductance plasticity are currently regarded as promising candidates to play the key role of bionic synapses in flexible neuromorphic circuits, mimicking the brain-like processing behavior. However, due to the poor long-term operating stability, low intrinsic conductivity, and inferior charge transfer ability, their electronic synaptic applications are largely restricted. Herein, we controllably synthesize a two-dimensional (2D) flake-like hydrogen-bonded organic framework composed of meso-tetra(carboxyphenyl)porphyrin monomers (TCPP-HOF), which serves as a reliable synaptic media with high material stability and enhanced charge-carrier transportation. An all-solution-processed 10×10 2D MXene/TCPP-HOF/MXene/polyimine (PI) heterostructured flexible device array using MXene as electrode and PI as substrate is fabricated, presenting gradient conductance modulation under both continuous electrical scanning and pulse algorithm, closely simulating the biological synaptic behaviors. More importantly, such metal-electrode-free device is easily degradable, giving the possibility of recyclable transient electronics and information security. This work sets a precedent for the development of highly viable HOF-manipulated artificial synaptic mimicry for low cost, easily-processed, and highly-efficient neuromorphic applications.",
+    "zh": "涉及 in-sensor/物理计算或可编程触觉前端；可用于低离散/装配容差触觉界面的结构与对照设计。当前未从摘要提取到可比较数值。"
+  },
+  "innovation_points": [
+    "Abstract Organic materials that exhibit gradient conductance plasticity are currently regarded as promising candidates to play the key role of bionic synapses in flexible neuromorphic circuits, mimicking the brain-like processing behavior.",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可用于低离散/装配容差触觉界面的结构与对照设计"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 5,
+      "category_zh": "材料混合与分散",
+      "original": "The hydrogen-bonded porphyrin framework (TCPP-HOF) was synthesized by self-assembly of 5,10,15,20- tetra(4-carboxyphenyl)porphyrin (TCPP) in a mixed solvent of N,N-dimethylformamide (DMF) and 1,2,4- trichlorobenzene (TCB) at 140 °C, as schematically illustrated in Figure 1(a) [19-21].",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 5,
+      "category_zh": "材料混合与分散",
+      "original": "Following the dissolution of p- phthalaldehyde (0.02 mol) in DMF (50 mL), diethylenetriamine (0.6 mmol) was added with stirring.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 5,
+      "category_zh": "材料混合与分散",
+      "original": "After thorough mixing, tris(2-aminoethyl)amine (9.4 mmol) was added dropwise.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "The solution was promptly transferred into a mold made of silicone-coated release paper.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 5,
+      "category_zh": "固化与热处理",
+      "original": "The film was cured through a step-wise room temperature to 80 °C thermal treatment, followed by a heat-pressing operation (Figure 1(c)) [22].",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "After complete evaporation of the volatiles, a transparent yellow PI film was obtained, serving as a flexible and https://mc04.manuscriptcentral.com/ijem-caep Page 3 of 19",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 5,
+      "category_zh": "制备与实验操作",
+      "original": "(d) In light of the all-solution-processable design, we fabricated a 10×10 TCPP-HOF-based synaptic device array using highly conductive MXenes as the top/bottom electrodes and a degradable PI film as the substrate, affording a 2D MXene/TCPP-HOF/MXene/PI stacked structure (Figure 2(a)).",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "A solution of MXene-Ti3C2Tx (Figure 2(b)) with a concentration of 1.0 mg·mL−1 was spray-coated onto the PI film through a strip-shaped mask.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "Then a TCPP- HOF solution (1.0 mg·mL−1) was spin-coated onto the MXene electrode surface and dried at 50 °C to form a uniform active layer.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 10,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "Compared with traditional inorganic devices (e.g., metal oxide synapses) requiring high-vacuum and energy-intensive deposition, this all-solution-processed strategy not only simplifies the fabrication procedure but also enables low-cost manufacturing, providing a scalable route for green and printable electronics.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 11,
+      "page": 6,
+      "category_zh": "材料混合与分散",
+      "original": "(c) HN2 N H2N O HN2 Stirring Heat press HN2 HN O H2N Transparency and flexibility of the PI film.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 4,
+      "text": "procedures are solution processable, which guarantees low cost, scalability, and ease of operation. The device",
+      "bbox": [
+        36.0,
+        733.04,
+        562.15,
+        746.33
+      ]
+    },
+    {
+      "page": 4,
+      "text": "exhibits gradient conductance modulation with an ultrafast switching speed of 26 ns under a continuous",
+      "bbox": [
+        36.0,
+        753.83,
+        562.38,
+        767.11
+      ]
+    },
+    {
+      "page": 4,
+      "text": "voltage scanning and pulse algorithm, thus approximating the essential synaptic functions and implementing",
+      "bbox": [
+        36.0,
+        774.47,
+        562.08,
+        787.75
+      ]
+    },
+    {
+      "page": 4,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.17,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 4,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 4,
+      "text": "transient electronics, neuromorphic systems",
+      "bbox": [
+        36.0,
+        70.67,
+        249.65,
+        83.95
+      ]
+    },
+    {
+      "page": 4,
+      "text": "1. Introduction",
+      "bbox": [
+        36.0,
+        111.92,
+        116.78,
+        125.37
+      ]
+    },
+    {
+      "page": 4,
+      "text": "(STDP) [9].",
+      "bbox": [
+        36.0,
+        339.76,
+        96.38,
+        353.04
+      ]
+    },
+    {
+      "page": 4,
+      "text": "intelligent devices.",
+      "bbox": [
+        36.0,
+        629.61,
+        129.62,
+        642.89
+      ]
+    },
+    {
+      "page": 4,
+      "text": "Page 2 of 19",
+      "bbox": [
+        536.42,
+        9.22,
+        587.32,
+        21.24
+      ]
+    },
+    {
+      "page": 4,
+      "text": "2",
+      "bbox": [
+        294.41,
+        792.6,
+        303.67,
+        806.66
+      ]
+    },
+    {
+      "page": 5,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "highly efficient HOF-based neuromorphic application. In addition, this device can rapidly degrade in the",
+      "bbox": [
+        36.0,
+        49.91,
+        562.09,
+        63.19
+      ]
+    },
+    {
+      "page": 5,
+      "text": "monomer solution of the PI film, especially under heated conditions, ensuring information security in special",
+      "bbox": [
+        36.0,
+        70.67,
+        562.23,
+        83.95
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 5,
+      "text": "scenarios. Moreover, such a bionic device demonstrates convolutional neural network (CNN)-based",
+      "bbox": [
+        36.0,
+        91.33,
+        562.41,
+        104.61
+      ]
+    },
+    {
+      "page": 5,
+      "text": "computing with an exalted digit recognition accuracy of up to 97.23%, providing a promising paradigm for",
+      "bbox": [
+        36.0,
+        112.09,
+        562.25,
+        125.37
+      ]
+    },
+    {
+      "page": 5,
+      "text": "the development of green, easy-to-process, and highly efficient neuromorphic computing systems.",
+      "bbox": [
+        36.0,
+        132.73,
+        510.7,
+        146.01
+      ]
+    },
+    {
+      "page": 5,
+      "text": "The hydrogen-bonded porphyrin framework (TCPP-HOF) was synthesized by self-assembly of 5,10,15,20-",
+      "bbox": [
+        36.0,
+        194.89,
+        559.48,
+        208.17
+      ]
+    },
+    {
+      "page": 5,
+      "text": "tetra(4-carboxyphenyl)porphyrin (TCPP) in a mixed solvent of N,N-dimethylformamide (DMF) and 1,2,4-",
+      "bbox": [
+        36.0,
+        215.53,
+        559.6,
+        228.81
+      ]
+    },
+    {
+      "page": 5,
+      "text": "trichlorobenzene (TCB) at 140 °C, as schematically illustrated in Figure 1(a) [19-21]. The theoretical",
+      "bbox": [
+        36.0,
+        236.29,
+        562.37,
+        249.57
+      ]
+    },
+    {
+      "page": 5,
+      "text": "molecular simulation revealed the formation of a square-layered topological TCPP-HOF structure (Figure",
+      "bbox": [
+        36.0,
+        256.96,
+        562.35,
+        270.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "For Review Only",
+      "bbox": [
+        179.98,
+        262.93,
+        416.43,
+        558.19
+      ]
+    },
+    {
+      "page": 5,
+      "text": "1(b)). Moreover, the PI film was synthesized via a condensation reaction. Following the dissolution of p-",
+      "bbox": [
+        36.0,
+        277.72,
+        559.36,
+        291.0
+      ]
+    },
+    {
+      "page": 5,
+      "text": "phthalaldehyde (0.02 mol) in DMF (50 mL), diethylenetriamine (0.6 mmol) was added with stirring. After",
+      "bbox": [
+        36.0,
+        298.36,
+        562.09,
+        311.64
+      ]
+    },
+    {
+      "page": 5,
+      "text": "thorough mixing, tris(2-aminoethyl)amine (9.4 mmol) was added dropwise. The solution was promptly",
+      "bbox": [
+        36.0,
+        319.12,
+        562.28,
+        332.4
+      ]
+    },
+    {
+      "page": 5,
+      "text": "transferred into a mold made of silicone-coated release paper. The film was cured through a step-wise room",
+      "bbox": [
+        36.0,
+        339.76,
+        562.42,
+        353.04
+      ]
+    },
+    {
+      "page": 5,
+      "text": "temperature to 80 °C thermal treatment, followed by a heat-pressing operation (Figure 1(c)) [22]. After",
+      "bbox": [
+        36.0,
+        360.52,
+        562.41,
+        373.8
+      ]
+    },
+    {
+      "page": 5,
+      "text": "complete evaporation of the volatiles, a transparent yellow PI film was obtained, serving as a flexible and",
+      "bbox": [
+        36.0,
+        381.16,
+        562.38,
+        394.44
+      ]
+    },
+    {
+      "page": 5,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.18,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Page 3 of 19",
+      "bbox": [
+        8.0,
+        9.22,
+        58.9,
+        21.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "2. Results and Discussion",
+      "bbox": [
+        36.0,
+        173.96,
+        168.14,
+        187.41
+      ]
+    },
+    {
+      "page": 5,
+      "text": "degradable substrate.",
+      "bbox": [
+        36.0,
+        401.8,
+        140.3,
+        415.08
+      ]
+    },
+    {
+      "page": 5,
+      "text": "3",
+      "bbox": [
+        294.41,
+        792.6,
+        303.67,
+        806.66
+      ]
+    },
+    {
+      "page": 6,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 6,
+      "text": "For Review Only",
+      "bbox": [
+        179.98,
+        262.93,
+        416.43,
+        558.19
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Polyimine DMF",
+      "bbox": [
+        197.04,
+        403.19,
+        419.47,
+        412.77
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Figure 1. Synthesis of TCPP-HOF and PI film. (a) Synthetic procedure of TCPP-HOF. (b) Theoretically",
+      "bbox": [
+        36.0,
+        484.14,
+        562.44,
+        497.42
+      ]
+    },
+    {
+      "page": 6,
+      "text": "calculated topology of the TCPP-HOF along the channel direction. (c) Synthetic procedure of the PI film. (d)",
+      "bbox": [
+        36.0,
+        504.78,
+        562.38,
+        518.06
+      ]
+    },
+    {
+      "page": 6,
+      "text": "In light of the all-solution-processable design, we fabricated a 10×10 TCPP-HOF-based synaptic device",
+      "bbox": [
+        48.0,
+        566.94,
+        562.36,
+        580.22
+      ]
+    },
+    {
+      "page": 6,
+      "text": "array using highly conductive MXenes as the top/bottom electrodes and a degradable PI film as the substrate,",
+      "bbox": [
+        36.0,
+        587.61,
+        562.37,
+        600.89
+      ]
+    },
+    {
+      "page": 6,
+      "text": "affording a 2D MXene/TCPP-HOF/MXene/PI stacked structure (Figure 2(a)). Firstly, a PI film substrate (2.0",
+      "bbox": [
+        36.0,
+        608.37,
+        562.37,
+        621.65
+      ]
+    },
+    {
+      "page": 6,
+      "text": "cm × 2.0 cm) was pre-heated on a hotplate at 50 °C. A solution of MXene-Ti3C2Tx (Figure 2(b)) with a",
+      "bbox": [
+        36.0,
+        629.01,
+        562.37,
+        642.4
+      ]
+    },
+    {
+      "page": 6,
+      "text": "concentration of 1.0 mg·mL−1 was spray-coated onto the PI film through a strip-shaped mask. Then a TCPP-",
+      "bbox": [
+        36.0,
+        648.74,
+        559.6,
+        663.05
+      ]
+    },
+    {
+      "page": 6,
+      "text": "HOF solution (1.0 mg·mL−1) was spin-coated onto the MXene electrode surface and dried at 50 °C to form a",
+      "bbox": [
+        36.0,
+        669.38,
+        562.18,
+        683.69
+      ]
+    },
+    {
+      "page": 6,
+      "text": "uniform active layer. Finally, a second layer of MXene was evenly sprayed and dried, yielding a flexible",
+      "bbox": [
+        36.0,
+        691.17,
+        562.4,
+        704.45
+      ]
+    },
+    {
+      "page": 6,
+      "text": "device with a 10×10 2D MXene/TCPP-HOF/MXene/PI architecture (Figure 2(c)). Compared with traditional",
+      "bbox": [
+        36.0,
+        711.1,
+        562.4,
+        725.16
+      ]
+    },
+    {
+      "page": 6,
+      "text": "inorganic devices (e.g., metal oxide synapses) requiring high-vacuum and energy-intensive deposition, this",
+      "bbox": [
+        36.0,
+        732.56,
+        562.34,
+        745.85
+      ]
+    },
+    {
+      "page": 6,
+      "text": "all-solution-processed strategy not only simplifies the fabrication procedure but also enables low-cost",
+      "bbox": [
+        36.0,
+        753.23,
+        562.4,
+        766.51
+      ]
+    },
+    {
+      "page": 6,
+      "text": "manufacturing, providing a scalable route for green and printable electronics.",
+      "bbox": [
+        36.0,
+        773.99,
+        409.99,
+        787.27
+      ]
+    },
+    {
+      "page": 6,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.17,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 6,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "(a)",
+      "bbox": [
+        61.95,
+        50.6,
+        72.95,
+        60.63
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O HO",
+      "bbox": [
+        72.84,
+        56.51,
+        94.84,
+        75.38
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O HO",
+      "bbox": [
+        171.35,
+        56.93,
+        192.92,
+        75.38
+      ]
+    },
+    {
+      "page": 6,
+      "text": "N H N",
+      "bbox": [
+        118.15,
+        95.98,
+        138.89,
+        119.87
+      ]
+    },
+    {
+      "page": 6,
+      "text": "DMF&TCB (140 °C)",
+      "bbox": [
+        181.6,
+        101.26,
+        253.54,
+        110.18
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        262.55,
+        103.29,
+        267.2,
+        109.97
+      ]
+    },
+    {
+      "page": 6,
+      "text": "N",
+      "bbox": [
+        147.66,
+        110.94,
+        153.44,
+        119.87
+      ]
+    },
+    {
+      "page": 6,
+      "text": "H",
+      "bbox": [
+        253.16,
+        118.21,
+        257.49,
+        124.91
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        262.55,
+        118.21,
+        267.22,
+        124.91
+      ]
+    },
+    {
+      "page": 6,
+      "text": "H N",
+      "bbox": [
+        133.11,
+        118.84,
+        138.89,
+        134.41
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Solvothermal",
+      "bbox": [
+        189.17,
+        119.0,
+        239.96,
+        127.9
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        78.66,
+        155.44,
+        84.88,
+        164.36
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O HO",
+      "bbox": [
+        171.77,
+        155.44,
+        192.52,
+        173.5
+      ]
+    },
+    {
+      "page": 6,
+      "text": "OH",
+      "bbox": [
+        88.22,
+        164.58,
+        100.23,
+        173.5
+      ]
+    },
+    {
+      "page": 6,
+      "text": "(b)",
+      "bbox": [
+        61.95,
+        185.95,
+        73.43,
+        195.99
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        278.18,
+        237.17,
+        282.85,
+        243.87
+      ]
+    },
+    {
+      "page": 6,
+      "text": "H",
+      "bbox": [
+        270.03,
+        252.15,
+        274.35,
+        258.83
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        278.18,
+        252.15,
+        282.84,
+        258.83
+      ]
+    },
+    {
+      "page": 6,
+      "text": "(c)",
+      "bbox": [
+        61.95,
+        331.91,
+        72.95,
+        341.94
+      ]
+    },
+    {
+      "page": 6,
+      "text": "HN2",
+      "bbox": [
+        147.18,
+        342.6,
+        161.35,
+        352.5
+      ]
+    },
+    {
+      "page": 6,
+      "text": "N H2N",
+      "bbox": [
+        97.36,
+        366.01,
+        144.87,
+        386.79
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        99.96,
+        377.29,
+        106.19,
+        386.21
+      ]
+    },
+    {
+      "page": 6,
+      "text": "HN2",
+      "bbox": [
+        164.44,
+        402.64,
+        178.6,
+        412.52
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Stirring",
+      "bbox": [
+        191.22,
+        418.98,
+        219.66,
+        427.9
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Heat press",
+      "bbox": [
+        252.74,
+        421.93,
+        293.8,
+        430.85
+      ]
+    },
+    {
+      "page": 6,
+      "text": "HN2 HN",
+      "bbox": [
+        124.15,
+        428.0,
+        180.12,
+        447.69
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        71.24,
+        447.33,
+        77.46,
+        456.25
+      ]
+    },
+    {
+      "page": 6,
+      "text": "H2N",
+      "bbox": [
+        96.22,
+        464.79,
+        110.35,
+        474.69
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Transparency and flexibility of the PI film.",
+      "bbox": [
+        36.0,
+        525.54,
+        245.33,
+        538.82
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Page 4 of 19",
+      "bbox": [
+        536.42,
+        9.22,
+        587.32,
+        21.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O HO",
+      "bbox": [
+        436.48,
+        51.97,
+        459.85,
+        58.65
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O HO",
+      "bbox": [
+        306.03,
+        53.31,
+        329.38,
+        60.0
+      ]
+    },
+    {
+      "page": 6,
+      "text": "HN N",
+      "bbox": [
+        440.22,
+        99.86,
+        461.04,
+        107.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        505.23,
+        100.88,
+        509.91,
+        107.58
+      ]
+    },
+    {
+      "page": 6,
+      "text": "H",
+      "bbox": [
+        513.73,
+        100.88,
+        518.07,
+        107.58
+      ]
+    },
+    {
+      "page": 6,
+      "text": "HN N",
+      "bbox": [
+        309.77,
+        101.25,
+        330.9,
+        108.61
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        392.17,
+        102.27,
+        396.83,
+        108.94
+      ]
+    },
+    {
+      "page": 6,
+      "text": "H",
+      "bbox": [
+        383.34,
+        102.27,
+        387.66,
+        108.94
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        374.86,
+        102.27,
+        379.51,
+        108.94
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        505.46,
+        114.85,
+        510.12,
+        121.52
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        392.53,
+        116.86,
+        397.2,
+        123.56
+      ]
+    },
+    {
+      "page": 6,
+      "text": "H",
+      "bbox": [
+        384.36,
+        116.86,
+        388.7,
+        123.56
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O",
+      "bbox": [
+        375.2,
+        116.86,
+        379.87,
+        123.56
+      ]
+    },
+    {
+      "page": 6,
+      "text": "NH N",
+      "bbox": [
+        440.91,
+        116.86,
+        462.23,
+        124.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "NH N",
+      "bbox": [
+        310.45,
+        118.21,
+        331.77,
+        125.6
+      ]
+    },
+    {
+      "page": 6,
+      "text": "O HO",
+      "bbox": [
+        437.86,
+        165.49,
+        461.2,
+        172.16
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 6,
+      "caption_original": "Figure 1. Synthesis of TCPP-HOF and PI film. (a) Synthetic procedure of TCPP-HOF. (b) Theoretically",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Synthetic procedure of TCPP-HOF",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Theoretically",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 942,
+      "image_height": 855,
+      "crop_confidence": "high",
+      "bbox": [
+        63.35,
+        49.32,
+        533.74,
+        476.47
+      ],
+      "image_path": "papers/paper-a09f25f88a996209/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 2",
+      "page": 7,
+      "caption_original": "Figure 2. The device fabrication and decomposition processes. (a) The preparation flow chart of the 10×10",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "The preparation flow chart of the 10×10",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 824,
+      "image_height": 735,
+      "crop_confidence": "high",
+      "bbox": [
+        91.83,
+        44.88,
+        503.27,
+        411.68
+      ],
+      "image_path": "papers/paper-a09f25f88a996209/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 3",
+      "page": 10,
+      "caption_original": "Figure 3. Synaptic behaviors of the MXene/TCPP-HOF/MXene/PI device. (a) Cyclic I–V characteristics",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Cyclic I–V characteristics",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 890,
+      "image_height": 941,
+      "crop_confidence": "high",
+      "bbox": [
+        78.24,
+        48.4,
+        522.67,
+        518.21
+      ],
+      "image_path": "papers/paper-a09f25f88a996209/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 4",
+      "page": 12,
+      "caption_original": "Figure 4. Characterization and structural display of TCPP-HOF. (a) SEM image of TCPP-HOF. (b) TEM and",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "SEM image of TCPP-HOF",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "b",
+          "original": "TEM and",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 1119,
+      "image_height": 1271,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        659.01
+      ],
+      "image_path": "papers/paper-a09f25f88a996209/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Figure 5",
+      "page": 13,
+      "caption_original": "Figure 5. Electrical characterizations of the synaptic device under various electrode and bending states. (a)",
+      "caption_zh": "Figure 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-05.png",
+      "image_width": 986,
+      "image_height": 782,
+      "crop_confidence": "high",
+      "bbox": [
+        54.56,
+        317.54,
+        547.24,
+        708.01
+      ],
+      "image_path": "papers/paper-a09f25f88a996209/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Figure 6",
+      "page": 15,
+      "caption_original": "Figure 6. Neuromorphic computing based on CNN. (a) CNN architecture for MNIST recognition. (b)",
+      "caption_zh": "Figure 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "CNN architecture for MNIST recognition. (b)",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 961,
+      "image_height": 1028,
+      "crop_confidence": "high",
+      "bbox": [
+        55.04,
+        44.74,
+        535.01,
+        558.11
+      ],
+      "image_path": "papers/paper-a09f25f88a996209/figures/figure-06.png"
+    }
+  ],
+  "original_pdf": "papers/paper-a09f25f88a996209/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-07-24/deep-reads/paper-a09f25f88a996209/paper.md",
+  "source_map": "research-memory/literature/2026/2026-07-24/deep-reads/paper-a09f25f88a996209/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}

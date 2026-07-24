@@ -1,0 +1,1461 @@
+{
+  "schema_version": 1,
+  "id": "paper-63e052031fae31cb",
+  "title": "Monolithic 6-Axis Force/Torque Sensing by a Single Ultrathin Piezoceramic Shell",
+  "authors": [
+    "Shoulu Gong",
+    "Xingyu Wei",
+    "Qi Zhou",
+    "Tianxiang Zheng",
+    "G L Zhang",
+    "Zheng Dou",
+    "Shuke Zang",
+    "Zhao Zh",
+    "Yiyuan Yang",
+    "Zhiran Yi",
+    "Wenming Zhang",
+    "Lei Shao"
+  ],
+  "venue": "Nature Communications",
+  "primary_category": "软体机器人与人机交互",
+  "categories": [
+    "软体机器人与人机交互",
+    "可穿戴健康与生理监测"
+  ],
+  "strongly_related": true,
+  "date": "2026-07-21",
+  "doi": "10.1038/s41467-026-75631-3",
+  "source_url": "https://doi.org/10.1038/s41467-026-75631-3",
+  "pdf_source_url": "https://www.nature.com/articles/s41467-026-75631-3_reference.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-07-24T04:35:41.767594+00:00",
+  "page_count": 35,
+  "abstract": {
+    "original": "Miniature multi-axis force/torque sensors are essential for advanced robotics and wearable devices, yet their development is hindered by complex multi-beam structures and laborious calibration. We overcome this by introducing a monolithic 6-axis force/torque sensor constructed from a single, ultrathin-walled piezoceramic shell. This architecture eliminates the need for multi-component assembly and algorithm-driven decoupling, relying instead on the intrinsic mechanical deformation modes of the engineered shell for direct and reliable dynamic force/torque variation measurement. Leveraging this architecture, our sensor enables straightforward calibration and achieves a decoupling accuracy of 99.37% across 120,000 randomized dynamic tests. We fabricated the core sensing element as a 50-μm-thick annular piezoceramic shell to maximize sensitivity and limit of detection, achieving detection limits better than 3 mN in normal force, 4 mN in tangential force, and 0.3 mN·m in torque. We demonstrate a compact, 3.85-gram sensor (2.53 cm³) that integrates seamlessly into robotic grippers for event-driven delicate assembly and into exoskeletons for high-fidelity dynamic monitoring of in-home rehabilitation. This work establishes an architecture for inherently decoupled force/torque sensing, with broad potential in advanced robotics, prosthetics, and personalized medicine.",
+    "zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。摘要可核实数值包括：99.37%、3 mN、4 mN、0.3 mN、2.53 cm。"
+  },
+  "innovation_points": [
+    "Miniature multi-axis force/torque sensors are essential for advanced robotics and wearable devices, yet their development is hindered by complex multi-beam structures and laborious calibration.",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+  ],
+  "innovation_suggestions": [
+    "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "inspirations": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "优先核查是否有 hardware output 与 software projection 的同步一致性证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 14,
+      "category_zh": "制备与实验操作",
+      "original": "Fabrication and assembly procedures.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "The encapsulation and inner layer of the F/T sensor were fabricated using silicone molding processes.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 14,
+      "category_zh": "成膜与沉积",
+      "original": "Supplementary Fig. S6a shows the fabrication of the soft layer with microstructures: first, the 3D-printed molds are assembled, and uncured PDMS is poured for the initial molding ARTICLE IN PRESS step.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "After heating and curing, the PDMS mold is prepared.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "Subsequently, it is assembled with the heat-resistant resin part, and 30A silicone is poured for the second molding step.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 14,
+      "category_zh": "组装与封装",
+      "original": "Notably, the tips of the microstructures are curved to ensure better bonding to the inner surface of the annular PZT shell.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 14,
+      "category_zh": "制备与实验操作",
+      "original": "Supplementary Fig. S6b illustrates the integrated fabrication of the soft lid and inner layer.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "First, a customized mold featuring a regular array of internal conical recesses was designed.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "These recesses mechanically interlocked with the microstructures on the pre-fabricated soft layer, securely anchoring it within the casting cavity.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 10,
+      "page": 14,
+      "category_zh": "图形化与结构成形",
+      "original": "Subsequently, liquid silicone with a Shore hardness of 60A was cast into the mold.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 11,
+      "page": 14,
+      "category_zh": "制备与实验操作",
+      "original": "The assembly was then subjected to mechanical pressurization and elevated temperatures for thermal curing.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 12,
+      "page": 14,
+      "category_zh": "组装与封装",
+      "original": "Supplementary Fig.S6c illustrates the fabrication of the soft encapsulation.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 13,
+      "page": 14,
+      "category_zh": "固化与热处理",
+      "original": "The uncured 60A silicone is poured into heat-resistant resin part, after heating and curing, the fabricated encapsulation is removed.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.14 原文为准。"
+    },
+    {
+      "step": 14,
+      "page": 15,
+      "category_zh": "制备与实验操作",
+      "original": "Supplementary Fig. S7a depicts the assembly process of the designed F/T sensor, which can be divided into three steps.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.15 原文为准。"
+    },
+    {
+      "step": 15,
+      "page": 15,
+      "category_zh": "固化与热处理",
+      "original": "First, the PZT shell was aligned with the PCB and electrically connected using conductive silver paste (cured at 70 °C, 16 h) to avoid thermal depolarization, with epoxy resin infused into the gaps via capillary action to reinforce the ceramic.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.15 原文为准。"
+    },
+    {
+      "step": 16,
+      "page": 15,
+      "category_zh": "成膜与沉积",
+      "original": "Second, a dip- ARTICLE IN PRESS coating method was used to apply adhesive to the microstructures of the soft inner layer",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.15 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 14,
+      "text": "Fabrication and assembly procedures.",
+      "bbox": [
+        72.0,
+        647.77,
+        269.9,
+        661.05
+      ]
+    },
+    {
+      "page": 14,
+      "text": "The encapsulation and inner layer of the F/T sensor were fabricated using silicone molding",
+      "bbox": [
+        72.0,
+        678.97,
+        542.8,
+        692.25
+      ]
+    },
+    {
+      "page": 14,
+      "text": "processes. Supplementary Fig. S6a shows the fabrication of the soft layer with microstructures:",
+      "bbox": [
+        72.0,
+        702.37,
+        542.89,
+        715.65
+      ]
+    },
+    {
+      "page": 14,
+      "text": "first, the 3D-printed molds are assembled, and uncured PDMS is poured for the initial molding",
+      "bbox": [
+        72.0,
+        725.79,
+        542.94,
+        739.07
+      ]
+    },
+    {
+      "page": 15,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 15,
+      "text": "step. After heating and curing, the PDMS mold is prepared. Subsequently, it is assembled with the",
+      "bbox": [
+        72.0,
+        117.33,
+        542.9,
+        130.61
+      ]
+    },
+    {
+      "page": 15,
+      "text": "heat-resistant resin part, and 30A silicone is poured for the second molding step. Following high",
+      "bbox": [
+        72.0,
+        140.73,
+        543.04,
+        154.01
+      ]
+    },
+    {
+      "page": 15,
+      "text": "temperature heating and curing, the soft inner layer with microstructures is completed. Notably,",
+      "bbox": [
+        72.0,
+        164.15,
+        542.82,
+        177.43
+      ]
+    },
+    {
+      "page": 15,
+      "text": "the tips of the microstructures are curved to ensure better bonding to the inner surface of the",
+      "bbox": [
+        72.0,
+        187.55,
+        542.92,
+        200.83
+      ]
+    },
+    {
+      "page": 15,
+      "text": "annular PZT shell. Supplementary Fig. S6b illustrates the integrated fabrication of the soft lid and",
+      "bbox": [
+        72.0,
+        210.95,
+        542.99,
+        224.23
+      ]
+    },
+    {
+      "page": 15,
+      "text": "inner layer. First, a customized mold featuring a regular array of internal conical recesses was",
+      "bbox": [
+        72.0,
+        234.35,
+        542.77,
+        247.63
+      ]
+    },
+    {
+      "page": 15,
+      "text": "designed. These recesses mechanically interlocked with the microstructures on the pre-fabricated",
+      "bbox": [
+        72.0,
+        257.75,
+        543.04,
+        271.03
+      ]
+    },
+    {
+      "page": 15,
+      "text": "soft layer, securely anchoring it within the casting cavity. Subsequently, liquid silicone with a",
+      "bbox": [
+        72.0,
+        281.15,
+        542.83,
+        294.43
+      ]
+    },
+    {
+      "page": 15,
+      "text": "Shore hardness of 60A was cast into the mold. The assembly was then subjected to mechanical",
+      "bbox": [
+        72.0,
+        304.55,
+        542.77,
+        317.83
+      ]
+    },
+    {
+      "page": 15,
+      "text": "pressurization and elevated temperatures for thermal curing. This process ultimately yielded the",
+      "bbox": [
+        72.0,
+        327.95,
+        543.04,
+        341.23
+      ]
+    },
+    {
+      "page": 15,
+      "text": "soft inner layer part, a composite structure comprising two distinct silicone elastomers with",
+      "bbox": [
+        72.0,
+        351.35,
+        542.71,
+        364.63
+      ]
+    },
+    {
+      "page": 15,
+      "text": "disparate hardness levels. Supplementary Fig.S6c illustrates the fabrication of the soft",
+      "bbox": [
+        72.0,
+        374.75,
+        542.99,
+        388.03
+      ]
+    },
+    {
+      "page": 15,
+      "text": "encapsulation. The uncured 60A silicone is poured into heat-resistant resin part, after heating and",
+      "bbox": [
+        72.0,
+        398.15,
+        542.97,
+        411.43
+      ]
+    },
+    {
+      "page": 15,
+      "text": "curing, the fabricated encapsulation is removed.",
+      "bbox": [
+        72.0,
+        421.55,
+        308.3,
+        434.83
+      ]
+    },
+    {
+      "page": 15,
+      "text": "Supplementary Fig. S7a depicts the assembly process of the designed F/T sensor, which can",
+      "bbox": [
+        93.0,
+        444.97,
+        542.84,
+        458.25
+      ]
+    },
+    {
+      "page": 15,
+      "text": "be divided into three steps. First, the PZT shell was aligned with the PCB and electrically",
+      "bbox": [
+        72.0,
+        468.37,
+        542.99,
+        481.65
+      ]
+    },
+    {
+      "page": 15,
+      "text": "connected using conductive silver paste (cured at 70 °C, 16 h) to avoid thermal depolarization,",
+      "bbox": [
+        72.0,
+        491.77,
+        542.75,
+        505.05
+      ]
+    },
+    {
+      "page": 15,
+      "text": "with epoxy resin infused into the gaps via capillary action to reinforce the ceramic. Second, a dip-",
+      "bbox": [
+        72.0,
+        515.17,
+        540.1,
+        528.45
+      ]
+    },
+    {
+      "page": 15,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 15,
+      "text": "coating method was used to apply adhesive to the microstructures of the soft inner layer",
+      "bbox": [
+        72.0,
+        538.57,
+        543.06,
+        551.85
+      ]
+    },
+    {
+      "page": 15,
+      "text": "(Supplementary Fig.S7b), which was then aligned and interlocked with the PZT electrodes using",
+      "bbox": [
+        72.0,
+        561.97,
+        542.86,
+        575.25
+      ]
+    },
+    {
+      "page": 15,
+      "text": "positioning features. Finally, the outer encapsulation was integrated using a 0.2 mm dimensional",
+      "bbox": [
+        72.0,
+        585.37,
+        542.75,
+        598.65
+      ]
+    },
+    {
+      "page": 15,
+      "text": "offset strategy to limit contact to the rigid support regions. This design protected the internal",
+      "bbox": [
+        72.0,
+        608.77,
+        542.82,
+        622.05
+      ]
+    },
+    {
+      "page": 15,
+      "text": "components while eliminating parasitic constraints, ensuring the free deformation of",
+      "bbox": [
+        72.0,
+        632.17,
+        542.77,
+        645.45
+      ]
+    },
+    {
+      "page": 15,
+      "text": "microstructures and high sensor sensitivity (More details can be found in Supplementary Note 2).",
+      "bbox": [
+        72.0,
+        655.57,
+        543.0,
+        668.85
+      ]
+    },
+    {
+      "page": 15,
+      "text": "Fabrication process for annular PZT shells.",
+      "bbox": [
+        72.0,
+        686.77,
+        297.5,
+        700.05
+      ]
+    },
+    {
+      "page": 15,
+      "text": "The subtractive process involves removing surface PZT material from initial workpieces through",
+      "bbox": [
+        72.0,
+        717.99,
+        542.77,
+        731.27
+      ]
+    },
+    {
+      "page": 15,
+      "text": "the interaction between the soft milling cutter and the workpieces, thereby achieving shell",
+      "bbox": [
+        72.0,
+        741.39,
+        543.06,
+        754.67
+      ]
+    },
+    {
+      "page": 16,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 16,
+      "text": "formation, where the soft cutter is fabricated with 95A TPU in a layered structure, enabling",
+      "bbox": [
+        72.0,
+        117.33,
+        542.77,
+        130.61
+      ]
+    },
+    {
+      "page": 16,
+      "text": "stiffness regulation through layer jamming. Typically, the fabrication of PZT shells using annular",
+      "bbox": [
+        72.0,
+        140.73,
+        543.06,
+        154.01
+      ]
+    },
+    {
+      "page": 16,
+      "text": "PZT workpieces (PZT, C-601, Fuji Piezo Ceramics, Inc.) mainly involves three stages: rough",
+      "bbox": [
+        72.0,
+        164.15,
+        543.02,
+        177.43
+      ]
+    },
+    {
+      "page": 16,
+      "text": "machining, finish machining, and polishing (Fig. 2c and Supplementary Fig. S2a). The soft",
+      "bbox": [
+        72.0,
+        187.55,
+        543.05,
+        200.83
+      ]
+    },
+    {
+      "page": 16,
+      "text": "machining system primarily consists of a robotic arm and a soft cutter. The robotic arm's",
+      "bbox": [
+        72.0,
+        210.95,
+        542.8,
+        224.23
+      ]
+    },
+    {
+      "page": 16,
+      "text": "displacement control system and end-effector force sensor are used to regulate milling parameters",
+      "bbox": [
+        72.0,
+        234.35,
+        542.97,
+        247.63
+      ]
+    },
+    {
+      "page": 16,
+      "text": "and monitor variations in milling forces, respectively. During the actual machining process, a",
+      "bbox": [
+        72.0,
+        257.75,
+        543.0,
+        271.03
+      ]
+    },
+    {
+      "page": 16,
+      "text": "multi-segment machining strategy is employed to mitigate the risk of workpiece breakage caused",
+      "bbox": [
+        72.0,
+        281.15,
+        542.79,
+        294.43
+      ]
+    },
+    {
+      "page": 16,
+      "text": "by excessive milling forces and stress concentrations. The approach ensures both a high success",
+      "bbox": [
+        72.0,
+        304.55,
+        542.96,
+        317.83
+      ]
+    },
+    {
+      "page": 16,
+      "text": "rate and machining efficiency. The machining process is segmented into five distinct phases with",
+      "bbox": [
+        72.0,
+        327.95,
+        543.04,
+        341.23
+      ]
+    },
+    {
+      "page": 16,
+      "text": "milling force feedback and thickness estimation (Supplementary Fig. S3). The first three segments",
+      "bbox": [
+        72.0,
+        351.35,
+        543.02,
+        364.63
+      ]
+    },
+    {
+      "page": 16,
+      "text": "correspond to the rough machining process, the fourth segment to the finishing process, and the",
+      "bbox": [
+        72.0,
+        374.75,
+        542.72,
+        388.03
+      ]
+    },
+    {
+      "page": 16,
+      "text": "final segment to the polishing process. And Supplementary Fig. S2b shows the process diagram.",
+      "bbox": [
+        72.0,
+        398.15,
+        543.06,
+        411.43
+      ]
+    },
+    {
+      "page": 16,
+      "text": "Once the target thickness is defined, the joint force sensors integrated into the robotic arm provide",
+      "bbox": [
+        72.0,
+        421.55,
+        543.03,
+        434.83
+      ]
+    },
+    {
+      "page": 16,
+      "text": "continuous real-time feedback on the milling force, which serves as a critical input to the",
+      "bbox": [
+        72.0,
+        444.97,
+        542.99,
+        458.25
+      ]
+    },
+    {
+      "page": 16,
+      "text": "machining system. If the estimated thickness of the PZT workpiece remains within the range of",
+      "bbox": [
+        72.0,
+        468.37,
+        542.82,
+        481.65
+      ]
+    },
+    {
+      "page": 16,
+      "text": "the current machining segment, the system continues to operate under the existing parameters.",
+      "bbox": [
+        72.0,
+        491.77,
+        542.72,
+        505.05
+      ]
+    },
+    {
+      "page": 16,
+      "text": "However, when the estimated thickness falls below the threshold of the current segment, the",
+      "bbox": [
+        72.0,
+        515.17,
+        542.93,
+        528.45
+      ]
+    },
+    {
+      "page": 16,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 16,
+      "text": "system automatically transitions to the next machining stage. Taking the machining process of a",
+      "bbox": [
+        72.0,
+        538.57,
+        542.96,
+        551.85
+      ]
+    },
+    {
+      "page": 16,
+      "text": "20-mm-diameter annular PZT shell with a target thickness of 55 μm as an example (Fig. 2c), it can",
+      "bbox": [
+        72.0,
+        561.97,
+        543.03,
+        575.25
+      ]
+    },
+    {
+      "page": 16,
+      "text": "be divided into three stages at a milling speed of 110 rpm. During rough machining (0 to 1.2 h), a",
+      "bbox": [
+        72.0,
+        585.37,
+        543.03,
+        598.65
+      ]
+    },
+    {
+      "page": 16,
+      "text": "higher milling force is applied for rapid material removal from the initial 1-mm-thick PZT",
+      "bbox": [
+        72.0,
+        608.77,
+        543.02,
+        622.05
+      ]
+    },
+    {
+      "page": 16,
+      "text": "workpiece. As its thickness drops below 150 μm, the system transitions to finish machining (1.2 h",
+      "bbox": [
+        72.0,
+        632.17,
+        543.06,
+        645.45
+      ]
+    },
+    {
+      "page": 16,
+      "text": "to 1.5 h), reducing milling force to minimize stress concentration and preserve structural integrity.",
+      "bbox": [
+        72.0,
+        655.57,
+        543.06,
+        668.85
+      ]
+    },
+    {
+      "page": 16,
+      "text": "Finally, when the workpiece’s thickness reaches 60 μm, polishing begins (1.5 h to 2 h), replacing",
+      "bbox": [
+        72.0,
+        678.97,
+        543.0,
+        692.25
+      ]
+    },
+    {
+      "page": 16,
+      "text": "the milling layer with a polyurethane layer embedded with 3000-5000 mesh diamond abrasives.",
+      "bbox": [
+        72.0,
+        702.37,
+        535.18,
+        715.65
+      ]
+    },
+    {
+      "page": 16,
+      "text": "Characterization of the machined annular PZT shells.",
+      "bbox": [
+        72.0,
+        733.59,
+        350.98,
+        746.87
+      ]
+    },
+    {
+      "page": 17,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 17,
+      "text": "Images of the machined shells (Fig. 2d) and its surface morphology (Fig. 2e) were captured using",
+      "bbox": [
+        72.0,
+        117.33,
+        543.0,
+        130.61
+      ]
+    },
+    {
+      "page": 17,
+      "text": "a high depth of field camera and SEM. The overall morphology, surface details, and surface",
+      "bbox": [
+        72.0,
+        140.73,
+        542.89,
+        154.01
+      ]
+    },
+    {
+      "page": 17,
+      "text": "roughness of the electrodes were characterized using a high depth of field camera, SEM, and AFM",
+      "bbox": [
+        72.0,
+        164.15,
+        543.02,
+        177.43
+      ]
+    },
+    {
+      "page": 17,
+      "text": "(Supplementary Fig. S5b and S5c), respectively. For the dimensional precision of the machined",
+      "bbox": [
+        72.0,
+        187.55,
+        543.06,
+        200.83
+      ]
+    },
+    {
+      "page": 17,
+      "text": "annular PZT shells with various dimensions, the following measurements were conducted: the",
+      "bbox": [
+        72.0,
+        210.95,
+        542.9,
+        224.23
+      ]
+    },
+    {
+      "page": 17,
+      "text": "thickness was measured using a laser rangefinder LK-G80 from KEYENCE Co., Ltd.; the",
+      "bbox": [
+        72.0,
+        234.35,
+        542.99,
+        247.63
+      ]
+    },
+    {
+      "page": 17,
+      "text": "roundness was measured with a Mitutoyo Round-Test RA-1200 roundness meter from Mitutoyo",
+      "bbox": [
+        72.0,
+        257.75,
+        542.93,
+        271.03
+      ]
+    },
+    {
+      "page": 17,
+      "text": "Co., Ltd.; and the cylindricity was measured using a Zeiss ACCURA Coordinate Measuring",
+      "bbox": [
+        72.0,
+        281.15,
+        542.77,
+        294.43
+      ]
+    },
+    {
+      "page": 17,
+      "text": "Machine from Carl Zeiss AG Co., Ltd. The acoustic pressure characterization of the PZT-shell-",
+      "bbox": [
+        72.0,
+        304.55,
+        540.04,
+        317.83
+      ]
+    },
+    {
+      "page": 17,
+      "text": "based microphone involves sound signal generation, acoustoelectric signal conversion, and data",
+      "bbox": [
+        72.0,
+        327.95,
+        542.89,
+        341.23
+      ]
+    },
+    {
+      "page": 17,
+      "text": "acquisition. An arbitrary function generator (AFG3022C, Tektronix) generates sinusoidal signals,",
+      "bbox": [
+        72.0,
+        351.35,
+        542.8,
+        364.63
+      ]
+    },
+    {
+      "page": 17,
+      "text": "which are amplified by a power amplifier (5016, SAST) before driving a speaker (SUINY). A",
+      "bbox": [
+        72.0,
+        374.75,
+        542.91,
+        388.03
+      ]
+    },
+    {
+      "page": 17,
+      "text": "commercial microphone (MPA231, BSWA), positioned equidistant from the sound source as the",
+      "bbox": [
+        72.0,
+        398.15,
+        542.8,
+        411.43
+      ]
+    },
+    {
+      "page": 17,
+      "text": "PZT-shell microphone, serves as a reference for measuring incident sound pressure. A data",
+      "bbox": [
+        72.0,
+        421.55,
+        542.82,
+        434.83
+      ]
+    },
+    {
+      "page": 17,
+      "text": "acquisition system (DHDAS, Donghua) records signals from both the PZT-shell microphone and",
+      "bbox": [
+        72.0,
+        444.97,
+        543.0,
+        458.25
+      ]
+    },
+    {
+      "page": 17,
+      "text": "the reference microphone simultaneously. Sensitivity was determined by fitting sensor responses",
+      "bbox": [
+        72.0,
+        468.37,
+        542.91,
+        481.65
+      ]
+    },
+    {
+      "page": 17,
+      "text": "at different sound pressure levels using the least squares method. The entire test is conducted in a",
+      "bbox": [
+        72.0,
+        491.77,
+        543.0,
+        505.05
+      ]
+    },
+    {
+      "page": 17,
+      "text": "semi-anechoic chamber with a background noise level of 15.6 dB (Fig. 2f).",
+      "bbox": [
+        72.0,
+        515.17,
+        435.64,
+        528.45
+      ]
+    },
+    {
+      "page": 17,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 17,
+      "text": "Design of the piezoelectric sensor metrology chain.",
+      "bbox": [
+        72.0,
+        546.37,
+        335.86,
+        559.65
+      ]
+    },
+    {
+      "page": 17,
+      "text": "To guarantee high resolution and accuracy in the piezoelectric F/T sensing system, two distinct",
+      "bbox": [
+        72.0,
+        577.57,
+        542.77,
+        590.85
+      ]
+    },
+    {
+      "page": 17,
+      "text": "metrology chains were designed for different application scenarios. For calibration,",
+      "bbox": [
+        72.0,
+        600.97,
+        542.88,
+        614.25
+      ]
+    },
+    {
+      "page": 17,
+      "text": "characterization, and high-precision applications (Supplementary Fig. S9a), the tethered chain",
+      "bbox": [
+        72.0,
+        624.37,
+        542.97,
+        637.65
+      ]
+    },
+    {
+      "page": 17,
+      "text": "comprised an independent multi-channel charge amplifier (Type: KDT128AMP-072-AMP; KOST",
+      "bbox": [
+        72.0,
+        647.77,
+        543.03,
+        661.05
+      ]
+    },
+    {
+      "page": 17,
+      "text": "Technology Co., Ltd., Tianjin, China) as the analog front-end. The front-end features an",
+      "bbox": [
+        72.0,
+        671.17,
+        543.0,
+        684.45
+      ]
+    },
+    {
+      "page": 17,
+      "text": "electrometer-grade low input bias current of 75 fA and a nominal charge sensitivity of 1011 V/C.",
+      "bbox": [
+        72.0,
+        693.65,
+        543.02,
+        707.85
+      ]
+    },
+    {
+      "page": 17,
+      "text": "The conditioned signals were subsequently digitized by a 24-bit, 32-Ch synchronous data",
+      "bbox": [
+        72.0,
+        717.99,
+        542.98,
+        731.27
+      ]
+    },
+    {
+      "page": 17,
+      "text": "acquisition module (Type: DH5902N Rugged data acquisition system, Jiangsu Donghua Testing",
+      "bbox": [
+        72.0,
+        741.39,
+        542.88,
+        754.67
+      ]
+    },
+    {
+      "page": 18,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Technology Co., Ltd.) serving as the digital back-end. This configuration provided an input-",
+      "bbox": [
+        72.0,
+        117.33,
+        540.16,
+        130.61
+      ]
+    },
+    {
+      "page": 18,
+      "text": "referred RMS noise floor of less than 40 μV at 1 ksps, which is significantly lower than the",
+      "bbox": [
+        72.0,
+        140.73,
+        542.99,
+        154.01
+      ]
+    },
+    {
+      "page": 18,
+      "text": "effective voltage LSB of less than 120 μV (detailed parameters are provided in Supplementary",
+      "bbox": [
+        72.0,
+        164.15,
+        542.9,
+        177.43
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Table 5). Furthermore, to expand the practical application boundaries, we introduced a portable",
+      "bbox": [
+        72.0,
+        187.55,
+        542.78,
+        200.83
+      ]
+    },
+    {
+      "page": 18,
+      "text": "wireless metrology chain (Supplementary Fig. S9b, with detailed specifications in Supplementary",
+      "bbox": [
+        72.0,
+        210.95,
+        543.0,
+        224.23
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Table 6) specifically designed for untethered scenarios, optimizing the balance between form factor,",
+      "bbox": [
+        72.0,
+        234.35,
+        546.03,
+        247.63
+      ]
+    },
+    {
+      "page": 18,
+      "text": "power, and precision. In this configuration, six sensing electrodes were sequentially routed to a",
+      "bbox": [
+        72.0,
+        257.75,
+        542.97,
+        271.03
+      ]
+    },
+    {
+      "page": 18,
+      "text": "single charge amplifier via a low leakage 8-channel CMOS multiplexer (MAX338, typical leakage",
+      "bbox": [
+        72.0,
+        281.15,
+        542.98,
+        294.43
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. S5A",
+      "page": 6,
+      "caption_original": "Fig. S5a). The entire machining process involves three stages: rough machining, finish machining,",
+      "caption_zh": "Fig. S5A 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-01.png",
+      "image_width": 1152,
+      "image_height": 899,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        473.17
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2F",
+      "page": 6,
+      "caption_original": "Fig. 2f illustrates the experimental setup, where a sound level meter serves as the reference for",
+      "caption_zh": "Fig. 2F 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-02.png",
+      "image_width": 1152,
+      "image_height": 1367,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        707.17
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3C",
+      "page": 7,
+      "caption_original": "Fig. 3c shows the fabricated F/T sensors (with its key performance indicators summarized in",
+      "caption_zh": "Fig. 3C 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-03.png",
+      "image_width": 1152,
+      "image_height": 961,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        504.37
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 3E",
+      "page": 7,
+      "caption_original": "Fig. 3e illustrates the simulated charge response of electrodes S1 to S4 under various loading",
+      "caption_zh": "Fig. 3E 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [],
+      "image_filename": "figure-04.png",
+      "image_width": 1152,
+      "image_height": 1382,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        714.99
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. S43",
+      "page": 11,
+      "caption_original": "Fig. S43 for the comparison with filtered signals). Overall, these results demonstrate that the",
+      "caption_zh": "Fig. S43 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-05.png",
+      "image_width": 1152,
+      "image_height": 1066,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        556.69
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Fig. 1",
+      "page": 29,
+      "caption_original": "Fig. 1. General concept of the monolithic 6-axis F/T sensor. (a) Demonstration of F/T sensors integrated",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Demonstration of F/T sensors integrated",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 999,
+      "image_height": 713,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        113.15,
+        566.33,
+        469.2
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-06.png"
+    },
+    {
+      "id": "F007",
+      "label": "Fig. 2",
+      "page": 30,
+      "caption_original": "Fig. 2. Processing and characterization of annular PZT shells. (a) Illustration of the PZT shell-forming",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Illustration of the PZT shell-forming",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-07.png",
+      "image_width": 944,
+      "image_height": 833,
+      "crop_confidence": "high",
+      "bbox": [
+        70.0,
+        114.35,
+        542.0,
+        530.5
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-07.png"
+    },
+    {
+      "id": "F008",
+      "label": "Fig. 3",
+      "page": 32,
+      "caption_original": "Fig. 3. Design and load decoupling of the 6-axis F/T sensor. (a) Exploded view of the designed F/T sensor.",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Exploded view of the designed F/T sensor",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-08.png",
+      "image_width": 950,
+      "image_height": 800,
+      "crop_confidence": "high",
+      "bbox": [
+        68.97,
+        114.8,
+        543.02,
+        514.5
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-08.png"
+    },
+    {
+      "id": "F009",
+      "label": "Fig. 4",
+      "page": 33,
+      "caption_original": "Fig. 4. Characterization of the 6-axis F/T sensor. (a) Measured average response sensitivity of the sensor",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Measured average response sensitivity of the sensor",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-09.png",
+      "image_width": 995,
+      "image_height": 776,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        113.0,
+        564.3,
+        501.0
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-09.png"
+    },
+    {
+      "id": "F010",
+      "label": "Fig. 5",
+      "page": 34,
+      "caption_original": "Fig. 5. F/T sensors enabling dexterous robotic gripper-arm collaboration. (a) Photograph of a robotic",
+      "caption_zh": "Fig. 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Photograph of a robotic",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        }
+      ],
+      "image_filename": "figure-10.png",
+      "image_width": 995,
+      "image_height": 848,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        110.59,
+        564.25,
+        534.23
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-10.png"
+    },
+    {
+      "id": "F011",
+      "label": "Fig. 5A",
+      "page": 34,
+      "caption_original": "Fig. 5a is created in BioRender. qu, J. (2026) https://BioRender.com/m87t8vp",
+      "caption_zh": "Fig. 5A 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "j",
+          "original": "(2026) https://BioRender.com/m87t8vp",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-11.png",
+      "image_width": 995,
+      "image_height": 848,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        110.59,
+        564.25,
+        534.23
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-11.png"
+    },
+    {
+      "id": "F012",
+      "label": "Fig. 6",
+      "page": 35,
+      "caption_original": "Fig. 6. F/T sensors enabling intelligent exoskeletons for motion monitoring and functional assessment.",
+      "caption_zh": "Fig. 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-12.png",
+      "image_width": 995,
+      "image_height": 646,
+      "crop_confidence": "high",
+      "bbox": [
+        67.0,
+        114.55,
+        564.24,
+        437.05
+      ],
+      "image_path": "papers/paper-63e052031fae31cb/figures/figure-12.png"
+    }
+  ],
+  "original_pdf": "papers/paper-63e052031fae31cb/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-07-24/deep-reads/paper-63e052031fae31cb/paper.md",
+  "source_map": "research-memory/literature/2026/2026-07-24/deep-reads/paper-63e052031fae31cb/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}
