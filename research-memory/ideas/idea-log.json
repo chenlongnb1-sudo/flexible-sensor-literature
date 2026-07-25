@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-25",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -344,6 +344,40 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-07-24T04:35:12.013065+00:00"
+    },
+    {
+      "id": "idea-2026-07-25-00ef86bf01bf",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "Bioinspired Ionochromic Neuromorphic Transistors for Robotic Intelligent Perception",
+      "source_papers": [
+        {
+          "paper_id": "paper-05b40eec2e2066dc",
+          "title": "Bioinspired Ionochromic Neuromorphic Transistors for Robotic Intelligent Perception",
+          "doi": "10.1002/advs.76683",
+          "url": "https://doi.org/10.1002/advs.76683"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-07-25T04:29:49.207052+00:00"
     }
   ]
 }
