@@ -1,0 +1,1382 @@
+{
+  "schema_version": 1,
+  "id": "paper-83b1e731d88dc459",
+  "title": "Knittable electronic textiles for intelligent soft wearables",
+  "authors": [
+    "Ryo Takahashi",
+    "Hsin Huei Chen",
+    "Hongyu Mao",
+    "Wakako Yukita",
+    "Tomoyuki Yokota",
+    "Takao Someya",
+    "Yoshihiro Kawahara",
+    "Yiyue Luo",
+    "Irmandy Wicaksono"
+  ],
+  "venue": "npj Flexible Electronics",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "制造、封装与可靠性"
+  ],
+  "strongly_related": false,
+  "date": "2026-07-09",
+  "doi": "10.1038/s41528-026-00611-y",
+  "source_url": "https://doi.org/10.1038/s41528-026-00611-y",
+  "pdf_source_url": "https://www.nature.com/articles/s41528-026-00611-y_reference.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-07-27T04:58:04.774464+00:00",
+  "page_count": 116,
+  "abstract": {
+    "original": "This review examines knittable electronic textiles as a foundational platform for soft wearable systems. Knitting’s interlooped, three-dimensional architectures and computationally-enabled design allow the fabrication of customized electronic textiles that conform to the body while supporting integrated sensing, actuation, processing, communication, and power delivery. By constructing structures from fibers to full fabrics, knitted systems offer stretchability, breathability, and mechanical resilience, supporting functional garments and pathways toward intelligent soft wearable technologies.",
+    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。"
+  },
+  "innovation_points": [
+    "This review examines knittable electronic textiles as a foundational platform for soft wearable systems.",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 43,
+      "category_zh": "图形化与结构成形",
+      "original": "Therefore, knitting is preferable because knitting allows for the fabrica- tion of hierarchical and multilayered textile patterns, which significantly amplifies the available surface area for charge storage.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.43 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 43,
+      "category_zh": "成膜与沉积",
+      "original": "use intarsia knitting to interlace MXene-coated cotton yarns into a dense interlock rib structure, creating 2D flat electrodes that achieve a high capacitance of 707 mF/cm2 [206] (Fig. 9.g-h).",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.43 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 44,
+      "category_zh": "成膜与沉积",
+      "original": "415 mF/cm2, where stiff vertical polyester monofilaments are knitted between outer elec- trode layers with MXene-coated nylon multifilaments [207].",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.44 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 44,
+      "category_zh": "成膜与沉积",
+      "original": "To implement energy-efficient, scalable wireless powering textiles, a low- loss and stretchable conductor such as liquid metal (e.g., eGaIn: 3.4 × 106 S/m [210]) is promising [210, 211], because standard metal-coated conductive yarns have relatively high resistance (∼105 S/m) that degrades power transfer efficiency.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.44 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 44,
+      "category_zh": "制备与实验操作",
+      "original": "To embed such fiber into the textile, plate knitting is useful to fabricate hollow tubular channels within the garments, which are filled with liquid metal-filled tubes.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.44 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 45,
+      "category_zh": "组装与封装",
+      "original": "Therefore, the meander-coil-based inductive power transfer system enables safe, Watt- class power delivery for high-performance wearable electronics.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.45 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 45,
+      "category_zh": "组装与封装",
+      "original": "In addition to inductive approaches, body-coupled capacitive power transfer leverages the human body’s high per- mittivity as a conductive path to deliver energy.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.45 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 46,
+      "category_zh": "图形化与结构成形",
+      "original": "10.a), sleeves, and lower-body garments (Fig. 10.b) can track finger flexion, joint angles, and gait patterns (Fig. 10.c) while remaining unobtrusive to the wearer.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.46 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 46,
+      "category_zh": "图形化与结构成形",
+      "original": "Knit- ted sensors integrated into vests, pants, or footwear have been shown to capture shoulder activity, knee motion, and foot pressure distributions (Fig. 10.d), supporting classification of movement patterns and biomechanical states while preserving a low-profile, wearable form factor [216, 55, 217, 218].",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.46 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 43,
+      "text": "to improve overall efficiency [201, 202]",
+      "bbox": [
+        93.54,
+        602.37,
+        322.71,
+        613.28
+      ]
+    },
+    {
+      "page": 43,
+      "text": "While the knittable energy harvesters provide comfortable self-powered energy storage",
+      "bbox": [
+        110.48,
+        624.3,
+        518.55,
+        635.21
+      ]
+    },
+    {
+      "page": 43,
+      "text": "in the e-textiles, their harvesting capability fluctuates significantly depending on exter-",
+      "bbox": [
+        93.54,
+        646.23,
+        518.55,
+        657.14
+      ]
+    },
+    {
+      "page": 43,
+      "text": "nal environmental conditions and user activity. As reliable textile-based power sources,",
+      "bbox": [
+        93.54,
+        668.15,
+        518.53,
+        679.06
+      ]
+    },
+    {
+      "page": 43,
+      "text": "fiber-shaped batteries such as lithium-ion [203, 204] and solid-state zinc-ion fibers [205]",
+      "bbox": [
+        93.54,
+        690.08,
+        518.39,
+        700.99
+      ]
+    },
+    {
+      "page": 43,
+      "text": "are typically employed. Furthermore, textile-based supercapacitors have also been gaining",
+      "bbox": [
+        93.54,
+        712.01,
+        518.55,
+        722.92
+      ]
+    },
+    {
+      "page": 44,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 44,
+      "text": "attention for e-textile applications requiring rapid charging and high instantaneous power",
+      "bbox": [
+        93.54,
+        141.99,
+        518.54,
+        152.9
+      ]
+    },
+    {
+      "page": 44,
+      "text": "output. Unlike the fiber-based chemical design of the battery, the textile-based super-",
+      "bbox": [
+        93.54,
+        163.92,
+        518.55,
+        174.83
+      ]
+    },
+    {
+      "page": 44,
+      "text": "capacitor needs a physical design of textile-based electrodes and separators to maximize",
+      "bbox": [
+        93.54,
+        185.84,
+        518.37,
+        196.75
+      ]
+    },
+    {
+      "page": 44,
+      "text": "surface area. Therefore, knitting is preferable because knitting allows for the fabrica-",
+      "bbox": [
+        93.54,
+        207.77,
+        518.55,
+        218.68
+      ]
+    },
+    {
+      "page": 44,
+      "text": "tion of hierarchical and multilayered textile patterns, which significantly amplifies the",
+      "bbox": [
+        93.54,
+        229.7,
+        518.56,
+        240.61
+      ]
+    },
+    {
+      "page": 44,
+      "text": "available surface area for charge storage. Levitt et al. use intarsia knitting to interlace",
+      "bbox": [
+        93.54,
+        251.63,
+        518.54,
+        262.54
+      ]
+    },
+    {
+      "page": 44,
+      "text": "MXene-coated cotton yarns into a dense interlock rib structure, creating 2D flat electrodes",
+      "bbox": [
+        93.54,
+        273.55,
+        518.54,
+        284.46
+      ]
+    },
+    {
+      "page": 44,
+      "text": "that achieve a high capacitance of 707 mF/cm2 [206] (Fig. 9.g-h). To enhance mechan-",
+      "bbox": [
+        93.54,
+        291.49,
+        518.43,
+        306.39
+      ]
+    },
+    {
+      "page": 44,
+      "text": "ical stability under pressure, Zhang et al. introduce a 3D spacer knit architecture with",
+      "bbox": [
+        93.55,
+        317.37,
+        518.54,
+        328.28
+      ]
+    },
+    {
+      "page": 44,
+      "text": "415 mF/cm2, where stiff vertical polyester monofilaments are knitted between outer elec-",
+      "bbox": [
+        93.55,
+        337.54,
+        518.38,
+        350.21
+      ]
+    },
+    {
+      "page": 44,
+      "text": "trode layers with MXene-coated nylon multifilaments [207]. The polyester spacer yarns",
+      "bbox": [
+        93.55,
+        361.22,
+        518.41,
+        372.13
+      ]
+    },
+    {
+      "page": 44,
+      "text": "function as a physical separator capable of mechanical cushioning, effectively preventing",
+      "bbox": [
+        93.55,
+        383.15,
+        518.39,
+        394.06
+      ]
+    },
+    {
+      "page": 44,
+      "text": "short circuits and retaining 97 % of capacitance even after 1000 compression cycles at 55 %",
+      "bbox": [
+        93.55,
+        405.07,
+        518.38,
+        415.98
+      ]
+    },
+    {
+      "page": 44,
+      "text": "strain. Unlike simple yarn-based supercapacitors whose small surface area limits capac-",
+      "bbox": [
+        93.55,
+        427.0,
+        518.38,
+        437.91
+      ]
+    },
+    {
+      "page": 44,
+      "text": "itance around tens of mF/cm2 [208, 209], the knittable supercapacitors achieve over ten",
+      "bbox": [
+        93.55,
+        444.95,
+        518.5,
+        459.84
+      ]
+    },
+    {
+      "page": 44,
+      "text": "times higher capacitance performance by utilizing the expanded textile surface area.",
+      "bbox": [
+        93.54,
+        470.83,
+        496.02,
+        481.74
+      ]
+    },
+    {
+      "page": 44,
+      "text": "Finally, knitted textiles serve as near-field wireless power hubs for skin devices, such",
+      "bbox": [
+        110.48,
+        492.76,
+        518.5,
+        503.67
+      ]
+    },
+    {
+      "page": 44,
+      "text": "as ultra-thin epidermal devices, which often lack the volume and space for the equipped",
+      "bbox": [
+        93.54,
+        514.69,
+        518.54,
+        525.6
+      ]
+    },
+    {
+      "page": 44,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 44,
+      "text": "bulky batteries. To implement energy-efficient, scalable wireless powering textiles, a low-",
+      "bbox": [
+        93.54,
+        536.61,
+        518.51,
+        547.52
+      ]
+    },
+    {
+      "page": 44,
+      "text": "loss and stretchable conductor such as liquid metal (e.g., eGaIn: 3.4 × 106 S/m [210])",
+      "bbox": [
+        93.54,
+        554.56,
+        518.45,
+        577.2
+      ]
+    },
+    {
+      "page": 44,
+      "text": "is promising [210, 211], because standard metal-coated conductive yarns have relatively",
+      "bbox": [
+        93.55,
+        580.45,
+        518.39,
+        591.35
+      ]
+    },
+    {
+      "page": 44,
+      "text": "high resistance (∼105 S/m) that degrades power transfer efficiency. To embed such fiber",
+      "bbox": [
+        93.55,
+        598.4,
+        518.4,
+        621.03
+      ]
+    },
+    {
+      "page": 44,
+      "text": "into the textile, plate knitting is useful to fabricate hollow tubular channels within the",
+      "bbox": [
+        93.55,
+        624.29,
+        518.58,
+        635.2
+      ]
+    },
+    {
+      "page": 44,
+      "text": "garments, which are filled with liquid metal-filled tubes. For example, Takahashi et al.",
+      "bbox": [
+        93.55,
+        646.22,
+        518.52,
+        657.13
+      ]
+    },
+    {
+      "page": 44,
+      "text": "present safe, body-scale wireless powering garments based on a meander coil composed of",
+      "bbox": [
+        93.55,
+        668.14,
+        518.35,
+        679.05
+      ]
+    },
+    {
+      "page": 44,
+      "text": "the liquid metal tube [47, 212] (Fig. 9.i-j). As described below, the meander coil is specif-",
+      "bbox": [
+        93.55,
+        690.07,
+        518.52,
+        700.98
+      ]
+    },
+    {
+      "page": 44,
+      "text": "ically designed to localize the strong electromagnetic field near the skin surface, enabling",
+      "bbox": [
+        93.55,
+        712.0,
+        518.57,
+        722.91
+      ]
+    },
+    {
+      "page": 45,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 45,
+      "text": "the suppression of the specific absorption rate (SAR), established by ICNIRP, which is a",
+      "bbox": [
+        93.54,
+        141.99,
+        518.53,
+        152.9
+      ]
+    },
+    {
+      "page": 45,
+      "text": "measure of how much radiation energy is absorbed by the body per unit mass when using",
+      "bbox": [
+        93.54,
+        163.92,
+        518.53,
+        174.83
+      ]
+    },
+    {
+      "page": 45,
+      "text": "wireless devices. The evaluation shows 2.5 W-level power delivery to advanced wearable",
+      "bbox": [
+        93.54,
+        185.84,
+        518.42,
+        196.75
+      ]
+    },
+    {
+      "page": 45,
+      "text": "devices at 25 % DC-to-DC efficiency, while maintaining the SAR below the 2.0 W/kg limit",
+      "bbox": [
+        93.54,
+        207.77,
+        518.46,
+        218.68
+      ]
+    },
+    {
+      "page": 45,
+      "text": "for localized human exposure and the 0.08 W/kg limit for whole-body human exposure.",
+      "bbox": [
+        93.54,
+        229.7,
+        518.41,
+        240.61
+      ]
+    },
+    {
+      "page": 45,
+      "text": "Therefore, the meander-coil-based inductive power transfer system enables safe, Watt-",
+      "bbox": [
+        93.54,
+        251.63,
+        518.36,
+        262.54
+      ]
+    },
+    {
+      "page": 45,
+      "text": "class power delivery for high-performance wearable electronics. In addition to inductive",
+      "bbox": [
+        93.54,
+        273.55,
+        518.54,
+        284.46
+      ]
+    },
+    {
+      "page": 45,
+      "text": "approaches, body-coupled capacitive power transfer leverages the human body’s high per-",
+      "bbox": [
+        93.54,
+        295.48,
+        518.54,
+        306.39
+      ]
+    },
+    {
+      "page": 45,
+      "text": "mittivity as a conductive path to deliver energy. For example, Song et al. present a",
+      "bbox": [
+        93.54,
+        317.41,
+        518.53,
+        328.32
+      ]
+    },
+    {
+      "page": 45,
+      "text": "body-coupled electrical stimulation system that uses a knittable dual-layered electrode",
+      "bbox": [
+        93.54,
+        339.34,
+        518.52,
+        350.24
+      ]
+    },
+    {
+      "page": 45,
+      "text": "socks that can harvest ambient electromagnetic noise from electronics and static elec-",
+      "bbox": [
+        93.54,
+        361.26,
+        518.37,
+        372.17
+      ]
+    },
+    {
+      "page": 45,
+      "text": "tricity from physical activity. By concentrating localized electric fields through potential",
+      "bbox": [
+        93.54,
+        383.19,
+        518.51,
+        394.1
+      ]
+    },
+    {
+      "page": 45,
+      "text": "distortion, these socks directly stimulate muscle fibers by activating voltage-gated ion",
+      "bbox": [
+        93.54,
+        405.12,
+        518.52,
+        416.03
+      ]
+    },
+    {
+      "page": 45,
+      "text": "channels [213] (Fig. 9.k-l). Note that the summary table for knittable e-textiles with",
+      "bbox": [
+        93.54,
+        427.04,
+        518.53,
+        437.95
+      ]
+    },
+    {
+      "page": 45,
+      "text": "communication and powering functionality is provided in Table 6.",
+      "bbox": [
+        93.54,
+        448.97,
+        408.28,
+        459.88
+      ]
+    },
+    {
+      "page": 45,
+      "text": "Applications",
+      "bbox": [
+        93.54,
+        491.35,
+        173.48,
+        506.13
+      ]
+    },
+    {
+      "page": 45,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 45,
+      "text": "Building on the material, structural, and electronic capabilities described above, knitted",
+      "bbox": [
+        93.54,
+        527.09,
+        518.54,
+        537.99
+      ]
+    },
+    {
+      "page": 45,
+      "text": "e-textiles enable a broad range of application domains that extend far beyond conven-",
+      "bbox": [
+        93.54,
+        549.01,
+        518.53,
+        559.92
+      ]
+    },
+    {
+      "page": 45,
+      "text": "tional wearable devices. These capabilities enable garments and soft structures that can",
+      "bbox": [
+        93.54,
+        570.94,
+        518.53,
+        581.85
+      ]
+    },
+    {
+      "page": 45,
+      "text": "sense motion, physiology, and touch; respond through actuation or feedback; and oper-",
+      "bbox": [
+        93.54,
+        592.87,
+        518.41,
+        603.78
+      ]
+    },
+    {
+      "page": 45,
+      "text": "ate autonomously through embedded energy and communication systems. The following",
+      "bbox": [
+        93.54,
+        614.79,
+        518.41,
+        625.7
+      ]
+    },
+    {
+      "page": 45,
+      "text": "sections survey how these integrated functionalities manifest across key application areas,",
+      "bbox": [
+        93.54,
+        636.72,
+        518.37,
+        647.63
+      ]
+    },
+    {
+      "page": 45,
+      "text": "including activity and gesture recognition, physiological monitoring, interactive wearables,",
+      "bbox": [
+        93.54,
+        658.65,
+        518.54,
+        669.56
+      ]
+    },
+    {
+      "page": 45,
+      "text": "and soft robotics.",
+      "bbox": [
+        93.54,
+        680.58,
+        176.7,
+        691.49
+      ]
+    },
+    {
+      "page": 46,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 46,
+      "text": "Activity and gesture recognition",
+      "bbox": [
+        93.54,
+        140.85,
+        268.65,
+        153.16
+      ]
+    },
+    {
+      "page": 46,
+      "text": "Several non-textile activity-monitoring approaches, such as IMUs, optical motion-capture,",
+      "bbox": [
+        93.54,
+        170.96,
+        518.54,
+        181.87
+      ]
+    },
+    {
+      "page": 46,
+      "text": "and rigid pressure sensors, work well in certain scenarios but may not be the best option",
+      "bbox": [
+        93.54,
+        192.88,
+        518.53,
+        203.79
+      ]
+    },
+    {
+      "page": 46,
+      "text": "for wearable systems that have to fit around the curves of our bodies, maintain accurate",
+      "bbox": [
+        93.54,
+        214.81,
+        518.51,
+        225.72
+      ]
+    },
+    {
+      "page": 46,
+      "text": "sensing during large-range movement, and for long periods of time. Knitted sensors are",
+      "bbox": [
+        93.54,
+        236.74,
+        518.53,
+        247.65
+      ]
+    },
+    {
+      "page": 46,
+      "text": "well suited to activity monitoring on humans because of their intrinsic elasticity and",
+      "bbox": [
+        93.54,
+        258.67,
+        518.52,
+        269.58
+      ]
+    },
+    {
+      "page": 46,
+      "text": "breathable nature. These mechanical advantages reduce motion artifacts and improve",
+      "bbox": [
+        93.54,
+        280.59,
+        518.53,
+        291.5
+      ]
+    },
+    {
+      "page": 46,
+      "text": "signal continuity compared to stiff sensors. In this way, knitted sensors can prioritize",
+      "bbox": [
+        93.54,
+        302.52,
+        518.52,
+        313.43
+      ]
+    },
+    {
+      "page": 46,
+      "text": "sensitivity and accuracy without compromising conformability and comfort.",
+      "bbox": [
+        93.54,
+        324.45,
+        455.74,
+        335.36
+      ]
+    },
+    {
+      "page": 46,
+      "text": "Knitted strain and pressure sensors have been widely used to capture joint movement,",
+      "bbox": [
+        110.48,
+        346.38,
+        518.52,
+        357.28
+      ]
+    },
+    {
+      "page": 46,
+      "text": "posture, and gesture by embedding sensing elements directly into garments. Gloves (Fig.",
+      "bbox": [
+        93.54,
+        368.3,
+        518.51,
+        379.21
+      ]
+    },
+    {
+      "page": 46,
+      "text": "10.a), sleeves, and lower-body garments (Fig. 10.b) can track finger flexion, joint angles,",
+      "bbox": [
+        93.54,
+        390.23,
+        518.39,
+        401.14
+      ]
+    },
+    {
+      "page": 46,
+      "text": "and gait patterns (Fig. 10.c) while remaining unobtrusive to the wearer. By adjusting knit",
+      "bbox": [
+        93.54,
+        412.16,
+        518.57,
+        423.07
+      ]
+    },
+    {
+      "page": 46,
+      "text": "architectures, sensor sensitivity can be tuned to support both fine-grained gestures and",
+      "bbox": [
+        93.54,
+        434.08,
+        518.53,
+        444.99
+      ]
+    },
+    {
+      "page": 46,
+      "text": "large-amplitude movements, enabling applications ranging from hand gesture recognition",
+      "bbox": [
+        93.54,
+        456.01,
+        518.56,
+        466.92
+      ]
+    },
+    {
+      "page": 46,
+      "text": "to full-body activity classification [214, 104, 215].",
+      "bbox": [
+        93.54,
+        477.94,
+        328.47,
+        488.85
+      ]
+    },
+    {
+      "page": 46,
+      "text": "Such systems are particularly relevant for exercise monitoring and rehabilitation, where",
+      "bbox": [
+        110.48,
+        499.87,
+        518.57,
+        510.78
+      ]
+    },
+    {
+      "page": 46,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        178.55,
+        288.54,
+        421.25,
+        531.25
+      ]
+    },
+    {
+      "page": 46,
+      "text": "accurate tracking of complex joint motion is required without restricting movement. Knit-",
+      "bbox": [
+        93.54,
+        521.79,
+        518.55,
+        532.7
+      ]
+    },
+    {
+      "page": 46,
+      "text": "ted sensors integrated into vests, pants, or footwear have been shown to capture shoulder",
+      "bbox": [
+        93.54,
+        543.72,
+        518.36,
+        554.63
+      ]
+    },
+    {
+      "page": 46,
+      "text": "activity, knee motion, and foot pressure distributions (Fig. 10.d), supporting classification",
+      "bbox": [
+        93.54,
+        565.65,
+        518.56,
+        576.56
+      ]
+    },
+    {
+      "page": 46,
+      "text": "of movement patterns and biomechanical states while preserving a low-profile, wearable",
+      "bbox": [
+        93.54,
+        587.58,
+        518.52,
+        598.48
+      ]
+    },
+    {
+      "page": 46,
+      "text": "form factor [216, 55, 217, 218]. These approaches highlight how knitting enables continu-",
+      "bbox": [
+        93.54,
+        609.5,
+        518.42,
+        620.41
+      ]
+    },
+    {
+      "page": 46,
+      "text": "ous activity sensing without the bulk or discomfort of rigid sensor assemblies.",
+      "bbox": [
+        93.54,
+        631.43,
+        464.28,
+        642.34
+      ]
+    },
+    {
+      "page": 46,
+      "text": "Beyond human-worn systems, knitted sensing has also been explored for human–robot",
+      "bbox": [
+        110.48,
+        653.36,
+        518.38,
+        664.27
+      ]
+    },
+    {
+      "page": 46,
+      "text": "interaction and robotic perception. Knitted robotic skins distribute pressure and defor-",
+      "bbox": [
+        93.54,
+        675.28,
+        518.54,
+        686.19
+      ]
+    },
+    {
+      "page": 46,
+      "text": "mation sensing across soft surfaces, enabling robots to detect contact, compression, and",
+      "bbox": [
+        93.54,
+        697.21,
+        518.36,
+        708.12
+      ]
+    },
+    {
+      "page": 46,
+      "text": "environmental interaction in confined or occluded settings. When combined with human-",
+      "bbox": [
+        93.54,
+        719.14,
+        518.51,
+        730.05
+      ]
+    },
+    {
+      "page": 47,
+      "text": "ARTICLE IN PRESS",
+      "bbox": [
+        239.74,
+        14.06,
+        372.26,
+        28.06
+      ]
+    },
+    {
+      "page": 47,
+      "text": "worn knitted garments, these systems support gesture-based control and shared tactile",
+      "bbox": [
+        93.54,
+        141.99,
+        518.37,
+        152.9
+      ]
+    },
+    {
+      "page": 47,
+      "text": "understanding between humans and robots (Fig. 10.e)[121, 51].",
+      "bbox": [
+        93.54,
+        163.92,
+        396.41,
+        174.83
+      ]
+    },
+    {
+      "page": 47,
+      "text": "Physiological sensing and intervention",
+      "bbox": [
+        93.54,
+        200.6,
+        300.93,
+        212.91
+      ]
+    },
+    {
+      "page": 47,
+      "text": "Knitting provides a compelling platform for physiological sensing by enabling electrodes",
+      "bbox": [
+        93.54,
+        230.71,
+        518.56,
+        241.62
+      ]
+    },
+    {
+      "page": 47,
+      "text": "and sensors that conform closely to the body while remaining soft, breathable, and suitable",
+      "bbox": [
+        93.54,
+        252.64,
+        518.54,
+        263.55
+      ]
+    },
+    {
+      "page": 47,
+      "text": "for long-term wear. Unlike conventional rigid or gel-based electrodes, knitted sensors inte-",
+      "bbox": [
+        93.54,
+        274.57,
+        518.37,
+        285.48
+      ]
+    },
+    {
+      "page": 47,
+      "text": "grate directly into garments, improving comfort, reusability, and skin compatibility while",
+      "bbox": [
+        93.54,
+        296.49,
+        518.53,
+        307.4
+      ]
+    },
+    {
+      "page": 47,
+      "text": "achieving signal quality comparable to traditional approaches [219, 124]. This makes knit-",
+      "bbox": [
+        93.54,
+        318.42,
+        518.55,
+        329.33
+      ]
+    },
+    {
+      "page": 47,
+      "text": "ted textiles particularly well suited for continuous physiological monitoring in everyday,",
+      "bbox": [
+        93.54,
+        340.35,
+        518.54,
+        351.26
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 12",
+      "page": 59,
+      "caption_original": "Fig. 12.a illustrates an end-to-end workflow example of the scan-to-knit pipeline, which",
+      "caption_zh": "Fig. 12 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-01.png",
+      "image_width": 1152,
+      "image_height": 362,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.0,
+        204.77
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 1",
+      "page": 105,
+      "caption_original": "Figure 1: a: Schematic illustration of knittable electronic textiles (e-textiles). Functional yarns are knitted into everyday garments using loop structures. Their mechanical flexibility and high surface area can facilitate intelligent soft wearables. b: Fibers and yarns, knitting structures, modalities, and applications of knittable e-textiles. Icons in Modalities and Application were obtained from istockphoto.com under standard license.",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-02.png",
+      "image_width": 870,
+      "image_height": 1074,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        135.32,
+        523.45,
+        671.91
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 2",
+      "page": 106,
+      "caption_original": "Figure 2: Technological timeline in knitting technologies and fiber development. (solid knit, right top) reproduced from ACM [21], under CC BY 4.0 license.",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-03.png",
+      "image_width": 870,
+      "image_height": 694,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        246.75,
+        523.45,
+        593.36
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 3",
+      "page": 107,
+      "caption_original": "Figure 3: Hierarchical structural design of knittable e-textiles composed of five levels. Yarn level: modulation of physical and functional properties. Stitch level: fundamental loop structures and shaping techniques. Fabric level: 2D and 3D fabrics through intarsia, jacquard, plating, interlock, inlay, circular, and spacer knitting. Garment level: diverse wearable and soft-robotic smart garments enabled by digital knitting.",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-04.png",
+      "image_width": 870,
+      "image_height": 517,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        274.51,
+        523.45,
+        532.73
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Figure 4",
+      "page": 108,
+      "caption_original": "Figure 4: Examples of knittable interconnects and sensors utilizing capacitive and piezoresistive capabilities. a: Weft knitted capacitive pressure sensors with conductive yarn interconnects. Reproduced with permission [58]. Copyright 2018, Taylor & Francis. b: Close up of walewise interconnect made with a linen 1x1 stitch. c: Close up of course-wise interconnect made with knit-miss 1x1 stitch. Reproduced with permission [54]. Copyright 2023, John Wiley & Sons. d: Integration of coursewise and walewise interconnects and rib-knit strain sensor knitted into knee joint monitoring sleeve. Reproduced with permission [105]. Copyright 2023, IEEE. e-g: Piezoresistive tactile sensing for a game controller. Reproduced from ACM [84], 2021 under CC BY 4.0 license. e: Assembly schematic of piezoresistive tactile sensor f: Usage of the game controller for snake game. g: Sensor data based on touch pressure and resistance change. h-j: Magnetic haptic touch sensor. Reproduced from ACM [86], 2023 under CC BY 4.0 license. h: Schematic for magnetic passive haptic touch unit and binary touch sensor. i: Example swatch of ferromagnetic patch knitted into non-conductive fabric. j: Sensor data of magnetic force vs distance for different knit types. k-m: Capacitive pressure sensor. Reproduced with permission [106]. Copyright 2018, John Wiley & Sons. k: Prototype of knitted sensor under pressure. l: Schematic of sensor cross section showing collapsed micropores of dielectric elastomer (top) and SEM images of sensor (bottom) m: Sensor capacitance response under applied pressure. n-o: Piezoresistive touch sensor made with intermeshed loops. Reproduced from ACM [113], 2024 under CC BY 4.0 license. n: Schematic of force sensitive resistor (FSR), where external stress varies the surface contact and alters conductivity. o: Implementation of FSR using two types of stitches: knit and front miss. p-s: Piezoresistive touch sensor made with resistive filler material. Reproduced from ACM [114], 2022 under CC BY 4.0 license. p: Schematic of touch sensor cross section, highlighting predicted resistance changes during touch, as well as nonconductive out layers, resistive filler, and conductive electrodes. q: Cross-sectional image of touch sensor with resistive filler. r: Force and conductivity measurements align during touch sensing. s: Sensor implementation in two buttons.",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-05.png",
+      "image_width": 870,
+      "image_height": 444,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        194.2,
+        523.46,
+        415.78
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Figure 5",
+      "page": 109,
+      "caption_original": "Figure 5: Examples of knittable strain and tactile pressure sensors. a-d: Triboelectric strain sensor for wearable health monitoring. Reproduced with permission [117]. Copyright 2020, AAAS. a: Sensor schematic with areas of nylon (non-conductive) and conductive yarn. b: The fabricated sensor prototype remains soft and flexible after fabrication. c: When integrated, it can sense respiration and pulse in real time based on voltage changes, and d: seamlessly integrate into a shirt. e-g: Piezoelectric pressure sensor made from twisting and braiding conductive and piezoelectric fibers. Reproduced with permission [110]. Copyright 2025, Elsevier. e: Fabrication schematic of piezoelectric yarn sensor f: Fabric made of knitted piezoelectric yarns. g: Voltage response with increasing pressures from 3 N to 11 N at a frequency of 4 Hz. h-i: Knitted garment for health and gesture monitoring. Reproduced from ACM [126], 2022 under CC BY 4.0 license. h: When the user is wearing this garment, breathing can be detected through EIT enabled via impedance sensing. i: Respiration rate monitoring around the waist. j-l: Knitted EEG cap with knitted electrode wiring. Reproduced with permission [127]. Copyright 2025, Elsevier. j: Visualization of knitted e-textile EEG cap. k: close-up image of knitted structure of electrode. l: Sensor data showing the cap is comparable to traditional caps. m-o: Knitted armband with electrodes for surface EMG signal detection. Reproduced with permission [128]. Copyright 2018, IEEE. m: Schematic of arm band, with conductive areas knitted with intarsia. n: Prototype of an arm band. o: One of eight sEMG channels able to detect signals during various hand gestures. p-r: Temperature sensing arm band using an embedded RTD sensor. Reproduced from MDPI [136], 2022 under CC BY 4.0 license. p: garment prototype with sensor embedded in knit fabric. q: A knitted coating was applied over the temperature sensor. r: Sensor data for temperature change was collected for the user at rest, during and after exercise.",
+      "caption_zh": "Figure 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-06.png",
+      "image_width": 870,
+      "image_height": 563,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        180.88,
+        523.44,
+        461.98
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-06.png"
+    },
+    {
+      "id": "F007",
+      "label": "Figure 6",
+      "page": 110,
+      "caption_original": "Figure 6: Examples of knittable actuation techniques. a–c: Thermally actuated liquid crystal elastomer (LCE) fibers. Reproduced from ACM [150], 2023 under CC BY 4.0 license. a: Schematic of an LCE fiber actuator with an embedded heating element, illustrating molecular alignment changes under temperature variation. b: Fabrication pipeline from individual actuating fibers to integrated 4D knitted fabrics. c: Peak tensile loads generated during heating–cooling cycles for LCE fibers of different diameters (1.0 mm, 0.7 mm, and 0.5 mm). d–f: Knitted tendon integration strategies. Reproduced from ACM [42], 2019 under CC BY 4.0 license. d: Tangling technique for embedding vertical tendons, where carriers move along dedicated rails to avoid interference during directional transitions. e: Inlay technique for embedding horizontal tendons within knit structures. f: Diagram illustrating the resulting knit row configurations and tendon routing. g: Mechanical response comparison of fabrics using different stuffing materials under increasing and decreasing applied forces. h–j: MagTex electromagnetic textile actuation and haptics. Reproduced from ACM [78], 2025 under CC BY 4.0 license. h: Working principle of the MagTex haptic mechanism, where an alternating current induces vibration through galvanomagnetic and electromagnetic induction effects. i: Smart glove prototype incorporating six distributed MagTex actuator units. j: Characterization of the knitted electromagnet, showing signal response as a function of thermal variation and applied electromagnetic field strength.",
+      "caption_zh": "Figure 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-07.png",
+      "image_width": 870,
+      "image_height": 541,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        208.24,
+        523.45,
+        478.45
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-07.png"
+    },
+    {
+      "id": "F008",
+      "label": "Figure 7",
+      "page": 111,
+      "caption_original": "Figure 7: Examples of textile-based sensing and integrated wearable electronic systems. Multifunctional knitted fiber sensor. a-c: Multifunctional knitted fiber sensor structure and its resistive response for strain. Reproduced from ACM [166], 2025 under CC BY 4.0 license. a: Schematic of a knitted fiber integrating an MCU fiber and LED fiber, encapsulated with flexible polymer layers and connected to a flexible PCB for signal processing. b: Photograph of the fabricated knitted sensor embedded within a textile substrate. c: Electrical resistance response under repeated bending and extension cycles, demonstrating mechanical durability over 10,000 cycles. d–f: Body-coupled and mechanically adaptive textile systems. Reproduced with permission [167]. Copyright 2024, AAAS. d: System overview comparing conventional textile electronics with a body-coupled textile electronic system that integrates sensing fibers, wireless power transfer, and display fibers. e: Close-up optical images of the textile structure showing embedded functional elements under illumination. f: Radar plot comparing mechanical properties, including compression energy, tensile energy, bending rigidity, and hysteresis across i-fiber woven textiles, commercial cortex fabrics, and conventional nyltex. g–i: Wearable physiological sensing garments. Reproduced from Springer Nature [287], 2020 under CC BY 4.0 license.g: Smart garment integrating temperature sensors, accelerometers, and wireless modules distributed across the textile for continuous monitoring. h: Layered structure and fabrication details of a stretchable sensor module embedded within knit fabrics, along with garment-level integration examples. i: Validation of pressure sensing performance, showing modeled versus experimental pressure measurements across multiple sensing locations on the garment.",
+      "caption_zh": "Figure 7 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-08.png",
+      "image_width": 870,
+      "image_height": 566,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        191.24,
+        523.46,
+        473.53
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-08.png"
+    },
+    {
+      "id": "F009",
+      "label": "Figure 8",
+      "page": 112,
+      "caption_original": "Figure 8: Examples of knittable communication-enabled e-textiles. a-b: Knitted RFID tag created by intarsia knitting of conductive yarns. Reproduced with permission [179]. Copyright 2016, IEEE. a: System overview of wearable RFID sensor. b: Backscatter communication between the knittable RFID tags and an external wireless reader. c-d: Knittable matamaterial antenna created by double-layered jacquard knitting of conductive yarn and dielectric nylon yarn. Reproduced with permission [46]. Copyright 2024, John Wiley & Sons. c: Photograph of the knittable metamaterial antenna and d: its phased modulation pattern. e-f: Knittable 3D spiral receiver (RX) coil. Reproduced with permission [188]. Copyright 2021, Elsevier. e: Photograph of the knittable RX spiral coil and f: schematics around the wrist. g-h: Knittable 3D meander coil by intarsia knitting. Reproduced from ACM [31], 2021 under CC BY 4.0 license. g: Photograph of the knittable meander coil. h: Wireless interrogation of the meander coil for battery-free on-body resonant sensor coils. i-j: NFC-based knittable meandered e-textiles. Reproduced with permission from Ryo Takahashi [50].i: Photograph of the NFC-based knittable meandered e-textiles. j: NFC performance of the meandered e-textiles for different NFC data rates.",
+      "caption_zh": "Figure 8 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-09.png",
+      "image_width": 870,
+      "image_height": 691,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        187.08,
+        523.45,
+        532.49
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-09.png"
+    },
+    {
+      "id": "F010",
+      "label": "Figure 9",
+      "page": 113,
+      "caption_original": "Figure 9: Examples of knittable powering e-textiles. a-b: Knittable triboelectric nanogenerators (TENGs) by interlock knitting of PA66 and PTFE yarns. Reproduced with permission [194]. Copyright 2020, Elsevier. a: Prototype photograph of the knittable TENGs. b: Electrical output performance of the TENG textile showing voltage and current relative to load resistance. c-d: Knittable piezoelectric nanogenerators (PENGs) with a tubular knit structure. Reproduced from John Wiley & Sons [111], 2020, under CC BY 4.0 license. c: Prototype photograph of the knittable PENGs. d: Voltage output of the PENG textile over time under mechanical deformation. e-f: Knittable thermoelectric generator (TEG) based on a 3D spacer knit structure, where vertical carbon-nanotube yarns serve as pillars to maintain a temperature gradient. Reproduced with permission [194]. Copyright 2020, The Royal Society of Chemistry.e: Prototype photograph of the knittable TEG. f: Thermal simulation across the textile. g-h: knittable supercapacitor fabricated via intarsia knitting, interlacing MXene-coated cotton yarns into a dense interlock rib structure to create 2D planar electrodes. Reproduced with permission [206]. Copyright 2020, Elsevier. g: Prototype photograph of the knittable supercapacitor. h: Areal capacitance performance for scan rates. i-j: Knittable meander coil integrated into a garment by inserting a liquid-metal-filled tube in a plating-knitted tube holder. Reproduced from ACM [47], 2022, under CC BY 4.0 license.i: Prototype photograph of the knittable meander coil for Watt-class wireless powering. j: Simulation of the inductive field generation around the meander coil. k-l: Knittable socks with two pairs of electrodes for body-coupled electrical stimulation. Reproduced from ACM [213], 2024, under CC BY 4.0 license. k: Prototype photograph of the knittable socks for body-coupled electrical stimulation. l: Schematic of wireless electrical stimulation of muscle via the local electric field generated between the electrodes.",
+      "caption_zh": "Figure 9 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-10.png",
+      "image_width": 838,
+      "image_height": 863,
+      "crop_confidence": "high",
+      "bbox": [
+        84.89,
+        130.34,
+        503.23,
+        561.16
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-10.png"
+    },
+    {
+      "id": "F011",
+      "label": "Figure 10",
+      "page": 114,
+      "caption_original": "Figure 10: Examples of knittable e-textiles applications for gesture recognition, activity monitoring, and physiological sensing. a: A Korean Sign Language glove that can recognize 8 different KSL gestures. Reproduced from MDPI [104], 2025 under CC BY 4.0 license. b: Knitted sensors on sweatpants that enable detection of lower body movement type, such as walking, running, ascending or descending stairs. Reproduced from MDPI [215], 2019 under CC BY 4.0 license. c: Distinct signals from each movement type for categorization. d: Knitted shoe able to detect pressure during activity. Reproduced with permission [55]. Copyright 2022, IEEE. e: Full body garments for human-environment and human-robot sensing. Reproduced with permission [51]. Copyright 2021, Springer Nature. f: Garments enabling EOG, ECG, and EMG signal detection. Reproduced with permission [124]. Copyright 2022, John Wiley & Sons.",
+      "caption_zh": "Figure 10 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [],
+      "image_filename": "figure-11.png",
+      "image_width": 870,
+      "image_height": 506,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        255.47,
+        523.46,
+        507.94
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-11.png"
+    },
+    {
+      "id": "F012",
+      "label": "Figure 11",
+      "page": 115,
+      "caption_original": "Figure 11: a: Knittable interactive surfaces enabling integrated sensing and haptic feedback for virtual reality interaction. Reproduced from ACM [288], 2023 under CC BY 4.0 license. b: Glove-based input system capturing hand orientation and finger bending using embedded inertial sensors. Reproduced from ACM [166], 2025 under CC BY 4.0 license. c: Fabric-integrated textile displays providing dynamic visual feedback directly on garments. Reproduced from ACM [162], 2025 under CC BY 4.0 license. d: Knitted glove interface with conductive patterns supporting directional and gesture-based input. Reproduced from ACM [84], 2021 under CC BY 4.0 license.e: Wearable textile controller enabling continuous arm and hand interaction for robotic control. Reproduced with permission [160]. Copyright 2024, AAAS. f: The textilebased actuator morphs through the activation of a shape-memory alloy. Reproduced with permission [149]. Copyright 2027, John Wiley and Sons . g: A morphing lamp cover using textile actuators that respond to thermal stimuli. Reproduced from ACM [150], 2023 under CC BY 4.0 license. h: Wearable soft robotic sleeve providing assistive arm bending via fabric-based actuation. Reproduced with permission [120]. Copyright 2018, AAAS. i: Textile reinforced soft actuators enabling controlled deformation and directional motion for health and assistive applications. Reproduced from ACM [152], 2022 under CC BY 4.0 license. j: Schematic and prototype of a textile actuator illustrating stitch- and fiber-defined motion behaviors. Reproduced from ACM [42], 2019 under CC BY 4.0 license. k: Soft robotic glove with integrated pneumatic textile actuators enabling adaptive grasping of objects with diverse shapes and weights. Reproduced from MDPI [155], 2021 under CC BY 4.0 license.",
+      "caption_zh": "Figure 11 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-12.png",
+      "image_width": 700,
+      "image_height": 909,
+      "crop_confidence": "high",
+      "bbox": [
+        131.03,
+        134.2,
+        480.96,
+        588.4
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-12.png"
+    },
+    {
+      "id": "F013",
+      "label": "Figure 12",
+      "page": 116,
+      "caption_original": "Figure 12: Outlook of knittable e-textiles. a: scan-to-knit e-textiles, mainly comprising three steps: 3D body scanning of the user, computational design for mapping functional patterns onto the garment geometry, and automated fabrication using industrial 3D knitting machines. b: all-in-one knittable e-textiles. The integration of sensing, actuation, computation, communication, and powering nodes enables diverse applications ranging from bio-monitoring and haptic feedback to edge AI and a self-powered wearable ecosystem.",
+      "caption_zh": "Figure 12 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-13.png",
+      "image_width": 870,
+      "image_height": 878,
+      "crop_confidence": "high",
+      "bbox": [
+        88.54,
+        178.99,
+        523.45,
+        617.29
+      ],
+      "image_path": "papers/paper-83b1e731d88dc459/figures/figure-13.png"
+    }
+  ],
+  "original_pdf": "papers/paper-83b1e731d88dc459/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-07-27/deep-reads/paper-83b1e731d88dc459/paper.md",
+  "source_map": "research-memory/literature/2026/2026-07-27/deep-reads/paper-83b1e731d88dc459/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}
