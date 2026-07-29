@@ -1019,7 +1019,15 @@ def project_signal_flags(record: dict[str, Any]) -> dict[str, bool]:
 
 def is_strong_project_match(record: dict[str, Any]) -> bool:
     flags = project_signal_flags(record)
-    return is_flexible_electronics_record(record) and flags["sensor_context"] and any(
+    text = normalized_match_text(record.get("title"), record.get("abstract"))
+    direct_tactile = any(
+        term in text
+        for term in (
+            "tactile", "electronic skin", "e-skin", "haptic", "pressure sensor",
+            "pressure sensing", "force sensor", "force sensing", "strain sensor",
+        )
+    )
+    return is_flexible_electronics_record(record) and direct_tactile and any(
         flags[name]
         for name in (
             "front_end", "directional", "array_readout", "computing", "tactile_neuromorphic",

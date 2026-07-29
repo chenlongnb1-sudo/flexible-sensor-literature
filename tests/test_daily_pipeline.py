@@ -328,6 +328,36 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertFalse(paper["strongly_related"])
         self.assertEqual(paper["innovation_suggestions"], [])
 
+    def test_bioelectronic_biomarker_array_is_not_strong_tactile_match(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Rapid hematological profiling via a flexible bioelectronic sensor array",
+                "abstract": "A multiplexed transistor array provides rapid readout of protein biomarkers.",
+                "venue": "Advanced Science",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-science"],
+            },
+            date.today(),
+        )
+        self.assertFalse(paper["strongly_related"])
+        self.assertEqual(paper["innovation_suggestions"], [])
+
+    def test_stable_stretchable_biointerface_is_not_strong_tactile_match(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Stable organ-conformal stretchable piezoelectric biointerfaces",
+                "abstract": "The programmable architecture maintains long-term stability under deformation.",
+                "venue": "Advanced Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-materials"],
+            },
+            date.today(),
+        )
+        self.assertFalse(paper["strongly_related"])
+        self.assertEqual(paper["innovation_suggestions"], [])
+
     def test_targeted_afm_pressure_sensor_enters_watch_queue(self) -> None:
         record = {
             "title": "Flexible Pressure Sensor for Biological Signal Acquisition",
