@@ -1,0 +1,2192 @@
+{
+  "paper": {
+    "title": "Engineering Conducting Polymer Islands Toward High-Performance Solid-State Organic Electrochemical Transistors for Gas Recognition",
+    "venue": "Advanced Fiber Materials",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-07-30/papers/paper-6516cb9b2903ea26.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": "Advanced Fiber Materials https://doi.org/10.1007/s42765-026-00754-7",
+      "translation": "",
+      "bbox": [
+        51.02,
+        32.37,
+        197.24,
+        53.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "RESEARCH ARTICLE",
+      "translation": "",
+      "bbox": [
+        56.79,
+        64.21,
+        146.23,
+        75.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "Engineering Conducting Polymer Islands Toward High‑Performance Solid‑State Organic Electrochemical Transistors for Gas Recognition",
+      "translation": "",
+      "bbox": [
+        51.02,
+        104.41,
+        485.11,
+        140.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "Liang Zhang1 · Dongzi Yang2 · Shouwen Zhu1 · Yingying Huang1 · Wenjie Xu2 · Ning Ma3 · Zengcai Zhao2 · Kaiping Yuan2 · Ming Wang2 · Bo Fang1 · Xiaoming Tao1",
+      "translation": "",
+      "bbox": [
+        51.02,
+        155.57,
+        497.22,
+        181.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "Received: 13 March 2026 / Accepted: 29 June 2026 © The Author(s) 2026",
+      "translation": "",
+      "bbox": [
+        51.02,
+        199.83,
+        216.3,
+        219.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "Abstract Fluent ion transport within conducting polymer channels can boost overall performance of organic electrochemical transistors (OECTs), which requires a highly accessible ion migration path. Here, we design highly crystalline Poly(3,4-ethylenedioxythiophene) (PEDOT) islands with an average lateral size of around 9.11 nm in channels of solid-state OECTs by in situ crosslinking poly(styrenesulfonate) chains via a progressive wet-spinning method. Compared with conventional condensed PEDOT channels, the reduced Warburg coefficient of 1299.4 Ω·s−1/2 in island PEDOT confirms the enhancement of ion dynamics and the opening of ion transport path, while the crystalline regions enable durable ion exchange ability and longterm operation of devices, resulting in an ultra-high Ion/off ratio of 9.2 × 103 and excellent stability over 3300 cycles. Meanwhile, the OECT also exhibits excellent short-term plasticity and multi-gas response capabilities. To simulate the capacity of olfactory receptors in encoding complex gases, we further fabricated an OECT sensor array including four functionalized gate materials. Combined with a convolutional neural network algorithm, the OECT sensor array achieved a high accuracy of 97.9% for identifying five gases. The engineered microstructure strategy of constructing island structures by controlling crystallization behavior offers a novel pathway for optimizing ion dynamics in conducting polymer and advancing highperformance bioelectronic devices.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        236.84,
+        546.82,
+        414.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "Keywords Island PEDOT fibers · Ion dynamics · Organic electrochemical transistor array · Gas recognition",
+      "translation": "",
+      "bbox": [
+        51.02,
+        424.0,
+        479.61,
+        439.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "1 Introduction",
+      "translation": "",
+      "bbox": [
+        306.14,
+        459.86,
+        386.44,
+        474.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "Liang Zhang and Dongzi Yang have contributed equally to the work.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        481.12,
+        286.06,
+        493.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "* Kaiping Yuan kpyuan@fudan.edu.cn",
+      "translation": "",
+      "bbox": [
+        50.39,
+        501.66,
+        141.89,
+        524.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "* Ming Wang wang_ming@fudan.edu.cn",
+      "translation": "",
+      "bbox": [
+        50.39,
+        526.69,
+        156.82,
+        549.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 1,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": "* Bo Fang bofang@polyu.edu.hk",
+      "translation": "",
+      "bbox": [
+        50.39,
+        551.71,
+        140.61,
+        574.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 1,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "* Xiaoming Tao xiao-ming.tao@polyu.edu.hk",
+      "translation": "",
+      "bbox": [
+        50.39,
+        576.73,
+        164.77,
+        599.56
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 1,
+      "type": "paragraph",
+      "order": 14,
+      "original_text": "1 School of Fashion and Textiles, Research Institute for Intelligent Wearable Systems, The Hong Kong Polytechnic University, Hong Kong 999077, China",
+      "translation": "",
+      "bbox": [
+        51.02,
+        606.03,
+        239.71,
+        639.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 1,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "2 State Key Laboratory of Integrated Chips and Systems, College of Integrated Circuits and Micro‑Nano Electronics, Frontier Institute of Chip and System, Fudan University, Shanghai 200433, China",
+      "translation": "",
+      "bbox": [
+        51.02,
+        641.06,
+        269.3,
+        684.67
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 1,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": "Organic semiconductors (OSCs), leveraging their inherent flexibility and mixed ionic-electronic conductivity, overcome the limitations of conventional silicon-based electronics in flexible integration and bio-interfacial sensing [1–3]. Organic electrochemical transistors (OECTs), as representatives of ionic devices, have become critical components for next-generation wearable and implantable medical devices [4, 5], benefiting from their ease of fabrication [6–8], low operating voltage [9], and high transconductance [10]. During operation, the gate voltage drives ions into the semiconductor channel, significantly changing its doping level and achieving modulation of channel conductivity. Therefore, the aggregate structure of the semiconductor directly affects the ion dynamics of the channel, controlling the switching and signal amplification functions of OECTs [11–14]. The biggest challenge of OECTs is matching the dynamics of charge carrier transport with ion transport in the channel,",
+      "translation": "",
+      "bbox": [
+        306.14,
+        486.5,
+        546.97,
+        701.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 1,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "3 State Key Laboratory of Advanced Fiber Materials, College of Materials Science and Engineering, Donghua University, Shanghai 201620, China",
+      "translation": "",
+      "bbox": [
+        51.02,
+        686.09,
+        270.78,
+        719.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 1,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": "Vol.:(0123456789)",
+      "translation": "",
+      "bbox": [
+        485.48,
+        737.97,
+        540.67,
+        746.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 2,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        544.25,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 2,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": "a tensile stress exceeding 680 MPa. Importantly, the ultralow Warburg coefficient (σ) (1299.4 Ω·s−1/2) demonstrates that the island structure significantly enhances ion dynamics in PEDOT fibers. The OECT device constructed from the PEDOT fiber has an Ion/off ratio up to 9.2 × 103 and retains 98% of its response after 3300 cycles. In addition, the OECT device exhibits excellent short-term synaptic plasticity and high responses to nine gases. Furthermore, inspired by the human olfactory system, we constructed an OECT sensor array with four functionalized gates for capturing gas signals. Assisted by a CNN algorithm, the OECT sensor array achieves precise identification among five gases, with an accuracy up to 97.9%.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        54.15,
+        546.88,
+        219.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 2,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "2 \u0007Results and Discussion",
+      "translation": "",
+      "bbox": [
+        306.14,
+        240.01,
+        439.7,
+        254.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 2,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": "2.1 \u0007Preparation of Island PEDOT Fiber",
+      "translation": "",
+      "bbox": [
+        306.14,
+        267.05,
+        479.98,
+        279.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 2,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "which is essential for realizing high fidelity, drift-free ion signal transduction. In recent years, to fully exploit the potential of OECTs, substantial research efforts have been made to the structure engineering of the OSC channel. The highly anisotropic crystallization of conducting polymers has been proved to impart exceptional performances to devices [15], such as large transconductance (approximately 20 mS), high volumetric capacitance (113 F cm−3), and remarkable μC* value (approximately 490 F cm−1 V−1 s−1). This establishes a paradigm for linking channel microstructure with the performance of devices. Poly(3,4-ethylenedioxythiophene):po ly(styrenesulfonate) (PEDOT:PSS) channels with different pore structures can endow the OECT array with tunable ion dynamics [16], enabling the collection and decoupling of distinct sweat biomarkers. A lateral intercalation-assisted ion transport strategy introduces a striped microstructure into the P3HT channel to assist the rapid charging of volume ions, achieving a transconductance of up to 16.2 mS [17]. These results display the critical role of uniform channel in optimizing device performance. In addition, engineered interface of ion gel enables massive ion injection into the channel layer, leading to a four order of magnitude enhancement in transconductance and a two order of magnitude improvement in overall performance [18]. These results have emphasized the key role of structural engineering in boosting the performance of OECT. However, the molecular scale packing of chain segments in OSCs is difficult to control, due to the lack of forces to induce their motion during assembly. Furthermore, the intrinsic mixed ionic–electronic coupling properties of OECTs closely emulate the signaling mechanisms of biological systems, making them a highly promising platform for artificial synaptic devices [19, 20]. In OECT-based synapses, synaptic plasticity can be achieved by electrochemically modulating channel conductance through doping and de-doping. This behavior advances OECTs from passive sensing elements to adaptive, synapselike components in neuromorphic circuits [21]. Moreover, deep learning models such as convolutional neural network (CNNs) [22] and Transformers have been employed to effectively decouple complex signals, enabling applications in sweat monitoring and olfactory recognition [23]. Herein, we present an in situ crosslinking strategy for wet-spinning PEDOT:PSS fibers with dispersed islands with an average size of approximately 9.11 nm. The intrinsic shear force during spinning induces a pre-alignment of PEDOT:PSS chains, while good solvent exchange [24] provides sufficient chain mobility for rearrangement during crosslinking with (3-Glycidyloxypropyl) trimethoxysilane (GOPS). Benefiting from the island structure and PSS crosslinked network within the fiber, the island PEDOT fiber achieves a high conductivity of 524.07 S cm−1 and",
+      "translation": "",
+      "bbox": [
+        51.02,
+        54.15,
+        291.81,
+        719.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 2,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "The island PEDOT fibers were fabricated by a progressive wet-spinning method (Figs. 1a and S1, Supporting Information). Commercial PEDOT:PSS aqueous solutions were doped with ethylene glycol (EG) and GOPS as the spinning dopes. Among them, EG could weaken the interactions between PEDOT and PSS chains and enhance their motion freedom [25], while GOPS worked as the crosslinking agents during the followed fiber-formation process. When undergoing strong shear flow through the thin channel of approximately 250 μm, the slightly disassociated PEDOT and PSS chains occurred pre-alignment along the axis direction. We used ethanol, a good solvent of PEDOT:PSS, as the coagulation bath to form gel protofibers. Different from frequently used rapid solvent–nonsolvent exchange process, the mild good solvent exchange between water and ethanol retards chain aggregations and partially preserves the chain freedom in the formed gel protofibers. To create islands in finalized fiber products, the gel protofibers were treated at a temperature of 90 °C, which provided the thermodynamic driving force for the ring opening of the GOPS epoxy group [26]. The immediate heating enabled dispersed GOPS to crosslink PSS chains in seconds, while the surrounding PEDOT chains were packed into island crystals by the π–π stacking. In contrast to the fabrication of condensed PEDOT fiber, the combination of simultaneous removal of solvent and in situ crosslinking avoids severe phase separation and effectively controls the crystallization kinetics of PEDOT, thereby forming islands within the PEDOT fiber. The island structures within the PEDOT fiber were analyzed and confirmed using multiple methods. A series of Transmission Electron Microscopy (TEM) images show that PEDOT with an average size of 9.11 nm is uniformly dispersed in the PSS chains (Figs. 1b and S4, Supporting",
+      "translation": "",
+      "bbox": [
+        306.14,
+        291.65,
+        546.91,
+        719.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 3,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        134.66,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 3,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": "island. The amorphous region (PSS-rich) and the crystalline region (PEDOT-rich) formed by π-π stacking are clearly visible. d WAXS analysis of Island PEDOT fibers. e Box plots of the error ranges for the conductivity and tensile stress of island PEDOT fibers. The twopoint method was used to test the conductivity of PEDOT fibers [27]. Corresponding current–voltage (I-V) curves and fiber diameter information are detailed in Figs. S6 and S7, Supporting Information. f Comparison of conductivity and tensile stress between island PEDOT fibers and other PEDOT fibers",
+      "translation": "",
+      "bbox": [
+        306.14,
+        535.73,
+        546.42,
+        628.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 3,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "Fig. 1 Fabrication and structural characterization of island PEDOT Fibers. a Schematic of the fabrication of island PEDOT fibers through a progressive wet-spinning process. It focuses on the process of forming an island structure of PEDOT and PSS chains when heated. b TEM image of PEDOT islands and statistical distribution of their sizes. The TEM image below is colorized and the blue regions correspond to PEDOT islands. The sizes of 30 PEDOT islands were randomly measured. The error bar box plot shows that the interquartile range (IQR) of the 30 datasets is 3, which constitutes 36% of the median value (8.3). c HR-TEM image of the PEDOT",
+      "translation": "",
+      "bbox": [
+        51.02,
+        535.76,
+        291.28,
+        639.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 3,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "Information). The error box plot shows that the interquartile range (IQR) of the 30 PEDOT island sizes is 3, 36% of the median (8.3), reflecting the small size differences between these PEDOT islands. The high-resolution TEM (HR-TEM) image in Fig. 1c further analyzes the lattice structure of the",
+      "translation": "",
+      "bbox": [
+        51.02,
+        654.05,
+        291.81,
+        719.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 3,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "PEDOT islands, and the crystal plane spacing of 3.46 Å confirms the in-plane π–π stacking. Wide angle X-ray diffraction (WAXS) further confirms the conformational changes within the fibers (Figs. 1d and S5, Supporting Information). The characteristic peaks at q = 0.5 Å−1, q = 1.2 Å−1, and q = 1.8",
+      "translation": "",
+      "bbox": [
+        306.14,
+        654.05,
+        546.91,
+        719.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 4,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        544.25,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 4,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "between the ion diffusion coefficient (D) and σ is commonly described by the following Eq. (1):",
+      "translation": "",
+      "bbox": [
+        306.14,
+        54.15,
+        546.7,
+        81.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 4,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "D = R2T2",
+      "translation": "",
+      "bbox": [
+        306.22,
+        87.27,
+        364.43,
+        104.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 4,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "2A2n2F4C2휎2",
+      "translation": "",
+      "bbox": [
+        327.04,
+        100.9,
+        381.87,
+        111.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 4,
+      "type": "paragraph",
+      "order": 34,
+      "original_text": "Here, R is the ideal gas constant (8.314 J·mol−1·K−1), T is the absolute temperature (K), A is the electrode area (cm2), n is the number of electrons transferred per molecule in the reaction, F ia the Faraday constant (96,485 C·mol−1), and C is the bulk concentration of mobile ions in the electrode material (mol·cm−3). We strictly controlled the experimental conditions in the experiment, such as the same temperature, electrode area, and electrolyte concentration, so Eq. (1) can be simplified to Eq. (2):",
+      "translation": "",
+      "bbox": [
+        306.14,
+        118.56,
+        546.89,
+        234.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 4,
+      "type": "paragraph",
+      "order": 35,
+      "original_text": "D ∝1",
+      "translation": "",
+      "bbox": [
+        306.22,
+        239.18,
+        334.49,
+        255.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 4,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "Å−1 correspond to the alternating stacking of PSS chains and PEDOT, the PSS chains, and the π–π stacking of PEDOT, respectively. Due to the synergistic effect of strong shearing and in situ crosslinking, the distance between PEDOT and the highly oriented PSS chains (Herman’s orientation factor of 0.76) is only 12.6, which corresponds to the “Type II” [28]. The highly dense arrangement of PSS and PEDOT eases charge transport [29], achieving conductivity as high as 524.07 S cm−1 in six batches of island PEDOT fibers (Figs. 1e and S7, Supporting Information). The high crystallinity and PSS crosslinked network also endow the island PEDOT fiber with an ultra-high tensile stress (680.21 ± 20.33 MPa) and strain (25.76 ± 5.36%). Compared with previously reported PEDOT fibers, the island PEDOT fibers perform well in conductivity and tensile strength [30–36] (Fig. 1f and Table S1, Supporting Information).",
+      "translation": "",
+      "bbox": [
+        51.0,
+        53.21,
+        291.77,
+        257.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 4,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "휎2",
+      "translation": "",
+      "bbox": [
+        327.05,
+        252.37,
+        336.43,
+        262.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 4,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "2.2 \u0007Fabrication of the OECT and Electrical Characterization",
+      "translation": "",
+      "bbox": [
+        51.02,
+        279.54,
+        243.27,
+        304.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 4,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": "In this situation, σ serves as a key parameter for evaluating differences in ion dynamics among PEDOT fibers. The graphical method and the equivalent circuit method were used to perform qualitative and quantitative analyses of σ. The graphical method was used to fit the real part (Z’) of the Warburg region and the square root of the frequency (ω−1/2), and obtained two straight lines with slopes of 2522.68 (Island PEDOT fiber) and 10,146.18 (condensed PEDOT fiber), respectively (Fig. S8d, Supporting Information). Here, the slope of the fitted straight line is proportional to σ. The result shows that island PEDOT fibers with higher D have faster ion transport dynamics than condensed PEDOT fibers. Furthermore, as shown in Fig. S8e of the Supporting Information and Fig. 2b, we established a mixed conduction equivalent circuit model and performed a global fitting of the Nyquist plot, thereby accurately obtaining the σ values of the island PEDOT fibers (1299.4 Ω·s−1/2) and the condensed PEDOT fibers (2443.2 Ω·s−1/2). Based on the conversion using Eq. (2), the ionic diffusion coefficient of the island PEDOT fibers is more than three times higher than that of the condensed PEDOT fibers. The higher ionic diffusion coefficient of the island PEDOT fibers allows more ions to intercalate into the fibers, leading to the de-doping of PEDOT and an ultra-low off-state current. The response to a single impulse in Fig. 2c reveals the ion transport dynamics in the OECT device fabricated from the two fibers. The response time (τ) of the OECT device is defined as the time it takes for the IDS to change from 10 to 90% of its initial value. The OECT fabricated from the condensed PEDOT fiber has a response time (τ1) of 22 s, while that fabricated from the island PEDOT fiber has a response time (τ2) of only 13 s. The transfer curve in Fig. 2d shows that the island PEDOT fiber-based OECT exhibits a minimum IDS of merely 280 nA, with a current on–off (Ion/off) ratio (9.2 × 103) far exceeding that of the",
+      "translation": "",
+      "bbox": [
+        306.14,
+        270.75,
+        546.88,
+        711.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 4,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "In contrast to the condensed PEDOT channel, the island structure facilitates the efficient ion transport and improves operational stability. To demonstrate its advantages, we constructed an all-solid-state OECT with an island PEDOT fiber as the channel, using polyvinylidene fluoride (PVDF) as the solid-state electrolyte (SSE) containing 1-ethyl-3-methylimidazolium bis(trifluoromethanesulfonyl)imide (EMIM:TFSI), and a carbon cloth as the gate electrode (Fig. 2a). When a pulsed voltage (VG) is applied to the gate, it drives the intercalation of EMIM+ ions into the island PEDOT fiber, altering the doping state of PEDOT and thereby modulating the channel resistance. Compared to an OECT based on a condensed PEDOT fiber, the island-structured OECT exhibits significantly enhanced ion transport ability. In the condensed structure, ion insertion along PSS chains is hindered by densely packed microstructures. In contrast, the uniformly dispersed PSS chains within the island PEDOT fiber create more accessible ion pathways, enabling faster and more efficient ion migration. The differences in ion transport dynamics between the condensed PEDOT fibers and the island PEDOT fibers were characterized through electrochemical testing. We first verified that the island PEDOT fibers exhibited a predominantly diffusion-controlled reaction mechanism by a cyclic voltammetry test (Fig. S8, Supporting Information and detailed calculation and analysis are provided in the Note S1, Supporting Information). As shown in the Nyquist plot in Figs. 2b and S8b, Supporting Information, the Warburg region of island PEDOT fibers appears at higher frequencies and has a bigger slope, which shows that island PEDOT fibers have a lower ion diffusion resistance than condensed PEDOT fibers. Importantly, in the Warburg region, the relationship",
+      "translation": "",
+      "bbox": [
+        51.02,
+        316.65,
+        291.78,
+        719.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 5,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        134.66,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 5,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": "son of Ion/off ratio for PEDOT fibrous ion devices and other devices. f Cycling stability of the OECT with 3300 cycles. g The left and right panels illustrate a biological synapse and an artificial synapse, respectively. The gate electrode serves as the presynapse, the island PEDOT fiber acts as the postsynapse, and the ion transport within the SSE reflects the release of neurotransmitters. h Responses triggered by four consecutive VG pulses (width 2 s, interval 3 s) of the artificial synapse based on the OECT. i PPF index of the artificial synapse based on the OECT under various pulse intervals. The inset defines PPF index",
+      "translation": "",
+      "bbox": [
+        306.14,
+        621.77,
+        546.41,
+        724.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 5,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "Fig. 2 Construction and electrical performance of the OECT based on island PEDOT fibers. a Schematic of the OECT structure and the ion transport paths during the switching of the OECT. b Nyquist plots of the condensed PEDOT fiber and the island PEDOT fiber (lower panel) and the σ was extracted through equivalent circuit fitting (upper panel). The inset shows a magnified view of the highfrequency region. c Single impulse response analysis of OECTs constructed from the condensed PEDOT fiber and the island PEDOT fiber. d Transfer characteristic curve of OECTs constructed from the condensed PEDOT fiber and the island PEDOT fiber. e Compari-",
+      "translation": "",
+      "bbox": [
+        51.02,
+        621.8,
+        291.27,
+        725.15
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 6,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        544.25,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 6,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "cloth to serve as the gate electrode. Initially, a constant VG (1.5 V) is applied, and the IDS is read as the baseline. Based on the series architecture of OECT devices, VG can be decomposed into V1 (the voltage at rGO-AA) and V2 (the voltage at the electrolyte), and satisfies the following Eq. (3):",
+      "translation": "",
+      "bbox": [
+        306.13,
+        54.15,
+        546.76,
+        131.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 6,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "V2 = VG −V1",
+      "translation": "",
+      "bbox": [
+        305.38,
+        136.16,
+        360.47,
+        149.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 6,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "condensed PEDOT fiber-based device (3 × 102). Figure 2e and Table S2 of the Supporting Information show that the island PEDOT fiber-based OECT exhibits the highest Ion/off ratio among all reported PEDOT fiber-base devices [15, 16, 37–48]. The OECT device maintained a ΔIDS of 98% after 3300 operating cycles at a VG of 0.4 V (Fig. 2f). This excellent cyclic stability is attributed to the crosslinked network within the island PEDOT fibers, forming a robust foundation for deploying such OECT sensors in complex environments. Furthermore, this OECT also functions as an artificial synapse, in which the island PEDOT fiber serves as the postsynapse and the gate electrode acts as the presynapse (Fig. 2g). The Ion/off ratio reflects the modulation of ion transport in the channel by the VG, which is the basis for synaptic weight modulation in artificial synapses. We further explored the synaptic characteristics using the current response of OECT channel under different VG pulses (Figs. 2h, i and S9, Supporting Information). Here, VG pulses play the role of presynaptic electrical signal changes. When the VG pulse of fixed width (1.5 s) gradually increases (0.1–0.5 V), the IDS increases from 10 μA to 70 μA, and the recovery time increases from 2.5 s to 6.5 s, showing obvious short-term plasticity (STP) (Fig. S9a, Supporting Information). As shown in Fig. 2h, IDS increases progressively under four consecutive VG pulses (width 2 s, interval 3 s) and shows consistent behavior after five cycles. This displays the reliable STP of the artificial synapse based on island PEDOT fibers. We simulated the PPF behavior through two consecutive VG pulses (width 1 s, interval 0.5–4 s). When the interval is 0.5 s, the IDS triggered by the second VG pulse (40 μA) is significantly larger than the IDS triggered by the first VG pulse (26 μA), which is the typical PPF behavior. When the interval is increased to 4 s, the IDS triggered by two VG pulses are 26 μA and 27 μA, respectively, indicating the dependence of the PPF behavior on the pulse interval. This dependence can be visualized using the PPF index, which is defined as the ratio of the ΔIDS triggered by the second pulse to that triggered by the first pulse (Fig. 2i). When the time interval increased to 4s, the PPF index still maintained 101.4%.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        53.21,
+        291.84,
+        556.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 6,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": "2.3 \u0007OECT for Gas Sensing",
+      "translation": "",
+      "bbox": [
+        51.02,
+        567.04,
+        167.23,
+        579.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 6,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "When adsorption occurs, gas molecules change the resistance of rGO-AA by adjusting its charge distribution, thereby changing V2. At this time, the actual voltage V1’ at the electrolyte will also change accordingly and is strictly related to the type and concentration of the gas. This process enables real-time conversion of gas molecules from chemical signals to electrical signals. The advantage of the OECT sensor in multi‑gas response was first verified by comparing the OECT sensor with the chemiresistive sensor. Here, the chemiresistive sensor uses rGO-AA as the sensing material directly. Hydrogen sulfide (H2S) is a highly toxic gas which, even at low concentrations (25 ppm), can cause symptoms including headache, dizziness, nausea, and coughing [51]. Thus, we focused on comparing the response of chemiresistive sensor and the OECT sensor to different concentrations of H2S (1–40 ppm) (Fig. 3b). Due to the unique amplification function of OECT devices, the response of the OECT sensor to 40 ppm H2S (ΔIDS = 344 μA) is 10 times that of chemiresistive sensor (ΔIDS = 37 μA). The OECT sensor also showed higher response than chemiresistive sensor in tests with eight other gases (ammonia (NH3), methane (CH4), nitric oxide (NO), nitrogen dioxide (NO2), ethanol (C2H5OH), formaldehyde (CH2O), acetic acid (CH3COOH), and isoprene (C5H8)) (Figs. S11 and S12, Supporting Information). Other gases except H2S and C2H5OH respond more than 30μA, but all gases are within 1Detectable at ppm. Such sensitivity is crucial to provide early warning of trace amounts of harmful gases. The OECT sensor constructed of island PEDOT fibers achieves lowest tested concentration (1 ppm) for nine gases, which has obvious advantages among gas sensors of the same type (Fig. 3c and Table S3, Supporting Information) [52–66]. Furthermore, the OECT sensor retains its characteristic synaptic function in the gas environment. We applied three consecutive H2S pulses (a pulse width of 120 s and a pulse interval of 120 s) to the OECT sensor to display its PPF behavior in a gas environment (Fig. 3d). At 40 ppm H2S, the responses triggered by three consecutive gas pulses are 150 μA, 200 μA, and 250 μA, respectively. At 1 ppm, the responses are 16 μA, 33 μA, and 48 μA, respectively. Additionally, we exposed the OECT sensor to 40 ppm H2S for 1, 2, 3, 4, and 5 min, respectively.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        157.0,
+        546.9,
+        710.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 6,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "Olfactory damage is continuously evoking public awareness of olfactory health [49], promoting the development of biomimetic olfactory systems and peripheral devices [23, 46], specially the devices with integrated sensing and computing capabilities [50]. Efficient gas sensing is the primary function of olfactory synapses, and thus we studied the potential of mimicking natural olfaction by investigating gas sensitivity. As shown in Figs. 3a and S10a of the Supporting Information, we used ascorbic acid-reduced graphene oxide (rGO-AA) instead of carbon",
+      "translation": "",
+      "bbox": [
+        51.01,
+        591.65,
+        291.77,
+        719.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 7,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        134.66,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 7,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "of 120 s and a pulse interval of 120 s. e Responses of the OECT sensor exposed to three gases (H2S, NO, and C2H5OH) with different concentration (1, 5, 10, 20, 40 ppm). f Responses of the OECT sensor triggered by 10 consecutive gas pulses (40 ppm H2S, NO, and C2H5OH)",
+      "translation": "",
+      "bbox": [
+        306.14,
+        499.01,
+        546.38,
+        553.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 7,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "Fig. 3 Gas sensing performance of the OECT sensors. a Schematic of the operating mechanism of the OECT sensors. b Responses of the OECT sensor and the chemiresistive sensor exposed to H2S (1, 5, 10, 20, 40 ppm). c Comparison of detection limit of the OECT sensor and the other reported gas sensors. d PPF behavior triggered by three consecutive 1 ppm and 40 ppm H2S pulses with a pulse width",
+      "translation": "",
+      "bbox": [
+        51.02,
+        499.01,
+        291.26,
+        563.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 7,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "gas sensitivity testing, 4000 cycle pulse tests were conducted on the device. The OECT device maintained a ΔIDS of 99% after operating 4000 cycles at a VG of 0.4 V, demonstrating its cycle reliability in complex environments.",
+      "translation": "",
+      "bbox": [
+        306.13,
+        579.05,
+        546.75,
+        631.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 7,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "2.4 \u0007Construction of Artificial Olfactory Receptor",
+      "translation": "",
+      "bbox": [
+        306.14,
+        641.95,
+        525.55,
+        654.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 7,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": "The response progressively increased from 46 μA to 617 μA, demonstrating that the OECT sensor can effectively memorize the gas stimulus (Fig. S13, Supporting Information). As shown in Fig. 3e, we applied gas pulses with progressively increasing concentrations (1, 5, 10, 20, 40 ppm) to the OECT sensor, achieving gradually enhanced responses across three different gases (H2S, NO, and C2H5OH). At the same time, in both dry and 40% humidity environments, the OECT sensor achieved nearly consistent responses when triggered by continuous gas pulses (Figs. 3f, S14 and S15, Supporting Information). After the",
+      "translation": "",
+      "bbox": [
+        51.02,
+        579.05,
+        291.79,
+        719.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 7,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "Olfactory perception originates in the olfactory epithelium, which is primarily composed of olfactory neurons, supporting cells, and basal cells (Fig. 4a) [67, 68]. Here, each olfactory neuron expresses only one type of receptor that",
+      "translation": "",
+      "bbox": [
+        306.14,
+        666.55,
+        546.79,
+        719.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 8,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        544.25,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 8,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "H2S, NO, C2H5OH, and CH3COOH) on PEDOT, rGO‑H, rGO‑AA, and MXene surfaces calculated by DFT. c–f The summary bar charts of Ead for gases on different materials. The red five-point star marks the two gases with the largest difference in Ead",
+      "translation": "",
+      "bbox": [
+        306.14,
+        561.2,
+        546.38,
+        604.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 8,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "Fig. 4 Fabrication and characterization of functionalized gates. a Schematic of the human olfactory system. Dark-red circles mark the complete signal transduction pathway from the peripheral olfactory apparatus (left) to the brain (right). b Ead of various gases (CH2O,",
+      "translation": "",
+      "bbox": [
+        51.02,
+        560.93,
+        291.28,
+        604.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 8,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "specifically binds to odorant molecules and transmits action potentials to the olfactory glomerulus, thereby completing the collection, conversion, and initial transmission of gas signals. Thus, olfactory receptors serve as the key role for converting chemical signals into electrophysiological signals and represent the logical starting point of olfactory encoding.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        629.05,
+        291.82,
+        719.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 8,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "To simulate the adsorption of gas molecules by different olfactory receptors, we prepared a series of materials with varied surface chemistries, thermally reduced graphene oxide (rGO-H), ascorbic acid-reduced graphene oxide (rGO-AA), PEDOT, and MXene (Fig. S17, Supporting Information). In traditional resistive gas sensors [50], twodimensional materials, such as MXene and rGO, have been",
+      "translation": "",
+      "bbox": [
+        306.14,
+        629.05,
+        546.89,
+        719.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 9,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        134.66,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 9,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": "proven to convert chemical signals of gases into electrical signals. The conversion primarily relies on the physical and chemical interactions between the gas molecules and the abundant functional groups (–OH, –O, etc.) on its surface. We first quantified the functional group composition of rGOH, rGO-AA, and MXene by X-ray photoelectron spectroscopy (XPS). Among them, rGO-H contains 2.86% –OH and 2.86% –COOH; rGO-AA contains 11.43% –OH and 2.86% –COOH. The end group ratio of –O and –F in MXene is 1:1. The distinct intrinsic structures are the basis for differential sensing of gases. We further calculated and compared the adsorption energy (Ead) of four materials for five gas molecules (CH2O, H2S, NO, C2H5OH, and CH3COOH) using density functional theory (DFT) (Figs. 4b and S18, S19, S20, S21, and Table S4, Supporting Information). In Fig. 4c–f, we summarize all results and mark the two gas molecules with the largest Ead difference for each material using red fivepointed stars. The two gases with the largest difference in adsorption energy on PEDOT are NO and CH3COOH, with Ead of 0.22 eV and −0.35 eV, respectively. The two gases with the largest difference in adsorption energy on rGO-H are NO and C2H5OH, with Ead of −0.06 eV and −0.52 eV, respectively; The two gases with the largest difference in adsorption energy on rGO-AA are NO and CH3COOH, with Ead of 0.04 eV and −0.78 eV, respectively; The two gases with the largest difference in adsorption energy on MXene are CH2O and CH3COOH, with Ead of 0.07 eV and −0.35 eV, respectively. These adsorption energy differences are functionally equivalent to the specific responses of olfactory receptors to gases, which is key to enabling the OECT sensor to recognize complex gas signals.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        54.15,
+        291.81,
+        444.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 9,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "2.5 \u0007Machine Learning‑Assisted OECT Sensor Arrays for Gas Identification",
+      "translation": "",
+      "bbox": [
+        51.02,
+        454.54,
+        286.31,
+        479.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 9,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "(I–t) curve and decouple them via algorithm models, achieving gas identification. First, we verified the ability of the OECT sensor array to differentially capture the characteristic current signals of five gas molecules (CH2O, H2S, NO, C2H5OH, and CH3COOH). We applied 100 gas pulses (40 ppm, pulse width 120 s, pulse interval 240 s), generating a dataset of 500 measurements. We used one measurement result of H2S as an example to demonstrate the extraction of gas fingerprint from current signals (Fig. S23, Supporting Information). In one measurement, the OECT sensor array can obtain four different sets of I–t curves. We extracted 20 discrete data points at equal time intervals from each curve, resulting in a total of 80 points. These points were then mapped to a fingerprint pattern representing H2S for training the algorithmic model (Fig. 5b). For each gas, we randomly selected 6 out of 100 data groups to display its gas fingerprint pattern (Figs. S24, S25, S26, S27, and S28, Supporting Information). A simple CNN algorithm was used to analyze the gas fingerprint data, which consisted of one convolutional layer, one max‑pooling layer, and one fully connected layer (Fig. 5c). We used stratified random division, 80% training (400 samples), 20% testing (100 samples). At the same time, 20% were randomly selected from the training set as the validation set (80 samples) for early stopping and hyperparameter tuning. After the 20th epoch, the accuracy for both training and validation data converged to a maximum (Fig. S29a, Supporting Information). We validated the classification capability of CNN algorithm for gas signals via five independently running models. The training accuracy is 98.98%, 96.9%, 95.9%, 100%, and 97.9% respectively. The average accuracy is 97.9%. This result shows that the model has good robustness (Figs. 5d and S30). Finally, we employed Shapley Additive explanations (SHAP) to evaluate the specific contribution of each OECT sensor in the OECT sensor array (Figs. 5e and S29b, c, Supporting Information). The difference in adsorption energy among the materials and gases accounts for differential responses of each OECT sensor for different gases. These results indicate that the OECT sensor array, assisted by intelligent algorithms, can effectively capture and decouple information from different gases, enabling precise discrimination of complex gas signals.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        54.15,
+        546.88,
+        581.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 9,
+      "type": "paragraph",
+      "order": 67,
+      "original_text": "3 \u0007Conclusion",
+      "translation": "",
+      "bbox": [
+        306.14,
+        602.51,
+        377.83,
+        617.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 9,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "Various olfactory receptors project to distinct glomerular in the olfactory bulb, accomplishing initial signal encoding, which serves as the first station for the brain’s processing of olfactory information [69]. We constructed a flexible OECT sensor array using PEDOT, rGO-H, rGO-AA and MXene as the gate to simulate how diverse glomerulus encode gas signals (Fig. 5a). We referred to some reported benchmarks and used ergo 8008 model encapsulant for all devices to ensure safety at human contact [70, 71]. We first applied continuous VG (0.1 V step−1) to each OECT sensor, then determined the optimal operating VG of each OECT through changes in IDS (1.5–2.2 V, 1.8–2.5 V, 1.1–1.8 V, 1.3–1.8 V), and took their intersection (1.8 V) as the VG of the OECT sensor array (Fig. S22, Supporting Information). When the OECT sensor array was exposed to gas, PEDOT, rGO-H, rGO-AA, and MXene formed different VG pulses and resulted in different current responses due to differences in adsorption behavior. We capture the response signals of gases through the current–time",
+      "translation": "",
+      "bbox": [
+        51.02,
+        491.65,
+        291.72,
+        719.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 9,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "In this study, we fabricated island PEDOT fibers by a progressive wet-spinning method, achieving an ultra-low Warburg coefficient (1299.4 Ω·s−1/2). The OECT sensor constructed thus not only has a high Ion/off ratio (9.2 × 103) and excellent stability (over 3300 cycles) but also exhibits obvious STP behaviors. Inspired by the specific expression of olfactory receptors, we designed four gate materials",
+      "translation": "",
+      "bbox": [
+        306.14,
+        629.15,
+        546.93,
+        719.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 10,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        544.25,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 10,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": "tively. c Architecture of the simple CNN algorithm. d Confusion matrix of the test data of five gases, showing an overall recognition accuracy of 97.9%. e Bar charts of individual OECT sensor contributions to the recognition of five gases (the area corresponds to the contribution value)",
+      "translation": "",
+      "bbox": [
+        306.14,
+        452.8,
+        546.41,
+        505.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 10,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "Fig. 5 Construction of the flexible OECT sensor array and gas identification. a Schematic of the process: from construction of a flexible OECT sensor array to gas recognition. b Gas fingerprint of H2S mapped from 80 discrete data points. S1, S2, S3, and S4 represent OECTs with PEDOT, rGO-H, rGO-AA, and MXene gates, respec-",
+      "translation": "",
+      "bbox": [
+        51.02,
+        453.08,
+        291.26,
+        505.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 10,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "4 \u0007Experimental Section",
+      "translation": "",
+      "bbox": [
+        306.14,
+        537.95,
+        433.06,
+        552.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 10,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": "4.1 \u0007Characterizations",
+      "translation": "",
+      "bbox": [
+        306.14,
+        564.98,
+        406.2,
+        577.57
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 10,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "All TEM images were collected on an FEI Talos F200X G2 (Czech Republic). All SEM images were collected on a field-emission SEM system (TESCAN CLARA, Czech Republic). Rheological measurements of the PEDOT:PSS spinning dope were carried out on an Anton Paar Modular Compact Rheometer (MCR 302, Austria) at Donghua University. FTIR spectra were acquired in the range of 800–4000 cm−1 on a Thermo Scientific Nicolet iS50 spectrometer (USA). All the electrochemical tests were",
+      "translation": "",
+      "bbox": [
+        306.14,
+        589.59,
+        546.89,
+        704.68
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 10,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "with different functional groups and validated their differential gas adsorption capabilities using DFT. Finally, we constructed a flexible OECT sensor array using these four gates and island PEDOT fibers. Coupled with a simple CNN algorithm, the OECT sensor array achieved 97.9% recognition accuracy for five gases. This work organically combines microstructure engineering, neuromorphic device architecture, and machine learning to establish a paradigm for bio-inspired sensing devices. Future work will focus on extending this spinning method to more conducting polymers and expanding the library of functional gate materials, thereby further promoting the role of ionic devices in transformative biomedical applications.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        538.12,
+        291.72,
+        715.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 11,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        134.66,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 11,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "4.4 \u0007Fabrication of Circuit",
+      "translation": "",
+      "bbox": [
+        306.14,
+        55.34,
+        420.98,
+        67.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 11,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": "processed on an electrochemical workstation (CHI 660E, China). The pulse characteristic curve, transfer characteristic curves, and output characteristic curves of individual OECT were measured by a micromanipulator probe station integrated with a semiconductor analyzer (Keysight B1500A, USA). Gases at different concentrations are provided via the AlyTech GasMix dynamic gas mixing platform (France) at Fudan University. The steam generator (FD-HG, China) is provided by Fudan University.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        54.15,
+        291.81,
+        169.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 11,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "4.2 \u0007Fabrication of the Island PEDOT Fibers",
+      "translation": "",
+      "bbox": [
+        51.02,
+        192.04,
+        244.03,
+        204.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 11,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "First, as shown in Fig. S10b of the Supporting Information, a circuit structure was designed: the gate area measures 700 × 800 μm2, and the channel length is 600 μm. And then, circuits were fabricated using a photolithographybased process on SiO2/Si substrates. AZ5214 photoresist was spin-coated at 4000 r min−1, soft-baked at 100 °C for 2 min and patterned via laser direct writing lithography. Following development in AZ300 for 60 s, the substrates were rinsed with deionized water and dried with nitrogen. A Cr (5 nm)/Au (70 nm) bilayer was deposited using electron beam evaporation and patterned via a lift-off process.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        79.94,
+        546.87,
+        220.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 11,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "4.5 \u0007Fabrication of an All‑Solid‑State OECT Sensor",
+      "translation": "",
+      "bbox": [
+        306.14,
+        242.84,
+        530.11,
+        255.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 11,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": "Aqueous PEDOT:PSS dispersion (Clevios™ PH 1000, Heraeus) was concentrated by stirring in a water bath at 40 °C for 10 h. Subsequently, 3 vol % EG (Sigma-Aldrich), 1.5 vol % GOPS (Sigma-Aldrich), and 10 μL dodecyl benzenesulfonic acid (Sigma-Aldrich) were added, and stirring continued for another 2 h. Here, dodecyl benzenesulfonic acid can increase the stability of the overall formula of the crosslinking agent and PEDOT:PSS aqueous solution, and it can also speed up the hydrolysis rate of GOPS. Figures S1 and S2 of the Supporting Information illustrate the reaction related to GOPS and the change in the rheological properties of the PEDOT:PSS spinning dope. Following this, the PEDOT:PSS spinning dope was extruded at a rate of 20 μL min−1 into an ethanol coagulation bath through a polyether ether ketone (PEEK) microtubule with an inner diameter of 250 μm. After the coagulation bath, the PEDOT:PSS protofiber was heated at 100 °C for 30 s and then collected onto a high-temperature-resistant borosilicate glass tube with an outer diameter of 10 mm. Finally, the island PEDOT fibers were treated with concentrated sulfuric acid for 15 min. The condensed PEDOT fibers were prepared following the same procedure as above, but from a pure PEDOT:PSS dope (without GOPS).",
+      "translation": "",
+      "bbox": [
+        51.02,
+        216.65,
+        291.8,
+        506.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 11,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "The OECT sensor was constructed from three components: the functionalized gate, the solid-state electrolyte containing the ionic liquid, and the PEDOT fiber. A total of five gate materials were used in this study: carbon cloth, PEDOT, MXene, rGO-AA, and rGO-H. Both MXene and rGO-AA were prepared according to standard methods reported in the literature [72–74], with a concentration of 0.1 mg mL−1; rGO-H was obtained by directly heating GO at 250 °C for 30 min, also at a concentration of 0.1 mg mL−1. Among these, MXene, rGO-AA, rGO-H, and PEDOT were drop cast onto the gate area of the SiO2/Si substrates (Fig. S10b, Supporting Information) and dried at 80 °C for 20 min. PVDF (2 g) was dissolved in 5 mL of acetone, followed by the addition of 1 mL of EMIM:TFSI to form a gel electrolyte. This gel was subsequently coated onto the PEDOT fiber, covering a length of 500 μm. The fiber was then fixed onto the corresponding area of the SiO2/Si substrate using silver paste and dried at 80 °C for 20 min. Finally, the PEDOT channel section was encapsulated using quick-drying adhesive (ergo).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        267.44,
+        546.93,
+        507.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 11,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "4.3 \u0007Electrochemical Characterization",
+      "translation": "",
+      "bbox": [
+        51.02,
+        529.54,
+        221.34,
+        542.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 11,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "4.6 \u0007Fabrication of a Flexible OECT Sensor Array",
+      "translation": "",
+      "bbox": [
+        306.14,
+        530.34,
+        521.0,
+        542.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 11,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "Electrochemical tests were conducted using a traditional three-electrode configuration. The PEDOT:PSS fiber with a length of 0.5 cm was used as the working electrode, with Ag/AgCl as the reference electrode and a platinum (Pt) plate as the counter electrode. The 0.1 M NaCl solution served as the electrolyte. All electrochemical measurements were performed on an electrochemical workstation (CHI 660E). Specifically, for cyclic voltammetry (CV), the potential was scanned between 0.1 V and 0.8 V at scan rates of 10, 50, 100, 200, 400, and 500 mV s−1. For electrochemical impedance spectroscopy (EIS), measurements were carried out with an amplitude of 5 mV and the range of frequency was 0.01–100000 Hz.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        554.15,
+        291.81,
+        719.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 11,
+      "type": "paragraph",
+      "order": 88,
+      "original_text": "A flexible OECT sensor array was fabricated as follows. First, a 1-cm aramid fiber served as the substrate. Silver paste was used to connect two 5-cm carbon nanotube (CNT) fibers to its ends. Subsequently, PEDOT, MXene, rGO-AA, and rGO-H were dropped cast onto the central region of the aramid fiber and dried at 80 °C for 20 min, ultimately forming a fibrous gate structure with CNT terminals and a central active region. Separately, a 1-cm island PEDOT fiber was prepared, with its ends similarly connected to two CNT fibers. The SSE containing EMIM:TFSI was then drop cast onto the PEDOT fiber to form the fibrous channel. Finally, these two types of fibers were integrated onto cotton fabric in a warp and weft weaving configuration (Fig. 5a).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        554.94,
+        546.83,
+        720.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 12,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        544.25,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 12,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "4.7 \u0007Computational Methods",
+      "translation": "",
+      "bbox": [
+        51.02,
+        55.34,
+        181.6,
+        67.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 12,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "15305423) and the National Natural Science Foundation of China (no. 22303074). The authors are grateful for the SEM technique support of The Hong Kong Polytechnic University Shenzhen Research Institute.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        54.69,
+        546.55,
+        87.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 12,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "Author Contributions Xiaoming Tao, Bo Fang, Ming Wang, and Kaiping Yuan supervised this study. Liang Zhang designed and conducted the main experiments. Dongzi Yang and Liang Zhang carried out the neural network algorithm and gas recognition. Dongzi Yang, Shouwen Zhu, Yingying Huang, Wenjie Xu, Ning Ma, and Zengcai Zhao assisted with the characterization and analysis. Liang Zhang, Dongzi Yang, and Bo Fang wrote the manuscript.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        94.68,
+        546.56,
+        167.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 12,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "Funding Open access funding provided by The Hong Kong Polytechnic University.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        174.66,
+        544.25,
+        197.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 12,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "Data Availability The data that support the findings of this study are available from the corresponding author upon reasonable request.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        204.65,
+        546.39,
+        227.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 12,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "Density functional theory (Vienna Ab-initio Simulation Package) [75] is used to perform structural relaxations with the exchange–correlation functionals of Perdew–Burke–Ernzerhof. The plane wave cutoff energy is set to 450 eV, and the total energy and atomic forces are converged to 10–5 eV and 0.02 eV Å−1, respectively. A Monkhorst–Pack k-sampling with 0.04 Å−1 spacing is used. Addition of a 15 Å thick vacuum slab for ensuring there is no interaction between periodic cells in the out-of-plane direction. DFT-D3 correction is used to account for the van der Waals interaction [76]. The adsorption energy of molecule on the substrate is calculated as Eq. (4):",
+      "translation": "",
+      "bbox": [
+        51.02,
+        79.94,
+        291.67,
+        232.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 12,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "Declarations",
+      "translation": "",
+      "bbox": [
+        306.14,
+        236.05,
+        366.11,
+        248.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 12,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "Eads = Esub+mol −Esub −Emol",
+      "translation": "",
+      "bbox": [
+        51.03,
+        236.95,
+        167.35,
+        249.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 12,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "Conflict of Interest The authors declare no competing interests.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        257.19,
+        521.49,
+        270.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 12,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "where Esub + mol, Esub, and Emol are the total energy of the molecule adsorbed on rGO-H, rGO-AA, PEDOT and Ti3C2OF substrate, and CH2O, H2S, NO, C2H5OH, and CH3COOH molecule, respectively.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        257.99,
+        291.62,
+        311.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 12,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "4.8 \u0007Machine Learning Algorithm",
+      "translation": "",
+      "bbox": [
+        51.02,
+        333.39,
+        201.16,
+        345.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 12,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        277.19,
+        546.5,
+        399.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 12,
+      "type": "heading",
+      "order": 102,
+      "original_text": "References",
+      "translation": "",
+      "bbox": [
+        306.14,
+        430.41,
+        364.99,
+        445.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 12,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "A self-developed Python program based on PyTorch was used for data preprocessing, CNN construction, and model training. Each sample consisted of 80 features extracted from 4 sensors (20 features per sensor). The dataset was randomly shuffled and divided into training (80%) and testing (20%) sets. All features were normalized using min–max scaling and reshaped into a 1 × 4 × 20 tensor as the CNN input. The CNN employed a two-dimensional convolutional layer with a 2 × 1 kernel and 64 filters, followed by batch normalization, ReLU activation, and max-pooling. The extracted feature maps were flattened and connected to a fully connected layer for multi-class classification. Model training was performed using the Adam optimizer with an initial learning rate of 0.001 and a weight decay of 0.002. The batch size and maximum number of epochs were set to 128 and 500, respectively. Classification performance was evaluated using accuracy and confusion matrices. In addition, Shapley Additive explanations (SHAP) based on a gradient explainer were employed to quantify the relative contribution of individual sensors to the classification results. For each sensor, SHAP values of its 20 features were summed to obtain the overall sensor contribution, and the averaged SHAP values across testing samples were used to assess sensor importance for different classes.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        357.99,
+        291.81,
+        660.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 12,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "Supplementary Information The online version contains supplementary material available at https://​doi.​org/​10.​1007/​s42765-​026-​00754-7.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        667.02,
+        289.18,
+        689.85
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 12,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "1. Malliaras G, McCulloch I. Introduction: organic bioelectronics. Chem Rev. 2022;122:4323. 2. Giridharagopal R, Flagg LQ, Harrison JS, Ziffer ME, Onorato J, Luscombe CK, Ginger DS. Electrochemical strain microscopy probes morphology-induced variations in ion uptake and performance in organic electrochemical transistors. Nat Mater. 2017;16:737. 3. Bernards DA, Malliaras GG. Steady-state and transient behavior of organic electrochemical transistors. Adv Funct Mater. 2007;17:3538. 4. Gkoupidenis P, Schaefer N, Garlan B, Malliaras GG. Neuromorphic functions in PEDOT:PSS organic electrochemical transistors. Adv Mater. 2015;27:7176. 5. Huang Y, Hu Z, Zhu S, Fang B. Fibre-based organic electrochemical transistors: principle, evaluation, and application. npj Flex Electron. 2025;9:43. 6. Andersson P, Forchheimer R, Tehrani P, Berggren M. Printable all-organic electrochromic active-matrix displays. Adv Funct Mater. 2007;17:3074. 7. Rothlander T, Hutter PC, Renner E, Gold H, Haase A, Stadlober B. Nanoimprint lithography-structured organic electrochemical transistors and logic circuits. IEEE Trans Electron Devices. 2014;61:1515. 8. Hutter PC, Rothlander T, Scheipl G, Stadlober B. All screenprinted logic gates based on organic electrochemical transistors. IEEE Trans Electron Devices. 2015;62:4231.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        456.08,
+        546.5,
+        719.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 12,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "Acknowledgements The authors are grateful for the financial support of the Research Grants Council of Hong Kong (no. T42-513/24-R,",
+      "translation": "",
+      "bbox": [
+        51.02,
+        697.02,
+        291.37,
+        719.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 13,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        134.66,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 13,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": "9. Rivnay J, Inal S, Salleo A, Owens RM, Berggren M, Malliaras GG. Organic electrochemical transistors. Nat Rev Mater. 2018;3:17086. 10. Braendlein M, Lonjaret T, Leleux P, Badier JM, Malliaras GG. Voltage amplifier based on organic electrochemical transistor. Adv Sci. 2016;4:1600247. 11. Rivnay J, Inal S, Collins BA, Sessolo M, Stavrinidou E, Strakosas X, Tassone C, Delongchamp DM, Malliaras GG. Structural control of mixed ionic and electronic transport in conducting polymers. Nat Commun. 2016;7:11287. 12. Proctor CM, Rivnay J, Malliaras GG. Understanding volumetric capacitance in conducting polymers. J Polym Sci B Polym Phys. 2016;54:1433. 13. Inal S, Malliaras GG, Rivnay J. Optical study of electrochromic moving fronts for the investigation of ion transport in conducting polymers. J Mater Chem C. 2016;4:3942. 14. Zhu S, Huang Y, Fang B. Progress and prospect for conducting polymer fibers. Adv Mater. 2025;37:e04071. 15. Kim S-M, Kim C-H, Kim Y, Kim N, Lee W-J, Lee E-H, Kim D, Park S, Lee K, Rivnay J, Yoon M-H. Influence of PEDOT:PSS crystallinity and composition on electrochemical transistor performance and long-term stability. Nat Commun. 2018;9:3858. 16. Yang D, Wang J, Xu M, Tong X, Cao Y, Lu J, Qiu J, Chen P, Luo J, Zhang L, Shi C, Shao Y, Xia Z, Xu Q, Cao J, Zhang Z, Lei T, Huang L, Wang M, Shao Y. An inkjet-printable organic electrochemical transistor array with differentiated ion dynamics for sweat fingerprint identification. Device. 2025;3:10061. 17. Yan C, Xiang L, Xiao Y, Zhang X, Jiang Z, Zhang B, Li C, Di S, Zhang F. Lateral intercalation-assisted ionic transport towards high-performance organic electrochemical transistor. Nat Commun. 2024;15:10118. 18. Bischak CG, Flagg LQ, Ginger DS. Ion exchange gels allow organic electrochemical transistor operation with hydrophobic polymers in aqueous solution. Adv Mater. 2020;32:2002610. 19. van de Burgt Y, Lubberman E, Fuller EJ, Keene ST, Faria GC, Agarwal S, Marinella MJ, Talin AA, Salleo A. A non-volatile organic electrochemical device as a low-voltage artificial synapse for neuromorphic computing. Nat Mater. 2017;16:414. 20. Wan C, Cai P, Guo X, Wang M, Matsuhisa N, Yang L, Lv Z, Luo Y, Loh XJ, Chen X. An artificial sensory neuron with visualhaptic fusion. Nat Commun. 2020;11:4602. 21. Fuller EJ, Keene ST, Melianas A, Wang Z, Agarwal S, Li Y, Tuchman Y, James CD, Marinella MJ, Yang JJ, Salleo A, Talin AA. Parallel programming of an ionic floating-gate memory array for scalable neuromorphic computing. Science. 2019;364:5. 22. Jordan MI, Mitchell TM. Machine learning: trends, perspectives, and prospects. Science. 2015;349:255. 23. Song HW, Moon D, Won Y, Cha YK, Yoo J, Park TH, Oh JH. A pattern recognition artificial olfactory system basedon human olfactory receptors and organicsynaptic devices. Sci Adv. 2024;10:2882. 24. Fang B, Yan J, Chang D, Piao J, Ma KM, Gu Q, Gao P, Chai Y, Tao X. Scalable production of ultrafine polyaniline fibres for tactile organic electrochemical transistors. Nat Commun. 2022;13:2101. 25. Ouyang J, Xu Q, Chu C-W, Yang Y, Li G, Shinar J. On the mechanism of conductivity enhancement in poly(3,4-ethylenedioxythi ophene):poly(styrene sulfonate) film through solvent treatment. Polymer. 2004;45:8443. 26. Keplinger C, Sun J-Y, Foo CC, Rothemund P, Whitesides GM, Suo Z. Stretchable, transparent,ionic conductors. Science. 2013;341:984. 27. Xie Z, Ventura H, Ardanuy M. A review of the electrical conductivity test methods for conductive fabrics. Textiles. 2024;4:284.",
+      "translation": "",
+      "bbox": [
+        51.02,
+        54.69,
+        291.42,
+        697.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 13,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "28. Li X, Zou R, Liu Z, Mata J, Storer B, Chen Y, Qi W, Zhou Z, Zhang P. Deciphering the superior thermoelectric property of post-treatment-free PEDOT:PSS/IL hybrid by X-ray and neutron scattering characterization. npj Flexible Electron. 2022;6:6. 29. Wang S, Fabiano S, Himmelberger S, Puzinas S, Crispin X, Salleo A, Berggren M. Experimental evidence that short-range intermolecular aggregation is sufficient for efficient charge transport in conjugated polymers. Proc Natl Acad Sci U S A. 2015;112:10599. 30. Okuzaki H, Ishihara M. Spinning and characterization of conducting microfibers. Macromol Rapid Commun. 2003;24:261. 31. Okuzaki H, Harashina Y, Yan H. Highly conductive PEDOT/PSS microfibers fabricated by wet-spinning and dip-treatment in ethylene glycol. Eur Polym J. 2009;45:256. 32. Jalili R, Razal JM, Innis PC, Wallace GG. One-step wet-wpinning process of poly(3,4-ethylenedioxythiophene):poly(styrenesulfon ate) fibers and the origin of higher electrical conductivity. Adv Funct Mater. 2011;21:3363. 33. Zhou J, Li EQ, Li R, Xu X, Ventura IA, Moussawi A, Anjum DH, Hedhili MN, Smilgies D-M, Lubineau G, Thoroddsen ST. Semi-metallic, strong and stretchable wet-spun conjugated polymer microfibers. J Mater Chem C. 2015;3:2528. 34. Zhang J, Seyedin S, Qin S, Lynch PA, Wang Z, Yang W, Wang X, Razal JM. Fast and scalable wet-spinning of highly conductive PEDOT:PSS fibers enables versatile applications. J Mater Chem A. 2019;7:6401. 35. Sarabia-Riquelme R, Shahi M, Brill JW, Weisenberger MC. Effect of drawing on the electrical, thermoelectrical, and mechanical properties of wet-spun PEDOT:PSS fibers. ACS Appl Polym Mater. 2019;1:2157. 36. Wen N, Zuo X, Zhou J, Sun C, Chen C, Jiang D, Xu H, Wang W, Pan L, Fan Z. Boosting thermoelectric terformance of wet-spun PEDOT:PSS-Based organic/inorganic composite fibers via a dualinterfacial engineering approach. Small. 2025;21:2500866. 37. Zhang L, Andrew T. Vapor-coated monofilament fibers for embroidered electrochemical transistor arrays on fabrics. Adv Electron Mater. 2018;4:1800271. 38. Kim Y, Noh H, Paulsen BD, Kim J, Jo IY, Ahn H, Rivnay J, Yoon MH. Strain-engineering induced anisotropic crystallite orientation and maximized carrier mobility for high-performance microfiber-based organic bioelectronic devices. Adv Mater. 2021;33:2007550. 39. Tao Y, Wang Y, Zhu R, Chen Y, Liu X, Li M, Yang L, Wang Y, Wang D. Fiber based organic electrochemical transistor integrated with molecularly imprinted membrane for uric acid detection. Talanta. 2022;238:123055. 40. Wang Y, Wang Y, Zhu R, Tao Y, Chen Y, Liu Q, Liu X, Wang D. Woven fiber organic electrochemical transistors based on multiwalled carbon nanotube functionalized PEDOT nanowires for nondestructive detection of potassium ions. Mater Sci Eng B. 2022;278:115657. 41. Alarcon-Espejo P, Sarabia-Riquelme R, Matrone GM, Shahi M, Mahmoudi S, Rupasinghe GS, Le VN, Mantica AM, Qian D, Balk TJ, Rivnay J, Weisenberger M, Paterson AF. High-hole-mobility fiber organic electrochemical transistors for next-generation adaptive neuromorphic bio-hybrid technologies. Adv Mater. 2023;36:2305371. 42. Keene ST, Gatecliff LW, Bidinger SL, Moser M, McCulloch I, Malliaras GG. Stable operating windows for polythiophene organic electrochemical transistors. MRS Commun. 2023;14:158. 43. Ito K, Sakata T. Electrical characteristics of porous-structured PEDOT:PSS channel organic electrochemical transistor for biosensing applications. MRS Commun. 2025;16:443. 44. Cadilha Marques G, Yang L, Liu Y, Wollersen V, Scherer T, Breitung B, Wegener M, Aghassi‐Hagmann J. Fully printed electrolyte‐gated transistor formed in a 3D polymer reservoir",
+      "translation": "",
+      "bbox": [
+        306.13,
+        54.43,
+        546.52,
+        707.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 14,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "Advanced Fiber Materials",
+      "translation": "",
+      "bbox": [
+        51.02,
+        31.77,
+        544.25,
+        41.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 14,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "61. Ramos Canabarra dos Santos T, de Jesus Bassi M, Muller de França M, Majewski JK, Barcote MVW, Stanislawczuk AEP, Roman LS. Gas sensor based on highly effective slot-die printed PEDOT:PSS@ZnO hybrid nanocomposite for methanol detection. ACS Appl Mater Interfaces. 2024;17:13065. 62. Wang X, Sun K, Li K, Li X, Gogotsi Y. Ti3C2T /PEDOT:PSS hybrid materials for room-temperature methanol sensor. Chin Chem Lett. 2020;31:1018. 63. Chen WY, Lai S-N, Yen C-C, Jiang X, Peroulis D, Stanciu LA. Surface functionalization of Ti3C2Tx MXene with highly reliable superhydrophobic protection for volatile organic compounds sensing. ACS Nano. 2020;14:11490. 64. Jin L, Yang K, Chen L, Yan R, He L, Ye M, Qiao H, Chu X, Gao H, Zhang K. Flexible synergistic MoS2 quantum dots/PEDOT: PSS film sensor for acetaldehyde sensing at room temperature. Anal Chem. 2023;95:8859. 65. Tang Y, Xu Y, Yang J, Song Y, Yin F, Yuan W. Stretchable and wearable conductometric VOC sensors based on microstructured MXene/polyurethane core-sheath fibers. Sens Actuators B Chem. 2021;346:130500. 66. Shuvo SN, Ulloa Gomez AM, Mishra A, Chen WY, Dongare AM, Stanciu LA. Sulfur-doped titanium carbide MXenes for roomtemperature gas sensing. ACS Sens. 2020;5:2915. 67. Mombaerts P. Genes and ligands for odorant, vomeronasal and taste receptors. Nat Rev Neurosci. 2004;5:263. 68. McGann JP. Poor human olfaction is a 19th-century myth. Science. 2017;356:597. 69. Buck LB. The molecular architecture of odor and pheromone sensing in mammals. Cell. 2000;100:611. 70. Ma J, Qian L, Jin F, Zheng W, Li T, Wei Z, Wang T, Feng Z-Q. Super-elastic phenylalanine dipeptide crystal fibers enable monolithic stretchable piezoelectrics for wearable and implantable bioelectronics. Adv Fiber Mater. 2024;7:338. 71. Qian L, Jin F, Li T, Wei Z, Ma X, Zheng W, Javanmardi N, Wang Z, Ma J, Lai C, Dong W, Wang T, Feng ZQ. Self-adhesive and self-sustainable bioelectronic patch for physiological feedback electronic modulation of soft organs. Adv Mater. 2024;36:2406636. 72. Fernández-Merino MJ, Guardia L, Paredes JI, Villar-Rodil S, Solís-Fernández P, Martínez-Alonso A, Tascón JMD. Vitamin-cis-an-ideal-substitute-for-hydrazine-in-the-reduction-of-grapheneoxide-suspensions. J Phys Chem C. 2010;114:6426. 73. Akhavan O. The effect of heat treatment on formation of graphene thin films from graphene oxide nanosheets. Carbon. 2010;48:509. 74. Li S, Fan Z, Wu G, Shao Y, Xia Z, Wei C, Shen F, Tong X, Yu J, Chen K, Wang M, Zhao Y, Luo Z, Jian M, Sun J, Kaner RB, Shao Y. Assembly of nanofluidic MXene fibers with enhanced ionic transport and capacitive charge storage by flake orientation. ACS Nano. 2021;15:7821. 75. Kresse GDJ. From ultrasoft pseudopotentials to the projector augmented-wave method. Phys Rev B. 1999;59:1758. 76. Grimme S. Semiempirical GGA-type density functional constructed with a long-range dispersion correction. J Comput Chem. 2006;27:1787.",
+      "translation": "",
+      "bbox": [
+        306.12,
+        54.68,
+        546.51,
+        597.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 14,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "translation": "",
+      "bbox": [
+        306.12,
+        604.59,
+        546.37,
+        627.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 14,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "with laser printed drain/source electrodes. Adv Mater Technol. 2023;8:2300893 45. Laswick Z, Wu X, Surendran A, Zhou Z, Ji X, Matrone GM, Leong WL, Rivnay J. Tunable anti-ambipolar vertical bilayer organic electrochemical transistor enable neuromorphic retinal pathway. Nat Commun. 2024;15:6309. 46. Lu L, Liu X, Gu P, Hu Z, Liang X, Deng Z, Sun Z, Zhang X, Yang X, Yang J, Zu G, Huang J. Stretchable all-gel organic electrochemical transistors. Nat Commun. 2025;16:3831. 47. Liu Y, Li R, Bai Z, Chen J, Wang K, Hou C, Zhang Q, Li Y, Li K, Wang H. Liquid-phase electrochemically autooxidized doping of PEDOT enabling fabry–pérot electrochromic pixels. Nano Lett. 2025;25:5035. 48. Liu D, Bai J, Tian X, Wang Y, Cui B, Dai S, Lin W, Shen Z, Lai CK, Malliaras GG, Zhang S. Increasing the dimensionality of transistors with hydrogels. Science. 2025;390:7. 49. DeWeerdt S. Restoring scent. Nature. 2022;606:87. 50. Deng Y, Liu L, Chen Y, Deng Y, Li J, Liu X, Zou Y, Wu L, Xie W. Elaborately designed intelligent responsive sensing materials for development of flexible gas sensors. Prog Mater Sci. 2026;156:101565. 51. Feng H, Guo S, Guo Y, Zhao Q, Xia Y, Duan Z, Hou M, Yang L, Gao L, Tai H. Advances in metal-organic framework-based hydrogen sulfide gas sensors. Coord Chem Rev. 2026;546:217087. 52. Lin Y, Huang L, Chen L, Zhang J, Shen L, Chen Q, Shi W. Fully gravure-printed NO2 gas sensor on a polyimide foil using WO3-PEDOT:PSS nanocomposites and Ag electrodes. Sens Actuators B Chem. 2015;216:176. 53. Kim YH, Kim SJ, Kim YJ, Shim YS, Kim SY, Hong BH, Jang HW. Self-activated-transparent-all-graphene-gas-sensor-withendurance-to-humidity-and-mechanical-bending. ACS Nano. 2015;9:8. 54. Dutta P, Sharma A, Kumar V, Gupta G. Ultrasensitive NO2 gas sensor at room temperature based on a glycerol-cross-linked PEDOT:PSS-MoS2 nanocomposite. ACS Appl Polym Mater. 2024;7:94. 55. Yang G, Lee C, Kim J, Ren F, Pearton SJ. Flexible graphene-based chemical sensors on paper substrates. Phys Chem Chem Phys. 2013;15:1798. 56. Farea MA, Mohammed HY, Shirsat SM, Tsai M-L, Murshed MN, El Sayed ME, Naji S, Samir A, Alsharabi RM, Shirsat MD. A novel approach for ultrafast and highly sensitive carbon monoxide gas sensor based on PEDOT/GO nanocomposite. Mater Sci Semicond Process. 2023;155:107255. 57. Hakimi M, Salehi A, Boroumand FA. Fabrication and characterization of an ammonia gas sensor based on PEDOT-PSS with N-doped graphene quantum dots dopant. IEEE Sens J. 2016;16:6149. 58. Wang X, Meng S, Tebyetekerwa M, Weng W, Pionteck J, Sun B, Qin Z, Zhu M. Nanostructured polyaniline/poly(styrene-butadiene-styrene) composite fiber for use as highly sensitive and flexible ammonia sensor. Synth Met. 2017;233:86. 59. Liu B, Duan Z, Yuan Z, Zhang Y, Zhao Q, Xie G, Jiang Y, Li S, Tai H. Designing Cu2+ as a partial substitution of protons in polyaniline emeraldine salt: room-temperature-recoverable H2S sensing properties and mechanism study. ACS Appl Mater Interfaces. 2022;14:27203. 60. Zhang B, Shang F, Shi X, Yao R, Wei F, Hou X, Li W, Zhang J. Polyaniline/CuO nanoparticle composites for use in selective H2S sensors. ACS Appl Nano Mater. 2023;6:18413.",
+      "translation": "",
+      "bbox": [
+        51.01,
+        54.69,
+        291.42,
+        658.07
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011",
+        "S0012",
+        "S0013",
+        "S0014",
+        "S0015",
+        "S0016",
+        "S0017",
+        "S0018"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0019",
+        "S0020",
+        "S0021",
+        "S0022",
+        "S0023",
+        "S0024"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0025",
+        "S0026",
+        "S0027",
+        "S0028",
+        "S0029"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0030",
+        "S0031",
+        "S0032",
+        "S0033",
+        "S0034",
+        "S0035",
+        "S0036",
+        "S0037",
+        "S0038",
+        "S0039",
+        "S0040"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0041",
+        "S0042",
+        "S0043"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047",
+        "S0048",
+        "S0049",
+        "S0050"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0051",
+        "S0052",
+        "S0053",
+        "S0054",
+        "S0055",
+        "S0056",
+        "S0057"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0058",
+        "S0059",
+        "S0060",
+        "S0061",
+        "S0062"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0063",
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S0070",
+        "S0071",
+        "S0072",
+        "S0073",
+        "S0074",
+        "S0075",
+        "S0076"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S0077",
+        "S0078",
+        "S0079",
+        "S0080",
+        "S0081",
+        "S0082",
+        "S0083",
+        "S0084",
+        "S0085",
+        "S0086",
+        "S0087",
+        "S0088"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S0089",
+        "S0090",
+        "S0091",
+        "S0092",
+        "S0093",
+        "S0094",
+        "S0095",
+        "S0096",
+        "S0097",
+        "S0098",
+        "S0099",
+        "S0100",
+        "S0101",
+        "S0102",
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S0107",
+        "S0108",
+        "S0109"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S0110",
+        "S0111",
+        "S0112",
+        "S0113"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 3,
+      "caption_original": "Fig. 1 Fabrication and structural characterization of island PEDOT Fibers. a Schematic of the fabrication of island PEDOT fibers through a progressive wet-spinning process. It focuses on the process of forming an island structure of PEDOT and PSS chains when heated. b TEM image of PEDOT islands and statistical distribution of their sizes. The TEM image below is colorized and the blue regions correspond to PEDOT islands. The sizes of 30 PEDOT islands were randomly measured. The error bar box plot shows that the interquartile range (IQR) of the 30 datasets is 3, which constitutes 36% of the median value (8.3). c HR-TEM image of the PEDOT",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of the fabrication of island PEDOT fibers through a progressive wet-spinning process. It focuses on the process of forming an island structure of PEDOT and PSS chains when heated",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "TEM image of PEDOT islands and statistical distribution of their sizes. The TEM image below is colorized and the blue regions correspond to PEDOT islands. The sizes of 30 PEDOT islands were randomly measured. The error bar box plot shows that the interquartile range (IQR) of the 30 datasets is 3, which constitutes 36% of the median value (8.3)",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "c",
+          "original": "HR-TEM image of the PEDOT",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 998,
+      "image_height": 948,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        52.76,
+        546.78,
+        526.08
+      ],
+      "image_path": "papers/paper-6516cb9b2903ea26/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 5,
+      "caption_original": "Fig. 2 Construction and electrical performance of the OECT based on island PEDOT fibers. a Schematic of the OECT structure and the ion transport paths during the switching of the OECT. b Nyquist plots of the condensed PEDOT fiber and the island PEDOT fiber (lower panel) and the σ was extracted through equivalent circuit fitting (upper panel). The inset shows a magnified view of the highfrequency region. c Single impulse response analysis of OECTs constructed from the condensed PEDOT fiber and the island PEDOT fiber. d Transfer characteristic curve of OECTs constructed from the condensed PEDOT fiber and the island PEDOT fiber. e Compari-",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of the OECT structure and the ion transport paths during the switching of the OECT",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Nyquist plots of the condensed PEDOT fiber and the island PEDOT fiber (lower panel) and the σ was extracted through equivalent circuit fitting (upper panel). The inset shows a magnified view of the highfrequency region",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Single impulse response analysis of OECTs constructed from the condensed PEDOT fiber and the island PEDOT fiber",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "d",
+          "original": "Transfer characteristic curve of OECTs constructed from the condensed PEDOT fiber and the island PEDOT fiber",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Compari-",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 998,
+      "image_height": 1120,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        52.76,
+        546.78,
+        612.12
+      ],
+      "image_path": "papers/paper-6516cb9b2903ea26/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 7,
+      "caption_original": "Fig. 3 Gas sensing performance of the OECT sensors. a Schematic of the operating mechanism of the OECT sensors. b Responses of the OECT sensor and the chemiresistive sensor exposed to H2S (1, 5, 10, 20, 40 ppm). c Comparison of detection limit of the OECT sensor and the other reported gas sensors. d PPF behavior triggered by three consecutive 1 ppm and 40 ppm H2S pulses with a pulse width",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of the operating mechanism of the OECT sensors",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Responses of the OECT sensor and the chemiresistive sensor exposed to H2S (1, 5, 10, 20, 40 ppm)",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "c",
+          "original": "Comparison of detection limit of the OECT sensor and the other reported gas sensors",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "PPF behavior triggered by three consecutive 1 ppm and 40 ppm H2S pulses with a pulse width",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 998,
+      "image_height": 875,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        52.76,
+        546.78,
+        489.6
+      ],
+      "image_path": "papers/paper-6516cb9b2903ea26/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 4",
+      "page": 8,
+      "caption_original": "Fig. 4 Fabrication and characterization of functionalized gates. a Schematic of the human olfactory system. Dark-red circles mark the complete signal transduction pathway from the peripheral olfactory apparatus (left) to the brain (right). b Ead of various gases (CH2O,",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of the human olfactory system. Dark-red circles mark the complete signal transduction pathway from the peripheral olfactory apparatus (left) to the brain (right)",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Ead of various gases (CH2O,",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 998,
+      "image_height": 999,
+      "crop_confidence": "high",
+      "bbox": [
+        48.5,
+        52.76,
+        546.78,
+        551.52
+      ],
+      "image_path": "papers/paper-6516cb9b2903ea26/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 5",
+      "page": 10,
+      "caption_original": "Fig. 5 Construction of the flexible OECT sensor array and gas identification. a Schematic of the process: from construction of a flexible OECT sensor array to gas recognition. b Gas fingerprint of H2S mapped from 80 discrete data points. S1, S2, S3, and S4 represent OECTs with PEDOT, rGO-H, rGO-AA, and MXene gates, respec-",
+      "caption_zh": "Fig. 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of the process: from construction of a flexible OECT sensor array to gas recognition",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Gas fingerprint of H2S mapped from 80 discrete data points. S1, S2, S3, and S4 represent OECTs with PEDOT, rGO-H, rGO-AA, and MXene gates, respec-",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 997,
+      "image_height": 782,
+      "crop_confidence": "high",
+      "bbox": [
+        48.56,
+        52.76,
+        546.72,
+        443.4
+      ],
+      "image_path": "papers/paper-6516cb9b2903ea26/figures/figure-05.png"
+    }
+  ],
+  "glossary": []
+}
