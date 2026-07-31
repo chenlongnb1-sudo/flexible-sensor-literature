@@ -53,6 +53,13 @@ class DailyPipelineTests(unittest.TestCase):
         }
         self.assertFalse(is_on_topic(record))
 
+    def test_cover_image_is_not_treated_as_a_research_paper(self) -> None:
+        record = {
+            "title": "Cover Image",
+            "abstract": "A flexible hydrogel network for wearable sensing.",
+        }
+        self.assertFalse(is_on_topic(record))
+
     def test_integrated_tactile_computing_is_high_priority(self) -> None:
         record = {
             "title": "Integrated tactile sensor with on-chip feature extraction",

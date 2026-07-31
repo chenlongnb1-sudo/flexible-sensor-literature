@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "paper-a487166dfdb2ec96",
+  "title": "A Brain‐Inspired ADC‐Free Vibrotactile System with Planar MoO 3 Memristive Device Integrated Sensing‐Memory‐Computing Architecture",
+  "authors": [
+    "Hao Sun",
+    "Sheng‐Yuan Xia",
+    "Baohong Guo",
+    "Wanhao Niu",
+    "Longwei Li",
+    "Yutong Song",
+    "Huaidong Zhou",
+    "Huaping Liu",
+    "Xiong Pu",
+    "Fuchun Sun"
+  ],
+  "venue": "Advanced Functional Materials",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "柔性能源与自供能",
+    "神经形态与传感计算"
+  ],
+  "strongly_related": true,
+  "date": "2026-07-30",
+  "doi": "10.1002/adfm.77434",
+  "source_url": "https://doi.org/10.1002/adfm.77434",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-07-31T01:11:21.359263+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Bio‐inspired vibrotactile perception is crucial for autonomous robotics, yet its development is fundamentally bottlenecked by the severe structural mismatch between traditional microscopic electronics and macroscopic flexible sensors, as well as signal complexity and the huge energy costs. Here, an integrated‐sensing‐memory‐computing (ISMC) architecture enabled by an interface‐oriented planar molybdenum trioxide (MoO 3 ) memristive device is reported to overcome these challenges. Featuring macroscopic lateral electrodes, this planar MoO 3 substantially alleviates the interface mismatch associated with conventional vertical memristors and enables direct circuit‐level electrical coupling with a self‐powered triboelectric nanogenerator (TENGs)‐based vibrotactile receptor through a full‐wave rectifier bridge. Driven intrinsically by the frequency‐dependent synaptic plasticity of the MoO 3 film, the system acts as a physical neural network that extracts features directly from raw analog vibration signals without analog‐to‐digital conversion (ADC). In practical industrial fault diagnosis, the system identifies five complex motor operating states with a 98.0% classification accuracy, matching software‐based Convolutional Neural Networks (CNNs). Remarkably, this hardware‐level processing achieves an ultra‐low average power of 0.250 µW—five orders of magnitude lower than typical digital hardware. This work demonstrates an architecture‐enabled pathway for coupling self‐powered mechanosensors with neuromorphic computing components, offering an energy‐constrained, ADC‐free paradigm for future embodied robotic perception.",
+    "zh": "涉及 in-sensor/物理计算或可编程触觉前端；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：98.0%、0.250 µW。"
+  },
+  "innovation_points": [
+    "ABSTRACT Bio‐inspired vibrotactile perception is crucial for autonomous robotics, yet its development is fundamentally bottlenecked by the severe structural mismatch between traditional microscopic electronics and macroscopic flexible sensors, as well as signal complexity and the huge energy costs.",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可用于低离散/装配容差触觉界面的结构与对照设计"
+  ],
+  "innovation_suggestions": [
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-07-31/deep-reads/paper-a487166dfdb2ec96/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

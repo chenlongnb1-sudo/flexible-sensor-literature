@@ -1062,7 +1062,14 @@ def innovation_suggestions(record: dict[str, Any]) -> list[str]:
 def is_on_topic(record: dict[str, Any]) -> bool:
     """Keep the full flexible-electronics field while rejecting journal boilerplate."""
     title = str(record.get("title", ""))
-    if "issue information" in title.lower() or re.search(
+    normalized_title = re.sub(r"\s+", " ", title).strip().lower()
+    if normalized_title in {
+        "cover image",
+        "front cover",
+        "back cover",
+        "inside cover",
+        "table of contents",
+    } or "issue information" in normalized_title or re.search(
         r"\((?:adv\.|advanced)\s+[^)]*\d+/\d{4}\)\s*$", title, re.IGNORECASE
     ):
         return False
