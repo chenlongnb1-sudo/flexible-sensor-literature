@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31",
+  "updated_at": "2026-08-01",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -647,6 +647,106 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-07-31T01:10:05.416819+00:00"
+    },
+    {
+      "id": "idea-2026-08-01-a7f748450885",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "Bistable Networks Enable Complex Shape Changes",
+      "source_papers": [
+        {
+          "paper_id": "paper-ad327c224e971546",
+          "title": "Bistable Networks Enable Complex Shape Changes",
+          "doi": "10.1002/advs.76850",
+          "url": "https://doi.org/10.1002/advs.76850"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-01T01:04:37.985054+00:00"
+    },
+    {
+      "id": "idea-2026-08-01-42f8465fa4ea",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P5",
+      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
+      "source": "Hybrid Electrolyte‐Doped OFETs Enabling Synaptic Plasticity and Physical Reservoir Computing",
+      "source_papers": [
+        {
+          "paper_id": "paper-45476702c9c03e82",
+          "title": "Hybrid Electrolyte‐Doped OFETs Enabling Synaptic Plasticity and Physical Reservoir Computing",
+          "doi": "10.1002/admt.71212",
+          "url": "https://doi.org/10.1002/admt.71212"
+        }
+      ],
+      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
+      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
+      "controls": [
+        "raw readout",
+        "software projection",
+        "hardware projection",
+        "hardware projection + few-shot calibration"
+      ],
+      "success_metrics": [
+        "accuracy degradation",
+        "feature drift",
+        "calibration samples",
+        "fault ratio",
+        "cross-device variance"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-01T01:04:37.985072+00:00"
+    },
+    {
+      "id": "idea-2026-08-01-b2c88b0c78ce",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Hybrid Electrolyte‐Doped OFETs Enabling Synaptic Plasticity and Physical Reservoir Computing",
+      "source_papers": [
+        {
+          "paper_id": "paper-45476702c9c03e82",
+          "title": "Hybrid Electrolyte‐Doped OFETs Enabling Synaptic Plasticity and Physical Reservoir Computing",
+          "doi": "10.1002/admt.71212",
+          "url": "https://doi.org/10.1002/admt.71212"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-01T01:04:37.985082+00:00"
     }
   ]
 }

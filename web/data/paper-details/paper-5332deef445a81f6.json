@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "paper-5332deef445a81f6",
+  "title": "Human-inspired time-series health evaluation with an adaptive multimodal electronic skin",
+  "authors": [
+    "Changhao Xu",
+    "Hongkai Zheng",
+    "Wenzheng Heng",
+    "Ruixiao Liu",
+    "John MarionSims",
+    "Jiahong Li",
+    "Peng Jin",
+    "Roland Yingjie Tay",
+    "Jihong Min",
+    "Guanzhi Wang",
+    "Yisong Yue",
+    "Wei Gao"
+  ],
+  "venue": "Science Advances",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "多模态与生化传感",
+    "可穿戴健康与生理监测"
+  ],
+  "strongly_related": false,
+  "date": "2026-07-31",
+  "doi": "10.1126/sciadv.aeg5606",
+  "source_url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg5606",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-08-01T01:05:04.962144+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Electronic skin powered with artificial intelligence could enable next-generation robotic and medical devices, yet integrating multimodal sensors and analyzing heterogeneous, multifrequency time series remain challenging. Most wearable machine learning architectures are time-invariant and trained for a specific task, limiting transfer across modalities and users. We present a multimodal electronic skin that captures diverse physiological signs with an adaptive learning framework that rapidly generalizes to unseen tasks with minimal labeled data. Our streamlined end-to-end framework uses a spectral variational autoencoder to denoise and compress multifrequency biosignals into a shared, unified second-wise latent space that preserves the spectral-temporal structure, followed by a transformer to capture temporal dependencies to support diverse downstream tasks with data-efficient learning. We demonstrate robust adaptation with 94.7% accuracy in activity recognition and 90.2% precision in fatigue assessment across various users and daily activities regardless of device and user variations, highlighting a scalable route to generalized physiological time-series analytics and human performance assessments.",
+    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：94.7%、90.2%。"
+  },
+  "innovation_points": [
+    "Electronic skin powered with artificial intelligence could enable next-generation robotic and medical devices, yet integrating multimodal sensors and analyzing heterogeneous, multifrequency time series remain challenging.",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-08-01/deep-reads/paper-5332deef445a81f6/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
