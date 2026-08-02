@@ -365,6 +365,47 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertFalse(paper["strongly_related"])
         self.assertEqual(paper["innovation_suggestions"], [])
 
+    def test_haptic_application_without_sensor_context_is_not_strong(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Soft skins with reversible thickness morphing",
+                "abstract": (
+                    "A programmable soft material supports haptic interaction and soft robotics. "
+                    "Future challenges include integration of sensing, actuation, and computation "
+                    "for fault-tolerant autonomous systems."
+                ),
+                "venue": "Advanced Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-materials"],
+            },
+            date.today(),
+        )
+        self.assertFalse(paper["strongly_related"])
+        self.assertEqual(paper["innovation_suggestions"], [])
+
+    def test_generic_oect_without_flexible_context_is_off_topic(self) -> None:
+        record = {
+            "title": "Selective perchlorate transduction in organic electrochemical transistors",
+            "abstract": "An aqueous electrochemical sensor detects perchlorate ions.",
+            "venue": "Advanced Materials",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-materials"],
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_explicitly_flexible_material_film_remains_on_topic(self) -> None:
+        record = {
+            "title": "Flexible thermoelectric films for energy harvesting",
+            "abstract": "A stretchable material film is printed for wearable power generation.",
+            "venue": "Advanced Materials Technologies",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-materials-technologies"],
+        }
+        self.assertTrue(is_on_topic(record))
+
     def test_targeted_afm_pressure_sensor_enters_watch_queue(self) -> None:
         record = {
             "title": "Flexible Pressure Sensor for Biological Signal Acquisition",

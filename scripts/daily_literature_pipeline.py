@@ -111,7 +111,7 @@ FLEXIBLE_ELECTRONICS_TERMS = (
     "skin-interfaced", "skin interfaced", "on-skin", "electronic skin", "e-skin",
     "artificial skin", "flexible sensor", "stretchable sensor", "wearable sensor",
     "textile sensor", "electronic textile", "e-textile", "smart textile",
-    "flexible transistor", "stretchable transistor", "organic electrochemical transistor",
+    "flexible transistor", "stretchable transistor",
     "flexible electrode", "stretchable electrode", "iontronic", "conformal sensor",
     "flexible circuit", "stretchable circuit", "soft robotics", "soft robot",
 )
@@ -931,6 +931,7 @@ def is_flexible_electronics_record(record: dict[str, Any]) -> bool:
             r"(?:[a-z0-9-]+\s+){0,2}"
             r"(?:electronic(?:s)?|sensor(?:s)?|device(?:s)?|transistor(?:s)?|"
             r"electrode(?:s)?|circuit(?:s)?|photodetector(?:s)?|actuator(?:s)?|"
+            r"film(?:s)?|material(?:s)?|membrane(?:s)?|interface(?:s)?|"
             r"battery|batteries|supercapacitor(?:s)?|generator(?:s)?|solar cell(?:s)?|"
             r"bioelectronic(?:s)?)\b",
             text,
@@ -970,9 +971,12 @@ def project_signal_flags(record: dict[str, Any]) -> dict[str, bool]:
     direct_tactile = any(
         term in text
         for term in (
-            "tactile", "electronic skin", "e-skin", "haptic", "pressure sensor",
+            "tactile", "electronic skin", "e-skin", "pressure sensor",
             "pressure sensing", "force sensor", "force sensing", "strain sensor",
         )
+    ) or bool(
+        re.search(r"\bhaptic\b.{0,40}\b(?:sensor|sensing|tactile)\b", text)
+        or re.search(r"\b(?:sensor|sensing|tactile)\b.{0,40}\bhaptic\b", text)
     )
     sensor_context = direct_tactile or any(
         term in text
@@ -1004,6 +1008,7 @@ def project_signal_flags(record: dict[str, Any]) -> dict[str, bool]:
         term in text for term in ("at source", "physically encode", "physical encoding", "source-side")
     ) and any(term in text for term in ("decoupl", "interference", "signal segmentation", "noise suppression"))
     return {
+        "direct_tactile": direct_tactile,
         "sensor_context": sensor_context,
         "front_end": front_end,
         "directional": directional,
@@ -1019,15 +1024,7 @@ def project_signal_flags(record: dict[str, Any]) -> dict[str, bool]:
 
 def is_strong_project_match(record: dict[str, Any]) -> bool:
     flags = project_signal_flags(record)
-    text = normalized_match_text(record.get("title"), record.get("abstract"))
-    direct_tactile = any(
-        term in text
-        for term in (
-            "tactile", "electronic skin", "e-skin", "haptic", "pressure sensor",
-            "pressure sensing", "force sensor", "force sensing", "strain sensor",
-        )
-    )
-    return is_flexible_electronics_record(record) and direct_tactile and any(
+    return is_flexible_electronics_record(record) and flags["direct_tactile"] and any(
         flags[name]
         for name in (
             "front_end", "directional", "array_readout", "computing", "tactile_neuromorphic",
