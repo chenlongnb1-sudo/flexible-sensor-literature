@@ -1,0 +1,3625 @@
+{
+  "paper": {
+    "title": "Encoded Cell‐Material Interactions to Reroute Cytokine Signaling for Regenerative Medicine",
+    "venue": "Advanced Healthcare Materials",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-08-03/papers/paper-7ce8ba142cb0efdf.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "Encoded cell-material interactions to reroute cytokine signaling for regenerative medicine",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        508.54,
+        48.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "Zachary M. Eidman*1, Jhanvi Sharma*1, Joanne C. Lee1, Nicholas F. Schulze1, Hannah J. Brien1, Kevin C. Corn2, Marjan Rafat1,2,3, Jonathan M. Brunger1",
+      "translation": "",
+      "bbox": [
+        36.0,
+        58.02,
+        554.38,
+        85.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "*Authors contributed equally.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        95.85,
+        181.95,
+        108.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "1Department of Biomedical Engineering, Vanderbilt University, Nashville, TN",
+      "translation": "",
+      "bbox": [
+        36.0,
+        117.54,
+        406.83,
+        130.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "2Department of Chemical and Biomolecular Engineering, Vanderbilt University, Nashville, TN 3Department of Radiation Oncology, Vanderbilt University Medical Center, Nashville, TN",
+      "translation": "",
+      "bbox": [
+        36.0,
+        132.18,
+        488.05,
+        160.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "Abstract",
+      "translation": "",
+      "bbox": [
+        36.0,
+        170.25,
+        83.69,
+        182.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "Regenerative engineering harnesses materials science and stem cell biology to develop strategies to repair damaged and diseased tissue. Despite advances in designer materials, few techniques effectively provide auto-regulated feedback mechanisms that govern how cells sense and respond to discrete microenvironmental changes. Here, we demonstrate that the artificial, juxtacrine-like receptor synthetic Notch (synNotch) can be activated by endogenous multimeric cytokines in solution, without immobilizing materials, revealing a previously unreported activation modality and yielding up to 24-fold dynamic range. To broaden synNotch sensing to monomeric cytokines, we developed nMATRIX, a co-engineered material-cell platform that detects endogenous, soluble ligands and routes them to programmed gene circuits with spatially confined effects. nMATRIX can be tuned to recognize the interleukins IL-1β and IL-6 using synNotch receptors plus cognate biomaterials, yielding up to 68-fold dynamic range and converting these inflammatory inputs into orthogonal outputs that reprogram nearby cell phenotypes. nMATRIX functions across multiple cell types and can incorporate the synNotch-related SNIPR synthetic receptor platform. nMATRIX repurposed inflammatory signals and converted them into anti-inflammatory cues to polarize macrophages (increased CD163, CD206; decreased CD86). Thus, nMATRIX couples native soluble cues to customized cellular responses with tunable sensitivity, offering a flexible materials-based approach for self-regulating regenerative therapies.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        192.81,
+        578.36,
+        408.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "Introduction",
+      "translation": "",
+      "bbox": [
+        36.0,
+        418.89,
+        103.22,
+        431.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "Regenerative engineering integrates modern medicine with engineering principles to treat a variety of conditions including injuries, chronic diseases, and age-related degeneration.[1] Recent advances in the areas of biomaterials, stem cell biology and tissue engineering have enabled development of therapies that can repair and regenerate damaged tissue.[2,3] Despite this progress, a number of barriers have prevented these therapies from achieving clinical translation, including immune rejection, imprecise therapeutic control and manufacturing scalability.[4] In chronic inflammatory diseases such as rheumatoid arthritis (RA), immune dysregulation in diseased tissue further complicates the adoption of new therapies.[5,6] Furthermore, current therapeutic platforms lack the capacity to sense and respond to fluctuating biomolecular and mechanical cues, especially in the context of inflammation, which relies on distinct cues to achieve resolution.[7–10] This underscores a pressing need for a new class of auto-regulated and adaptive platforms that can sense dynamic environmental signals and provide context-specific, therapeutic responses to re-establish tissue homeostasis.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        441.45,
+        579.12,
+        599.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "Recent developments in materials science have strengthened regenerative engineering efforts by providing new biomaterials that adapt to diverse inputs to coordinate conditional behaviors of cells. These include materials responsive to niche factors such as redox conditions, proteases, temperature, and the biomechanics of the local environment.[11–22] Such materials allow for controlled release of therapeutic agents to elicit favorable cellular responses. Materials have also been developed to adapt based on exogenous inputs, such as light,[23–26] for finely tuned spatiotemporal control over material properties and consequent cell behaviors. While these innovative platforms demonstrate a clear shift toward intelligent therapeutic interfaces, they are restricted to unidirectional modes of engagement; i.e., once remodeled by proteases or ROS-reactivity, or induced to release payloads in response to light or temperature changes, their adaptive features are exhausted, and the materials are unable to continue to instruct cellular behaviors to resolve inflammation or encourage neotissue synthesis.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        609.45,
+        579.28,
+        752.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 2,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 2,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "To overcome limitations associated with material-based strategies, advances in synthetic biology have opened new avenues for engineering cells as therapeutic agents to complement and augment activities enabled via biomaterials that serve as cell delivery vehicles or scaffolds. A diverse repertoire of artificial receptors allows engineered cells to respond to a range of inputs including small molecules, orthogonal proteins, and endogenous cytokines or growth factors.[27–37] Recently, we reported a platform referred to as MATRIX (Material Activated To Regulate Inducible gene eXpression),[38] which exploits the synthetic Notch (synNotch) artificial receptor to activate customized transgene expression programs in engineered cells in response to selected inputs presented via functionalized biomaterial surfaces. Similar to native Notch, potent synNotch activation requires ligand immobilization; thus, transgene expression in the MATRIX platform is highly localized and constrained to niches decorated with immobilized activators. Our prior work demonstrated the ability to leverage the MATRIX system to allow engineered cells to respond to soluble, bioinert inputs such as green fluorescent protein (GFP) or mCherry to regulate versatile behaviors relevant to regenerative engineering, including activation of CRISPRbased transcriptome modifiers, modulation of inflammation, and differentiation of human pluripotent stem cells. While the original MATRIX platform was designed to accommodate well-characterized, bioinert ligands, this work expands platform capabilities by converting cytokines such as IL-1 and IL-6 to MATRIX-compatible inputs. Here, we develop a method to reroute actions that cells take in response to these native cytokines. This extension, which we refer to as native MATRIX (nMATRIX), is sensitive to lower input concentrations than orthogonal receptor platforms that have previously been reported and can drive activation levels spanning a wide dynamic range in response to such input. We demonstrate the broad utility of this platform, with high functionality in several cell types relevant to musculoskeletal regenerative medicine, including fibroblasts, mesenchymal stromal cells, macrophages, chondrocytes, and synoviocytes. We further show the ability of this platform to divert the outcome of pro-inflammatory IL-1β signaling, leading such an input to drive the emergence of anti-inflammatory M2-like macrophages rather than the typical, IL-1-generated M1-like pro-inflammatory phenotype. Finally, we demonstrate effective, material-independent synNotch signal transduction for distinct native ligand sub-types via mechanisms that challenge prior reports of synNotch functionality. In doing so, we uncover new rules governing synNotch recognition of native ligands and identify a subset of natural factors that can activate synNotch cells independent of secondary immobilization motifs. Thus, this work informs new strategies for co-engineering cells and biomaterials with synergistic regenerative medicine functionality, providing new insight into receptor design for engineered cell-based therapies.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.23,
+        455.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 2,
+      "type": "heading",
+      "order": 14,
+      "original_text": "Results",
+      "translation": "",
+      "bbox": [
+        36.0,
+        466.17,
+        78.8,
+        478.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 2,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "3.1. Expansion of the MATRIX platform to native factors To develop a platform that enables potent artificial signaling in response to native growth factors and diseasedysregulated cytokines, we selected a small panel of cytokines including TGF-β1, TNF, IL-1β, and IL-6 as candidates whose signaling could be meaningfully commandeered for regenerative medicine purposes. We derived single chain variable fragments (scFvs) from antibodies previously characterized to bind each of these factors (Supplementary Table 1). This panel of scFvs was employed to yield a corresponding suite of receptors to allow engineered MSCs to recognize each cytokine as ligand for synNotch. We first screened whether treatment of any of these MSCs with their respective synNotch ligand resulted in receptor activation in the absence of material surface functionalization. We treated the separate synNotch cells with their respective ligand and measured activity of the synNotch-regulated transgene firefly luciferase. As expected, treatment with soluble IL-1β and IL-6 did not activate corresponding synNotch MSCs. However, we were surprised to find that both TGF-β1 and TNF stimulated artificial signaling in cognate synNotch MSCs to a level of 11-fold and 24-fold, respectively, independent of material-mediated ligand capture and presentation (Figure 1A). Anti-VEGF synNotch expressing L929 fibroblasts also demonstrated artificial signaling when supplemented with soluble VEGF in the absence of an immobilizing surface (Supplemental Figure 1). This finding contradicts prior reports describing synNotch as a juxtacrine-like signaling channel that requires ligand immobilization to potentiate signaling and that it is non-responsive to free, soluble inputs. [33,38,39] IL-1β and IL-6 are, like previous inputs we and others have reported on, monomeric signaling factors, while TGFβ-1 TNF, and VEGF are multimeric",
+      "translation": "",
+      "bbox": [
+        36.0,
+        488.73,
+        579.17,
+        748.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 3,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 3,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "ligands (dimer, trimer and dimer, respectively[40–42]). Thus, we reasoned that ligand multimerization may enable capture and subsequent presentation to induce synNotch activation independent of biomaterial functionalization. To test this hypothesis, we introduced mutations into enhanced GFP (EGFP), which we previously used for material-dependent signaling via MATRIX, to adapt it into a dimeric ligand (dEGFP).[43] We then treated GFPsensitive synNotch engineered MSCs with a range of concentrations of dEGFP or wild-type EGFP. The 5 nM concentration of dEGFP rendered dramatic activation of cells expressing the high-affinity, GFP-sensitive LaG16synNotch (LaG16-Notch) receptor, while wild-type EGFP did not stimulate substantial signaling at any tested concentration (Figure 1B), consistent with prior reports [28,38]. We similarly found that dEGFP functions as a productive ligand for KOLF2.1J human induced pluripotent stem cells expressing the LaG16-Notch receptor, suggesting a lack of cell-type dependency on these findings (Supplemental Figure 2). These results signify that multimerization converts soluble inputs into those that can productively activate synNotch signaling, while confirming that monomeric inputs such as IL-1β and IL-6 require an alternative mechanism of capture and presentation. We thus pursued IL-1β and IL-6 as native signaling factors compatible with the MATRIX synthetic signaling paradigm. To develop a native MATRIX (nMATRIX) platform that can convert IL-1β or IL-6 to inputs for customized, orthogonal signaling, we identified reciprocal binding motifs that could anchor each cytokine via epitopes that do not overlap those recognized by a cognate synNotch receptor (Figure 1C). For IL-1β recognition, we again used IL-1-sensitive synNotch cells, engineered to express Canak-Notch, a synNotch receptor utilizing an scFv derived from canakinumab (Canak), a monoclonal antibody which binds IL-1β with high affinity (Kd = 4.1 nM) and is approved for clinical indications such as systemic juvenile idiopathic arthritis, periodic fever syndrome, and gout flares. To develop a functionalized biomaterial surface that can capture and present IL-1β ligand to Canak-Notch cells, we identified gevokizumab (Gevo), an investigational IL-1β inhibitor (Kd = 0.29 nM), as a candidate motif, as Canak and Gevo had been previously reported to each recognize distinct, 3D discontinuous epitopes of IL1β.[44] Thus, to commandeer IL-1β signaling via nMATRIX, we prepared Gevo-functionalized surfaces by either passively adsorbing Gevo directly to cell culture wells or by first coating culture surfaces with protein A/G to orient the Fragment antigen-binding region (Fab) of Gevo away from the culture surface.[45] We then treated cells with IL-1β concentrations ranging from 1-100 ng/ml. While cells on control, Gevo-free surfaces exhibited no CanakNotch activity when treated with up to 100 ng/ml IL-1β, we observed potent, dose-dependent Canak-Notch activation when cells were cultured on surfaces functionalized with Gevo (Figure 1D). At doses of IL-1β frequently used in in vitro inflammatory studies (10-100 ng/ml),[46–49] we show responses ranging between 32fold and 68-fold increase in activity above baseline. As expected, protein A/G-treated surfaces resulted in enhanced Canak-Notch activation as compared to surfaces functionalized via passive adsorption of Gevo, with fold changes in the passive adsorption group peaking at 51-fold change at the 100 ng/ml IL-1β concentration. Thus, by co-engineering Canak-Notch MSCs and a cognate, IL-1-capturing surface, we were able to apply the nMATRIX paradigm to enable material-mediated synthetic signaling in response to a pervasive, pro-inflammatory cytokine. We similarly developed an nMATRIX variant designed to rewire cellular responses to IL-6. We engineered an IL6-specific receptor, Zilti-Notch, which borrows variable light and heavy chains from ziltivekimab (Zilti), which blocks IL-6 and IL-6R classical signaling and is thought to bind to the so-called Site I of IL-6 (Kd=0.52nM). We then selected olokizumab (Olok), which binds to Site III of IL-6 (Kd=10pM), as the surface-functionalization motif for IL-6 anchorage and display to Zilti-Notch cells.[50,51] AlphaFold-Multimer modeling of IL-6, ziltivekimab scFv, and Olok heavy and light chains also predicted the binding of IL-6 at these sites (Supplemental Figure 3). Building off our success with IL-1β recognition, we prepared a protein A/G-coated surface decorated with Olok (Figure 1C). We again observed robust dose- and material-dependent responses to a native cytokine via the nMATRIX platform, with Zilti-Notch cells exerting a significant response to levels of IL-6 across the full range of concentrations tested (1-100 ng/ml) (Figure 1E). At the 10-25 ng/ml concentration range commonly used for in vitro studies that mimic IL-6-driven inflammation, [52–54] Zilti-Notch cells respond with 40-fold to 63-fold above",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.36,
+        746.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 4,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 4,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "background transgene expression. Altogether, these results suggest that the nMATRIX platform can be generalized across monomeric, soluble inputs for which cognate receptor/material recognition motifs can be identified. 3.2. Influence of nMATRIX on cognate cytokine bioactivity Because both the capture motif and the recognition domain of our synNotch receptors consist of neutralizing antibody fragments, we sought to determine the extent to which the nMATRIX platform may attenuate bioactivity of targeted ligands independent of transgene payload production. Thus, we sought to determine how cytokine retention and bioactivity differ in standard cell culture conditions as compared to cell culture conditions modified with nMATRIX constituents (e.g., functionalized surfaces and synNotch-programmed cells). To do this, we separately treated wild-type (WT) MSCs or Canak-Notch MSCs cultured on either control or Gevo-functionalized surfaces with 10 ng/ml IL-1β. Forty-eight hours later, we collected the culture medium and measured the concentration of IL-1β remaining in the supernatant. Unsurprisingly, we found that Gevo-functionalization dramatically influenced the amount of IL-1β recovered from a well, with IL-1β being undetectable in all supernatants derived from cultures with Gevo-functionalized surfaces (Figure 2A). We also found that the level of IL-1β detected in the supernatant of Canak-Notch cells was significantly lower than IL-1β detected in WT, Gevo-free conditions, suggesting that Canak-Notch cells have an enhanced capacity to capture IL-1β as compared to control cells. The nMATRIX variant programmed for IL-6 detection performed similarly, where surface functionalization with IL-6-capturing Olok dominated the bioavailability of IL-6 in supernatant, and ZiltiNotch expression itself also attenuated the amount of IL-6 recovered in the supernatant as compared to control MSCs (Figure 2B). Based on these findings, we investigated the degree to which the IL-1β-specific nMATRIX interferes with endogenous cytokine signaling. We programmed a separate line of primary MSCs with an NF-κB transcriptional reporter that regulates expression of a firefly luciferase. We cultured WT or Canak-Notch MSCs plated on control or Gevo-coated surfaces for 24 hours in 0, 1, and 10 ng/ml IL-1β. Cell culture supernatants were then transferred to NF-κB reporter MSCs for five hours before the cells were lysed for a luminescence assay (Figure 2C). A subtle but significant reduction in NF-κB transcriptional activity was observed in recipient cells when culture media were derived from Canak-Notch versus WT MSCs (Figure 2D). Additionally, the monoclonal antibody surface was unable to completely attenuate NF-κB signaling in the 10 ng/mL group, indicating native signaling can persist at sufficiently high levels. These results suggest that, while Canak-Notch cells effectively bind IL-1β in culture medium, residual cytokine remains highly bioactive. However, consistent with the bioavailability assay, surface Gevo-functionalization dramatically reduced NF-κB transcriptional activity in reporter cells treated with IL-1β conditioned media, indicating that Gevo as employed in these experiments effectively attenuates concentrations of at least 1 ng/ml of IL-1β. Altogether, these results demonstrate that the nMATRIX platform elements can mitigate inflammatory signals in the absence of synNotch-driven, antiinflammatory transgene expression. 3.3 nMATRIX reroutes inflammatory signaling with orthogonal outputs in diverse cell types We next tested whether the nMATRIX platform is operational in diverse cell types relevant to regenerative engineering. Osteoarthritis, in which inflammatory factors such as IL-1β and IL-6 are known to be dysregulated, represents an area of intense study due to the absence of a disease-modifying therapy. We thus engineered a panel of cells relevant to the homeostasis of articular joints to express the Canak-Notch receptor which regulated expression of firefly luciferase, and assessed their responsiveness to IL-1β with and without Gevo-functionalized surfaces. Previous studies have shown that chondrocytes not only become dysregulated when exposed to proinflammatory cytokines, but they also play an active role in the degradation of cartilage by secreting inflammatory factors.[75] As chondrocytes are also responsible for the production of the cartilage extracellular matrix (ECM), they are an appealing therapeutic target. Indeed, Canak-Notch chondrocytes exhibited activation with as little as 1 ng/mL of IL-1β, with more potent activation seen at higher doses and maximal activation of ~11fold over background (Figure 3A). Another pathogenic cell type found in the synovium of arthritic joints includes fibroblast-like synoviocytes (FLS), which serve as a source of inflammatory cytokines and proteolytic enzymes",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.22,
+        746.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 5,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 5,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "attributed to joint ECM degradation.[76] Canak-Notch primary FLS cells showed robust, material-dependent, synNotch activation at doses of 10 ng/mL and 100 ng/mL (Figure 3B). Canak-Notch fibroblasts exhibited similar responsiveness to IL-1β, demonstrating significant synNotch activation compared to those plated in either Gevofree or IL-1-free conditions (Figure 3C). Lastly, while infiltrating monocyte-derived macrophages are a hallmark of osteoarthritis and rheumatoid arthritis, prior studies have demonstrated that resident macrophages are a critical modulator in resolving inflammation in affected joints.[55–57] As such, these tissue macrophages are a prime target for engineering to provide more potent therapeutic responses. As a model for these, we used RAW264.7 cells, an immortalized mouse macrophage cell line. Interestingly, though engineered Canak-Notch macrophages exhibited a robust, 66-fold response at the 100 ng/ml IL-1β concentration, the level of induction upon treatment with 10 ng/ml IL-1β was modest relative to responses elicited in MSCs, chondrocytes, fibroblasts, and FLS cells (Figure 3D), which may be a result of competition caused by a relatively high expression of the native IL1R1 receptor for IL-1β in these cells.[58] Altogether, these results indicate that cells known to be both sources of and recipients influenced by IL-1β can be successfully programmed via the nMATRIX signaling platform for responding to this pro-inflammatory, arthritis-driving agent. 3.4 Alternative receptors chassis for nMATRIX signal transduction The SNIPR platform is an alternative to the classical synNotch regulated intramembrane proteolysis (RIP) receptor.[34] Coding sequences for SNIPRs are smaller than synNotch receptors, making the SNIPR architecture preferred in the context of adeno-associated virus (AAV) gene delivery vectors. Additionally, recent work illustrated that synNotch and SNIPR activation levels differ in the context of soluble, multimeric inputs: SNIPR-engineered T cells activated dramatic transgene expression in response to multimeric inputs such as TGF-β1 due to an endocytic, pH-dependent mechanism that was not active in synNotch T cells.[33] These factors motivated an assessment of whether nMATRIX is compatible with the SNIPR architecture. Thus, we outfitted MSCs with either Canak-SNIPR or Zilti-SNIPR. Results reveal that, despite differences previously reported for SNIPR and synNotch activation mechanisms, the nMATRIX framework accommodates both receptor chassis (Figure 4A-B). As with synNotch cells, SNIPR variants demonstrated dependency on both ligand and surfacefunctionalization for induction. While Canak-Notch activated more potently than Canak-SNIPR on the Gevotreated surface (Figure 4A), Zilti-SNIPR activated more potently than Zilti-Notch when compared to their respective ligand-free and surface-free groups (Figure 4B), though both receptors had similar maximal activation levels. Thus, while validating the broad utility of the nMATRIX framework for repurposing IL-1β as an input for programmable artificial signaling, these results also suggest that empirical evaluation may be required to determine whether SNIPR or synNotch should be implemented within the nMATRIX paradigm for each selected ligand. 3.5 Synthetic regulation of macrophage polarity via native MATRIX Having established the ability to commandeer native cytokines for artificial signaling in diverse cell types, we next turned to evaluate whether the nMATRIX platform can effectively redirect cellular responses to proinflammatory factors to instead execute anti-inflammatory functions. Due to their association with the pathogenesis and perpetuation of various chronic diseases, we focused on the polarization of macrophages. Whereas M1-like macrophages are considered pro-inflammatory and contribute to autoimmune diseases and inflammatory disorders, M2-like macrophages are considered pro-resolution and aid in restoration of tissue function after injury. A sustained presence of M1-like macrophages, without a transition to M2-like phenotypes, underlies the progression of many chronic degenerative conditions. Thus, we sought to determine whether material-mediated, synNotch-inducible expression of polarizing factors could evoke emergence of an M2-like population. To disentangle the influence of pro-inflammatory cytokines on macrophage polarization, we first returned to our orthogonal MATRIX platform, which relies on bioinert signaling factors such as GFP for induction, to determine whether LaG16-Notch MSCs could induce M2-like polarization of RAW264.7 cells. Thus, we engineered two LaG16-Notch MSC lines: one engineered for inducible expression of control reporter genes mCherry and firefly luciferase (Reporter) and another engineered for inducible expression of the M2-polarizing",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.31,
+        746.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 6,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 6,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "factors IL-4 and IL-10 (IL4/IL10). We then plated these GFP-responsive MSCs onto control surfaces or surfaces functionalized with the GFP-capturing motif GFP-Trap. Conditioned media were collected and added to RAW264.7 cells at 24- and 48-hour timepoints, and the production of IL-4 and IL-10 was measured 48 hours later via ELISA. While LaG16-Notch IL-4/10 MSCs produced minimal levels of IL-4 or IL-10 when left untreated, we observed >300-fold enhancement in both IL-4 and IL-10 levels in the LaG16-Notch IL4/IL10 group when treating with 5 nM GFP (Figure 5B,C). Flow cytometry quantification of M1 and M2 surface markers in macrophages revealed that CD206 was significantly elevated in response to GFP-induced synNotch expression of IL-4 and IL-10 (Figure 5D, Supplemental Figure 5). Interestingly, CD163 levels were not upregulated in RAW264.7 cells treated with conditioned medium from GFP-treated LaG16-Notch IL4/10 MSCs (Figure 5E). Congruent with this, prior reports indicated that inflammatory factors are required to elevate expression of CD163 via IL-10 signaling.[59–62] Lastly, MSC culture conditions had little impact on the levels of the M1 marker CD86 (Figure 5F) expressed by macrophages. These results demonstrate that synNotch MSC activity can potently influence macrophage phenotype in a ligand-, surface-, and transgene-dependent manner. Encouraged by these results, we next interrogated whether the nMATRIX platform could reroute IL-1 signaling, which would typically drive a CD86hi/CD206lo/CD163lo expression pattern, to instead render the inverse phenotype of CD86lo/CD206hi/CD163hi in macrophages. In this experimental configuration, we employed a transwell co-culture, where macrophages were cultured in the apical chamber and Reporter or IL4/IL10 CanakNotch-MSCs were cultured in the basal chamber (Figure 6A). We stimulated cells with 10 ng/ml IL-β and again observed marked ligand- and surface-dependent upregulation of IL-4 and IL-10 proteins in media collected at Day 3 from Canak-Notch MSCs (Figure 6B,C). Flow cytometric results revealed that macrophage phenotype was dramatically influenced by each of surface functionalization, IL-1β treatment, and Canak-Notch MSC transgene payload (Figure 6D-F, Supplemental Figure 6). Regardless of the presence of the IL-1 neutralizing Canak-Notch receptor and surface-functionalized Gevo motifs, macrophage CD86 levels were elevated after IL1β treatment in the presence of Reporter Canak-Notch MSCs. Further, CD206 expression was absent and CD163 levels remained low in co-cultures with Reporter Canak-Notch MSCs. In contrast, IL-1β treatment in cocultures with IL4/IL10 Canak-Notch MSCs resulted in slight but significant elevation of CD86 only in the synNotch-off, Gevo-free state. When Gevo-functionalization enables ligand-dependent production of IL-4 and IL-10 by Canak-Notch MSCs, CD86 levels are completely attenuated. As in the prior GFP MATRIX experiment, we observed elevated levels of CD206 in response to synNotch-driven IL-4 and IL-10 production, despite the presence of pro-inflammatory IL-1β. Furthermore, in the presence of IL-1β and resultant payload transgenes from IL4/10 Canak-Notch MSCs, we observed dramatically enhanced CD163 expression. Taken together, these results illustrate that the nMATRIX platform with Canak-Notch MSCs reroutes the M1-like outcome of proinflammatory IL-1β signaling to drive macrophage polarization. Discussion",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.3,
+        557.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 6,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "Here, we demonstrate that our previously described MATRIX platform, comprised of designer biomaterial surfaces and engineered cells, can be configured to sense and respond to native, soluble molecules. Notably, nMATRIX utilizes customizable, orthogonal synNotch receptors that induce expression of downstream gene circuits, allowing for the conversion of various pro-inflammatory cytokines into alternative outputs, without influencing endogenous pathways. Our platform enables robust, inducible gene expression with high fold-change activation within a biologically relevant range of cytokine concentrations.[46–49,52–54] Both the material and receptor components of nMATRIX have demonstrated cytokine neutralizing capabilities, which can be used to modulate endogenous inflammatory signaling. Additionally, nMATRIX acts as a Boolean AND gate, requiring engineered cells, ligand and the immobilizing surface to be present to produce programmed outputs, allowing for spatiotemporally controlled therapeutic delivery. nMATRIX offers broad applicability, as it can be used to produce artificial signaling in a wide variety of cell types implicated in musculoskeletal diseases including mesenchymal stem cells, macrophages and fibroblast-like synoviocytes, and can be used with alternative synthetic receptor architectures such as SNIPR. Lastly, we demonstrated nMATRIX can be used to convert the",
+      "translation": "",
+      "bbox": [
+        36.0,
+        567.93,
+        579.16,
+        754.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 7,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 7,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": "highly inflammatory signal IL-1β into an anti-inflammatory output to polarize macrophages towards a more antiinflammatory phenotype. Overall, nMATRIX is a highly customizable platform that allows for material-dependent, prescribed cellular programming in response to elevated levels of native factors that contribute to inflammatory diseases.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.08,
+        92.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 7,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "As the immune system plays a significant role in the progression and chronic dysregulation of inflammatory diseases, environmentally responsive biomaterials, including hydrogels[66–69], polymeric scaffolds[67–69], and nanoparticles[70–73], have been developed to modulate the immune environment by delivering immunomodulatory agents in a regulated manner. Although these technologies initially offer improved control and sustained release of therapeutics, this effect dissipates as the respective material degrades and releases its payload. Engineered cell-based therapies offer a potential solution for auto-regulated and autonomous immunomodulation, as cells can be tuned to effectively sense and respond to distinct cues in the microenvironment. [74–81] Here, we demonstrate that nMATRIX can detect inflammatory cues and respond with anti-inflammatory cues, influencing the phenotype of nearby cells and pushing them towards a more proresolution fate. Additionally, both components of nMATRIX have cytokine neutralizing capabilities, enhancing the therapeutic potential of the platform beyond cellular outputs. As such, nMATRIX can potentially be used to resolve dysregulation in diseased tissue by combining inflammatory knockdown and regulated cell feedback to regain tissue homeostasis.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        102.57,
+        579.13,
+        289.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 7,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "Macrophages are a highly plastic cell type with the ability to change phenotype based on cues in the microenvironment. In rheumatoid arthritis, inflammatory macrophages contribute to both the initial onset and progression of disease through production of cytokines such as TNF, IL-1β and IL-6.[82] As such, repolarization of macrophages has become a focus in potential treatments of numerous diseases from cancer to arthritis.[83] Previous studies have used hydrogels or polymeric scaffolds with inherent physical properties that drive this M2 polarization[84–87]. Similarly, mRNA-, plasmid-, or protein-loaded materials[88–91] have been shown to effectively immunomodulate macrophages by delivering anti-inflammatory cytokines like IL-4 and IL-10. This methodology has also been applied by engineering cells to overexpress anti-inflammatory cytokines like IL10.[92,93]. Though these studies have shown efficacy in polarizing macrophages towards an anti-inflammatory phenotype, the platforms function unidirectionally and cannot autonomously sense external stimuli to generate customized responses. Here, we demonstrated nMATRIX can effectively reroute IL-1β signaling to instead produce IL-4 and IL-10 via artificial gene circuits in a material- and ligand-dependent manner, which steered macrophages towards a more regenerative, anti-inflammatory phenotype. This provides an increased benefit over the previously described platforms in that nMATRIX is an autoregulated system that responds to dynamic cues in the microenvironment. The modular programmability of nMATRIX suggests the opposite could be implemented as well: pushing an M2-like macrophage towards an M1 phenotype. This would be especially useful in a tumor microenvironment, as various studies have shown polarizing tumor-associated macrophages with inflammatory cytokines can improve immune response to cancer.[94]",
+      "translation": "",
+      "bbox": [
+        36.0,
+        299.61,
+        579.35,
+        559.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 7,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "A core principle of synthetic biology is developing modular frameworks that can utilize native inputs to drive desired cellular outputs. Early synthetic receptors like chimeric antigen receptors (CARs) fuse elements from the endogenous T cell receptor (TCR) signaling apparatus to synthetic binding domains, enabling activation of T cells in response to selected surface marker exhibition.[95] Although CARs have been shown to effectively activate T cells in response to surface markers such CD19 and HER2[96,97], and even a soluble, multimeric factor, TGF-β[98], their outputs are limited to endogenous TCR signaling pathways. Other approaches including chimeric cytokine receptors (ChR) and synthetic cytokine receptors (SyCyRs) hijack native cytokine receptor signaling pathways by modifying the ectodomain of a cytokine receptor to activate via different cytokine input or a non-physiological input such as GFP. [99,100] These technologies have shown great promise, but their signaling mechanism are susceptible to crosstalk and have limited applicability to other cell types. Another modular receptor system, MESA, has demonstrated artificial, orthogonal signaling utilizing dimerizing ligands such dTomato or VEGF.[29,101] In this work, we have demonstrated synNotch can also be activated using",
+      "translation": "",
+      "bbox": [
+        36.0,
+        569.37,
+        579.24,
+        741.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 8,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 8,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "soluble, multimeric cytokines like TNF, TGF-β1 and VEGF. This contradicts previous reports showing that TGFβ could not be used to activate synNotch, indicating a potential cell type dependency for this interaction (e.g. adherent vs. suspension cells).[33] nMATRIX further adds to the synthetic biology toolbox by enabling synNotch signaling with soluble, monomeric, native inputs like IL-1β and IL-6 via biomaterial immobilization. Furthermore, we demonstrated nMATRIX can act as a cytokine converter via orthogonal signaling pathways that can be modulated based on desired application. We also showed that nMATRIX effectively signals with other RIP receptors like SNIPR, suggesting the platform can be used with other juxtacrine receptor formats. Lastly, the dual epitope binding methodology applied in this work could potentially facilitate monomeric signaling in other receptor architectures like MESA and CARs by outfitting them with our cognate scFv pairs.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.11,
+        165.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 8,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "Although a flexible and effective platform, nMATRIX in its current form has various limitations. As materialmediated ligand immobilization is required for effective signaling, the system would need to be adapted into a 3D model for in vivo applications. Antibody conjugated hydrogels have been previously described, and would be a strong candidate for delivering both immobilizing antibody and engineered cells in vivo. [102,103] Additionally, the antibodies described in this work are humanized and have limited cross-reactivity with murine cytokines, and preclinical trials would need to use humanized IL-1β or IL-6 mouse models. Lastly, since nMATRIX requires two affinity motifs that bind to distinct epitopes on the same molecule simultaneously, it would likely be difficult to adapt to poorly characterized molecules with few targeting motifs. Despite these limitations, nMATRIX remains a highly flexible, modular platform with broad use for cellular programming. Future experiments could explore porting nMATRIX into 3D hydrogels for in vivo applications and developing cell lines that co-express cognate receptors to enable material-free signaling.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        175.29,
+        579.14,
+        333.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 8,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "In conclusion, we present the nMATRIX platform, a hybrid system integrating material-guided signal transduction with computational capabilities of engineered cells. Crucially, the platform confines both sensing and effector activity to biomaterial-contact regions, minimizing off-site effects. The platform is also highly modular: both the cells and material surfaces can be programmed to recognize and respond to virtually any selected ligand, enabling precise control over cellular behavior. This adaptability is especially valuable in complex pathological environments such as solid tumors, chronic inflammatory conditions, and degenerative tissues, where coordinated, multi-cellular intervention is often required. By harnessing the native capabilities of diverse cell types and augmenting them with nMATRIX, it becomes possible to design multi-layered therapeutic systems capable of sensing and responding to their surroundings with high precision. In summary, our platform provides a robust method of producing auto-regulated and orthogonal signaling in response to physiological inputs like cytokines.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        343.29,
+        579.18,
+        501.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 8,
+      "type": "heading",
+      "order": 34,
+      "original_text": "Materials and Methods",
+      "translation": "",
+      "bbox": [
+        36.0,
+        511.29,
+        157.65,
+        523.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 8,
+      "type": "paragraph",
+      "order": 35,
+      "original_text": "Plasmids and Cloning: Plasmids were constructed using NEB HiFi DNA Assembly Mix (New England Biolabs) and were subsequently transformed into DH5α competent cells. Cultures were plated on LB Agar + Ampicillin (Sigma) and grown overnight at 37°C. Colonies were picked and validated via whole plasmid sequencing (Plasmidsaurus).",
+      "translation": "",
+      "bbox": [
+        36.0,
+        533.85,
+        579.08,
+        590.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 8,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "Virus production: Lentivirus was produced by transfecting Lx293T cells (Clontech) with 2 μg of transfer vector, 1.5 μg of pCMV-dR8.91 packaging vector[104] and 0.6 μg of pMD2.G envelope vector[105] (Addgene #12259) using Lipofectamine 3000 (Thermo Scientific) following manufacturer's instructions. 16 hours later, medium was exchanged for fresh DMEM-High Glucose supplemented with GlutaMAX and sodium pyruvate + 10% heatinactivated FBS. 24 and 48 hours later, viral supernatant was collected, filtered with a 0.45 μm PVDF filter (CELLTREAT) and pooled for cell transduction or stored short-term (<1 week) at 4°C or long-term at −80°C.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        600.57,
+        579.09,
+        686.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 8,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "Dimeric EGFP (dEGFP) production and purification:",
+      "translation": "",
+      "bbox": [
+        36.0,
+        696.33,
+        293.59,
+        708.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 8,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "dEGFP Cloning: A mutated superfolder GFP sequence was used as the basis of the GFP dimer for coppermediated disulfide-based dimerization, based on a previously reported amino acid",
+      "translation": "",
+      "bbox": [
+        36.0,
+        719.13,
+        579.07,
+        746.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 9,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 9,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "sequence [234,235]. Two naturally occurring cysteines, C48 and C70, were mutated to alanine to reduce offtarget disulfide bonds, while the aspartic acid residue, D117, was mutated to cysteine for disulfide bonding. In addition, a His-tag was added for protein purification. The mutated superfolder GFP coding sequence was produced through Thermo Fisher Scientific’s GeneArt service and cloned into a pBH4 backbone for protein production.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.02,
+        107.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 9,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "Protein expression: Plasmids containing the mutant GFP dimer sequence were transformed into BL21-DE3 E. coli competent cells (NEB) and plated on an LB+agar with ampicillin supplementation plate for overnight incubation at 37°C. Colonies were then picked for three 4 mL starter cultures to be grown with ampicillin supplementation overnight at 37°C. The next day, the starter cultures were added into 1L of LB broth supplemented with ampicillin and allowed to grow at 37°C until the OD was measured in the 0.6-0.8 range. The culture was then induced with 1 mM IPTG (Gold Bio) and incubated for another 4 hours at 37°C. Then the culture was spun down at 4000xg for 20 minutes to harvest the cells. The pellets were then consolidated into 5 mL of PBS and then spun down again at 4000xg for 10 minutes. Pellets were frozen and stored at -20°C for up to 2 months before purification.Cell pellets were lysed using the BugBuster (Novagen) reagent. Briefly, the wet weight of the pellet was determined, and 5 mL of BugBuster reagent was added per 1.5 g of pellet. 10 µL of Lysonase reagent was then added to the suspension, which was then incubated at room temperature for 30 minutes on a rotating mixer. To remove insoluble cell debris, the suspension was then centrifuged at 4000xg for 1 hour at 4°C.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        117.69,
+        582.13,
+        291.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 9,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": "Protein purification: His-tagged protein was isolated using a cobalt resin column. After the suspension was passed through the gravity column, the column was washed with one column volume wash buffer (20 mM TrisHCl, 150 mM NaCl, 10 mM imidazole). The protein was then collected in fractions using elution buffer (20 mM Tris-HCl, 150 mM NaCl, 250 mM imidazole). Fractions were pooled and then concentrated into 1 mL buffer (20 mM Tris pH 9.0, 100 mM NaCl) [235] using Amicon molecular weight cutoff (MWCO) filters (Sigma-Aldrich).",
+      "translation": "",
+      "bbox": [
+        36.0,
+        301.29,
+        579.23,
+        372.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 9,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "Dimerization: The GFP protein was then induced to form disulfide bonds using 10 mL dimerization buffer (20 mM Tris pH 9.0, 100 mM NaCl, 5 mM CuSO4). The reaction was allowed to proceed for 15 minutes at room temperature until quenching by addition of 50 mM EDTA. The protein was then exchanged into anion exchange buffer (10 mM Tris pH 9.5, 1 mM EDTA) using Amicon MWCO filters. Using an anion exchange column (Cytiva), the dimers were purified from the monomers via a salt gradient of 0-1 M NaCl in anion exchange buffer [235]. Fractions were collected and validated using non-reducing SDS-PAGE. Fractions containing GFP dimers were desalted into DPBS using Amicon MWCO filters and aliquoted and frozen at -80°C.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        382.65,
+        579.08,
+        482.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 9,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": "Cell Culture:",
+      "translation": "",
+      "bbox": [
+        36.0,
+        493.29,
+        107.52,
+        505.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 9,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "Murine Mesenchymal Stem Cell: Bone-marrow derived C57BL/6 mMSCs (Cyagen) were cultured in ΜEM-α + GlutaMAX (Gibco) supplemented with 15% FBS in an incubator at 37°C and 5% carbon dioxide. For routine subcultivation, cells were rinsed with 1X DPBS (Gibco) and treated with TrypLE for five minutes at 37°C to detach cells. After quenching cells with complete medium, they were spun at 300xg for 5 minutes and replated in culture medium.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        515.85,
+        579.1,
+        586.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 9,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "L929 Fibroblasts: Mouse L929 fibroblasts (ATCC# CCL-1) were cultured in DMEM + GlutaMAX (Gibco) supplemented with 10% heat-inactivated FBS in an incubator at 37°C and 5% carbon dioxide. For routine subcultivation, cells were treated with TrypLE for five minutes at 37°C to detach cells. After quenching cells with complete medium, they were spun at 300xg for 5 minutes and replated in culture medium.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        597.21,
+        579.16,
+        653.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 9,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "RAW 264.7 Macrophages: RAW 264.7 macrophages (ATCC# TIB-71) were cultured in DMEM + GlutaMAX (Gibco) supplemented with 10% FBS in an incubator at 37°C and 5% carbon dioxide. For routine subcultivation, cells were rinsed with 1X DPBS (Gibco) and treated with TrypLE for five minutes at 37°C to detach cells. After quenching cells with complete medium, they were spun at 300xg for 5 minutes and replated in culture medium.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        663.69,
+        579.05,
+        719.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 10,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 10,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "ATDC5 Chondrocytes: ATDC5s (Sigma Aldrich) were cultured in DMEM:F12 + GlutaMAX (Gibco) supplemented with 5% FBS in an incubator at 37°C and 5% carbon dioxide. For routine subcultivation, cells were rinsed with 1X DPBS (Gibco) and treated with TrypLE for five minutes at 37°C to detach cells. After quenching cells with complete medium, they were spun at 300xg for 5 minutes and replated in culture medium.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.31,
+        92.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 10,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "Fibroblast-like Synoviocytes: Primary fibroblast-like synoviocytes were harvested from 8 week old C57BL/6 mice according to the following protocol.[106] Isolated FLS cells were cultured on adsorbed rat tail collagen I (Gibco) in DMEM + GlutaMAX (Gibco) supplemented with 10% FBS in an incubator at 37°C and 5% carbon dioxide. For routine subcultivation, cells were rinsed with 1X DPBS (Gibco) and treated with TrypLE for five minutes at 37°C to detach cells. After quenching cells with complete medium, they were spun at 300xg for 5 minutes and replated on rat tail collagen I in culture medium.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        103.05,
+        579.07,
+        188.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 10,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "Lentiviral Transduction: All cell lines were produced using reverse transduction using virus concentrated with LentiX Concentrator (Takara). Viral media was supplemented with 4 μg/mL of polybrene to enhance transduction efficiency and incubated with cells overnight at 37°C before being replaced with fresh cell culture media. Cells were selected using 10 μg/mL of puromycin (Sigma) when applicable. Unless otherwise noted, all cells following transduction were sorted for synNotch and transgene expression via fluorescence activated cell sorting (FACS).",
+      "translation": "",
+      "bbox": [
+        36.0,
+        198.81,
+        582.13,
+        269.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 10,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "Material-free activation of cytokine responsive synNotch receptors: mMSCs were co-engineered with synNotch receptors with scFvs that each bind to one of TNF-α, TGF-β1, IL-1β or IL-6 and a transgene cassette expressing a tetracycline response element (TRE) driven mCherry and luciferase output. 8,000 cells were plated in a whitewalled 96-well plate (Corning) and treated with their respective ligands: TNF-α (25 ng/mL, StemCellTech), TGFβ1 (50ng/mL, StemCellTech), IL-1β (10 ng/mL, MedChemExpress) or IL-6 (10 ng/mL, MedChemExpress). After 48 hours, CellTiter-Fluor (Promega) was performed according to manufacturer’s instructions and read on a Tecan Infinite M1000 Pro plate reader. Following this, a BrightGlo (Promega) assay measuring firefly luminescence as a measure of synNotch activity was performed according to manufacturer’s protocol on a Tecan Infinite M1000 Pro plate reader. Normalization was performed by dividing luminescence values each well’s respective CellTiterFluor output.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        280.17,
+        579.26,
+        424.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 10,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "GFP Dimer Activation Assay: synNotch L929 fibroblasts were plated at a density of 18,000 cells/well (56,250 cells/cm2) on a control surface of streptavidin only. The LaG16 (Kd of 0.7 nM) synNotch receptor was exposed to a range of concentrations from 0 to 100 nM of either recombinant GFP purified from E. coli via immobilized metal affinity chromatography or mutant purified GFP dimer (purification process described above). After 48 hours, firefly luminescence was measured using the BrightGlo luminescence assay (Promega) on a Tecan Infinite M1000 Pro plate reader. Results are expressed as fold change relative to GFP-free conditions.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        434.73,
+        579.14,
+        520.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 10,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "Antibody surface functionalization: Recombinant protein A/G (ThermoFisher) was reconstituted according to manufacturer’s recommendations. Aliquoted Protein A/G was further diluted to 10ug/mL in BupH CarbonateBicarbonate buffer (ThermoFisher) and 100ul per well was added to tissue culture (TC) treated 96-well plates (Corning). After incubating 1 hour at room temperature (RT), the solution was aspirated and washed with 200 μl of 1X DPBS (Gibco). Gevokizumab (MedChemExpress) or Olokizumab (MedChemExpress) were diluted to 10 μg/mL and 100 μl were added to the Protein A/G coated wells and left to coat overnight at 4°C. The following day, wells were washed with 200 μl of 1X DPBS and used immediately.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        530.49,
+        579.1,
+        630.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 10,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "Biomaterial based activation of synNotch: After functionalizing a plate with gevokizumab, 12,000 canakinumab synNotch engineered mMSCs were plated in each well and supplemented with media containing IL-1β in a range of concentrations from 0-100 ng/mL. After 48 hours, firefly luminescence was measured via BrightGlo (Promega) luminescence assay on a Tecan Infinite M1000 Pro plate reader. To assess IL-6 synNotch activation, this same procedure was performed using an olokizumab functionalized surface and ziltivekimab engineered synNotch cells dosed with 0-100 ng/mL of IL-6.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        641.13,
+        579.09,
+        726.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 11,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 11,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "IL-1β ELISA: 96-well TC plates were coated with Protein A/G and gevokizumab as previously mentioned. 12,000 of either wild-type or canakinumab synNotch engineered cells were plated in each well and dosed with 10 ng/mL of IL-1β. After 48 hours of culture, conditioned media were spun at 1500xg for 15 minutes and were analyzed using an IL-1β ELISA kit (R&DSystems DY201) according to the manufacturer’s protocol.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.25,
+        92.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 11,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "IL-6 ELISA: 96-well TC plates were coated with Protein A/G and olokizumab as previously mentioned. 12,000 of either wild-type or ziltivekimab synNotch engineered cells were plated in each well and dosed with 10 ng/mL of IL-6. After 48 hours of culture, conditioned media was spun at 1500xg for 15 minutes and was analyzed using an IL-6 ELISA kit (R&DSystems DY206) according to the manufacturer’s protocol.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        103.05,
+        579.24,
+        159.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 11,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "NF-κB Transcriptional Activity Assay: NF-κB reporter mMSCs were generated via lentiviral transduction of a plasmid encoding 4 repeats of the NF-κB response elements followed by a minimal promoter sequence,[107] allowing for activation of a downstream luciferase transgene when NF-κB is active. To assess modulation of native NF-κB signaling, 96-well TC plates were treated with Protein A/G and gevokizumab as previously described and 12,000 of either wild-type or canakinumab engineered reporter mMSCs were added to each well and supplemented with 0, 1, or 10ng/mL of IL-1β in 100 μl of media. After 24 hours, conditioned media from these groups were added to NF-κB reporter mMSCs, which were plated at a density of 8,000 cells per well in a 96-well, white-walled TC treated plate the day prior. After 5 hours of co-culture, a BrightGlo (Promega) luminescence assay was performed on the NF-κB reporter cells to quantify NF-κB activity.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        169.53,
+        579.25,
+        298.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 11,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "SynNotch and SNIPR activation: IL-1β and IL-6 SNIPR receptors (Canak-SNIPR and Zilti-SNIPR, respectively) were created by replacing the transmembrane domain of their synNotch counterparts with the CD8 Hinge, Notch 1TM and Notch2JM domains derived from an anti-CD19 SNIPR construct (Addgene #188375)[34] via PCR and Gibson assembly. A flexible (G3S)x3 linker was added between the scFv and CD8 Hinge domains for additional flexibility. 12,000 mMSCs expressing either canakinumab engineered synNotch or canakinumab engineered SNIPR and a reporter luciferase transgene were plated on a white-walled, 96-well plate. Wells were treated with gevokizumab as previously described. Cells were treated with 10ng/mL of IL-1β and a BrightGlo luminescence assay was performed 48 hours after plating to assess receptor activity. The same procedure was performed to assess IL-6 mediated activity of ziltivekimab engineered synNotch and SNIPR cells plated on olokizumab functionalized surfaces.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        309.45,
+        579.17,
+        453.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 11,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "GFP mediated polarization: anti-GFP LaG16-synNotch engineered cells were transduced with a synNotch inducible transgene circuit that expresses mouse IL-4 and mouse IL-10 in response to activation. Wells of a 24 well non-TC plate were coated with GFP-TRAP-PEG as previously described[38] and 80,000 mMSCs were plated and treated with 5 nM GFP. In a separate TC-treated 24-well plate, 180,000 RAW264.7 macrophages were plated. After 24 hours, conditioned media from the anti-GFP mMSCs were spun down at 1500xg for 10 minutes and added to the RAW264.7 cells. Media without GFP were added to the anti-GFP mMSCs and were allowed to incubate another 24 hours before being transferred to the RAW264.7 macrophages as previously described. After an additional 24 hours of incubation, RAW264.7 were lifted using Accutase and labeled for CD86, CD163 and CD206 surface markers using antibodies listed in Supplementary Table 2 before undergoing flow cytometry.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        464.01,
+        579.18,
+        608.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 11,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "IL-1β mediated polarization: Canakinumab-synNotch mMSCs were engineered with the mouse IL-4/IL-10 payload via lentiviral transduction as described earlier. 80,000 mMSCs were added to the basal chamber of a gevokizumab functionalized transwell plate (Corning) and were treated with 10 ng/mL of IL-1β. Simultaneously, 30,000 RAW264.7 macrophages were added to the apical chamber of a transwell and kept in a separate well with 500 μl of media. After 24 hours of incubation, the RAW264.7 transwell inserts were transferred into the mMSC wells and allowed to incubate for an additional 48 hours. After co-culturing, RAW264.7 cells were lifted using Accutase and stained for CD86, CD163 and CD206 surface markers before undergoing flow cytometry.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        618.33,
+        579.3,
+        718.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 11,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "mIL-4 and mIL-10 ELISA: Mouse IL-4 and mouse IL-10 ELISA levels were assessed using respective ELISA kits (R&DSystems, DY404 and DY417) according to manufacturer instructions.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        728.97,
+        579.04,
+        755.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 12,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 12,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "Flow Cytometry: All quantitative flow cytometry was performed on Amnis Cellstream flow cytometer. Cells were resuspended in DPBS supplemented with 2% FBS. Fluorescence activated cell sorting (FACS) was performed at the Vanderbilt Flow Core using a BD 5 Laser FACS Aria. Antibodies were diluted according to manufacturer’s instructions for all samples. A list of antibodies used can be found in Supplemental Table 2.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.0,
+        92.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 12,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "Statistical analysis: Graphs were produced using GraphPad Prism 10. All bar graphs display the mean of triplicate values with errors bars showing the standard deviation. To determine significance in experiments, a two- or three-way ANOVA with an alpha of 0.05 was used to compare between groups as needed. ANOVA tests were conducted along with Tukey’s post-hoc test with multiple comparisons.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        103.05,
+        579.23,
+        159.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 12,
+      "type": "heading",
+      "order": 67,
+      "original_text": "Acknowledgements",
+      "translation": "",
+      "bbox": [
+        36.0,
+        169.53,
+        142.37,
+        181.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 12,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "The authors acknowledge funding support from NSF Career Award CBET-2237639, NIH R01AR083437, and the Vanderbilt Institute for Clinical and Translational Research (VR72804). This work was also supported by the Arthritis National Research Foundation Judy E. Green Valiant Women’s Fellowship. Fluorescence activated cell sorting was performed at the Vanderbilt Flow Cytometry Shared Resource, which is supported by the Vanderbilt Ingram Cancer Center (P30 CA068485) and the Vanderbilt Digestive Disease Research Center (DK058404). We thank Megan Keech and Larry Stokes for technical assistance.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        192.09,
+        576.89,
+        277.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 12,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "Figures and captions:",
+      "translation": "",
+      "bbox": [
+        36.0,
+        287.37,
+        153.36,
+        299.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 12,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "Figure 1. Repurposing MATRIX platform for native inputs. (A) Firefly luminescence normalized to viability indicating synNotch activation in response a panel of synNotch receptors targeted to TGFβ-1, TNF, IL-1β and IL-6. (B) Firefly luminescence normalized to ligand-free conditions indicating Anti-GFP synNotch activation in response to varied doses of monomer versus mutant dimer EGFP. Depicted significance indicated compares +Dimer vs. +Monomer at respective dose. (C) Schematic demonstrating native MATRIX system used to immobilize soluble ligands for presentation to synNotch-engineered cells. (D) Dual binding of either IL-1β or IL6. Gevokizumab and canakinumab synNotch (Canak-Notch) bind to non-overlapping epitopes of IL-1β. Olokizumab and ziltivekimab synNotch (Zilti-Notch) bind to non-overlapping epitopes of IL-6. (E) Effect of Protein A/G coating on activation of IL-1β-responsive synNotch. Firefly luminescence readout in response to varied doses of IL-1β indicating Canak-Notch activation. Depicted significance indicates +Protein A/G +mAb group",
+      "translation": "",
+      "bbox": [
+        36.0,
+        611.13,
+        579.23,
+        755.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 13,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 13,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "compared to each other group at each respective dose (F) Dose response of IL-6-responsive synNotch when plated on olokizumab functionalized surface. Firefly luminescence readout in response to varied doses of IL-6 indicating Zilti-Notch activation. Depicted significance compares -mAb Surface to +mAb Surface for each respective dose. All statistical tests were done using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups *p<0.05, **p<0.01, ****p<0.0001.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        579.18,
+        107.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 13,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "Figure 2. nMATRIX modulates IL-1β and IL-6 levels via receptor and surface neutralization. (A) IL-1β as measured by ELISA 48 hours after supplementing 10 ng/mL to either wild-type mMSCs or Canak-Notch mMSCs with or without the gevokizumab surface. (B) IL-6 as measured by ELISA 48 hours after supplementing 10 ng/mL to either wild-type or Zilti-Notch mMSCs with or without the olokizumab surface. (C) Schematic showing conditioned media treatment of NF-κB reporter cells. (D) Resultant NF-κB signaling 5 hours after transferring IL1β conditioned media to NF-κB reporter cells. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. **p<0.01 ***p<0.001 ****p<0.0001.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        450.57,
+        579.22,
+        551.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 14,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 14,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "Figure 3. nMATRIX is applicable to different cell types. (A) IL-1β dose dependent activation of (A) ATDC5 chondrocyte-like cells, (B) primary fibroblast-like synoviocyte cells, (C) L929 fibroblasts, and (D) RAW264.7 macrophages. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. *p<0.05, ***p<0.001 ****p<0.0001.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        336.33,
+        579.13,
+        392.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 14,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "Figure 4. nMATRIX can be adapted to a different receptor platform. (Α) SNIPR engineered with canakinumab scFv can be activated in an nMATRIX-dependent manner. (Β) SNIPR engineered with ziltivekimab scFv can be activated in an nMATRIX-dependent manner. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. ****p<0.0001.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        662.01,
+        579.11,
+        718.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 15,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 15,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "Figure 5. MATRIX can enhance CD206 expression in macrophages (A) Schematic of experimental setup. GFPresponsive synNotch mMSCs containing an inducible reporter transgene or an inducible IL4/IL10 cassette were stimulated with GFP. Conditioned media from these cells was added to RAW 264.7 cells at 24 and 48 hour timepoints. At 72 hours, RAW264.7 surface marker expression was measured via flow cytometry to evaluate polarization. (B-C) Mouse IL-4(B) and mouse IL-10(C) concentrations as measured by ELISA after 24 hours of GFP stimulation of anti-GFP reporter and IL4/IL10 mMSCs. (D-F) Quantified mean fluorescence intensity of CD206(D), CD163(E), and CD86(F) surface expression of RAW264.7 cells after treatment with GFP-induced reporter and IL4/IL10 cell conditioned media. All statistics were performed using a two- way ANOVA (B,C) or three-way ANOVA (D-F) with Tukey’s multiple comparisons n=3 for all experimental groups. ***p<0.001 ****p<0.0001.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        358.41,
+        579.24,
+        502.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 16,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 16,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "Figure 6. nMATRIX can polarize macrophages toward M2-like phenotypes. (A) Schematic of transwell setup. Canak-Notch synNotch mMSCs containing an inducible reporter transgene or an inducible IL4/IL10 cassette were stimulated with 10 ng/mL IL-1β. After 24 hours of mMSC stimulation, RAW264.7 cells in the apical transwell chamber were transferred into the basal mMSC chamber. After 48 hours of co-culture, RAW264.7 surface marker expression was measured via flow cytometry to evaluate polarization. (B-C) Murine IL-4 (B) and murine IL-10 (C) concentrations as measured by ELISA after co-culture with RAW264.7 cells. (D-F) Quantified mean fluorescence intensity of CD206 (D), CD163 (E), and CD86 (F) surface expression of RAW264.7 cells after treatment with IL-1β-induced reporter and IL4/IL10 co-culture. All statistics were performed using a two- way ANOVA (B,C) or three-way ANOVA (D-F) with Tukey’s multiple comparisons. n=3 for all experimental groups. *p<0.05 **p<0.01 ***p<0.001 ****p<0.0001.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        387.69,
+        579.37,
+        532.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 16,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "References:",
+      "translation": "",
+      "bbox": [
+        36.0,
+        542.25,
+        102.05,
+        554.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 16,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "[1] Z.M. Jessop, A. Al-Sabah, W.R. Francis, I.S. Whitaker, Transforming healthcare through regenerative medicine, BMC Med 14 (2016) 115. [2] D. Goldenberg, C. McLaughlin, S.V. Koduru, D.J. Ravnic, Regenerative Engineering: Current Applications and Future Perspectives, Front. Surg. 8 (2021). https://doi.org/10.3389/fsurg.2021.731031. [3] C.J. Esdaille, K.S. Washington, C.T. Laurencin, Regenerative Engineering: A Review of Recent Advances and Future Directions, Regen. Med. 16 (2021) 495–512. https://doi.org/10.2217/rme-2021-0016. [4] D. Salthouse, K. Novakovic, C.M.U. Hilkens, A.M. Ferreira, Interplay between biomaterials and the immune system: Challenges and opportunities in regenerative medicine, Acta Biomaterialia 155 (2023) 1– 18. https://doi.org/10.1016/j.actbio.2022.11.003. [5] C.M. Weyand, J.J. Goronzy, The immunology of rheumatoid arthritis, Nat Immunol 22 (2021) 10–18. https://doi.org/10.1038/s41590-020-00816-x. [6] V. Turinetto, E. Vitale, C. Giachino, Senescence in Human Mesenchymal Stem Cells: Functional Changes and Implications in Stem Cell-Based Therapy, International Journal of Molecular Sciences 17 (2016) 1164. https://doi.org/10.3390/ijms17071164.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        564.81,
+        577.75,
+        741.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 17,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 17,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "[7] C.N. Serhan, Treating inflammation and infection in the 21st century: new hints from decoding resolution mediators and mechanisms, Faseb J 31 (2017) 1273–1288. [8] Y. Li, Y. Xiao, C. Liu, The Horizon of Materiobiology: A Perspective on Material-Guided Cell Behaviors and Tissue Engineering, Chemical Reviews 117 (2017) 4376–4421. [9] Z. Tu, Y. Zhong, H. Hu, D. Shao, R. Haag, M. Schirner, J. Lee, B. Sullenger, K.W. Leong, Design of therapeutic biomaterials to control inflammation, Nat Rev Mater 7 (2022) 557–574. [10] R.B. Kargbo, Advances in Targeted Therapies for Inflammatory Diseases and Cancer: Exploring Cellular",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        576.85,
+        124.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 17,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "Mechanisms and Therapeutic Strategies, ACS Med Chem Lett 15 (2024) 758–760. [11] A.M. Rosales, K.S. Anseth, The design of reversible hydrogels to capture extracellular matrix dynamics,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        124.89,
+        567.23,
+        149.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 17,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "Nat Rev Mater 1 (2016). [12] C.M. Kirschner, K.S. Anseth, Hydrogels in Healthcare: From Static to Dynamic Material",
+      "translation": "",
+      "bbox": [
+        36.0,
+        150.09,
+        485.99,
+        175.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 17,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "Microenvironments, Acta Mater 61 (2013) 931–944. [13] M. Guvendiren, J.A. Burdick, Stiffening hydrogels to probe short- and long-term cellular responses to",
+      "translation": "",
+      "bbox": [
+        36.0,
+        175.29,
+        552.95,
+        200.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 17,
+      "type": "paragraph",
+      "order": 88,
+      "original_text": "dynamic mechanics, Nat Commun 3 (2012) 792. [14] J.R. Martin, M.K. Gupta, J.M. Page, F. Yu, J.M. Davidson, S.A. Guelcher, C.L. Duvall, A porous tissue",
+      "translation": "",
+      "bbox": [
+        36.0,
+        200.73,
+        555.56,
+        225.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 17,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "engineering scaffold selectively degraded by cell-generated reactive oxygen species, Biomaterials 35 (2014) 3766–76. [15] J.R. Martin, P. Patil, F. Yu, M.K. Gupta, C.L. Duvall, Enhanced stem cell retention and antioxidative",
+      "translation": "",
+      "bbox": [
+        36.0,
+        225.93,
+        555.68,
+        263.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 17,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "protection with injectable, ROS-degradable PEG hydrogels, Biomaterials 263 (2020) 120377. [16] Y. Wu, Y. Wang, L. Long, C. Hu, Q. Kong, Y. Wang, A spatiotemporal release platform based on pH/ROS",
+      "translation": "",
+      "bbox": [
+        36.0,
+        263.85,
+        570.26,
+        288.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 17,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "stimuli-responsive hydrogel in wound repairing, J Control Release 341 (2022) 147–165. [17] M.G. Bezold, A.R. Hanna, B.R. Dollinger, P. Patil, F. Yu, C.L. Duvall, M.K. Gupta, Hybrid Shear-thinning",
+      "translation": "",
+      "bbox": [
+        36.0,
+        289.29,
+        564.39,
+        314.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 17,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "Hydrogel Integrating Hyaluronic Acid with ROS-Responsive Nanoparticles, Adv Funct Mater 33 (2023). [18] E.R. Ruskowitz, M.P. Comerford, B.A. Badeau, C.A. DeForest, Logical stimuli-triggered delivery of small",
+      "translation": "",
+      "bbox": [
+        36.0,
+        314.49,
+        568.8,
+        339.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 17,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "molecules from hydrogel biomaterials, Biomater Sci 7 (2019) 542–546. [19] J.L. Holloway, H. Ma, R. Rai, K.D. Hankenson, J.A. Burdick, Synergistic Effects of SDF-1alpha and BMP-",
+      "translation": "",
+      "bbox": [
+        36.0,
+        339.93,
+        571.08,
+        364.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 17,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "2 Delivery from Proteolytically Degradable Hyaluronic Acid Hydrogels for Bone Repair, Macromol Biosci 15 (2015) 1218–23. [20] D.E. Meyer, B.C. Shin, G.A. Kong, M.W. Dewhirst, A. Chilkoti, Drug targeting using thermally responsive",
+      "translation": "",
+      "bbox": [
+        36.0,
+        365.13,
+        569.15,
+        402.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 17,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "polymers and local hyperthermia, J Control Release 74 (2001) 213–24. [21] Y. Zhang, R. Wang, Y. Hua, R. Baumgartner, J. Cheng, Trigger-Responsive Poly(beta-amino ester,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        403.05,
+        541.8,
+        428.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 17,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "Hydrogels, Acs Macro Lett 3 (2014) 693–697. [22] B.P. Purcell, Injectable and bioresponsive hydrogels for on-demand matrix metalloproteinase inhibition,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        428.49,
+        563.42,
+        453.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 17,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "Nat Mater 13 (2014) 653–61. [23] I. Batalov, K.R. Stevens, C.A. DeForest, Photopatterned biomolecule immobilization to guide three-",
+      "translation": "",
+      "bbox": [
+        36.0,
+        453.69,
+        541.99,
+        478.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 17,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "dimensional cell fate in natural protein-based hydrogels, Proc Natl Acad Sci U S A 118 (2021). [24] M.L. Ohnsorg, E.A. Hushka, K.S. Anseth, Photoresponsive Chemistries for User-Directed Hydrogel",
+      "translation": "",
+      "bbox": [
+        36.0,
+        478.89,
+        544.65,
+        503.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 17,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "Network Modulation to Investigate Cell-Matrix Interactions, Acc Chem Res 58 (2025) 47–60. [25] A.M. Kloxin, M.W. Tibbitt, K.S. Anseth, Synthesis of photodegradable hydrogels as dynamically tunable",
+      "translation": "",
+      "bbox": [
+        36.0,
+        504.33,
+        563.8,
+        529.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 17,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "cell culture platforms, Nat Protoc 5 (2010) 1867–87. [26] H. Wang, R.T.T. Morales, X. Cui, J. Huang, W. Qian, J. Tong, W. Chen, A photoresponsive hyaluronan",
+      "translation": "",
+      "bbox": [
+        36.0,
+        529.53,
+        557.62,
+        554.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 17,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "hydrogel nanocomposite for dynamic macrophage immunomodulation, Advanced Healthcare Materials 8 (2019) 1801234. [27] T.A. Baeumler, A.A. Ahmed, T.A. Fulga, Engineering Synthetic Signaling Pathways with Programmable",
+      "translation": "",
+      "bbox": [
+        36.0,
+        554.97,
+        571.76,
+        592.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 17,
+      "type": "paragraph",
+      "order": 102,
+      "original_text": "dCas9-Based Chimeric Receptors, Cell Rep 20 (2017) 2639–2653. [28] L. Morsut, K.T. Roybal, X. Xiong, R.M. Gordley, S.M. Coyle, M. Thomson, W.A. Lim, Engineering",
+      "translation": "",
+      "bbox": [
+        36.0,
+        592.89,
+        531.96,
+        617.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 17,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "Customized Cell Sensing and Response Behaviors Using Synthetic Notch Receptors, Cell 164 (2016) 780–791. https://doi.org/10.1016/j.cell.2016.01.012. [29] N.M. Daringer, R.M. Dudek, K.A. Schwarz, J.N. Leonard, Modular extracellular sensor architecture for",
+      "translation": "",
+      "bbox": [
+        36.0,
+        618.09,
+        559.15,
+        655.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 17,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "engineering mammalian cell-based devices, ACS Synth Biol 3 (2014) 892–902. [30] N.H. Kipniss, P. Dingal, T.R. Abbott, Y. Gao, H. Wang, A.A. Dominguez, L. Labanieh, L.S. Qi, Engineering",
+      "translation": "",
+      "bbox": [
+        36.0,
+        656.01,
+        574.12,
+        681.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 17,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "cell sensing and responses using a GPCR-coupled CRISPR-Cas system, Nat Commun 8 (2017) 2212. [31] K. Krawczyk, L. Scheller, H. Kim, M. Fussenegger, Rewiring of endogenous signaling pathways to",
+      "translation": "",
+      "bbox": [
+        36.0,
+        681.45,
+        563.78,
+        706.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 17,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "genomic targets for therapeutic cell reprogramming, Nat Commun 11 (2020) 608. [32] L. Scheller, T. Strittmatter, D. Fuchs, D. Bojar, M. Fussenegger, Generalized extracellular molecule sensor",
+      "translation": "",
+      "bbox": [
+        36.0,
+        706.65,
+        577.44,
+        731.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 17,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "platform for programming cellular behavior, Nat Chem Biol 14 (2018) 723–729.",
+      "translation": "",
+      "bbox": [
+        61.2,
+        731.85,
+        446.41,
+        744.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 18,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 18,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "[33] D.I. Piraner, M.H. Abedi, M.J.D. Gonzalez, A. Chazin-Gray, A. Lin, I. Zhu, P.T. Ravindran, T.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        505.49,
+        48.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 18,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "Schlichthaerle, B. Huang, T.H. Bearchild, D. Lee, S. Wyman, Y.W. Jun, D. Baker, K.T. Roybal, Engineered receptors for soluble cellular communication and disease sensing, Nature 638 (2025) 805–813. [34] I. Zhu, R. Liu, J.M. Garcia, A. Hyrenius-Wittsten, D.I. Piraner, J. Alavi, D.V. Israni, B. Liu, A.S. Khalil, K.T.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        48.81,
+        576.67,
+        86.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 18,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "Roybal, Modular design of synthetic receptors for programmed gene regulation in cell therapies, Cell 185 (2022) 1431-1443.e16. https://doi.org/10.1016/j.cell.2022.03.023. [35] G. Barnea, W. Strapps, G. Herrada, Y. Berman, J. Ong, B. Kloss, R. Axel, K.J. Lee, The genetic design of",
+      "translation": "",
+      "bbox": [
+        36.0,
+        86.97,
+        574.64,
+        124.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 18,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "signaling cascades to record receptor activation, Proc Natl Acad Sci U S A 105 (2008) 64–9. [36] D. Lee, M. Creed, K. Jung, T. Stefanelli, D.J. Wendler, W.C. Oh, N.L. Mignocchi, C. Luscher, H.B. Kwon,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        124.89,
+        569.35,
+        149.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 18,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "Temporally precise labeling and control of neuromodulatory circuits in the mammalian brain, Nat Methods 14 (2017) 495–503. [37] N.A. Kalogriopoulos, R. Tei, Y. Yan, P.M. Klein, M. Ravalin, B. Cai, I. Soltesz, Y. Li, A.Y. Ting, Synthetic",
+      "translation": "",
+      "bbox": [
+        36.0,
+        150.09,
+        575.55,
+        187.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0114",
+      "page": 18,
+      "type": "paragraph",
+      "order": 114,
+      "original_text": "GPCRs for programmable sensing and control of cell behaviour, Nature 637 (2025) 230–239. [38] J.C. Lee, H.J. Brien, B.L. Walton, Z.M. Eidman, S. Toda, W.A. Lim, J.M. Brunger, Instructional materials",
+      "translation": "",
+      "bbox": [
+        36.0,
+        188.01,
+        565.53,
+        213.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0115",
+      "page": 18,
+      "type": "paragraph",
+      "order": 115,
+      "original_text": "that control cellular activity through synthetic Notch receptors, Biomaterials 297 (2023) 122099. https://doi.org/10.1016/j.biomaterials.2023.122099. [39] B. Varnum-Finney, L. Wu, M. Yu, C. Brashem-Stein, S. Staats, D. Flowers, J.D. Griffin, I.D. Bernstein,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        213.45,
+        555.79,
+        250.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0116",
+      "page": 18,
+      "type": "paragraph",
+      "order": 116,
+      "original_text": "Immobilization of Notch ligand, Delta-1, is required for induction of Notch signaling, J Cell Sci 113 (2000) 4313–4318. https://doi.org/10.1242/jcs.113.23.4313. [40] T. Huang, L. David, V. Mendoza, Y. Yang, M. Villarreal, K. De, L. Sun, X. Fang, F. López-Casillas, J.L.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        251.37,
+        570.93,
+        288.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0117",
+      "page": 18,
+      "type": "paragraph",
+      "order": 117,
+      "original_text": "Wrana, A.P. Hinck, TGF-β signalling is mediated by two autonomously functioning TβRI:TβRII pairs, EMBO J 30 (2011) 1263–1276. https://doi.org/10.1038/emboj.2011.54. [41] R.A. Smith, C. Baglioni, The active form of tumor necrosis factor is a trimer, J Biol Chem 262 (1987)",
+      "translation": "",
+      "bbox": [
+        36.0,
+        289.29,
+        548.15,
+        326.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0118",
+      "page": 18,
+      "type": "paragraph",
+      "order": 118,
+      "original_text": "6951–6954. [42] Y.A. Muller, B. Li, H.W. Christinger, J.A. Wells, B.C. Cunningham, A.M. de Vos, Vascular endothelial",
+      "translation": "",
+      "bbox": [
+        36.0,
+        327.21,
+        546.56,
+        352.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0119",
+      "page": 18,
+      "type": "paragraph",
+      "order": 119,
+      "original_text": "growth factor: Crystal structure and functional mapping of the kinase domain receptor binding site, Proceedings of the National Academy of Sciences 94 (1997) 7192–7197. https://doi.org/10.1073/pnas.94.14.7192. [43] D.J. Leibly, M.A. Arbing, I. Pashkov, N. DeVore, G.S. Waldo, T.C. Terwilliger, T.O. Yeates, A Suite of",
+      "translation": "",
+      "bbox": [
+        36.0,
+        352.41,
+        544.49,
+        402.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0120",
+      "page": 18,
+      "type": "paragraph",
+      "order": 120,
+      "original_text": "Engineered GFP Molecules for Oligomeric Scaffolding, Structure 23 (2015) 1754–1768. https://doi.org/10.1016/j.str.2015.07.008. [44] M. Blech, D. Peter, P. Fischer, M.M.T. Bauer, M. Hafner, M. Zeeb, H. Nar, One Target—Two Different",
+      "translation": "",
+      "bbox": [
+        36.0,
+        403.05,
+        550.71,
+        440.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0121",
+      "page": 18,
+      "type": "paragraph",
+      "order": 121,
+      "original_text": "Binding Modes: Structural Insights into Gevokizumab and Canakinumab Interactions to Interleukin-1β, Journal of Molecular Biology 425 (2013) 94–111. https://doi.org/10.1016/j.jmb.2012.09.021. [45] U. Bilitewski, Protein-sensing assay formats and devices, Analytica Chimica Acta 568 (2006) 232–247.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        440.97,
+        561.77,
+        478.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0122",
+      "page": 18,
+      "type": "paragraph",
+      "order": 122,
+      "original_text": "https://doi.org/10.1016/j.aca.2005.12.073. [46] W.-W. Lin, Y.-C. Lu, B.-C. Huang, C.-H. Chuang, Y.-A. Cheng, I.-J. Chen, H.-J. Liu, K.-W. Ho, T.-Y. Liao,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        478.89,
+        565.39,
+        503.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0123",
+      "page": 18,
+      "type": "paragraph",
+      "order": 123,
+      "original_text": "E.-S. Liu, T.-Y. Wu, L.-S. Chang, S.-T. Hong, T.-L. Cheng, Selective activation of pro-anti-IL-1β antibody enhances specificity for autoinflammatory disorder therapy, Sci Rep 11 (2021) 14846. https://doi.org/10.1038/s41598-021-94298-y. [47] S.-Y. Park, M.-J. Kang, J.-S. Han, Interleukin-1 beta promotes neuronal differentiation through the",
+      "translation": "",
+      "bbox": [
+        36.0,
+        504.33,
+        565.03,
+        554.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0124",
+      "page": 18,
+      "type": "paragraph",
+      "order": 124,
+      "original_text": "Wnt5a/RhoA/JNK pathway in cortical neural precursor cells, Molecular Brain 11 (2018) 39. https://doi.org/10.1186/s13041-018-0383-6. [48] A. Cordeiro-Santanach, F. Morales, M. del C. Parquet, K. Uaesoontrachoon, J. Rowsell, J. Warford, W.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        554.97,
+        562.65,
+        592.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0125",
+      "page": 18,
+      "type": "paragraph",
+      "order": 125,
+      "original_text": "Wu, P. Elustondo, E.P. Hoffman, K. Nagaraju, The effect of IL-1β inhibitor canakinumab (Ilaris®) on IL-6 production in human skeletal muscle cells, PLOS ONE 20 (2025) e0316110. https://doi.org/10.1371/journal.pone.0316110. [49] C.A. Nold-Petry, M.F. Nold, J.A. Zepp, S.-H. Kim, N.F. Voelkel, C.A. Dinarello, IL-32–dependent effects of",
+      "translation": "",
+      "bbox": [
+        36.0,
+        592.89,
+        573.56,
+        643.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0126",
+      "page": 18,
+      "type": "paragraph",
+      "order": 126,
+      "original_text": "IL-1β on endothelial cell functions, Proceedings of the National Academy of Sciences 106 (2009) 3883– 3888. https://doi.org/10.1073/pnas.0813334106. [50] H. Zhong, A. Davis, M. Ouzounova, R.A. Carrasco, C. Chen, S. Breen, Y.S. Chang, J. Huang, Z. Liu, Y.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        643.29,
+        564.09,
+        681.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0127",
+      "page": 18,
+      "type": "paragraph",
+      "order": 127,
+      "original_text": "Yao, E. Hurt, J. Moisan, M. Fung, D.A. Tice, S.G. Clouthier, Z. Xiao, M.S. Wicha, H. Korkaya, R.E. Hollingsworth, A Novel IL6 Antibody Sensitizes Multiple Tumor Types to Chemotherapy Including Trastuzumab-Resistant Tumors, Cancer Res 76 (2016) 480–490. https://doi.org/10.1158/0008-5472.CAN15-0883.",
+      "translation": "",
+      "bbox": [
+        61.2,
+        681.45,
+        574.82,
+        731.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0128",
+      "page": 19,
+      "type": "paragraph",
+      "order": 128,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0129",
+      "page": 19,
+      "type": "paragraph",
+      "order": 129,
+      "original_text": "[51] S. Shaw, T. Bourne, C. Meier, B. Carrington, R. Gelinas, A. Henry, A. Popplewell, R. Adams, T. Baker, S.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        568.54,
+        48.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0130",
+      "page": 19,
+      "type": "paragraph",
+      "order": 130,
+      "original_text": "Rapecki, D. Marshall, A. Moore, H. Neale, A. Lawson, Discovery and characterization of olokizumab, MAbs 6 (2014) 773–781. https://doi.org/10.4161/mabs.28612. [52] S. Kang, T. Tanaka, H. Inoue, C. Ono, S. Hashimoto, Y. Kioi, H. Matsumoto, H. Matsuura, T. Matsubara,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        48.81,
+        566.31,
+        86.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0131",
+      "page": 19,
+      "type": "paragraph",
+      "order": 131,
+      "original_text": "K. Shimizu, H. Ogura, Y. Matsuura, T. Kishimoto, IL-6 trans-signaling induces plasminogen activator inhibitor-1 from vascular endothelial cells in cytokine release syndrome, Proceedings of the National Academy of Sciences 117 (2020) 22351–22356. https://doi.org/10.1073/pnas.2010229117. [53] A. Latourte, C. Cherifi, J. Maillet, H.-K. Ea, W. Bouaziz, T. Funck-Brentano, M. Cohen-Solal, E. Hay, P.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        86.97,
+        559.27,
+        137.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0132",
+      "page": 19,
+      "type": "paragraph",
+      "order": 132,
+      "original_text": "Richette, Systemic inhibition of IL-6/Stat3 signalling protects against experimental osteoarthritis, Annals of the Rheumatic Diseases 76 (2017) 748–755. https://doi.org/10.1136/annrheumdis-2016-209757. [54] M.A. Huseni, L. Wang, J.E. Klementowicz, K. Yuen, B. Breart, C. Orr, L. Liu, Y. Li, V. Gupta, C. Li, D.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        137.37,
+        577.87,
+        175.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0133",
+      "page": 19,
+      "type": "paragraph",
+      "order": 133,
+      "original_text": "Rishipathak, J. Peng, Y. Şenbabaoǧlu, Z. Modrusan, S. Keerthivasan, S. Madireddi, Y.-J. Chen, E.J. Fraser, N. Leng, H. Hamidi, H. Koeppen, J. Ziai, K. Hashimoto, M. Fassò, P. Williams, D.F. McDermott, J.E. Rosenberg, T. Powles, L.A. Emens, P.S. Hegde, I. Mellman, S.J. Turley, M.S. Wilson, S. Mariathasan, L. Molinero, M. Merchant, N.R. West, CD8+ T cell-intrinsic IL-6 signaling promotes resistance to anti-PDL1 immunotherapy, Cell Reports Medicine 4 (2023) 100878. https://doi.org/10.1016/j.xcrm.2022.100878. [55] A.J. Knights, E.C. Farrell, O.M. Ellis, M.J. Song, C.T. Appleton, T. Maerz, Synovial macrophage diversity",
+      "translation": "",
+      "bbox": [
+        36.0,
+        175.29,
+        579.17,
+        250.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0134",
+      "page": 19,
+      "type": "paragraph",
+      "order": 134,
+      "original_text": "and activation of M-CSF signaling in post-traumatic osteoarthritis, eLife 12 (n.d.) RP93283. https://doi.org/10.7554/eLife.93283. [56] A.J. Knights, S.J. Redding, T. Maerz, Inflammation in osteoarthritis: the latest progress and ongoing",
+      "translation": "",
+      "bbox": [
+        36.0,
+        251.37,
+        547.05,
+        288.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0135",
+      "page": 19,
+      "type": "paragraph",
+      "order": 135,
+      "original_text": "challenges, Current Opinion in Rheumatology 35 (2023) 128–134. https://doi.org/10.1097/BOR.0000000000000923. [57] C.-L. Wu, N.S. Harasymowicz, M.A. Klimak, K.H. Collins, F. Guilak, The role of macrophages in",
+      "translation": "",
+      "bbox": [
+        36.0,
+        289.29,
+        526.41,
+        326.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0136",
+      "page": 19,
+      "type": "paragraph",
+      "order": 136,
+      "original_text": "osteoarthritis and cartilage repair, Osteoarthritis and Cartilage 28 (2020) 544–554. https://doi.org/10.1016/j.joca.2019.12.007. [58] R. Liao, Z. Feng, W. Li, R. Liu, X. Xu, S. Yao, J. Tian, Interleukin-1 induces receptor activator of nuclear",
+      "translation": "",
+      "bbox": [
+        36.0,
+        327.21,
+        565.03,
+        364.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0137",
+      "page": 19,
+      "type": "paragraph",
+      "order": 137,
+      "original_text": "factor-κB ligand-independent osteoclast differentiation in RAW264.7 cells, Exp Ther Med 21 (2021) 640. https://doi.org/10.3892/etm.2021.10072. [59] B. Benner, L. Scarberry, L.P. Suarez-Kelly, M.C. Duggan, A.R. Campbell, E. Smith, G. Lapurga, K. Jiang,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        365.13,
+        571.58,
+        402.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0138",
+      "page": 19,
+      "type": "paragraph",
+      "order": 138,
+      "original_text": "J.P. Butchar, S. Tridandapani, J.H. Howard, R.A. Baiocchi, T.A. Mace, W.E. Carson, Generation of monocyte-derived tumor-associated macrophages using tumor-conditioned media provides a novel method to study tumor-associated macrophages in vitro, J Immunother Cancer 7 (2019) 140. https://doi.org/10.1186/s40425-019-0622-0. [60] D. Fairweather, D. Cihakova, Alternatively activated macrophages in infection and autoimmunity, J",
+      "translation": "",
+      "bbox": [
+        36.0,
+        403.05,
+        545.5,
+        466.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0139",
+      "page": 19,
+      "type": "paragraph",
+      "order": 139,
+      "original_text": "Autoimmun 33 (2009) 222–230. https://doi.org/10.1016/j.jaut.2009.09.012. [61] F.O. Martinez, A. Sica, A. Mantovani, M. Locati, Macrophage activation and polarization, Front Biosci 13",
+      "translation": "",
+      "bbox": [
+        36.0,
+        466.41,
+        567.41,
+        491.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0140",
+      "page": 19,
+      "type": "paragraph",
+      "order": 140,
+      "original_text": "(2008) 453–461. https://doi.org/10.2741/2692. [62] Y.-X. Zeng, K.-Y. Chou, J.-J. Hwang, H.-S. Wang, The effects of IL-1β stimulated human umbilical cord",
+      "translation": "",
+      "bbox": [
+        36.0,
+        491.61,
+        561.37,
+        516.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0141",
+      "page": 19,
+      "type": "paragraph",
+      "order": 141,
+      "original_text": "mesenchymal stem cells on polarization and apoptosis of macrophages in rheumatoid arthritis, Sci Rep 13 (2023) 10612. https://doi.org/10.1038/s41598-023-37741-6. [63] C. Yang, J. Dawulieti, K. Zhang, C. Cheng, Y. Zhao, H. Hu, M. Li, M. Zhang, L. Chen, K.W. Leong, An",
+      "translation": "",
+      "bbox": [
+        36.0,
+        516.81,
+        565.54,
+        554.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0142",
+      "page": 19,
+      "type": "paragraph",
+      "order": 142,
+      "original_text": "injectable antibiotic hydrogel that scavenges proinflammatory factors for the treatment of severe abdominal trauma, Adv Funct Mater 32 (2022) 2111698. [64] H. Shen, B. Xu, C. Yang, W. Xue, Z. You, X. Wu, D. Ma, D. Shao, K. Leong, J. Dai, A. DAMP-scavenging,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        554.97,
+        575.22,
+        592.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0143",
+      "page": 19,
+      "type": "paragraph",
+      "order": 143,
+      "original_text": "IL-10-releasing hydrogel promotes neural regeneration and motor function recovery after spinal cord injury, Biomaterials 280 (2022) 121279. [65] S. Kumar, T. Conklin, J. Hsu, V. Meli, K. Chan, W. Liu, K. Allen, B. Sharma, Controlled release of CD200",
+      "translation": "",
+      "bbox": [
+        36.0,
+        592.89,
+        568.56,
+        630.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0144",
+      "page": 19,
+      "type": "paragraph",
+      "order": 144,
+      "original_text": "inhibits inflammatory macrophages and chondrocyte catabolism, Osteoarthritis and Cartilage 30 (2022) 69–70. [66] A.Y. Clark, K.E. Martin, J.R. Garcia, C.T. Johnson, H.S. Theriault, W.M. Han, D.W. Zhou, E.A. Botchwey,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        630.81,
+        569.67,
+        668.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0145",
+      "page": 19,
+      "type": "paragraph",
+      "order": 145,
+      "original_text": "A.J. Garcia, Integrin-specific hydrogels modulate transplanted human bone marrow-derived mesenchymal stem cell survival, engraftment, and reparative activities, Nat Commun 11 (2020) 114. [67] S. Cao, E. Budina, R. Wang, M. Sabados, A. Mukherjee, A. Solanki, M. Nguyen, K. Hultgren, A. Dhar, J.A.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        668.73,
+        577.95,
+        706.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0146",
+      "page": 19,
+      "type": "paragraph",
+      "order": 146,
+      "original_text": "Hubbell, Injectable butyrate-prodrug micelles induce long-acting immune modulation and prevent autoimmune arthritis in mice, J Control Release 372 (2024) 281–294.",
+      "translation": "",
+      "bbox": [
+        61.2,
+        706.65,
+        534.48,
+        731.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0147",
+      "page": 20,
+      "type": "paragraph",
+      "order": 147,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0148",
+      "page": 20,
+      "type": "paragraph",
+      "order": 148,
+      "original_text": "[68] L.C. Ionescu, G.C. Lee, B.J. Sennett, J.A. Burdick, R.L. Mauck, An anisotropic nanofiber/microsphere",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        556.28,
+        48.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0149",
+      "page": 20,
+      "type": "paragraph",
+      "order": 149,
+      "original_text": "composite with controlled release of biomolecules for fibrous tissue engineering, Biomaterials 31 (2010) 4113–4120. [69] A.R. Martin, J.M. Patel, R.C. Locke, M.R. Eby, K.S. Saleh, M.D. Davidson, M.L. Sennett, H.M. Zlotnick,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        48.81,
+        567.6,
+        86.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0150",
+      "page": 20,
+      "type": "paragraph",
+      "order": 150,
+      "original_text": "A.H. Chang, J.L. Carey, Nanofibrous hyaluronic acid scaffolds delivering TGF-β3 and SDF-1α for articular cartilage repair in a large animal model, Acta Biomaterialia 126 (2021) 170–182. [70] K.M. Hainline, L.S. Shores, N.L. Votaw, Z.J. Bernstein, S.H. Kelly, C.N. Fries, M.S. Madhira, C.A. Gilroy,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        86.97,
+        576.44,
+        124.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0151",
+      "page": 20,
+      "type": "paragraph",
+      "order": 151,
+      "original_text": "A. Chilkoti, J.H. Collier, Modular complement assemblies for mitigating inflammatory conditions, Proc Natl Acad Sci U S A 118 (2021). [71] S.K. Bedingfield, J.M. Colazo, F. Yu, D.D. Liu, M.A. Jackson, L.E. Himmel, H. Cho, L.J. Crofford, K.A.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        124.89,
+        576.11,
+        162.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0152",
+      "page": 20,
+      "type": "paragraph",
+      "order": 152,
+      "original_text": "Hasty, C.L. Duvall, Amelioration of post-traumatic osteoarthritis via nanoparticle depots delivering small interfering RNA to damaged cartilage, Nat Biomed Eng 5 (2021) 1069–1083. [72] X. Huang, J.Z. Williams, R. Chang, Z. Li, C.E. Burnett, R. Hernandez-Lopez, I. Setiady, E. Gai, D.M.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        162.81,
+        564.09,
+        200.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0153",
+      "page": 20,
+      "type": "paragraph",
+      "order": 153,
+      "original_text": "Patterson, W. Yu, K.T. Roybal, W.A. Lim, T.A. Desai, DNA scaffolds enable efficient and tunable functionalization of biomaterials for immune cell modulation, Nature Nanotechnology 16 (2021) 214–223. [73] H. Yin, Q. Lu, X. Wang, S. Majumdar, A.S. Jun, W.J. Stark, M.P. Grant, J.H. Elisseeff, Tissue-derived",
+      "translation": "",
+      "bbox": [
+        36.0,
+        200.73,
+        573.01,
+        238.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0154",
+      "page": 20,
+      "type": "paragraph",
+      "order": 154,
+      "original_text": "microparticles reduce inflammation and fibrosis in cornea wounds, Acta Biomater 85 (2019) 192–202. [74] S. Regmi, S. Pathak, J.O. Kim, C.S. Yong, J.H. Jeong, Mesenchymal stem cell therapy for the treatment",
+      "translation": "",
+      "bbox": [
+        36.0,
+        238.65,
+        569.15,
+        263.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0155",
+      "page": 20,
+      "type": "paragraph",
+      "order": 155,
+      "original_text": "of inflammatory diseases: Challenges, opportunities, and future perspectives, Eur J Cell Biol 98 (2019) 151041. [75] M. Lopez-Santalla, J.A. Bueren, M.I. Garin, Mesenchymal stem/stromal cell-based therapy for the",
+      "translation": "",
+      "bbox": [
+        36.0,
+        263.85,
+        561.98,
+        301.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0156",
+      "page": 20,
+      "type": "paragraph",
+      "order": 156,
+      "original_text": "treatment of rheumatoid arthritis: An update on preclinical studies, EBioMedicine 69 (2021) 103427. [76] M.Z. Moghaddam, M.J. Mousavi, S. Ghotloo, Cell-based therapies for the treatment of rheumatoid",
+      "translation": "",
+      "bbox": [
+        36.0,
+        301.77,
+        547.33,
+        326.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0157",
+      "page": 20,
+      "type": "paragraph",
+      "order": 157,
+      "original_text": "arthritis, Immun Inflamm Dis 11 (2023) 1091. [77] S. Wang, B. Lei, E. Zhang, P. Gong, J. Gu, L. He, L. Han, Z. Yuan, Targeted Therapy for Inflammatory",
+      "translation": "",
+      "bbox": [
+        36.0,
+        327.21,
+        557.57,
+        352.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0158",
+      "page": 20,
+      "type": "paragraph",
+      "order": 158,
+      "original_text": "Diseases with Mesenchymal Stem Cells and Their Derived Exosomes: From Basic to Clinics, Int J Nanomedicine 17 (2022) 1757–1781. [78] P.D. Robbins, C.H. Evans, Prospects for treating autoimmune and inflammatory diseases by gene",
+      "translation": "",
+      "bbox": [
+        36.0,
+        352.41,
+        540.44,
+        390.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0159",
+      "page": 20,
+      "type": "paragraph",
+      "order": 159,
+      "original_text": "therapy, Gene Ther 3 (1996) 187–9. [79] G.J. Prud’homme, Gene therapy of autoimmune diseases with vectors encoding regulatory cytokines or",
+      "translation": "",
+      "bbox": [
+        36.0,
+        390.33,
+        567.2,
+        415.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0160",
+      "page": 20,
+      "type": "paragraph",
+      "order": 160,
+      "original_text": "inflammatory cytokine inhibitors, J Gene Med 2 (2000) 222–32. [80] D. Ewart, E.J. Peterson, C.J. Steer, A new era of genetic engineering for autoimmune and inflammatory",
+      "translation": "",
+      "bbox": [
+        36.0,
+        415.77,
+        565.56,
+        440.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0161",
+      "page": 20,
+      "type": "paragraph",
+      "order": 161,
+      "original_text": "diseases, Semin Arthritis Rheum 49 (2019) 1–7. [81] G.C. Abhiraman, K.D. Householder, G.E. Rodriguez, C.R. Glassman, R.A. Saxton, C.B. Breuer, S.C.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        440.97,
+        552.02,
+        466.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0162",
+      "page": 20,
+      "type": "paragraph",
+      "order": 162,
+      "original_text": "Wilson, L. Su, M. Yen, C. Hsu, V.G. Pillarisetty, N.E. Reticker-Flynn, K.C. Garcia, Redirecting immune signaling with cytokine adaptors, Nat Commun 16 (2025) 2432. https://doi.org/10.1038/s41467-02557681-1. [82] R.W. Kinne, R. Bräuer, B. Stuhlmüller, E. Palombo-Kinne, G.-R. Burmester, Macrophages in rheumatoid",
+      "translation": "",
+      "bbox": [
+        36.0,
+        466.41,
+        568.52,
+        516.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0163",
+      "page": 20,
+      "type": "paragraph",
+      "order": 163,
+      "original_text": "arthritis, Arthritis Res Ther 2 (2000) 189. https://doi.org/10.1186/ar86. [83] V.M.T. Bart, R.J. Pickering, P.R. Taylor, N. Ipseiz, Macrophage reprogramming for therapy, Immunology",
+      "translation": "",
+      "bbox": [
+        36.0,
+        516.81,
+        563.87,
+        541.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0164",
+      "page": 20,
+      "type": "paragraph",
+      "order": 164,
+      "original_text": "163 (2021) 128–144. https://doi.org/10.1111/imm.13300. [84] H. He, S. Zhang, S. Tighe, J. Son, S.C.G. Tseng, Immobilized Heavy Chain-Hyaluronic Acid Polarizes",
+      "translation": "",
+      "bbox": [
+        36.0,
+        542.25,
+        556.7,
+        567.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0165",
+      "page": 20,
+      "type": "paragraph",
+      "order": 165,
+      "original_text": "Lipopolysaccharide-activated Macrophages toward M2 Phenotype, J Biol Chem 288 (2013) 25792– 25803. https://doi.org/10.1074/jbc.M113.479584. [85] E. Saino, M.L. Focarete, C. Gualandi, E. Emanuele, A.I. Cornaglia, M. Imbriani, L. Visai, Effect of",
+      "translation": "",
+      "bbox": [
+        36.0,
+        567.45,
+        544.29,
+        605.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0166",
+      "page": 20,
+      "type": "paragraph",
+      "order": 166,
+      "original_text": "Electrospun Fiber Diameter and Alignment on Macrophage Activation and Secretion of Proinflammatory Cytokines and Chemokines, Biomacromolecules 12 (2011) 1900–1911. https://doi.org/10.1021/bm200248h. [86] A. Kerschenmeyer, Ø. Arlov, V. Malheiro, M. Steinwachs, M. Rottmar, K. Maniura-Weber, G. Palazzolo, M.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        605.37,
+        577.99,
+        655.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0167",
+      "page": 20,
+      "type": "paragraph",
+      "order": 167,
+      "original_text": "Zenobi-Wong, Anti-oxidant and immune-modulatory properties of sulfated alginate derivatives on human chondrocytes and macrophages, Biomaterials Science 5 (2017) 1756–1765. https://doi.org/10.1039/C7BM00341B. [87] K. Nakamura, S. Yokohama, M. Yoneda, S. Okamoto, Y. Tamaki, T. Ito, M. Okada, K. Aso, I. Makino, High,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        656.01,
+        578.12,
+        706.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0168",
+      "page": 20,
+      "type": "paragraph",
+      "order": 168,
+      "original_text": "but not low, molecular weight hyaluronan prevents T-cell-mediated liver injury by reducing proinflammatory cytokines in mice, J Gastroenterol 39 (2004) 346–354. https://doi.org/10.1007/s00535003-1301-x.",
+      "translation": "",
+      "bbox": [
+        61.2,
+        706.65,
+        562.6,
+        744.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0169",
+      "page": 21,
+      "type": "paragraph",
+      "order": 169,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0170",
+      "page": 21,
+      "type": "paragraph",
+      "order": 170,
+      "original_text": "[88] T.-H. Tran, R. Rastogi, J. Shelke, M.M. Amiji, Modulation of Macrophage Functional Polarity towards Anti-",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        571.5,
+        48.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0171",
+      "page": 21,
+      "type": "paragraph",
+      "order": 171,
+      "original_text": "Inflammatory Phenotype with Plasmid DNA Delivery in CD44 Targeting Hyaluronic Acid Nanoparticles, Sci Rep 5 (2015) 16632. https://doi.org/10.1038/srep16632. [89] K.L. Spiller, S. Nassiri, C.E. Witherel, R.R. Anfang, J. Ng, K.R. Nakazawa, T. Yu, G. Vunjak-Novakovic,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        48.81,
+        578.13,
+        86.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0172",
+      "page": 21,
+      "type": "paragraph",
+      "order": 172,
+      "original_text": "Sequential delivery of immunomodulatory cytokines to facilitate the M1-to-M2 transition of macrophages and enhance vascularization of bone scaffolds, Biomaterials 37 (2015) 194–207. https://doi.org/10.1016/j.biomaterials.2014.10.017. [90] D. Kwon, B.G. Cha, Y. Cho, J. Min, E.-B. Park, S.-J. Kang, J. Kim, Extra-Large Pore Mesoporous Silica",
+      "translation": "",
+      "bbox": [
+        36.0,
+        86.97,
+        568.66,
+        137.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0173",
+      "page": 21,
+      "type": "paragraph",
+      "order": 173,
+      "original_text": "Nanoparticles for Directing in Vivo M2 Macrophage Polarization by Delivering IL-4, Nano Lett. 17 (2017) 2747–2756. https://doi.org/10.1021/acs.nanolett.6b04130. [91] S. Jain, T.-H. Tran, M. Amiji, Macrophage repolarization with targeted alginate nanoparticles containing IL-",
+      "translation": "",
+      "bbox": [
+        36.0,
+        137.37,
+        575.02,
+        175.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0174",
+      "page": 21,
+      "type": "paragraph",
+      "order": 174,
+      "original_text": "10 plasmid DNA for the treatment of experimental arthritis, Biomaterials 61 (2015) 162–177. https://doi.org/10.1016/j.biomaterials.2015.05.028. [92] T. Gao, F. Huang, W. Wang, Y. Xie, B. Wang, Interleukin-10 genetically modified clinical-grade",
+      "translation": "",
+      "bbox": [
+        36.0,
+        175.29,
+        518.96,
+        213.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0175",
+      "page": 21,
+      "type": "paragraph",
+      "order": 175,
+      "original_text": "mesenchymal stromal cells markedly reinforced functional recovery after spinal cord injury via directing alternative activation of macrophages, Cell Mol Biol Lett 27 (2022) 27. https://doi.org/10.1186/s11658022-00325-9. [93] S.T. Peruzzaro, M.M.M. Andrews, A. Al-Gharaibeh, O. Pupiec, M. Resk, D. Story, P. Maiti, J. Rossignol,",
+      "translation": "",
+      "bbox": [
+        36.0,
+        213.45,
+        563.73,
+        263.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0176",
+      "page": 21,
+      "type": "paragraph",
+      "order": 176,
+      "original_text": "G.L. Dunbar, Transplantation of mesenchymal stem cells genetically engineered to overexpress interleukin-10 promotes alternative inflammatory response in rat model of traumatic brain injury, Journal of Neuroinflammation 16 (2019) 2. https://doi.org/10.1186/s12974-018-1383-2. [94] J. Gao, Y. Liang, L. Wang, Shaping Polarization Of Tumor-Associated Macrophages In Cancer",
+      "translation": "",
+      "bbox": [
+        36.0,
+        263.85,
+        578.88,
+        314.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0177",
+      "page": 21,
+      "type": "paragraph",
+      "order": 177,
+      "original_text": "Immunotherapy, Front Immunol 13 (2022) 888713. https://doi.org/10.3389/fimmu.2022.888713. [95] G. Gross, T. Waks, Z. Eshhar, Expression of immunoglobulin-T-cell receptor chimeric molecules as",
+      "translation": "",
+      "bbox": [
+        36.0,
+        314.49,
+        543.39,
+        339.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0178",
+      "page": 21,
+      "type": "paragraph",
+      "order": 178,
+      "original_text": "functional receptors with antibody-type specificity., Proceedings of the National Academy of Sciences 86 (1989) 10024–10028. https://doi.org/10.1073/pnas.86.24.10024. [96] D.L. Porter, B.L. Levine, M. Kalos, A. Bagg, C.H. June, Chimeric Antigen Receptor–Modified T Cells in",
+      "translation": "",
+      "bbox": [
+        36.0,
+        339.93,
+        569.61,
+        377.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0179",
+      "page": 21,
+      "type": "paragraph",
+      "order": 179,
+      "original_text": "Chronic Lymphoid Leukemia, New England Journal of Medicine 365 (2011) 725–733. https://doi.org/10.1056/NEJMoa1103849. [97] N. Ahmed, V.S. Brawley, M. Hegde, C. Robertson, A. Ghazi, C. Gerken, E. Liu, O. Dakhova, A. Ashoori, A.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        377.85,
+        578.31,
+        415.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0180",
+      "page": 21,
+      "type": "paragraph",
+      "order": 180,
+      "original_text": "Corder, T. Gray, M.-F. Wu, H. Liu, J. Hicks, N. Rainusso, G. Dotti, Z. Mei, B. Grilley, A. Gee, C.M. Rooney, M.K. Brenner, H.E. Heslop, W.S. Wels, L.L. Wang, P. Anderson, S. Gottschalk, Human Epidermal Growth Factor Receptor 2 (HER2) –Specific Chimeric Antigen Receptor–Modified T Cells for the Immunotherapy of HER2-Positive Sarcoma, JCO 33 (2015) 1688–1696. https://doi.org/10.1200/JCO.2014.58.0225. [98] Z.L. Chang, M.H. Lorenzini, X. Chen, U. Tran, N.J. Bangayan, Y.Y. Chen, Rewiring T-cell responses to",
+      "translation": "",
+      "bbox": [
+        36.0,
+        415.77,
+        575.63,
+        478.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0181",
+      "page": 21,
+      "type": "paragraph",
+      "order": 181,
+      "original_text": "soluble factors with chimeric antigen receptors, Nat Chem Biol 14 (2018) 317–324. https://doi.org/10.1038/nchembio.2565. [99] A.M. Leen, S. Sukumaran, N. Watanabe, S. Mohammed, J. Keirnan, R. Yanagisawa, U. Anurathapan, D.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        478.89,
+        572.07,
+        516.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0182",
+      "page": 21,
+      "type": "paragraph",
+      "order": 182,
+      "original_text": "Rendon, H.E. Heslop, C.M. Rooney, M.K. Brenner, J.F. Vera, Reversal of Tumor Immune Inhibition Using a Chimeric Cytokine Receptor, Mol Ther 22 (2014) 1211–1220. https://doi.org/10.1038/mt.2014.47. [100] E. Engelowski, A. Schneider, M. Franke, H. Xu, R. Clemen, A. Lang, P. Baran, C. Binsch, B. Knebel, H.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        516.81,
+        573.46,
+        554.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0183",
+      "page": 21,
+      "type": "paragraph",
+      "order": 183,
+      "original_text": "Al-Hasani, J.M. Moll, D.M. Floß, P.A. Lang, J. Scheller, Synthetic cytokine receptors transmit biological signals using artificial ligands, Nat Commun 9 (2018) 2034. https://doi.org/10.1038/s41467-018-04454-8. [101] H.I. Edelstein, A. Cosio, M.L. Ezekiel, W.K. Corcoran, A.H. Morris, J.N. Leonard, Conversion of natural",
+      "translation": "",
+      "bbox": [
+        36.0,
+        554.97,
+        572.41,
+        592.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0184",
+      "page": 21,
+      "type": "paragraph",
+      "order": 184,
+      "original_text": "cytokine receptors into orthogonal synthetic biosensors, Nat Chem Biol (2025) 1–12. https://doi.org/10.1038/s41589-025-01986-1. [102] A.L.Z. Lee, V.W.L. Ng, S. Gao, J.L. Hedrick, Y.Y. Yang, Injectable biodegradable hydrogels from vitamin",
+      "translation": "",
+      "bbox": [
+        36.0,
+        592.89,
+        565.38,
+        630.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0185",
+      "page": 21,
+      "type": "paragraph",
+      "order": 185,
+      "original_text": "D-functionalized polycarbonates for the delivery of avastin with enhanced therapeutic efficiency against metastatic colorectal cancer, Biomacromolecules 16 (2015) 465–475. https://doi.org/10.1021/bm5015206. [103] M. Dai, P. Du, Y. Li, X. Wang, J. Chen, H. Liu, W. Zhang, J. Zhou, X. Li, Y. Wang, Peptide-based hydrogel",
+      "translation": "",
+      "bbox": [
+        36.0,
+        630.81,
+        577.91,
+        668.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0186",
+      "page": 21,
+      "type": "paragraph",
+      "order": 186,
+      "original_text": "co-assembled with antibody-drug for enhanced retinal cell uptake and attenuated experimental autoimmune uveitis, European Journal of Pharmaceutics and Biopharmaceutics 210 (2025) 114691. https://doi.org/10.1016/j.ejpb.2025.114691. [104] R. Zufferey, D. Nagy, R.J. Mandel, L. Naldini, D. Trono, Multiply attenuated lentiviral vector achieves",
+      "translation": "",
+      "bbox": [
+        36.0,
+        668.73,
+        550.19,
+        718.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0187",
+      "page": 21,
+      "type": "paragraph",
+      "order": 187,
+      "original_text": "efficient gene delivery in vivo, Nat Biotechnol 15 (1997) 871–875. https://doi.org/10.1038/nbt0997-871.",
+      "translation": "",
+      "bbox": [
+        61.2,
+        719.37,
+        561.85,
+        731.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0188",
+      "page": 22,
+      "type": "paragraph",
+      "order": 188,
+      "original_text": ". CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted October 25, 2025. ; https://doi.org/10.1101/2025.10.24.684449 doi: bioRxiv preprint",
+      "translation": "",
+      "bbox": [
+        53.67,
+        3.4,
+        556.55,
+        30.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0189",
+      "page": 22,
+      "type": "paragraph",
+      "order": 189,
+      "original_text": "[105] P. Salmon, D. Trono, Production and Titration of Lentiviral Vectors, Current Protocols in Human Genetics",
+      "translation": "",
+      "bbox": [
+        36.0,
+        36.33,
+        571.44,
+        48.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0190",
+      "page": 22,
+      "type": "paragraph",
+      "order": 190,
+      "original_text": "54 (2007) 12.10.1-12.10.24. https://doi.org/10.1002/0471142905.hg1210s54. [106] M. Armaka, V. Gkretsi, D. Kontoyiannis, G. Kollias, A standardized protocol for the isolation and culture of",
+      "translation": "",
+      "bbox": [
+        36.0,
+        48.81,
+        574.16,
+        73.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0191",
+      "page": 22,
+      "type": "paragraph",
+      "order": 191,
+      "original_text": "normal and arthritogenic murine synovial fibroblasts, (2009). https://doi.org/10.1038/nprot.2009.102. [107] S.D. Perli, C.H. Cui, T.K. Lu, Continuous genetic recording with self-targeting CRISPR-Cas in human",
+      "translation": "",
+      "bbox": [
+        36.0,
+        74.25,
+        553.0,
+        99.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0192",
+      "page": 22,
+      "type": "paragraph",
+      "order": 192,
+      "original_text": "cells, Science 353 (2016) aag0511. https://doi.org/10.1126/science.aag0511.",
+      "translation": "",
+      "bbox": [
+        36.0,
+        99.45,
+        436.08,
+        126.5
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0012",
+        "S0013",
+        "S0014",
+        "S0015"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0016",
+        "S0017"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0018",
+        "S0019"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0020",
+        "S0021"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0022",
+        "S0023",
+        "S0024"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0025",
+        "S0026",
+        "S0027",
+        "S0028",
+        "S0029"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0030",
+        "S0031",
+        "S0032",
+        "S0033",
+        "S0034",
+        "S0035",
+        "S0036",
+        "S0037",
+        "S0038"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0039",
+        "S0040",
+        "S0041",
+        "S0042",
+        "S0043",
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S0048",
+        "S0049",
+        "S0050",
+        "S0051",
+        "S0052",
+        "S0053",
+        "S0054",
+        "S0055"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S0056",
+        "S0057",
+        "S0058",
+        "S0059",
+        "S0060",
+        "S0061",
+        "S0062",
+        "S0063"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069",
+        "S0070"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S0071",
+        "S0072",
+        "S0073"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S0074",
+        "S0075",
+        "S0076"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S0077",
+        "S0078"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S0079",
+        "S0080",
+        "S0081",
+        "S0082"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S0083",
+        "S0084",
+        "S0085",
+        "S0086",
+        "S0087",
+        "S0088",
+        "S0089",
+        "S0090",
+        "S0091",
+        "S0092",
+        "S0093",
+        "S0094",
+        "S0095",
+        "S0096",
+        "S0097",
+        "S0098",
+        "S0099",
+        "S0100",
+        "S0101",
+        "S0102",
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106",
+        "S0107"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S0108",
+        "S0109",
+        "S0110",
+        "S0111",
+        "S0112",
+        "S0113",
+        "S0114",
+        "S0115",
+        "S0116",
+        "S0117",
+        "S0118",
+        "S0119",
+        "S0120",
+        "S0121",
+        "S0122",
+        "S0123",
+        "S0124",
+        "S0125",
+        "S0126",
+        "S0127"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S0128",
+        "S0129",
+        "S0130",
+        "S0131",
+        "S0132",
+        "S0133",
+        "S0134",
+        "S0135",
+        "S0136",
+        "S0137",
+        "S0138",
+        "S0139",
+        "S0140",
+        "S0141",
+        "S0142",
+        "S0143",
+        "S0144",
+        "S0145",
+        "S0146"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S0147",
+        "S0148",
+        "S0149",
+        "S0150",
+        "S0151",
+        "S0152",
+        "S0153",
+        "S0154",
+        "S0155",
+        "S0156",
+        "S0157",
+        "S0158",
+        "S0159",
+        "S0160",
+        "S0161",
+        "S0162",
+        "S0163",
+        "S0164",
+        "S0165",
+        "S0166",
+        "S0167",
+        "S0168"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S0169",
+        "S0170",
+        "S0171",
+        "S0172",
+        "S0173",
+        "S0174",
+        "S0175",
+        "S0176",
+        "S0177",
+        "S0178",
+        "S0179",
+        "S0180",
+        "S0181",
+        "S0182",
+        "S0183",
+        "S0184",
+        "S0185",
+        "S0186",
+        "S0187"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S0188",
+        "S0189",
+        "S0190",
+        "S0191",
+        "S0192"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 12,
+      "caption_original": "Figure 1. Repurposing MATRIX platform for native inputs. (A) Firefly luminescence normalized to viability indicating synNotch activation in response a panel of synNotch receptors targeted to TGFβ-1, TNF, IL-1β and IL-6. (B) Firefly luminescence normalized to ligand-free conditions indicating Anti-GFP synNotch activation in response to varied doses of monomer versus mutant dimer EGFP. Depicted significance indicated compares +Dimer vs. +Monomer at respective dose. (C) Schematic demonstrating native MATRIX system used to immobilize soluble ligands for presentation to synNotch-engineered cells. (D) Dual binding of either IL-1β or IL6. Gevokizumab and canakinumab synNotch (Canak-Notch) bind to non-overlapping epitopes of IL-1β. Olokizumab and ziltivekimab synNotch (Zilti-Notch) bind to non-overlapping epitopes of IL-6. (E) Effect of Protein A/G coating on activation of IL-1β-responsive synNotch. Firefly luminescence readout in response to varied doses of IL-1β indicating Canak-Notch activation. Depicted significance indicates +Protein A/G +mAb group",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Firefly luminescence normalized to viability indicating synNotch activation in response a panel of synNotch receptors targeted to TGFβ-1, TNF, IL-1β and IL-6",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "b",
+          "original": "Firefly luminescence normalized to ligand-free conditions indicating Anti-GFP synNotch activation in response to varied doses of monomer versus mutant dimer EGFP. Depicted significance indicated compares +Dimer vs. +Monomer at respective dose",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "c",
+          "original": "Schematic demonstrating native MATRIX system used to immobilize soluble ligands for presentation to synNotch-engineered cells",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "d",
+          "original": "Dual binding of either IL-1β or IL6. Gevokizumab and canakinumab synNotch (Canak-Notch) bind to non-overlapping epitopes of IL-1β. Olokizumab and ziltivekimab synNotch (Zilti-Notch) bind to non-overlapping epitopes of IL-6",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Effect of Protein A/G coating on activation of IL-1β-responsive synNotch. Firefly luminescence readout in response to varied doses of IL-1β indicating Canak-Notch activation. Depicted significance indicates +Protein A/G +mAb group",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 1100,
+      "image_height": 603,
+      "crop_confidence": "high",
+      "bbox": [
+        31.0,
+        304.79,
+        581.0,
+        605.64
+      ],
+      "image_path": "papers/paper-7ce8ba142cb0efdf/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 2",
+      "page": 13,
+      "caption_original": "Figure 2. nMATRIX modulates IL-1β and IL-6 levels via receptor and surface neutralization. (A) IL-1β as measured by ELISA 48 hours after supplementing 10 ng/mL to either wild-type mMSCs or Canak-Notch mMSCs with or without the gevokizumab surface. (B) IL-6 as measured by ELISA 48 hours after supplementing 10 ng/mL to either wild-type or Zilti-Notch mMSCs with or without the olokizumab surface. (C) Schematic showing conditioned media treatment of NF-κB reporter cells. (D) Resultant NF-κB signaling 5 hours after transferring IL1β conditioned media to NF-κB reporter cells. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. **p<0.01 ***p<0.001 ****p<0.0001.",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "IL-1β as measured by ELISA 48 hours after supplementing 10 ng/mL to either wild-type mMSCs or Canak-Notch mMSCs with or without the gevokizumab surface",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "IL-6 as measured by ELISA 48 hours after supplementing 10 ng/mL to either wild-type or Zilti-Notch mMSCs with or without the olokizumab surface",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Schematic showing conditioned media treatment of NF-κB reporter cells",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "d",
+          "original": "Resultant NF-κB signaling 5 hours after transferring IL1β conditioned media to NF-κB reporter cells. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. **p<0.01 ***p<0.001 ****p<0.0001",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 868,
+      "image_height": 667,
+      "crop_confidence": "high",
+      "bbox": [
+        89.0,
+        112.26,
+        523.0,
+        445.26
+      ],
+      "image_path": "papers/paper-7ce8ba142cb0efdf/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 3",
+      "page": 14,
+      "caption_original": "Figure 3. nMATRIX is applicable to different cell types. (A) IL-1β dose dependent activation of (A) ATDC5 chondrocyte-like cells, (B) primary fibroblast-like synoviocyte cells, (C) L929 fibroblasts, and (D) RAW264.7 macrophages. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. *p<0.05, ***p<0.001 ****p<0.0001.",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "IL-1β dose dependent activation of",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "a",
+          "original": "ATDC5 chondrocyte-like cells,",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "primary fibroblast-like synoviocyte cells,",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "L929 fibroblasts, and",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "RAW264.7 macrophages. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. *p<0.05, ***p<0.001 ****p<0.0001",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 612,
+      "image_height": 600,
+      "crop_confidence": "high",
+      "bbox": [
+        153.0,
+        31.0,
+        459.0,
+        331.0
+      ],
+      "image_path": "papers/paper-7ce8ba142cb0efdf/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 4",
+      "page": 14,
+      "caption_original": "Figure 4. nMATRIX can be adapted to a different receptor platform. (Α) SNIPR engineered with canakinumab scFv can be activated in an nMATRIX-dependent manner. (Β) SNIPR engineered with ziltivekimab scFv can be activated in an nMATRIX-dependent manner. All statistics were performed using a two-way ANOVA with Tukey’s multiple comparisons. n=3 for all experimental groups. ****p<0.0001.",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-04.png",
+      "image_width": 494,
+      "image_height": 519,
+      "crop_confidence": "high",
+      "bbox": [
+        182.5,
+        397.61,
+        429.5,
+        656.61
+      ],
+      "image_path": "papers/paper-7ce8ba142cb0efdf/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Figure 5",
+      "page": 15,
+      "caption_original": "Figure 5. MATRIX can enhance CD206 expression in macrophages (A) Schematic of experimental setup. GFPresponsive synNotch mMSCs containing an inducible reporter transgene or an inducible IL4/IL10 cassette were stimulated with GFP. Conditioned media from these cells was added to RAW 264.7 cells at 24 and 48 hour timepoints. At 72 hours, RAW264.7 surface marker expression was measured via flow cytometry to evaluate polarization. (B-C) Mouse IL-4(B) and mouse IL-10(C) concentrations as measured by ELISA after 24 hours of GFP stimulation of anti-GFP reporter and IL4/IL10 mMSCs. (D-F) Quantified mean fluorescence intensity of CD206(D), CD163(E), and CD86(F) surface expression of RAW264.7 cells after treatment with GFP-induced reporter and IL4/IL10 cell conditioned media. All statistics were performed using a two- way ANOVA (B,C) or three-way ANOVA (D-F) with Tukey’s multiple comparisons n=3 for all experimental groups. ***p<0.001 ****p<0.0001.",
+      "caption_zh": "Figure 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of experimental setup. GFPresponsive synNotch mMSCs containing an inducible reporter transgene or an inducible IL4/IL10 cassette were stimulated with GFP. Conditioned media from these cells was added to RAW 264.7 cells at 24 and 48 hour timepoints. At 72 hours, RAW264.7 surface marker expression was measured via flow cytometry to evaluate polarization. (B-C) Mouse IL-4",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "and mouse IL-10",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "concentrations as measured by ELISA after 24 hours of GFP stimulation of anti-GFP reporter and IL4/IL10 mMSCs. (D-F) Quantified mean fluorescence intensity of CD206(D), CD163(E), and CD86",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "surface expression of RAW264.7 cells after treatment with GFP-induced reporter and IL4/IL10 cell conditioned media. All statistics were performed using a two- way ANOVA (B,C) or three-way ANOVA (D-F) with Tukey’s multiple comparisons n=3 for all experimental groups. ***p<0.001 ****p<0.0001",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 1070,
+      "image_height": 644,
+      "crop_confidence": "high",
+      "bbox": [
+        38.5,
+        31.0,
+        573.5,
+        353.0
+      ],
+      "image_path": "papers/paper-7ce8ba142cb0efdf/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Figure 6",
+      "page": 16,
+      "caption_original": "Figure 6. nMATRIX can polarize macrophages toward M2-like phenotypes. (A) Schematic of transwell setup. Canak-Notch synNotch mMSCs containing an inducible reporter transgene or an inducible IL4/IL10 cassette were stimulated with 10 ng/mL IL-1β. After 24 hours of mMSC stimulation, RAW264.7 cells in the apical transwell chamber were transferred into the basal mMSC chamber. After 48 hours of co-culture, RAW264.7 surface marker expression was measured via flow cytometry to evaluate polarization. (B-C) Murine IL-4 (B) and murine IL-10 (C) concentrations as measured by ELISA after co-culture with RAW264.7 cells. (D-F) Quantified mean fluorescence intensity of CD206 (D), CD163 (E), and CD86 (F) surface expression of RAW264.7 cells after treatment with IL-1β-induced reporter and IL4/IL10 co-culture. All statistics were performed using a two- way ANOVA (B,C) or three-way ANOVA (D-F) with Tukey’s multiple comparisons. n=3 for all experimental groups. *p<0.05 **p<0.01 ***p<0.001 ****p<0.0001.",
+      "caption_zh": "Figure 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic of transwell setup. Canak-Notch synNotch mMSCs containing an inducible reporter transgene or an inducible IL4/IL10 cassette were stimulated with 10 ng/mL IL-1β. After 24 hours of mMSC stimulation, RAW264.7 cells in the apical transwell chamber were transferred into the basal mMSC chamber. After 48 hours of co-culture, RAW264.7 surface marker expression was measured via flow cytometry to evaluate polarization. (B-C) Murine IL-4",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "and murine IL-10",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "concentrations as measured by ELISA after co-culture with RAW264.7 cells. (D-F) Quantified mean fluorescence intensity of CD206 (D), CD163 (E), and CD86",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "surface expression of RAW264.7 cells after treatment with IL-1β-induced reporter and IL4/IL10 co-culture. All statistics were performed using a two- way ANOVA (B,C) or three-way ANOVA (D-F) with Tukey’s multiple comparisons. n=3 for all experimental groups. *p<0.05 **p<0.01 ***p<0.001 ****p<0.0001",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 1100,
+      "image_height": 703,
+      "crop_confidence": "high",
+      "bbox": [
+        31.0,
+        31.0,
+        581.0,
+        382.4
+      ],
+      "image_path": "papers/paper-7ce8ba142cb0efdf/figures/figure-06.png"
+    }
+  ],
+  "glossary": []
+}

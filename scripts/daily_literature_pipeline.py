@@ -130,7 +130,11 @@ FLEXIBLE_CATEGORY_TERMS: dict[str, tuple[str, tuple[str, ...]]] = {
     ),
     "wearable_health": (
         "可穿戴健康与生理监测",
-        ("wearable", "epidermal", "on-skin", "skin-interfaced", "physiological", "health monitoring", "biomedical", "rehabilitation"),
+        (
+            "wearable", "epidermal", "on-skin", "skin-interfaced", "physiological",
+            "health monitoring", "biomedical", "rehabilitation", "biointerface",
+            "neuroprosthetic", "neural interface", "spinal cord",
+        ),
     ),
     "multimodal_bio_chemical": (
         "多模态与生化传感",
@@ -914,29 +918,52 @@ def normalized_match_text(*values: Any) -> str:
 
 def is_flexible_electronics_record(record: dict[str, Any]) -> bool:
     text = normalized_match_text(record.get("title"), record.get("abstract"))
-    if any(term in text for term in FLEXIBLE_ELECTRONICS_TERMS):
+    if any(term in text for term in FLEXIBLE_ELECTRONICS_TERMS if term != "e-skin"):
         return True
-    if any(
-        term in text
-        for term in (
-            "tactile", "electronic skin", "electronic-skin", "e-skin", "artificial skin",
-            "haptic sensor", "haptic feedback", "iontronic sensor", "robotic skin",
-        )
+    if re.search(
+        r"\b(?:electronic[- ]skin|e-skin|artificial skin|robotic skin|iontronic sensor|"
+        r"tactile[- ](?:sensor|sensing|array|electronic|device|interface|system|"
+        r"perception|programming|display|channel|encoding|encoded)|"
+        r"haptic (?:sensor|sensing|array|device|interface|actuator|feedback))s?\b",
+        text,
     ):
         return True
-    return bool(
-        re.search(
-            r"\b(?:flexible|stretchable|wearable|epidermal|conformal|textile|"
-            r"fiber[- ]shaped|skin[- ](?:mounted|interfaced)|soft)\s+"
-            r"(?:[a-z0-9-]+\s+){0,2}"
-            r"(?:electronic(?:s)?|sensor(?:s)?|device(?:s)?|transistor(?:s)?|"
-            r"electrode(?:s)?|circuit(?:s)?|photodetector(?:s)?|actuator(?:s)?|"
-            r"film(?:s)?|material(?:s)?|membrane(?:s)?|interface(?:s)?|"
-            r"battery|batteries|supercapacitor(?:s)?|generator(?:s)?|solar cell(?:s)?|"
-            r"bioelectronic(?:s)?)\b",
-            text,
-        )
+    flexible_prefix = (
+        r"\b(?:flexible|stretchable|wearable|epidermal|conformal|textile|"
+        r"fiber[- ]shaped|skin[- ](?:mounted|interfaced)|soft)\s+"
+        r"(?:[a-z0-9-]+\s+){0,2}"
     )
+    if re.search(
+        flexible_prefix
+        + r"(?:electronic(?:s)?|sensor(?:s)?|device(?:s)?|transistor(?:s)?|"
+        r"electrode(?:s)?|circuit(?:s)?|photodetector(?:s)?|actuator(?:s)?|"
+        r"haptic (?:array|device|interface|actuator)|"
+        r"battery|batteries|supercapacitor(?:s)?|generator(?:s)?|solar cell(?:s)?|"
+        r"bioelectronic(?:s)?)\b",
+        text,
+    ):
+        return True
+
+    # Material-form wording is only evidence of flexible electronics when the
+    # same record names a concrete device or application context.
+    flexible_material_form = re.search(
+        flexible_prefix + r"(?:film(?:s)?|material(?:s)?|membrane(?:s)?|interface(?:s)?|composite(?:s)?)\b",
+        text,
+    )
+    if not flexible_material_form:
+        return False
+    context_start = max(0, flexible_material_form.start() - 180)
+    context_end = min(len(text), flexible_material_form.end() + 180)
+    local_context = text[context_start:context_end]
+    application_context = re.search(
+        r"\b(?:sensor(?:s|y)?|sensing|electronics|electronic devices?|electrode(?:s)?|transistor(?:s)?|"
+        r"circuit(?:s)?|photodetector(?:s)?|actuator(?:s)?|battery|batteries|"
+        r"supercapacitor(?:s)?|generator(?:s)?|energy harvesting|power generation|"
+        r"solar cell(?:s)?|bioelectronic(?:s)?|wearable|epidermal|on-skin|skin-interfaced|"
+        r"soft robot(?:ics)?)\b",
+        local_context,
+    )
+    return bool(application_context)
 
 
 def classify_flexible_categories(record: dict[str, Any]) -> tuple[str, str, list[str]]:
@@ -955,6 +982,14 @@ def classify_flexible_categories(record: dict[str, Any]) -> tuple[str, str, list
             for term in ("battery", "supercapacitor", "energy harvesting", "generator", "solar cell")
         ):
             score += 2
+        if category_id == "flexible_energy" and not any(
+            term in text
+            for term in (
+                "battery", "supercapacitor", "energy harvesting", "power generation",
+                "triboelectric", "piezoelectric", "solar cell", "self-powered", "electrolyte",
+            )
+        ):
+            score = 0
         if category_id == "flexible_materials_devices":
             score = min(score, 1)
         if score:

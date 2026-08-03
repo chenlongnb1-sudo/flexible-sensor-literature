@@ -1,0 +1,5117 @@
+{
+  "paper": {
+    "title": "An All‐Textile, Mechano‐Capacitive Subtle Movement Sensor",
+    "venue": "Advanced Functional Materials",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-08-03/papers/paper-b26f0993d50f6502.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": "Advanced Functional Materials",
+      "translation": "",
+      "bbox": [
+        56.6,
+        41.16,
+        228.21,
+        53.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "www.afm-journal.de",
+      "translation": "",
+      "bbox": [
+        470.98,
+        76.44,
+        558.19,
+        85.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "RESEARCH ARTICLE",
+      "translation": "",
+      "bbox": [
+        63.23,
+        120.12,
+        165.89,
+        130.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "An All-Textile, Mechano-Capacitive Subtle Movement Sensor",
+      "translation": "",
+      "bbox": [
+        53.61,
+        161.51,
+        503.14,
+        200.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "Easa AliAbbasi Rachel Freire Valentin Martinez-Missir Vineetha Rallabandi Paul Strohmeier",
+      "translation": "",
+      "bbox": [
+        53.61,
+        209.84,
+        501.61,
+        218.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "Sensorimotor Interaction Group, Max Planck Institute for Informatics, Saarland Informatics Campus, Saarbrücken, Germany",
+      "translation": "",
+      "bbox": [
+        53.61,
+        231.88,
+        447.59,
+        239.35
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "Correspondence: Paul Strohmeier (paul.strohmeier@mpi-inf.mpg.de)",
+      "translation": "",
+      "bbox": [
+        53.61,
+        250.81,
+        277.95,
+        258.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "Received: 8 June 2026 Revised: 8 June 2026 Accepted: 19 June 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        267.25,
+        288.5,
+        274.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "Keywords: breath monitoring | capacitive sensing | E-Textiles | sensors | stretch sensing | wearable sensing",
+      "translation": "",
+      "bbox": [
+        53.61,
+        283.69,
+        389.35,
+        291.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "ABSTRACT Designing garments that effectively capture human movements demands a focus on the wearer’s comfort and freedom of motion. Electronic textile (e-Textile) sensors offer a promising avenue due to their soft and flexible properties. However, these sensors are most responsive to large motions, as their precision is usually relatively low compared to other sensing solutions. Furthermore, eTextile sensors that measure physical force or deformation often require the sensing element itself to undergo deformation and be subject to force. This leads to degradation of the sensor due to repeated mechanical strain. To address these issues, a novel all-textile mechanical capacitive sensor design is presented. This sensor is optimized for measuring subtle movements, such as thoracic wall movements, in breath monitoring. The design is more robust than other e-Textile sensing approaches, as the deforming textile elements are separated from the sensing element. This design choice results in sensors with improved signal response, higher accuracy, and longer cycle life than the other comparable textile sensors. In this paper, we share the design and implementation guidelines, in vitro measurements (such as evaluation of the effects of electrode shape and size and cycle life tests), and multiple in vivo measurements of sensor prototypes.",
+      "translation": "",
+      "bbox": [
+        63.08,
+        315.72,
+        548.29,
+        467.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "1 Introduction",
+      "translation": "",
+      "bbox": [
+        53.61,
+        503.05,
+        139.39,
+        513.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 1,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": "17–20]. Their materiality also provides sensing opportunities. The interlocking loop structure of knit fabrics can serve as the basis for stretch-sensitive structures [21], while the compliance of nonwoven fabrics can support compression-sensitive structures [22]. From a mechanical perspective, e-Textile sensor design begins by defining how the textile deforms: it may stretch, compress, shear, change contact area, or shift the relative position of materials.",
+      "translation": "",
+      "bbox": [
+        314.26,
+        503.12,
+        558.2,
+        580.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 1,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "Interactive garments increasingly function as interfaces that tightly couple people and technology [1–4]. While early interactive garments often augmented users through wearable output, such as displays [5], or input, such as touch sensors [6], recent systems are designed to integrate more closely into bodily activity and expressive movement [7–13]. This shift places stronger demands on garment-integrated sensing technologies: sensors must be soft, compliant, non-restrictive, and capable of capturing subtle body movements and small garment deformations [14–16].",
+      "translation": "",
+      "bbox": [
+        53.61,
+        526.64,
+        297.41,
+        627.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 1,
+      "type": "paragraph",
+      "order": 14,
+      "original_text": "From an electrical perspective, this deformation must then be converted into a measurable signal. Resistive textile sensors measure changes in resistance caused by elongation of conductive yarns or fabrics, contact between conductive elements, or compression of compliant fabrics [21–24]. Capacitive textile sensors instead measure changes in capacitance caused by electrode spacing, dielectric properties, contact geometry, or electrode overlap. Garment-integrated capacitive sensing systems using",
+      "translation": "",
+      "bbox": [
+        314.39,
+        594.78,
+        558.19,
+        683.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 1,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "Electronic textiles (e-Textiles) are commonly used to meet these demands because functional yarns and conductive fabrics can replace rigid electronic components while preserving textile softness and enabling deep integration of form and function [4,",
+      "translation": "",
+      "bbox": [
+        53.61,
+        641.21,
+        297.39,
+        684.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 1,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": "This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited. © 2026 The Author(s). Advanced Functional Materials published by Wiley-VCH GmbH",
+      "translation": "",
+      "bbox": [
+        53.61,
+        711.07,
+        558.02,
+        737.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 1,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "1 of 17",
+      "translation": "",
+      "bbox": [
+        535.94,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 1,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": "Advanced Functional Materials, 2026; 0:e76802 https://doi.org/10.1002/adfm.76802",
+      "translation": "",
+      "bbox": [
+        53.61,
+        755.48,
+        189.98,
+        770.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 2,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "B, we used off-the-shelf and readily accessible materials. With these two designs, we were interested in exploring two fabrication questions: (1) Can the response behavior be improved by a less compliant electrode and a thinner, less structured insulator? (2) Can the stretch-band design be replaced by a material more widely available and easier for novices to work with?",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.88,
+        558.19,
+        107.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 2,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": "conductive textile patches have shown capacitive approaches to be promising [25]. Other capacitive textile stretch sensors for motion tracking use silicone-textile composites and interdigital conductive-knit sensors [26, 27]. Recent work on robust capacitive pressure sensors further shows how porous dielectric layers and protective textile/polymer architectures can improve sensitivity, durability, and environmental resilience for pressure monitoring in demanding conditions [28].",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.41,
+        130.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 2,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "This coupling between mechanical deformation and electrical readout is also a central challenge. The same textile structure often has to provide both the desired mechanical behavior and the desired electrical response. As a result, material properties that are beneficial for softness and integration can introduce limitations in sensing: knitted structures can produce nonlinear stretch responses [23], while the slow recovery behavior of non-woven fabrics can result in pressure sensors with high hysteresis [22]. More generally, repeated deformation of the electrically active textile structure can mechanically stress conductive pathways or electrodes, negatively affecting cycle life [23] and sensing stability over time [24].",
+      "translation": "",
+      "bbox": [
+        53.61,
+        144.09,
+        297.4,
+        279.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 2,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": "These limitations become particularly important for smallamplitude, garment-integrated movements, where the signal of interest may be obscured by nonlinear material responses, hysteresis, drift, and other confounding effects caused by stretch, compression, shear, proximity, contact area, and garment fit. In such cases, sensing fidelity depends not only on the electrical readout principle, but also on how precisely the deformation is mechanically designed. Recent mechanically engineered strain sensors based on predefined conductive cracks demonstrate one response to this problem: controlling the deformation pathway can improve sensitivity and linearity by making conductivepathway deformation more predictable [29].",
+      "translation": "",
+      "bbox": [
+        53.61,
+        293.03,
+        297.42,
+        428.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 2,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "Measurement of the capacitance between the two conductive pads provides a robust, high-resolution, and linear measure of stretch. In both designs, separating mechanically and electrically functional elements leads to more robust designs. Instead of optimizing one fabric for both mechanical and electrical functionality, designers can choose fabrics specifically for their mechanical properties and separate conductive fabrics for their electrical properties. The resulting sensors no longer experience degradation of electrical functionality due to mechanical stress. We constructed six sensors using Design A in three sizes: 1 × 3 cm, 3 × 3 cm, and 5 × 3 cm. For each size, one sensor had two rectangular electrodes (rr), and the other had a rectangular and a triangular electrode (rt) (see Figure 1c). For Design B, we built two sensors, both 3 × 3 cm – one with two rectangular electrodes and one with a rectangular and a triangular electrode (see Figure S1). Throughout the paper, sensor labels follow the format [electrode geometry]-[W × L]-[design]. The electrodegeometry prefix describes the pair of capacitive electrodes: rr denotes a rectangular–rectangular electrode pair, and rt denotes a rectangular–triangular electrode pair. W and L denote the electrode width and length, respectively, in centimeters. The design suffix denotes the fabrication approach: A refers to the bonded textile-composite design using engineered stretch and non-stretch materials with encapsulated electrodes, whereas B refers to the simplified off-the-shelf elastic design. For example, rr-3 × 3-A denotes a Design A sensor with a rectangular– rectangular electrode pair of width 3 cm and length 3 cm. This notation is used consistently throughout the manuscript and Supporting Information.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        121.18,
+        558.21,
+        450.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 2,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "We build on this strategy by presenting a textile stretch sensor in which longitudinal textile deformation is converted into a lateral shear overlap change between two conductive textile electrodes (see Figure 1a,b). In our design, the mechanically deforming textile elements are separated from the electrically active electrodes: stretch occurs primarily in the elastic textile regions, while the conductive electrodes are mounted on comparatively non-stretching textile panels and sense motion through a change in relative overlap. This mechanical–electrical decoupling preserves textile integration while reducing the need to repeatedly elongate the conductive sensing elements, which is particularly important for subtle body movements such as thoracic and abdominal breathing.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        441.97,
+        297.41,
+        588.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 2,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": "We validate the fidelity of our sensor design through a series of experiments, documenting the stretch response, signal-to-noise ratio (SNR), and cycle life of prototype sensor implementations. We also validate the accuracy of the designed sensors using a precise motion tracking system. Results indicate that the proposed design leads to a higher fidelity sensor compared to other fabric stretch sensors presented in the literature [22, 23, 30]. Furthermore, to demonstrate the sensor’s utility, we show that it maintains strong performance when placed on the body. Finally, we share example readings of the sensor used as a detector of breath and various body movements. We also deployed the sensors to measure breath at the abdomen and mid-back. The design, prototyping, and final integration of the sensors in a corset are shown in Figure 1d(i–iii), respectively. This deployment shows the flexibility of our e-Textile sensors in supporting multiple wearable configurations and measurement contexts.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        464.89,
+        558.21,
+        657.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 2,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": "Breath monitoring was selected as the primary motivating application because thoracic and abdominal breathing produce subtle textile motion and garment deformation that are challenging for many conventional e-Textile strain sensors to capture reliably. We also show two other applications of the sensor in the rest of the paper. Although pressure and body coupling influence the measured capacitance during wearable deployment, the intended sensing modality remains stretch sensing rather than direct pressure sensing.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        602.37,
+        297.4,
+        703.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 2,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "Our contributions are as follows: (1) general design considerations for optimizing e-Textile sensor designs, (2) a novel capacitive stretch sensor design implementing these considerations, and (3) an evaluation of these designs highlighting how electrical and fabric considerations affect the behavior and quality of such sensors.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        671.11,
+        558.2,
+        737.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 2,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "The sensors were designed with two methods. In Design A, we used bespoke materials to fabricate the sensors, whereas in Design",
+      "translation": "",
+      "bbox": [
+        53.61,
+        716.85,
+        297.38,
+        737.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 2,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "2 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 2,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 3,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "FIGURE 1 (a) Our e-Textile sensors can be used to measure breath and various body movements precisely. (b) Cross-section of the sensor at resting position with aligned electrodes (i) and cross-section of expanded textile construction layers and substrates (ii). The capacitance is high when the sensor is at rest since the overlapping area between the two electrodes is maximum. The capacitance drops as the sensor gets stretched due to the decrease in the overlapping area between the electrodes. The data was recorded using an FDC connected to a Teensy 3.6 MCU. (c) Two sets of Design A sensors with rectangular and triangular electrodes, annotated on the left side of the strap. Sizes (W × L) are 1 × 3 cm, 3 × 3 cm, and 5 × 3 cm for top, middle, and bottom, respectively. (d) Sensors deployed in a corset to measure breath at the abdomen and mid-back. The hybrid “anti-corset” is designed to stretch where a corset would typically restrict movement (i). The prototype uses the sensor construction as in Design A (ii). Finished corset, as worn by a participant.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        653.91,
+        558.19,
+        742.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 3,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "Advanced Functional Materials, 2026 3 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 3,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 4,
+      "type": "paragraph",
+      "order": 34,
+      "original_text": "FIGURE 2 (a) Sensor construction overview: Applying a seam of adhesive film to stabilize the stretch textile for stitching (i). Stitching the stretch and non-stretch sections of the strap with a zigzag stitch to increase stability (ii). Feeding the looped e-Textile connectors through the straps to connect the sensors (iii). Applying the spacer to the electrode, a layered material made from Powernet and Sewfree adhesive film (iv). Using a pin to test the electrical connection through the spacer insulation layer (v). (b) Evaluation Apparatus with the stepper motor rig and a sensor placed on a 3D printed block to represent body curvature. The inline figure shows the sensor electrodes centrally aligned with a 10% base tension. (c) Average values of the measured capacitances as a function of displacement for Design A (left) and Design B (right). (d) The individual results of the stretch response experiment for Design A (i–iii and v–vii) and Design B (iv and viii). The top and bottom rows show the measured capacitances as a function of displacement for the rr and rt sensors, respectively. The first, second, third, and fourth columns present the data for the sensors with plate geometries of 1 × 3 cm, 3 × 3 cm, 5 × 3 cm, and 3 × 3 cm, respectively.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        553.52,
+        558.19,
+        653.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 4,
+      "type": "heading",
+      "order": 35,
+      "original_text": "2 Results",
+      "translation": "",
+      "bbox": [
+        53.61,
+        670.85,
+        113.67,
+        680.81
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 4,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "non-stretch sections of the strap with a zigzag stitch to increase stability (Figure 2a(ii)). We fed looped e-Textile connectors through the straps to connect the sensors (Figure 2a(iii)). We applied the spacer to the electrode, a layered material made from Powernet and Sewfree adhesive film (Figure 2a(iv)). Finally, we",
+      "translation": "",
+      "bbox": [
+        314.39,
+        670.91,
+        558.21,
+        725.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 4,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "The overview of the sensor construction is depicted in Figure 2a. We applied a seam of adhesive film to stabilize the stretch textile for stitching (Figure 2a(i). Then, we stitched the stretch and",
+      "translation": "",
+      "bbox": [
+        53.61,
+        694.45,
+        297.38,
+        726.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 4,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "4 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 4,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 5,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "used a pin to test the electrical connection through the spacer insulation layer (Figure 2a(v)).",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.38,
+        61.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 5,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "normal force influences the measurements because additional compression of the electrodes results in a convex response curve.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.98,
+        558.17,
+        61.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 5,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": "Design A emphasizes material stabilization, structural control, and long-term performance through the use of bonded composites, non-stretch substrates, and spacer fabrics that isolate deformation from the sensing elements. Its fabrication method prioritizes consistency, softness, and durability, but requires specialized materials and precise bonding steps. In contrast, Design B explores a simplified and more accessible fabrication approach, substituting highly engineered textiles with thinner, less compliant, and more readily available materials. This design reduces structural complexity and insulation thickness, aiming to produce a sensor that is less influenced by normal force and easier to construct, while intentionally trading off some material control and compressibility.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        75.25,
+        297.43,
+        221.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 5,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "For all in vitro measurements, we used the setup shown in Figure 2b. This setup enabled precise and automatic stretching of the sensors without human interference. In this section, we present the detailed results of the in vitro and in vivo experiments. All sensor identifiers below follow the sensor nomenclature defined in the Introduction.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        235.75,
+        297.41,
+        302.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 5,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": "To quantify the linearity of the capacitance-displacement response, we fitted the mean stretch and release curves of each sensor variant with a linear model, 𝐶(𝑥) = 𝛽0 + 𝛽1𝑥, where 𝐶is capacitance and 𝑥is displacement. 𝑅2 was calculated for each phase and is reported in Table S1. The quantitative analysis shows that the effect of the rt electrode geometry depends on sensor scale and textile construction. For Design A, rt geometry improved the linearity metrics for the 3 × 3 and 5 × 3 sensors, but not for the 1 × 3 sensor. In particular, rt-5 × 3-A showed the most linear response among the Design A variants, with 𝑅2 = 0.9969 during stretch, and 𝑅2 = 0.9967 during release. In contrast, rt-1 × 3-A showed lower linearity than rr-1 × 3-A, indicating that the geometric correction is not universal at smaller electrode sizes. For Design B, the rt geometry improved 𝑅2 compared to the rr geometry in both stretch and release. During stretch, rr-3 × 3-B and rt-3 × 3-B exhibited 𝑅2 values of 0.9129 and 0.9686, respectively. During release, rr-3 × 3-B and rt-3 × 3-B exhibited 𝑅2 values of 0.9338 and 0.9631, respectively. These results support the interpretation that rt electrodes can compensate for curvature- or pressure-induced nonlinearities when out-of-plane deformation is sufficiently controlled, but that this effect can be masked by textile thickness and spacer texture.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        75.35,
+        558.19,
+        324.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 5,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "2.1 In Vitro Experiment 1: Stretch Response",
+      "translation": "",
+      "bbox": [
+        53.61,
+        326.87,
+        273.07,
+        336.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 5,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "We further evaluated whether the rt geometry followed the expected geometric overlapping area model. The predicted capacitance was calculated from the derived overlapping area formula (Equation 5). The resulting predicted-vs.-experimental comparison using the endpoint calibrated method is shown in Figure S2 and summarized in Table S2. The model showed scale- and construction-dependent agreement with the experimental data. For rt-1 × 3-A, the model agreement was weak in both stretch and release, with 𝑅2 = 0.3374 and 0.2590, respectively. For the larger Design A sensors, agreement improved. In particular, rt-5 × 3A showed 𝑅2 = 0.9869 during stretch and 𝑅2 = 0.8966 during release. The rt-3 × 3-B sensor also showed strong agreement during stretch, with 𝑅2 = 0.9767, while the release phase showed moderate agreement with 𝑅2 = 0.8943.",
+      "translation": "",
+      "bbox": [
+        314.21,
+        338.86,
+        558.19,
+        496.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 5,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "Figure 2c displays the average values of the measured capacitances of the sensors as a function of displacement. The average results for the sensors of Design A are shown on the left-hand side, where green, black, and magenta colors indicate rr-1 × 3-A, rr-3 × 3-A, and rr-5 × 3-A sensors, respectively, and red, purple, and cyan colors indicate rt-1 × 3-A, rt-3 × 3-A, and rt-5 × 3-A sensors, respectively. The average results for the sensors of Design B are presented on the right-hand side, where the brown and yellow-colored curves indicate rr-3 × 3-B and rt-3 × 3-B sensors, respectively. The 15 mm displacement range for measurements was chosen to cover the expected electrode travel for subtle thoracic, abdominal, and garment-integrated breathing movements, and should therefore be interpreted as the calibrated range of the present prototypes rather than as the maximum range of the sensing principle.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        350.47,
+        297.42,
+        519.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 5,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": "The individual results of the stretch response experiment are shown in Figure 2d. The first and second rows present the measured capacitances of the sensors as a function of displacement for the plate shapes of rr and rt, respectively. The first, second, and third columns display the results for Design A with widths of 1, 3, and 5 cm, respectively. The results for Design B with a width of 3 cm are presented in the fourth column. The blue and red-colored curves represent the stretch and release cycles, respectively.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        533.78,
+        297.4,
+        634.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 5,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "These results indicate that the rt electrode geometry imposes the intended nonlinear overlap area function, but that the measured capacitance cannot be explained by in-plane overlap area alone. Deviations from the ideal geometric prediction are most pronounced in the smallest Design A sensor and are likely caused by scale-dependent edge effects, spacer texture, local electrode misalignment, and out-of-plane deformation of the textile. This suggests that the present triangular electrode design is one useful geometric compensation strategy, but not necessarily the only one: other, more complex geometries can achieve better linearization and could potentially outperform the current approach. Future work can explore such alternative electrode layouts and assess how they interact with textile mechanics and pressure-dependent deformation.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        510.71,
+        558.19,
+        668.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 5,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "2.2 In Vitro Experiment 2: Signal-to-Noise Ratio",
+      "translation": "",
+      "bbox": [
+        314.39,
+        693.49,
+        552.0,
+        703.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 5,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "The SNR measurements for stretch (blue) and release (red) cycles are presented in Figure 3a. All sensors exhibit SNRs higher than",
+      "translation": "",
+      "bbox": [
+        314.39,
+        717.09,
+        558.18,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 5,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "As shown in Figure 2d, the capacitances of all sensors decrease as the displacement increases. The capacitance of rr-5 × 3-A is higher than the other sensors since it has a bigger overlapping area of the plates (see Figure 2c). However, the rt-5 × 3-A sensor exhibits a more linear response than the other sensors. This linear behavior can be related to the shape and dynamics of the rt plates. Because stretching the sensor on a curved body also introduces pressure along the z-axis (see Figure 1b(ii), blue arrows), the",
+      "translation": "",
+      "bbox": [
+        53.61,
+        648.35,
+        297.4,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 5,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "Advanced Functional Materials, 2026 5 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 5,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 6,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "FIGURE 3 (a) The SNR values of the sensors. Stretch and release responses are shown in blue and red colors, respectively. (b) The measured capacitance of rr-3 × 3-A (i) and rr-3 × 3-B (ii) sensors as a function of time in 1000 cycles of stretch and release. The inline figures display a close-up view of the data. (c) Measured capacitance (blue-colored solid line) and displacement (red-colored dashed line) of rr-3 × 3-A (i) and rr-3 × 3-B (ii) sensors as a function of time in 100 cycles of stretch and release. The displacement of the sensors was measured using a high-resolution motion tracking system. The inline figures display a close-up view of the data. (d) Comparison of our sensor (i) with the resistive sensors in the literature: Vogl et al. [30] (ii) and Liang et al. [23] (iii). The blue and red-colored curves represent the stretch and release responses of the sensor, respectively. (e) In vivo and in vitro measurements of the rr-3 × 3-A sensor as a function of displacement. The results of in vivo and in vitro experiments are presented by solid and dashed lines, respectively. The blue and red-colored curves represent the stretch and release responses of the sensor, respectively.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        601.91,
+        558.19,
+        690.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 6,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": "6 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 6,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 7,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "and the ones in Figure 3d(ii, iii) using [31]:",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.98,
+        474.75,
+        49.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 7,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "55 dB, and the sensors with the smallest dimensions (1 × 3 cm) have higher SNRs than the rest of the sensors.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.53,
+        297.39,
+        61.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 7,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "(1)",
+      "translation": "",
+      "bbox": [
+        548.57,
+        69.81,
+        558.18,
+        78.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 7,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "𝐻𝑅= Δ𝐶ℎ𝑦𝑠 𝐶𝑚𝑎𝑥−𝐶𝑚𝑖𝑛",
+      "translation": "",
+      "bbox": [
+        401.26,
+        61.85,
+        469.49,
+        85.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 7,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "2.3 In Vitro Experiment 3: Cycle Life",
+      "translation": "",
+      "bbox": [
+        53.61,
+        89.99,
+        239.76,
+        99.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 7,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "where, Δ𝐶ℎ𝑦𝑠, 𝐶𝑚𝑎𝑥, and 𝐶𝑚𝑖𝑛are the maximum difference between stretch and release, maximum stretch, and minimum stretch, respectively. Our sensor exhibited a much lower hysteresis error (0.1584) compared to Vogl et al. [30] (0.2975) and Liang et al. [23] (0.2140).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        96.72,
+        558.21,
+        151.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 7,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": "2.6 In Vivo Experiments",
+      "translation": "",
+      "bbox": [
+        314.39,
+        177.93,
+        444.17,
+        187.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 7,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "The measured capacitances of the rr-3 × 3-A sensor in 1000 cycles of stretch and release as a function of time are presented in Figure 3b(i). The same measurements for rr-1 × 3-A, rt-1 × 3-A, rt-3 × 3-A, rr-5 × 3-A, and rt-5 × 3-A are given in Figures S3–S7, respectively. The inline figures display a close-up view of the data. All sensors exhibit higher capacitances for approximately 100 s, after which their capacitance values reach a steady-state region. This transition zone is smaller for the smallest sensor (1 × 3 cm) than the larger ones. In addition, the results of the cycle life experiment for the rr-3 × 3-B and rt-3 × 3-B are presented in Figure 3b(ii) and Figure S8, respectively. The capacitance values of these sensors experienced a sharp drop after approximately 200 s.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        113.14,
+        297.41,
+        260.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 7,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "We performed three in vivo experiments. Figure 3e presents the results of the first part of In Vivo 1. Solid and dashed lines show the results of the measured capacitances of the rr-3 × 3-A sensor as a function of displacement in vivo and in vitro, respectively. Blue and red colors indicate stretch and release, respectively. The results show an increase in capacitance measurements when the sensor is placed on the body, likely due to capacitive coupling with the body.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        201.53,
+        558.21,
+        290.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 7,
+      "type": "paragraph",
+      "order": 67,
+      "original_text": "2.4 In Vitro Experiment 4: Validation Tests",
+      "translation": "",
+      "bbox": [
+        53.61,
+        288.63,
+        269.02,
+        298.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 7,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "To validate the performance and accuracy of our sensors, we measured their capacitances in 100 cycles of stretch and release, together with the displacements of the electrodes on each other, using a high-resolution motion tracking system. The results are shown in Figure 3c for rr-3 × 3-A (i) and rr-3 × 3-B (ii) and Figures S9 and S10 for rr-1 × 3-A and rr-5 × 3-A, respectively. Blue-colored solid lines and red-colored dashed lines represent capacitance and displacement measurements, respectively. There is a very good fit between the capacitance measurements from our e-Textile sensors and the displacement measurements from the motion tracking system.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        312.23,
+        297.41,
+        435.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 7,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "The results of the breathing detection experiments are presented in Figure 4a (the second part of In Vivo 1). We defined seven breathing intervals (exhale hold, normal breath, inhale hold, deep breath, exhale hold, normal breath, exhale hold) for the participant and asked her to perform each interval for 10 s. Yellow, light blue, white, and pastel pink show the intervals for exhale hold, normal breath, inhale hold, and deep breath, respectively. The black and green colored curves show the normalized capacitances for the sensor with long (i) and short (ii) straps, respectively. The sensor with the shorter strap size exhibits higher capacitances than the sensor with the longer strap size. As shown in Figure S11, in one trial, the participant mixed the intervals, leading to some misalignment in the sensor data for the sensor with two strap sizes.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        304.64,
+        558.22,
+        462.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 7,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "To evaluate the measurement accuracy of the motion tracking system, a static validation experiment was conducted using a calibrated wand equipped with four markers at known distances. The wand was positioned within the measurement volume, and three independent recordings were acquired. For each recording, the distances between one reference marker and the remaining three markers were calculated and compared with their corresponding nominal values. The measurement error was quantified using the root-mean-square (RMS) error between the measured and reference distances. Across all measurements, the overall RMS error was 0.0056 mm, indicating micrometer distance measurement accuracy of the motion tracking system.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        449.71,
+        297.41,
+        584.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 7,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": "2.5 Comparisons With the State of the Art",
+      "translation": "",
+      "bbox": [
+        53.61,
+        613.3,
+        264.87,
+        623.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 7,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "Figure 4b–f presents the first 30 s of the first trial from the In Vivo 2 experiments. For each measurement, data were continuously recorded for three minutes. The complete recordings, including all trials for participants P2–P6, are provided in Figures S12– S16, respectively. The rr-3 × 3-A sensor was attached to the participant’s lower thorax (see Figure S17) to monitor breathing over a three-minute period while the participant performed routine office work (Figure 4b) and during rest lying (Figure 4c). Figure 4d presents the normalized capacitance measured from the elbow using the rr-3 × 3-A sensor (see Figure S18) during three consecutive intervals of exercise and rest. The knee movement measurements (see Figure S19) are shown in Figure 4e,f, where the participant walked and jogged, respectively, for three minutes along a circular track.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        476.5,
+        558.19,
+        634.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 7,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "Although detailed signal response characterizations of fabric stretch sensors are limited, the existing literature provides sufficient data to enable meaningful comparisons between designs. These include stitched stretch sensors by Vogl et al. [30] and knitted stretch sensors by Liang et al. [23]. We extracted the relevant data from their figures and compared them to one of our implementations in Figure 3d. Visual inspection reveals a more linear sensor response as well as lower hysteresis for our sensor. We calculated the hysteresis errors for our sensor in Figure 3d–i",
+      "translation": "",
+      "bbox": [
+        53.61,
+        636.89,
+        297.41,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 7,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": "The results of In Vivo 3 are presented in Figure S20. We attached the rr-3 × 3-A sensor on the lower thorax of the participant for breath monitoring for a period of 10 min while the participant was doing daily office work (see Figure S20a) and rest lying (see Figure S20b). Interestingly, during the rest lying part, the sensor detects the participant’s relaxing behavior as they start to breathe deeply and slowly. The normalized capacitances measured from the elbow using the rr-3 × 3-A sensor in three continuous",
+      "translation": "",
+      "bbox": [
+        314.39,
+        648.35,
+        558.19,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 7,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "Advanced Functional Materials, 2026 7 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 7,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 8,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": "FIGURE 4 The in vivo measurements using the rr-3 × 3-A sensor. (a) The sensor is worn as a simple strap to measure natural breathing. Twolayered straps comprise opposing stretch (gray) and non-stretch (black) elements, displacing centrally aligned electrodes in a shearing motion during inhalation. The experiment was performed by one female participant in seven consecutive intervals of 10 s using a Long strap sensor (i). The same measurement with a short strap sensor (ii). (b,c) In vivo breath monitoring of five participants during (b) office work and (c) while resting in a lying position. (d) In vivo measurements of elbow motion in five participants recorded over three consecutive cycles of exercise and rest. (e,f) In vivo measurements of knee motion in five participants during (e) walking and (f) jogging on a treadmill. Each column corresponds to one participant. Representative 30-second data segments are shown for all measurements, while the complete datasets for each participant are provided in Figures S12–S16.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        653.52,
+        558.25,
+        742.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 8,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "8 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 8,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 9,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "3.2 Signal-to-Noise Ratio",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.91,
+        445.44,
+        50.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 9,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "intervals of workout and rest are presented in Figure S20c. The frequency response of the workout sub-interval reveals a peak frequency at 0.36 Hz, corresponding to the 11 elbow movements in every ≈30 s. The results of the knee movement measurements are presented in Figure S20d,e while the participant walked for ten minutes and jogged for five minutes, respectively, on a treadmill. The frequency responses of the walking and jogging data show peak frequencies of 0.86 and 3.64 Hz, respectively.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.41,
+        130.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 9,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "All sensors exceeded 55 dB SNR (see Figure 3a), which is well above commonly cited minimum values for reliable capacitive sensing (often around 15 dB) [32]. For comparison, Ko et al. [33] reported SNR values below 28 dB for a capacitive sensor. The high SNR observed here indicates stable measurements with low relative noise.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        64.51,
+        558.19,
+        130.76
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 9,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": "3.3 Hysteresis",
+      "translation": "",
+      "bbox": [
+        314.39,
+        155.32,
+        396.25,
+        165.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 9,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "Across participants, the sensor maintained stable signal behavior for all measurements despite variations in body shape, garment tension, and sensor placement. In particular, respiration-related capacitance patterns remained clearly distinguishable across participants and activities, while dynamic activities such as walking and jogging produced consistent periodic responses corresponding to gait-related body motion. The extended duration measurements in In Vivo 3 demonstrated that the sensor maintained stable operation during continuous wearable use over several minutes without signal collapse or loss of sensitivity.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        144.09,
+        297.4,
+        256.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 9,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "Hysteresis reduces repeatability in dynamic sensing applications. Across the tested range, the proposed design shows smaller differences between stretch and release curves than prior textile stretch sensors (see Figure 2c,d and Figure 3d), indicating reduced hysteresis and improved consistency. Remaining differences between stretch and release are most apparent in some Design A sensors and are likely explained by the relative stiffness of the sensing layers. During release, a small increase in the distance between the electrodes can occur, leading to a reduction in capacitance.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        178.92,
+        558.2,
+        279.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 9,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "3.4 Cycle Life",
+      "translation": "",
+      "bbox": [
+        314.39,
+        304.11,
+        394.5,
+        314.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 9,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "We also observed that the absolute capacitance offset and signal amplitude varied between participants and placements, which is expected for wearable capacitive sensors because body morphology, textile tension, local curvature, and sensor pre-strain influence both electrode overlap and body coupling. Therefore, the proposed sensor should be interpreted as a calibrated wearable sensing platform whose deployment-specific response depends on garment integration and placement conditions.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        270.12,
+        297.42,
+        359.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 9,
+      "type": "heading",
+      "order": 88,
+      "original_text": "3 Discussion",
+      "translation": "",
+      "bbox": [
+        53.61,
+        384.08,
+        129.82,
+        394.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 9,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "Cycle life measurements highlight the benefit of decoupling mechanical strain from the sensing electrodes. In particular, Design A maintains stable capacitance responses over repeated stretch–release cycles after an initial settling period (see Figure 3b and Figures S3–S7). In contrast, Design B shows reduced longterm stability, likely caused by the use of off-the-shelf stretch fabrics (see Figure 3b(ii) and Figure S8).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        327.71,
+        558.19,
+        405.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 9,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "Current e-Textile sensors in the literature often exhibit nonlinear behavior across a wide range of displacements. They are generally designed to capture large motions and frequently degrade under repeated strain. Moreover, the performance of these sensors heavily depends on parameters such as material type and cutting techniques, which in turn rely on the designer’s expertise and precision.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        407.68,
+        297.4,
+        485.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 9,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "Taken together, these characteristics support the use of the proposed sensor for reliable monitoring of subtle movements in wearable contexts. To demonstrate the practical robustness of the system, we deployed the sensor in a custom corset used by a vocalist as part of an experimental interactive performance platform (see Figure 1d).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        419.36,
+        558.19,
+        485.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 9,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "3.5 Effects of Sensor Geometry",
+      "translation": "",
+      "bbox": [
+        314.39,
+        510.18,
+        473.26,
+        520.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 9,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "Our evaluation suggests that separating the mechanically deforming elements of the sensor from the electrically active sensing elements improves measurement quality for subtle on-body movements. Relative to prior textile stretch sensors, the proposed design shows improved linearity, high signal-to-noise ratios, reduced hysteresis, and stable cycle life behavior. At the same time, the sensor is optimized for small displacements and is not intended to replace designs that target larger ranges of motion.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        499.34,
+        297.4,
+        599.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 9,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "3.1 Linearity",
+      "translation": "",
+      "bbox": [
+        53.61,
+        624.75,
+        130.17,
+        634.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 9,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "Compared with prior textile stretch sensors, the proposed capacitive design shows a more linear response across the tested displacement range (see Figure 2c,d and Figure 3d). Sensors from Design A were largely linear, but exhibited deviations during the initial phase of stretching, consistent with the higher thickness and stiffness of the layered sensing region. In Design B, the thinner construction reduced motion in the z-axis and produced more consistently monotonic response curves (see Figure 2d(iv)–(viii)).",
+      "translation": "",
+      "bbox": [
+        53.61,
+        648.35,
+        297.43,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 9,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "The shape and size of the plates significantly affected the capacitance measurements, highlighting the role of plate geometry in sensor performance. As shown in Figure 2c, the rt sensors consistently exhibited lower capacitance values compared to the rr sensors of identical geometries. This is due to the differences in the overlapping areas of the plates, where the rr configuration provides a larger effective area for charge storage compared to the rt configuration. As stretching the sensor on the body also provides pressure in the z-axis (see Figure 1b(ii), blue arrows), we expected this to potentially influence the readings: assuming the response curve would be linear without the added pressure, the effect of additional compression of the electrodes would lead to a convex shape. The linearity analysis in Table S1 shows that the effect of geometry is most apparent in Design B and in the larger Design A sensors, but not universal across all sensor sizes. This geometric difference provides a way to tune the curvature of the capacitance-displacement response and can, in principle, compensate for nonlinearities induced by pressure.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        533.78,
+        558.21,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 9,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "Advanced Functional Materials, 2026 9 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 9,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 10,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "electrode. This was an effect we had predicted (see Section 2.1 and Section 5.2.1). However, the dynamics in the z-axis of Design A masked the effect (see also Figure 2d).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.98,
+        558.18,
+        72.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 10,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "It should be noted that a drawback of Design B is that one of the electrodes is exposed, which may lead to accelerated deterioration over time. In contrast, the electrodes of Design A are all encased in Bemis, which has been shown to improve the durability of conductive materials.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        86.71,
+        558.17,
+        141.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 10,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "The effect of electrode geometry is also evident in the model given in Section 5.2.1: the rt electrode pair produces a subexponential decrease in overlap area (Equation 5), whereas the rr electrode pair produces a linear decrease (Equation 3). The predicted-vs.-experimental comparison in Table S2 shows that this compensation depends on both electrode scale and geometry. The geometric model agreed poorly with the smallest Design A sensor, but agreement improved for the larger Design A sensors and for Design B. This suggests that the rt electrode geometry is most effective when out-of-plane deformation, spacer texture, and local electrode misalignment are minimized.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.4,
+        164.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 10,
+      "type": "paragraph",
+      "order": 102,
+      "original_text": "We found that smaller electrodes exhibited a better SNR. We speculate that the smaller area provides less freedom of movement within each plate, reducing a possible source of noise.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        155.55,
+        558.18,
+        187.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 10,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "3.6 Effect of Materials on Data",
+      "translation": "",
+      "bbox": [
+        53.61,
+        188.96,
+        212.17,
+        198.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 10,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "In the same way that material properties influence design choices, the effects of these design choices, and in turn, the materials themselves, are reflected in the data collected during sensor evaluations.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        212.56,
+        297.42,
+        255.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 10,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "3.6.1 Electrode Design",
+      "translation": "",
+      "bbox": [
+        53.61,
+        281.78,
+        162.02,
+        290.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 10,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "In both designs, the sensing electrodes almost act as rigid islands connected by a compliant shear layer, analogous to an island– bridge structure in stretchable electronics. Under axial stretch, most deformation is taken up by the soft spacer/bridge, so the electrode pads themselves undergo significantly less elongation than the bulk. This is consistent with prior studies where conductive islands “ride along” on a deforming substrate [34, 35]. For example, in Ref. [35], lithographically defined islands protected a brittle electrode by letting it slide on stretchable bridges, avoiding local strain. Similarly, our pad electrode is largely decoupled from the garment stretch. We therefore expect the local strain (and stress) in the pad to be much lower than in a fully bonded design, improving the mechanical robustness of the sensing area.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        201.38,
+        558.21,
+        347.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 10,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "3.6.2 Strap Design",
+      "translation": "",
+      "bbox": [
+        314.39,
+        373.71,
+        404.86,
+        382.68
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 10,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": "Multiple effects of materials are apparent in the signal response curves. Looking at the response curves for Design A (Figure 2d), we see multiple instances where the signal does not immediately decrease, or where it increases before it decreases. We found that this can be explained by the thickness of the sensing element. Due to the layering of multiple fabrics, the sensing element became stiffer than its surroundings (see also Figure 1b). When moving over a curved surface, this difference in thickness sometimes caused a slight lifting of the top element relative to the bottom, which prevented the sensor from reaching its theoretical maximum capacitance, or even reducing its capacitance reading toward the end of its active range.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        304.64,
+        297.41,
+        439.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 10,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "Design A had a carefully engineered stretch design, considering the stretch and release of the Eurojersey strap. Except for an initial break-in phase, this resulted in a very stable cycle life, as apparent in Figure 3b(i) and Figures S3–S7. To test a simpler construction method, Design B utilized an off-the-shelf elastic band. Interestingly, here we see comparatively radical jumps in the signal over the 1000 cycles due to the off-the-shelf nature of the materials (Figure 3b(i) and Figure S8).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        396.47,
+        558.2,
+        485.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 10,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "3.7 Effect of the Body on Data",
+      "translation": "",
+      "bbox": [
+        314.39,
+        510.18,
+        468.59,
+        520.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 10,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "As all measures are performed in controlled conditions, and because the human body affects capacitive sensing [36], we provide data to better understand the sensor’s performance on the body. As shown in Figure 3e, the on-body measurements followed a similar pattern to those observed under controlled conditions, and the main difference is a constant offset in signal magnitude.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        533.78,
+        558.18,
+        600.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 10,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "Another interesting effect is the repeating oscillations visible in many of the sensor response plots. These are not noise, but rather demonstrate the high resolution of the sensor. We found that these were caused by the relatively coarse-grained nature of the power mesh: when the grain is aligned, this increases the distance between the electrodes. When the grain was offset, the power mesh could interlock, reducing the space between sensing elements. Once a smooth piece of paper was placed between the two sensing elements, preventing the movement in the z-axis by providing a smooth surface for the fabrics to push against, this effect vanished. To further verify this mechanism, the In Vitro 1 measurements were repeated for the rr-1 × 3-A, rr-3 × 3A, and rr-5 × 3-A sensors over 20 stretch–release cycles with the paper spacer inserted. The corresponding results are presented in Figure S21a–c for the rr-1 × 3-A, rr-3 × 3-A, and rr-5 × 3-A sensors, respectively.",
+      "translation": "",
+      "bbox": [
+        53.43,
+        453.58,
+        297.43,
+        634.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 10,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "With these observations in mind, Design B was created. The materials were optimized to reduce possible motion in the zaxis, and the design was tuned to be as thin as possible, aiming for consistent flexibility across the entire range of the sensor. The sensor response curves consequently show lower hysteresis, no oscillations, and more consistently monotonous behavior. These sensors exhibit a convex slope for the rectangular electrode design and a concave slope for the version with a triangular",
+      "translation": "",
+      "bbox": [
+        53.61,
+        648.25,
+        297.41,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0114",
+      "page": 10,
+      "type": "paragraph",
+      "order": 114,
+      "original_text": "This indicates that our sensors are capable of maintaining accurate and stable readings in both controlled laboratory settings and when applied to real-life scenarios involving the human body. However, it is worth noting that the in vivo capacitance values appeared to be higher than those obtained in vitro. This difference can likely be attributed to the capacitive coupling with the human body, which could affect the sensor’s readings. The presence of bioelectric phenomena, such as skin conductivity and the natural electrical activity of tissues, may contribute to this observed discrepancy. In other words, this DC offset arises because the human body acts as a large parasitic plate",
+      "translation": "",
+      "bbox": [
+        314.39,
+        613.98,
+        558.19,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0115",
+      "page": 10,
+      "type": "paragraph",
+      "order": 115,
+      "original_text": "10 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0116",
+      "page": 10,
+      "type": "paragraph",
+      "order": 116,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0117",
+      "page": 11,
+      "type": "paragraph",
+      "order": 117,
+      "original_text": "be removed from the output. Future work might consider a design that not only measures between two electrodes but also introduces a third electrode on one side. As the single electrode moves from one opposing electrode to the other, the position can then be determined based on the difference in capacitance, such that the constant offset introduced by the body can be removed.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.98,
+        558.18,
+        107.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0118",
+      "page": 11,
+      "type": "paragraph",
+      "order": 118,
+      "original_text": "3.8 Applications of the Designed Sensors",
+      "translation": "",
+      "bbox": [
+        314.39,
+        132.02,
+        519.82,
+        141.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0119",
+      "page": 11,
+      "type": "paragraph",
+      "order": 119,
+      "original_text": "(≈100–400 pF to ground) [37]. An op-amp- or ADC-driven guard electrode at the sensor’s potential can reduce the offset without degrading sensitivity, at the cost of extra drive electronics [38]. While shielding strategies exist, robust shielding is non-trivial to implement, and in practice often does not yield the expected benefits. Therefore, an important design choice of ours from the start was to design a sensor that can work robustly, even in the absence of shielding. In addition, in the present work, we intentionally avoided additional shielding structures in order to isolate and evaluate the mechanically decoupled sensing architecture itself. Understanding these variations is crucial for the further development and refinement of our sensors, ensuring that they provide precise and reliable data across a wide range of applications.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.53,
+        297.41,
+        198.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0120",
+      "page": 11,
+      "type": "paragraph",
+      "order": 120,
+      "original_text": "In this section, we describe an example application that demonstrates how the sensor design can be integrated with a garment, supporting the design of wearables that tightly integrate with a user’s activity [39]. More information on design considerations of garments with e-Textiles is available in Note S2.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        155.63,
+        558.19,
+        210.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0121",
+      "page": 11,
+      "type": "paragraph",
+      "order": 121,
+      "original_text": "This sensor was used in a “corset” (see Figure 1d) to be worn by a vocalist to capture the movement of the chest while singing. The design is a hybrid of a traditional boned corset and a soft, stretchy support garment, or foundation garment, developed through body observations and conversations with the vocalist. Similar to the sensor design itself, the corset is designed to mechanically control movement in specific areas of the body using stretch and non-stretch fabric elements (Figure 1d).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        224.37,
+        558.19,
+        313.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0122",
+      "page": 11,
+      "type": "paragraph",
+      "order": 122,
+      "original_text": "The sensors were placed between the bones, the vertical metal or plastic strips that define the structure of a corset. Integration into a structured design, such as a corset, allowed the sensor to completely disappear from the vocalist’s perspective because it was built into the garment’s existing architecture. Using the bones as a framework allowed for controlled deformation of both the body and sensor, ensuring the strap was tensioned and stabilized to maximize the shearing motion while keeping the electrodes aligned.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        327.39,
+        558.19,
+        428.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0123",
+      "page": 11,
+      "type": "paragraph",
+      "order": 123,
+      "original_text": "To demonstrate the functionality of our sensors on the body, we also focused on capturing the subtle movements of the lower thorax during breathing. The measurements were performed twice: first with a full strap length (Figure 4a(i)) and then with a half strap length (Figure 4a(ii)). In general, the sensor’s signal dynamics matched our expectations. It should be noted that the half strap length exhibited higher capacitances compared to the full strap length in all breathing intervals, as it led to higher pressures on the sensor. Hence, the distance between the plates decreased, and the capacitance values increased. During exhale hold intervals, the capacitance values peaked because the sensor plates were highly overlapped. The capacitance values demonstrated clear variations corresponding to the participant’s breathing patterns under normal and deep breathing intervals, with more significant variations observed during deep breathing. It is worth noting that the sensor readings were not constant during the exhale hold interval. This instability is due to the sensor requiring a few seconds to reach its steady state, which is inherent to the elastic fabric’s recovery properties. The participant was instructed to switch between breathing intervals every 10 s. Sometimes, the participant inadvertently mixed the conditions, and the sensor successfully captured these discrepancies. One such result is presented in Figure S11. During the first 10 s of this particular experiment, the participant exhaled more deeply than the other times. This “error” of the participant was accurately captured by the sensor.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        212.84,
+        297.41,
+        508.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0124",
+      "page": 11,
+      "type": "paragraph",
+      "order": 124,
+      "original_text": "The front sensor was placed across the hip line to capture more intentional movement from the diaphragm while singing. We noted a more unconscious movement in the vocalist’s back, and two smaller sensors were placed diagonally across each side of the ribcage. This was fitted and tested to understand the affordances for maximum sensor displacement. After fitting and optimizing for the vocalist’s body, the front sensor displaced between 7–12 mm, while the back sensors each gave measurements of 3–5 mm.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        442.06,
+        558.19,
+        531.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0125",
+      "page": 11,
+      "type": "paragraph",
+      "order": 125,
+      "original_text": "Three rr-5 × 5-A sensors were used, while the strap length differed, defined by the constraints of the body, which in turn influenced seam placement and corset construction. Prototyping was done in materials closely resembling final fabrics, requiring two major revisions (Figure 1d).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        544.72,
+        558.19,
+        599.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0126",
+      "page": 11,
+      "type": "paragraph",
+      "order": 126,
+      "original_text": "3.9 Practical Stretch Range and Scalability",
+      "translation": "",
+      "bbox": [
+        314.39,
+        624.75,
+        528.35,
+        634.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0127",
+      "page": 11,
+      "type": "paragraph",
+      "order": 127,
+      "original_text": "Further in vivo experiments involved attaching the 3 × 3-A sensor to various body locations of five participants, including the lower thorax (Figure 4a,b), elbow (Figure 4c), and knee (Figure 4d,e). The individual results for each participant are available in Figures S12–S16. We also performed the extended version of the in vivo measurements with one participant for a longer period of time (see Figure S20). When positioned on the lower thorax, the sensor successfully monitored breathing patterns during both sedentary office work and while the participant was lying down. Interestingly, in the extended version of the lie-down experiment, as the participant relaxed over time, he began to breathe deeply and slowly, which is evident in our measurements (see Figure 4e). When placed on the elbow, the sensor accurately recorded movement during simple dumbbell exercises. Similarly, when attached to the knee, it effectively captured walking and jogging motions.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        521.73,
+        297.41,
+        702.99
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0128",
+      "page": 11,
+      "type": "paragraph",
+      "order": 128,
+      "original_text": "The current implementation requires calibration of the sensor each time it is deployed on the body, as the absolute offset must",
+      "translation": "",
+      "bbox": [
+        53.61,
+        716.94,
+        297.39,
+        737.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0129",
+      "page": 11,
+      "type": "paragraph",
+      "order": 129,
+      "original_text": "The present sensor implementations were characterized over a maximum electrode displacement of 15 mm. This range was selected to match the intended application of subtle on-body movement sensing, especially thoracic and abdominal breathing. In the corset integration described above, the measured displacement of the front sensor was approximately 7–12 mm, while the two back sensors displaced approximately 3–5 mm. These values fall within the characterized displacement range, indicating that",
+      "translation": "",
+      "bbox": [
+        314.39,
+        648.35,
+        558.19,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0130",
+      "page": 11,
+      "type": "paragraph",
+      "order": 130,
+      "original_text": "Advanced Functional Materials, 2026 11 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0131",
+      "page": 11,
+      "type": "paragraph",
+      "order": 131,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0132",
+      "page": 12,
+      "type": "heading",
+      "order": 132,
+      "original_text": "5 Experimental Section",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.91,
+        440.88,
+        50.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0133",
+      "page": 12,
+      "type": "paragraph",
+      "order": 133,
+      "original_text": "the current geometry is appropriate for the subtle respiratory and postural movements targeted in this work.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.41,
+        61.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0134",
+      "page": 12,
+      "type": "paragraph",
+      "order": 134,
+      "original_text": "5.1 Sensor Design and Implementation",
+      "translation": "",
+      "bbox": [
+        314.39,
+        63.83,
+        512.38,
+        73.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0135",
+      "page": 12,
+      "type": "paragraph",
+      "order": 135,
+      "original_text": "In this section, we first provide the general design considerations and our construction method. Then, we proceed to discuss the specific implementations.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        87.43,
+        558.17,
+        119.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0136",
+      "page": 12,
+      "type": "paragraph",
+      "order": 136,
+      "original_text": "5.1.1 General Principles",
+      "translation": "",
+      "bbox": [
+        314.39,
+        135.45,
+        429.19,
+        144.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0137",
+      "page": 12,
+      "type": "paragraph",
+      "order": 137,
+      "original_text": "Respiration monitoring was selected as the primary target application because thoracic and abdominal breathing produce relatively small textile deformations that are difficult to capture reliably using many conventional textile strain sensors. The additional body location measurements demonstrate that the sensing principle is more general and can support broader wearable movement monitoring applications beyond respiration alone.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        75.35,
+        297.39,
+        153.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0138",
+      "page": 12,
+      "type": "paragraph",
+      "order": 138,
+      "original_text": "We propose a two-layered mechanical capacitive e-Textile sensor with a shearing motion for measuring stretch in on-body applications. Two overlaid straps with a centrally aligned electrode of opposing sections of stretch and non-stretch materials create a shearing motion when strain is applied (Figure 1b). The design leverages the positive curvature of the body with the tension of the non-active stretch materials to stabilize the structure.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        158.31,
+        558.2,
+        236.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0139",
+      "page": 12,
+      "type": "paragraph",
+      "order": 139,
+      "original_text": "5.1.2 Design Considerations",
+      "translation": "",
+      "bbox": [
+        314.39,
+        262.13,
+        445.61,
+        271.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0140",
+      "page": 12,
+      "type": "paragraph",
+      "order": 140,
+      "original_text": "Larger body movements, such as high amplitude elbow or knee flexion, shoulder motion, trunk bending, or large changes in garment circumference during vigorous activity, can impose strains and local textile displacements that exceed the tested 15 mm range. Prior wearable textile strain-sensing work for elbow and knee monitoring has therefore used sensors designed for substantially larger strain ranges, for example, flexion measurements within approximately 30% strain [40]. Similarly, wearable respiration systems evaluated during walking, running, or stair climbing highlight that dynamic activities can introduce larger garment deformation and motion artifacts than quiet breathing [41].",
+      "translation": "",
+      "bbox": [
+        53.61,
+        167.01,
+        297.43,
+        302.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0141",
+      "page": 12,
+      "type": "paragraph",
+      "order": 141,
+      "original_text": "Beyond the technological functionality of the system, for a technological system to become wearable, the design should include properties such as the ability to adapt to the varied shape of bodies, match with human abilities, and finally be deployable in everyday use and socially acceptable [42]. In the present work, we optimize a sensor for optimal deployability in everyday garments by optimizing the design to adapt to and move with the body. Such optimization, in turn, leads to better technological functionality, enabling the sensor to precisely measure subtle human behaviors.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        284.89,
+        558.2,
+        385.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0142",
+      "page": 12,
+      "type": "paragraph",
+      "order": 142,
+      "original_text": "For applications requiring larger displacement ranges, the proposed mechano-capacitive principle can be scaled in several ways. First, the electrode length can be increased so that a larger shear displacement can occur before the electrode overlap becomes too small for reliable capacitance measurement. Second, the mechanical textile linkage can be redesigned so that a larger garment extension is converted into a smaller electrode displacement, for example, by increasing the length of the stretch region, adding compliant intermediate textile sections, or using multiple stretch zones in series. Third, multiple sensors can be distributed across a garment so that large body motion is measured as the sum of several smaller local displacements rather than by a single sensor operating over its full travel. Finally, the sensor can be pre-positioned or pre-strained so that the expected motion occurs near the center of the calibrated range, where the capacitance response remains most reliable.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        315.95,
+        297.43,
+        508.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0143",
+      "page": 12,
+      "type": "paragraph",
+      "order": 143,
+      "original_text": "In addition, since the sensing element is continuously mechanically manipulated as the fabric deforms, the deformation of sensing materials causes fatigue, hysteresis, and general instability in longitudinal readings [23]. We address this issue by applying a design strategy that creates a separation between the mechanical moving parts of the sensor and its electrical parts. This is achieved by combining non-stretch (woven) with stretch (knit) elements in such a way that the place at which the fabric is stretched is carefully chosen and controlled, enabling sensing materials to be placed in areas that are not stretched.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        399.56,
+        558.2,
+        511.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0144",
+      "page": 12,
+      "type": "heading",
+      "order": 144,
+      "original_text": "4 Conclusion",
+      "translation": "",
+      "bbox": [
+        53.61,
+        533.1,
+        132.7,
+        543.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0145",
+      "page": 12,
+      "type": "paragraph",
+      "order": 145,
+      "original_text": "5.1.3 Mechanical Design",
+      "translation": "",
+      "bbox": [
+        314.39,
+        537.74,
+        431.65,
+        546.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0146",
+      "page": 12,
+      "type": "paragraph",
+      "order": 146,
+      "original_text": "The sensor consists of two-layered straps with a tubular construction to stabilize edges and control stretch properties. Each strap has a non-stretch element and a shorter stretch element. The straps are oriented oppositely, with non-stretch parts overlapping in the center. Conductive electrodes are placed on the nonstretch overlap. When pulled, the conductive elements slide apart, reducing the overlap (see Figure 1b).",
+      "translation": "",
+      "bbox": [
+        314.39,
+        560.6,
+        558.21,
+        638.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0147",
+      "page": 12,
+      "type": "paragraph",
+      "order": 147,
+      "original_text": "5.1.4 Electrical Design",
+      "translation": "",
+      "bbox": [
+        314.39,
+        664.42,
+        423.26,
+        673.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0148",
+      "page": 12,
+      "type": "paragraph",
+      "order": 148,
+      "original_text": "We measure the capacitance between the two conductive electrode areas. Capacitance is defined as:",
+      "translation": "",
+      "bbox": [
+        314.39,
+        687.28,
+        558.1,
+        707.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0149",
+      "page": 12,
+      "type": "paragraph",
+      "order": 149,
+      "original_text": "𝐴",
+      "translation": "",
+      "bbox": [
+        448.38,
+        720.2,
+        454.88,
+        729.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0150",
+      "page": 12,
+      "type": "paragraph",
+      "order": 150,
+      "original_text": "𝐶= 𝜀0𝜀𝑟",
+      "translation": "",
+      "bbox": [
+        416.41,
+        725.94,
+        446.54,
+        736.19
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0151",
+      "page": 12,
+      "type": "paragraph",
+      "order": 151,
+      "original_text": "We present and test a novel mechano-capacitive approach to eTextile sensor construction. The design can be fabricated using commercially available materials and equipment. Our sensor is specifically designed to leverage the inherent properties of textile construction and is scaled for integration into garments. We suggest a separation of mechanical and electrical behavior as a general design guideline for designers of (durable) e-Textile systems. In our case, this is achieved by combining non-stretch (woven) with stretch (knit) elements in such a way that the place at which the fabric is stretched is carefully chosen and controlled, enabling sensing materials to be placed in areas that are not stretched, while selecting materials that can retain their physical properties, even after many stretch-release cycles. Combined with our suggested capacitive sensing method, this leads to a sensor that has a better signal response curve, better signal-to-noise ratio, and better cycle life than the state-of-the-art.",
+      "translation": "",
+      "bbox": [
+        53.16,
+        556.7,
+        297.43,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0152",
+      "page": 12,
+      "type": "paragraph",
+      "order": 152,
+      "original_text": "𝑑 (2)",
+      "translation": "",
+      "bbox": [
+        449.07,
+        726.38,
+        558.17,
+        740.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0153",
+      "page": 12,
+      "type": "paragraph",
+      "order": 153,
+      "original_text": "12 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0154",
+      "page": 12,
+      "type": "paragraph",
+      "order": 154,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0155",
+      "page": 13,
+      "type": "paragraph",
+      "order": 155,
+      "original_text": "to the Eurojersey fabric straps to create a base tension to stabilize the material.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.98,
+        558.23,
+        61.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0156",
+      "page": 13,
+      "type": "paragraph",
+      "order": 156,
+      "original_text": "The electrodes were made with silver-plated knit fabric (Techniktex P130b [47]). The fabric was chosen for its density and thickness, allowing us to bond both sides while retaining softness as well as electrical properties. This knit fabric was selected in preference to a thinner, more stable woven or non-woven fabric, such as nylon ripstop, which can become “papery” and stiff when bonded into a composite material.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        75.35,
+        558.19,
+        153.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0157",
+      "page": 13,
+      "type": "paragraph",
+      "order": 157,
+      "original_text": "where, 𝜀0 = 8.854 × 10−12F.m−1 is the permittivity of free space [43], 𝜀𝑟is the relative permittivity of the dielectric material between the plates, 𝐴is the area of one of the plates, and 𝑑is the distance between the plates. As the capacitance is directly proportional to the area of overlap 𝐴, the capacitance decreases as the sensor is stretched. We expect this to produce a stable measure of stretch. However, stretching the sensor produces tension, which also reduces the distance between the conductive areas, 𝑑, and increases the capacitance. This can potentially impact measurement results negatively.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.39,
+        297.41,
+        166.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0158",
+      "page": 13,
+      "type": "paragraph",
+      "order": 158,
+      "original_text": "The conductive electrodes are bonded to the strap with a layer of thermal adhesive stretch film. A layer of Powernet spacer fabric is then bonded on top, preventing the conductive panels from making contact (Figure S22). The thermal adhesive stretch film (Bemis Sewfree [48]) has a high recovery cycle, does not suffer delamination, and also protects the conductive material from degradation due to humidity and friction [49].",
+      "translation": "",
+      "bbox": [
+        314.39,
+        167.01,
+        558.19,
+        244.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0159",
+      "page": 13,
+      "type": "paragraph",
+      "order": 159,
+      "original_text": "For Design A, the combination of Powernet, Sewfree, and air voids is not a homogeneous dielectric. For Design B, the polyamide sheet is closer to a homogeneous dielectric, but its relative permittivity value depends on polymer type, humidity, and frequency. Bulk nylon/polyamide values are commonly around 3.5–4 under dry conditions [44]. ASTM D1777 (the standard framework for measuring relative permittivity of solid insulating materials) emphasizes that textile thickness depends strongly on applied pressure [45].",
+      "translation": "",
+      "bbox": [
+        53.61,
+        180.33,
+        297.4,
+        281.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0160",
+      "page": 13,
+      "type": "paragraph",
+      "order": 160,
+      "original_text": "Sewfree is a double-sided heat-activated stretch polymer film, engineered in different formulas and thicknesses, and selected relative to both the textile to which it will be applied and the required functionality (e.g., high bond strength or high elasticity). It is activated when heat and pressure are applied, fusing equally into two layers of textile to form a single hybrid material. When the correct film is selected, it allows for the layering of materials with minimal compromise of a textile’s original characteristics, such as softness.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        258.66,
+        558.2,
+        359.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0161",
+      "page": 13,
+      "type": "paragraph",
+      "order": 161,
+      "original_text": "The proposed device is a capacitive stretch sensor. Its sensing mechanism is based on changes in the overlap area between two conductive textile electrodes caused by relative shear displacement during textile deformation. This enables the measurement of textile deformation associated with human activity. In the breathing-monitoring application, inhalation expands the thorax and abdomen, stretching the garment and sensor and producing a measurable capacitance change. Similarly, elbow or knee flexion changes the shape of the garment through an eccentric-pivot mechanism, stretching the sensor and enabling measurement of joint movement.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        294.99,
+        297.4,
+        418.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0162",
+      "page": 13,
+      "type": "heading",
+      "order": 162,
+      "original_text": "5.1.5 Fabrication",
+      "translation": "",
+      "bbox": [
+        53.61,
+        438.35,
+        138.96,
+        447.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0163",
+      "page": 13,
+      "type": "paragraph",
+      "order": 163,
+      "original_text": "The conductive electrode fabric is first bonded by “tacking” it to the double-sided adhesive film in a sheet, and the electrodes are then precisely cut with raw edges. The adhesive backing is peeled and the electrodes are bonded to the coutil. Due to being bonded to the non-stretch coutil, the electrodes are not subject to stretch or deformation. The Sewfree provides stabilization by stopping the knit electrode material from fraying, removing the subtle deformation and inconsistencies caused by stitching, and, most importantly, retaining the soft textile characteristics of the sensor.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        373.23,
+        558.21,
+        473.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0164",
+      "page": 13,
+      "type": "paragraph",
+      "order": 164,
+      "original_text": "We fabricated six sensors using Design A in three sizes: 1 × 3 cm, 3 × 3 cm, and 5 × 3 cm. For each size, one sensor had rr electrode pairs, and the other had rt electrode pairs. For Design B, we built two sensors, both 3 × 3 cm; one with rr electrode pairs and one with a rt electrode pairs.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        460.76,
+        297.39,
+        516.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0165",
+      "page": 13,
+      "type": "paragraph",
+      "order": 165,
+      "original_text": "The spacer fabric is then applied over the conductive fabric electrodes to ensure insulation and to protect the electrodes from degradation/oxidation caused by sweat or ambient moisture. We use Powernet, a technical mesh textile with a three-dimensional knit, bonded with Sewfree and therefore sealed.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        487.8,
+        558.18,
+        542.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0166",
+      "page": 13,
+      "type": "paragraph",
+      "order": 166,
+      "original_text": "Here, we share our two implementations. For ease of replication, we used commercial materials selected for their technical properties. The sensors are constructed using a standard (Pfaff) sewing machine with a straight and zigzag stitch, a miniature (Prym) steam iron, basic sewing and electronics tools, and a soldering iron. The reader can refer to Note S3 for more information on general considerations for designing e-Textiles.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        529.95,
+        297.4,
+        619.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0167",
+      "page": 13,
+      "type": "paragraph",
+      "order": 167,
+      "original_text": "Electrodes are connected by silicon wires. The wires have a small, flat loop soldered at one end, which is secured to the electrode during the bonding of the layers (Figure S22). The wires are passed through a slit in the non-stretch material at the edge of the electrode and into the strap to sit inside the tubular structure. The other end is free to connect to a data collection system or other electronics. To avoid strain, the soft silicone wires always pass through the non-stretch coutil strap, becoming imperceptible within the textile. The electrode, wire loop, and slit where it passes through the strap are secured by the bonding of the spacer layer, which is 2 mm larger than the electrode to ensure isolation. The wires have a female header pin at the opposite end to connect to the testing rig.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        556.55,
+        558.19,
+        703.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0168",
+      "page": 13,
+      "type": "paragraph",
+      "order": 168,
+      "original_text": "5.1.5.2 Design B. A second set of sensors was designed using a different method. This sensor was designed to explore two",
+      "translation": "",
+      "bbox": [
+        314.39,
+        717.09,
+        558.19,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0169",
+      "page": 13,
+      "type": "paragraph",
+      "order": 169,
+      "original_text": "5.1.5.1 Design A. The first sensor is constructed with materials selected to optimize the stretch, non-stretch, and conductive fabric elements of the design. The woven non-stretch material (coutil) was chosen for its dense, flat weave, and stable property of minimal deformation. Coutil has a fine herringbone weave that holds its shape under pressure and strain. The stretch fabric (Eurojersey Plus [46]) is a light, flat tricot warp knit with Lycra. This proprietary technical weave is designed for extended stretch, recovery, and shape retention. We added 10% reduction in length",
+      "translation": "",
+      "bbox": [
+        53.61,
+        636.89,
+        297.41,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0170",
+      "page": 13,
+      "type": "paragraph",
+      "order": 170,
+      "original_text": "Advanced Functional Materials, 2026 13 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0171",
+      "page": 13,
+      "type": "paragraph",
+      "order": 171,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0172",
+      "page": 14,
+      "type": "paragraph",
+      "order": 172,
+      "original_text": "becomes a function of displacement (𝑥) as (see Figure S23a):",
+      "translation": "",
+      "bbox": [
+        314.39,
+        40.53,
+        542.09,
+        49.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0173",
+      "page": 14,
+      "type": "paragraph",
+      "order": 173,
+      "original_text": "𝐴𝑟𝑟(𝑥) = 𝑊(𝐿−𝑥) (3)",
+      "translation": "",
+      "bbox": [
+        400.77,
+        63.45,
+        558.18,
+        73.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0174",
+      "page": 14,
+      "type": "paragraph",
+      "order": 174,
+      "original_text": "fabrication questions: (1) Can the response behavior be improved by a less compliant electrode and a thinner, less structured insulator? and (2) Can the stretch-band design be replaced by a material more widely available and easier for novices to work with?",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.41,
+        95.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0175",
+      "page": 14,
+      "type": "paragraph",
+      "order": 175,
+      "original_text": "Substituting Equation (3) in Equation (2) yields a linear relationship between capacitance and displacement as:",
+      "translation": "",
+      "bbox": [
+        314.39,
+        86.83,
+        558.18,
+        107.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0176",
+      "page": 14,
+      "type": "paragraph",
+      "order": 176,
+      "original_text": "𝑊(𝐿−𝑥)",
+      "translation": "",
+      "bbox": [
+        433.65,
+        118.92,
+        469.69,
+        127.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0177",
+      "page": 14,
+      "type": "paragraph",
+      "order": 177,
+      "original_text": "𝐶= 𝜀0𝜀𝑟",
+      "translation": "",
+      "bbox": [
+        401.68,
+        124.92,
+        431.81,
+        135.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0178",
+      "page": 14,
+      "type": "paragraph",
+      "order": 178,
+      "original_text": "𝑑 (4)",
+      "translation": "",
+      "bbox": [
+        449.07,
+        125.36,
+        558.17,
+        139.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0179",
+      "page": 14,
+      "type": "paragraph",
+      "order": 179,
+      "original_text": "In practical applications, these capacitive sensors are often placed on a human body, which has a curved shape. As the sensor is stretched, the tension creates pressure between the sensor and the body and will cause a reduction in distance 𝑑, which might lead to a nonlinear output. To overcome this nonlinearity, we propose using one rectangular and one triangular plate. Assuming the rectangular plate’s length and width are equal, the overlapping area becomes (see the schematic illustration in Figure S23b and the derivation of the overlap area equation in Note S4):",
+      "translation": "",
+      "bbox": [
+        314.39,
+        150.42,
+        558.2,
+        251.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0180",
+      "page": 14,
+      "type": "paragraph",
+      "order": 180,
+      "original_text": "For the elastic strap, the stretch fabric Eurojersey is replaced with MYUREN 3-inch knit elastic made of 70% elastic and 30% natural latex rubber, to test the effects of a method friendlier to novice makers by minimizing construction. For the conductive electrodes, the Techniktex P130b [47] was replaced with Bremen Metalized Silver Ripstop. Because the Ripstop is a thin weave, it cannot be compressed to the same extent as the knit TechnikTex. The two electrodes are insulated from one another using a single sheet of light Polyamide. As the Polyamide is thinner and lighter than the Powermesh used for Design A, we expect the entire composite to be less affected by normal force when stretched over the body. Due to the smooth surface of the Polyamide, we also expect it to lead to a smoother sensor response.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        109.72,
+        297.41,
+        267.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0181",
+      "page": 14,
+      "type": "paragraph",
+      "order": 181,
+      "original_text": "𝐴𝑟𝑡= 𝑊",
+      "translation": "",
+      "bbox": [
+        403.61,
+        261.85,
+        436.68,
+        277.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0182",
+      "page": 14,
+      "type": "paragraph",
+      "order": 182,
+      "original_text": "2𝐿(𝐿−𝑥)2 (5)",
+      "translation": "",
+      "bbox": [
+        427.74,
+        266.75,
+        558.17,
+        282.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0183",
+      "page": 14,
+      "type": "paragraph",
+      "order": 183,
+      "original_text": "5.1.5.3 Electronics. All sensors were connected to a 28bit capacitance-to-digital converter evaluation board (FDC2214 EVM, Texas Instruments Inc.). The FDC was connected to a Teensy 3.6 MCU using I2C to acquire and store capacitance data on a micro SD card. Capacitance was sampled at 100 Hz.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        281.52,
+        297.39,
+        336.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0184",
+      "page": 14,
+      "type": "paragraph",
+      "order": 184,
+      "original_text": "This expression shows that the rt geometry produces a nonlinear, sub-exponential decrease in overlap area with longitudinal displacement, in contrast to the linear decrease expected for the rr geometry. To compare the model prediction with the measured rt sensor responses, we calculated the predicted capacitance from the overlap area model over the experimentally tested displacement range.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        292.68,
+        558.18,
+        370.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0185",
+      "page": 14,
+      "type": "paragraph",
+      "order": 185,
+      "original_text": "5.2 Evaluation",
+      "translation": "",
+      "bbox": [
+        53.61,
+        360.93,
+        137.59,
+        370.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0186",
+      "page": 14,
+      "type": "paragraph",
+      "order": 186,
+      "original_text": "To investigate our design and implementations, we conducted a set of evaluations of the sensor, looking at a broad range of factors. In this section, we first discuss the parameters that we are investigating. Then, we introduce our experimental apparatus and finally, we discuss the in vitro and in vivo experiments that we conducted.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        384.53,
+        297.42,
+        450.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0187",
+      "page": 14,
+      "type": "paragraph",
+      "order": 187,
+      "original_text": "5.2.1.3 Spacer Design. We investigated two different electrode designs. Design A uses a knit conductor (TechnikTex) and a double layer of structured mesh (PowerNet) as the insulator. Design B uses a thin woven conductor (Bremen) and a single thin polyamide sheet for insulation. To understand the effect of these material choices, we will compare the output curve of both designs.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        384.34,
+        558.19,
+        462.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0188",
+      "page": 14,
+      "type": "paragraph",
+      "order": 188,
+      "original_text": "5.2.1 Parameters of Interest",
+      "translation": "",
+      "bbox": [
+        53.61,
+        476.67,
+        184.23,
+        485.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0189",
+      "page": 14,
+      "type": "paragraph",
+      "order": 189,
+      "original_text": "5.2.1.4 Strap Material. We also look at two different strap designs. Design A uses the release behavior of a technical Eurojersey knit, while Design B relies on a Myuren elastic strap. We will observe the impact of this design choice through the cycle life measurements.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        476.0,
+        558.19,
+        530.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0190",
+      "page": 14,
+      "type": "paragraph",
+      "order": 190,
+      "original_text": "5.2.2 Evaluation Apparatus",
+      "translation": "",
+      "bbox": [
+        314.39,
+        556.75,
+        442.58,
+        565.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0191",
+      "page": 14,
+      "type": "paragraph",
+      "order": 191,
+      "original_text": "For all sensors, we measured four parameters: (1) Capacitive response to elongation, (2) Cycle life behavior, (3) Capacitance response together with sensor displacements for validation, and (4) Signal-to-noise ratio (SNR). We use this data to better understand several design considerations, including the effect of plate size and shape, as well as spacer design and the effect of strap material on the sensor performance.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        499.53,
+        297.39,
+        577.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0192",
+      "page": 14,
+      "type": "paragraph",
+      "order": 192,
+      "original_text": "5.2.1.1 Size of Sensor Plates. As shown in Equation 2, the size of the plates directly affects the overlapping area (𝐴) and, hence, the magnitude of the capacitance. The scale of the sensor also influences the material properties of the sensor, as outlined in our design rationale. To assess how these effects influence the signal output, we compare three sensor sizes: 1 × 3 cm, 3 × 3 cm, 5 × 3 cm.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        591.13,
+        297.41,
+        668.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0193",
+      "page": 14,
+      "type": "paragraph",
+      "order": 193,
+      "original_text": "5.2.1.2 Shape of Sensor Plates. When the two plates of the capacitive sensor move in the tangential (longitudinal) direction, 𝜀𝑟and 𝑑remain constant, while only the overlapping area varies. Assuming both parallel plates are rectangular, with dimensions 𝑊(width) and 𝐿(length), the overlapping area for the rr sensor",
+      "translation": "",
+      "bbox": [
+        53.61,
+        682.72,
+        297.4,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0194",
+      "page": 14,
+      "type": "paragraph",
+      "order": 194,
+      "original_text": "We used a custom measurement setup designed to provide a linear motion in the tangential direction (see Figure 2b). The major components of the setup include a NEMA23 stepper motor (103H7123-5040, SANYO DENKI Inc.), a ball screw nut (R16-05T3-FSIDIN, HIWIN Technologies Inc.), a rolled shaft (R16-05-3000-3000-0,052-FSI, HIWIN Technologies Inc.), two linear hollow shafts (HW-10, HIWIN Technologies Inc.), and two aluminum housings including linear ball bushings (SC-20-UU, HIWIN Technologies Inc.). The ball screw shaft was fixed on the setup using two deep groove ball bearings (6200-2RSL, SKF Inc.). The rolled shaft of the stepper motor was connected to the rolled shaft using a spider coupling. A curved block was designed and fabricated from ABS (Acrylonitrile Butadiene Styrene) using a 3D printer (UltiMaker S5, Ultimaker B.V.). The sensors were",
+      "translation": "",
+      "bbox": [
+        314.39,
+        579.61,
+        558.19,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0195",
+      "page": 14,
+      "type": "paragraph",
+      "order": 195,
+      "original_text": "14 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0196",
+      "page": 14,
+      "type": "paragraph",
+      "order": 196,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0197",
+      "page": 15,
+      "type": "paragraph",
+      "order": 197,
+      "original_text": "placed on the block and fixed to a stationary fixture from one side and to the ball screw from the other side using another fixture. The stepper motor was operated with 1/16 microstepping and controlled using a stepper motor driver (A4988, Allegro MicroSystems Inc.) and Teensy 3.6 development board.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.41,
+        95.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0198",
+      "page": 15,
+      "type": "paragraph",
+      "order": 198,
+      "original_text": "5.2.3 Procedure",
+      "translation": "",
+      "bbox": [
+        53.61,
+        121.99,
+        133.88,
+        130.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0199",
+      "page": 15,
+      "type": "paragraph",
+      "order": 199,
+      "original_text": "5.2.3.4 In Vitro Experiment 4: Validation Tests. We conducted a set of measurements to validate the capacitance responses and assess the accuracy of the sensors. In addition to recording capacitance measurements, multiple infrared reflective markers were attached to the sensor electrode, and its motion was captured using a high-resolution motion tracking system (Arqus A5, Qualisys Inc.) operating at a 100 Hz sampling frequency. The experimental procedure followed that of In Vitro 1, except that the sensors underwent 100 cycles of stretching and releasing. During the test, the motor’s linear velocity was set to 6 mm/s.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        41.01,
+        558.2,
+        153.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0200",
+      "page": 15,
+      "type": "paragraph",
+      "order": 200,
+      "original_text": "5.2.3.5 In Vivo Experiments. We performed a set of in vivo experiments to evaluate the functionality of our sensors when subject to a human body. We selected one rr-3 × 3-A sensor and performed three types of in vivo measurements. In total, seven participants took part in the study (4 male, 3 female). Participant demographics are given in Table S3. All participants underwent a training session and signed a consent form before the experiments.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        167.16,
+        558.2,
+        256.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0201",
+      "page": 15,
+      "type": "paragraph",
+      "order": 201,
+      "original_text": "5.2.3.1 In Vitro Experiment 1: Stretch Response. We performed In Vitro 1 to obtain a better understanding of the response of the sensors to the amount of stretch. In this experiment, we measured the differential capacitances between the two plates of the sensor for a defined amount of stretch. The sensors were placed on the block in a way that the plates of the sensors were parallel to each other. Then, they were fastened from two sides using the fixtures. The linear velocity of the motor was set at 3 mm/s, and the displacement between the plates of the sensor was limited to 15 mm. The experiment was performed for 20 cycles for every sensor.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        144.85,
+        297.39,
+        268.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0202",
+      "page": 15,
+      "type": "paragraph",
+      "order": 202,
+      "original_text": "The mean capacitance–displacement response of each sensor variant was analyzed separately for the stretch and release phases. For each phase, capacitance was fitted as a linear function of displacement using",
+      "translation": "",
+      "bbox": [
+        53.61,
+        282.33,
+        297.41,
+        325.67
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0203",
+      "page": 15,
+      "type": "paragraph",
+      "order": 203,
+      "original_text": "𝐶(𝑥) = 𝛽0 + 𝛽1𝑥,",
+      "translation": "",
+      "bbox": [
+        143.04,
+        341.75,
+        206.47,
+        352.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0204",
+      "page": 15,
+      "type": "paragraph",
+      "order": 204,
+      "original_text": "These in vivo evaluations were designed to investigate three aspects of wearable performance: (i) repeatability of the sensor response under controlled placement conditions, (ii) reproducibility across different participants and body locations, and (iii) operational stability during extended duration recordings. Such multi-participant wearable evaluations are important because wearable strain and respiration sensors are known to be affected by body morphology, posture, placement location, garment tension, and motion conditions [50, 51].",
+      "translation": "",
+      "bbox": [
+        314.39,
+        270.27,
+        558.19,
+        370.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0205",
+      "page": 15,
+      "type": "paragraph",
+      "order": 205,
+      "original_text": "where 𝐶is capacitance and 𝑥is displacement. Linearity was quantified using the coefficient of determination, 𝑅2.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        367.25,
+        297.37,
+        388.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0206",
+      "page": 15,
+      "type": "paragraph",
+      "order": 206,
+      "original_text": "For In Vivo 1, we selected one female participant (P1) and performed two measurements. First, we fixed the participant’s arm on the setup and kept the sensor on her arm. While the participant’s arm was stationary, we operated the setup with the procedure explained in Section 5.2.3 and measured the capacitance value. To compare the sensor recordings in vivo and in vitro, we also measured the sensor’s capacitance when placed on the ridge of the setup. Second, we considered two different strap sizes for the sensor. We placed the sensors on the participant’s lower thorax and asked her to breathe at 7 continuous 10-s intervals. The intervals were exhale hold, normal breath, inhale hold, deep breath, exhale hold, normal breath, and exhale hold.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        384.84,
+        558.19,
+        531.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0207",
+      "page": 15,
+      "type": "paragraph",
+      "order": 207,
+      "original_text": "5.2.3.2 In Vitro Experiment 2: Signal to Noise Ratio. To understand the level of the capacitance output of the sensors relative to the level of the background noise, we performed In Vitro 2. In this experiment, we measure the efficacy of sensors by assessing the ratio of their signal power to the noise caused by both the measurement setup and the surrounding environment. In Vitro 2 was performed after In Vitro 1 without unmounting the sensors from the setup. We selected the discrete SNR measurement procedure with 30 discrete stretch points (15 for stretch and 15 for release). The displacement was set to 1 mm in every step and the capacitance values were acquired 20 times per step. Then, the SNR was calculated as:",
+      "translation": "",
+      "bbox": [
+        53.61,
+        402.33,
+        297.41,
+        537.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0208",
+      "page": 15,
+      "type": "paragraph",
+      "order": 208,
+      "original_text": "𝑆𝑁𝑅= 20 log10(𝑀𝑠𝑖𝑔𝑛𝑎𝑙∕𝑆𝐷𝑠𝑖𝑔𝑛𝑎𝑙) (6)",
+      "translation": "",
+      "bbox": [
+        114.76,
+        553.41,
+        297.39,
+        564.81
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0209",
+      "page": 15,
+      "type": "paragraph",
+      "order": 209,
+      "original_text": "where, 𝑀and 𝑆𝐷represent the mean and standard deviation of the signal, respectively.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        578.9,
+        297.4,
+        599.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0210",
+      "page": 15,
+      "type": "paragraph",
+      "order": 210,
+      "original_text": "In this experiment, the velocity of the stepper motor was set to 5 mm/s and the experiments were performed in one cycle for every sensor.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        613.72,
+        297.38,
+        645.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0211",
+      "page": 15,
+      "type": "paragraph",
+      "order": 211,
+      "original_text": "For In Vivo 2, we selected five participants (P2-P6) and performed five types of measurements. First, the sensor was positioned on the participants’ lower thorax to measure capacitance changes over three minutes during office work and lying rest (see Figure S17). Second, the sensor was secured to the participants’ elbow using an arm sleeve. They performed three sets of 10 standard exercises, with short rest intervals between sets (see Figure S18). Third, the sensor was fixed to the participants’ knees with a knee sleeve (see Figure S19) to monitor motion during walking and jogging for three minutes in a circular track.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        545.24,
+        558.2,
+        657.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0212",
+      "page": 15,
+      "type": "paragraph",
+      "order": 212,
+      "original_text": "5.2.3.3 In Vitro Experiment 3: Cycle Life. In Vitro 3 was performed to provide an understanding of the performance of the fabricated sensors over a long period of time. The experiment was performed with all the sensors of Design A and Design B. The experiment followed a similar protocol to In Vitro 1, albeit with the sensors subjected to 1000 cycles of stretch and release. In this experiment, the motor’s linear velocity was set to 6 mm/s.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        659.81,
+        297.4,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0213",
+      "page": 15,
+      "type": "paragraph",
+      "order": 213,
+      "original_text": "For In Vivo 3, one participant (P7) was selected to perform extended recordings of the measurements in In Vivo 2. Each activity of office work, lying rest, and walking was conducted continuously for 10 min, and the jogging activity was performed for five minutes. The walking and jogging recordings were performed on a treadmill. The purpose of this experiment was to",
+      "translation": "",
+      "bbox": [
+        314.39,
+        671.27,
+        558.19,
+        737.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0214",
+      "page": 15,
+      "type": "paragraph",
+      "order": 214,
+      "original_text": "Advanced Functional Materials, 2026 15 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0215",
+      "page": 15,
+      "type": "paragraph",
+      "order": 215,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0216",
+      "page": 16,
+      "type": "paragraph",
+      "order": 216,
+      "original_text": "evaluate the in vivo long-term operational stability and sustained performance of the sensor over an extended duration.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        40.98,
+        297.37,
+        61.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0217",
+      "page": 16,
+      "type": "paragraph",
+      "order": 217,
+      "original_text": "12. Y. Tian, R. Ding, S. S. Yoon, S. Zhang, J. Yu, and B. Ding, “Recent Advances in Next-Generation Textiles,” Advanced Materials 37, no. 8 (2025): 2417022.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        41.01,
+        558.2,
+        68.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0218",
+      "page": 16,
+      "type": "heading",
+      "order": 218,
+      "original_text": "Acknowledgments",
+      "translation": "",
+      "bbox": [
+        53.61,
+        105.61,
+        123.59,
+        113.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0219",
+      "page": 16,
+      "type": "paragraph",
+      "order": 219,
+      "original_text": "13. P. Strohmeier, L. Turmo Vidal, G. Vega, et al., “Sensorimotor Devices: Coupling Sensing and Actuation to Augment Bodily Experience,” in Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems, ser. CHI EA’25 (Association for Computing Machinery, 2025), 1–7.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        74.88,
+        558.18,
+        122.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0220",
+      "page": 16,
+      "type": "paragraph",
+      "order": 220,
+      "original_text": "14. Y. Fang, Y. Zou, J. Xu, et al., “Ambulatory Cardiovascular Monitoring via a Machine-Learning-Assisted Textile Triboelectric Sensor,” Advanced Materials 33, no. 41 (2021): 2104178.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        128.68,
+        558.17,
+        156.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0221",
+      "page": 16,
+      "type": "paragraph",
+      "order": 221,
+      "original_text": "The work was funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them. This work is supported by ERC grant Kinesthetic Displays, Grant agreement ID: 101165100.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        119.02,
+        297.42,
+        176.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0222",
+      "page": 16,
+      "type": "paragraph",
+      "order": 222,
+      "original_text": "15. X. Guan, T. Lan, D. Zhao, et al., “Robust Textile-Based Electromagnetic Audio Interfaces,” Advanced Materials 38 (2025): e08022.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        162.55,
+        558.18,
+        180.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0223",
+      "page": 16,
+      "type": "paragraph",
+      "order": 223,
+      "original_text": "Open access funding enabled and organized by Projekt DEAL.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        182.28,
+        262.38,
+        190.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0224",
+      "page": 16,
+      "type": "paragraph",
+      "order": 224,
+      "original_text": "16. L. Fang, Y. Zhou, and Q. Huang, “Ionic Conductive Textiles for Wearable Technology,” Advanced Materials 37 (2025): 2502140.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        186.46,
+        558.14,
+        204.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0225",
+      "page": 16,
+      "type": "paragraph",
+      "order": 225,
+      "original_text": "Conflicts of Interest",
+      "translation": "",
+      "bbox": [
+        53.61,
+        208.09,
+        127.84,
+        216.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0226",
+      "page": 16,
+      "type": "paragraph",
+      "order": 226,
+      "original_text": "The authors declare no conflicts of interest.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        221.49,
+        198.94,
+        229.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0227",
+      "page": 16,
+      "type": "paragraph",
+      "order": 227,
+      "original_text": "17. H. Jin, N. Matsuhisa, S. Lee, M. Abbas, T. Yokota, and T. Someya, “Enhancing the Performance of Stretchable Conductors for E-Textiles by Controlled Ink Permeation,” Advanced Materials 29, no. 21 (2017): 1605848.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        210.38,
+        558.18,
+        248.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0228",
+      "page": 16,
+      "type": "paragraph",
+      "order": 228,
+      "original_text": "Data Availability Statement",
+      "translation": "",
+      "bbox": [
+        53.61,
+        247.3,
+        156.35,
+        255.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0229",
+      "page": 16,
+      "type": "paragraph",
+      "order": 229,
+      "original_text": "The data that support the findings of this study are available from the corresponding author upon reasonable request.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        260.7,
+        297.39,
+        278.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0230",
+      "page": 16,
+      "type": "paragraph",
+      "order": 230,
+      "original_text": "18. Y. Wang, X. Zhang, J. Cao, X. Huang, and X. Zhang, “Multifunctional E-Textiles Based on Biological Phytic Acid-Doped Polyaniline/Protein Fabric Nanocomposites,” Advanced Materials Technologies 6, no. 6 (2021): 2100003.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        254.22,
+        558.19,
+        292.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0231",
+      "page": 16,
+      "type": "heading",
+      "order": 231,
+      "original_text": "References",
+      "translation": "",
+      "bbox": [
+        53.61,
+        295.97,
+        94.71,
+        303.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0232",
+      "page": 16,
+      "type": "paragraph",
+      "order": 232,
+      "original_text": "19. S. Zhu, F. Xiong, Y. Gu, et al., “A Stretchable, Sweat-Resistant Electrophoretic Display Device Driven by Human-Safe Voltage for Smart E-Textile Application,” Advanced Materials Technologies 9, no. 17 (2024): 2400111.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        298.05,
+        558.19,
+        335.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0233",
+      "page": 16,
+      "type": "paragraph",
+      "order": 233,
+      "original_text": "1. S.-S. Lee, K.-H. Choi, S.-H. Kim, and S.-Y. Lee, “Wearable Superacpacitors Printed on Garments,” Advanced Functional Materials 28, no. 11 (2018): 1705571.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        310.87,
+        297.4,
+        338.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0234",
+      "page": 16,
+      "type": "paragraph",
+      "order": 234,
+      "original_text": "20. S. P. Beeby, R. N. Torah, M. Wagih, et al., “Heterogeneous E-Textiles: Materials, Manufacturing and Sustainability,” Advanced Materials Technologies 10, no. 3 (2025): 2400844.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        341.88,
+        558.19,
+        369.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0235",
+      "page": 16,
+      "type": "paragraph",
+      "order": 235,
+      "original_text": "2. V. Sanchez, C. J. Walsh, and R. J. Wood, “Textile Technology for Soft Robotic and Autonomous Garments,” Advanced Functional Materials 31, no. 6 (2021): 2008278.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        344.74,
+        297.39,
+        372.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0236",
+      "page": 16,
+      "type": "paragraph",
+      "order": 236,
+      "original_text": "3. X. Wu, Q. Liu, L. Zheng, et al., “Innervate Commercial Fabrics with Spirally-Layered Iontronic Fibrous Sensors Toward Dual-Functional Smart Garments,” Advanced Science 11, no. 33 (2024): 2402767.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        378.61,
+        297.4,
+        406.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0237",
+      "page": 16,
+      "type": "paragraph",
+      "order": 237,
+      "original_text": "21. S. Seyedin, J. M. Razal, P. C. Innis, A. Jeiranikhameneh, S. Beirne, and G. G. Wallace, “Knitted Strain Sensor Textiles of Highly Conductive AllPolymeric Fibers,” ACS Applied Materials and Interfaces 7, no. 38 (2015): 21150–21158.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        375.75,
+        558.19,
+        413.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0238",
+      "page": 16,
+      "type": "paragraph",
+      "order": 238,
+      "original_text": "4. A. A. Simegnaw, B. Malengier, G. Rotich, M. G. Tadesse, and L. Van Langenhove, “Review on the Integration of Microelectronics for E-Textile,” Materials 14, no. 17 (2021): 5113.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        412.49,
+        297.4,
+        440.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0239",
+      "page": 16,
+      "type": "paragraph",
+      "order": 239,
+      "original_text": "22. C. Honnet, H. Perner-Wilson, M. Teyssier, et al., “PolySense: Augmenting Textiles with Electrical Functionality Using In-Situ Polymerization,” in Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems, ser. CHI ’20 New York, NY, USA: (Association for Computing Machinery, 2020), 1–13.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        419.59,
+        558.18,
+        467.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0240",
+      "page": 16,
+      "type": "paragraph",
+      "order": 240,
+      "original_text": "5. G. Jonas, “Aglow (An Interview with Diana Dew),” The New Yorker, January 28, 1967, accessed: 2025-07-11, https://www.newyorker.com/ magazine/1967/01/28/aglow-2.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        446.27,
+        297.41,
+        474.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0241",
+      "page": 16,
+      "type": "paragraph",
+      "order": 241,
+      "original_text": "23. A. Liang, R. Stewart, and N. Bryan-Kinns, “Analysis of Sensitivity, Linearity, Hysteresis, Responsiveness, and Fatigue of Textile Knit Stretch Sensors,” Sensors 19, no. 16 (2019): 3618.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        473.39,
+        558.21,
+        501.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0242",
+      "page": 16,
+      "type": "paragraph",
+      "order": 242,
+      "original_text": "6. M. Orth, R. Post, and E. Cooper, “Fabric Computing Interfaces,” in CHI 98 Conference Summary on Human Factors in Computing Systems, ser. CHI ’98 New York, NY, USA: (Association for Computing Machinery, 1998), 331–332.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        480.23,
+        297.4,
+        518.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0243",
+      "page": 16,
+      "type": "paragraph",
+      "order": 243,
+      "original_text": "24. S. Seyedin, P. Zhang, M. Naebe, et al., “Textile Strain Sensors: A Review of the Fabrication Technologies, Performance Evaluation and Applications,” Materials Horizons 6, no. 2 (2019): 219–249.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        507.26,
+        558.18,
+        535.15
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0244",
+      "page": 16,
+      "type": "paragraph",
+      "order": 244,
+      "original_text": "7. J. Nishida and K. Suzuki, “BioSync: A Paired Wearable Device for Blending Kinesthetic Experience,” in Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, ser. CHI ’17 New York, NY, USA: (Association for Computing Machinery, 2017), 3316–3327.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        524.07,
+        297.39,
+        561.93
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0245",
+      "page": 16,
+      "type": "paragraph",
+      "order": 245,
+      "original_text": "25. D. Geißler, B. Zhou, H. Bello, et al., “Embedding Textile Capacitive Sensing into Smart Wearables as a Versatile Solution for Human Motion Capturing,” Scientific Reports 14, no. 1 (2024): 15797.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        541.14,
+        558.17,
+        569.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0246",
+      "page": 16,
+      "type": "paragraph",
+      "order": 246,
+      "original_text": "8. B. Wang and A. Facchetti, “Mechanically Flexible Conductors for Stretchable and Wearable E-Skin and E-Textile Devices,” Advanced Materials 31, no. 28 (2019): 1901408.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        567.9,
+        297.39,
+        595.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0247",
+      "page": 16,
+      "type": "paragraph",
+      "order": 247,
+      "original_text": "26. A. Atalay, V. Sanchez, O. Atalay, et al., “Batch Fabrication of Customizable Silicone-Textile Composite Capacitive Strain Sensors for Human Motion Tracking,” Advanced Materials Technologies 2, no. 9 (2017): 1700136.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        575.01,
+        558.19,
+        612.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0248",
+      "page": 16,
+      "type": "paragraph",
+      "order": 248,
+      "original_text": "9. C. N. Reed, S. Skach, P. Strohmeier, and A. P. McPherson, “Singing Knit: Soft Knit Biosensing for Augmenting Vocal Performances,” in Proceedings of the Augmented Humans International Conference 2022, ser. AHs ’22 New York, NY, USA: (Association for Computing Machinery, 2022), 170–183.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        601.78,
+        297.41,
+        649.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0249",
+      "page": 16,
+      "type": "paragraph",
+      "order": 249,
+      "original_text": "27. O. Atalay, A. Atalay, J. Gafford, and C. Walsh, “A Highly Sensitive Capacitive-Based Soft Pressure Sensor Based on a Conductive Fabric and a Microporous Dielectric Layer,” Advanced Materials Technologies 3, no. 1 (2018): 1700237.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        618.84,
+        558.18,
+        656.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0250",
+      "page": 16,
+      "type": "paragraph",
+      "order": 250,
+      "original_text": "28. Q. Meng, W. Tian, W. Yin, et al., “Polyurea–Kevlar-Protected Capacitive Pressure Sensor with a Porous Dielectric Layer for Pressure Monitoring in Extreme Environments,” ACS Applied Polymer Materials 7, no. 20 (2025): 13673–13684.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        662.68,
+        558.2,
+        700.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0251",
+      "page": 16,
+      "type": "paragraph",
+      "order": 251,
+      "original_text": "10. O. Kilic Afsar, Y. Luft, and K. Cotton, “Corsetto: A Kinesthetic Garment for Designing, Composing for, and Experiencing an Intersubjective Haptic Voice,” in Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, ser. CHI ’23 New York, NY, USA: (Association for Computing Machinery, 2023), 1–23.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        655.58,
+        297.4,
+        703.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0252",
+      "page": 16,
+      "type": "paragraph",
+      "order": 252,
+      "original_text": "29. Q. Meng, T. Chi, S. Guo, et al., “Highly Sensitive Strain Sensors with Ultra-Low Detection Limit Based on Pre-Defined Serpentine Cracks,” Materials Horizons 12, no. 1 (2025): 178–189.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        706.51,
+        558.18,
+        734.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0253",
+      "page": 16,
+      "type": "paragraph",
+      "order": 253,
+      "original_text": "11. J. Dong, Y. Peng, J. Long, et al., “An All-Stretchable, Ultraviolet Protective, and Electromagnetic-Interference-Free E-Textile,” Advanced Functional Materials 33, no. 45 (2023): 2308426.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        709.37,
+        297.42,
+        737.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0254",
+      "page": 16,
+      "type": "paragraph",
+      "order": 254,
+      "original_text": "16 of 17 Advanced Functional Materials, 2026",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0255",
+      "page": 16,
+      "type": "paragraph",
+      "order": 255,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0256",
+      "page": 17,
+      "type": "paragraph",
+      "order": 256,
+      "original_text": "48. B. A. Inc., “Flexible Adhesives,” https://www.bemisworldwide.com/ products/flexible-adhesives/, 2024, accessed: 2024.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        41.01,
+        558.19,
+        58.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0257",
+      "page": 17,
+      "type": "paragraph",
+      "order": 257,
+      "original_text": "30. A. Vogl, P. Parzer, T. Babic, J. Leong, A. Olwal, and M. Haller, “StretcheBand: Enabling Fabric-Based Interactions Through Rapid Fabrication of Textile Stretch Sensors,” in Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, ser. CHI ’17 New York, NY, USA: (Association for Computing Machinery, 2017), 2617–2627.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        41.01,
+        297.41,
+        88.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0258",
+      "page": 17,
+      "type": "paragraph",
+      "order": 258,
+      "original_text": "31. K. M. Jansen, “Performance Evaluation of Knitted and Stitched Textile Strain Sensors,” Sensors 20, no. 24 (2020): 7236.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        94.81,
+        297.39,
+        112.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0259",
+      "page": 17,
+      "type": "paragraph",
+      "order": 259,
+      "original_text": "49. A. Liang, R. Stewart, R. Freire, and N. Bryan-Kinns, “Effect of Bonding and Washing on Electronic Textile Stretch Sensor Properties,” in Adjunct Proceedings of the 2019 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2019 ACM International Symposium on Wearable Computers, ser. UbiComp/ISWC ’19 Adjunct New York, NY, USA: (Association for Computing Machinery, 2019), 121–124.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        64.92,
+        558.19,
+        132.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0260",
+      "page": 17,
+      "type": "paragraph",
+      "order": 260,
+      "original_text": "32. B. Davison, “Techniques for Robust Touch Sensing Design,” AN1334 Microchip Technology Inc 53 (2010): 592–603.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        118.63,
+        297.39,
+        136.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0261",
+      "page": 17,
+      "type": "paragraph",
+      "order": 261,
+      "original_text": "33. S. Ko, H. Shin, J. Lee, et al., “Low Noise Capacitive Sensor for MultiTouch Mobile Handset Applications,” in 2010 IEEE Asian Solid-State Circuits Conference (IEEE, 2010): 1–4.",
+      "translation": "",
+      "bbox": [
+        53.21,
+        142.63,
+        297.4,
+        170.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0262",
+      "page": 17,
+      "type": "paragraph",
+      "order": 262,
+      "original_text": "50. S. Han, P. Wang, Y. Zhou, Q. Meng, M. Aakyiir, and J. Ma, “Flexible, Mechanically Robust, Multifunctional and Sustainable Cellulose/Graphene Nanocomposite Films for Wearable Human-Motion Monitoring,” Composites Science and Technology 230 (2022): 109451.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        138.65,
+        558.18,
+        176.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0263",
+      "page": 17,
+      "type": "paragraph",
+      "order": 263,
+      "original_text": "51. Q. Meng, J. Zhao, Z. Zhou, et al., “Damage Monitoring of Aircraft Structural Components Based on Large-Area Flexible Graphene Strain Sensors,” Sensors and Actuators A: Physical 369 (2024): 115092.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        182.48,
+        558.19,
+        210.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0264",
+      "page": 17,
+      "type": "paragraph",
+      "order": 264,
+      "original_text": "34. A. A. Khan, S. Ban, W.-H. Yeo, and J.-H. Kim, “A Comparative Study of Flexible Electrode Design on the Performance of Flexible Wearable Electronics,” Frontiers in Nanotechnology 7 (2025): 1632279, https://www.frontiersin.org/journals/nanotechnology/articles/ 10.3389/fnano.2025.1632279.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        176.5,
+        297.43,
+        224.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0265",
+      "page": 17,
+      "type": "paragraph",
+      "order": 265,
+      "original_text": "Supporting Information",
+      "translation": "",
+      "bbox": [
+        314.39,
+        233.83,
+        404.0,
+        241.81
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0266",
+      "page": 17,
+      "type": "paragraph",
+      "order": 266,
+      "original_text": "35. Y. Wu, S. S. Mechael, Y. Chen, and T. B. Carmichael, “Velour Fabric as an Island-Bridge Architectural Design for Stretchable Textile-Based Lithium-Ion Battery Electrodes,” ACS Applied Materials and Interfaces 12, no. 46 (2020): 51679–51687.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        230.3,
+        297.4,
+        268.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0267",
+      "page": 17,
+      "type": "paragraph",
+      "order": 267,
+      "original_text": "Additional supporting information can be found online in the Supporting Information section. SupportingFile 1: adfm76802-sup-0001-SuppMat.pdf. SupportingFile 2: adfm76802-sup-0002-MovieS1.mp4.",
+      "translation": "",
+      "bbox": [
+        314.39,
+        247.24,
+        558.18,
+        288.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0268",
+      "page": 17,
+      "type": "paragraph",
+      "order": 268,
+      "original_text": "36. P. Strohmeier, J. Knibbe, S. Boring, and K. Hornbæk, “ZPatch: Hybrid Resistive/Capacitive E-Textile Input,” in Proceedings of the Twelfth International Conference on Tangible, Embedded, and Embodied Interaction, ser. TEI ’18 New York, NY, USA: (Association for Computing Machinery, 2018), 188–198.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        274.13,
+        297.4,
+        321.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0269",
+      "page": 17,
+      "type": "paragraph",
+      "order": 269,
+      "original_text": "37. N. Jonassen, “Human Body Capacitance: Static or Dynamic Concept? [ESD],” in Electrical Overstress/Electrostatic Discharge Symposium Proceedings. 1998 (Cat. No.98TH8347) (1998): 111–117.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        327.93,
+        297.39,
+        355.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0270",
+      "page": 17,
+      "type": "paragraph",
+      "order": 270,
+      "original_text": "38. Texas Instruments, FDC1004: 4-Channel Capacitance-to-Digital Converter for Capacitive Sensing Applications, Texas Instruments, 2018, rev. C, https://www.ti.com/lit/ds/symlink/fdc1004.pdf.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        361.72,
+        297.39,
+        389.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0271",
+      "page": 17,
+      "type": "paragraph",
+      "order": 271,
+      "original_text": "39. R. Freire, V. Martinez-Missir, C. N. Reed, and P. Strohmeier, “RaveNet: Connecting People and Exploring Liminal Space Through Wearable Networks in Music Performance,” in Proceedings of the Eighteenth International Conference on Tangible, Embedded, and Embodied Interaction, ser. TEI ’24 New York, NY, USA: (Association for Computing Machinery, 2024), 1–8.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        395.68,
+        297.4,
+        453.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0272",
+      "page": 17,
+      "type": "paragraph",
+      "order": 272,
+      "original_text": "40. T.-W. Shyr, J.-W. Shie, C.-H. Jiang, and J.-J. Li, “A Textile-Based Wearable Sensing Device Designed for Monitoring the Flexion Angle of Elbow and Knee Movements,” Sensors 14, no. 3 (2014): 4050–4059.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        459.44,
+        297.39,
+        487.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0273",
+      "page": 17,
+      "type": "paragraph",
+      "order": 273,
+      "original_text": "41. M. Chu, T. Nguyen, V. Pandey, et al., “Respiration Rate and Volume Measurements Using Wearable Strain Sensors,” NPJ Digital Medicine 2, no. 1 (2019): 8.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        493.32,
+        297.4,
+        521.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0274",
+      "page": 17,
+      "type": "paragraph",
+      "order": 274,
+      "original_text": "42. J. Knibbe, R. Freire, M. Koelle, and P. Strohmeier, “Skill-Sleeves: Designing Electrode Garments for Wearability,” in Proceedings of the Fifteenth International Conference on Tangible, Embedded, and Embodied Interaction, ser. TEI ’21 New York, NY, USA: (Association for Computing Machinery, 2021), 1–16.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        527.19,
+        297.4,
+        575.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0275",
+      "page": 17,
+      "type": "paragraph",
+      "order": 275,
+      "original_text": "43. E. AliAbbasi, Ø. G. Martinsen, F.-J. Pettersen, J. E. Colgate, and C. Basdogan, “Experimental Estimation of Gap Thickness and Electrostatic Forces Between Contacting Surfaces Under Electroadhesion,” Advanced Intelligent Systems 6, no. 4 (2024): 2300618.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        580.99,
+        297.4,
+        618.85
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0276",
+      "page": 17,
+      "type": "paragraph",
+      "order": 276,
+      "original_text": "44. PolyPLASTY s.r.o. (2026) Polyamide Finished Products. Accessed: 2026-05-18, https://www.polyplasty.cz/material-polyamid.html?lang=2.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        624.82,
+        297.38,
+        642.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0277",
+      "page": 17,
+      "type": "paragraph",
+      "order": 277,
+      "original_text": "45. ASTM International, ASTM D150-18: Standard Test Methods for AC Loss Characteristics and Permittivity (DielectricConstant) of Solid Electrical Insulation, ASTM International Std., 2018, accessed: 2026-05-18, https:// store.astm.org/standards/d150.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        648.64,
+        297.4,
+        686.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0278",
+      "page": 17,
+      "type": "paragraph",
+      "order": 278,
+      "original_text": "46. E. S. fabrics, “Sensitive Plus,” datasheet, 2024, patent EUROJERSEY IT n. 1.239.906 EU n. 452.607, https://cards.eurojersey.it/sheet.html?.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        692.57,
+        297.39,
+        710.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0279",
+      "page": 17,
+      "type": "paragraph",
+      "order": 279,
+      "original_text": "47. Shieldex, “Techniktex P130B,” 2024, accessed: 2025-07-11, https:// www.shieldex.de/en/products_categories/fabrics/.",
+      "translation": "",
+      "bbox": [
+        53.61,
+        716.47,
+        297.4,
+        734.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0280",
+      "page": 17,
+      "type": "paragraph",
+      "order": 280,
+      "original_text": "Advanced Functional Materials, 2026 17 of 17",
+      "translation": "",
+      "bbox": [
+        53.61,
+        754.07,
+        558.18,
+        763.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0281",
+      "page": 17,
+      "type": "paragraph",
+      "order": 281,
+      "original_text": "16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76802 by MPI Computer Science 341, Wiley Online Library on [27/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "translation": "",
+      "bbox": [
+        595.67,
+        15.99,
+        602.56,
+        783.65
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011",
+        "S0012",
+        "S0013",
+        "S0014",
+        "S0015",
+        "S0016",
+        "S0017",
+        "S0018"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0019",
+        "S0020",
+        "S0021",
+        "S0022",
+        "S0023",
+        "S0024",
+        "S0025",
+        "S0026",
+        "S0027",
+        "S0028",
+        "S0029",
+        "S0030"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0031",
+        "S0032",
+        "S0033"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0034",
+        "S0035",
+        "S0036",
+        "S0037",
+        "S0038",
+        "S0039"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0040",
+        "S0041",
+        "S0042",
+        "S0043",
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047",
+        "S0048",
+        "S0049",
+        "S0050",
+        "S0051",
+        "S0052",
+        "S0053",
+        "S0054"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0055",
+        "S0056",
+        "S0057"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0058",
+        "S0059",
+        "S0060",
+        "S0061",
+        "S0062",
+        "S0063",
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069",
+        "S0070",
+        "S0071",
+        "S0072",
+        "S0073",
+        "S0074",
+        "S0075",
+        "S0076"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0077",
+        "S0078",
+        "S0079"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0080",
+        "S0081",
+        "S0082",
+        "S0083",
+        "S0084",
+        "S0085",
+        "S0086",
+        "S0087",
+        "S0088",
+        "S0089",
+        "S0090",
+        "S0091",
+        "S0092",
+        "S0093",
+        "S0094",
+        "S0095",
+        "S0096",
+        "S0097",
+        "S0098"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S0099",
+        "S0100",
+        "S0101",
+        "S0102",
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106",
+        "S0107",
+        "S0108",
+        "S0109",
+        "S0110",
+        "S0111",
+        "S0112",
+        "S0113",
+        "S0114",
+        "S0115",
+        "S0116"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S0117",
+        "S0118",
+        "S0119",
+        "S0120",
+        "S0121",
+        "S0122",
+        "S0123",
+        "S0124",
+        "S0125",
+        "S0126",
+        "S0127",
+        "S0128",
+        "S0129",
+        "S0130",
+        "S0131"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S0132",
+        "S0133",
+        "S0134",
+        "S0135",
+        "S0136",
+        "S0137",
+        "S0138",
+        "S0139",
+        "S0140",
+        "S0141",
+        "S0142",
+        "S0143",
+        "S0144",
+        "S0145",
+        "S0146",
+        "S0147",
+        "S0148",
+        "S0149",
+        "S0150",
+        "S0151",
+        "S0152",
+        "S0153",
+        "S0154"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S0155",
+        "S0156",
+        "S0157",
+        "S0158",
+        "S0159",
+        "S0160",
+        "S0161",
+        "S0162",
+        "S0163",
+        "S0164",
+        "S0165",
+        "S0166",
+        "S0167",
+        "S0168",
+        "S0169",
+        "S0170",
+        "S0171"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S0172",
+        "S0173",
+        "S0174",
+        "S0175",
+        "S0176",
+        "S0177",
+        "S0178",
+        "S0179",
+        "S0180",
+        "S0181",
+        "S0182",
+        "S0183",
+        "S0184",
+        "S0185",
+        "S0186",
+        "S0187",
+        "S0188",
+        "S0189",
+        "S0190",
+        "S0191",
+        "S0192",
+        "S0193",
+        "S0194",
+        "S0195",
+        "S0196"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S0197",
+        "S0198",
+        "S0199",
+        "S0200",
+        "S0201",
+        "S0202",
+        "S0203",
+        "S0204",
+        "S0205",
+        "S0206",
+        "S0207",
+        "S0208",
+        "S0209",
+        "S0210",
+        "S0211",
+        "S0212",
+        "S0213",
+        "S0214",
+        "S0215"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S0216",
+        "S0217",
+        "S0218",
+        "S0219",
+        "S0220",
+        "S0221",
+        "S0222",
+        "S0223",
+        "S0224",
+        "S0225",
+        "S0226",
+        "S0227",
+        "S0228",
+        "S0229",
+        "S0230",
+        "S0231",
+        "S0232",
+        "S0233",
+        "S0234",
+        "S0235",
+        "S0236",
+        "S0237",
+        "S0238",
+        "S0239",
+        "S0240",
+        "S0241",
+        "S0242",
+        "S0243",
+        "S0244",
+        "S0245",
+        "S0246",
+        "S0247",
+        "S0248",
+        "S0249",
+        "S0250",
+        "S0251",
+        "S0252",
+        "S0253",
+        "S0254",
+        "S0255"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S0256",
+        "S0257",
+        "S0258",
+        "S0259",
+        "S0260",
+        "S0261",
+        "S0262",
+        "S0263",
+        "S0264",
+        "S0265",
+        "S0266",
+        "S0267",
+        "S0268",
+        "S0269",
+        "S0270",
+        "S0271",
+        "S0272",
+        "S0273",
+        "S0274",
+        "S0275",
+        "S0276",
+        "S0277",
+        "S0278",
+        "S0279",
+        "S0280",
+        "S0281"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 3,
+      "caption_original": "FIGURE 1 (a) Our e-Textile sensors can be used to measure breath and various body movements precisely. (b) Cross-section of the sensor at resting position with aligned electrodes (i) and cross-section of expanded textile construction layers and substrates (ii). The capacitance is high when the sensor is at rest since the overlapping area between the two electrodes is maximum. The capacitance drops as the sensor gets stretched due to the decrease in the overlapping area between the electrodes. The data was recorded using an FDC connected to a Teensy 3.6 MCU. (c) Two sets of Design A sensors with rectangular and triangular electrodes, annotated on the left side of the strap. Sizes (W × L) are 1 × 3 cm, 3 × 3 cm, and 5 × 3 cm for top, middle, and bottom, respectively. (d) Sensors deployed in a corset to measure breath at the abdomen and mid-back. The hybrid “anti-corset” is designed to stretch where a corset would typically restrict movement (i). The prototype uses the sensor construction as in Design A (ii). Finished corset, as worn by a participant.",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Our e-Textile sensors can be used to measure breath and various body movements precisely",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Cross-section of the sensor at resting position with aligned electrodes",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "and cross-section of expanded textile construction layers and substrates (ii). The capacitance is high when the sensor is at rest since the overlapping area between the two electrodes is maximum. The capacitance drops as the sensor gets stretched due to the decrease in the overlapping area between the electrodes. The data was recorded using an FDC connected to a Teensy 3.6 MCU",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Two sets of Design A sensors with rectangular and triangular electrodes, annotated on the left side of the strap. Sizes (W × L) are 1 × 3 cm, 3 × 3 cm, and 5 × 3 cm for top, middle, and bottom, respectively",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Sensors deployed in a corset to measure breath at the abdomen and mid-back. The hybrid “anti-corset” is designed to stretch where a corset would typically restrict movement (i). The prototype uses the sensor construction as in Design A (ii). Finished corset, as worn by a participant",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 981,
+      "image_height": 1221,
+      "crop_confidence": "high",
+      "bbox": [
+        60.89,
+        36.25,
+        550.7,
+        646.29
+      ],
+      "image_path": "papers/paper-b26f0993d50f6502/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 2",
+      "page": 4,
+      "caption_original": "FIGURE 2 (a) Sensor construction overview: Applying a seam of adhesive film to stabilize the stretch textile for stitching (i). Stitching the stretch and non-stretch sections of the strap with a zigzag stitch to increase stability (ii). Feeding the looped e-Textile connectors through the straps to connect the sensors (iii). Applying the spacer to the electrode, a layered material made from Powernet and Sewfree adhesive film (iv). Using a pin to test the electrical connection through the spacer insulation layer (v). (b) Evaluation Apparatus with the stepper motor rig and a sensor placed on a 3D printed block to represent body curvature. The inline figure shows the sensor electrodes centrally aligned with a 10% base tension. (c) Average values of the measured capacitances as a function of displacement for Design A (left) and Design B (right). (d) The individual results of the stretch response experiment for Design A (i–iii and v–vii) and Design B (iv and viii). The top and bottom rows show the measured capacitances as a function of displacement for the rr and rt sensors, respectively. The first, second, third, and fourth columns present the data for the sensors with plate geometries of 1 × 3 cm, 3 × 3 cm, 5 × 3 cm, and 3 × 3 cm, respectively.",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Sensor construction overview: Applying a seam of adhesive film to stabilize the stretch textile for stitching (i). Stitching the stretch and non-stretch sections of the strap with a zigzag stitch to increase stability (ii). Feeding the looped e-Textile connectors through the straps to connect the sensors (iii). Applying the spacer to the electrode, a layered material made from Powernet and Sewfree adhesive film (iv). Using a pin to test the electrical connection through the spacer insulation layer (v)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Evaluation Apparatus with the stepper motor rig and a sensor placed on a 3D printed block to represent body curvature. The inline figure shows the sensor electrodes centrally aligned with a 10% base tension",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Average values of the measured capacitances as a function of displacement for Design A (left) and Design B (right)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "The individual results of the stretch response experiment for Design A (i–iii and v–vii) and Design B (iv and viii). The top and bottom rows show the measured capacitances as a function of displacement for the rr and rt sensors, respectively. The first, second, third, and fourth columns present the data for the sensors with plate geometries of 1 × 3 cm, 3 × 3 cm, 5 × 3 cm, and 3 × 3 cm, respectively",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 947,
+      "image_height": 460,
+      "crop_confidence": "high",
+      "bbox": [
+        68.12,
+        42.91,
+        541.27,
+        272.19
+      ],
+      "image_path": "papers/paper-b26f0993d50f6502/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 2C",
+      "page": 5,
+      "caption_original": "Figure 2c displays the average values of the measured capacitances of the sensors as a function of displacement. The average results for the sensors of Design A are shown on the left-hand side, where green, black, and magenta colors indicate rr-1 × 3-A, rr-3 × 3-A, and rr-5 × 3-A sensors, respectively, and red, purple, and cyan colors indicate rt-1 × 3-A, rt-3 × 3-A, and rt-5 × 3-A sensors, respectively. The average results for the sensors of Design B are presented on the right-hand side, where the brown and yellow-colored curves indicate rr-3 × 3-B and rt-3 × 3-B sensors, respectively. The 15 mm displacement range for measurements was chosen to cover the expected electrode travel for subtle thoracic, abdominal, and garment-integrated breathing movements, and should therefore be interpreted as the calibrated range of the present prototypes rather than as the maximum range of the sensing principle.",
+      "caption_zh": "Figure 2C 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-03.png",
+      "image_width": 1153,
+      "image_height": 647,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.28,
+        347.47
+      ],
+      "image_path": "papers/paper-b26f0993d50f6502/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 3",
+      "page": 6,
+      "caption_original": "FIGURE 3 (a) The SNR values of the sensors. Stretch and release responses are shown in blue and red colors, respectively. (b) The measured capacitance of rr-3 × 3-A (i) and rr-3 × 3-B (ii) sensors as a function of time in 1000 cycles of stretch and release. The inline figures display a close-up view of the data. (c) Measured capacitance (blue-colored solid line) and displacement (red-colored dashed line) of rr-3 × 3-A (i) and rr-3 × 3-B (ii) sensors as a function of time in 100 cycles of stretch and release. The displacement of the sensors was measured using a high-resolution motion tracking system. The inline figures display a close-up view of the data. (d) Comparison of our sensor (i) with the resistive sensors in the literature: Vogl et al. [30] (ii) and Liang et al. [23] (iii). The blue and red-colored curves represent the stretch and release responses of the sensor, respectively. (e) In vivo and in vitro measurements of the rr-3 × 3-A sensor as a function of displacement. The results of in vivo and in vitro experiments are presented by solid and dashed lines, respectively. The blue and red-colored curves represent the stretch and release responses of the sensor, respectively.",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "The SNR values of the sensors. Stretch and release responses are shown in blue and red colors, respectively",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "b",
+          "original": "The measured capacitance of rr-3 × 3-A",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "and rr-3 × 3-B (ii) sensors as a function of time in 1000 cycles of stretch and release. The inline figures display a close-up view of the data",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Measured capacitance (blue-colored solid line) and displacement (red-colored dashed line) of rr-3 × 3-A",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "and rr-3 × 3-B (ii) sensors as a function of time in 100 cycles of stretch and release. The displacement of the sensors was measured using a high-resolution motion tracking system. The inline figures display a close-up view of the data",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Comparison of our sensor",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "i",
+          "original": "with the resistive sensors in the literature: Vogl et al. [30] (ii) and Liang et al. [23] (iii). The blue and red-colored curves represent the stretch and release responses of the sensor, respectively",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "e",
+          "original": "In vivo and in vitro measurements of the rr-3 × 3-A sensor as a function of displacement. The results of in vivo and in vitro experiments are presented by solid and dashed lines, respectively. The blue and red-colored curves represent the stretch and release responses of the sensor, respectively",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 1153,
+      "image_height": 1150,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.28,
+        598.91
+      ],
+      "image_path": "papers/paper-b26f0993d50f6502/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Figure 4B",
+      "page": 7,
+      "caption_original": "Figure 4b–f presents the first 30 s of the first trial from the In Vivo 2 experiments. For each measurement, data were continuously recorded for three minutes. The complete recordings, including all trials for participants P2–P6, are provided in Figures S12– S16, respectively. The rr-3 × 3-A sensor was attached to the participant’s lower thorax (see Figure S17) to monitor breathing over a three-minute period while the participant performed routine office work (Figure 4b) and during rest lying (Figure 4c). Figure 4d presents the normalized capacitance measured from the elbow using the rr-3 × 3-A sensor (see Figure S18) during three consecutive intervals of exercise and rest. The knee movement measurements (see Figure S19) are shown in Figure 4e,f, where the participant walked and jogged, respectively, for three minutes along a circular track.",
+      "caption_zh": "Figure 4B 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-05.png",
+      "image_width": 1153,
+      "image_height": 899,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        594.28,
+        473.5
+      ],
+      "image_path": "papers/paper-b26f0993d50f6502/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Figure 4",
+      "page": 8,
+      "caption_original": "FIGURE 4 The in vivo measurements using the rr-3 × 3-A sensor. (a) The sensor is worn as a simple strap to measure natural breathing. Twolayered straps comprise opposing stretch (gray) and non-stretch (black) elements, displacing centrally aligned electrodes in a shearing motion during inhalation. The experiment was performed by one female participant in seven consecutive intervals of 10 s using a Long strap sensor (i). The same measurement with a short strap sensor (ii). (b,c) In vivo breath monitoring of five participants during (b) office work and (c) while resting in a lying position. (d) In vivo measurements of elbow motion in five participants recorded over three consecutive cycles of exercise and rest. (e,f) In vivo measurements of knee motion in five participants during (e) walking and (f) jogging on a treadmill. Each column corresponds to one participant. Representative 30-second data segments are shown for all measurements, while the complete datasets for each participant are provided in Figures S12–S16.",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "The sensor is worn as a simple strap to measure natural breathing. Twolayered straps comprise opposing stretch (gray) and non-stretch (black) elements, displacing centrally aligned electrodes in a shearing motion during inhalation. The experiment was performed by one female participant in seven consecutive intervals of 10 s using a Long strap sensor (i). The same measurement with a short strap sensor (ii). (b,c) In vivo breath monitoring of five participants during",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "office work and",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "while resting in a lying position",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "In vivo measurements of elbow motion in five participants recorded over three consecutive cycles of exercise and rest. (e,f) In vivo measurements of knee motion in five participants during",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "walking and",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "jogging on a treadmill. Each column corresponds to one participant. Representative 30-second data segments are shown for all measurements, while the complete datasets for each participant are provided in Figures S12–S16",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 907,
+      "image_height": 1127,
+      "crop_confidence": "high",
+      "bbox": [
+        61.37,
+        44.05,
+        514.22,
+        607.47
+      ],
+      "image_path": "papers/paper-b26f0993d50f6502/figures/figure-06.png"
+    }
+  ],
+  "glossary": []
+}

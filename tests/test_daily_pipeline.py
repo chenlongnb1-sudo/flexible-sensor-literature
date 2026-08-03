@@ -9,6 +9,7 @@ from unittest.mock import patch
 from urllib.parse import parse_qs, urlparse
 
 from scripts.daily_literature_pipeline import (
+    classify_flexible_categories,
     classify_pdf_version,
     configured_search_queries,
     enrich_record,
@@ -405,6 +406,113 @@ class DailyPipelineTests(unittest.TestCase):
             "query_ids": ["venue-advanced-materials-technologies"],
         }
         self.assertTrue(is_on_topic(record))
+
+    def test_generic_soft_material_is_not_flexible_electronics(self) -> None:
+        record = {
+            "title": "Microarchitected Materials Via Chaotic Printing",
+            "abstract": "The method fabricates structured soft matter for chemical processes.",
+            "venue": "Advanced Science",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-science"],
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_bone_skin_does_not_match_eskin(self) -> None:
+        record = {
+            "title": "Unraveling Bone-Skin Crosstalk for Wound Healing",
+            "abstract": "A hydrogel delivers a microRNA formulation to diabetic wounds.",
+            "venue": "Advanced Science",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-science"],
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_tactile_sensation_without_flexible_device_context_is_off_topic(self) -> None:
+        record = {
+            "title": "Long-term intracortical microstimulation in humans",
+            "abstract": "Rigid implanted electrodes reliably evoke tactile sensations.",
+            "venue": "Science Translational Medicine",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-science-translational-medicine"],
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_stretchable_haptic_array_is_on_topic(self) -> None:
+        record = {
+            "title": "Stretchable Thermal Haptic Array for Wearable Virtual Reality",
+            "abstract": "The device provides spatial haptic feedback on skin.",
+            "venue": "Advanced Materials Technologies",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-materials-technologies"],
+        }
+        self.assertTrue(is_on_topic(record))
+
+    def test_neural_pattern_generator_is_not_flexible_energy(self) -> None:
+        record = {
+            "title": "Surface circumferential spinal cord recording",
+            "abstract": (
+                "A conformal electrode array decodes sensory inputs from central pattern generator rhythms "
+                "through a neuroprosthetic interface."
+            ),
+        }
+        category_id, _, _ = classify_flexible_categories(record)
+        self.assertEqual(category_id, "wearable_health")
+
+    def test_flexible_materials_based_therapy_is_not_flexible_electronics(self) -> None:
+        record = {
+            "title": "Encoded Cell-Material Interactions",
+            "abstract": "A flexible materials-based approach supports regenerative therapies.",
+            "venue": "Advanced Healthcare Materials",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-healthcare-materials"],
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_distant_sensing_does_not_validate_flexible_materials_phrase(self) -> None:
+        record = {
+            "title": "Encoded Cell-Material Interactions",
+            "abstract": (
+                "A receptor platform senses soluble cytokines and routes them into gene circuits. "
+                + "Cell response details. " * 30
+                + "This offers a flexible materials-based approach for regenerative therapy."
+            ),
+            "venue": "Advanced Healthcare Materials",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-healthcare-materials"],
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_flexible_composite_without_device_context_is_off_topic(self) -> None:
+        record = {
+            "title": "Biphasic High-Entropy Heterojunctions",
+            "abstract": "A flexible composite film converts electromagnetic energy into heat.",
+            "venue": "Advanced Materials",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-materials"],
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_distant_electronic_structure_does_not_validate_flexible_composite(self) -> None:
+        record = {
+            "title": "High-Entropy Heterojunctions",
+            "abstract": (
+                "The interfacial electronic structure enhances polarization loss. "
+                + "Materials characterization details. " * 30
+                + "The powder is embedded in flexible composite films for electromagnetic heating."
+            ),
+            "venue": "Advanced Materials",
+            "paper_type": "journal-article",
+            "date": date.today().isoformat(),
+            "query_ids": ["venue-advanced-materials"],
+        }
+        self.assertFalse(is_on_topic(record))
 
     def test_targeted_afm_pressure_sensor_enters_watch_queue(self) -> None:
         record = {
