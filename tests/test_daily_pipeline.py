@@ -276,6 +276,47 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertFalse(paper["strongly_related"])
         self.assertEqual(paper["innovation_suggestions"], [])
 
+    def test_energy_device_title_wins_over_generic_wearable_context(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Flexible Zinc-Air Batteries for Wearable Electronics",
+                "abstract": "The wearable platform remains flexible during repeated use.",
+                "venue": "Advanced Energy Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-energy-materials"],
+            },
+            date.today(),
+        )
+        self.assertEqual(paper["primary_category"], "柔性能源与自供能")
+
+    def test_daily_ideas_only_use_strongly_related_papers(self) -> None:
+        general = enrich_record(
+            {
+                "title": "Flexible pressure sensor for wearable monitoring",
+                "abstract": "A flexible device provides stable pressure measurements.",
+                "venue": "Advanced Functional Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-functional-materials"],
+            },
+            date.today(),
+        )
+        strong = enrich_record(
+            {
+                "title": "Flexible tactile array with compressed readout",
+                "abstract": "An electronic skin uses low-channel acquisition and calibration.",
+                "venue": "Advanced Functional Materials",
+                "paper_type": "journal-article",
+                "date": date.today().isoformat(),
+                "query_ids": ["venue-advanced-functional-materials"],
+            },
+            date.today(),
+        )
+        ideas = make_ideas([general, strong], date.today())
+        self.assertTrue(ideas)
+        self.assertTrue(all(idea["source"] == strong["title"] for idea in ideas))
+
     def test_unicode_hyphen_eskin_keeps_tactile_category(self) -> None:
         paper = enrich_record(
             {
@@ -616,6 +657,7 @@ class DailyPipelineTests(unittest.TestCase):
                 "url": "https://doi.org/10.1/good",
                 "tracks": ["P4", "P5", "P6"],
                 "relevance_score": 84,
+                "strongly_related": True,
             },
             {
                 "id": "paper-low",
@@ -624,6 +666,16 @@ class DailyPipelineTests(unittest.TestCase):
                 "url": "https://doi.org/10.1/low",
                 "tracks": ["P2"],
                 "relevance_score": 49,
+                "strongly_related": False,
+            },
+            {
+                "id": "paper-general-high",
+                "title": "Highly ranked general flexible device",
+                "doi": "10.1/general",
+                "url": "https://doi.org/10.1/general",
+                "tracks": ["P1", "P3"],
+                "relevance_score": 90,
+                "strongly_related": False,
             },
         ]
         ideas = make_ideas(papers, date.today(), minimum=3)

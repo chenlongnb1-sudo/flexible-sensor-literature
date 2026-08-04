@@ -146,7 +146,7 @@ FLEXIBLE_CATEGORY_TERMS: dict[str, tuple[str, tuple[str, ...]]] = {
     ),
     "flexible_energy": (
         "柔性能源与自供能",
-        ("self-powered", "energy harvesting", "triboelectric", "piezoelectric", "solar cell", "battery", "supercapacitor", "generator"),
+        ("self-powered", "energy harvesting", "triboelectric", "piezoelectric", "solar cell", "battery", "batteries", "supercapacitor", "generator"),
     ),
     "flexible_materials_devices": (
         "柔性材料与器件",
@@ -979,13 +979,18 @@ def classify_flexible_categories(record: dict[str, Any]) -> tuple[str, str, list
             score += 4
         if category_id == "flexible_energy" and any(
             term in text
-            for term in ("battery", "supercapacitor", "energy harvesting", "generator", "solar cell")
+            for term in ("battery", "batteries", "supercapacitor", "energy harvesting", "generator", "solar cell")
         ):
             score += 2
+        if category_id == "flexible_energy" and any(
+            term in title
+            for term in ("battery", "batteries", "supercapacitor", "energy harvesting", "generator", "solar cell")
+        ):
+            score += 4
         if category_id == "flexible_energy" and not any(
             term in text
             for term in (
-                "battery", "supercapacitor", "energy harvesting", "power generation",
+                "battery", "batteries", "supercapacitor", "energy harvesting", "power generation",
                 "triboelectric", "piezoelectric", "solar cell", "self-powered", "electrolyte",
             )
         ):
@@ -1398,7 +1403,11 @@ def make_ideas(papers: list[dict[str, Any]], run_date: date, minimum: int = 3) -
     ideas: list[dict[str, Any]] = []
     used_tracks: set[str] = set()
     choices: list[tuple[dict[str, Any], str]] = []
-    eligible_papers = [paper for paper in papers if paper.get("relevance_score", 0) >= 60]
+    eligible_papers = [
+        paper
+        for paper in papers
+        if paper.get("strongly_related") and paper.get("relevance_score", 0) >= 60
+    ]
     for paper in eligible_papers:
         tracks = paper.get("tracks", []) or ["P6"]
         for track in tracks:
