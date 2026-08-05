@@ -1,27 +1,32 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-04",
-  "latest_report_date": "2026-08-04",
+  "updated_at": "2026-08-05",
+  "latest_report_date": "2026-08-05",
   "profile_markdown": "# 用户研究画像\n\n更新日期：2026-07-13  \n背景来源：根据 `E:\\BaiduSyncdisk\\博` 文件夹目录、毕业总控文件、Paper A 项目上下文、可编程触觉投影论文思路等本地材料归纳。\n\n## 当前研究方向\n\n用户当前博士主线不是普通“高灵敏柔性压力传感器”，而是围绕 **柔性电子皮肤前端触觉计算** 展开：\n\n- 结构-传感器-模拟前端-阵列-闭环协同设计。\n- 低离散/容差触觉界面。\n- ADC 前模拟矢量触觉读出。\n- 低冗余矢量触觉阵列。\n- 可编程物理触觉投影前端。\n- 容错、可迁移、少样本校准的电子皮肤。\n- 面向摩擦/纹理/滑移/三维力或方向相关触觉线索的柔性传感系统。\n\n## 已有工作基础\n\n### Paper A：低离散界面 + ADC 前模拟矢量触觉单元\n\n核心身份：\n\n> Analog vector tactile preprocessing before digitization for friction-aware soft electronic skins.\n\n中文主张：\n\n> 结构层降低输入离散性，模拟前端层把四象限响应压缩成方向相关矢量特征，服务纹理/摩擦识别和可靠决策。\n\n已看到的关键证据：\n\n- HCP/Hex 微结构与梯度叉指电极用于降低器件级响应离散性。\n- G1-G4 对照中已有灵敏度和 CV 数据：G4 CV 可低至约 0.77%。\n- 四象限压阻单元计划输出 Kz/Kx/Ky 或 Fz/Fx/Fy。\n- 纹理识别/通道消融已有基础，vector/tangential 特征优于 z-only 或 reference force。\n\n需要继续补强：\n\n- raw A/B/C/D 与 hardware Kz/Kx/Ky 同步记录。\n- hardware vector 与 software projection 一致性分析。\n- Kx/Ky 方向相关标定。\n- PSD/SNR、共模扰动、ADC 通道数、功耗或延迟对比。\n\n### P1：非公度/低离散结构容差触觉界面\n\n核心主张：\n\n> HCP 微结构与梯度/非周期叉指电极降低装配偏移、旋转和接触半径变化导致的响应离散性。\n\n重点关键词：\n\n- low-dispersion tactile interface\n- assembly tolerance\n- gradient interdigitated electrodes\n- non-periodic electrodes\n- HCP/hexagonal microstructures\n- response dispersion\n- shift/rotation/contact-radius tolerance\n\n### P2：模拟矢量触觉单元与 ADC 前方向解耦\n\n核心主张：\n\n> 四象限压阻单元通过模拟求和/差分，在 ADC 前输出 Kz/Kx/Ky，实现方向相关触觉预处理。\n\n重点关键词：\n\n- analog tactile preprocessing\n- vector tactile sensing\n- before digitization / pre-ADC\n- summation and differencing circuit\n- friction-aware sensing\n- shear/friction cues\n- direction-aware tactile readout\n\n注意：如果没有纯三轴力标定矩阵，不应写 full 3D force sensor；应写 direction-related 或 vector-like tactile features。\n\n### P3：低冗余矢量触觉阵列\n\n核心主张：\n\n> 2x2 单元作为 hardware vector macro-pixel，用 Kz/Kx/Ky 代替逐像素 raw readout，实现边缘、形状、接触图案或滑移方向感知。\n\n重点关键词：\n\n- hardware vector macro-pixel\n- low-redundancy tactile array\n- edge perception\n- tactile array readout\n- spatial tactile feature\n- readout count reduction\n- latency and power reduction\n\n### P4：可编程物理触觉投影前端\n\n核心主张：\n\n> 3x3 压阻阵列通过可编程权重电压和电流求和电路，在 ADC 前直接生成 Ksum/Kx/Ky/Klap/Kring/Kcorner 等空间投影特征。\n\n一句话：\n\n> 不是采集后学习可迁移特征，而是在 ADC 前用电路把可迁移触觉特征物理算出来。\n\n重点关键词：\n\n- programmable physical tactile projection\n- tactile front-end computing\n- in-sensor computing\n- spatial projection features\n- current summation circuit\n- single ADC tactile readout\n- fault-tolerant tactile sensing\n- transferable force perception\n- cross-sensor calibration\n\n### 应用与平台\n\n本地文件显示还涉及：\n\n- 柔性三维力传感器文献汇报。\n- 离子传感器。\n- 榫卯结构传感器。\n- 陀螺仪/惯性或方向感知结构。\n- 鞋垫/足底压力或步态相关传感。\n- 机械臂和触觉闭环平台。\n- 空间站/太空人体项目中的皮肤顺应柔性电生理电极。\n- 审稿/项目材料表明用户持续关注柔性电极、电子皮肤和可穿戴传感方向。\n\n## 材料体系与器件结构\n\n已出现或可作为候选的体系：\n\n- PDMS / Ecoflex / TPU 等柔性基底或微结构。\n- HCP/Hex 微结构、棱台、泡沫、榫卯、鞋垫结构。\n- PEDOT:PSS/EG、碳黑、CNT、MXene、AgNW、液态金属等导电材料需按实际数据筛选。\n- PI/Cu、柔性 PCB、叉指电极、梯度叉指电极、非周期电极。\n- 四象限压阻单元、2x2 macro-pixel、3x3 压阻阵列、4x4 阵列。\n- 模拟求和/差分电路、可编程权重电压、电流求和、TIA、MUX、单 ADC 读出。\n\n## 当前瓶颈\n\n- 高配 Paper A 需要硬件 Kz/Kx/Ky 的 ADC 前证据，否则只能降级为后处理 vector features。\n- 需要更系统的方向标定、PSD/SNR、共模抑制、功耗/延迟/ADC 通道数证据。\n- P1 需要 shift、rotation、contact-radius、signal void ratio 等容差证据，而不是只证明灵敏度高。\n- P3/P4 需要从单器件推进到阵列层面的边缘/形状/容错/迁移指标。\n- 机器人闭环和滑移防护应用风险高，应作为最小演示，不应拖累 P1-P3 主线。\n\n## 每日文献筛选优先级\n\n### 期刊等级硬门槛\n\n- 正式日报、网页推荐、创新点来源和微信推送，最低要求为 Nature/Science/Cell 子刊或 Advanced Materials 同等级期刊。\n- 可接受范围包括 Nature Portfolio/npj/Communications 系列、Science Advances/Science Robotics、Cell Press 相关高水平子刊、Advanced Materials 系列，以及 Nano-Micro Letters、ACS Nano、Nano Letters、Materials Horizons 等明确同等级期刊。\n- arXiv、Research Square 等预印本、会议论文和普通期刊默认不进入正式推荐，即使主题高度相关也只可留作人工临时观察。\n- 期刊等级门槛先于相关性评分执行；低于门槛的论文不得进入日报、网页、创新点候选或微信推送。\n\n每日自动文献任务应优先筛选以下论文：\n\n1. ADC 前、模拟前端、in-sensor computing、sensor-near computing 相关触觉/电子皮肤论文。\n2. 矢量触觉、剪切力/摩擦/滑移方向、三维力或 direction-aware tactile sensing。\n3. 柔性触觉阵列的低通道读出、压缩读出、macro-pixel、edge/shape perception。\n4. 可编程物理计算、投影核、模拟矩阵/电流求和、单 ADC 读出。\n5. 电子皮肤容错、坏点鲁棒、跨器件迁移、少样本校准、domain adaptation。\n6. 低离散结构、装配容差、微结构/电极结构协同设计。\n7. 面向机械臂、鞋垫、可穿戴、空间人体监测的触觉/柔性电极系统，但必须能服务前端触觉计算主线。\n\n## 不希望重复的方向\n\n- 不要把用户方向简化成普通 flexible pressure sensor。\n- 不要优先推荐只提高灵敏度、缺少结构机制或系统价值的材料论文。\n- 没有标定证据时，不要把方向相关读出夸大成完整三维力重建。\n- 不要把后端机器学习分类论文当成核心，除非它能和 ADC 前/传感器近端计算形成对照或启发。\n- 不要让复杂机器人闭环应用压过器件、前端、阵列主线。\n\n## 可迁移的创新方向\n\n- 将 2x2 四象限矢量单元扩展为 3x3 可编程物理投影前端。\n- 用硬件投影核生成 Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释空间特征。\n- 用 normalized projection 特征降低跨器件差异和老化/坏点影响。\n- 建立 hardware projection vs software projection 的一致性与失效边界。\n- 做 raw pixel scanning、scalar downsampling、software gradient、hardware vector macro-pixel 的系统对照。\n- 将摩擦/纹理/滑移方向线索作为 ADC 前矢量特征的任务价值，而不是只追求力数值重建。\n",
-  "daily_report_markdown": "# 2026-08-04 柔性电子高水平文献日报\n\n## 今日结论\n\n本次从 OpenAlex、Crossref、Semantic Scholar、arXiv 和 Science 官网 RSS 检索最近 3 天结果，去重并排除历史已收录论文后保留 11 篇。\n期刊等级采用硬门槛：仅保留 Nature/Science 旗舰与子刊、Cell 子刊、Advanced Materials/AFM 及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。\n所有柔性电子相关论文均进入分类日报；与 ADC 前模拟触觉、矢量读出、低冗余阵列、物理投影和容错迁移直接相关的论文标为强相关并生成创新建议。\n\n- 今日必看：1 篇\n- 值得追踪：10 篇\n- 新增可评估 idea：0 个\n- 历史重复排除：9 篇\n- 期刊等级排除：23 篇\n- 小类分布：电子皮肤与触觉 3 篇；神经形态与传感计算 1 篇；柔性能源与自供能 2 篇；可穿戴健康与生理监测 2 篇；柔性材料与器件 2 篇；制造、封装与可靠性 1 篇\n\n## 今日必看\n\n### 1. [Highly Repeatable Fibrous Crack‐Based Strain Sensor for Multichannel Continuous Tremor Monitoring in Parkinson's Disease and Essential Tremor](https://doi.org/10.1002/advs.76724)\n\n- 来源：Advanced Science；2026-08-02；分类：可穿戴健康与生理监测；评分 45/100\n- 为什么重要：可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据\n- 摘要级结论：可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：6.64 ms、200%、45 kPa。\n- 方法：To address this demand, this study presents a multichannel, wireless, patch‐type tremor monitoring system that integrates a high‐repeatable fibrous crack‐based strain (FCBS) sensor with a flexible wireless communication circuit.\n- 摘要数值：6.64 ms、200%、45 kPa\n- 可迁移：可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据；把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。\n- 给你的创新建议：把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。\n- 风险：当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。；开放获取 PDF 下载失败：RuntimeError。\n- 建议操作：skim\n\n## 其他柔性电子相关论文\n\n| 分类 | 评分 | 论文 | 建议 |\n|---|---:|---|---|\n| 电子皮肤与触觉 | 65 | [Ultrathin, Fully Solution‐Processed P(VDF‐TrFE) Piezoelectric Sensor Matrix for Electronic Skin](https://doi.org/10.1002/aelm.70516) | skim |\n| 神经形态与传感计算 | 58 | [Highly flexible vertical electrolyte-gated metal oxide transistors for neuromorphic electronics](https://doi.org/10.1073/pnas.2606103123) | skim |\n| 电子皮肤与触觉 | 56 | [Triboelectric E‐Skin for Robotic Perception of Hazardous Chemical Leaks](https://doi.org/10.1002/adma.74261) | skim |\n| 柔性能源与自供能 | 50 | [Martian‑Regolith Simulant Confined Nanogenerators for Wireless Tactile Sensing for Human‐Machine Interface](https://doi.org/10.1002/smll.74734) | skim |\n| 柔性材料与器件 | 44 | [From Geometry to Function: Programmable Mechanical Response in 3D‐Printed Adipose‐Inspired Soft Metamaterials](https://doi.org/10.1002/adfm.77047) | skim |\n| 柔性能源与自供能 | 43 | [Steering the In Situ Reconstruction of Cobalt–Iron Sulfide Polyhedra‐Encaged Nanoarrays Cathode for High‐Performance Rechargeable/Flexible Zinc‐Air Batteries](https://doi.org/10.1002/smll.74984) | skim |\n| 可穿戴健康与生理监测 | 40 | [Hydrophobic Eutectogels Reinforced by Zn2+-Coordinated Lignin Nanoparticles for Underwater Wearable Electronics](https://doi.org/10.1007/s40820-026-02302-9) | skim |\n| 电子皮肤与触觉 | 37 | [Tailoring MXene Surface Chemistry: Strategies, Mechanisms, and Functional Applications](https://doi.org/10.1002/smll.74769) | skim |\n| 制造、封装与可靠性 | 32 | [Enhanced Actuation Stability of Liquid Crystal Elastomer Actuators With Diels–Alder Dynamic Bonds](https://doi.org/10.1002/smll.74705) | skim |\n| 柔性材料与器件 | 31 | [Polymer Substrates for Flexible Sensors: Advances and Contributions to Smart Agriculture](https://doi.org/10.1002/adfm.77444) | skim |\n\n## 方法与指标速览\n\n| 论文 | 方法（摘要证据） | 可核实数值 | 画像价值 |\n|---|---|---|---|\n| Ultrathin, Fully Solution‐Processed P(VDF‐TrFE) Piezoelectric Sensor Matrix for Electronic Skin | Here, we report a fully solution‐processed, metal‐free 44 piezoelectric sensor array based on an ultrathin P(VDF‐TrFE) active layer, designed for skin‐conformal tactile sensing. | 226 nm、221 mV | 提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计 |\n| Highly flexible vertical electrolyte-gated metal oxide transistors for neuromorphic electronics | Metal oxide-based electrolyte-gated transistors (EGTs) are attractive for low-power biosensors and neuromorphic systems, but their electrical characteristics has been constrained by a fundamental trade-off between channe | 22.5 mS、0.5 V、0.3 mm、0.1 V | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及 in-sensor/物理计算或可编程触觉前端 |\n| Triboelectric E‐Skin for Robotic Perception of Hazardous Chemical Leaks | Here, we designed a flexible, palm‐shaped liquid‐sensing e‐skin (PSLSES) featuring 128 metal electrodes fabricated via flexible printed circuit (FPC) technology and coated with a fluorinated ethylene propylene (FEP) film | 99.5%、98%、0.3 s | 提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计 |\n| Martian‑Regolith Simulant Confined Nanogenerators for Wireless Tactile Sensing for Human‐Machine Interface | This work not only showcases advances in MR‐based TENG performance but also marks the first demonstration of triboelectric applications using MR simulants as functional triboelectric material. | 摘要未给出 | 可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Highly Repeatable Fibrous Crack‐Based Strain Sensor for Multichannel Continuous Tremor Monitoring in Parkinson's Disease and Essential Tremor | To address this demand, this study presents a multichannel, wireless, patch‐type tremor monitoring system that integrates a high‐repeatable fibrous crack‐based strain (FCBS) sensor with a flexible wireless communication  | 6.64 ms、200%、45 kPa | 可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| From Geometry to Function: Programmable Mechanical Response in 3D‐Printed Adipose‐Inspired Soft Metamaterials | ABSTRACT Replicating the nonlinear, strain‐dependent mechanics of soft biological tissues remains a central challenge in scaffold engineering, implantable devices and tissue‐mimicking phantom development. | 摘要未给出 | 涉及 in-sensor/物理计算或可编程触觉前端 |\n| Steering the In Situ Reconstruction of Cobalt–Iron Sulfide Polyhedra‐Encaged Nanoarrays Cathode for High‐Performance Rechargeable/Flexible Zinc‐Air Batteries | The judiciously designed FeS/CoS 1.097 @NC architecture features abundant active sites, moderate wettability, and reinforced electronic synergy, which collectively facilitate interfacial charge transfer and redox kinetic | 0.6 V | 涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Hydrophobic Eutectogels Reinforced by Zn2+-Coordinated Lignin Nanoparticles for Underwater Wearable Electronics | However, developing gel-based strain sensors with high toughness, anti-swelling performance, robust underwater adhesion, and long-term stability remains challenging. | 1.14 MPa | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Tailoring MXene Surface Chemistry: Strategies, Mechanisms, and Functional Applications | Moreover, mechanistic insights into ion intercalation and surface functional group evolution are critically analyzed to guide rational design strategies. | 摘要未给出 | 提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Enhanced Actuation Stability of Liquid Crystal Elastomer Actuators With Diels–Alder Dynamic Bonds | Herein, we developed LCEs with dynamic crosslinks with well‐separated actuation and processing temperature regimes. | 35.2%、0.5%、213.7 ± 20.1 kPa | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n| Polymer Substrates for Flexible Sensors: Advances and Contributions to Smart Agriculture | This review provides a comprehensive overview of polymer‐based flexible sensors, focusing on the types of polymer substrates, interface engineering methods, and their applications in agriculture. | 摘要未给出 | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n\n## 今日创新点候选\n\n## 检索记录\n\n| 来源 | 目标期刊 | 查询 | 命中 | 状态 |\n|---|---|---|---:|---|\n| arxiv | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| crossref | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |\n| openalex | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| semantic_scholar | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | failed |\n| arxiv | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |\n| crossref | - | `electronic skin tactile array compressed readout low channel` | 25 | ok |\n| openalex | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |\n| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |\n| arxiv | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |\n| crossref | - | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |\n| openalex | - | `near-sensor analog computing tactile sensing electronic skin` | 1 | ok |\n| semantic_scholar | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |\n| crossref | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 25 | ok |\n| openalex | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 1 | ok |\n| semantic_scholar | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | ok |\n| arxiv | - | `tactile sensor physical computing analog computing programmable projection` | 0 | ok |\n| crossref | - | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |\n| openalex | - | `tactile sensor physical computing analog computing programmable projection` | 0 | ok |\n| semantic_scholar | - | `tactile sensor physical computing analog computing programmable projection` | 0 | failed |\n| science_official | - | `electronic skin` | 0 | ok |\n| science_official | - | `flexible sensor` | 0 | ok |\n| science_official | - | `haptic sensor` | 0 | ok |\n| science_official | - | `tactile sensor` | 0 | ok |\n| arxiv | - | `tactile sensor analog front-end in-sensor computing` | 0 | ok |\n| crossref | - | `tactile sensor analog front-end in-sensor computing` | 25 | ok |\n| openalex | - | `tactile sensor analog front-end in-sensor computing` | 0 | ok |\n| semantic_scholar | - | `tactile sensor analog front-end in-sensor computing` | 0 | failed |\n| crossref | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |\n| openalex | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | ok |\n| semantic_scholar | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | failed |\n| crossref | - | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |\n| openalex | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |\n| semantic_scholar | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |\n| crossref | ACS Nano | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Advanced Electronic Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | Advanced Energy Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Advanced Fiber Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Advanced Functional Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 17 | ok |\n| crossref | Advanced Healthcare Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 7 | ok |\n| crossref | Advanced Intelligent Systems | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Advanced Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 42 | ok |\n| crossref | Advanced Materials Technologies | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 4 | ok |\n| crossref | Advanced Optical Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 6 | ok |\n| crossref | Advanced Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 33 | ok |\n| crossref | Cell Reports Physical Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 26 | ok |\n| crossref | Communications Chemistry | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | Communications Engineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Communications Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Communications Physics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | Device | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | InfoMat | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | International Journal of Extreme Manufacturing | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 4 | ok |\n| crossref | Joule | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 4 | ok |\n| crossref | Light: Science & Applications | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Materials Horizons | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Matter | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Microsystems & Nanoengineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nano Energy | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 74 | ok |\n| crossref | Nano Letters | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nano-Micro Letters | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | National Science Review | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | Nature | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 11 | ok |\n| crossref | Nature Biomedical Engineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nature Communications | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 65 | ok |\n| crossref | Nature Electronics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nature Machine Intelligence | `tactile electronic skin neuromorphic sensor computing robotic perception` | 2 | ok |\n| crossref | Nature Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 2 | ok |\n| crossref | Nature Nanotechnology | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | Nature Sensors | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | npj Flexible Electronics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Proceedings of the National Academy of Sciences | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 36 | ok |\n| crossref | Research | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Science Advances | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Science Robotics | `tactile electronic skin flexible sensor haptic robotic perception` | 0 | ok |\n| crossref | Science Translational Medicine | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Small | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 56 | ok |\n| crossref | Small Methods | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 10 | ok |\n\n## 数据源异常\n\n- semantic_scholar：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。\n\n## 纳入与排除标准\n\n- 纳入：达到期刊等级门槛，且属于柔性/可拉伸/可穿戴/皮肤界面电子、柔性器件、软体机器人、自供能或相关传感系统。\n- 分类：电子皮肤与触觉、可穿戴健康、柔性材料与器件、柔性能源、软体机器人与 HMI、神经形态/传感计算、制造封装与可靠性、多模态生化传感。\n- 强相关：命中阵列读出、矢量/剪切、ADC 前处理、传感计算、校准漂移或跨器件迁移时，额外生成可验证创新建议。\n- 降权但保留：只强调 sensitivity、gauge factor 或材料配方，而缺少读出、阵列、校准、鲁棒性或任务证据。\n- 排除：历史已收录、题录明显偏题、来源元数据不足且无法核实。\n- 可信度边界：本日报首先完成题录/摘要级筛选；数值、机理和优先级需在点击“精读”后核查全文。\n",
+  "daily_report_markdown": "# 2026-08-05 柔性电子高水平文献日报\n\n## 今日结论\n\n本次从 OpenAlex、Crossref、Semantic Scholar、arXiv 和 Science 官网 RSS 检索最近 3 天结果，去重并排除历史已收录论文后保留 13 篇。\n期刊等级采用硬门槛：仅保留 Nature/Science 旗舰与子刊、Cell 子刊、Advanced Materials/AFM 及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。\n所有柔性电子相关论文均进入分类日报；与 ADC 前模拟触觉、矢量读出、低冗余阵列、物理投影和容错迁移直接相关的论文标为强相关并生成创新建议。\n\n- 今日必看：0 篇\n- 值得追踪：12 篇\n- 新增可评估 idea：0 个\n- 历史重复排除：12 篇\n- 期刊等级排除：14 篇\n- 小类分布：可穿戴健康与生理监测 4 篇；软体机器人与人机交互 3 篇；制造、封装与可靠性 1 篇；柔性材料与器件 1 篇；多模态与生化传感 1 篇；柔性能源与自供能 3 篇\n\n## 今日必看\n\n今日没有达到精读阈值的论文；不要为了凑数把普通高灵敏材料论文推到顶部。\n\n## 其他柔性电子相关论文\n\n| 分类 | 评分 | 论文 | 建议 |\n|---|---:|---|---|\n| 可穿戴健康与生理监测 | 45 | [Soft Double‐Sided Conductive Nanocomposite Tapes for Versatile Assembly of Stretchable Electronics](https://doi.org/10.1002/adfm.77471) | skim |\n| 软体机器人与人机交互 | 41 | [Anisotropic Nanofiber Architectures for Strain‐Insensitive Pressure Sensing and Stretchable Interconnects](https://doi.org/10.1002/aelm.70515) | skim |\n| 可穿戴健康与生理监测 | 39 | [Record Selectivity of SO 2 by Molecularly Gated Sieving Membranes Having Cross‐Scale Mechanically Interlocked Nanofibers](https://doi.org/10.1002/adma.74439) | skim |\n| 可穿戴健康与生理监测 | 38 | [Wafer‐Scale Atomically‐Thin Gold: Transferable Platform for Flexible Optoelectronics, Thermal Management and Bio‐Interfaces](https://doi.org/10.1002/advs.76495) | skim |\n| 制造、封装与可靠性 | 38 | [Temperature‐Regulated Dynamic Phase Reconfiguration of Solid‐Liquid Biphasic Ga‐In Nanoparticles](https://doi.org/10.1002/admt.71220) | skim |\n| 柔性材料与器件 | 35 | [Multifunctional Electrode/Neural Integration Interface Enabling Chronic High‐Fidelity Neural Recording and an Order‐of‐Magnitude Neuromodulation Quality](https://doi.org/10.1002/adma.74519) | skim |\n| 软体机器人与人机交互 | 35 | [Increasing Inter‐Micellar Connectivity Toughens and Imparts Cooling‐Induced Shape Memory in Micellar Hydrogels](https://doi.org/10.1002/adfm.77448) | skim |\n| 多模态与生化传感 | 34 | [Space‐Confined Low‐Power Laser‐Induced Fabrication of Nanoscale‐Cu‐Integrated Flexible Carbon Electrodes for Electrochemical Sensing](https://doi.org/10.1002/admt.71219) | skim |\n| 柔性能源与自供能 | 32 | [A Self‐Strengthening Hydrogel Coating for Long‐Term Underwater Adhesion in Seawater Over 900 Days](https://doi.org/10.1002/adma.74463) | skim |\n| 柔性能源与自供能 | 32 | [An Electrode‐Less Fiber Battery With 600 Wh/L‐Level Volumetric Energy Density Enabled by Dynamic Deposition Chemistry](https://doi.org/10.1002/adma.74443) | skim |\n| 柔性能源与自供能 | 30 | [Homogenizing Vertical Strain Distribution Enables High‐Performance Tin‐Based Perovskite Solar Cells With Thicker Absorber via Two‐Step Deposition](https://doi.org/10.1002/adma.74441) | skim |\n| 软体机器人与人机交互 | 23 | [Covalent Interfacial Anchoring of 1D‐2D Hybrid Nanofillers to Poly(Vinyl Alcohol) Networks Enables High‐Strength, High‐Stiffness Hydrogel Fibers](https://doi.org/10.1002/adma.74421) | ignore |\n\n## 方法与指标速览\n\n| 论文 | 方法（摘要证据） | 可核实数值 | 画像价值 |\n|---|---|---|---|\n| Soft Double‐Sided Conductive Nanocomposite Tapes for Versatile Assembly of Stretchable Electronics | This design enables rapid assembly at room temperature using a “press‐and‐peel” lamination procedure, eliminating the need for surface treatments or thermal bonding. | 4 S | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Anisotropic Nanofiber Architectures for Strain‐Insensitive Pressure Sensing and Stretchable Interconnects | ABSTRACT The rapid advancement of flexible electronics demands materials that combine mechanical compliance, operational stability, and reliable functionality under dynamic mechanical stresses. | 摘要未给出 | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Record Selectivity of SO 2 by Molecularly Gated Sieving Membranes Having Cross‐Scale Mechanically Interlocked Nanofibers | This hierarchically interlocked interface design establishes robust connectivity across dimensional scales, endowing CSMI‐PLA with exceptional mechanical resilience and long‐term sensing‐protective durability. | 99.45%、120 Pa | 涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Wafer‐Scale Atomically‐Thin Gold: Transferable Platform for Flexible Optoelectronics, Thermal Management and Bio‐Interfaces | ABSTRACT The integration of metals into two‐dimensional material architectures is essential for next‐generation electronics, but their high surface energy intrinsically favors three‐dimensional island growth, hindering t | 0.4 nm、86%、15 dB、70 dB | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Temperature‐Regulated Dynamic Phase Reconfiguration of Solid‐Liquid Biphasic Ga‐In Nanoparticles | ABSTRACT Phase evolution in liquid metals (LMs) is fundamental to the structural integrity and electrical reliability of LM‐based flexible conductive materials. | 摘要未给出 | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n| Multifunctional Electrode/Neural Integration Interface Enabling Chronic High‐Fidelity Neural Recording and an Order‐of‐Magnitude Neuromodulation Quality | ABSTRACT Neural electrodes face persistent challenges, including inflammation, biofouling, and impedance, which compromise long‐term recording and stimulation quality. | 摘要未给出 | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Increasing Inter‐Micellar Connectivity Toughens and Imparts Cooling‐Induced Shape Memory in Micellar Hydrogels | These results present oligomerization as a versatile processing strategy for tuning mechanical and responsive properties of micellar hydrogels. | 摘要未给出 | 涉及 in-sensor/物理计算或可编程触觉前端；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Space‐Confined Low‐Power Laser‐Induced Fabrication of Nanoscale‐Cu‐Integrated Flexible Carbon Electrodes for Electrochemical Sensing | In the proposed sandwich configuration, a PI film is confined between two glass substrates during nanosecond (ns) laser irradiation, governing localized heat absorption and diffusion to achieve controlled graphitization  | 1 cm | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| A Self‐Strengthening Hydrogel Coating for Long‐Term Underwater Adhesion in Seawater Over 900 Days | To overcome these limitations, a hydrogel coating that achieves persistent underwater adhesion in natural seawater for over 900 days is developed. | 110 kPa | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n| An Electrode‐Less Fiber Battery With 600 Wh/L‐Level Volumetric Energy Density Enabled by Dynamic Deposition Chemistry | ABSTRACT Aqueous fiber batteries are essential for next‐generation wearable electronics due to their inherent safety, low cost, and environmental friendliness. | 摘要未给出 | 可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Homogenizing Vertical Strain Distribution Enables High‐Performance Tin‐Based Perovskite Solar Cells With Thicker Absorber via Two‐Step Deposition | ABSTRACT Owing to typically restricted active layer thickness (∼200 nm), solution‐processed tin‐based perovskite solar cells (TPVSCs) suffer from incomplete photon‐to‐electron conversion, which fundamentally limits power | 200 nm、15.02%、14.78%、12.43%、0.04 cm、13.37%、1.00 cm、85% | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n| Covalent Interfacial Anchoring of 1D‐2D Hybrid Nanofillers to Poly(Vinyl Alcohol) Networks Enables High‐Strength, High‐Stiffness Hydrogel Fibers | ABSTRACT Hydrogels with high strength, stiffness, and toughness under full hydration are essential for load‐transfer applications such as artificial tendons, ligaments, and soft robotics. | 132 MPa、88% | 提供机器人、可穿戴或电子皮肤系统任务证据；材料性能词较多、前端/阵列/系统证据偏少，已降权 |\n| Multi‐Level Crosslinked Structure Fiber Composite Membrane With Multifunctional Properties: High Strength, Flexibility and EMI Shielding | ABSTRACT Rational structural design remains a key challenge in developing multifunctional membranes with high strength, flexibility, and excellent electromagnetic interference shielding effectiveness (EMI SE). | 50.3 dB、19.7 MPa | 提供机器人、可穿戴或电子皮肤系统任务证据；材料性能词较多、前端/阵列/系统证据偏少，已降权 |\n\n## 今日创新点候选\n\n## 检索记录\n\n| 来源 | 目标期刊 | 查询 | 命中 | 状态 |\n|---|---|---|---:|---|\n| arxiv | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| crossref | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |\n| openalex | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| semantic_scholar | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| arxiv | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |\n| crossref | - | `electronic skin tactile array compressed readout low channel` | 25 | ok |\n| openalex | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |\n| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |\n| arxiv | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |\n| crossref | - | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |\n| openalex | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |\n| semantic_scholar | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |\n| crossref | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 25 | ok |\n| openalex | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | ok |\n| semantic_scholar | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | failed |\n| arxiv | - | `tactile sensor physical computing analog computing programmable projection` | 2 | ok |\n| crossref | - | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |\n| openalex | - | `tactile sensor physical computing analog computing programmable projection` | 0 | ok |\n| semantic_scholar | - | `tactile sensor physical computing analog computing programmable projection` | 0 | failed |\n| science_official | - | `electronic skin` | 0 | ok |\n| science_official | - | `flexible sensor` | 0 | ok |\n| science_official | - | `haptic sensor` | 0 | ok |\n| science_official | - | `tactile sensor` | 0 | ok |\n| arxiv | - | `tactile sensor analog front-end in-sensor computing` | 2 | ok |\n| crossref | - | `tactile sensor analog front-end in-sensor computing` | 25 | ok |\n| openalex | - | `tactile sensor analog front-end in-sensor computing` | 1 | ok |\n| semantic_scholar | - | `tactile sensor analog front-end in-sensor computing` | 0 | failed |\n| crossref | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |\n| openalex | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 1 | ok |\n| semantic_scholar | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | failed |\n| crossref | - | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |\n| openalex | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |\n| semantic_scholar | - | `flexible tactile sensor vector shear friction slip direction` | 0 | failed |\n| crossref | ACS Nano | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 20 | ok |\n| crossref | Advanced Electronic Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 11 | ok |\n| crossref | Advanced Energy Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 8 | ok |\n| crossref | Advanced Fiber Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Advanced Functional Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 24 | ok |\n| crossref | Advanced Healthcare Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 14 | ok |\n| crossref | Advanced Intelligent Systems | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Advanced Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 37 | ok |\n| crossref | Advanced Materials Technologies | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | Advanced Optical Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 2 | ok |\n| crossref | Advanced Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 28 | ok |\n| crossref | Cell Reports Physical Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Communications Chemistry | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Communications Engineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Communications Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Communications Physics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 6 | ok |\n| crossref | Device | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | InfoMat | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | International Journal of Extreme Manufacturing | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 4 | ok |\n| crossref | Joule | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Light: Science & Applications | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 6 | ok |\n| crossref | Materials Horizons | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Matter | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Microsystems & Nanoengineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 2 | ok |\n| crossref | Nano Energy | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nano Letters | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 22 | ok |\n| crossref | Nano-Micro Letters | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | National Science Review | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 6 | ok |\n| crossref | Nature | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 26 | ok |\n| crossref | Nature Biomedical Engineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Nature Communications | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 90 | ok |\n| crossref | Nature Electronics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nature Machine Intelligence | `tactile electronic skin neuromorphic sensor computing robotic perception` | 2 | ok |\n| crossref | Nature Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | Nature Nanotechnology | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | Nature Sensors | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | npj Flexible Electronics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 2 | ok |\n| crossref | Proceedings of the National Academy of Sciences | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 57 | ok |\n| crossref | Research | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Science Advances | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Science Robotics | `tactile electronic skin flexible sensor haptic robotic perception` | 0 | ok |\n| crossref | Science Translational Medicine | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Small | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 81 | ok |\n| crossref | Small Methods | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 14 | ok |\n\n## 数据源异常\n\n- semantic_scholar：7 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。\n\n## 纳入与排除标准\n\n- 纳入：达到期刊等级门槛，且属于柔性/可拉伸/可穿戴/皮肤界面电子、柔性器件、软体机器人、自供能或相关传感系统。\n- 分类：电子皮肤与触觉、可穿戴健康、柔性材料与器件、柔性能源、软体机器人与 HMI、神经形态/传感计算、制造封装与可靠性、多模态生化传感。\n- 强相关：命中阵列读出、矢量/剪切、ADC 前处理、传感计算、校准漂移或跨器件迁移时，额外生成可验证创新建议。\n- 降权但保留：只强调 sensitivity、gauge factor 或材料配方，而缺少读出、阵列、校准、鲁棒性或任务证据。\n- 排除：历史已收录、题录明显偏题、来源元数据不足且无法核实。\n- 可信度边界：本日报首先完成题录/摘要级筛选；数值、机理和优先级需在点击“精读”后核查全文。\n",
   "papers": [
     {
-      "id": "paper-92d735a70550f12f",
-      "title": "Ultrathin, Fully Solution‐Processed P(VDF‐TrFE) Piezoelectric Sensor Matrix for Electronic Skin",
+      "id": "paper-171c83667f5a34ee",
+      "title": "Soft Double‐Sided Conductive Nanocomposite Tapes for Versatile Assembly of Stretchable Electronics",
       "authors": [
-        "Ninja Kajas",
-        "Karem Lozano Montero",
-        "Leena Ukkonen",
-        "Veikko Surakka",
-        "Matti Mäntysalo"
+        "Likang Ding",
+        "Yong Lin",
+        "Cheng Yang",
+        "Changqing Qin",
+        "Wenqiang He",
+        "Gaohua Hu",
+        "Weixi Huang",
+        "Qian Wang",
+        "Yan‐qing Lu",
+        "Desheng Kong"
       ],
-      "venue": "Advanced Electronic Materials",
+      "venue": "Advanced Functional Materials",
       "date": "2026-08-03",
-      "doi": "10.1002/aelm.70516",
-      "url": "https://doi.org/10.1002/aelm.70516",
+      "doi": "10.1002/adfm.77471",
+      "url": "https://doi.org/10.1002/adfm.77471",
       "pdf_url": "",
       "pdf_candidates": [
-        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aelm.70516"
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77471"
       ],
       "local_pdf": "",
       "is_open_access": false,
@@ -31,84 +36,74 @@
         "Crossref"
       ],
       "query_ids": [
-        "low-redundancy-array",
-        "near-sensor-tactile-computing",
-        "venue-advanced-electronic-materials"
+        "venue-advanced-functional-materials"
       ],
-      "category_id": "tactile_e_skin",
-      "primary_category": "电子皮肤与触觉",
+      "category_id": "wearable_health",
+      "primary_category": "可穿戴健康与生理监测",
       "categories": [
-        "电子皮肤与触觉",
-        "柔性能源与自供能",
-        "制造、封装与可靠性"
+        "可穿戴健康与生理监测",
+        "柔性材料与器件"
       ],
       "relevance_level": "related",
       "strongly_related": false,
       "tracks": [
-        "P6",
         "P1",
-        "P3"
+        "P5"
       ],
-      "relevance_score": 65,
+      "relevance_score": 45,
       "score_breakdown": {
-        "topic_relevance": 78,
+        "topic_relevance": 39,
         "evidence_strength": 64,
         "transferability": 50,
         "innovation_density": 35,
         "material_only_penalty": 0
       },
       "relevance_reasons": [
-        "提供机器人、可穿戴或电子皮肤系统任务证据",
         "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "涉及低冗余阵列、空间特征或读出通道压缩"
+        "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
-      "core_claim": "ABSTRACT Electronic skin (e‐skin) that enables machines with human‐like tactile perception requires a combination of extreme conformability, mechanical robustness, low crosstalk, and scalable, sustainable fabrication.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：226 nm、221 mV。",
-      "method_summary": "Here, we report a fully solution‐processed, metal‐free 44 piezoelectric sensor array based on an ultrathin P(VDF‐TrFE) active layer, designed for skin‐conformal tactile sensing.",
+      "core_claim": "ABSTRACT The hybrid integration of soft, deformable devices with rigid silicon‐based circuitry is essential for realizing next‐generation stretchable electronics capable of complex data processing and communication.",
+      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：4 S。",
+      "method_summary": "This design enables rapid assembly at room temperature using a “press‐and‐peel” lamination procedure, eliminating the need for surface treatments or thermal bonding.",
       "key_metrics": [
-        "226 nm",
-        "221 mV"
+        "4 S"
       ],
       "transferable_points": [
-        "提供机器人、可穿戴或电子皮肤系统任务证据",
-        "可用于低离散/装配容差触觉界面的结构与对照设计"
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
       ],
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
         "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "ABSTRACT Electronic skin (e‐skin) that enables machines with human‐like tactile perception requires a combination of extreme conformability, mechanical robustness, low crosstalk, and scalable, sustainable fabrication. Here, we report a fully solution‐processed, metal‐free 44 piezoelectric sensor array based on an ultrathin P(VDF‐TrFE) active layer, designed for skin‐conformal tactile sensing. By combining inkjet‐printed polymer electrodes with a 226 nm thick spin‐coated ferroelectric layer, which is the thinnest active layer reported to date for a P(VDF‐TrFE) sensor array, on an ultrathin Parylene C substrate, the resulting device achieves a total thickness of approximately 4.53 , enabling unobtrusive contact with soft and curved surfaces, including human skin. The average piezoelectric sensitivity, , is 21 pC/N, and the voltage sensitivity ranges from 65 to 221 mV/N. Notably, array‐level measurements reveal negligible mechanical crosstalk between neighboring pixels without the use of mechanical isolation structures. The observed low crosstalk is consistent with enhanced strain localization owing to the ultrathin, highly conformable device achitecture. The results highlight ultrathin, all‐polymer piezoelectric arrays as a promising design strategy for scalable, sustainable, and mechanically compliant electronic skin systems.",
+      "source_abstract": "ABSTRACT The hybrid integration of soft, deformable devices with rigid silicon‐based circuitry is essential for realizing next‐generation stretchable electronics capable of complex data processing and communication. A critical challenge in this field is the lack of a reliable and universal strategy for establishing robust electrical and mechanical interfaces between the disparate electronic platforms. Here, we introduce a soft, double‐sided conductive nanocomposite tape that serves as a universal bonding layer to overcome this interconnection bottleneck. Fabricated via a scalable spray‐deposition process, the tape consists of silver nanowires (Ag NWs) embedded in a tackified styrene–isoprene–styrene (SIS) elastomer matrix. The high‐aspect‐ratio nanowire fillers enable high electrical conductivity (∼10 4 S/cm) at minimal loadings, while preserving ample elastomer surface to ensure strong adhesion strength. This design enables rapid assembly at room temperature using a “press‐and‐peel” lamination procedure, eliminating the need for surface treatments or thermal bonding. The resulting modular assemblies maintain their integrity under large and repeated tensile deformations. We demonstrate the versatility of this approach by creating stretchable PCB cables, multi‐channel epidermal sensor patches, and soft LED displays. This work establishes a scalable and universally applicable strategy for modular assembly in complex stretchable electronic systems.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-92d735a70550f12f",
-      "detail_json": "data/paper-details/paper-92d735a70550f12f.json"
+      "detail_path": "paper.html?id=paper-171c83667f5a34ee",
+      "detail_json": "data/paper-details/paper-171c83667f5a34ee.json"
     },
     {
-      "id": "paper-d6ad7b35136bfb2e",
-      "title": "Highly flexible vertical electrolyte-gated metal oxide transistors for neuromorphic electronics",
+      "id": "paper-b4c69170763d213a",
+      "title": "Anisotropic Nanofiber Architectures for Strain‐Insensitive Pressure Sensing and Stretchable Interconnects",
       "authors": [
-        "Qing Ma",
-        "Xuyang Feng",
-        "Haoyang Wang",
-        "Shisheng Chen",
-        "Di Xue",
-        "Xianyu Wang",
-        "Chen Li",
-        "Yao Yao",
-        "Limei Liu",
-        "Enbo Xue",
-        "Giacomo Forti",
-        "Wei Huang"
+        "Seung‐Hyun Oh",
+        "Hyunmin Park",
+        "Guhyeon Kwon",
+        "Young‐Chang Joo",
+        "So‐Yeon Lee"
       ],
-      "venue": "Proceedings of the National Academy of Sciences",
+      "venue": "Advanced Electronic Materials",
       "date": "2026-08-03",
-      "doi": "10.1073/pnas.2606103123",
-      "url": "https://doi.org/10.1073/pnas.2606103123",
+      "doi": "10.1002/aelm.70515",
+      "url": "https://doi.org/10.1002/aelm.70515",
       "pdf_url": "",
-      "pdf_candidates": [],
+      "pdf_candidates": [
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aelm.70515"
+      ],
       "local_pdf": "",
       "is_open_access": false,
       "paper_type": "journal-article",
@@ -117,79 +112,84 @@
         "Crossref"
       ],
       "query_ids": [
-        "venue-pnas"
+        "near-sensor-tactile-computing",
+        "venue-advanced-electronic-materials"
       ],
-      "category_id": "neuromorphic_sensor_computing",
-      "primary_category": "神经形态与传感计算",
+      "category_id": "soft_robotics_hmi",
+      "primary_category": "软体机器人与人机交互",
       "categories": [
-        "神经形态与传感计算",
+        "软体机器人与人机交互",
         "可穿戴健康与生理监测",
-        "多模态与生化传感"
+        "电子皮肤与触觉"
       ],
       "relevance_level": "related",
       "strongly_related": false,
       "tracks": [
         "P1",
-        "P4",
+        "P5",
         "P6"
       ],
-      "relevance_score": 58,
+      "relevance_score": 41,
       "score_breakdown": {
-        "topic_relevance": 51,
-        "evidence_strength": 73,
-        "transferability": 70,
+        "topic_relevance": 33,
+        "evidence_strength": 64,
+        "transferability": 40,
         "innovation_density": 45,
-        "material_only_penalty": 0
+        "material_only_penalty": 16
       },
       "relevance_reasons": [
         "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "涉及 in-sensor/物理计算或可编程触觉前端",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "材料性能词较多、前端/阵列/系统证据偏少，已降权"
       ],
-      "core_claim": "Metal oxide-based electrolyte-gated transistors (EGTs) are attractive for low-power biosensors and neuromorphic systems, but their electrical characteristics has been constrained by a fundamental trade-off between channel downscaling and electrical double layer (EDL) capacitance, resulting in limited transconductance and metrics inferior to that of organic counterparts.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：22.5 mS、0.5 V、0.3 mm、0.1 V。",
-      "method_summary": "Metal oxide-based electrolyte-gated transistors (EGTs) are attractive for low-power biosensors and neuromorphic systems, but their electrical characteristics has been constrained by a fundamental trade-off between channel downscaling and electrical double layer (EDL) capacitance, resulting in limited transconductance and metrics inferior to that of organic counterparts.",
-      "key_metrics": [
-        "22.5 mS",
-        "0.5 V",
-        "0.3 mm",
-        "0.1 V"
-      ],
+      "core_claim": "ABSTRACT The rapid advancement of flexible electronics demands materials that combine mechanical compliance, operational stability, and reliable functionality under dynamic mechanical stresses.",
+      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
+      "method_summary": "ABSTRACT The rapid advancement of flexible electronics demands materials that combine mechanical compliance, operational stability, and reliable functionality under dynamic mechanical stresses.",
+      "key_metrics": [],
       "transferable_points": [
         "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "涉及 in-sensor/物理计算或可编程触觉前端",
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
         "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
       ],
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：未找到合法开放获取 PDF。"
+        "可能主要贡献是材料灵敏度，未必能支撑前端触觉计算主线。",
+        "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "Metal oxide-based electrolyte-gated transistors (EGTs) are attractive for low-power biosensors and neuromorphic systems, but their electrical characteristics has been constrained by a fundamental trade-off between channel downscaling and electrical double layer (EDL) capacitance, resulting in limited transconductance and metrics inferior to that of organic counterparts. Here, we report high-performance and ultraflexible indium gallium zinc oxide (IGZO) EGTs enabled by a vertical device architecture and a nanoscale channel length. We systematically examined how device geometries—including the IGZO-electrode contact area, IGZO thickness, and semiconductor-electrode interface—affect the electrical properties and EDL capacitance, thereby revealing how the vertical structure decouples the channel length from the EDL formation area. Optimized vertical EGTs (vEGTs) exhibit a transconductance of up to 22.5 mS, an on/off current ratio of ~10 5 , ultralow operating voltages below 0.5 V, and pronounced ultraflexibility, maintaining stable performance when bent to a radius of 0.3 mm. Furthermore, vEGTs were integrated into inverter, NOR, and NAND logic circuits operating at voltages as low as 0.1 V. Finally, we demonstrate a closed-loop neuromorphic system in which the slow attenuation of the paired-pulse facilitation index enables adaptive and wireless control of a wearable display in response to a skin-interfaced sensor.",
+      "source_abstract": "ABSTRACT The rapid advancement of flexible electronics demands materials that combine mechanical compliance, operational stability, and reliable functionality under dynamic mechanical stresses. Here, we report electrospun poly(3,4‐ethylenedioxythiophene):polystyrenesulfonate (PEDOT:PSS)/polyacrylamide (PAAm) nanofiber mats as robust active components for next‐generation stretchable bioelectronics. Characterized by a hierarchical porous architecture, these mats facilitate efficient charge transport while offering superior mechanical resilience compared to conventional hydrogels or brittle thin films. Mechanical investigations reveal pronounced electromechanical anisotropy: the mats maintain minimal resistance variation under tensile strain, attributed to reversible fiber realignment within the interconnected nanofiber network, yet exhibit high sensitivity to compressive stress associated with structural perturbation within the porous conductive network. This intrinsic directional selectivity may be advantageous for pressure‐sensitive tactile sensing while minimizing signal variations arising from bending or stretching deformation. Furthermore, when integrated into flexible interconnects and mounted on human joints, the mats demonstrate stable electrical response under physiological deformations, as verified by in situ resistance monitoring. These results establish PEDOT:PSS/PAAm nanofiber mats as mechanically stable and direction‐sensitive building blocks for pressure‐selective wearable sensing and soft robotic applications.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-d6ad7b35136bfb2e",
-      "detail_json": "data/paper-details/paper-d6ad7b35136bfb2e.json"
+      "detail_path": "paper.html?id=paper-b4c69170763d213a",
+      "detail_json": "data/paper-details/paper-b4c69170763d213a.json"
     },
     {
-      "id": "paper-df0f7b6ebfc66c46",
-      "title": "Triboelectric E‐Skin for Robotic Perception of Hazardous Chemical Leaks",
+      "id": "paper-ef261c7c7b2226f9",
+      "title": "Record Selectivity of SO 2 by Molecularly Gated Sieving Membranes Having Cross‐Scale Mechanically Interlocked Nanofibers",
       "authors": [
-        "Guangxiang Gu",
-        "Qiheng Liu",
-        "Hongwei Gao",
-        "Jinyang Zhang",
-        "Zhong Lin Wang"
+        "Shao‐Zhen Wang",
+        "Xinjian He",
+        "Xing‐Hua Wei",
+        "Hong Zhu",
+        "Le Bao",
+        "Yan Wang",
+        "Zhuang Huang",
+        "Xiaoyu Chen",
+        "Yu Zhang",
+        "Mengbao Fan",
+        "Yongmei Wang",
+        "Gang Zhou"
       ],
       "venue": "Advanced Materials",
-      "date": "2026-08-03",
-      "doi": "10.1002/adma.74261",
-      "url": "https://doi.org/10.1002/adma.74261",
+      "date": "2026-08-04",
+      "doi": "10.1002/adma.74439",
+      "url": "https://doi.org/10.1002/adma.74439",
       "pdf_url": "",
       "pdf_candidates": [
-        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74261"
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74439"
       ],
       "local_pdf": "",
       "is_open_access": false,
@@ -201,153 +201,80 @@
       "query_ids": [
         "venue-advanced-materials"
       ],
-      "category_id": "tactile_e_skin",
-      "primary_category": "电子皮肤与触觉",
+      "category_id": "wearable_health",
+      "primary_category": "可穿戴健康与生理监测",
       "categories": [
-        "电子皮肤与触觉",
-        "软体机器人与人机交互",
-        "柔性能源与自供能"
+        "可穿戴健康与生理监测",
+        "制造、封装与可靠性",
+        "柔性材料与器件"
       ],
       "relevance_level": "related",
       "strongly_related": false,
       "tracks": [
-        "P6",
-        "P1"
+        "P5",
+        "P6"
       ],
-      "relevance_score": 56,
+      "relevance_score": 39,
       "score_breakdown": {
-        "topic_relevance": 54,
-        "evidence_strength": 73,
-        "transferability": 55,
+        "topic_relevance": 35,
+        "evidence_strength": 55,
+        "transferability": 35,
         "innovation_density": 45,
         "material_only_penalty": 0
       },
       "relevance_reasons": [
-        "提供机器人、可穿戴或电子皮肤系统任务证据",
-        "可用于低离散/装配容差触觉界面的结构与对照设计"
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
-      "core_claim": "ABSTRACT The rapid identification of chemical composition, temperature, and dynamic behavior of leaked liquids by robots during accidental spills of hazardous chemicals would significantly reduce the potential risks to both human health and the environment.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：99.5%、98%、0.3 s。",
-      "method_summary": "Here, we designed a flexible, palm‐shaped liquid‐sensing e‐skin (PSLSES) featuring 128 metal electrodes fabricated via flexible printed circuit (FPC) technology and coated with a fluorinated ethylene propylene (FEP) film.",
+      "core_claim": "ABSTRACT Achieving selective molecular sieving, efficient particulate filtration, and passive signal acquisition into an integrated flexible membrane signifies a pivotal advancement toward interactive sensing‐protective application.",
+      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：99.45%、120 Pa。",
+      "method_summary": "This hierarchically interlocked interface design establishes robust connectivity across dimensional scales, endowing CSMI‐PLA with exceptional mechanical resilience and long‐term sensing‐protective durability.",
       "key_metrics": [
-        "99.5%",
-        "98%",
-        "0.3 s"
+        "99.45%",
+        "120 Pa"
       ],
       "transferable_points": [
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
         "提供机器人、可穿戴或电子皮肤系统任务证据",
-        "可用于低离散/装配容差触觉界面的结构与对照设计"
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
       ],
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
         "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "ABSTRACT The rapid identification of chemical composition, temperature, and dynamic behavior of leaked liquids by robots during accidental spills of hazardous chemicals would significantly reduce the potential risks to both human health and the environment. Here, we designed a flexible, palm‐shaped liquid‐sensing e‐skin (PSLSES) featuring 128 metal electrodes fabricated via flexible printed circuit (FPC) technology and coated with a fluorinated ethylene propylene (FEP) film. By capturing the local triboelectrification signals along the droplet's trajectory, PSLSES enables multimodal dynamic liquid sensing, simultaneously achieving liquid composition identification, temperature sensing, as well as droplet motion tracking through visualized trajectory patterns. Integrated with a one‐dimensional convolutional neural network (1D CNN), PSLSES achieves an ultrahigh identification accuracy of 99.5% across 21 types of liquids, with a high monitoring resolution down to the ppb level and 98% accuracy in identifying liquid temperature. This includes deionized water, acids, bases, salts, and organic solutions, demonstrating broad liquid identification versatility. Compared with previously reported E‐skin systems, it achieved faster identification (0.3 s), a lower detection limit (0.1 ppb), broader liquid recognition, and higher accuracy. The integration of PSLSES into wearable robotics systems opens new ways for robots to assist humans in analyzing and handling chemical leakage in hazardous environments.",
+      "source_abstract": "ABSTRACT Achieving selective molecular sieving, efficient particulate filtration, and passive signal acquisition into an integrated flexible membrane signifies a pivotal advancement toward interactive sensing‐protective application. Herein, we unravel cross‐scale mechanically interlocked poly(lactic acid) (CSMI‐PLA) nanofibrous membranes fabricated via primary hydrogen bonding through polydopamine adhesion and secondary coordinate bonding via heterogeneous metal‐organic frameworks entanglement. This hierarchically interlocked interface design establishes robust connectivity across dimensional scales, endowing CSMI‐PLA with exceptional mechanical resilience and long‐term sensing‐protective durability. Remarkably, the CSMI‐PLA membranes simultaneously achieve >99.45% removal of PM 0.3 with an ultralow pressure drop of 120 Pa, a record sulfur dioxide/nitrogen (SO 2 /N 2 ) selectivity of 37000, and a substantial SO 2 uptake of 10.6 mmol·g − 1 . Moreover, the CSMI‐PLA membranes retain high functional integrity under multicomponent conditions while offering intrisical electroactivity that enables passive intelligent sensing. This work establishes a generalizable platform for engendering sensing‐protective nanofibers, with promising implications for molecularly gated sieving and biodegradable self‐adaptive wearables.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-df0f7b6ebfc66c46",
-      "detail_json": "data/paper-details/paper-df0f7b6ebfc66c46.json"
+      "detail_path": "paper.html?id=paper-ef261c7c7b2226f9",
+      "detail_json": "data/paper-details/paper-ef261c7c7b2226f9.json"
     },
     {
-      "id": "paper-f3060729941897ef",
-      "title": "Martian‑Regolith Simulant Confined Nanogenerators for Wireless Tactile Sensing for Human‐Machine Interface",
+      "id": "paper-837bd3719384b4c9",
+      "title": "Wafer‐Scale Atomically‐Thin Gold: Transferable Platform for Flexible Optoelectronics, Thermal Management and Bio‐Interfaces",
       "authors": [
-        "Shidhin Mappoli",
-        "Keval K. Sonigara",
-        "Martin Pumera"
-      ],
-      "venue": "Small",
-      "date": "2026-08-03",
-      "doi": "10.1002/smll.74734",
-      "url": "https://doi.org/10.1002/smll.74734",
-      "pdf_url": "",
-      "pdf_candidates": [
-        "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.74734"
-      ],
-      "local_pdf": "",
-      "is_open_access": false,
-      "paper_type": "journal-article",
-      "venue_quality": "elite_subjournal_or_am_level",
-      "sources": [
-        "Crossref"
-      ],
-      "query_ids": [
-        "near-sensor-tactile-computing",
-        "venue-small"
-      ],
-      "category_id": "flexible_energy",
-      "primary_category": "柔性能源与自供能",
-      "categories": [
-        "柔性能源与自供能",
-        "电子皮肤与触觉",
-        "软体机器人与人机交互"
-      ],
-      "relevance_level": "related",
-      "strongly_related": false,
-      "tracks": [
-        "P1",
-        "P6"
-      ],
-      "relevance_score": 50,
-      "score_breakdown": {
-        "topic_relevance": 49,
-        "evidence_strength": 73,
-        "transferability": 45,
-        "innovation_density": 35,
-        "material_only_penalty": 0
-      },
-      "relevance_reasons": [
-        "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
-      ],
-      "core_claim": "ABSTRACT Achieving a sustainable energy system for space missions remains challenging due to the continued reliance on Earth‐supplied materials.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
-      "method_summary": "This work not only showcases advances in MR‐based TENG performance but also marks the first demonstration of triboelectric applications using MR simulants as functional triboelectric material.",
-      "key_metrics": [],
-      "transferable_points": [
-        "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
-      ],
-      "innovation_suggestions": [],
-      "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError。"
-      ],
-      "source_abstract": "ABSTRACT Achieving a sustainable energy system for space missions remains challenging due to the continued reliance on Earth‐supplied materials. This underscores the importance of in situ resource utilization (ISRU) strategies that convert planetary resources into functional electronic components. In this work, we harness the dielectric characteristics of Martian regolith (MR) simulant to create an MR/polydimethylsiloxane (PDMS) composite film with enhanced triboelectric properties. Structural and morphological analyses of the MR reveal multiple oxide‐rich phases, which improve both the dielectric properties and the surface microstructure of the MR/PDMS composite film. The resultant MR/PDMS composite film‐based triboelectric nanogenerator (TENG) delivers an approximately two‐fold increase in open‐circuit voltage compared to the pristine PDMS‐based TENG. The real‐world use of the MR/PDMS TENG is further demonstrated by proof‐of‐concept applications: a glove‐mounted tactile surface sensor with wireless signal transmission and a wearable triboelectric keypad. This work not only showcases advances in MR‐based TENG performance but also marks the first demonstration of triboelectric applications using MR simulants as functional triboelectric material. Additionally, we have demonstrated foundational work toward ISRU‐oriented tactile interfaces incorporating MR‐simulant‐derived functional materials for future controlled habitats and robotic platforms relevant to future space exploration.",
-      "cited_by_count": 0,
-      "decision_hint": "skim",
-      "verification_status": "metadata_abstract_screened",
-      "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-f3060729941897ef",
-      "detail_json": "data/paper-details/paper-f3060729941897ef.json"
-    },
-    {
-      "id": "paper-22412e47a89d203a",
-      "title": "Highly Repeatable Fibrous Crack‐Based Strain Sensor for Multichannel Continuous Tremor Monitoring in Parkinson's Disease and Essential Tremor",
-      "authors": [
-        "Chiwon Song",
-        "Chan Park",
-        "Juyoun Lee",
-        "Hojoong Kim",
-        "Jeongbeom Kang",
-        "Byeongjun Lee",
-        "Cheoljeong Park",
-        "Jungmin Kim",
-        "Haran Lee",
-        "Yoon Jae Lee",
-        "Min‐Kyung Yeo",
-        "Woon‐Hong Yeo"
+        "Dmitry Yakubovsky",
+        "Mikhail Mironov",
+        "Georgy Ermolaev",
+        "Aleksandr Khrebtov",
+        "Aleksandr Slavich",
+        "Prashant Narute",
+        "Pritom Chowdhury",
+        "Roman Kirtaev",
+        "Igor Khramtsov",
+        "Anton Minnekhanov",
+        "Gleb Tselikov",
+        "Dmitriy Grudinin"
       ],
       "venue": "Advanced Science",
-      "date": "2026-08-02",
-      "doi": "10.1002/advs.76724",
-      "url": "https://doi.org/10.1002/advs.76724",
+      "date": "2026-08-04",
+      "doi": "10.1002/advs.76495",
+      "url": "https://doi.org/10.1002/advs.76495",
       "pdf_url": "",
       "pdf_candidates": [
-        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.76724"
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.76495"
       ],
       "local_pdf": "",
       "is_open_access": false,
@@ -363,71 +290,226 @@
       "primary_category": "可穿戴健康与生理监测",
       "categories": [
         "可穿戴健康与生理监测",
+        "制造、封装与可靠性",
         "柔性材料与器件"
       ],
-      "relevance_level": "strong",
-      "strongly_related": true,
+      "relevance_level": "related",
+      "strongly_related": false,
       "tracks": [
         "P1",
+        "P5"
+      ],
+      "relevance_score": 38,
+      "score_breakdown": {
+        "topic_relevance": 35,
+        "evidence_strength": 55,
+        "transferability": 40,
+        "innovation_density": 25,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及坏点、漂移、跨器件迁移或少样本校准"
+      ],
+      "core_claim": "ABSTRACT The integration of metals into two‐dimensional material architectures is essential for next‐generation electronics, but their high surface energy intrinsically favors three‐dimensional island growth, hindering the scalable fabrication of continuous, atomically‐thin metallic layers.",
+      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：0.4 nm、86%、15 dB、70 dB。",
+      "method_summary": "ABSTRACT The integration of metals into two‐dimensional material architectures is essential for next‐generation electronics, but their high surface energy intrinsically favors three‐dimensional island growth, hindering the scalable fabrication of continuous, atomically‐thin metallic layers.",
+      "key_metrics": [
+        "0.4 nm",
+        "86%",
+        "15 dB",
+        "70 dB"
+      ],
+      "transferable_points": [
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+      ],
+      "innovation_suggestions": [],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "开放获取 PDF 下载失败：RuntimeError。"
+      ],
+      "source_abstract": "ABSTRACT The integration of metals into two‐dimensional material architectures is essential for next‐generation electronics, but their high surface energy intrinsically favors three‐dimensional island growth, hindering the scalable fabrication of continuous, atomically‐thin metallic layers. While recent advances have yielded freestanding 2D metals like goldene, their technological integration remains constrained by limited dimensions. Here we resolve this fundamental thermodynamic challenge by merging template stripping with a graphene‐inspired transfer method to produce 6‐inch wafer‐scale, continuous, and transferable gold films with thicknesses approaching the atomic limit. These ultrathin gold films exhibit atomic smoothness with a root‐mean‐square roughness below 0.4 nm and possess near‐bulk electronic properties, yielding exceptional optoelectronic performance with optical transmittance above 86% and sheet resistance below 20 Ω/□. The adhesion‐free nature of the films enables their versatile integration into various devices, which we demonstrate with flexible organic light‐emitting diodes, effective thermal camouflage, and conformal epidermal sensors that achieve a signal‐to‐noise ratio of ≈15 dB for electrocardiogram and ≈70 dB for electromyogram monitoring, superior to that of clinical gel electrodes. The suggested approach establishes a universal and scalable route for integrating atomically‐thin metals into complex heterostructures and functional systems.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened",
+      "deep_read_status": "metadata_only_no_legal_pdf",
+      "detail_path": "paper.html?id=paper-837bd3719384b4c9",
+      "detail_json": "data/paper-details/paper-837bd3719384b4c9.json"
+    },
+    {
+      "id": "paper-20811d5781b40fb6",
+      "title": "Temperature‐Regulated Dynamic Phase Reconfiguration of Solid‐Liquid Biphasic Ga‐In Nanoparticles",
+      "authors": [
+        "Feng Xu",
+        "Qi Zhang",
+        "Shuai Yang",
+        "Yuanzhao Wu",
+        "Yiwei Liu",
+        "Run‐Wei Li"
+      ],
+      "venue": "Advanced Materials Technologies",
+      "date": "2026-08-04",
+      "doi": "10.1002/admt.71220",
+      "url": "https://doi.org/10.1002/admt.71220",
+      "pdf_url": "",
+      "pdf_candidates": [
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71220"
+      ],
+      "local_pdf": "",
+      "is_open_access": false,
+      "paper_type": "journal-article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "Crossref"
+      ],
+      "query_ids": [
+        "venue-advanced-materials-technologies"
+      ],
+      "category_id": "manufacturing_reliability",
+      "primary_category": "制造、封装与可靠性",
+      "categories": [
+        "制造、封装与可靠性",
+        "柔性材料与器件"
+      ],
+      "relevance_level": "related",
+      "strongly_related": false,
+      "tracks": [
         "P6"
       ],
-      "relevance_score": 45,
+      "relevance_score": 38,
       "score_breakdown": {
-        "topic_relevance": 39,
-        "evidence_strength": 73,
-        "transferability": 45,
+        "topic_relevance": 31,
+        "evidence_strength": 55,
+        "transferability": 40,
+        "innovation_density": 45,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
+      ],
+      "core_claim": "ABSTRACT Phase evolution in liquid metals (LMs) is fundamental to the structural integrity and electrical reliability of LM‐based flexible conductive materials.",
+      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。当前未从摘要提取到可比较数值。",
+      "method_summary": "ABSTRACT Phase evolution in liquid metals (LMs) is fundamental to the structural integrity and electrical reliability of LM‐based flexible conductive materials.",
+      "key_metrics": [],
+      "transferable_points": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
+      ],
+      "innovation_suggestions": [],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "开放获取 PDF 下载失败：RuntimeError。"
+      ],
+      "source_abstract": "ABSTRACT Phase evolution in liquid metals (LMs) is fundamental to the structural integrity and electrical reliability of LM‐based flexible conductive materials. Physical vapor deposition (PVD) is an important method for preparing LM films. However, their phase evolution during deposition, particularly under nonequilibrium conditions, remains poorly understood. Here, we report an unexpected kinetically driven pathway for Ga‐In alloy deposition, leading to the formation of solid‐liquid biphasic nanoparticles. Contrary to the ideal homogeneous co‐deposition pathway, In preferentially nucleates on the substrate to form solid cores, while liquid Ga subsequently encapsulates them, resulting in core–shell nanoparticles that are stable at room‐temperature. These metastable structures exhibit reversible thermal reconfiguration, transitioning into a homogeneous mixing state upon heating and re‐establishing phase separation at –90°C. As deposition proceeds, the system evolves continuously from discrete biphasic nanoparticles to continuous LM films. This work reveals a previously overlooked nonequilibrium growth mechanism governing multicomponent LM deposition and establishes a general strategy for constructing phase‐separated, thermally reconfigurable metallic architectures. The findings open new opportunities for adaptive conductors and flexible electronic materials.",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened",
+      "deep_read_status": "metadata_only_no_legal_pdf",
+      "detail_path": "paper.html?id=paper-20811d5781b40fb6",
+      "detail_json": "data/paper-details/paper-20811d5781b40fb6.json"
+    },
+    {
+      "id": "paper-6e0f48558c989760",
+      "title": "Multifunctional Electrode/Neural Integration Interface Enabling Chronic High‐Fidelity Neural Recording and an Order‐of‐Magnitude Neuromodulation Quality",
+      "authors": [
+        "Meiyu Shao",
+        "Liuyang Sun",
+        "Wei Qu",
+        "Lei Wang",
+        "Nan Ma",
+        "Jun Liu",
+        "Yan Tang",
+        "Ye Tian",
+        "Wei Ji",
+        "Xiangmei Xu",
+        "Chunlei Han",
+        "Huizhi Wang"
+      ],
+      "venue": "Advanced Materials",
+      "date": "2026-08-04",
+      "doi": "10.1002/adma.74519",
+      "url": "https://doi.org/10.1002/adma.74519",
+      "pdf_url": "",
+      "pdf_candidates": [
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74519"
+      ],
+      "local_pdf": "",
+      "is_open_access": false,
+      "paper_type": "journal-article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "Crossref"
+      ],
+      "query_ids": [
+        "venue-advanced-materials"
+      ],
+      "category_id": "flexible_materials_devices",
+      "primary_category": "柔性材料与器件",
+      "categories": [
+        "柔性材料与器件"
+      ],
+      "relevance_level": "related",
+      "strongly_related": false,
+      "tracks": [
+        "P1",
+        "P5"
+      ],
+      "relevance_score": 35,
+      "score_breakdown": {
+        "topic_relevance": 31,
+        "evidence_strength": 55,
+        "transferability": 30,
         "innovation_density": 35,
         "material_only_penalty": 0
       },
       "relevance_reasons": [
         "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
+        "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
-      "core_claim": "ABSTRACT Objective measurement of tremors is important for assessing the severity and preventing misdiagnosis of Parkinson's disease (PD).",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：6.64 ms、200%、45 kPa。",
-      "method_summary": "To address this demand, this study presents a multichannel, wireless, patch‐type tremor monitoring system that integrates a high‐repeatable fibrous crack‐based strain (FCBS) sensor with a flexible wireless communication circuit.",
-      "key_metrics": [
-        "6.64 ms",
-        "200%",
-        "45 kPa"
-      ],
+      "core_claim": "ABSTRACT Neural electrodes face persistent challenges, including inflammation, biofouling, and impedance, which compromise long‐term recording and stimulation quality.",
+      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
+      "method_summary": "ABSTRACT Neural electrodes face persistent challenges, including inflammation, biofouling, and impedance, which compromise long‐term recording and stimulation quality.",
+      "key_metrics": [],
       "transferable_points": [
         "可用于低离散/装配容差触觉界面的结构与对照设计",
-        "提供机器人、可穿戴或电子皮肤系统任务证据",
-        "把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。"
+        "涉及坏点、漂移、跨器件迁移或少样本校准",
+        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
       ],
-      "innovation_suggestions": [
-        "把论文结构转成 shift、rotation、contact-radius 与跨器件 CV 的容差地图，验证优势是否超越单点灵敏度。"
-      ],
+      "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
         "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "ABSTRACT Objective measurement of tremors is important for assessing the severity and preventing misdiagnosis of Parkinson's disease (PD). To address this demand, this study presents a multichannel, wireless, patch‐type tremor monitoring system that integrates a high‐repeatable fibrous crack‐based strain (FCBS) sensor with a flexible wireless communication circuit. The FCBS sensor, incorporating crack structures, random fiber orientation, junction melting, and polymer penetration within a 3D conductive fiber network, achieves high sensitivity (gauge factor up to 476.89), a fast response time (≈ 6.64 ms), a wide working range (>200% strain), low Young's modulus (≈45 kPa), and excellent repeatability (>100 000 cycles). In addition, this study demonstrates the first clinical application of a flexible strain sensor‐based tremor monitoring system in patients with PD and ET for simultaneous multilocation tremor measurement. Through clinical trials, our system measured tremor indicators (peak amplitude and fundamental frequency), and tremor indicators obtained from multilocation showed improved correlation and statistical significance with tremor scoring in UPDRS III under specific conditions. These results demonstrate the applicability and potential of the flexible strain sensor‐based system as a wearable platform for quantitative and objective tremor measurement.",
+      "source_abstract": "ABSTRACT Neural electrodes face persistent challenges, including inflammation, biofouling, and impedance, which compromise long‐term recording and stimulation quality. Here, we introduced a multifunctional polyamino acid interface that enhances neural interfacing by combining biocompatibility, antimicrobial activity, and antifouling properties. Applied to flexible electrodes, this coating reduces foreign body reaction and preserves neuronal proximity, ensuring stable integration with brain tissue. In chronic rodent models, functionalized electrodes achieve high‐fidelity single‐unit recordings for over 300 days with significantly higher spike amplitudes and yield than bare controls. Notably, the interface enables an order‐of‐magnitude improvement in neuromodulation efficiency, evoking robust motor responses at only 2 µA compared to 100 µA for uncoated probes. Multi‐omics analysis reveals a molecularly profound alteration in the host tissue response, transitioning from a pro‐inflammatory injury signature to an attenuated inflammatory state with improved tissue homeostasis. Furthermore, the interface's resistance to biological “cementing” facilitates damage‐free electrode removal and recovery, preserving the neural architecture and enabling the possibility of chronic replacement. This universal platform offers a promising and practical strategy for the next generation of stable, clinically viable neural–computer interfaces.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-22412e47a89d203a",
-      "detail_json": "data/paper-details/paper-22412e47a89d203a.json"
+      "detail_path": "paper.html?id=paper-6e0f48558c989760",
+      "detail_json": "data/paper-details/paper-6e0f48558c989760.json"
     },
     {
-      "id": "paper-42d08db9e2560097",
-      "title": "From Geometry to Function: Programmable Mechanical Response in 3D‐Printed Adipose‐Inspired Soft Metamaterials",
+      "id": "paper-3b210dfe0d478bc7",
+      "title": "Increasing Inter‐Micellar Connectivity Toughens and Imparts Cooling‐Induced Shape Memory in Micellar Hydrogels",
       "authors": [
-        "Alice Berardo",
-        "Gianmarco Dolino",
-        "Damiano Coato",
-        "Paolo Gargiulo",
-        "Emanuele Luigi Carniel"
+        "Gourav Kumbhojkar",
+        "Eric Yang",
+        "Arman Moussavi",
+        "EunBi Oh",
+        "Haeji Kim",
+        "Wei Chen",
+        "Junsoo Kim",
+        "Sinan Keten",
+        "Ryan L. Truby"
       ],
       "venue": "Advanced Functional Materials",
-      "date": "2026-08-02",
-      "doi": "10.1002/adfm.77047",
-      "url": "https://doi.org/10.1002/adfm.77047",
+      "date": "2026-08-03",
+      "doi": "10.1002/adfm.77448",
+      "url": "https://doi.org/10.1002/adfm.77448",
       "pdf_url": "",
       "pdf_candidates": [
-        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77047"
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77448"
       ],
       "local_pdf": "",
       "is_open_access": false,
@@ -439,113 +521,37 @@
       "query_ids": [
         "venue-advanced-functional-materials"
       ],
-      "category_id": "flexible_materials_devices",
-      "primary_category": "柔性材料与器件",
+      "category_id": "soft_robotics_hmi",
+      "primary_category": "软体机器人与人机交互",
       "categories": [
+        "软体机器人与人机交互",
+        "制造、封装与可靠性",
         "柔性材料与器件"
       ],
       "relevance_level": "related",
       "strongly_related": false,
       "tracks": [
-        "P4"
+        "P4",
+        "P6"
       ],
-      "relevance_score": 44,
+      "relevance_score": 35,
       "score_breakdown": {
-        "topic_relevance": 35,
-        "evidence_strength": 73,
-        "transferability": 45,
-        "innovation_density": 45,
+        "topic_relevance": 31,
+        "evidence_strength": 64,
+        "transferability": 25,
+        "innovation_density": 35,
         "material_only_penalty": 0
       },
       "relevance_reasons": [
-        "涉及 in-sensor/物理计算或可编程触觉前端"
+        "涉及 in-sensor/物理计算或可编程触觉前端",
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
-      "core_claim": "ABSTRACT Replicating the nonlinear, strain‐dependent mechanics of soft biological tissues remains a central challenge in scaffold engineering, implantable devices and tissue‐mimicking phantom development.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。",
-      "method_summary": "ABSTRACT Replicating the nonlinear, strain‐dependent mechanics of soft biological tissues remains a central challenge in scaffold engineering, implantable devices and tissue‐mimicking phantom development.",
+      "core_claim": "ABSTRACT Micellar gels formed by self‐assembling block copolymers have advanced applications spanning drug delivery, biofabrication, and soft robotics.",
+      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "method_summary": "These results present oligomerization as a versatile processing strategy for tuning mechanical and responsive properties of micellar hydrogels.",
       "key_metrics": [],
       "transferable_points": [
         "涉及 in-sensor/物理计算或可编程触觉前端",
-        "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
-      ],
-      "innovation_suggestions": [],
-      "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError。"
-      ],
-      "source_abstract": "ABSTRACT Replicating the nonlinear, strain‐dependent mechanics of soft biological tissues remains a central challenge in scaffold engineering, implantable devices and tissue‐mimicking phantom development. Current approaches lack a systematic, experimentally validated framework that quantitatively links unit cell characteristics to macroscopic mechanical response across clinically relevant stiffness ranges. Here, we introduce a geometry‐driven design strategy for 3D‐printed adipose‐inspired soft metamaterials, systematically varying unit cell diameter, shell thickness, orientation angle, and base material across multiple architectures. Compression experiments reveal that shell thickness governs initial stiffness and buckling onset, cell diameter controls the extent of the progressive instability plateau, and orientation angle switches the deformation mode from instability‐driven buckling to progressive compaction. Finite element simulations capture these mechanisms quantitatively, while a multivariate regression model predicts effective modulus, buckling stress, and energy absorption (R 2 adj > 0.86). The resulting design space spans elastic moduli from units to hundreds of kPa, covering the mechanical ranges of multiple soft biological tissues, demonstrating that a single geometric framework can be systematically tuned to target diverse soft‐tissue mechanical environments. This integrated experimental–computational–statistical platform establishes a mechanistic and geometry‐driven design foundation that can inform the rational development of programmable soft metamaterials for regenerative scaffolds, tissue‐mimicking phantoms, and soft implantable devices.",
-      "cited_by_count": 0,
-      "decision_hint": "skim",
-      "verification_status": "metadata_abstract_screened",
-      "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-42d08db9e2560097",
-      "detail_json": "data/paper-details/paper-42d08db9e2560097.json"
-    },
-    {
-      "id": "paper-f4a9b3fa5aedbadf",
-      "title": "Steering the In Situ Reconstruction of Cobalt–Iron Sulfide Polyhedra‐Encaged Nanoarrays Cathode for High‐Performance Rechargeable/Flexible Zinc‐Air Batteries",
-      "authors": [
-        "Chen Li",
-        "Chuolin Huang",
-        "Yi Liu",
-        "Linxian Zhangli",
-        "Yiyang Xu",
-        "Qiongzhi Gao",
-        "Siyuan Yang",
-        "Shengsen Zhang",
-        "Xin Cai"
-      ],
-      "venue": "Small",
-      "date": "2026-08-02",
-      "doi": "10.1002/smll.74984",
-      "url": "https://doi.org/10.1002/smll.74984",
-      "pdf_url": "",
-      "pdf_candidates": [
-        "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.74984"
-      ],
-      "local_pdf": "",
-      "is_open_access": false,
-      "paper_type": "journal-article",
-      "venue_quality": "elite_subjournal_or_am_level",
-      "sources": [
-        "Crossref"
-      ],
-      "query_ids": [
-        "venue-small"
-      ],
-      "category_id": "flexible_energy",
-      "primary_category": "柔性能源与自供能",
-      "categories": [
-        "柔性能源与自供能",
-        "可穿戴健康与生理监测",
-        "制造、封装与可靠性"
-      ],
-      "relevance_level": "related",
-      "strongly_related": false,
-      "tracks": [
-        "P5",
-        "P6"
-      ],
-      "relevance_score": 43,
-      "score_breakdown": {
-        "topic_relevance": 35,
-        "evidence_strength": 82,
-        "transferability": 35,
-        "innovation_density": 45,
-        "material_only_penalty": 0
-      },
-      "relevance_reasons": [
-        "涉及坏点、漂移、跨器件迁移或少样本校准",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
-      ],
-      "core_claim": "ABSTRACT Transition‐metal sulfide‐based electrocatalysts hold great promise for the advancement of various renewable energy technologies, yet their complex in situ surface reconstruction during electrochemical operation remains a significant challenge.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：0.6 V。",
-      "method_summary": "The judiciously designed FeS/CoS 1.097 @NC architecture features abundant active sites, moderate wettability, and reinforced electronic synergy, which collectively facilitate interfacial charge transfer and redox kinetics.",
-      "key_metrics": [
-        "0.6 V"
-      ],
-      "transferable_points": [
-        "涉及坏点、漂移、跨器件迁移或少样本校准",
         "提供机器人、可穿戴或电子皮肤系统任务证据",
         "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
       ],
@@ -554,77 +560,72 @@
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
         "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "ABSTRACT Transition‐metal sulfide‐based electrocatalysts hold great promise for the advancement of various renewable energy technologies, yet their complex in situ surface reconstruction during electrochemical operation remains a significant challenge. Herein, we report a highly efficient binder‐free bifunctional electrocatalyst, FeS/CoS 1.097 @NC, consisting of cobalt‐iron sulfide polyhedra encapsulated within nitrogen‐doped carbon nanorods directly grown on carbon cloth. The judiciously designed FeS/CoS 1.097 @NC architecture features abundant active sites, moderate wettability, and reinforced electronic synergy, which collectively facilitate interfacial charge transfer and redox kinetics. As a bifunctional catalyst, FeS/CoS 1.097 @NC realizes a low overall overpotential of 0.6 V, comparable to that of the Pt/C+RuO 2 benchmark. Combined experimental and theoretical investigation unravels that the in situ electrochemical reconstruction process promotes the formation and stabilization of Co‐Fe (oxy)hydroxides as the dominant active phase. Notably, the reconstructed hybrid phases effectively modulate the d ‐band center and optimize the binding affinity of active sites toward (oxy) intermediates, thereby enhancing both oxygen evolution reaction (OER)/oxygen reduction reaction (ORR) kinetics and long‐term durability. When employed as a free‐standing air‐cathode, FeS/CoS 1.097 @NC endows rechargeable and flexible Zn‐air batteries with high discharge capacities, superb rate capability and robust operational durability upon cycling. This work envisions a promising approach to constructing high‐efficiency hetero‐structured electrocatalysts toward multifunctional catalysis and portable/wearable energy devices.",
+      "source_abstract": "ABSTRACT Micellar gels formed by self‐assembling block copolymers have advanced applications spanning drug delivery, biofabrication, and soft robotics. However, their broader use as crosslinked hydrogels is limited by the challenge of simultaneously tuning their mechanical properties and stimuli‐responsive behaviors while maintaining the ability to process the pre‐hydrogel through techniques like extrusion. Here, we show that oligomerization of Pluronic triblock copolymers provides a single tunable parameter, the oligomer fraction, , for modulating the inter‐micellar connectivity and mechanical properties of Pluronic hydrogels. Increasing produces hydrogels spanning brittle to highly extensible responses. Coarse‐grained molecular dynamics simulations reveal that oligomerized Pluronic chains bridge multiple micelles, forming highly interconnected networks. Since oligomerization maintains the micellar network architecture of high‐ hydrogels, we demonstrate a cooling‐induced, reverse thermal shape‐memory behavior in which plastic deformation at room temperature is reversed upon cooling below Pluronic's lower critical solution temperature. Oligomerization also preserves the printability of Pluronic gels, enabling anisotropic hydrogels with spatially programmable mechanical properties via embedded 3D printing. Graph‐theoretic analyses of simulated networks establish intermicellar connectivity as a key structural parameter governing mechanical tunability. These results present oligomerization as a versatile processing strategy for tuning mechanical and responsive properties of micellar hydrogels.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-f4a9b3fa5aedbadf",
-      "detail_json": "data/paper-details/paper-f4a9b3fa5aedbadf.json"
+      "detail_path": "paper.html?id=paper-3b210dfe0d478bc7",
+      "detail_json": "data/paper-details/paper-3b210dfe0d478bc7.json"
     },
     {
-      "id": "paper-adfe507e3e9b45d8",
-      "title": "Hydrophobic Eutectogels Reinforced by Zn2+-Coordinated Lignin Nanoparticles for Underwater Wearable Electronics",
+      "id": "paper-4c5a6c54aa986054",
+      "title": "Space‐Confined Low‐Power Laser‐Induced Fabrication of Nanoscale‐Cu‐Integrated Flexible Carbon Electrodes for Electrochemical Sensing",
       "authors": [
-        "Fuyuan Lu",
-        "Dan Sun",
-        "Wei He",
-        "Meng Li",
-        "Zhengjun Shi",
-        "Yiqiang Wu",
-        "Shao-Fei Sun",
-        "Changyou Shao",
-        "Runcang Sun"
+        "Srinivasan Arthanari",
+        "Jong‐Eun Park",
+        "June‐Sik Hwang",
+        "Huseung Lee"
       ],
-      "venue": "Nano-Micro Letters",
-      "date": "2026-08-03",
-      "doi": "10.1007/s40820-026-02302-9",
-      "url": "https://doi.org/10.1007/s40820-026-02302-9",
-      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02302-9.pdf",
+      "venue": "Advanced Materials Technologies",
+      "date": "2026-08-04",
+      "doi": "10.1002/admt.71219",
+      "url": "https://doi.org/10.1002/admt.71219",
+      "pdf_url": "",
       "pdf_candidates": [
-        "https://link.springer.com/content/pdf/10.1007/s40820-026-02302-9.pdf"
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71219"
       ],
-      "local_pdf": "research-memory/literature/2026/2026-08-04/papers/paper-adfe507e3e9b45d8.pdf",
-      "is_open_access": true,
+      "local_pdf": "",
+      "is_open_access": false,
       "paper_type": "journal-article",
       "venue_quality": "elite_subjournal_or_am_level",
       "sources": [
         "Crossref"
       ],
       "query_ids": [
-        "venue-nano-micro-letters"
+        "venue-advanced-materials-technologies"
       ],
-      "category_id": "wearable_health",
-      "primary_category": "可穿戴健康与生理监测",
+      "category_id": "multimodal_bio_chemical",
+      "primary_category": "多模态与生化传感",
       "categories": [
-        "可穿戴健康与生理监测",
+        "多模态与生化传感",
+        "制造、封装与可靠性",
         "柔性材料与器件"
       ],
       "relevance_level": "related",
       "strongly_related": false,
       "tracks": [
         "P1",
-        "P5",
-        "P6"
+        "P5"
       ],
-      "relevance_score": 40,
+      "relevance_score": 34,
       "score_breakdown": {
-        "topic_relevance": 42,
-        "evidence_strength": 55,
-        "transferability": 30,
-        "innovation_density": 35,
-        "material_only_penalty": 0
+        "topic_relevance": 19,
+        "evidence_strength": 64,
+        "transferability": 40,
+        "innovation_density": 45,
+        "material_only_penalty": 16
       },
       "relevance_reasons": [
         "可用于低离散/装配容差触觉界面的结构与对照设计",
         "涉及坏点、漂移、跨器件迁移或少样本校准",
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
+        "材料性能词较多、前端/阵列/系统证据偏少，已降权"
       ],
-      "core_claim": "Abstract Wearable flexible sensors for underwater communication and biomotion monitoring are gaining attention.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：1.14 MPa。",
-      "method_summary": "However, developing gel-based strain sensors with high toughness, anti-swelling performance, robust underwater adhesion, and long-term stability remains challenging.",
+      "core_claim": "ABSTRACT Conventional laser irradiation of polyimide (PI) films for flexible electrode fabrication is limited by uncontrolled ablation, compromising structural precision and functional integration.",
+      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：1 cm。",
+      "method_summary": "In the proposed sandwich configuration, a PI film is confined between two glass substrates during nanosecond (ns) laser irradiation, governing localized heat absorption and diffusion to achieve controlled graphitization with minimal structural damage.",
       "key_metrics": [
-        "1.14 MPa"
+        "1 cm"
       ],
       "transferable_points": [
         "可用于低离散/装配容差触觉界面的结构与对照设计",
@@ -633,109 +634,38 @@
       ],
       "innovation_suggestions": [],
       "risks": [
-        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。"
-      ],
-      "source_abstract": "Abstract Wearable flexible sensors for underwater communication and biomotion monitoring are gaining attention. However, developing gel-based strain sensors with high toughness, anti-swelling performance, robust underwater adhesion, and long-term stability remains challenging. Herein, we present a hydrophobic eutectogel (DPF-Zn@LNP-HEG) fabricated via the assembly of a polymerizable hydrophobic deep eutectic solvent (PHDES), 2-phenoxyethyl acrylate (PEA), and Zn 2+ -coordinated lignin nanoparticles (Zn@LNP). The resulting structure, composed of hydrophobic polymer networks and metal-phenolic complexes, forms hydrophobic microdomains that disrupt the hydration layer and prevent water penetration. Meanwhile, Zn@LNP serve as dynamic sacrificial cross-linkers, enhancing the material’s mechanical strength, energy dissipation, and anti-swelling properties. The resulting eutectogel exhibits remarkable tensile strength (1.14 MPa), superior toughness (3.15 MJ m −3 ), excellent anti-swelling properties (",
-      "cited_by_count": 0,
-      "decision_hint": "skim",
-      "verification_status": "metadata_abstract_screened",
-      "pdf_source_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02302-9.pdf",
-      "pdf_version": "publisher_pdf",
-      "pdf_version_label": "出版社开放获取 PDF",
-      "deep_read_status": "fulltext_draft",
-      "detail_path": "paper.html?id=paper-adfe507e3e9b45d8",
-      "detail_json": "data/paper-details/paper-adfe507e3e9b45d8.json"
-    },
-    {
-      "id": "paper-2a2950b7d21dc20f",
-      "title": "Tailoring MXene Surface Chemistry: Strategies, Mechanisms, and Functional Applications",
-      "authors": [
-        "Zhifang Liu",
-        "Yipeng Cui",
-        "Yilin Sun",
-        "Caofeng Pan"
-      ],
-      "venue": "Small",
-      "date": "2026-08-02",
-      "doi": "10.1002/smll.74769",
-      "url": "https://doi.org/10.1002/smll.74769",
-      "pdf_url": "",
-      "pdf_candidates": [
-        "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.74769"
-      ],
-      "local_pdf": "",
-      "is_open_access": false,
-      "paper_type": "journal-article",
-      "venue_quality": "elite_subjournal_or_am_level",
-      "sources": [
-        "Crossref"
-      ],
-      "query_ids": [
-        "venue-small"
-      ],
-      "category_id": "tactile_e_skin",
-      "primary_category": "电子皮肤与触觉",
-      "categories": [
-        "电子皮肤与触觉",
-        "柔性材料与器件"
-      ],
-      "relevance_level": "related",
-      "strongly_related": false,
-      "tracks": [
-        "P6"
-      ],
-      "relevance_score": 37,
-      "score_breakdown": {
-        "topic_relevance": 38,
-        "evidence_strength": 55,
-        "transferability": 30,
-        "innovation_density": 25,
-        "material_only_penalty": 0
-      },
-      "relevance_reasons": [
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
-      ],
-      "core_claim": "ABSTRACT MXenes, a burgeoning family of two‐dimensional transition metal carbides, nitrides, and carbonitrides, have garnered significant attention due to their metallic conductivity, hydrophilicity, and surface‐rich chemistry, offering immense potential across electrochemical energy storage, catalysis, and advanced sensing.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
-      "method_summary": "Moreover, mechanistic insights into ion intercalation and surface functional group evolution are critically analyzed to guide rational design strategies.",
-      "key_metrics": [],
-      "transferable_points": [
-        "提供机器人、可穿戴或电子皮肤系统任务证据"
-      ],
-      "innovation_suggestions": [],
-      "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "可能主要贡献是材料灵敏度，未必能支撑前端触觉计算主线。",
         "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "ABSTRACT MXenes, a burgeoning family of two‐dimensional transition metal carbides, nitrides, and carbonitrides, have garnered significant attention due to their metallic conductivity, hydrophilicity, and surface‐rich chemistry, offering immense potential across electrochemical energy storage, catalysis, and advanced sensing. Achieving precise control over their surface chemistry is pivotal for tailoring physicochemical properties and unlocking application‐specific functionalities. This review comprehensively summarizes recent progress in MXene chemistry modulation via advanced synthesis protocols and post‐synthetic modifications, with an emphasis on surface terminations and interlayer engineering. We discuss the influence of etching conditions, delamination strategies, and intercalation chemistries on the structural and electronic characteristics of MXenes. Moreover, mechanistic insights into ion intercalation and surface functional group evolution are critically analyzed to guide rational design strategies. Key challenges—including batch‐to‐batch variability, limited scalability, and insufficient mechanistic understanding of surface transformations—are also addressed. This review provides a forward‐looking perspective on engineering MXenes with tunable interfaces for next‐generation applications in energy, catalysis, and flexible electronic skin systems.",
+      "source_abstract": "ABSTRACT Conventional laser irradiation of polyimide (PI) films for flexible electrode fabrication is limited by uncontrolled ablation, compromising structural precision and functional integration. Here, a spatially confined, low‐energy laser‐induced direct‐write strategy is reported that enables precise control over carbonization and nanomaterial integration in flexible carbon‐based electrodes. In the proposed sandwich configuration, a PI film is confined between two glass substrates during nanosecond (ns) laser irradiation, governing localized heat absorption and diffusion to achieve controlled graphitization with minimal structural damage. The confinement architecture further facilitates the laser‐induced reduction of a copper (Cu) metal–organic framework (Cu‐MOF) precursor, thereby enabling selective in situ incorporation of electroactive Cu nanoparticles directly into the carbon matrix. Optimization of the confinement geometry and laser parameters yields electrodes comprising highly graphitized, sheet‐like carbon structures with uniformly dispersed spherical Cu nanoparticles, improving both electrical conductivity and surface catalytic activity. The fabricated flexible electrodes are used as nonenzymatic glucose sensors, achieving a wide linear detection range (from 0.25 µ m to 10 m m ), a sensitivity of 2586.1 µA m m −1 cm −2 (0–1 m m ), and a detection limit of 2.72 µ m . Stable electrochemical performance is retained for the fabricated electrodes under repeated mechanical deformation, validating the robustness of this laser‐processing strategy for sensing applications.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-2a2950b7d21dc20f",
-      "detail_json": "data/paper-details/paper-2a2950b7d21dc20f.json"
+      "detail_path": "paper.html?id=paper-4c5a6c54aa986054",
+      "detail_json": "data/paper-details/paper-4c5a6c54aa986054.json"
     },
     {
-      "id": "paper-bbb933a76f89db25",
-      "title": "Enhanced Actuation Stability of Liquid Crystal Elastomer Actuators With Diels–Alder Dynamic Bonds",
+      "id": "paper-f96eabd7a95c7211",
+      "title": "A Self‐Strengthening Hydrogel Coating for Long‐Term Underwater Adhesion in Seawater Over 900 Days",
       "authors": [
-        "Konstantinos Stamatis",
-        "Yoo Jin Lee",
-        "Asaf Dana",
-        "Manivannan Sivaperuman Kalairaj",
-        "Caleb A. Crusco",
-        "Jared A. Gibson",
-        "Sasha M. George",
-        "Svetlana A. Sukhishvili",
-        "Taylor H. Ware"
+        "Guangling He",
+        "Yujie Wang",
+        "Xinhao Liu",
+        "Hao Xu",
+        "Weina Jia",
+        "Yuye Dou",
+        "Lei Dong",
+        "Liangmin Yu"
       ],
-      "venue": "Small",
-      "date": "2026-08-02",
-      "doi": "10.1002/smll.74705",
-      "url": "https://doi.org/10.1002/smll.74705",
+      "venue": "Advanced Materials",
+      "date": "2026-08-04",
+      "doi": "10.1002/adma.74463",
+      "url": "https://doi.org/10.1002/adma.74463",
       "pdf_url": "",
       "pdf_candidates": [
-        "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.74705"
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74463"
       ],
       "local_pdf": "",
       "is_open_access": false,
@@ -745,12 +675,13 @@
         "Crossref"
       ],
       "query_ids": [
-        "venue-small"
+        "venue-advanced-materials"
       ],
-      "category_id": "manufacturing_reliability",
-      "primary_category": "制造、封装与可靠性",
+      "category_id": "flexible_energy",
+      "primary_category": "柔性能源与自供能",
       "categories": [
-        "制造、封装与可靠性"
+        "柔性能源与自供能",
+        "柔性材料与器件"
       ],
       "relevance_level": "related",
       "strongly_related": false,
@@ -768,13 +699,11 @@
       "relevance_reasons": [
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
-      "core_claim": "ABSTRACT Polymeric materials capable of undergoing reversible shape change can be used as soft actuators to create low‐density, compliant machines.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：35.2%、0.5%、213.7 ± 20.1 kPa。",
-      "method_summary": "Herein, we developed LCEs with dynamic crosslinks with well‐separated actuation and processing temperature regimes.",
+      "core_claim": "ABSTRACT Reliable underwater adhesion is a prerequisite for the practical application of hydrogels as underwater coatings.",
+      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：110 kPa。",
+      "method_summary": "To overcome these limitations, a hydrogel coating that achieves persistent underwater adhesion in natural seawater for over 900 days is developed.",
       "key_metrics": [
-        "35.2%",
-        "0.5%",
-        "213.7 ± 20.1 kPa"
+        "110 kPa"
       ],
       "transferable_points": [
         "提供机器人、可穿戴或电子皮肤系统任务证据"
@@ -784,38 +713,38 @@
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
         "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "ABSTRACT Polymeric materials capable of undergoing reversible shape change can be used as soft actuators to create low‐density, compliant machines. Liquid crystal elastomers (LCEs) are a promising class of soft actuators that undergo large, reversible shape change by heating and cooling, but the fabrication of these materials requires molecular alignment to be trapped by crosslinking. LCEs with dynamic crosslinks can dramatically simplify materials processing and allow for reprogramming of the material after synthesis. However, thermally labile dynamic crosslinks can break during actuation, leading to a degradation of actuator performance over time. Herein, we developed LCEs with dynamic crosslinks with well‐separated actuation and processing temperature regimes. Diels–Alder (DA) crosslinks based on 3‐substituted furans are more thermally stable, achieving an actuation strain of 35.2% ± 0.5% and an actuation stress of 213.7 ± 20.1 kPa. These values are higher than those obtained from DA bonds formed with 2‐substituted furans, which have been commonly used in LCE systems with DA crosslinks. The introduction of 3‐substituted furan allowed reversible actuation and improved thermal stability relative to 2‐substituted furan, while maintaining reprogrammability and reprocessability. We leverage the combination of thermal stability and facile reprocessability to create multiple, dynamic diffraction gratings in a single material.",
+      "source_abstract": "ABSTRACT Reliable underwater adhesion is a prerequisite for the practical application of hydrogels as underwater coatings. Despite extensive efforts to enhance adhesion strength, strong initial adhesion does not ensure long‐term adhesion stability. Achieving durable underwater adhesion of hydrogels remains fundamentally challenging due to interfacial hydration and continuous water‐induced network degradation, particularly in complex aqueous environments such as seawater. To overcome these limitations, a hydrogel coating that achieves persistent underwater adhesion in natural seawater for over 900 days is developed. Strong initial adhesion is established across diverse substrates through synergistic interfacial interactions, while network integrity is maintained during prolonged immersion through multiple cooperative intermolecular interactions and continuous quinone‐mediated oxidative crosslinking. Consequently, the hydrogel exhibits persistently low water uptake (≈162 wt% after 900 days), suppresses swelling‐induced deterioration of interfacial adhesion, and maintains a shear adhesion strength of ≈110 kPa after 900 days of seawater immersion. The hydrogel coating also exhibits antibacterial and anti‐algal activity for marine antifouling, underwater superoleophobicity, and applicability as a gel electrolyte for flexible supercapacitors. This work establishes a design principle for achieving long‐term underwater functional hydrogels beyond previously reported time scales and provides a general strategy for developing continuously curing materials in underwater and marine environments.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-bbb933a76f89db25",
-      "detail_json": "data/paper-details/paper-bbb933a76f89db25.json"
+      "detail_path": "paper.html?id=paper-f96eabd7a95c7211",
+      "detail_json": "data/paper-details/paper-f96eabd7a95c7211.json"
     },
     {
-      "id": "paper-a8f58dab18e640c4",
-      "title": "Polymer Substrates for Flexible Sensors: Advances and Contributions to Smart Agriculture",
+      "id": "paper-989c37f92822351a",
+      "title": "An Electrode‐Less Fiber Battery With 600 Wh/L‐Level Volumetric Energy Density Enabled by Dynamic Deposition Chemistry",
       "authors": [
-        "Yihui Li",
-        "Zhangzheng Xiao",
-        "Zheng Yan",
-        "Adnan Raza Altaf",
-        "Qun Song",
-        "Dingding Yao",
-        "Afshan Sohail",
-        "Yixin Wang",
-        "Wenxiu Ma",
-        "Shanjun Li",
-        "Yaohui Chen",
-        "Peiwen Liu"
+        "Longmei Ma",
+        "Kun Zhang",
+        "Zhe Yang",
+        "Yi Jiang",
+        "Siwei Cao",
+        "You Pan",
+        "Chuang Wang",
+        "Qinhao Du",
+        "Shuxian Pang",
+        "Jiaxin Li",
+        "Haixin Yao",
+        "Xiaocheng Gong"
       ],
-      "venue": "Advanced Functional Materials",
-      "date": "2026-08-03",
-      "doi": "10.1002/adfm.77444",
-      "url": "https://doi.org/10.1002/adfm.77444",
+      "venue": "Advanced Materials",
+      "date": "2026-08-04",
+      "doi": "10.1002/adma.74443",
+      "url": "https://doi.org/10.1002/adma.74443",
       "pdf_url": "",
       "pdf_candidates": [
-        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77444"
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74443"
       ],
       "local_pdf": "",
       "is_open_access": false,
@@ -825,11 +754,88 @@
         "Crossref"
       ],
       "query_ids": [
-        "venue-advanced-functional-materials"
+        "venue-advanced-materials"
       ],
-      "category_id": "flexible_materials_devices",
-      "primary_category": "柔性材料与器件",
+      "category_id": "flexible_energy",
+      "primary_category": "柔性能源与自供能",
       "categories": [
+        "柔性能源与自供能",
+        "可穿戴健康与生理监测",
+        "柔性材料与器件"
+      ],
+      "relevance_level": "related",
+      "strongly_related": false,
+      "tracks": [
+        "P1",
+        "P6"
+      ],
+      "relevance_score": 32,
+      "score_breakdown": {
+        "topic_relevance": 31,
+        "evidence_strength": 55,
+        "transferability": 25,
+        "innovation_density": 25,
+        "material_only_penalty": 0
+      },
+      "relevance_reasons": [
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
+      ],
+      "core_claim": "ABSTRACT Aqueous fiber batteries are essential for next‐generation wearable electronics due to their inherent safety, low cost, and environmental friendliness.",
+      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "method_summary": "ABSTRACT Aqueous fiber batteries are essential for next‐generation wearable electronics due to their inherent safety, low cost, and environmental friendliness.",
+      "key_metrics": [],
+      "transferable_points": [
+        "可用于低离散/装配容差触觉界面的结构与对照设计",
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
+      ],
+      "innovation_suggestions": [],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "开放获取 PDF 下载失败：RuntimeError。"
+      ],
+      "source_abstract": "ABSTRACT Aqueous fiber batteries are essential for next‐generation wearable electronics due to their inherent safety, low cost, and environmental friendliness. However, the low volumetric energy density (",
+      "cited_by_count": 0,
+      "decision_hint": "skim",
+      "verification_status": "metadata_abstract_screened",
+      "deep_read_status": "metadata_only_no_legal_pdf",
+      "detail_path": "paper.html?id=paper-989c37f92822351a",
+      "detail_json": "data/paper-details/paper-989c37f92822351a.json"
+    },
+    {
+      "id": "paper-c3972ba564039c81",
+      "title": "Homogenizing Vertical Strain Distribution Enables High‐Performance Tin‐Based Perovskite Solar Cells With Thicker Absorber via Two‐Step Deposition",
+      "authors": [
+        "Wenjian Zhu",
+        "Hongbo Zhou",
+        "Zeyang Deng",
+        "JiaJia Luo",
+        "Gengling Liu",
+        "Licheng Tan",
+        "Yiwang Chen"
+      ],
+      "venue": "Advanced Materials",
+      "date": "2026-08-04",
+      "doi": "10.1002/adma.74441",
+      "url": "https://doi.org/10.1002/adma.74441",
+      "pdf_url": "",
+      "pdf_candidates": [
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74441"
+      ],
+      "local_pdf": "",
+      "is_open_access": false,
+      "paper_type": "journal-article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "Crossref"
+      ],
+      "query_ids": [
+        "venue-advanced-materials"
+      ],
+      "category_id": "flexible_energy",
+      "primary_category": "柔性能源与自供能",
+      "categories": [
+        "柔性能源与自供能",
         "柔性材料与器件"
       ],
       "relevance_level": "related",
@@ -837,21 +843,30 @@
       "tracks": [
         "P6"
       ],
-      "relevance_score": 31,
+      "relevance_score": 30,
       "score_breakdown": {
-        "topic_relevance": 30,
-        "evidence_strength": 55,
+        "topic_relevance": 23,
+        "evidence_strength": 64,
         "transferability": 20,
-        "innovation_density": 25,
+        "innovation_density": 35,
         "material_only_penalty": 0
       },
       "relevance_reasons": [
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
-      "core_claim": "ABSTRACT The advancement of smart agriculture is becoming increasingly dependent on sensor technologies that enable the digitization and optimization of agricultural processes.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。当前未从摘要提取到可比较数值。",
-      "method_summary": "This review provides a comprehensive overview of polymer‐based flexible sensors, focusing on the types of polymer substrates, interface engineering methods, and their applications in agriculture.",
-      "key_metrics": [],
+      "core_claim": "ABSTRACT Owing to typically restricted active layer thickness (∼200 nm), solution‐processed tin‐based perovskite solar cells (TPVSCs) suffer from incomplete photon‐to‐electron conversion, which fundamentally limits power conversion efficiency (PCE).",
+      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：200 nm、15.02%、14.78%、12.43%、0.04 cm。",
+      "method_summary": "ABSTRACT Owing to typically restricted active layer thickness (∼200 nm), solution‐processed tin‐based perovskite solar cells (TPVSCs) suffer from incomplete photon‐to‐electron conversion, which fundamentally limits power conversion efficiency (PCE).",
+      "key_metrics": [
+        "200 nm",
+        "15.02%",
+        "14.78%",
+        "12.43%",
+        "0.04 cm",
+        "13.37%",
+        "1.00 cm",
+        "85%"
+      ],
       "transferable_points": [
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
@@ -860,13 +875,169 @@
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
         "开放获取 PDF 下载失败：RuntimeError。"
       ],
-      "source_abstract": "ABSTRACT The advancement of smart agriculture is becoming increasingly dependent on sensor technologies that enable the digitization and optimization of agricultural processes. Traditional sensors, however, are constrained by their inherent rigidity, poor conformability to irregular surfaces, and limited adaptability to harsh agricultural environments. Flexible sensors, particularly those made from polymer‐based materials, offer substantial advantages due to their lightweight, flexible, and highly sensitive properties. These sensors are key to the performance, stability, and environmental resilience required for sustainable smart agriculture applications. This review provides a comprehensive overview of polymer‐based flexible sensors, focusing on the types of polymer substrates, interface engineering methods, and their applications in agriculture. We discuss how these sensors address agricultural challenges, including their integration with machine learning (ML) to improve data analysis and decision‐making. The review also highlights the ongoing challenges and future opportunities for enhancing the performance of these sensors, including material stability, interface optimization, and large‐scale implementation. Ultimately, this work aims to provide valuable insights and technical guidance for researchers and engineers developing high‐performance, sustainable flexible sensors to advance the frontiers of smart agriculture.",
+      "source_abstract": "ABSTRACT Owing to typically restricted active layer thickness (∼200 nm), solution‐processed tin‐based perovskite solar cells (TPVSCs) suffer from incomplete photon‐to‐electron conversion, which fundamentally limits power conversion efficiency (PCE). Unfortunately, we uncover for the first time that increasing the active layer thickness induces detrimental vertical lattice strain gradient and faster crystallization rate, which exacerbate defect formation and ultimately cause a severe mismatch between electron diffusion length and absorber thickness in the tin‐based perovskite device. To address this, we innovatively introduce reductive 4,4′‐thiobisbenzenethiol (TBBT), whose ‐SH groups can form bidentate coordination with Sn 2+ ions. This interaction can relax Sn‐I bonds, which is beneficial for lattice homogeneity. Concurrently, it retards crystallization kinetics, thus achieving an electron diffusion length commensurate with active layer thickness. Ultimately, the excellent PCEs of 15.02% (certified 14.78%) for rigid devices and 12.43% for flexible devices at 0.04 cm 2 , and 13.37% for rigid devices at 1.00 cm 2 are achieved. Notably, the unencapsulated rigid device retains T 95 of 3500 h shelf storage and T 90 of 684 h under MPP tracking. Meanwhile, the flexible device maintains 85% of its initial PCE after 4000 bending cycles. These results demonstrate that our strategy yields synergistic gains in both efficiency and stability.",
       "cited_by_count": 0,
       "decision_hint": "skim",
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
-      "detail_path": "paper.html?id=paper-a8f58dab18e640c4",
-      "detail_json": "data/paper-details/paper-a8f58dab18e640c4.json"
+      "detail_path": "paper.html?id=paper-c3972ba564039c81",
+      "detail_json": "data/paper-details/paper-c3972ba564039c81.json"
+    },
+    {
+      "id": "paper-142a087a72a1e59b",
+      "title": "Covalent Interfacial Anchoring of 1D‐2D Hybrid Nanofillers to Poly(Vinyl Alcohol) Networks Enables High‐Strength, High‐Stiffness Hydrogel Fibers",
+      "authors": [
+        "Dong Yeop Lee",
+        "Ji Hwan Moon",
+        "Hocheol Gwac",
+        "Gyu Hyeon Song",
+        "Hyunsoo Kim",
+        "Yongwoo Jang",
+        "Changsoon Choi",
+        "Seon Jeong Kim"
+      ],
+      "venue": "Advanced Materials",
+      "date": "2026-08-04",
+      "doi": "10.1002/adma.74421",
+      "url": "https://doi.org/10.1002/adma.74421",
+      "pdf_url": "",
+      "pdf_candidates": [
+        "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74421"
+      ],
+      "local_pdf": "",
+      "is_open_access": false,
+      "paper_type": "journal-article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "Crossref"
+      ],
+      "query_ids": [
+        "venue-advanced-materials"
+      ],
+      "category_id": "soft_robotics_hmi",
+      "primary_category": "软体机器人与人机交互",
+      "categories": [
+        "软体机器人与人机交互",
+        "柔性材料与器件"
+      ],
+      "relevance_level": "related",
+      "strongly_related": false,
+      "tracks": [
+        "P6"
+      ],
+      "relevance_score": 23,
+      "score_breakdown": {
+        "topic_relevance": 11,
+        "evidence_strength": 64,
+        "transferability": 20,
+        "innovation_density": 25,
+        "material_only_penalty": 16
+      },
+      "relevance_reasons": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+      ],
+      "core_claim": "ABSTRACT Hydrogels with high strength, stiffness, and toughness under full hydration are essential for load‐transfer applications such as artificial tendons, ligaments, and soft robotics.",
+      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；材料性能词较多、前端/阵列/系统证据偏少，已降权。摘要可核实数值包括：132 MPa、88%。",
+      "method_summary": "ABSTRACT Hydrogels with high strength, stiffness, and toughness under full hydration are essential for load‐transfer applications such as artificial tendons, ligaments, and soft robotics.",
+      "key_metrics": [
+        "132 MPa",
+        "88%"
+      ],
+      "transferable_points": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
+      ],
+      "innovation_suggestions": [],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "可能主要贡献是材料灵敏度，未必能支撑前端触觉计算主线。",
+        "开放获取 PDF 下载失败：RuntimeError。"
+      ],
+      "source_abstract": "ABSTRACT Hydrogels with high strength, stiffness, and toughness under full hydration are essential for load‐transfer applications such as artificial tendons, ligaments, and soft robotics. Yet achieving such performance remains difficult because conventional polymer networks are intrinsically soft and transfer stress inefficiently. Here, a covalent interfacial anchoring (CIA) strategy is introduced to enable high‐strength, high‐stiffness hydrogel microfibers under full hydration by chemically anchoring carbon nanotubes (CNTs) and graphene oxide (GO) within poly(vinyl alcohol) networks. In this network, CNTs contribute to axial load transfer, whereas GO forms glutaraldehyde‐mediated PVA–GO acetal linkages that suppress nanofiller mobility during deformation and promote efficient stress transfer. The resulting hydrogel fibers achieve tensile strength of 132 MPa, modulus of 1.1 GPa and toughness of 25 MJ m −3 under full hydration and maintain ∼88% displacement after 100 tendon‐mimetic loading cycles. These findings highlight covalent interfacial anchoring as an effective strategy for engineering strong and stiff hydrogel fibers for tendon‐like load‐transfer applications.",
+      "cited_by_count": 0,
+      "decision_hint": "ignore",
+      "verification_status": "metadata_abstract_screened",
+      "deep_read_status": "metadata_only_no_legal_pdf",
+      "detail_path": "paper.html?id=paper-142a087a72a1e59b",
+      "detail_json": "data/paper-details/paper-142a087a72a1e59b.json"
+    },
+    {
+      "id": "paper-9c8ca87a923461ba",
+      "title": "Multi‐Level Crosslinked Structure Fiber Composite Membrane With Multifunctional Properties: High Strength, Flexibility and EMI Shielding",
+      "authors": [
+        "Jianing Guo",
+        "Xudong Ji",
+        "Rumeng Ji",
+        "Mingxing Zhang",
+        "Gao Yan",
+        "Yongzhi Li",
+        "Qinghua Zhao",
+        "Chenguang Yang"
+      ],
+      "venue": "Small",
+      "date": "2026-08-04",
+      "doi": "10.1002/smll.75045",
+      "url": "https://doi.org/10.1002/smll.75045",
+      "pdf_url": "",
+      "pdf_candidates": [
+        "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.75045"
+      ],
+      "local_pdf": "",
+      "is_open_access": false,
+      "paper_type": "journal-article",
+      "venue_quality": "elite_subjournal_or_am_level",
+      "sources": [
+        "Crossref"
+      ],
+      "query_ids": [
+        "venue-small"
+      ],
+      "category_id": "wearable_health",
+      "primary_category": "可穿戴健康与生理监测",
+      "categories": [
+        "可穿戴健康与生理监测",
+        "柔性材料与器件"
+      ],
+      "relevance_level": "related",
+      "strongly_related": false,
+      "tracks": [
+        "P6"
+      ],
+      "relevance_score": 21,
+      "score_breakdown": {
+        "topic_relevance": 11,
+        "evidence_strength": 55,
+        "transferability": 20,
+        "innovation_density": 25,
+        "material_only_penalty": 16
+      },
+      "relevance_reasons": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据",
+        "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+      ],
+      "core_claim": "ABSTRACT Rational structural design remains a key challenge in developing multifunctional membranes with high strength, flexibility, and excellent electromagnetic interference shielding effectiveness (EMI SE).",
+      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；材料性能词较多、前端/阵列/系统证据偏少，已降权。摘要可核实数值包括：50.3 dB、19.7 MPa。",
+      "method_summary": "ABSTRACT Rational structural design remains a key challenge in developing multifunctional membranes with high strength, flexibility, and excellent electromagnetic interference shielding effectiveness (EMI SE).",
+      "key_metrics": [
+        "50.3 dB",
+        "19.7 MPa"
+      ],
+      "transferable_points": [
+        "提供机器人、可穿戴或电子皮肤系统任务证据"
+      ],
+      "innovation_suggestions": [],
+      "risks": [
+        "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
+        "可能主要贡献是材料灵敏度，未必能支撑前端触觉计算主线。",
+        "开放获取 PDF 下载失败：RuntimeError。"
+      ],
+      "source_abstract": "ABSTRACT Rational structural design remains a key challenge in developing multifunctional membranes with high strength, flexibility, and excellent electromagnetic interference shielding effectiveness (EMI SE). Herein, poly(vinyl alcohol‐ co ‐ethylene) (PVA‐ co ‐PE) nanofibers and UHMWPE fibers were used as the base material and the reinforced framework, respectively. The 2D reduced graphene oxide (RGO) and 1D silver nanowires (AgNWs) with a long‐to‐short aspect ratio were introduced into the fiber cross‐network. Then, the obtained composite membrane was cross‐linked with an electron beam (EB) under the action of a crosslinking agent, resulting in high strength, high EMI SE, and multifunctionality. Notably, the obtained membrane exhibited an excellent EMI SE of 50.3 dB, which was attributed to the excellent conductive network formed by the complementary physical forms of conductive fillers, achieving efficient conductive loss and multi‐level reflection loss. Moreover, the synergistic effect of the crosslinked structure and hydrogen bonds largely increased the tensile strength to 19.7 MPa, and its environmental stability had also been significantly improved. Additionally, the obtained membrane also demonstrated outstanding thermal management and flexibly defined the surface saturation temperature. This work had guiding significance for further expanding its application in intelligent wearable electronic products and the thermal therapy fields.",
+      "cited_by_count": 0,
+      "decision_hint": "ignore",
+      "verification_status": "metadata_abstract_screened",
+      "deep_read_status": "metadata_only_no_legal_pdf",
+      "detail_path": "paper.html?id=paper-9c8ca87a923461ba",
+      "detail_json": "data/paper-details/paper-9c8ca87a923461ba.json"
     }
   ],
   "query_log": [
@@ -900,7 +1071,7 @@
       "query": "electronic skin fault tolerant transferable calibration domain adaptation",
       "container_title": "",
       "result_count": 0,
-      "status": "failed"
+      "status": "ok"
     },
     {
       "source": "arxiv",
@@ -955,7 +1126,7 @@
       "query_id": "near-sensor-tactile-computing",
       "query": "near-sensor analog computing tactile sensing electronic skin",
       "container_title": "",
-      "result_count": 1,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -979,7 +1150,7 @@
       "query_id": "neuromorphic-tactile-encoding",
       "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
       "container_title": "",
-      "result_count": 1,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -988,14 +1159,14 @@
       "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
       "container_title": "",
       "result_count": 0,
-      "status": "ok"
+      "status": "failed"
     },
     {
       "source": "arxiv",
       "query_id": "physical-projection",
       "query": "tactile sensor physical computing analog computing programmable projection",
       "container_title": "",
-      "result_count": 0,
+      "result_count": 2,
       "status": "ok"
     },
     {
@@ -1059,7 +1230,7 @@
       "query_id": "tactile-front-end-computing",
       "query": "tactile sensor analog front-end in-sensor computing",
       "container_title": "",
-      "result_count": 0,
+      "result_count": 2,
       "status": "ok"
     },
     {
@@ -1075,7 +1246,7 @@
       "query_id": "tactile-front-end-computing",
       "query": "tactile sensor analog front-end in-sensor computing",
       "container_title": "",
-      "result_count": 0,
+      "result_count": 1,
       "status": "ok"
     },
     {
@@ -1099,7 +1270,7 @@
       "query_id": "tolerance-interface",
       "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
       "container_title": "",
-      "result_count": 0,
+      "result_count": 1,
       "status": "ok"
     },
     {
@@ -1132,14 +1303,14 @@
       "query": "flexible tactile sensor vector shear friction slip direction",
       "container_title": "",
       "result_count": 0,
-      "status": "ok"
+      "status": "failed"
     },
     {
       "source": "crossref",
       "query_id": "venue-acs-nano",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "ACS Nano",
-      "result_count": 0,
+      "result_count": 20,
       "status": "ok"
     },
     {
@@ -1147,7 +1318,7 @@
       "query_id": "venue-advanced-electronic-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Electronic Materials",
-      "result_count": 5,
+      "result_count": 11,
       "status": "ok"
     },
     {
@@ -1155,7 +1326,7 @@
       "query_id": "venue-advanced-energy-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Energy Materials",
-      "result_count": 0,
+      "result_count": 8,
       "status": "ok"
     },
     {
@@ -1163,7 +1334,7 @@
       "query_id": "venue-advanced-fiber-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Fiber Materials",
-      "result_count": 1,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -1171,7 +1342,7 @@
       "query_id": "venue-advanced-functional-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Functional Materials",
-      "result_count": 17,
+      "result_count": 24,
       "status": "ok"
     },
     {
@@ -1179,7 +1350,7 @@
       "query_id": "venue-advanced-healthcare-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Healthcare Materials",
-      "result_count": 7,
+      "result_count": 14,
       "status": "ok"
     },
     {
@@ -1187,7 +1358,7 @@
       "query_id": "venue-advanced-intelligent-systems",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Intelligent Systems",
-      "result_count": 0,
+      "result_count": 1,
       "status": "ok"
     },
     {
@@ -1195,7 +1366,7 @@
       "query_id": "venue-advanced-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Materials",
-      "result_count": 42,
+      "result_count": 37,
       "status": "ok"
     },
     {
@@ -1203,7 +1374,7 @@
       "query_id": "venue-advanced-materials-technologies",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Materials Technologies",
-      "result_count": 4,
+      "result_count": 5,
       "status": "ok"
     },
     {
@@ -1211,7 +1382,7 @@
       "query_id": "venue-advanced-optical-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Optical Materials",
-      "result_count": 6,
+      "result_count": 2,
       "status": "ok"
     },
     {
@@ -1219,7 +1390,7 @@
       "query_id": "venue-advanced-science",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Advanced Science",
-      "result_count": 33,
+      "result_count": 28,
       "status": "ok"
     },
     {
@@ -1227,7 +1398,7 @@
       "query_id": "venue-cell-reports-physical-science",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Cell Reports Physical Science",
-      "result_count": 26,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -1235,7 +1406,7 @@
       "query_id": "venue-communications-chemistry",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Communications Chemistry",
-      "result_count": 3,
+      "result_count": 1,
       "status": "ok"
     },
     {
@@ -1259,7 +1430,7 @@
       "query_id": "venue-communications-physics",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Communications Physics",
-      "result_count": 3,
+      "result_count": 6,
       "status": "ok"
     },
     {
@@ -1267,7 +1438,7 @@
       "query_id": "venue-device",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Device",
-      "result_count": 1,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -1275,7 +1446,7 @@
       "query_id": "venue-infomat",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "InfoMat",
-      "result_count": 1,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -1291,7 +1462,7 @@
       "query_id": "venue-joule",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Joule",
-      "result_count": 4,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -1299,7 +1470,7 @@
       "query_id": "venue-light-science-applications",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Light: Science & Applications",
-      "result_count": 0,
+      "result_count": 6,
       "status": "ok"
     },
     {
@@ -1315,7 +1486,7 @@
       "query_id": "venue-matter",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Matter",
-      "result_count": 1,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -1323,7 +1494,7 @@
       "query_id": "venue-microsystems-nanoengineering",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Microsystems & Nanoengineering",
-      "result_count": 0,
+      "result_count": 2,
       "status": "ok"
     },
     {
@@ -1331,7 +1502,7 @@
       "query_id": "venue-nano-energy",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Nano Energy",
-      "result_count": 74,
+      "result_count": 0,
       "status": "ok"
     },
     {
@@ -1339,7 +1510,7 @@
       "query_id": "venue-nano-letters",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Nano Letters",
-      "result_count": 0,
+      "result_count": 22,
       "status": "ok"
     },
     {
@@ -1355,7 +1526,7 @@
       "query_id": "venue-national-science-review",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "National Science Review",
-      "result_count": 5,
+      "result_count": 6,
       "status": "ok"
     },
     {
@@ -1363,7 +1534,7 @@
       "query_id": "venue-nature",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Nature",
-      "result_count": 11,
+      "result_count": 26,
       "status": "ok"
     },
     {
@@ -1371,7 +1542,7 @@
       "query_id": "venue-nature-biomedical-engineering",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Nature Biomedical Engineering",
-      "result_count": 0,
+      "result_count": 1,
       "status": "ok"
     },
     {
@@ -1379,7 +1550,7 @@
       "query_id": "venue-nature-communications",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Nature Communications",
-      "result_count": 65,
+      "result_count": 90,
       "status": "ok"
     },
     {
@@ -1403,7 +1574,7 @@
       "query_id": "venue-nature-materials",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Nature Materials",
-      "result_count": 2,
+      "result_count": 3,
       "status": "ok"
     },
     {
@@ -1419,7 +1590,7 @@
       "query_id": "venue-nature-sensors",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Nature Sensors",
-      "result_count": 1,
+      "result_count": 3,
       "status": "ok"
     },
     {
@@ -1427,7 +1598,7 @@
       "query_id": "venue-npj-flexible-electronics",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "npj Flexible Electronics",
-      "result_count": 1,
+      "result_count": 2,
       "status": "ok"
     },
     {
@@ -1435,7 +1606,7 @@
       "query_id": "venue-pnas",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Proceedings of the National Academy of Sciences",
-      "result_count": 36,
+      "result_count": 57,
       "status": "ok"
     },
     {
@@ -1443,7 +1614,7 @@
       "query_id": "venue-research",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Research",
-      "result_count": 1,
+      "result_count": 5,
       "status": "ok"
     },
     {
@@ -1483,7 +1654,7 @@
       "query_id": "venue-small",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Small",
-      "result_count": 56,
+      "result_count": 81,
       "status": "ok"
     },
     {
@@ -1491,7 +1662,7 @@
       "query_id": "venue-small-methods",
       "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
       "container_title": "Small Methods",
-      "result_count": 10,
+      "result_count": 14,
       "status": "ok"
     }
   ],
@@ -1503,7 +1674,17 @@
     },
     {
       "source": "semantic_scholar",
+      "query_id": "neuromorphic-tactile-encoding",
+      "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "semantic_scholar",
       "query_id": "tactile-front-end-computing",
+      "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "semantic_scholar",
+      "query_id": "vector-shear-friction-slip",
       "error": "HTTPError: HTTP Error 429: "
     },
     {
@@ -1514,11 +1695,6 @@
     {
       "source": "semantic_scholar",
       "query_id": "physical-projection",
-      "error": "HTTPError: HTTP Error 429: "
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "fault-transfer-calibration",
       "error": "HTTPError: HTTP Error 429: "
     },
     {
@@ -2308,6 +2484,676 @@
   ],
   "profile_proposals": [],
   "reports": [
+    {
+      "date": "2026-08-05",
+      "paper_count": 13,
+      "idea_count": 0,
+      "top_score": 45,
+      "report_markdown": "# 2026-08-05 柔性电子高水平文献日报\n\n## 今日结论\n\n本次从 OpenAlex、Crossref、Semantic Scholar、arXiv 和 Science 官网 RSS 检索最近 3 天结果，去重并排除历史已收录论文后保留 13 篇。\n期刊等级采用硬门槛：仅保留 Nature/Science 旗舰与子刊、Cell 子刊、Advanced Materials/AFM 及明确同等级期刊；预印本、会议论文和普通期刊不进入正式推荐。\n所有柔性电子相关论文均进入分类日报；与 ADC 前模拟触觉、矢量读出、低冗余阵列、物理投影和容错迁移直接相关的论文标为强相关并生成创新建议。\n\n- 今日必看：0 篇\n- 值得追踪：12 篇\n- 新增可评估 idea：0 个\n- 历史重复排除：12 篇\n- 期刊等级排除：14 篇\n- 小类分布：可穿戴健康与生理监测 4 篇；软体机器人与人机交互 3 篇；制造、封装与可靠性 1 篇；柔性材料与器件 1 篇；多模态与生化传感 1 篇；柔性能源与自供能 3 篇\n\n## 今日必看\n\n今日没有达到精读阈值的论文；不要为了凑数把普通高灵敏材料论文推到顶部。\n\n## 其他柔性电子相关论文\n\n| 分类 | 评分 | 论文 | 建议 |\n|---|---:|---|---|\n| 可穿戴健康与生理监测 | 45 | [Soft Double‐Sided Conductive Nanocomposite Tapes for Versatile Assembly of Stretchable Electronics](https://doi.org/10.1002/adfm.77471) | skim |\n| 软体机器人与人机交互 | 41 | [Anisotropic Nanofiber Architectures for Strain‐Insensitive Pressure Sensing and Stretchable Interconnects](https://doi.org/10.1002/aelm.70515) | skim |\n| 可穿戴健康与生理监测 | 39 | [Record Selectivity of SO 2 by Molecularly Gated Sieving Membranes Having Cross‐Scale Mechanically Interlocked Nanofibers](https://doi.org/10.1002/adma.74439) | skim |\n| 可穿戴健康与生理监测 | 38 | [Wafer‐Scale Atomically‐Thin Gold: Transferable Platform for Flexible Optoelectronics, Thermal Management and Bio‐Interfaces](https://doi.org/10.1002/advs.76495) | skim |\n| 制造、封装与可靠性 | 38 | [Temperature‐Regulated Dynamic Phase Reconfiguration of Solid‐Liquid Biphasic Ga‐In Nanoparticles](https://doi.org/10.1002/admt.71220) | skim |\n| 柔性材料与器件 | 35 | [Multifunctional Electrode/Neural Integration Interface Enabling Chronic High‐Fidelity Neural Recording and an Order‐of‐Magnitude Neuromodulation Quality](https://doi.org/10.1002/adma.74519) | skim |\n| 软体机器人与人机交互 | 35 | [Increasing Inter‐Micellar Connectivity Toughens and Imparts Cooling‐Induced Shape Memory in Micellar Hydrogels](https://doi.org/10.1002/adfm.77448) | skim |\n| 多模态与生化传感 | 34 | [Space‐Confined Low‐Power Laser‐Induced Fabrication of Nanoscale‐Cu‐Integrated Flexible Carbon Electrodes for Electrochemical Sensing](https://doi.org/10.1002/admt.71219) | skim |\n| 柔性能源与自供能 | 32 | [A Self‐Strengthening Hydrogel Coating for Long‐Term Underwater Adhesion in Seawater Over 900 Days](https://doi.org/10.1002/adma.74463) | skim |\n| 柔性能源与自供能 | 32 | [An Electrode‐Less Fiber Battery With 600 Wh/L‐Level Volumetric Energy Density Enabled by Dynamic Deposition Chemistry](https://doi.org/10.1002/adma.74443) | skim |\n| 柔性能源与自供能 | 30 | [Homogenizing Vertical Strain Distribution Enables High‐Performance Tin‐Based Perovskite Solar Cells With Thicker Absorber via Two‐Step Deposition](https://doi.org/10.1002/adma.74441) | skim |\n| 软体机器人与人机交互 | 23 | [Covalent Interfacial Anchoring of 1D‐2D Hybrid Nanofillers to Poly(Vinyl Alcohol) Networks Enables High‐Strength, High‐Stiffness Hydrogel Fibers](https://doi.org/10.1002/adma.74421) | ignore |\n\n## 方法与指标速览\n\n| 论文 | 方法（摘要证据） | 可核实数值 | 画像价值 |\n|---|---|---|---|\n| Soft Double‐Sided Conductive Nanocomposite Tapes for Versatile Assembly of Stretchable Electronics | This design enables rapid assembly at room temperature using a “press‐and‐peel” lamination procedure, eliminating the need for surface treatments or thermal bonding. | 4 S | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Anisotropic Nanofiber Architectures for Strain‐Insensitive Pressure Sensing and Stretchable Interconnects | ABSTRACT The rapid advancement of flexible electronics demands materials that combine mechanical compliance, operational stability, and reliable functionality under dynamic mechanical stresses. | 摘要未给出 | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Record Selectivity of SO 2 by Molecularly Gated Sieving Membranes Having Cross‐Scale Mechanically Interlocked Nanofibers | This hierarchically interlocked interface design establishes robust connectivity across dimensional scales, endowing CSMI‐PLA with exceptional mechanical resilience and long‐term sensing‐protective durability. | 99.45%、120 Pa | 涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Wafer‐Scale Atomically‐Thin Gold: Transferable Platform for Flexible Optoelectronics, Thermal Management and Bio‐Interfaces | ABSTRACT The integration of metals into two‐dimensional material architectures is essential for next‐generation electronics, but their high surface energy intrinsically favors three‐dimensional island growth, hindering t | 0.4 nm、86%、15 dB、70 dB | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Temperature‐Regulated Dynamic Phase Reconfiguration of Solid‐Liquid Biphasic Ga‐In Nanoparticles | ABSTRACT Phase evolution in liquid metals (LMs) is fundamental to the structural integrity and electrical reliability of LM‐based flexible conductive materials. | 摘要未给出 | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n| Multifunctional Electrode/Neural Integration Interface Enabling Chronic High‐Fidelity Neural Recording and an Order‐of‐Magnitude Neuromodulation Quality | ABSTRACT Neural electrodes face persistent challenges, including inflammation, biofouling, and impedance, which compromise long‐term recording and stimulation quality. | 摘要未给出 | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| Increasing Inter‐Micellar Connectivity Toughens and Imparts Cooling‐Induced Shape Memory in Micellar Hydrogels | These results present oligomerization as a versatile processing strategy for tuning mechanical and responsive properties of micellar hydrogels. | 摘要未给出 | 涉及 in-sensor/物理计算或可编程触觉前端；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Space‐Confined Low‐Power Laser‐Induced Fabrication of Nanoscale‐Cu‐Integrated Flexible Carbon Electrodes for Electrochemical Sensing | In the proposed sandwich configuration, a PI film is confined between two glass substrates during nanosecond (ns) laser irradiation, governing localized heat absorption and diffusion to achieve controlled graphitization  | 1 cm | 可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准 |\n| A Self‐Strengthening Hydrogel Coating for Long‐Term Underwater Adhesion in Seawater Over 900 Days | To overcome these limitations, a hydrogel coating that achieves persistent underwater adhesion in natural seawater for over 900 days is developed. | 110 kPa | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n| An Electrode‐Less Fiber Battery With 600 Wh/L‐Level Volumetric Energy Density Enabled by Dynamic Deposition Chemistry | ABSTRACT Aqueous fiber batteries are essential for next‐generation wearable electronics due to their inherent safety, low cost, and environmental friendliness. | 摘要未给出 | 可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据 |\n| Homogenizing Vertical Strain Distribution Enables High‐Performance Tin‐Based Perovskite Solar Cells With Thicker Absorber via Two‐Step Deposition | ABSTRACT Owing to typically restricted active layer thickness (∼200 nm), solution‐processed tin‐based perovskite solar cells (TPVSCs) suffer from incomplete photon‐to‐electron conversion, which fundamentally limits power | 200 nm、15.02%、14.78%、12.43%、0.04 cm、13.37%、1.00 cm、85% | 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献 |\n| Covalent Interfacial Anchoring of 1D‐2D Hybrid Nanofillers to Poly(Vinyl Alcohol) Networks Enables High‐Strength, High‐Stiffness Hydrogel Fibers | ABSTRACT Hydrogels with high strength, stiffness, and toughness under full hydration are essential for load‐transfer applications such as artificial tendons, ligaments, and soft robotics. | 132 MPa、88% | 提供机器人、可穿戴或电子皮肤系统任务证据；材料性能词较多、前端/阵列/系统证据偏少，已降权 |\n| Multi‐Level Crosslinked Structure Fiber Composite Membrane With Multifunctional Properties: High Strength, Flexibility and EMI Shielding | ABSTRACT Rational structural design remains a key challenge in developing multifunctional membranes with high strength, flexibility, and excellent electromagnetic interference shielding effectiveness (EMI SE). | 50.3 dB、19.7 MPa | 提供机器人、可穿戴或电子皮肤系统任务证据；材料性能词较多、前端/阵列/系统证据偏少，已降权 |\n\n## 今日创新点候选\n\n## 检索记录\n\n| 来源 | 目标期刊 | 查询 | 命中 | 状态 |\n|---|---|---|---:|---|\n| arxiv | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| crossref | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |\n| openalex | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| semantic_scholar | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |\n| arxiv | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |\n| crossref | - | `electronic skin tactile array compressed readout low channel` | 25 | ok |\n| openalex | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |\n| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |\n| arxiv | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |\n| crossref | - | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |\n| openalex | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |\n| semantic_scholar | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |\n| crossref | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 25 | ok |\n| openalex | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | ok |\n| semantic_scholar | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | failed |\n| arxiv | - | `tactile sensor physical computing analog computing programmable projection` | 2 | ok |\n| crossref | - | `tactile sensor physical computing analog computing programmable projection` | 25 | ok |\n| openalex | - | `tactile sensor physical computing analog computing programmable projection` | 0 | ok |\n| semantic_scholar | - | `tactile sensor physical computing analog computing programmable projection` | 0 | failed |\n| science_official | - | `electronic skin` | 0 | ok |\n| science_official | - | `flexible sensor` | 0 | ok |\n| science_official | - | `haptic sensor` | 0 | ok |\n| science_official | - | `tactile sensor` | 0 | ok |\n| arxiv | - | `tactile sensor analog front-end in-sensor computing` | 2 | ok |\n| crossref | - | `tactile sensor analog front-end in-sensor computing` | 25 | ok |\n| openalex | - | `tactile sensor analog front-end in-sensor computing` | 1 | ok |\n| semantic_scholar | - | `tactile sensor analog front-end in-sensor computing` | 0 | failed |\n| crossref | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |\n| openalex | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 1 | ok |\n| semantic_scholar | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | failed |\n| crossref | - | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |\n| openalex | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |\n| semantic_scholar | - | `flexible tactile sensor vector shear friction slip direction` | 0 | failed |\n| crossref | ACS Nano | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 20 | ok |\n| crossref | Advanced Electronic Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 11 | ok |\n| crossref | Advanced Energy Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 8 | ok |\n| crossref | Advanced Fiber Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Advanced Functional Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 24 | ok |\n| crossref | Advanced Healthcare Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 14 | ok |\n| crossref | Advanced Intelligent Systems | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Advanced Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 37 | ok |\n| crossref | Advanced Materials Technologies | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | Advanced Optical Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 2 | ok |\n| crossref | Advanced Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 28 | ok |\n| crossref | Cell Reports Physical Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Communications Chemistry | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Communications Engineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Communications Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Communications Physics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 6 | ok |\n| crossref | Device | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | InfoMat | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | International Journal of Extreme Manufacturing | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 4 | ok |\n| crossref | Joule | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Light: Science & Applications | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 6 | ok |\n| crossref | Materials Horizons | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Matter | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Microsystems & Nanoengineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 2 | ok |\n| crossref | Nano Energy | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nano Letters | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 22 | ok |\n| crossref | Nano-Micro Letters | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | National Science Review | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 6 | ok |\n| crossref | Nature | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 26 | ok |\n| crossref | Nature Biomedical Engineering | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 1 | ok |\n| crossref | Nature Communications | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 90 | ok |\n| crossref | Nature Electronics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Nature Machine Intelligence | `tactile electronic skin neuromorphic sensor computing robotic perception` | 2 | ok |\n| crossref | Nature Materials | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | Nature Nanotechnology | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | Nature Sensors | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 3 | ok |\n| crossref | npj Flexible Electronics | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 2 | ok |\n| crossref | Proceedings of the National Academy of Sciences | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 57 | ok |\n| crossref | Research | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 5 | ok |\n| crossref | Science | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Science Advances | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Science Robotics | `tactile electronic skin flexible sensor haptic robotic perception` | 0 | ok |\n| crossref | Science Translational Medicine | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 0 | ok |\n| crossref | Small | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 81 | ok |\n| crossref | Small Methods | `flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception` | 14 | ok |\n\n## 数据源异常\n\n- semantic_scholar：7 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。\n\n## 纳入与排除标准\n\n- 纳入：达到期刊等级门槛，且属于柔性/可拉伸/可穿戴/皮肤界面电子、柔性器件、软体机器人、自供能或相关传感系统。\n- 分类：电子皮肤与触觉、可穿戴健康、柔性材料与器件、柔性能源、软体机器人与 HMI、神经形态/传感计算、制造封装与可靠性、多模态生化传感。\n- 强相关：命中阵列读出、矢量/剪切、ADC 前处理、传感计算、校准漂移或跨器件迁移时，额外生成可验证创新建议。\n- 降权但保留：只强调 sensitivity、gauge factor 或材料配方，而缺少读出、阵列、校准、鲁棒性或任务证据。\n- 排除：历史已收录、题录明显偏题、来源元数据不足且无法核实。\n- 可信度边界：本日报首先完成题录/摘要级筛选；数值、机理和优先级需在点击“精读”后核查全文。\n",
+      "query_log": [
+        {
+          "source": "arxiv",
+          "query_id": "fault-transfer-calibration",
+          "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "fault-transfer-calibration",
+          "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "fault-transfer-calibration",
+          "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "fault-transfer-calibration",
+          "query": "electronic skin fault tolerant transferable calibration domain adaptation",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "arxiv",
+          "query_id": "low-redundancy-array",
+          "query": "electronic skin tactile array compressed readout low channel",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "low-redundancy-array",
+          "query": "electronic skin tactile array compressed readout low channel",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "low-redundancy-array",
+          "query": "electronic skin tactile array compressed readout low channel",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "low-redundancy-array",
+          "query": "electronic skin tactile array compressed readout low channel",
+          "container_title": "",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
+          "source": "arxiv",
+          "query_id": "near-sensor-tactile-computing",
+          "query": "near-sensor analog computing tactile sensing electronic skin",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "near-sensor-tactile-computing",
+          "query": "near-sensor analog computing tactile sensing electronic skin",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "near-sensor-tactile-computing",
+          "query": "near-sensor analog computing tactile sensing electronic skin",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "near-sensor-tactile-computing",
+          "query": "near-sensor analog computing tactile sensing electronic skin",
+          "container_title": "",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
+          "source": "crossref",
+          "query_id": "neuromorphic-tactile-encoding",
+          "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "neuromorphic-tactile-encoding",
+          "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "neuromorphic-tactile-encoding",
+          "query": "tactile sensor neuromorphic encoding in-sensor computing robotic perception",
+          "container_title": "",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
+          "source": "arxiv",
+          "query_id": "physical-projection",
+          "query": "tactile sensor physical computing analog computing programmable projection",
+          "container_title": "",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "physical-projection",
+          "query": "tactile sensor physical computing analog computing programmable projection",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "physical-projection",
+          "query": "tactile sensor physical computing analog computing programmable projection",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "physical-projection",
+          "query": "tactile sensor physical computing analog computing programmable projection",
+          "container_title": "",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
+          "source": "science_official",
+          "query_id": "science-official-electronic-skin",
+          "query": "electronic skin",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "science_official",
+          "query_id": "science-official-flexible-sensor",
+          "query": "flexible sensor",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "science_official",
+          "query_id": "science-official-haptic-sensor",
+          "query": "haptic sensor",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "science_official",
+          "query_id": "science-official-tactile-sensor",
+          "query": "tactile sensor",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "arxiv",
+          "query_id": "tactile-front-end-computing",
+          "query": "tactile sensor analog front-end in-sensor computing",
+          "container_title": "",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "tactile-front-end-computing",
+          "query": "tactile sensor analog front-end in-sensor computing",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "tactile-front-end-computing",
+          "query": "tactile sensor analog front-end in-sensor computing",
+          "container_title": "",
+          "result_count": 1,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "tactile-front-end-computing",
+          "query": "tactile sensor analog front-end in-sensor computing",
+          "container_title": "",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
+          "source": "crossref",
+          "query_id": "tolerance-interface",
+          "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "tolerance-interface",
+          "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+          "container_title": "",
+          "result_count": 1,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "tolerance-interface",
+          "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
+          "container_title": "",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
+          "source": "crossref",
+          "query_id": "vector-shear-friction-slip",
+          "query": "flexible tactile sensor vector shear friction slip direction",
+          "container_title": "",
+          "result_count": 25,
+          "status": "ok"
+        },
+        {
+          "source": "openalex",
+          "query_id": "vector-shear-friction-slip",
+          "query": "flexible tactile sensor vector shear friction slip direction",
+          "container_title": "",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "vector-shear-friction-slip",
+          "query": "flexible tactile sensor vector shear friction slip direction",
+          "container_title": "",
+          "result_count": 0,
+          "status": "failed"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-acs-nano",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "ACS Nano",
+          "result_count": 20,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-electronic-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Electronic Materials",
+          "result_count": 11,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-energy-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Energy Materials",
+          "result_count": 8,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-fiber-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Fiber Materials",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-functional-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Functional Materials",
+          "result_count": 24,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-healthcare-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Healthcare Materials",
+          "result_count": 14,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-intelligent-systems",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Intelligent Systems",
+          "result_count": 1,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Materials",
+          "result_count": 37,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-materials-technologies",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Materials Technologies",
+          "result_count": 5,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-optical-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Optical Materials",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-advanced-science",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Advanced Science",
+          "result_count": 28,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-cell-reports-physical-science",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Cell Reports Physical Science",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-communications-chemistry",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Communications Chemistry",
+          "result_count": 1,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-communications-engineering",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Communications Engineering",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-communications-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Communications Materials",
+          "result_count": 1,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-communications-physics",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Communications Physics",
+          "result_count": 6,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-device",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Device",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-infomat",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "InfoMat",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-international-journal-extreme-manufacturing",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "International Journal of Extreme Manufacturing",
+          "result_count": 4,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-joule",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Joule",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-light-science-applications",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Light: Science & Applications",
+          "result_count": 6,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-materials-horizons",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Materials Horizons",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-matter",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Matter",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-microsystems-nanoengineering",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Microsystems & Nanoengineering",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nano-energy",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nano Energy",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nano-letters",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nano Letters",
+          "result_count": 22,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nano-micro-letters",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nano-Micro Letters",
+          "result_count": 5,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-national-science-review",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "National Science Review",
+          "result_count": 6,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nature",
+          "result_count": 26,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature-biomedical-engineering",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nature Biomedical Engineering",
+          "result_count": 1,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature-communications",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nature Communications",
+          "result_count": 90,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature-electronics",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nature Electronics",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature-machine-intelligence",
+          "query": "tactile electronic skin neuromorphic sensor computing robotic perception",
+          "container_title": "Nature Machine Intelligence",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature-materials",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nature Materials",
+          "result_count": 3,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature-nanotechnology",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nature Nanotechnology",
+          "result_count": 3,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-nature-sensors",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Nature Sensors",
+          "result_count": 3,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-npj-flexible-electronics",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "npj Flexible Electronics",
+          "result_count": 2,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-pnas",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Proceedings of the National Academy of Sciences",
+          "result_count": 57,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-research",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Research",
+          "result_count": 5,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-science",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Science",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-science-advances",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Science Advances",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-science-robotics",
+          "query": "tactile electronic skin flexible sensor haptic robotic perception",
+          "container_title": "Science Robotics",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-science-translational-medicine",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Science Translational Medicine",
+          "result_count": 0,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-small",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Small",
+          "result_count": 81,
+          "status": "ok"
+        },
+        {
+          "source": "crossref",
+          "query_id": "venue-small-methods",
+          "query": "flexible tactile electronic skin wearable pressure force strain haptic neuromorphic sensor array readout robotic perception",
+          "container_title": "Small Methods",
+          "result_count": 14,
+          "status": "ok"
+        }
+      ],
+      "source_errors": [
+        {
+          "source": "semantic_scholar",
+          "query_id": "near-sensor-tactile-computing",
+          "error": "HTTPError: HTTP Error 429: "
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "neuromorphic-tactile-encoding",
+          "error": "HTTPError: HTTP Error 429: "
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "tactile-front-end-computing",
+          "error": "HTTPError: HTTP Error 429: "
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "vector-shear-friction-slip",
+          "error": "HTTPError: HTTP Error 429: "
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "low-redundancy-array",
+          "error": "HTTPError: HTTP Error 429: "
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "physical-projection",
+          "error": "HTTPError: HTTP Error 429: "
+        },
+        {
+          "source": "semantic_scholar",
+          "query_id": "tolerance-interface",
+          "error": "HTTPError: HTTP Error 429: "
+        }
+      ]
+    },
     {
       "date": "2026-08-04",
       "paper_count": 11,
@@ -15298,7 +16144,7 @@
     "icon_image2": true
   },
   "stats": {
-    "papers_today": 11,
+    "papers_today": 13,
     "must_read": 0,
     "pending_ideas": 23,
     "pending_proposals": 0,
