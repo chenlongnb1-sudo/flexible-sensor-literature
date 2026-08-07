@@ -1,6 +1,6 @@
 {
   "date": "2026-08-07",
-  "searched_at": "2026-08-07T01:06:35.250333+00:00",
+  "searched_at": "2026-08-07T01:07:12.554437+00:00",
   "search_window_days": 3,
   "query_log": [
     {
@@ -33,7 +33,7 @@
       "query": "electronic skin fault tolerant transferable calibration domain adaptation",
       "container_title": "",
       "result_count": 0,
-      "status": "failed"
+      "status": "ok"
     },
     {
       "source": "arxiv",
@@ -65,7 +65,7 @@
       "query": "electronic skin tactile array compressed readout low channel",
       "container_title": "",
       "result_count": 0,
-      "status": "failed"
+      "status": "ok"
     },
     {
       "source": "arxiv",
@@ -97,7 +97,7 @@
       "query": "near-sensor analog computing tactile sensing electronic skin",
       "container_title": "",
       "result_count": 0,
-      "status": "ok"
+      "status": "failed"
     },
     {
       "source": "crossref",
@@ -241,7 +241,7 @@
       "query": "flexible tactile sensor assembly tolerance response dispersion electrode microstructure",
       "container_title": "",
       "result_count": 0,
-      "status": "failed"
+      "status": "ok"
     },
     {
       "source": "crossref",
@@ -631,6 +631,11 @@
   "source_errors": [
     {
       "source": "semantic_scholar",
+      "query_id": "near-sensor-tactile-computing",
+      "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "semantic_scholar",
       "query_id": "neuromorphic-tactile-encoding",
       "error": "HTTPError: HTTP Error 429: "
     },
@@ -641,33 +646,18 @@
     },
     {
       "source": "semantic_scholar",
-      "query_id": "low-redundancy-array",
-      "error": "HTTPError: HTTP Error 429: "
-    },
-    {
-      "source": "semantic_scholar",
       "query_id": "physical-projection",
       "error": "HTTPError: HTTP Error 429: "
     },
     {
       "source": "arxiv",
       "query_id": "near-sensor-tactile-computing",
-      "error": "TimeoutError: The read operation timed out"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "fault-transfer-calibration",
-      "error": "HTTPError: HTTP Error 429: "
+      "error": "HTTPError: HTTP Error 429: Unknown Error"
     },
     {
       "source": "arxiv",
       "query_id": "low-redundancy-array",
       "error": "TimeoutError: The read operation timed out"
-    },
-    {
-      "source": "semantic_scholar",
-      "query_id": "tolerance-interface",
-      "error": "HTTPError: HTTP Error 429: "
     },
     {
       "source": "arxiv",

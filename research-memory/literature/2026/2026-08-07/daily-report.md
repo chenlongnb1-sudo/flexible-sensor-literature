@@ -50,15 +50,15 @@
 | arxiv | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | failed |
 | crossref | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 25 | ok |
 | openalex | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |
-| semantic_scholar | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | failed |
+| semantic_scholar | - | `electronic skin fault tolerant transferable calibration domain adaptation` | 0 | ok |
 | arxiv | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |
 | crossref | - | `electronic skin tactile array compressed readout low channel` | 25 | ok |
 | openalex | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |
-| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |
+| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |
 | arxiv | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |
 | crossref | - | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |
 | openalex | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |
-| semantic_scholar | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |
+| semantic_scholar | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |
 | crossref | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 25 | ok |
 | openalex | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | ok |
 | semantic_scholar | - | `tactile sensor neuromorphic encoding in-sensor computing robotic perception` | 0 | failed |
@@ -76,7 +76,7 @@
 | semantic_scholar | - | `tactile sensor analog front-end in-sensor computing` | 0 | failed |
 | crossref | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 25 | ok |
 | openalex | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | ok |
-| semantic_scholar | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | failed |
+| semantic_scholar | - | `flexible tactile sensor assembly tolerance response dispersion electrode microstructure` | 0 | ok |
 | crossref | - | `flexible tactile sensor vector shear friction slip direction` | 25 | ok |
 | openalex | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |
 | semantic_scholar | - | `flexible tactile sensor vector shear friction slip direction` | 0 | ok |
@@ -128,8 +128,8 @@
 
 ## 数据源异常
 
-- semantic_scholar：6 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
-- arxiv：5 个查询失败；首个错误为 TimeoutError: The read operation timed out。其余来源已继续运行。
+- semantic_scholar：4 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
+- arxiv：5 个查询失败；首个错误为 HTTPError: HTTP Error 429: Unknown Error。其余来源已继续运行。
 
 ## 纳入与排除标准
 
