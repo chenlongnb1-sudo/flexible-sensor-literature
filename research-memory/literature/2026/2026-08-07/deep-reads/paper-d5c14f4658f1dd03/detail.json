@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "paper-d5c14f4658f1dd03",
+  "title": "Large Language Model‐Driven Throat‐Wearable Sensing System for Real‐Time Recognition and Evaluation of Swallowing Disorders",
+  "authors": [
+    "Zitang Yuan",
+    "Yihan Lin",
+    "Xiyao Zhao",
+    "Qianwang Wang",
+    "Anran Ma",
+    "Mengxian Shen",
+    "Zexin Zhu",
+    "Xinyu Chen",
+    "Aiyun Bai",
+    "Zhaoxu Jing",
+    "Linhong Mo",
+    "Jiangtao Sun"
+  ],
+  "venue": "Advanced Healthcare Materials",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "神经形态与传感计算",
+    "柔性材料与器件"
+  ],
+  "strongly_related": false,
+  "date": "2026-08-05",
+  "doi": "10.1002/adhm.71548",
+  "source_url": "https://doi.org/10.1002/adhm.71548",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-08-07T01:06:35.237535+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Swallowing disorders are a common complication after stroke, yet current assessment methods rely largely on clinical observation and subjective screening, limiting continuous and objective evaluation. Here, we report a large language model (LLM)‐driven throat‐wearable sensing system (TWSS) for real‐time monitoring of laryngeal activity and quantitative assessment of swallowing function. TWSS consists of a flexible sensing patch and a structured signal sequence–based LLM framework (S3‐LLM). The flexible patch integrates a stretchable sensor with a wireless circuit module, enabling conformal attachment to the throat and real‐time acquisition of physiological signals. Owing to its dual sensitivity to pressure and strain, the sensor can capture subtle and complex laryngeal movements associated with different physiological activities. S3‐LLM converts them into structured signal sequences and combines temporal encoding with parameter‐efficient fine‐tuning, thereby exploiting the representation and generalization capabilities of LLMs under few‐shot conditions. In a clinical validation involving 20 participants, TWSS achieved an accuracy of 92.4% for recognizing normal laryngeal activities and 87.6% for evaluating swallowing function, approximately 20% improvement over conventional models. These results demonstrate that TWSS provides a promising wearable platform for continuous, objective, and quantitative assessment of swallowing disorders and highlights the potential for personalized healthcare.",
+    "zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：92.4%、87.6%、20%。"
+  },
+  "innovation_points": [
+    "ABSTRACT Swallowing disorders are a common complication after stroke, yet current assessment methods rely largely on clinical observation and subjective screening, limiting continuous and objective evaluation.",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-08-07/deep-reads/paper-d5c14f4658f1dd03/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
