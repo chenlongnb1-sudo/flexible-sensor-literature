@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "paper-2314223bf1ab720a",
+  "title": "Magnetically Programmable Liquid Metal Composites With Hardware‐Level Bionic Anisotropic Intelligence for Multiplexed Sensing",
+  "authors": [
+    "Yixin Wang",
+    "Jun Dai",
+    "Zilu Hu",
+    "Muhammad Tahir",
+    "Liang He"
+  ],
+  "venue": "Advanced Functional Materials",
+  "primary_category": "软体机器人与人机交互",
+  "categories": [
+    "软体机器人与人机交互",
+    "可穿戴健康与生理监测",
+    "柔性材料与器件"
+  ],
+  "strongly_related": false,
+  "date": "2026-08-10",
+  "doi": "10.1002/adfm.77571",
+  "source_url": "https://doi.org/10.1002/adfm.77571",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-08-12T03:31:48.150001+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Real‐time decoding of multidimensional biomechanical forces is critical for clinical monitoring yet remains challenging. Most conventional flexible sensors are intrinsically isotropic and cannot distinguish directional force vectors. Consequently, they rely on computationally intensive backend algorithms to separate coupled signals, introducing latency and power consumption. Inspired by muscle spindles, we report a biomimetic sensor that achieves signal decoupling directly at the hardware level. We utilized a magnetic programming strategy to align high‐aspect‐ratio CoNi alloy wires within a liquid metal matrix. Density functional theory calculations reveal that oxygen‐mediated interfacial coupling stabilizes this heterostructure while maintaining electrical connectivity. The resulting magnetically ordered architecture exhibits a high mechanical‐to‐electrical anisotropy index of 4.0, with gauge factors reaching 12.77 in the parallel direction. The sensor maintains linearity across a strain range exceeding 200% and demonstrates robust structural integrity over 3000 fatigue cycles. Wearable demonstrations show that the device can physically decode risk‐associated motion patterns without complex algorithmic post‐processing. It maps knee valgus to a distinct temporal feature, T delay (Cohen's d = −5.85), and differentiates plantar shear modes via a spatial anisotropic ratio. This hardware‐enabled feature separability establishes a paradigm for intrinsic multiplexed sensing, enabling immediate, low‐latency wearable diagnostics.",
+    "zh": "涉及低冗余阵列、空间特征或读出通道压缩；涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：200%。"
+  },
+  "innovation_points": [
+    "ABSTRACT Real‐time decoding of multidimensional biomechanical forces is critical for clinical monitoring yet remains challenging.",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-08-12/deep-reads/paper-2314223bf1ab720a/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
