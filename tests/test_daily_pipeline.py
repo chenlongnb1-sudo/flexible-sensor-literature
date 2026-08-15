@@ -459,6 +459,26 @@ class DailyPipelineTests(unittest.TestCase):
         }
         self.assertFalse(is_on_topic(record))
 
+    def test_soft_robotics_application_only_is_not_flexible_electronics(self) -> None:
+        record = {
+            "title": "Starch scaffolds reinforce hydrogel composites",
+            "abstract": (
+                "The material combines rigidity and dissipation for applications ranging "
+                "from soft robotics to biomimetic tissue engineering."
+            ),
+        }
+        self.assertFalse(is_on_topic(record))
+
+    def test_soft_dielectric_for_molecular_electronics_is_not_flexible_device_context(self) -> None:
+        record = {
+            "title": "Self-assembled lipids as soft dielectrics",
+            "abstract": (
+                "Dehydrated lipid assemblies are soft dielectric materials for molecular "
+                "electronics and are measured between rigid gold contacts."
+            ),
+        }
+        self.assertFalse(is_on_topic(record))
+
     def test_bone_skin_does_not_match_eskin(self) -> None:
         record = {
             "title": "Unraveling Bone-Skin Crosstalk for Wound Healing",

@@ -113,7 +113,7 @@ FLEXIBLE_ELECTRONICS_TERMS = (
     "textile sensor", "electronic textile", "e-textile", "smart textile",
     "flexible transistor", "stretchable transistor",
     "flexible electrode", "stretchable electrode", "iontronic", "conformal sensor",
-    "flexible circuit", "stretchable circuit", "soft robotics", "soft robot",
+    "flexible circuit", "stretchable circuit",
 )
 FLEXIBLE_CATEGORY_TERMS: dict[str, tuple[str, tuple[str, ...]]] = {
     "tactile_e_skin": (
@@ -930,7 +930,7 @@ def is_flexible_electronics_record(record: dict[str, Any]) -> bool:
         return True
     flexible_prefix = (
         r"\b(?:flexible|stretchable|wearable|epidermal|conformal|textile|"
-        r"fiber[- ]shaped|skin[- ](?:mounted|interfaced)|soft)\s+"
+        r"fiber[- ]shaped|skin[- ](?:mounted|interfaced))\s+"
         r"(?:[a-z0-9-]+\s+){0,2}"
     )
     if re.search(
@@ -940,6 +940,16 @@ def is_flexible_electronics_record(record: dict[str, Any]) -> bool:
         r"haptic (?:array|device|interface|actuator)|"
         r"battery|batteries|supercapacitor(?:s)?|generator(?:s)?|solar cell(?:s)?|"
         r"bioelectronic(?:s)?)\b",
+        text,
+    ):
+        return True
+
+    # A prospective application in soft robotics is not itself evidence of a
+    # flexible-electronics device. Require an explicit device/system context.
+    if re.search(r"\bsoft robot(?:ics)?\b", text) and re.search(
+        r"\b(?:sensor(?:s|y)?|sensing|electronic(?:s)?|electrical|electrode(?:s)?|"
+        r"circuit(?:s)?|transistor(?:s)?|actuator(?:s)?|haptic|wearable|"
+        r"robotic (?:device|system|skin|gripper|hand))\b",
         text,
     ):
         return True
