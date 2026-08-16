@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15",
+  "updated_at": "2026-08-16",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -847,6 +847,74 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-08-06T01:06:49.127339+00:00"
+    },
+    {
+      "id": "idea-2026-08-16-e29d0451670c",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P1",
+      "title": "把论文中的结构机制转成偏移/旋转/接触半径容差地图",
+      "source": "An Innervated Human Skin Equivalent that Electrically Encodes Mechanical and Thermal Stimuli",
+      "source_papers": [
+        {
+          "paper_id": "paper-57b9ffcd867c19ca",
+          "title": "An Innervated Human Skin Equivalent that Electrically Encodes Mechanical and Thermal Stimuli",
+          "doi": "10.1002/advs.77105",
+          "url": "https://doi.org/10.1002/advs.77105"
+        }
+      ],
+      "hypothesis": "若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。",
+      "minimum_experiment": "在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。",
+      "controls": [
+        "周期电极+常规微结构",
+        "周期电极+HCP",
+        "梯度/非周期电极+常规微结构",
+        "目标结构"
+      ],
+      "success_metrics": [
+        "CV",
+        "shift sensitivity",
+        "rotation sensitivity",
+        "contact-radius sensitivity",
+        "signal void ratio"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-16T01:11:27.189215+00:00"
+    },
+    {
+      "id": "idea-2026-08-16-23746e3e9235",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "An Innervated Human Skin Equivalent that Electrically Encodes Mechanical and Thermal Stimuli",
+      "source_papers": [
+        {
+          "paper_id": "paper-57b9ffcd867c19ca",
+          "title": "An Innervated Human Skin Equivalent that Electrically Encodes Mechanical and Thermal Stimuli",
+          "doi": "10.1002/advs.77105",
+          "url": "https://doi.org/10.1002/advs.77105"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-16T01:11:27.189227+00:00"
     }
   ]
 }

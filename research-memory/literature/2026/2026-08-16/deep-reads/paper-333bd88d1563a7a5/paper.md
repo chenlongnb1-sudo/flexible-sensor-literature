@@ -1,0 +1,514 @@
+# Air-Processed and Water-Stable Perovskite Solar Cells Enabled by a Fishing-Net-Inspired Interfacial Network
+
+- 期刊：Nano-Micro Letters
+- 日期：2026-07-17
+- DOI：10.1007/s40820-026-02295-5
+- 解析状态：fulltext_draft
+
+## 摘要与研究价值
+
+**Original:** Abstract Practical deployment of perovskite solar cells is hindered by fragile interfaces that accelerate degradation under moisture, heat, ion migration, and mechanical stress, particularly during ambient processing. Here, we introduce a fishing-net-inspired interfacial molecular network that imparts intrinsic durability through coordination chemistry and interfacial dipole engineering. The metal-anchored hierarchical network integrates transition metal nodes, rigid small-molecule frameworks, and dense amine-functionalized polymer sub-networks into a netlike architecture that enhances charge extraction while suppressing bidirectional ion migration. Devices incorporating this interlayer achieve power conversion efficiencies of 26.19% (1.53 eV), 24.11% (1.61 eV), and 20.00% (1.77 eV), with open-circuit voltages and fill factors all exceeding 90% of the Shockley–Queisser radiative limit. Notably, this performance is maintained even in wide-bandgap flexible devices. Flexible perovskite solar cells fabricated entirely under ambient air achieve 23.03% efficiency and retain 95% of their initial performance after 10,000 bending cycles. Moreover, the devices exhibit suppressed degradation during direct water immersion and reach a T95 exceeding 2000 h under ambient conditions without encapsulation, establishing a broadly applicable interfacial design strategy for durable optoelectronics.
+
+**中文:** 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：26.19%、24.11%、20.00%、90%、23.03%。
+
+## 创新点
+
+- Abstract Practical deployment of perovskite solar cells is hindered by fragile interfaces that accelerate degradation under moisture, heat, ion migration, and mechanical stress, particularly during ambient processing.
+- 与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献
+
+## 对当前课题的启发
+
+- 提供机器人、可穿戴或电子皮肤系统任务证据
+
+## 制备与实验步骤
+
+### 1. 制备与实验操作
+
+**Source:** p.1
+
+**Original:** solar cells fabricated entirely under ambient air achieve 23.03% efficiency and retain 95% of their initial performance after 10,000 bending cycles.
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.1 原文为准。
+
+### 2. 组装与封装
+
+**Source:** p.1
+
+**Original:** without encapsulation, establishing a broadly applicable interfacial design strategy for durable optoelectronics.
+
+**中文:** 组装与封装步骤，关键配比、时间、温度和设备参数以 p.1 原文为准。
+
+### 3. 组装与封装
+
+**Source:** p.2
+
+**Original:** Once encapsulation integrity is compromised, however, device degradation typically accelerates rapidly, exposing the absence of genuine material-level interfacial protection.
+
+**中文:** 组装与封装步骤，关键配比、时间、温度和设备参数以 p.2 原文为准。
+
+### 4. 制备与实验操作
+
+**Source:** p.2
+
+**Original:** Here, we introduce a metal-anchored molecular inter-net concept, inspired by the architecture of a fishing net, that integrates coordination chemistry and interfacial dipole engineering to directly address humidity-induced interfacial degradation in perovskite devices fabricated under ambient air conditions.
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.2 原文为准。
+
+### 5. 组装与封装
+
+**Source:** p.2
+
+**Original:** State-of-the-art stability demonstrations consequently rely on extrinsic encapsulation strategies, including epoxy
+
+**中文:** 组装与封装步骤，关键配比、时间、温度和设备参数以 p.2 原文为准。
+
+### 6. 制备与实验操作
+
+**Source:** p.3
+
+**Original:** 2.2 Preparation of NiOx Nanoparticles, Metal Complexes, and Perovskite Precursor Solution Nickel nitrate hexahydrate (Ni(NO3)2·6H2O) and sodium hydroxide (NaOH) were used as received without further purification.
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 7. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** Ni(NO3)2·6H2O (1.85 mg) was dissolved in deionized water, and a 10 M aqueous NaOH solution was added dropwise until the pH reached approximately 10.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 8. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** The resulting mixture was stirred at room temperature for 1 h, during which nickel hydroxide (Ni(OH)2) was formed in situ via a chemical co-precipitation reaction between aqueous nickel nitrate and the basic solution.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 9. 制备与实验操作
+
+**Source:** p.3
+
+**Original:** 2.2.2 Metal Complex Preparation
+
+**中文:** 制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 10. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** 0.5 mg mL−1 (1.40 mM) BCP was dissolved in IPA and stirred overnight at RT to completely dissolve BCP, namely solution A.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 11. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** Separately, 5 mg of CuCl2 (1.86 mM) was dissolved in 20 mL of IPA and stirred at RT for 15 min using a magnetic stirrer (500 rpm) until fully dissolved.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 12. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** The CuCl2 solution (5 µL) was added dropwise to the 20 mL of 0.5 mg mL−1 BCP solution (molar ratio 1:149) under continuous stirring at 40 °C.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 13. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** The mixture was stirred at 40 °C for 2 h to allow Cu2⁺ to coordinate with the nitrogen atoms of BCP’s phenanthroline backbone, forming the [Cu(BCP)]2⁺ intermediate.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 14. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** To form Cu(BCP) (PEIE), 0.025 wt% of PEIE solution was added to the mixed solution.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 15. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** The mixture was stirred at 40 °C for 4 h to allow the amine groups of PEIE to coordinate with the remaining coordination sites of Cu2⁺.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+### 16. 材料混合与分散
+
+**Source:** p.3
+
+**Original:** The FA0.95Cs0.05PbI3 precursor solution was synthesized by dissolving a mixture comprising 18.2 mg of CsI, 228.4 mg of FAI, and 661.5 mg of PbI2 in a solvent mixture consisting of 800 µL of DMF and 200 µL of DMSO, resulting in a 1.4 M solution with a 2.5% molar excess of PbI2 relative to the stoichiometric ratio.
+
+**中文:** 材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.3 原文为准。
+
+## 方法原文锚点
+
+<a id="M001"></a>
+**Source:** p.1 M001
+
+**Original:** solar cells fabricated entirely under ambient air achieve 23.03% efficiency and retain 95% of their initial performance after 10,000 bending cycles.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M002"></a>
+**Source:** p.1 M002
+
+**Original:** without encapsulation, establishing a broadly applicable interfacial design strategy for durable optoelectronics.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M003"></a>
+**Source:** p.2 M003
+
+**Original:** sealants or inorganic barrier layers [17, 18], to meet ISOS standard testing protocols [19]. Once encapsulation integrity is compromised, however, device degradation typically accelerates rapidly, exposing the absence of genuine material-level interfacial protection. This limitation is particularly severe for flexible and air-processed PSCs, which are essential for scalable manufacturing but are inherently more vulnerable to environmental stress [20–22]. The absence of intrinsic, humidity-resistant interfacial designs that remain compatible with ambient air processing thus represents a critical and unresolved gap in the field. Beyond conventional solar harvesting, PSCs hold immense promise as ubiquitous power sources for the Internet of Things (IoT) sensors under low light. More ambitiously, PSCs could power sensors in smart agriculture and aquaculture, monitoring parameters like water temperature, ion concentration, or nutrient levels in real time [23, 24]. However, such emerging applications impose much stricter demands on stability— requiring operation under water immersion, high salinity, and fluctuating thermal conditions [25]. To date, only a handful of studies have tackled these extremes, often employing passivation techniques such as organic ammonium salts or polymeric coatings to stabilize the perovskite surface [26]. Fundamental material-level innovations that intrinsically enhance humidity and moisture stability while preserving high efficiency remain scarce, particularly in air-processed, flexible devices suitable for scalable manufacturing. Here, we introduce a metal-anchored molecular inter-net concept, inspired by the architecture of a fishing net, that integrates coordination chemistry and interfacial dipole engineering to directly address humidity-induced interfacial degradation in perovskite devices fabricated under ambient air conditions. In a representative ternary implementation, Cu2⁺ ions act as anchoring nodes, bathocuproine (BCP) forms rigid molecular frameworks, and amine-rich polymers create dense sub-networks, collectively suppressing bidirectional ion migration and oxidative degradation while enhancing charge extraction and hydrophobicity. This strategy is generalizable to other transition metal anchors and amine-functionalized
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M004"></a>
+**Source:** p.2 M004
+
+**Original:** Halide perovskite solar cells (PSCs) have transformed photovoltaics, achieving power conversion efficiencies (PCEs) exceeding 26%, rivaling crystalline silicon [1–3]. However, commercialization remains limited by poor stability, particularly humidity-induced interfacial degradation, one of the most practically limiting yet under-addressed failure mechanisms, especially under ambient air conditions essential for scalable manufacturing [4–8]. The electron transporting layer (ETL)/ cathode interface is particularly critical, governing charge extraction, recombination losses, and long-term contact stability. Effective interfacial layers must simultaneously enable efficient electron transport, suppress non-radiative recombination, and provide intrinsic resistance to moisture and oxygen ingress, requirements that remain challenging to achieve simultaneously within a unified material design [8–10]. Conventional cathode interlayers—ranging from inorganic materials like SnO2 [11] or bismuth [12], phenanthroline-based small molecules (e.g., bathocuproine (BCP)) [13, 14], single- or double-layer structures [15], to surface treatments using dipole-controlled polymers—have addressed subsets of these requirements. However, these approaches share a fundamental limitation of predominantly targeting individual degradation mechanisms and offer little intrinsic resistance to humidity-induced interfacial failure. BCP-based interlayers are susceptible to crystallization and delamination under humidity, dipole-engineered polymers lack structural robustness under continuous moisture exposure, and inorganic interlayers are incompatible with ambient processing and flexible substrates. Although Cu2⁺-based coordination chemistry has shown promise on the hole transporting layer side of n-i-p devices [16], its application at the ETL/cathode interface of p-i-n architectures remains largely unexplored. These shortcomings are most acute under airprocessed conditions and on flexible substrates, representing a critical unresolved gap for scalable manufacturing. State-of-the-art stability demonstrations consequently rely on extrinsic encapsulation strategies, including epoxy
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M005"></a>
+**Source:** p.3 M005
+
+**Original:** 2.2 Preparation of NiOx Nanoparticles, Metal Complexes, and Perovskite Precursor Solution
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M006"></a>
+**Source:** p.3 M006
+
+**Original:** Nickel nitrate hexahydrate (Ni(NO3)2·6H2O) and sodium hydroxide (NaOH) were used as received without further purification. Ni(NO3)2·6H2O (1.85 mg) was dissolved in deionized water, and a 10 M aqueous NaOH solution was added dropwise until the pH reached approximately 10. The resulting mixture was stirred at room temperature for 1 h, during which nickel hydroxide (Ni(OH)2) was formed in situ via a chemical co-precipitation reaction between aqueous nickel nitrate and the basic solution. The Ni(OH)2 precipitate was subsequently collected, thoroughly washed, and freezedried for 24 h. The dried powder was then calcined at 270 °C for 2 h to obtain black powder NiOx nanoparticles.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M007"></a>
+**Source:** p.3 M007
+
+**Original:** 2.2.2 Metal Complex Preparation
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M008"></a>
+**Source:** p.3 M008
+
+**Original:** 0.5 mg mL−1 (1.40 mM) BCP was dissolved in IPA and stirred overnight at RT to completely dissolve BCP, namely solution A. Separately, 5 mg of CuCl2 (1.86 mM) was dissolved in 20 mL of IPA and stirred at RT for 15 min using a magnetic stirrer (500 rpm) until fully dissolved. Next, the solute CuCl2 (solution B) was filtered through a 0.22 µm PTFE syringe filter to remove any particulate impurities. The CuCl2 solution (5 µL) was added dropwise to the 20 mL of 0.5 mg mL−1 BCP solution (molar ratio 1:149) under continuous stirring at 40 °C. The mixture was stirred at 40 °C for 2 h to allow Cu2⁺ to coordinate with the nitrogen atoms of BCP’s phenanthroline backbone, forming the [Cu(BCP)]2⁺ intermediate. To form Cu(BCP) (PEIE), 0.025 wt% of PEIE solution was added to the mixed solution. The mixture was stirred at 40 °C for 4 h to allow the amine groups of PEIE to coordinate with the remaining coordination sites of Cu2⁺.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M009"></a>
+**Source:** p.3 M009
+
+**Original:** The FA0.95Cs0.05PbI3 precursor solution was synthesized by dissolving a mixture comprising 18.2 mg of CsI, 228.4 mg of FAI, and 661.5 mg of PbI2 in a solvent mixture consisting of 800 µL of DMF and 200 µL of DMSO, resulting in a 1.4 M solution with a 2.5% molar excess of PbI2 relative to
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M010"></a>
+**Source:** p.4 M010
+
+**Original:** the stoichiometric ratio. The solutions were stirred at 60 °C for 2 h and filtered using a 0.45-µm polytetrafluoroethylene membrane before use.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M011"></a>
+**Source:** p.4 M011
+
+**Original:** The FA0.88Cs0.12PbI2.64Br0.36 perovskite precursor solution was comprised of 301 mg of FAI, 53.2 mg of CsBr, 806.8 mg of PbI2, 91.8 mg of PbBr2 in 1050 µL DMF, and 150 µL DMSO. The solutions were stirred at 60 °C for 2 h and filtered using a 0.45-µm polytetrafluoroethylene membrane before use.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M012"></a>
+**Source:** p.4 M012
+
+**Original:** speed was 1000 rpm for 3 s and the second step at 5000 rpm for 40 s. During the spin-coating process, 100 µL of anisole antisolvent was dripped onto the wetted film 5 s before the end of the process and then annealed at 100 °C for 15 min. Afterward, 50 µL of PEAI solution (3 mg mL−1 in IPA) was spin-coated (5000 rpm) on top of the top perovskite film and annealed for 2 min. The electron transport layer of PCBM (20 mg mL−1 in CB) was spin-coated at 2000 rpm for 30 s and annealed at 100 °C for 10 min. The device was cooled down for 5 min. The BCP (0.5 mg mL−1 in IPA) or Cu(BCP) (PEIE) solution was subsequently spin-coated at 4000 rpm for 20 s and annealed at 100 °C for 5 min. Finally, a 100-nmthick Ag electrode was deposited by thermal evaporation (< 4 × 10−6 Torr).
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M013"></a>
+**Source:** p.4 M013
+
+**Original:** 2.3.2 Fabrication of Flexible PSCs
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M014"></a>
+**Source:** p.4 M014
+
+**Original:** The 1.4 M FA0.8Cs0.2Pb(I0.6Br0.4)3 WBG perovskite precursors were prepared by dissolving 72.74 mg of CsI, 192.64 mg of formamidine hydroiodide (FAI), 268.15 mg of PbI2, and 308.28 mg of PbBr2 in 1 mL of a mixed solvent of DMF and DMSO in a 4:1 volume ratio. The solutions were stirred at 40 °C for 2 h and filtered using a 0.45-µm polytetrafluoroethylene membrane before use.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M015"></a>
+**Source:** p.4 M015
+
+**Original:** 2.3 Device Fabrication
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M016"></a>
+**Source:** p.4 M016
+
+**Original:** 2.3.1 Fabrication of Rigid PSCs
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M017"></a>
+**Source:** p.4 M017
+
+**Original:** For the flexible device, the complete architecture is PET(ITO)/NiOx nanoparticles/MeO-4PACz/perovskite/ PEAI/PCBM/buffer layer/Ag. The PET/ITO substrates were pre-cleaned in subsequent deionized water (DIW), acetone, and IPA for 10 min, respectively. Next, the substrates were dried at 100 °C and treated with UV–ozone for 10 min, and NiOx nanoparticle solution (10 mg mL−1) in mixed DIW:IPA (9:1 v/v) was spin-coated at 3000 rpm for 30 s, followed by thermal annealing at 100 °C for 10 min. Afterward, MeO-4PACz solution was spin-coated at 3000 rpm for 30 s, followed by annealing at 100 °C for 10 min. The perovskite film coating’s recipe was the same for both flexible and rigid substrates. After perovskite film coating, PCBM was dynamically spin-coated, annealed at 100 °C for 10 min, followed by buffer layer coating. Finally, the 100 nm Ag electrode was thermally evaporated on top of the buffer layer.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M018"></a>
+**Source:** p.4 M018
+
+**Original:** 2.3.3 Fabrication of Air‑Processed Flexible and Rigid PSCs
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M019"></a>
+**Source:** p.4 M019
+
+**Original:** ITO-patterned substrates were first sonicated in a solution containing acetone and IPA for 10 min each before being dried at 100 °C for one hour. After extensive cleaning, ITO substrates underwent a 1000 s UV–ozone treatment. 4PADCB (0.5 mg mL−1) was dissolved in anhydrous ethanol and deposited by spin-coating at 3000 revolutions per minute (rpm) for 30 s, followed by annealing at 100 °C for 10 min. The perovskite layer was spin-coated at 1000 rpm for 3 s and then at 4000 rpm for 20 s. At 8 s before the end of the program, 200 µL of ethyl acetate was quickly dropped onto the substrate, and then, the films were annealed at 100 °C for 20 min. For the 1.53 eV FA0.95Cs0.05PbI3 perovskite, the coating recipe was 1000 rpm for 10 s and the second step at 4000 rpm for 40 s. During the spin-coating process, 100 µL of CB antisolvent was dripped onto the wetted film 10 s before the end of the process and then annealed at 100 °C for 30 min. For the wide-bandgap 1.77 eV perovskite, the spin
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M020"></a>
+**Source:** p.5 M020
+
+**Original:** was performed in ambient air (outside glovebox) at 18–25 °C and 30–50% RH. The spin-coating recipe for all layers was same for those devices fabricated in inert control environment.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M021"></a>
+**Source:** p.5 M021
+
+**Original:** performed on a Helios 5 CX dual-beam microscope equipped with a cryogenic system. The sample for TEM measurement was prepared after 48 h of thermal treatment at 100 °C. The time-of-flight secondary ion mass spectrometry (ToF–SIMS) for compositional depth profiling of perovskite solar cells was carried out using ToF–SIMS M6 system from IONTOF, operated in the spectral mode using LMIG, 30 keV Bi3+ ion beam with ion current 0.55 pA. For depth profiling, a 2-keV Cs+ sputter beam with a current of 50 nA was used to remove material layer by layer in interlaced mode. Ultraviolet photoelectron spectroscopy (UPS) with a He I source (21.2 eV) was used to investigate the work functions of the device with different buffer layers. The EIS measurement was taken with an AC impedance analyzer Compactstat electrochemical interface (IVIUM Technologies) in the frequency range from 100 to 1 MHz, with a perturbation amplitude of 0.1 V and a bias voltage close to Voc under AM dark conditions.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M022"></a>
+**Source:** p.5 M022
+
+**Original:** 3.1 Chemical Design of Mixed‑Ligand Complexes
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M023"></a>
+**Source:** p.5 M023
+
+**Original:** Owing to their vacant d-orbitals, Cu2⁺ ions exhibit strong coordination tendencies with donor atoms, enabling the formation of stable complexes through interactions with nitrogen, oxygen, or sulfur sites [28]. In this system, Cu2⁺ coordinates preferentially with the nitrogen functionalities of BCP and PEIE (polyethylenimine ethoxylated), while PEIE further contributes amino and ethoxyl groups, thereby reinforcing the coordination network and enhancing the chemical robustness and interfacial integrity of the modified layer. Upon the addition of CuCl2 to BCP, Cu2⁺ coordinates to the pyridine-type nitrogen atoms of BCP, yielding Cu(BCP)2+ complexes. Subsequent introduction of PEIE results in strong chelation of Cu2⁺ by its primary and secondary amine groups, forming a ternary Cu(BCP)(PEIE) complex (Fig. 1a). The mixed-ligand environment stabilizes the Cu coordination center and enables synergistic modulation of the complex electronic structure. The formation of such complexes is visually evident in the solution color changes (Fig. 1b). Solutions of pristine BCP and CuCl2 are colorless and pale yellow, respectively. The Cu(BCP)2+ complex exhibits an orange hue, which intensifies further upon the addition of PEIE to form Cu(BCP)(PEIE). These color transitions reflect new
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M024"></a>
+**Source:** p.5 M024
+
+**Original:** The current density–voltage (J–V) curves were characterized in ambient air using a Keithley 2400 A source with SimuLight PLS300 under AM 1.5 G simulated illumination of 100 Mw cm−2. The light intensity at each wavelength was calibrated using a standard monocrystalline Si photovoltaic cell (K801S-K073). Device measurements were taken at a scan speed of 100 mV/s. The illumination area of the devices was 0.048 cm2, defined by a shadow mask coated with black paint. All characterizations were performed in ambient air with a relative humidity of approximately 30–50%. For indoor photovoltaic device performance measurements, a warm white LED lamp (2700 K) was utilized. The stabilized output of the devices was achieved by measuring the power output of the illuminated device at a constant current close to the maximum power point derived from the J–V curve. The active area for the indoor light measurement was similar to that of a 1 sun illumination J–V sweep. The air storage stability was measured periodically at the relative humidity of 20–45% and temperature ranging from 20–30 °C. For photostability evaluation, the devices underwent continuous light exposure at 100 mW cm−2 (equivalent to 1 sun) using a Solar Cell Reliability Test System (K3600, McScience). The J–V characteristics of each device were measured at designated intervals to track performance throughout the exposure duration. To investigate the charge recombination mechanism, photo-CELIV curves were measured at different light intensities. The Pb and Cs leakage after water immersion was measured using an inductively coupled plasma–mass spectrometer (ICP–MS, Agilent 7850). The optical absorbance and transmittance spectra were measured using a UV–Vis spectrophotometer (Varian, Cary5000). The surface-wetting behavior was measured using an SEO Phoenix-300 contact angle analyzer. The surface morphology of films was observed by atomic force microscopy (AFM) (Park, NX10 AFM). The field-emission scanning electron micrographs were obtained with a JIB-4601F (JEOL). The scanning transmission electron microscopy (STEM) was conducted at 200 kV using JEMARM 200F equipment, and the sample preparations were
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M025"></a>
+**Source:** p.6 M025
+
+**Original:** electronic interactions, consistent with ligand-to-metal charge transfer commonly observed in Cu2⁺ coordination complexes [29, 30]. UV–Vis absorption spectra further support this coordination process (Fig. 1c). While pristine BCP displays its characteristic π–π* transitions (peaks at around 340–350 nm), the Cu(BCP)2+ and Cu(BCP)(PEIE) solutions show additional absorption shoulders in the visible region (470 nm), which can be attributed to Cu–N charge transfer interactions [31, 32]. The slight redshift and increased intensity observed in Cu(BCP)(PEIE) relative to Cu(BCP) imply stronger ligand field stabilization due to the synergistic chelation effect of the metal complex with amine-containing polymers, e.g., polyethylenimine [33]. X-ray photoelectron spectroscopy (XPS) provides more direct evidence for the coordination mechanism. Figure 1d exhibits the N 1s core-level spectrum of pristine BCP
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M026"></a>
+**Source:** p.6 M026
+
+**Original:** Fig. 1 Proposed reaction mechanism of mixed-ligand complexes. a Cu(BCP)(PEIE) complexation. b Photographs of precursor solutions (BCP, CuCl2, Cu(BCP)2+, Cu(BCP)(PEIE)) upon complex formation. c Absorbance profile of different solutions. d XPS N 1s spectra of BCP and Cu(BCP)(PEIE). e XPS Cu 2p spectrum of Cu(BCP)(PEIE) confirming the presence of Cu element
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M027"></a>
+**Source:** p.7 M027
+
+**Original:** observed at ~ 930 eV is consistent with Cu in the divalent oxidation state, in agreement with literature values for Cu2⁺ in nitrogen-coordinated complexes [36]. The reduced satellite intensity relative to uncoordinated CuCl2 is attributed to strong covalent back-donation from the BCP and PEIE nitrogen donors into the Cu d-orbital manifold, which partially quenches the ligand-to-metal charge transfer transitions responsible for shake-up excitations. This coordination-induced satellite suppression reflects the strength of the Cu2⁺–ligand interaction within the mixedligand chelate network and indicates the formation of a Cu(BCP)(PEIE) chelate, where BCP and PEIE function as complementary ligands. This cooperative binding is anticipated to suppress interfacial defect states, improve energy-level alignment, and strengthen the chemical stability of the electron transport interface in inverted perovskite solar cells.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M028"></a>
+**Source:** p.7 M028
+
+**Original:** interfacial degradation in the absence of an interlayer, with Ag penetrating deeply into the perovskite absorber. In BCP-buffered devices, an edge-thickened Ag electrode is observed, indicating downward Ag diffusion toward the perovskite, accompanied by substantial redistribution of iodide species from the perovskite layer (Fig. S2). This bidirectional elemental intermixing reflects severe interfacial ion migration under combined thermal and moisture stress. By contrast, devices incorporating the Cu(BCP)(PEIE) interlayer exhibit effectively suppressed Ag diffusion and halide migration, maintaining abrupt interfaces and spatially uniform elemental distributions. To further substantiate these findings, TOF–SIMS depth profiling was performed to provide quantitative, layerresolved analysis of ion migration across the device stack. As depicted in Fig. S3, the depth profiles of the BCPbased aged device reveal that I⁻ secondary ion signals extend continuously throughout the entire layer sequence, confirming that thermal aging drives pervasive crosslayer ion migration from the perovskite absorber into metallic electrode. In the Cu(BCP)(PEIE)-based device, the I⁻ profile shows a steep gradient that terminates at the Cu(BCP)(PEIE)/PCBM interface, demonstrating that the interlayer acts as an effective physicochemical barrier against halide migration. The devices were further subjected to XPS analysis after degradation test at ambient air (RH ~ 30%) for 48 h at RT and 100 ℃, as shown in Fig. 2c. For the no-buffer-layer devices, the binding energy downshifts by ~ 0.5 eV relative to the pristine sample. This negative binding energy shift suggests the formation of under-coordinated Pb after thermal stress following halide loss and subsequent electronic redistribution. The concurrent increase in integrated Pb 4f area (Table S1) reflects the accumulation of these undercoordinated Pb products at the film surface, consistent with well-established degradation pathways [37]. By contrast, the Cu(BCP)(PEIE)-modified samples retain low Pb 4f intensity and negligible binding energy shifts (< 0.1 eV) even after annealing at 100 °C. This persistence of low signal intensity indicates that the interlayer prevents the accumulation of iodine loss-induced under-coordination of Pb and maintains the chemical environment of Pb2⁺ against thermal stress. Similar trends were observed in the XPS analysis of the I 3d spectra (Fig. S4 and Table S2). In the no-buffer case, Ag reacts with PCBM and mobile halides, producing Ag–I species that appear as clear binding energy downshifts after
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M029"></a>
+**Source:** p.9 M029
+
+**Original:** achieves the highest positive value at 70 °C (+ 179.26 mV). This indicates superior thermal responsiveness, the lowest effective work function after moderate thermal annealing, and more efficient surface trap reduction compared to BCP and PCBM. Following the standard KPFM relationship in Eq. 1:
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M030"></a>
+**Source:** p.10 M030
+
+**Original:** diverse processing conditions and substrates. Figure 3d presents representative J–V characteristics of reference and Cu(BCP)(PEIE)-treated cells using 1.53 eV perovskite FA0.95Cs0.05PbI3 and 1.77 eV perovskite FA0.8Cs0.2Pb(I0.6Br0.4)3 with the statistics of device performance metrics for each bandgap is depicted in Fig. S17. The resulting photovoltaic performance of Cu(BCP) (PEIE)-based device reveals a PCE of 26.19% (certified 25.18%, Fig. S18) and 20.00% (certified 19.19%, Fig. S19), for 1.53 eV and 1.77 eV bandgap, respectively. Moreover, the Voc and FF for both different bandgaps are approaching 90% of the thermodynamic limit (Fig. S20). We also observed that, across all bandgaps, the approach not only increased Voc and FF but also slightly enhanced Jsc. To verify this Jsc improvement, external quantum efficiency (EQE) measurements were taken on devices with 1.53 eV and 1.77 eV bandgaps (Fig. S21). The integrated Jsc values showed excellent agreement with those extracted from the J–V curves, confirming the universality of the strategy in reducing the electron injection barrier. Moreover, we fabricated 1 cm2 rigid 1.61 eV PSCs (Table S8), in which the metal-anchored coordination network substantially mitigated efficiency losses during scaling, reducing the PCE drop from small- to large-area devices to 7.8% for Cu(BCP)(PEIE), compared with 15.7% for BCP. This improvement primarily arises from the preservation of high FF and Voc. Furthermore, 1 cm2 air-processed devices (30–50% RH, 18–25 °C) fabricated on both rigid (Fig. S22 and Table S9) and flexible substrates (Fig. S23) consistently outperformed their BCPonly counterparts, demonstrating the interlayer’s scalability and compatibility with flexible and ambient-processed PSCs. Notably, the air-processed flexible devices achieved a PCE of 23.03%, with an FF of up to 81.75%, again placing them among the best reported to date (Table S10). To gain deeper insight into the protective function of the mixed-ligand complex toward the PSCs, we conducted ISOS-D-1 shelf-life measurements on unencapsulated devices stored under ambient conditions (25–35% RH, 25 ± 2 °C) as shown in Fig. 3e. Devices incorporating the proposed buffer layer degraded much more slowly than those with the BCP interlayer, retaining 95% of their initial PCE even after over 2000 h of storage. Operational stability was further assessed under continuous 1 sun illumination (ISOSL-1) for unencapsulated devices with different perovskite bandgaps. As shown in Fig. 3f, BCP-based devices showed a gradual efficiency decay across all bandgap compositions,
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M031"></a>
+**Source:** p.10 M031
+
+**Original:** We fabricated an inverted p-i-n PSC to evaluate the functional benefits of the proposed mixed-ligand interfacial complex and firstly tested it on a triple cation mixed halide perovskite film with a bandgap of 1.61 eV (Fig. S13). The current density–voltage (J–V) characteristics (Fig. 3a) show that devices incorporating Cu(BCP)(PEIE) achieve a significant enhancement in power conversion efficiency, increasing from 22.72% to 24.11% (certified PCE 24.07%, Fig. S14). The external quantum efficiency (EQE) in Fig. S15 shows a good agreement with that from the J–V measurement. The resulting fill factor (FF) and open-circuit voltage (Voc) exceed 90% of the theoretical radiative limit [41], as shown in Fig. 3b, placing these devices among the highest performing reported PSCs for a > 1.60 eV bandgap (Fig. 3c and Table S3). This performance enhancement arises from the synergistic interplay between the Cu–BCP coordination, which reduces the electron injection barrier, and the PEIE component, which establishes favorable interfacial dipoles that enhance band alignment with the perovskite absorber. To systematically evaluate the contributions of each component, we fabricated PSCs with varying buffer layer configurations, as detailed in Table S4. The introduction of PEIE into the Cu-BCP complex resulted in a notable increase in FF. In contrast, the use of a CuCl2 interlayer led to a significant reduction in both Voc and FF, primarily due to shunting pathways between the Ag electrode and PCBM, coupled with energy-level misalignment. Additionally, by varying the CuCl2-to-BCP ratio (Table S5), we determined that the optimal CuCl2-to-BCP ratio was 1:10 (v/v), as higher Cu content led to declines in Voc and FF (Fig. S16). Furthermore, the thickness-dependent performance of the buffer layer was investigated by varying the PEIE concentration in the Cu-BCP complex (Table S6) and buffer layer spin speed (Table S7). Optimal device performance was achieved at a buffer layer thickness of ~ 9 nm using 0.025 wt% PEIE at 4000 rpm, which minimized shunting pathways and improved film uniformity. We assessed the versatility of the Cu(BCP)(PEIE) interlayer across different perovskite bandgap and
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M032"></a>
+**Source:** p.12 M032
+
+**Original:** (Fig. 3h). The selection principle for the metal node in the ternary framework is based on three factors: (1) coordination affinity toward amine and phenanthroline backbone, (II) coordination geometry and d-orbital occupancy, and (III) electrochemical stability under the device operating potential window. Cu2⁺ demonstrates the optimal balance of coordination stability, work function modification, and solution processability. In comparison, Pt2⁺ exhibits different coordination kinetics and stronger metal–ligand bonding, which may suppress the dynamic molecular rearrangement needed for effective polymer sub-network formation. Ni2⁺ shows weaker coordination affinity toward the BCP phenanthroline due to its lower crystal field stabilization energy in this ligand environment. Moreover, the water immersion test of cells with different compositions reveals markedly enhanced operational stability, highlighting the broad applicability (Fig. S33).
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M033"></a>
+**Source:** p.12 M033
+
+**Original:** thermal treatment at various temperatures (85, 100, 120, and 150 °C for 10 min). Heating to temperatures ≤ 100 °C resulted in a modest increase in PCE, which we attribute to thermally induced lattice relaxation and the healing of trap states commonly observed in perovskite materials [42]. At higher temperatures (120 and 150 °C), however, devices incorporating BCP exhibited substantial efficiency losses, whereas Cu(BCP)(PEIE)-based devices retained approximately 80% of their initial performance. To better understand the origin of this thermally induced PCE gain, we deliberately immersed the complete devices in deionized water for 5 min, followed by annealing at 100 °C (Fig. S28 and Table S11 and S12). Remarkably, the Cu(BCP)(PEIE) revealed a PCE enhancement when multiple post-immersion thermal treatments were performed, whereas reference cells containing only BCP showed no comparable performance restoration after thermal treatment. We reasoned this behavior as evidence of moisture-induced partial α-to-δ phase transition with thermally assisted partial recovery, coupled with the superior moisture-blocking ability and interfacial defect passivation provided by the Cu(BCP) (PEIE) layer (Fig. S29). These features appear to suppress irreversible decomposition pathways and enable efficient charge extraction even after water exposure. We also studied the water immersion of FA0.95Cs0.05PbI3 and FA0.8Cs0.2Pb(I0.6Br0.4)3 perovskite as indicated in Fig. S30. The PSCs with different bandgaps exhibit a distinguishable retained PCE after a few times of 5 min water soaking. Figure 3g examines the mechanical durability through cyclic bending tests (bending radius of 5 mm). The measurements were taken in ambient air (relative humidity of 30–50%, temperature of 20–25 °C). The Cu(BCP) (PEIE) devices maintain 95% of their initial PCE after 10,000 bending cycles, whereas the control (BCP) devices retain only ~ 70%. The air storage stability of f‑PSCs was also investigated, and as shown in Fig. S31, non‑encapsulated devices based on Cu(BCP)(PEIE) maintained over ~ 80% of their initial PCE after ~ 500 h in air (30–60% RH, ~ 25 °C). In contrast, BCP‑based devices degraded to below ~ 60% under the same conditions, highlighting the superior interfacial robustness and ambient stability imparted by the Cu(BCP)(PEIE) layer. Furthermore, by varying both the metal centers and aminefunctionalized polymers in f-PSCs (Fig. S32), we achieve higher performance than the BCP-only reference device
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M034"></a>
+**Source:** p.13 M034
+
+**Original:** at the ETL/metal interface, attributable to effective passivation of interfacial traps by Cu–N coordination and PEIE dipoles. This strongly suggests that the mixed-ligand complex effectively mitigates trap-mediated recombination at the interface, in line with the light intensity dependence (Fig. 4d) and charge recombination analysis (Fig. S35). Photo-CELIV measurements (Fig. 4e) further reveal that Cu(BCP)(PEIE)-based devices exhibit faster charge
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M035"></a>
+**Source:** p.14 M035
+
+**Original:** Author contributions D.C.L, S.K, S.C, and M.F.A conceived the idea. D.C.L, S.K, J.Y.S, and Y.H.K supervised the project. M.F.A fabricated the devices. M.J, G.K, J.S, and S.C were responsible for the electrical characterization and low indoor light analysis. A.R.K performed the AFM and SEM analysis. J.H was responsible for the surface potential analysis and investigation. Y.K. was responsible for low-light illumination measurement. G.H.K was responsible for narrow- to medium-bandgap fabrication. All authors contributed to the discussion and commented on the manuscript.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M036"></a>
+**Source:** p.14 M036
+
+**Original:** Voltage accumulation studies of three 1 cm2 PSCs connected in series (Fig. 4g) demonstrate scalable output and a simple circuit design suitable for powering low-power electronics under weak indoor lighting (Figs. 4h and S36). In a proof-of-concept demonstration, these series-connected, unencapsulated PSCs successfully powered a total dissolved solids (TDS) and temperature sensor under indoor lighting (Fig. 4i; Video S2) even when submerged in water, and remained functional for several min. Fig. S37 shows stable operation across immersion depths of 1–5 cm, with minor performance improvements attributed to reduced reflection losses in water [43]. To assess the environmental safety of direct water immersion, inductively coupled plasma mass spectrometry (ICP–MS) analysis was performed on the water after the immersion test to quantify leaked Pb and Cs species (Fig. S38). The control device without a buffer layer showed the highest Pb2+ concentration in water (approximately 0.77 ppm), while the BCP-based and Cu(BCP)(PEIE)-based devices exhibited reduced Pb2+ concentrations of about 0.63 and 0.49 ppm, respectively. For Cs+, the no-buffer and BCP devices showed concentrations of roughly 10–11 ppm, whereas the Cu(BCP)(PEIE)-based device exhibited Cs+ leakage near the background level, indicating much stronger suppression of perovskite component dissolution. These results demonstrate that the Cu(BCP)(PEIE) interlayer significantly enhances resistance to water-induced degradation and ion leakage. Nevertheless, because detectable Pb leakage remains after immersion, the present results should be interpreted as evidence of improved water tolerance rather than complete environmental safety for direct underwater application.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M037"></a>
+**Source:** p.15 M037
+
+**Original:** 1. Z. Xiong, Q. Zhang, K. Cai, H. Zhou, Q. Song et al., Science 390(6773), 638–642 (2025). https://​doi.​org/​10.​1126/​scien​ce.​ adw87​80 2. W. Jiang, G. Qu, X. Huang, X. Chen, L. Chi et al., Toughened self-assembled monolayers for durable perovskite solar cells. Nature 646(8083), 95–101 (2025). https://​doi.​org/​10.​1038/​ s41586-​025-​09509-7 3. D. Gao, B. Li, X. Sun, Q. Liu, C. Zhang et al., Highefficiency perovskite solar cells enabled by suppressing intermolecular aggregation in hole-selective contacts. Nat. Photonics 19(10), 1070–1077 (2025). https://​doi.​org/​10.​1038/​ s41566-​025-​01725-x 4. Z. Dai, Y. Yang, Z. Fang, L. Li, X. Tang et al., Bifacial carbodithioate-lead chelating for efficient and robust inverted perovskite solar cells. Sci. Adv. 12(1), eadz2113 (2026). https://​doi.​org/​10.​1126/​sciadv.​adz21​13 5. N. Li, X. Niu, Q. Chen, H. Zhou, Towards commercialization: the operational stability of perovskite solar cells. Chem. Soc. Rev. 49(22), 8235–8286 (2020). https://​doi.​org/​10.​1039/​d0cs0​ 0573h 6. J. Xia, M. Sohail, M.K. Nazeeruddin, Efficient and stable perovskite solar cells by tailoring of interfaces. Adv. Mater. 35(31), 2211324 (2023). https://​doi.​org/​10.​1002/​adma.​ 20221​1324 7. C.A. Aranda, A.O. Alvarez, V.S. Chivrony, C. Das, M. Rai et al., Overcoming ionic migration in perovskite solar cells through alkali metals. Joule 8(1), 241–254 (2024). https://​ doi.​org/​10.​1016/j.​joule.​2023.​11.​011 8. S. Xiong, F. Tian, F. Wang, A. Cao, Z. Chen et al., Reducing nonradiative recombination for highly efficient inverted perovskite solar cells via a synergistic bimolecular interface. Nat. Commun. 15, 5607 (2024). https://​doi.​org/​10.​1038/​ s41467-​024-​50019-3 9. C. Gong, H. Li, H. Wang, C. Zhang, Q. Zhuang et al., Silver coordination-induced n-doping of PCBM for stable and efficient inverted perovskite solar cells. Nat. Commun. 15, 4922 (2024). https://​doi.​org/​10.​1038/​s41467-​024-​49395-7 10. S. You, H. Zhu, Z. Shen, X. Wang, B. Shao et al., C60-based ionic salt electron shuttle for high-performance inverted perovskite solar modules. Science 388(6750), 964–968 (2025). https://​doi.​org/​10.​1126/​scien​ce.​adv47​01 11. A. Lan, H. Lu, B. Huang, F. Chen, Z. Chen et al., Toward commercial-scale perovskite solar cells: the role of ALDSnO2 buffer layers in performance and stability. ACS Appl. Mater. Interfaces 16(47), 64825–64833 (2024). https://​doi.​ org/​10.​1021/​acsami.​4c149​54 12. S. Wu, R. Chen, S. Zhang, B.H. Babu, Y. Yue et al., A chemically inert bismuth interlayer enhances long-term stability of inverted perovskite solar cells. Nat. Commun. 10, 1161 (2019). https://​doi.​org/​10.​1038/​s41467-​019-​09167-0 13. Z. Ying, X. Yang, J. Zheng, Y. Zhu, J. Xiu et al., Chargetransfer induced multifunctional BCP: Ag complexes for semi-transparent perovskite solar cells with a record fill
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M038"></a>
+**Source:** p.15 M038
+
+**Original:** factor of 80.1%. J. Mater. Chem. A 9(20), 12009–12018 (2021). https://​doi.​org/​10.​1039/​D1TA0​1180D 14. W. Li, G. Wang, Y. Long, L. Xiao, Z. Zhong et al., BCP buffer layer enables efficient and stable dopant-free P3HT perovskite solar cells. ACS Appl. Mater. Interfaces 16(45), 63019–63025 (2024). https://​doi.​org/​10.​1021/​acsami.​4c150​ 50 15. Y. Li, L. Li, H. Zeng, C. Lan, S. Yang et al., Cross-linked multifunctional bilayer polymer buffer for enhanced efficiency and stability in perovskite solar cells. Nat. Commun. 16, 6038 (2025). https://​doi.​org/​10.​1038/​s41467-​025-​61294-z 16. J. Xia, J. Labella, P.K. Demircioglu, M. Pérez-Escribano, J. Calbo et al., Cu(II) and Ni(II) phthalocyanine-based holetransporting materials for stable perovskite solar cells with efficiencies reaching 20.0%. Solar RRL 8(16), 2400371 (2024). https://​doi.​org/​10.​1002/​solr.​20240​0371 17. J. Suo, B. Yang, E. Mosconi, D. Bogachuk, T.A.S. Doherty et al., Multifunctional sulfonium-based treatment for perovskite solar cells with less than 1% efficiency loss over 4, 500-h operational stability tests. Nat. Energy 9(2), 172–183 (2024). https://​doi.​org/​10.​1038/​s41560-​023-​01421-6 18. F. Cheng, F. Cao, B. Chen, X. Dai, Z. Tang et al., 85 °C/85%‐stable n‐i‐p perovskite photovoltaics with NiOx hole transport layers promoted by perovskite quantum dots. Adv. Sci. 9(26), 2201573 (2022). https://​doi.​org/​10.​1002/​ advs.​20220​1573 19. M.V. Khenkin, E.A. Katz, A. Abate, G. Bardizza, J.J. Berry et al., Consensus statement for stability assessment and reporting for perovskite photovoltaics based on ISOS procedures. Nat. Energy 5(1), 35–49 (2020). https://​doi.​org/​ 10.​1038/​s41560-​019-​0529-5 20. Q. Ma, M. Ma, L. Liu, P. Yang, W. He et al., Wide-bandgap perovskite solar minimodules exceeding 43% efficiency under indoor light illumination. Device 1(6), 100174 (2023). https://​doi.​org/​10.​1016/j.​device.​2023.​100174 21. X. Zhang, H. Huang, C. Zhao, L. Jin, C. Lee et al., Conductive colloidal perovskite quantum dot inks towards fast printing of solar cells. Nat. Energy 9(11), 1378–1387 (2024). https://​doi.​org/​10.​1038/​s41560-​024-​01608-5 22. M. Yang, W. Zhu, L. Liang, W. Chai, X. Wu et al., Moistureresistant scalable ambient-air crystallization of perovskite films via self-buffered molecular migration strategy. NanoMicro Lett. 18(1), 53 (2025). https://​doi.​org/​10.​1007/​ s40820-​025-​01851-9 23. C.-H. Chen, X.-Y. He, R.-H. Qin, K.-L. Wang, L. Huang et al., Reliable perovskite indoor photovoltaics for selfpowered devices. Natl. Sci. Rev. 12(8), nwaf242 (2025). https://​doi.​org/​10.​1093/​nsr/​nwaf2​42 24. C. Spampinato, S. Valastro, G. Calogero, E. Smecca, G. Mannino et al., Improved radicchio seedling growth under CsPbI3 perovskite rooftop in a laboratory-scale greenhouse for agrivoltaics application. Nat. Commun. 16(1), 2190 (2025). https://​doi.​org/​10.​1038/​s41467-​025-​56227-9 25. S.M. Lu, S. Amaducci, S. Gorjian, M. Haworth, C. Hägglund et al., Wavelength-selective solar photovoltaic systems to enhance spectral sharing of sunlight in agrivoltaics. Joule
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+<a id="M039"></a>
+**Source:** p.16 M039
+
+**Original:** 8(9), 2483–2522 (2024). https://​doi.​org/​10.​1016/j.​joule.​ 2024.​08.​006 26. D.S. Utomo, Y. Liu, A.M. Risqi, M. Ghadiyali, I.F. Imran et al., One-step formation of 2D/3D perovskite heterojunction via ligand intercalation and facet engineering for efficient perovskite solar cells. Nano-Micro Lett. 18(1), 240 (2026). https://​doi.​org/​10.​1007/​s40820-​025-​02058-8 27. M.F. Albab, M. Jahandar, A.R. Kim, J. Heo, Y.H. Kim et al., Air-processed flexible perovskite solar cells with superior mechanical reliability and humidity resistance enabled by stepwise interfacial engineering. Chem. Eng. J. 518, 164371 (2025). https://​doi.​org/​10.​1016/j.​cej.​2025.​164371 28. T. Huang, S. Wang, L. Deng, Q. Tang, C. Tan et al., In-situ complexation of Cu(II) with polyethyleneimine (PEI) triggers the enhanced formation of halonitromethanes, dichloroacetonitrile, and dichloroacetamide during UV/ chlorine disinfection: Cu(I) contribution and Cl· sustainable production. Chem. Eng. J. 497, 154412 (2024). https://​doi.​ org/​10.​1016/j.​cej.​2024.​154412 29. C. Sandoval-Pauker, M. Santander-Nelli, P. Dreyse, Thermally activated delayed fluorescence in luminescent cationic copper(i) complexes. RSC Adv. 12(17), 10653– 10674 (2022). https://​doi.​org/​10.​1039/​d1ra0​8082b 30. P.A. Forero Cortés, M. Marx, M. Trose, M. Beller, Heteroleptic copper complexes with nitrogen and phosphorus ligands in photocatalysis: overview and perspectives. Chem. Catal. 1(2), 298–338 (2021). https://​ doi.​org/​10.​1016/j.​checat.​2021.​05.​005 31. M. Santander-Nelli, L. Sanhueza, D. Navas, E. Rossin, M. Natali et al., Unusual fluorescence behaviour of a heteroleptic Cu(i) complex featuring strong electron donating groups on a diimine ligand. New J. Chem. 46(4), 1693–1703 (2022). https://​doi.​org/​10.​1039/​D1NJ0​4811B 32. M. Yermeydan Peker, F.B. Şen, M. Bener, R. Apak, Copper(II)-Bathocuproine reagent-based dual mode sensing of total antioxidant capacity in food extracts. Food Chem. 483, 144320 (2025). https://​doi.​org/​10.​1016/j.​foodc​hem.​ 2025.​144320 33. F. Qin, W. Wang, L. Sun, X. Jiang, L. Hu et al., Robust metal ion-chelated polymer interfacial layer for ultraflexible nonfullerene organic solar cells. Nat. Commun. 11, 4508 (2020). https://​doi.​org/​10.​1038/​s41467-​020-​18373-0 34. R. Qin, K. Liu, Q. Wu, N. Zheng, Surface coordination chemistry of atomically dispersed metal catalysts. Chem.
+
+**中文:** 该段已进入结构化方法步骤；完整逐段翻译待智能体精读补齐。
+
+## 图表解读
+
+<a id="F001"></a>
+### Fig. 1
+
+**Source:** p.6
+
+![Fig. 1](assets/figure-01.png)
+
+**Original caption:** Fig. 1 Proposed reaction mechanism of mixed-ligand complexes. a Cu(BCP)(PEIE) complexation. b Photographs of precursor solutions (BCP, CuCl2, Cu(BCP)2+, Cu(BCP)(PEIE)) upon complex formation. c Absorbance profile of different solutions. d XPS N 1s spectra of BCP and Cu(BCP)(PEIE). e XPS Cu 2p spectrum of Cu(BCP)(PEIE) confirming the presence of Cu element
+
+**中文图注:** Fig. 1 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。
+
+- (a) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Cu(BCP)(PEIE) complexation
+- (b) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Photographs of precursor solutions (BCP, CuCl2, Cu(BCP)2+, Cu(BCP)(PEIE)) upon complex formation
+- (c) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Absorbance profile of different solutions
+- (d) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：XPS N 1s spectra of BCP and Cu(BCP)(PEIE)
+- (e) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：XPS Cu 2p spectrum of Cu(BCP)(PEIE) confirming the presence of Cu element
+
+<a id="F002"></a>
+### Fig. 2
+
+**Source:** p.8
+
+![Fig. 2](assets/figure-02.png)
+
+**Original caption:** Fig. 2 Characterization of film surface and interfaces. a Cross-sectional HR-TEM images of perovskite solar cells with different buffer layers after 48 h of thermal aging at 100 °C in ambient air. b HAADF-STEM images and the EDX maps of the Ag element. c XPS Pb 4f spectra of Perovskite/PCBM/with or without buffer layer/5 nm Ag, before and after thermal degradation test. d Water immersion test of perovskite solar cells without a top Ag electrode. e Static water contact angle of perovskite/PCBM with different buffer layers. f Surface potential under three environmental conditions (vacuum, ambient air, 85% RH). g Surface potential measured after thermal stress at a series of temperatures (− 30 to 70 °C). h A fishing-net-inspired design principle, in which weighted nodes, rigid meshes, and fine sub-networks are integrated to form a hierarchical molecular network. Inset: a schematic illustration of silver diffusion and halide migration in BCP and Cu(BCP)(PEIE)
+
+**中文图注:** Fig. 2 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 重点查看器件结构、材料层次、信号路径和制备流程。
+
+- (a) 重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。 原文：Cross-sectional HR-TEM images of perovskite solar cells with different buffer layers after 48 h of thermal aging at 100 °C in ambient air
+- (b) 重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。 原文：HAADF-STEM images and the EDX maps of the Ag element
+- (c) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：XPS Pb 4f spectra of Perovskite/PCBM/with or without buffer layer/5 nm Ag, before and after thermal degradation test
+- (d) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Water immersion test of perovskite solar cells without a top Ag electrode
+- (e) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Static water contact angle of perovskite/PCBM with different buffer layers
+- (f) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Surface potential under three environmental conditions (vacuum, ambient air, 85% RH)
+- (g) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Surface potential measured after thermal stress at a series of temperatures (− 30 to 70 °C)
+- (h) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：A fishing-net-inspired design principle, in which weighted nodes, rigid meshes, and fine sub-networks are integrated to form a hierarchical molecular network. Inset: a schematic illustration of silver diffusion and halide migration in BCP and Cu(BCP)(PEIE)
+
+<a id="F003"></a>
+### Fig. 3
+
+**Source:** p.11
+
+![Fig. 3](assets/figure-03.png)
+
+**Original caption:** Fig. 3 Device performance, stability, and universality of metal-anchored molecular net strategy. a J–V characteristics of 1.61 eV bandgap PSCs under AM 1.5G illumination. b Voc and FF of 1.61 eV PSCs from this work compared to the reported literature and the theoretical S-Q limit. c Summary of the reported PCE values with bandgap > 1.6 eV. d J–V characteristics of 0.048 cm2 PSCs for medium (1.53 eV) and wide (1.77 eV) bandgaps. e Self-storage stability of PSCs with different interlayers following ISOS-D-1 protocols (25–35% RH, 25 °C). f Continuous 1 sun illumination stability of PSCs following ISOS-L-1 protocols. g Bending stability of f-PSCs after 10,000 bending cycles. Inset: an illustration of a bending test with a 5 mm bending radius. h Statistical PCE distribution of f-PSCs with a set of 15 devices for BCP reference device versus different metal anchors and amine-functionalized polymers
+
+**中文图注:** Fig. 3 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 结合正文首次引用位置和原始图注核对该图的证据角色。
+
+- (a) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：J–V characteristics of 1.61 eV bandgap PSCs under AM 1.5G illumination
+- (b) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Voc and FF of 1.61 eV PSCs from this work compared to the reported literature and the theoretical S-Q limit
+- (c) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Summary of the reported PCE values with bandgap > 1.6 eV
+- (d) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：J–V characteristics of 0.048 cm2 PSCs for medium (1.53 eV) and wide (1.77 eV) bandgaps
+- (e) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Self-storage stability of PSCs with different interlayers following ISOS-D-1 protocols (25–35% RH, 25 °C)
+- (f) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Continuous 1 sun illumination stability of PSCs following ISOS-L-1 protocols
+- (g) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Bending stability of f-PSCs after 10,000 bending cycles. Inset: an illustration of a bending test with a 5 mm bending radius
+- (h) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Statistical PCE distribution of f-PSCs with a set of 15 devices for BCP reference device versus different metal anchors and amine-functionalized polymers
+
+<a id="F004"></a>
+### Fig. 4
+
+**Source:** p.13
+
+![Fig. 4](assets/figure-04.png)
+
+**Original caption:** Fig. 4 Energy harvesting in varied low-light for extreme conditions applications. a Photon flux and integrated current density spectra of warm LED light (2700 K) at 200, 500, and 1000 lx illumination intensities. b J–V curves characteristic of BCP- and Cu(BCP)(PEIE)-based interlayer at 1000, 500, and 200 lx, respectively. c Nyquist plot with a bias voltage of 1 V in dark conditions. d Voc (top) and Jsc (bottom) dependency as a function of light intensities. e Photo-CELIV curves of PSCs measured under various light illuminations. f Stabilized power output of perovskite solar cells (0.14 cm2) as a function of illuminance. g Schematic of an electrical circuit from the three 1 cm2 PSCs connected in series. h Accumulated voltage from three cells connected in series under low indoor light (~ 1000 lx). i Utilization of perovskite solar cells as a power source under low indoor light while immersing the unencapsulated devices in deionized water for TDS and temperature sensor
+
+**中文图注:** Fig. 4 原始图注已提取；逐项含义见下方分图说明。
+
+**Reading note:** 重点查看器件结构、材料层次、信号路径和制备流程。
+
+- (a) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Photon flux and integrated current density spectra of warm LED light (2700 K) at 200, 500, and 1000 lx illumination intensities
+- (b) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：J–V curves characteristic of BCP- and Cu(BCP)(PEIE)-based interlayer at 1000, 500, and 200 lx, respectively
+- (c) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Nyquist plot with a bias voltage of 1 V in dark conditions
+- (d) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Voc (top) and Jsc (bottom) dependency as a function of light intensities
+- (e) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Photo-CELIV curves of PSCs measured under various light illuminations
+- (f) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Stabilized power output of perovskite solar cells (0.14 cm2) as a function of illuminance
+- (g) 重点查看器件结构、材料层次、信号路径和制备流程。 原文：Schematic of an electrical circuit from the three 1 cm2 PSCs connected in series
+- (h) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Accumulated voltage from three cells connected in series under low indoor light (~ 1000 lx)
+- (i) 结合正文首次引用位置和原始图注核对该图的证据角色。 原文：Utilization of perovskite solar cells as a power source under low indoor light while immersing the unencapsulated devices in deionized water for TDS and temperature sensor
