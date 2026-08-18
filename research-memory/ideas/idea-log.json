@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-18",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -915,6 +915,73 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-08-16T01:11:27.189227+00:00"
+    },
+    {
+      "id": "idea-2026-08-18-ca1fa43716d3",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P2",
+      "title": "把新型矢量/剪切读出转成 ADC 前硬件-软件一致性证据",
+      "source": "Microstructural Engineering of Flexible Sensors: From Uniaxial to Triaxial Force Detection",
+      "source_papers": [
+        {
+          "paper_id": "paper-08bd9dcfd944bfcf",
+          "title": "Microstructural Engineering of Flexible Sensors: From Uniaxial to Triaxial Force Detection",
+          "doi": "10.1002/smll.75254",
+          "url": "https://doi.org/10.1002/smll.75254"
+        }
+      ],
+      "hypothesis": "ADC 前 Kz/Kx/Ky 类模拟组合应保留任务相关方向信息，并减少后端通道和计算。",
+      "minimum_experiment": "同步记录 raw A/B/C/D、software vector 与 hardware vector，在相同纹理/滑动/剪切输入下做波形、PSD/SNR、R2 和任务消融。",
+      "controls": [
+        "raw four-channel",
+        "z-only",
+        "software vector",
+        "hardware vector",
+        "reference force"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "PSD/SNR",
+        "task accuracy",
+        "latency",
+        "ADC channel count"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-18T01:05:12.230423+00:00"
+    },
+    {
+      "id": "idea-2026-08-18-459f394f9951",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Microstructural Engineering of Flexible Sensors: From Uniaxial to Triaxial Force Detection",
+      "source_papers": [
+        {
+          "paper_id": "paper-08bd9dcfd944bfcf",
+          "title": "Microstructural Engineering of Flexible Sensors: From Uniaxial to Triaxial Force Detection",
+          "doi": "10.1002/smll.75254",
+          "url": "https://doi.org/10.1002/smll.75254"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-18T01:05:12.230434+00:00"
     }
   ]
 }
