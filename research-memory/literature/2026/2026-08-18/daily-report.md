@@ -97,7 +97,7 @@
 | arxiv | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |
 | crossref | - | `electronic skin tactile array compressed readout low channel` | 25 | ok |
 | openalex | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |
-| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | failed |
+| semantic_scholar | - | `electronic skin tactile array compressed readout low channel` | 0 | ok |
 | arxiv | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | failed |
 | crossref | - | `near-sensor analog computing tactile sensing electronic skin` | 25 | ok |
 | openalex | - | `near-sensor analog computing tactile sensing electronic skin` | 0 | ok |
@@ -171,7 +171,7 @@
 
 ## 数据源异常
 
-- semantic_scholar：8 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
+- semantic_scholar：7 个查询失败；首个错误为 HTTPError: HTTP Error 429: 。其余来源已继续运行。
 - arxiv：5 个查询失败；首个错误为 HTTPError: HTTP Error 429: Unknown Error。其余来源已继续运行。
 
 ## 纳入与排除标准

@@ -1,6 +1,6 @@
 {
   "date": "2026-08-18",
-  "searched_at": "2026-08-18T01:05:51.802463+00:00",
+  "searched_at": "2026-08-18T01:06:15.398259+00:00",
   "search_window_days": 3,
   "query_log": [
     {
@@ -65,7 +65,7 @@
       "query": "electronic skin tactile array compressed readout low channel",
       "container_title": "",
       "result_count": 0,
-      "status": "failed"
+      "status": "ok"
     },
     {
       "source": "arxiv",
@@ -651,11 +651,6 @@
     },
     {
       "source": "semantic_scholar",
-      "query_id": "low-redundancy-array",
-      "error": "HTTPError: HTTP Error 429: "
-    },
-    {
-      "source": "semantic_scholar",
       "query_id": "physical-projection",
       "error": "HTTPError: HTTP Error 429: "
     },
@@ -670,14 +665,14 @@
       "error": "HTTPError: HTTP Error 429: "
     },
     {
-      "source": "arxiv",
-      "query_id": "tactile-front-end-computing",
-      "error": "TimeoutError: The read operation timed out"
-    },
-    {
       "source": "semantic_scholar",
       "query_id": "tolerance-interface",
       "error": "HTTPError: HTTP Error 429: "
+    },
+    {
+      "source": "arxiv",
+      "query_id": "tactile-front-end-computing",
+      "error": "TimeoutError: The read operation timed out"
     },
     {
       "source": "arxiv",
@@ -686,12 +681,12 @@
     },
     {
       "source": "arxiv",
-      "query_id": "fault-transfer-calibration",
+      "query_id": "physical-projection",
       "error": "TimeoutError: The read operation timed out"
     },
     {
       "source": "arxiv",
-      "query_id": "physical-projection",
+      "query_id": "fault-transfer-calibration",
       "error": "TimeoutError: The read operation timed out"
     }
   ],
@@ -1944,7 +1939,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-08-18T01:05:12.230423+00:00"
+      "created_at": "2026-08-18T01:05:37.831387+00:00"
     },
     {
       "id": "idea-2026-08-18-459f394f9951",
@@ -1976,7 +1971,7 @@
       ],
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
-      "created_at": "2026-08-18T01:05:12.230434+00:00"
+      "created_at": "2026-08-18T01:05:37.831398+00:00"
     }
   ]
 }
