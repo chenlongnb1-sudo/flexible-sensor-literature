@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "paper-2dc4e544fb111108",
+  "title": "A Bioinspired, Multimodal Soft Tactile Skin with Task‐Adaptive Perception for Intelligent Robotic Manipulation",
+  "authors": [
+    "Yu‐Jin Lee",
+    "Hyeonung Kang",
+    "Ju Yeon Woo",
+    "Daekyum Kim",
+    "Chang‐Soo Han"
+  ],
+  "venue": "Advanced Science",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "软体机器人与人机交互",
+    "多模态与生化传感"
+  ],
+  "strongly_related": true,
+  "date": "2026-08-18",
+  "doi": "10.1002/advs.77230",
+  "source_url": "https://doi.org/10.1002/advs.77230",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-08-19T02:33:01.408821+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Achieving human‐like tactile perception is essential for robotic systems to perform fine manipulation and adapt to dynamic environments. However, most tactile sensors have deviated from the physiological encoding based on human mechanoreceptors. Here, we present a layered trimodal tactile sensing system that mimics Meissner, Merkel, and Ruffini receptors. These sensors can accurately distinguish stimuli (static normal pressure, dynamic shear vibration, static horizontal strain) coming from different directions and in different shapes. Using a receptor‐level analysis framework based on random forest feature importance, we systematically analyze the involvement and relative contribution of biomimetic sensors across four tactile tasks (Braille reading, texture identification, softness classification, slip detection). Notably, the cooperation of two or three sensors significantly enhances recognition accuracy for the tasks. When the sensors are integrated on a robotic gripper, they enables real‐time slip/drop detection with 97.62% accuracy and supports closed‐loop grip‐force adaptation, thereby demonstrating stabilized grip of the object under increasing load. These results help identify appropriate sensor combinations for specific tactile tasks and demonstrate the potential of the proposed system for applications in humanoid robotics, prosthetics, haptic devices, and augmented and virtual reality systems.",
+    "zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：97.62%。"
+  },
+  "innovation_points": [
+    "ABSTRACT Achieving human‐like tactile perception is essential for robotic systems to perform fine manipulation and adapt to dynamic environments.",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [
+    "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。"
+  ],
+  "inspirations": [
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "优先核查是否有 hardware output 与 software projection 的同步一致性证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-08-19/deep-reads/paper-2dc4e544fb111108/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
