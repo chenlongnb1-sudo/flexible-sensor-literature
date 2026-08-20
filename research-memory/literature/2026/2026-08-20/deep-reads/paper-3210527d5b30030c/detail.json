@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "paper-3210527d5b30030c",
+  "title": "Intelligent Foot Perception System Based on Flexible MXene Triboelectric Sensing and Deep Learning for Motion Recognition and Health Monitoring",
+  "authors": [
+    "Guiying Wang",
+    "Bowei Zhang",
+    "Fuzhen Xuan"
+  ],
+  "venue": "Advanced Materials Technologies",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "柔性能源与自供能",
+    "柔性材料与器件"
+  ],
+  "strongly_related": false,
+  "date": "2026-08-19",
+  "doi": "10.1002/admt.71263",
+  "source_url": "https://doi.org/10.1002/admt.71263",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-08-20T01:05:39.375260+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Wearable health monitoring technology places high demands on flexible sensors in terms of high performance, high comfort, and multi‐functional integration. This study presents an intelligent foot perception system for wearable health monitoring. It integrates a high‐performance, flexible triboelectric sensor and a hybrid deep‐learning model. The sensor uses a MXene‐Ecoflex composite dielectric layer with a microcolumn array, which triples its output power to 0.91 mW. It demonstrates excellent linearity (R 2 > 0.99), high sensitivity (1.3 V/kPa), a wide detection range (0–200 kPa), and a low detection limit (15.6 Pa). Furthermore, we integrated the flexible sensor with a three‐axis accelerometer on a flexible printed circuit board. This constructed a wearable perception system. The system can simultaneously acquire fused pressure and acceleration signals. The system uses a CNN‐LSTM hybrid deep learning algorithm. It achieves an accuracy of 97.6% and an F1‐score of 0.98 on various motion classification tasks. Moreover, it can effectively distinguish between healthy and disabled states. This study confirms that the proposed flexible sensing system has great potential for application. It can be used for real‐time and accurate fall warning and mobile health monitoring.",
+    "zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：0.91 mW、1.3 V、200 kPa、15.6 Pa、97.6%。"
+  },
+  "innovation_points": [
+    "ABSTRACT Wearable health monitoring technology places high demands on flexible sensors in terms of high performance, high comfort, and multi‐functional integration.",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "优先核查是否有 hardware output 与 software projection 的同步一致性证据"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-08-20/deep-reads/paper-3210527d5b30030c/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "paper-ceb046bca39478d1",
+  "title": "Neuromorphic tactile sensing and haptic display enable fine distributed cutaneous feedback in telepresence",
+  "authors": [
+    "Martino Singuaroli",
+    "Mariangela Filosa",
+    "Daniele Leonardis",
+    "Calogero Maria Oddo"
+  ],
+  "venue": "Communications Engineering",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "神经形态与传感计算",
+    "软体机器人与人机交互"
+  ],
+  "strongly_related": true,
+  "date": "2026-08-18",
+  "doi": "10.1038/s44172-026-00757-7",
+  "source_url": "https://doi.org/10.1038/s44172-026-00757-7",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-08-20T01:05:39.370343+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Abstract Touch encoding and display is still an unmet need in advanced robotics and telepresence, although somatosensation is crucial to enable safe human-machine cooperation and remote interaction. This study presents an Integrated Neuromorphic Tactile-Haptic Interface System (INTHIS) enabling a human operator to perceive tactile feedback over the upper limb skin in response to the real-time distributed tactile stimulation of a remote robotic e-skin integrating Fiber Bragg Gratings transducers. The INTHIS sensing interface features a spatiotemporal multilayer Spiking Neural Network, whose bioinspiration strategy guarantees the real-time transmission of the location and extension of tactile stimuli, with efficient use of information exchange and 16 mm localization Root Mean Squared Error. The INTHIS actuation interface integrates a wearable Forearm Haptic Display (FHD) to render physical interactions via neuromorphic triggering of a matrix of 23 miniaturized actuation units, achieving 96 % correct localization of the stimulated area over more than 1900 experimental trials. Overall, the INTHIS demonstrated the capability to build a real-time tactile link between the e-skin and the human skin, supporting robotic teleoperation and tactile telepresence applications.",
+    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：16 mm、96 %。"
+  },
+  "innovation_points": [
+    "Abstract Touch encoding and display is still an unmet need in advanced robotics and telepresence, although somatosensation is crucial to enable safe human-machine cooperation and remote interaction.",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ],
+  "innovation_suggestions": [
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-08-20/deep-reads/paper-ceb046bca39478d1/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
