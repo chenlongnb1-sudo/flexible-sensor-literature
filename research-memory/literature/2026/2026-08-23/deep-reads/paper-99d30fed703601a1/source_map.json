@@ -1,0 +1,2093 @@
+{
+  "paper": {
+    "title": "Aerial tactile perching via an anthropomorphic hand with embodied soft tactile receptors",
+    "venue": "npj Robotics",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-08-23/papers/paper-99d30fed703601a1.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": "npj | robotics Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        18.09,
+        561.36,
+        35.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Aerial tactile perching via an anthropomorphic hand with embodied soft tactile receptors",
+      "translation": "",
+      "bbox": [
+        39.69,
+        96.65,
+        561.29,
+        195.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "Check for updates",
+      "translation": "",
+      "bbox": [
+        494.59,
+        214.34,
+        561.24,
+        222.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "Anton Bredenbeck1 , Anish Jadoenathmisier1& Salua Hamaza1",
+      "translation": "",
+      "bbox": [
+        39.69,
+        229.58,
+        308.68,
+        239.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "1234567890():,;",
+      "translation": "",
+      "bbox": [
+        6.87,
+        300.96,
+        11.85,
+        334.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "1234567890():,;",
+      "translation": "",
+      "bbox": [
+        17.56,
+        300.83,
+        22.54,
+        334.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets. However, their endurance remains limited, inhibiting their applicability in long-term missions. Perching, the ability to attach to environmental structures and rest with minimal power, offers a solution. Yet existing methods typically rely on bespoke attachment mechanisms tuned to a single, known, and predefined target, as well as visionbased target detection systems, prone to noise and occlusions, forcing reliance on brittle feed-forward control. We introduce a tactile-driven perching strategy for aerial robots that refines pose through touch. The system integrates a compliant anthropomorphic hand with embedded binary tactile sensors, enabling closed-loop alignment and grasp stability assessment through direct physical interaction. In simulation, the method achieves over 99% perching success across diverse geometries and pose errors up to 0.6 m and 50°. Hardware experiments validate robust perching across 26 realworld trials on diverse structures, despite corrupted pose estimates. By embedding tactile feedback into perching, this work advances a new paradigm, enabling micro aerial vehicles to exploit contact as informative feedback rather than relying solely on pre-contact visual estimates, facilitating robust autonomous perching on diverse, previously unseen targets in unstructured environments.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        266.92,
+        476.21,
+        472.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "absolute knowledge of the target location and accurate position tracking during the approach phase. These strong assumptions enable the flying gripper to align with the target; however, with little to no tolerance for uncertainty in the target pose estimate. Besides these fundamental limitations, there are also alternative perching methods such as adhesive10 11, suction-based12 13, and magnetic14 15",
+      "translation": "",
+      "bbox": [
+        306.14,
+        498.71,
+        561.37,
+        561.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "mechanisms, which allow surface attachment but impose strict constraints on the surface cleanliness, smoothness, or material composition for perching. Other design-based strategies leverage friction or geometric interlocking: frictional perching for canopy structures16, hook-based attachment for rough surfaces17, custom grippers for well-defined geometries18–20, and lightweight tensile perching designs21, 22. Forproblemsofthebroaderclassofaerialinteraction,priorworkshave closedthe loop with onboard vision: compliant grippers paired with learned target detectors have been demonstrated for aerial grasping23–25, and stereo and RGB-D pipelines for aerial perching26. Across both tasks, these visionbased pipelines share well-known failure modes: they are trained on a specific set of objects, require an unoccluded view, and most crucially lose the target whenever it leaves the camera’s field of view or is occluded by the",
+      "translation": "",
+      "bbox": [
+        306.14,
+        562.95,
+        561.34,
+        700.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "MAVs have become increasingly essential for applications in exploration, surveillance, and environmental monitoring. Their agility and ability to operate in confined or cluttered environments make them particularly suited for urban missions1, time-critical search-and-rescue deployments2, and ecological data collection3–5. Nevertheless, their performance is fundamentally limited by poor flight endurance: even under ideal conditions, most MAVs can travel only a few kilometres, or sustain flight for tens of minutes6. This constraint severely restricts their ability to perform longduration tasks, such as environmental monitoring over extended time horizons. Perchingreferstothebehaviorof biologicalsystems—typicallybirdsor arboreal animals—to rest on a surface by maintaining contact at one or more attachment points. In aerial robotics, perching is often exploitedin the context of drones to extend mission duration while maintaining an energyfree resting state. A wide spectrum of perching technologies has been explored in aerial robotics. Design-based solutions typically employ robotic grippers mounted underneath the vehicle, such as avian-inspired claws7 8, bistable elements3, or passive latching systems for fixed-wing drones9. The main drawback of design-based solutions is, however, their reliance on",
+      "translation": "",
+      "bbox": [
+        39.68,
+        498.72,
+        294.85,
+        700.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "BioMorphic Intelligence Lab, Department of Control & Operations, Aerospace Engineering, TU Delft, The Netherlands.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        724.43,
+        425.56,
+        731.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 1,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": "e-mail: a.bredenbeck@tudelft.nl; s.hamaza@tudelft.nl",
+      "translation": "",
+      "bbox": [
+        51.76,
+        735.15,
+        226.33,
+        742.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 1,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "npj Robotics | (2026) 4:35 1",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 2,
+      "type": "paragraph",
+      "order": 14,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 2,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "real-time flight adjustments during the approach, and to evaluate grasp stability upon perching. By closing the feedback loop directly in the task space, our novel approach enables robust, vision-free aerial perching that accommodates substantial misalignments to the perching target and unpredictable surface geometries. The main contributions of this work are: - A compliant anthropomorphic hand equipped with soft tactile pads that act as sensorized phalanges, providing both environmental perception and passive adaptation to diverse structures. - An aerial tactile perching framework that continuously refines the MAV pose during the perching maneuver using embodied tactile feedback. - A tactile-based grasp validation strategy that ensures secure attachment before finalizing the perch, enabling reliable, energy-free operation.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        48.33,
+        561.3,
+        175.68
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 2,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": "Results Anthropomorphic hand with distributed touch Designing an anthropomorphic tactile hand for aerial robots begins with understanding how human fingers achieve reliable grasping through synergistic morphology and tactile perception. Translating this biological inspiration to drone applications, moreover, requires reconciling the design withthestrictpayloadandmasslimitationsofmicroaerialvehicles(MAVs). Drones, in fact, rely on small batteries to power both onboard electronics and propulsion, where propulsion alone consumes nearly all the available energy. As a result, even small increases in payload can substantially reduce flight time and negatively impact maneuverability. This makes simplicity, low mass, and minimal power consumption essential design requirements for any tactile hand intended for aerial manipulation. Furthermore, such an anthropomorphic hand should reliably sustain the MAV’s weight while requiring minimal actuation or power, and adding minimal mass to the system. With these constraints in mind, we arrive at the design depicted in Fig. 1. Each finger in our system is composed of three rounded phalanges connected by revolute joints that mimic the human finger’s kinematics. Torsional springs at each joint provide passive stiffness and set the hand’s nominal posture to a naturally closed state without requiring continuous actuation. The phalanges incorporate a soft silicone interior that supplies friction and compliance for interacting with objects of varying shape, geometry, and texture, mimicking the morphologies of biological finger pads. The phalanges follow the human anatomical pattern in which the proximal segment is longest, followed by the middle and then the distal. This configuration evolved in primates to optimize grasping across diverse objects41, in particular for suspensory and climbing behaviors. By replicating this morphology, we aim to leverage these evolutionary advantages to improve the hand’s adaptability to various perching targets. To convey the sense of touch in a distributed manner, tactile sensors based on capacitance are mounted on the surface of each phalanx and provide binary contact information spread across a soft, compliant surface. A single artificial tendon running along the back of each finger connects the phalanges to a lightweight actuation spool: tightening the tendon opens the finger, while releasing it allows the springs to close the finger passively. This combination of compliant morphology, passive mechanics, and minimal actuation results in a tactile hand that is both energetically suitable for aerial perching applications and adaptable to diverse target geometries.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        186.73,
+        561.33,
+        593.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 2,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "Tactile perching control As observed in nature, touch is a critical sensing modality to align the airborne agents with their perching target. By reacting to tactile cues, the MAV can adjust its position and alignment to ensure a safe grasp, robust to position and alignment offsets. This work uses a Finite State Machine (FSM), as depicted in Fig. 2, that progresses through various states to bring the MAV froma (potentiallyincorrect)initialtargetposeestimate toa safely perched state. Hereby, the FSM relies on the following assumptions about the environment and the perching target: A.1 The initial target pose estimate is in the vicinity of the true target pose. A.2 The target object has a characteristic diameter that fits within the gripper.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        605.56,
+        561.3,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 2,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": "gripper itself during the approach. The grasping works do, however, demonstrate two enduring advantages of compliant grippers for aerial physical interaction: shape-adaptive grasping across a range of target geometries, and absorption of impact forces transmitted to the platform base. However, in all proposed designs, these grippers require sustained actuation to maintain a closed grasp, making them energy inefficient for perching. Furthermore, they also provide no feedback on contact establishment or grasp quality, leaving the controller blind to the moment of capture and to any post-grasp slip. Similar lessons about compliance, underactuation, and feedback have beendistilledinconventionalground-basedmanipulation,wherethedesign space of anthropomorphic and underactuated hands is mature and is the subject of systematic survey27. Tendon-driven anthropomorphic hands exploit synergies (low-dimensional joint-space couplings) to produce diversegraspmodalities(e.g.,powerandprecision)fromaminimalactuator set, conforming to object geometry without measuring or explicitly modeling the target28. Across this space, underactuated tendon-driven architectures stand out for delivering anthropomorphic dexterity and inherent mechanical compliance from a minimal motor count, as exemplified by postural-synergy designs derived from human grasping data29, adaptivesynergy designs with antagonistic tendons and tactile fingertips30, and design-time parameter optimization of underactuated hands against analytical grasp-quality metrics31. Commercial platforms such as the 980 g BarrettHand32 showcase the industrial usage of underactuated grasping. However, while achieving impressive dexterity with minimal actuation, their mass envelope still disqualifies them from use in aerial robotics and, as in the previous examples of aerial grippers,theirdexterity requiresactuation to maintain a closed grasp. Task-space feedback for manipulation in the form of distributed tactile measurements has likewise been extensively studied33. On one side, tactile and joint-angle signals alone have been shown sufficient for blind graspstability classification, without any visual or geometric prior34; on the other, distributed tactile feedback can serve as an active control signal to generate whole-hand envelope grasps on unknown targets35. Many of these demonstrations, however, are realized on heavy, ground-fixed manipulators, with high-fidelity tactile sensors while closing the tactile loop to the actuated fingers rather than using minimal tactile sensors that inform the control actions of the base. Despite substantial progress in perching mechanisms for drones, deploying these methods in unstructured environments remains challenging. All grippers still require extremely precise maneuvers to guarantee alignment, which are impractical in cluttered settings or in the real world. Adhesive, suction, magnetic, and geometry-specific methods further constrain the range of surfaces suitable for perching. Moreover, nearly all existingapproaches rely on accurate prior knowledge of the target’s position and orientation. In the studies mentioned, aerial perching is typically conducted in laboratory settings with Motion-Capture systems providing the pose of the perching target beforehand, and the actual maneuver is then executed in an open-loop fashion with a precise estimate of the target pose, tracking a predefined waypoint trajectory. These challenges highlight the need for additional perception modalities to support aerial perching maneuvers, beyond visual guidance. In this context, continuous tactile feedback can more effectively guide the maneuver, enable real-time alignments during grasping to adapt to diverse target geometries, and validate the robustness of the grasp during interaction. Biological systems embody this principle seamlessly: perching animals rely on tactile feedback and bodily compliance when engaging with their surroundings, using touch to adjust posture and grasp to the environment. Inspired by these behaviors, tactile sensing in aerial robotics has emerged as a novel tool to provide continuous feedback in aerial physical interaction, directly in the task-space36–40. Building on this insight, we propose an aerial tactile perching frameworkthatequipsacompliantanthropomorphichandwithsoftbinarytactile sensors on an aerial platform. Starting from only a rough estimation of the targetlocationinspace,thesystemcontinuouslyleveragestactilefeedbackto infer the precise location and orientation of the perching structure, to guide",
+      "translation": "",
+      "bbox": [
+        39.68,
+        48.91,
+        294.85,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 2,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "npj Robotics | (2026) 4:35 2",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 3,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 3,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "Fig. 1 | Biological inspiration, design, and implementation of the tactile flying gripper. a The human hand leverages fingers in an antagonistic configuration relative to the thumb (left), which enables grasping objects of varying geometries and sizes while providing tactile feedback along multiple planes and directions. b Our proposed anthropomorphic hand adopts a similar configuration with distributed touch sensing. Nine tactile sensors (C1 to C9) are positioned at the center of each phalange, providing a binary contact signal whenever a sensor Ci contacts the environment. The drone body frame of reference, B, is located at the CoM. c The",
+      "translation": "",
+      "bbox": [
+        39.68,
+        453.51,
+        294.76,
+        531.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 3,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": "mechanical implementation of the tactile hand is mounted on top of a 4-inch quad frame. We highlight the individual components. Capacitive touch sensor: copper foil connected to a capacitive sensing board provides binary information about touch events. Note that the capacitive sensor on the last phalanx is connected to copper foil on the front and the back of the phalanx, allowing for two-sided contact detection. Motor and tendon tension spool: by tensioning the tendon, the finger opens while the torsional springs in the joints ensure passive closing. All components are operated by a RaspberryPi 5 companion computer and powered by a 4S battery.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        454.18,
+        561.26,
+        531.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 3,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "A.3 The area surrounding the initial target estimate is free of obstacles, other than the target itself. The following section will introduce the FSM states {TAKEOFF, SEARCH, TOUCHED, APPROACH, POSITION, ROTATE, FINALIZE, PERCHED, ABORT} and their transitions. In TAKEOFF, the MAV executes a takeoff from the ground. It will approach a pre-defined takeoff location above the origin. Once the position error satisfies ∥epos∥< ϵpos, the FSM transitions to SEARCH. In SEARCH, the MAV follows a searchpattern defined by a vector field gðpB; pT ;0; tÞ, following the implementation in ref. 37. Additionally, the search pattern commands a hand opening vector sðpB; pT ;0; tÞ, with one value in [0, 1] per finger, denoting the degree of opening of the finger. Hereby pB is the current position of the MAV in the world frame, pT ;0 is the initialposeestimateintheworldframe,andtisthecurrenttime.Hereby,the vector field specifies the target velocity of the MAV at a certain location and time, and s is the hand opening state. We choose to implement the vector fieldasaheight-steppingsinusoidalfigure-eightpatternasdepictedinFig.2. The search pattern is planar; after each completed cycle of the search",
+      "translation": "",
+      "bbox": [
+        39.68,
+        552.22,
+        294.84,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 3,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "pattern, we increase its altitude. At the same time, we also command the MAV toslowlyopenandclosethehand suchthatitreachesitsopeningapex at the apexes of the figure-eight. This increases the reach of the search pattern and therefore the chance of a touch event occurring. A touch event triggers a transition to TOUCHED. In TOUCHED, the MAV exploits the first contact to obtain an initial target estimate and moves to a reference position offset below and away fromthecontactpoint(toward the directionofthebodyframeatthecenterof-mass (CoM) of the MAV B) by Δz and Δγ, with the hand fully opened. When ∥epos∥< ϵpos, the FSM enters APPROACH. InAPPROACH,theMAVmovestoareferencepositionoffsetbelowthe contact-based target position estimate and switches to POSITION once the position error again falls below ϵpos. InPOSITION,theMAVmovestothetargetpositionestimatewithout any offset, after having positioned itself below during the previous state; satisfaction of ∥epos∥< ϵpos then leads to ROTATE. In ROTATE, the MAV incrementally closes its fingers to provoke contact, using the pattern of contact to infer the target orientation: fingers",
+      "translation": "",
+      "bbox": [
+        306.14,
+        552.29,
+        561.3,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 3,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": "npj Robotics | (2026) 4:35 3",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 4,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 4,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "Fig. 2 | State machine, resulting procedure, and signal processing for the tactile perching approach. a A block diagram of the state machine used to implement the tactile perching approach. b The resulting behavior of the physical prototype when commanded by the state machine. The system transitions between TAKEOFF, SEARCHING, TOUCHED, APPROACH, POSITION, ROTATION, FINALIZE,",
+      "translation": "",
+      "bbox": [
+        39.68,
+        657.71,
+        294.79,
+        705.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 4,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "PERCH, and ABORT, driven by contact events and pose convergence. c Processing of the raw capacitive values from the touch sensors to binary contact signals. An example trial (Trial XVII in Fig. 4) showcases the functionality of the capacitive touch sensors. By thresholding the difference from the nominal value, we obtain a robust binary signal.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        657.43,
+        561.23,
+        705.56
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 4,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "npj Robotics | (2026) 4:35 4",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 5,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 5,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "Fig. 3 | Robustness of the proposed approach to target pose estimation offsets, and target sizes. a Still images of 100 trials of a single experiment. b The success rate and the mean time to perch with its standard deviation. We compare a baseline feedforward perching strategy (orange) with our tactilebased perching strategy (blue). (From left to right) 100 trials for various positional offsets, 100 trials for various rotational offsets, 100 trials for various inclinational offsets, and 100 trials for various target sizes. c The anthropomorphic, compliant hand supporting the full MAVs weight while hanging from various structures of different diameters and shapes. Thanks to its parallel revolute joints, the gripper exhibits passive compliance, allowing it to adapt to a wide range of targets. Even objects with non-uniform diameters and low-friction plastic or metallic surfaces, such as a traffic cone or a structural T-Beam, can be grasped and support the MAVs weight, as the arms close passively and compress until the contact force balances the spring torsion.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.0,
+        198.41,
+        256.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 5,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "that detect contact stop closing, and the MAV yaws away from them until the contact is no longer present. Since the closing values for all fingers increase monotonically, i.e., the fingers do not reopen during this state, the process is guaranteed toconverge to a fully closedgrasp. Furthermore, small lateral position corrections are applied if contact is unilateral. This process continues until all arms report at least one pad with consistent contact, at which point the FSM transitions to FINALIZE. In FINALIZE, all fingers are driven to a fully closed configuration and the grasp is validated by checking that all bottom pads are active and tendon tensions have equalized. A valid grasp leads to the terminal PERCHED state, in which the MAV is supported by the target and its motors are turned off. From any state, if the tracking error exceeds the safety threshold ϵabort, the FSM transitions to ABORT. In ABORT, the MAV returns to a safe hover above the origin and re-enters SEARCH, thereby re-initializing the perching attempt.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        455.86,
+        294.82,
+        614.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 5,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "the proposed method and a baseline feed-forward perchingstrategywithout tactile feedback. The baseline feed-forward perching strategy is implemented by commanding the MAV to approach the target at its initial pose estimate from below, and fully closing the hand after reaching the target position estimate, without considering any feedback. Supplementary Movie 1 shows animations of representative trials for rotational, inclinational, and positional misalignments, as well as a single experiment from the MonteCarlo study. Except for the inclinational sweep, the tactile-based perching strategy outperforms the feed-forward baseline in all experiments, showing a larger bandwidth with success rates above 99% for positional offsets, for orientation offsets and for target cylinder radii. The inclinational sweep shows that the underactuated gripper alone is capable of adapting to the target orientation, enabling a robust perching strategy. To showcase the ability of versatile grasping, we perform a series of static perching experiments with targets of different shapes and sizes and surfaces. Each finger of the gripper contains three parallel revolute joints, making it compliant to different structures, and thus enabling the MAV to attach itself to differently shaped targets. Figure 3 shows the gripper successfully hanging from various structures, including a human arm, multiple tree branches of different diameters, rectangular wooden beams, and a traffic cone with a varying diameter and a very s low-friction plastic surface. In each case, different phalanges take on the role of the main contact point, and consequently a different revolute spring carries the main portion of the load. This demonstrates the gripper’s adaptability solely through its mechanically compliant design. Using the physical prototype introduced before, we perform a series of flight experiments to validate the proposed tactile-based perching strategy.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        455.85,
+        561.35,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 5,
+      "type": "paragraph",
+      "order": 34,
+      "original_text": "Robustness to target offsets In order to quantitatively evaluate the performance of the proposed tactilebased perching strategy, we perform a Monte-Carlo simulation study. We conduct 100 simulated trials for various offsets in initial target position and orientation offsets as well as different target cylinder radii. We employ the Genesis World simulator42 in which a 6-degree-of-freedom (DoF) model of the MAV and a tendon-actuated gripper with linear joint stiffness is simulated. The low-level position, orientation, and rate controllers of the MAV are fed noisy state measurements to increase representativeness of real-world conditions. Figure 3 shows a set of still images of one of the experiments as well as the resulting success rates and mean time to perchfor",
+      "translation": "",
+      "bbox": [
+        39.68,
+        626.99,
+        294.83,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 5,
+      "type": "paragraph",
+      "order": 35,
+      "original_text": "npj Robotics | (2026) 4:35 5",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 6,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 6,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "Fig. 4 | Experimental setup (offsets) and result (success & time-to-perch) of each trial with the physical prototype. a, b Table of initial target pose estimation offsets (x and y position and angle θ for yaw and inclination) for all trials with the cylindrical and T-Bar perching target, respectively. The trials highlighted in bold are further visualized in Fig. 5. c Time series data of the MAV's x position and yaw angle, showcasing all trials aligning with and converging to the target pose. The data are normalized to have the target pose at the origin. Note that the data is normalized such that the approach happens entirely along the x axis. The black dots indicate when a trial has successfully reached the perching state.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.0,
+        198.39,
+        196.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 6,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "We conduct 26 trials with different target geometries and initial target pose estimate offsets as detailed in Fig. 4. Supplementary Movie 2 shows a closeup of the tactile perching procedure as well as a top-down view of all trials. All data collected during these experiments are provided via our repository (https://github.com/BioMorphic-Intelligence-Lab/feely_drone). Figure 5 shows still images of one of the trials as well as the time series data of the x coordinate and yaw angle for all 26 trials. It shows that in all trials the MAV is able to converge to the correct target position and orientation. Naturally, some trials take longer, as the duration of the searching phase is dependent onthedronestartingposition,the initialtargetpositionoffset,and theinitial target orientation offset, which lead to different contact times. This is further illustrated in Fig. 5, which shows the 3D trajectory of selected trials. E.g., in trial III the MAV makes contact immediately during theinitialapproachandthereforealignsquicklywiththetarget,whileintrial XI the MAV performs multiple passes of the search pattern until contact occurs and therefore aligns later. Additionally, Fig. 6 shows the x, y, and z position, arm opening states, contact data, and state-machine states over the full duration of Trial III. After takeoff, the MAV executes the search pattern while opening and closing its fingers. A single contact occurs at t = 15 s, which triggers the MAV to safely approach the target from below and perform alignment. Finally, all fingers close, sufficient contact is detected at around t = 35 s, and a stable grasp is confirmed, triggering the perch state.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        391.62,
+        294.84,
+        625.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 6,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": "feedback, as well as a tactile-based grasp validation strategy that ensures secure attachment before finalizing the perch. This work shows the importance of tactile sensing, providing feedback directly in the task space, i.e., the relative pose between the MAV and the target, as well as grasp stability, to achieve robustness in aerial robotic applications. With the proposed tactile-based approach, the Monte–Carlo experiments show that the MAV can robustly perch with a success rate >99% for initial position offsets of up to 0.6 m, whereas the baseline only achieves ~0.1 m. This performance is also validated in experiments with the physical system, which also achieves successful perching with an initial offset up to 0.6 m. The trials with the physical prototype confirm the same offset robustness on both cylindrical and T-Bar targets, demonstrating the grasp versatility of the proposed gripper. Byadjustingitsyawangleduringtheperchingmaneuver,theMAVcan also successfully align with rotational offsets of the target. From the MonteCarlo simulation visualized in Fig. 3, we observe that both the feed-forward baseline and the proposed tactile-based approach achieve a success rate >99% for initial yaw offsets of at least up to 45°. This is mostly due to the compliance of the gripper, which naturally allows for some misalignment. However, using the tactile feedback, this bandwidth increases to ~60°. We also validate this behavior in the physical experiments, where the MAV successfully perches with an initial yaw offset of up to 20°. Naturally, the maximum size of a perching target is constrained by the mechanicaldesignofthegripper:longerphalangesallowthesystemtograsp larger targets. However, initial misalignment can prevent the gripper from fully enveloping the target, limiting its effective grasping capability. As shown in the right plot of Fig. 3, the tactile-based approach maintains a success rate above 99% for targets with radii up to 0.15 m, whereas the baseline method islimited toradii of ~0.1 m.Fortargetssmallerthan0.02 m inradius,bothmethodsfailtoachievesuccessfulperching.Thisfailureisnot due to insufficient enveloping, but rather because such small targets do not trigger enough contact sensors in the perched state to validate the grasp and register a successful perch.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        391.62,
+        561.32,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 6,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "Discussion In this work, we demonstrate how tactile feedback and a passively closing, underactuated gripper design can enable aerial perching to be more robust to target pose estimate uncertainties and target shapes and sizes. Drawing inspirationfromnature,weshowhow inroboticsthesenseoftouchcanbe a valuable complement to other senses, such as vision, especially when they are inhibited. The key contributions of this work are a compliant anthropomorphic hand equipped with soft tactile pads that act as sensorized phalanges, enabling an aerial tactile perching framework that continuously refinestheMAV poseduringthe perchingmaneuverusingembodied tactile",
+      "translation": "",
+      "bbox": [
+        39.68,
+        636.53,
+        294.94,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 6,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "npj Robotics | (2026) 4:35 6",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 7,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 7,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "Fig. 5 | Visualizations of experiments with the physical prototype. a Three-dimensional trajectory plots of selected trials. For different initial takeoff positions and initial offsets, contact occurs at different times. However, in all cases the proposed approach is able to align with and successfully perch on the target. b Snapshots of Trial XIII from Fig. 4 showcasing the different phases of the tactile perching maneuver. See Fig. 4 for the initial offsets.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.0,
+        198.41,
+        136.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 7,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": "sinusoidal pattern as the best compromise between success rate and perching time for the expected uncertainty of the target estimate. The proposed tactile-based perching strategy has limitations and failure modes that need to be considered. The perching procedure relies on the assumptions A.1 and A.2. As previously discussed, too large initial offsets and target sizes violate these assumptions and will lead to failure of the searching procedure or the grasp, respectively. The same would apply for a violation of assumption A.3, where unexpected contacts would prevent the search procedure from converging to the target. In a fully integrated system, it would be expected that these assumptions are validated either by an operator via a tele-operation interface or by an onboard perception system. Another failure mode can occur at the boundary of the 95% success rate intervalinpositionaloffsets,i.e.,whenthetargetislocatedjustontheedgeof the search pattern. In these rare instances, the distal phalanx of a finger can get stuck above the target, i.e., preventing the MAV from moving underneath the target to execute the perching maneuver. However, this failure mode can be detected by monitoring the time series data of the control error in TOUCHED and APPROACH states, allowing the MAV to restart the approach from the abort state.",
+      "translation": "",
+      "bbox": [
+        306.15,
+        477.28,
+        561.31,
+        679.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 7,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "In the perching applications outlined in this work, we expect the target to not always be aligned horizontally, but rather exhibit an inclination angle. In the Monte-Carlo simulations, we observe that both the feed-forward baseline and the proposed tactile-based approach successfully perch across the full range of inclination angles up to 45°, whereas the baseline method is slightly less reliable above 30°. This is due to the gripper’s compliance: as long as the target’s inclination remains within the gripper’s reach, each finger individually establishes contact with a different phalanx and adapts to the contact, slowly pulling the MAV underneath for a stable perch. The tactile search pattern has a significant impact on the performance of the aerial tactile perching strategy. This process essentially constitutes a coverage path planning problem, where the MAV must systematically explore the region around the estimated target location to maximize the probability of contact. In particular, by increasing the area of the search pattern, the MAV can successfully find and perch on targets located further away from the initial estimate. However, it also increases the time required to complete the perching maneuver. As shown in the left plot of Fig. 3, success rates improve compared to the baseline method with larger initial offsets, but within the baseline method’s feasible range the perching time nearly doubles. The search pattern should therefore be matched to the expected uncertainty of the target estimate, minimizing perching time while maintaining a high success rate. Possible patterns include sinusoidal patterns,spirals,orrasterscans,thoughplatformdynamicsmustbeconsidered, as patterns with sharp turns may be infeasible for the MAV. We select the",
+      "translation": "",
+      "bbox": [
+        39.68,
+        477.29,
+        294.92,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 7,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "Methods Manufacturing the sensorized digits Each digit of the compliant finger assembly comprises three integrated components: a rigid structural backbone, a soft frictional interface, and an embedded tactile sensing pad. For these elements to function as a unified",
+      "translation": "",
+      "bbox": [
+        306.14,
+        690.05,
+        561.38,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 7,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "npj Robotics | (2026) 4:35 7",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 8,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 8,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "Fig. 6 | Highlights of the proposed system's capabilities. a Full trial overview plot for trial III (c.f. Fig. 5) showcasing the position, arm opening states, and contact signals over the different phases of the tactile perching procedure. Initially, the MAV takes off, then it proceeds to search for the target; contact occurs, and it approaches the target, then it positions underneath the target and starts aligning rotationally. During finalization, it then closes all fingers until it can confirm a stable grasp and enters the perch state. b, c Still images (videos in supplementary material) of the tactile perching procedure for a steeply inclined cylindrical (Trial XV) and T-Bar target (Trial XX), respectively.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.0,
+        198.42,
+        186.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 8,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "adhesion. A flexible, silicone-based adhesive compatible with both PLA and EcoFlex is then applied. The cured tactile pad is aligned and pressed onto the phalanx, with the sensor wire routed through the corresponding pass-through hole. After adhesive curing, this process yields a durable yet compliant interface capable of withstanding repeated loading during grasping tasks. Lastly, each wire is connected to an MPR121 capacitive sensing controller located at the base of the MAV. When a phalanx contacts a conductive object, the resulting change in capacitance provides a clear indication of touch, enabling the hand to detect interactions in real time. Alldesignfilestorealizeouranthropomorphictactilehandarepublicly accessible through our repository (https://github.com/BioMorphicIntelligence-Lab/feely_drone).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        455.26,
+        561.36,
+        593.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 8,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "phalange, they must be securely bonded. In biological soft-rigid composites, strong integration is often achieved through gradual material transitions; however, such graded interfaces are difficult to reproduce in engineered systems. Instead, we employ a carefully selected combination of materials and bonding procedures that provides robust adhesion while maintaining compliance at the contact surface. The rigid backbone of each phalanx is fabricated from PLA using fused deposition modeling (FDM) 3D printing. Each segment incorporates dedicated through-holes sized to route 22 AWG wires from the tactile sensors through the finger structure. The soft tactile pads are cast from EcoFlex-30 silicone, selected for its low Shore hardness and durability under repeated contact. The pad geometry is designed as a semi-ellipsoid to approximate the curvature of the human fingertip and maximize contact area. A negative moldofthisgeometryis3D-printedinPLA.Tointegratethetactilesensor,a squarecopperfoilpatchispreparedanda22AWGleadwireissolderedtoit. This copper-foil assembly is placed flat at the base of the mold, with the lead routed upward. This configuration ensures strong bonding between the foil and the silicone during casting while keeping the wire accessible for subsequent integration. The silicone mixture is then poured into the mold, fully encapsulating the copper foil such that, after curing, the sensing element lies just beneath the outer surface of the pad. Once cured, the thin silicone layer covering the foil is carefully removed by light surface abrasion, exposing the sensing area without compromising the embedded structure. To assemble the composite phalanx, the attachment surface of the PLA backbone is first sanded to increase surface roughness and promote",
+      "translation": "",
+      "bbox": [
+        39.69,
+        455.86,
+        294.94,
+        743.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 8,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "Integration with the aerial platform Integrating the anthropomorphic tactile hand with an aerial platform requires a compact and lightweight electronics architecture. For this purpose, we use a SpeedyBee FS225 V2 5” quadrotor frame paired with a 45A BL32 4-in-1 ESC that drives four Emax ECO II Series 2207 motors. A Pixracer R15 flight controller running PX4 receives position trajectories from a RaspberryPi 5 companion computer, which also interfaces with a Teensy 4.0 responsible for controlling the three Feetec STS3032 servo motors that actuate the fingers. For position control, the MAV receives position measurements from a Motion Capture (MoCap) system as a proof of concept. It has been shown that the position estimate can also be achieved on-board the MAV using a single camera and an IMU43. The same companion computer processes the signals from",
+      "translation": "",
+      "bbox": [
+        306.14,
+        605.56,
+        561.33,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 8,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "npj Robotics | (2026) 4:35 8",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 9,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 9,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "Table 1 | Mathematical nomenclature used in this paper",
+      "translation": "",
+      "bbox": [
+        39.69,
+        48.47,
+        271.89,
+        57.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 9,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": "the form:",
+      "translation": "",
+      "bbox": [
+        306.14,
+        48.91,
+        338.16,
+        57.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 9,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "Symbol Definition",
+      "translation": "",
+      "bbox": [
+        42.52,
+        68.01,
+        168.91,
+        75.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 9,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "ξj;kþ1 ¼ ξj;k \u0002 J\u00021 g ðξjÞgðξjÞ ; ð4Þ",
+      "translation": "",
+      "bbox": [
+        384.78,
+        68.79,
+        561.24,
+        81.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 9,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "ζ ¼ pBΩB \u0001 \u0003T 2 SEð3Þ Quadrotor configuration (pose)",
+      "translation": "",
+      "bbox": [
+        42.52,
+        76.57,
+        231.62,
+        90.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 9,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "τB 2 R4 Quadrotors control inputs.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        95.89,
+        218.24,
+        105.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 9,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "ξj ¼ ξi;1 . . . ξi;3 \u0001 \u0003T 2 R3 Joint angles of the j-th robotic finger.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        106.84,
+        250.21,
+        121.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 9,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "Mj;EðξjÞ; Cj;Eðξj; ̇ξjÞ 2 R3 × 3 j-th robotic finger’s mass-and Coriolis matrix.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        125.49,
+        276.11,
+        136.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 9,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "Kj;E; Dj;E 2 R3 × 3 j-th robotic finger’s joint stiffness and damping matrices of the robotic finger.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        141.8,
+        280.22,
+        157.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 9,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": "Gj;Eðξj;WΩBÞ 2 R4 × 1 Gravity contribution to the j-th finger joint.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        163.23,
+        265.18,
+        173.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 9,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "Aj;E 2 R4 × 1, τj;E 2 R j-th input matrix and tendon tension",
+      "translation": "",
+      "bbox": [
+        42.52,
+        178.53,
+        246.8,
+        188.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 9,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "BpE 2 R3 End-Effector (EE) position in B as computed by the forward kinematics f(ξ).",
+      "translation": "",
+      "bbox": [
+        42.52,
+        193.92,
+        291.95,
+        209.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 9,
+      "type": "paragraph",
+      "order": 67,
+      "original_text": "JEðξÞ 2 R3 × 4 ξ-dependent EE Jacobian matrix.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        215.27,
+        238.95,
+        225.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 9,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "JB;EðξÞ 2 R3 × 6 ξ-dependent contact Jacobian matrix for the base.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        229.73,
+        291.98,
+        239.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 9,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "C ¼ C1 \u0004 \u0004 \u0004 Ci \u0001 \u0003 2 B9 Vector of all binary contact signals.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        240.75,
+        244.6,
+        255.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 9,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "fE 2 R3 External force at the EE.",
+      "translation": "",
+      "bbox": [
+        42.52,
+        260.08,
+        210.95,
+        270.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 9,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": "where Jg(ξj) is the Jacobian of the function with respectto the entriesof ξj. In practice,a few iterationssufficetoconvergetothesteady-state configuration ξj,ss. Having obtained ξj,ss for each finger, we can solve the forward kinematics problem for each of the sensing pads, yielding their positions in the body frame B. When any contact sensor is active, the contact location is now known, enabling the system to realign with the target by repositioning toward the contact location. In order to obtain binary contact signals from each phalanx, we mount copper foil on each phalanx and connect it to a capacitive sensing board that measures raw capacitance. The distal phalanx of each finger carries foil on both front and back surfaces, forming a single contact interface, while the middle and proximal phalanges carry foil only on the front. This layout allowstouchdetectionregardlessofwhethercontactoccursinsideoroutside the hand’s grasp. Contact is detected by deviations from each phalanx’s nominal capacitance: when touching a conductive object, the object becomes part of the capacitor and decreases the measured value. Thresholding this deviation yields a binary contact signal Ci for each phalanx i, as shown in Fig. 2.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        91.19,
+        561.29,
+        285.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 9,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "ζT ¼ pT ΩT \u0001 \u0003T 2 SEð3Þ Perching target pose",
+      "translation": "",
+      "bbox": [
+        42.52,
+        271.03,
+        201.48,
+        285.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 9,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "the tactile sensors described in the following subsection. All components operate from a single 4S battery mounted on the underside of the MAV.",
+      "translation": "",
+      "bbox": [
+        39.69,
+        316.67,
+        294.81,
+        347.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 9,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": "Rejecting contact disturbances Intentional contact during perching can cause disturbances that may destabilize the vehicle. Instead of directly controlling interaction forces, we limit the approach velocity so that any resulting disturbance remains within the attitude controller’s rejection capability. Considering a worst-case impact, i.e., contact at maximum moment arm rmax with velocity aligned to the contact normal, the disturbance torque is conservatively estimated as",
+      "translation": "",
+      "bbox": [
+        306.14,
+        294.99,
+        561.25,
+        368.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 9,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "τmax \u0003 rmax",
+      "translation": "",
+      "bbox": [
+        404.62,
+        383.44,
+        445.88,
+        394.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 9,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "mv Δt ; ð5Þ",
+      "translation": "",
+      "bbox": [
+        447.87,
+        377.32,
+        561.24,
+        398.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 9,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": "where m is vehicle mass, v is velocity, and Δt is the impact duration. To stay within the controller’s maximum rejectable torque τctrl, we choose the command velocity of the search pattern vector field at 1.0 m/s. In practice, the compliant structure of the fingers further reduces peak impact forces, making this bound conservative.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        412.47,
+        561.24,
+        464.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 9,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "Processing tactile awareness Thenominaljointpositionsofthethreerevolutejointsofeachroboticfinger are chosen such that, in the absence of actuation, the gripper naturally rests in a fully closed configuration due to the joints’ torsional stiffness. This enables the gripper to support the full weight of the MAV when perched withoutanyenergyconsumption.Eachfingerisactuatedbyatendonrouted around aspoolattachedtothedistalphalanx,atthefingertip.Eachphalanxi is equipped with binary contact sensors that produce a contact signal Ci upon touch. In order to infer information about the environment from binary contact signals, the system requires knowledge of the location of the respective contact sensor. This information can be obtained by solving the steady-state dynamics of each robotic finger under a given actuation. Each robotic finger is modeled as a kinematic chain governed by the standard manipulator equations, which result from Lagrangian model analysis44. Therefore, the state of the j-th robotic finger ξj follows:",
+      "translation": "",
+      "bbox": [
+        39.68,
+        359.23,
+        294.92,
+        530.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 9,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": "Mj;EðξjÞ€ξj þ Cj;Eðξj; _ξjÞ _ξj þ Dj;E _ξj þ Gj;Eðξj;WΩBÞ þ Kj;Eðξj \u0002 ξj;0Þ ¼ Aj;Eτj;E þ JT j;EðξjÞfj;E;",
+      "translation": "",
+      "bbox": [
+        46.72,
+        541.42,
+        287.77,
+        551.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 9,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "ð1Þ",
+      "translation": "",
+      "bbox": [
+        284.54,
+        555.56,
+        294.78,
+        565.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 9,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "where Table 1 defines all symbols. Under the assumption of quasi steadystatemovement(i.e.€ξj \u0003 0 and _ξj \u0003 0)andnoexternalforces(fj;E \u0003 0)the above allows us to extract the steady state configuration ξj,ss of the finger given some actuation τj;E by solving",
+      "translation": "",
+      "bbox": [
+        39.68,
+        573.08,
+        294.8,
+        617.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 9,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "Gj;Eðξj;WΩBÞ þ Kj;Eðξj \u0002 ξj;0Þ ¼ Aj;Eτj;E : ð2Þ",
+      "translation": "",
+      "bbox": [
+        93.54,
+        626.03,
+        294.78,
+        638.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 9,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": "Search pattern selection The search pattern strongly influences perching performance, requiring a trade-off between mean time-to-contact and robustness to large pose estimate uncertainties, a trade-off between coverage completeness and path efficiency common in coverage-path-problems45. We consider three patterns: sinusoidal, spiral, and square raster scan visualized in Fig. 7. The problem of choosing a search pattern can be understood by casting the task as a coverage-path-problem45: hereby the sinusoidal pattern is a dynamically feasible, smooth approximation of the optimal boustrophedonic (zigzag) pattern for covering a rectangular cell. Compared to the square raster, it covers the interior of the search region rather than only its perimeter; compared to the spiral, which, while dense, revisits intermediate radii and thus reaches large offsets slowly, it expands outward more rapidly, which leads us to select the sinusoidal pattern as the best compromise between success rate and perching time for the expected uncertainty of the target estimate.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        477.09,
+        561.34,
+        646.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 9,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "Given the non-linear nature of Gj;Eðξj;WΩBÞ this equation does not have a closed form solution. However, we can solve for ξj using a numerical approach, such as Newton’s method, where a few iterations are sufficient. For better readability, we define the function gðξÞ 2 R3 ! R3:",
+      "translation": "",
+      "bbox": [
+        39.68,
+        646.95,
+        294.8,
+        689.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 9,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "gðξÞ :¼ Gj;Eðξj;WΩBÞ þ Kj;Eðξj \u0002 ξj;0Þ \u0002 Aj;Eτj;E ð3Þ",
+      "translation": "",
+      "bbox": [
+        81.47,
+        700.98,
+        294.78,
+        713.74
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 9,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "Simulation environment The simulation environment used to evaluate the proposed tactile perching strategy closely approximates the physical system while enabling rapid Monte-Carlo analysis. The simulation is implemented in the Genesis World simulator42, which automatically generatesa dynamic model from a Unified Robot Description Format (URDF) description of both the MAV and the gripper, that includes all effects of inertia and gravity and implements a quadratic penalty formulation for enforcing rigid-body constraints. The",
+      "translation": "",
+      "bbox": [
+        306.14,
+        659.13,
+        561.38,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 9,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "Finding the roots of g(ξ) is then equivalent to finding the steady state configuration that satisfies Eq. (2). The Newton’s Method stepthen takes on",
+      "translation": "",
+      "bbox": [
+        39.68,
+        723.03,
+        294.81,
+        743.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 9,
+      "type": "paragraph",
+      "order": 88,
+      "original_text": "npj Robotics | (2026) 4:35 9",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 10,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 10,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "Fig. 7 | Visualization of the three search patterns considered in this work: sinusoidal, spiral, and square raster scan. The sinusoidal pattern provides a smooth, dynamically feasible trajectory approximating an optimal boustrophedonic (zigzag) sweep across the target area. The spiral pattern densely fills the search region by expanding outward in a continuous curve, while the square raster scan follows a back-and-forth path along the perimeter of the search region. These patterns each represent different trade-offs between coverage efficiency and robustness to pose uncertainty.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.0,
+        198.42,
+        166.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 10,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "MAV is modeled as a six-DoF system, and each finger as a three-link kinematic chain actuated by a single tendon. Additionally to the standard dynamic model we further add tendon based actuation and joint stiffness. The total additional torque τ\u0005 i;j acting on joint j of finger i is given by",
+      "translation": "",
+      "bbox": [
+        39.69,
+        198.28,
+        294.81,
+        242.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 10,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "τ\u0005 i;j ¼ ri;jf i þ Ki;jðξi;j \u0002 ξi;j;0Þ ð6Þ",
+      "translation": "",
+      "bbox": [
+        116.9,
+        250.83,
+        294.78,
+        263.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 10,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "where ri,j is the distance from the tendon mounting point to the joint axis, fi is the tendon tension, Ki,j is the joint stiffness (equal for all joints and measured from the real system), ξi,j is the joint angle, and ξi,j,0 is the nominal joint angle for a fully closed finger. For each link the geometry is represented as a collection of primitive shapes that can make and break contact with the environment. The simulation represents tactile sensing through the known contact forces: if a phalanx experiences a contact force above a threshold ϵ, the sensor outputs a binary contact signal indicating whether any portion of its geometry intersects with the environment. Low-level position, attitude, and rate control is handled by a standard cascaded controller. These controllers receive noisy measurements of position, orientation, and their corresponding velocities. Gaussian measurement noise is injected independently for each DoF to mimic the noise of a motion capture system as employed in the real system46. The noise terms for the i-th DoF, wi, follow:",
+      "translation": "",
+      "bbox": [
+        39.68,
+        273.23,
+        294.94,
+        433.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 10,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "wx; wy; wz \u0006 N 0; ð0:02mÞ2 \u0004 \u0005 ; wrot \u0006 N 0; ð1:0\u0007Þ2 \u0004 \u0005 ; ð7Þ",
+      "translation": "",
+      "bbox": [
+        66.78,
+        438.09,
+        294.78,
+        456.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 10,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "wvx; wvy; wvz \u0006 N 0; ð0:01m=sÞ2 \u0004 \u0005 ; wvrot \u0006 N 0; ð0:1\u0007=sÞ2 \u0004 \u0005 : ð8Þ",
+      "translation": "",
+      "bbox": [
+        49.49,
+        462.53,
+        294.78,
+        482.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 10,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "Thesimulatorusesafixed-stepintegratorwithatimestepof0.01 stoexecute the Monte-Carlo trials. For each trial, the MAV is initialized with zero attitude and placed at a uniformly sampled position on a plane at 0.25 m above the origin, spanning a 2 m × 2 m area. The full simulation implementation, including the URDF models and control pipeline, is publicly available in our repository(https://github.com/BioMorphicIntelligence-Lab/feely_drone).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        498.13,
+        294.82,
+        571.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 10,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "Data availability All experiment data can be found via the project repository https://github. com/BioMorphic-Intelligence-Lab/feely_drone.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        582.95,
+        294.76,
+        614.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 10,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "Code availability All generated software and design files can be found via the project repository https://github.com/BioMorphic-Intelligence-Lab/feely_drone.",
+      "translation": "",
+      "bbox": [
+        39.68,
+        625.81,
+        294.75,
+        657.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 10,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "Received: 13 January 2026; Accepted: 8 August 2026;",
+      "translation": "",
+      "bbox": [
+        39.68,
+        669.77,
+        235.19,
+        678.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 10,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "References 1. Ollero, A., Tognon, M., Suarez, A., Lee, D. & Franchi, A. Past, present, and future of aerial robotic manipulators. IEEE Trans. Robot. 38, 626–645 (2022).",
+      "translation": "",
+      "bbox": [
+        39.69,
+        700.76,
+        294.88,
+        742.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 10,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "2. Hanover, D. et al. Autonomous drone racing: a survey. IEEE Trans. Robot. 40, 3044–3067 (2024). 3. Zheng, L. & Hamaza, S. Albero: Agile landing on branches for environmental robotics operations. IEEE Robot. Autom. Lett. 9, 2845–2852 (2024). 4. Aucone,E. etal. Drone-assistedcollectionof environmental DNAfrom tree branches for biodiversity monitoring. Sci. Robot. 8, eadd5762 (2023). 5. Geckeler, C. et al. Field deployment of biodivx drones in the Amazon rainforest for biodiversity monitoring. IEEE Trans. Field Robot. 2, 336–352 (2025). 6. Bauersfeld, L. & Scaramuzza, D. Range, endurance, and optimal speed estimates for multicopters. IEEE Robot. Autom. Lett. 7, 2953–2960 (2022). 7. Wüest, V. et al. Agile perching maneuvers in birds and morphing-wing drones. Nat. Commun. 15, 8330 (2024). 8. Zufferey, R. et al. How ornithopters can perch autonomously on a branch. Nat. Commun. 13, 7713 (2022). 9. Stewart, W., Guarino, L., Piskarev, Y. & Floreano, D. Passive perching with energy storage for winged aerial robots. Adv. Intell. Syst. 5, 2100150 (2023). 10. Hsiao, Y.-H. et al. Energy efficient perching and takeoff of a miniature rotorcraft. Commun. Eng. 2, 38 (2023). 11. Geckeler, C., Heinrich, S. & Mintchev, S. Robotic environmental monitoring using gelatin hydrogels as a biodegradable adhesive. Adv. Intell. Syst. 7, 2401030 (2025). 12. Dautzenberg, R.et al.A perchingandtilting aerial robotfor preciseand versatile power tool work on vertical walls. In Proc. 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 1094–1101 (IEEE, 2023). 13. Du, S., Chen, H., Liu, Y. & Hu, R. Unified switching between active flying and perching of a bioinspired robot using impedance control. J. Robot. 2015, 763710 (2015). 14. Ji, J., Yang, T., Xu, C. & Gao, F. Real-time trajectory planning for aerial perching. In Proc. 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 10516–10522 (IEEE, 2022). 15. Lee, A., Shenghai, Y., Shen, Z. & Zhang, H. MagPerch: a magnetically locked, lightweight perching mechanism for micro-aerial-vehicles. IEEE Robot. Autom. Lett. 10, 10370–10377 (2025). 16. Kirchgeorg, S. & Mintchev, S. Hedgehog: drone perching on tree branches with high-friction origami spines. IEEE Robot. Autom. Lett. 7, 602–609 (2022). 17. Kim, H., Woodward, M. A. & Sitti, M. Avian-inspired perching mechanism for jumping robots. Adv. Intell. Syst. 5, 2300072 (2023). 18. Kitchen, R. et al. Design and evaluation of a perching hexacopter drone for energy harvesting from power lines. In Proc. 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 1192–1198 (IEEE, 2020). 19. Thomas, J., Loianno, G., Daniilidis, K. & Kumar, V. Visual servoing of quadrotors for perching by hanging from cylindrical objects. IEEE Robot. Autom. Lett. 1, 57–64 (2016).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        199.29,
+        561.33,
+        742.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 10,
+      "type": "paragraph",
+      "order": 102,
+      "original_text": "npj Robotics | (2026) 4:35 10",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.27,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 11,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "translation": "",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 11,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "40. Guo, X. et al. Aerial interaction with tactile sensing. In Proc. 2024 IEEE International Conference on Robotics and Automation (ICRA) 15761582 (IEEE, 2024) 41. Almécija, S., Smaers, J. B. & Jungers, W. L. The evolution of human and ape hand proportions. Nat. Commun. 6, 7717 (2015). 42. Authors, G. Genesis: a generative and universal physics engine for robotics and beyond. https://github.com/Genesis-Embodied-AI/ Genesis (2024). 43. Loianno, G., Brunner, C., McGrath, G. & Kumar, V. Estimation, control, and planning for aggressive flight with a small quadrotor with a single camera and imu. IEEE Robot. Autom. Lett. 2, 404–411 (2017). 44. Siciliano, B., Khatib, O. & Kröger, T. Springer Handbook of Robotics Vol. 200 (Springer, 2008). 45. Galceran, E. & Carreras, M. A survey on coverage path planning for robotics. Robot. Auton. Syst. 61, 1258–1276 (2013).",
+      "translation": "",
+      "bbox": [
+        306.14,
+        49.34,
+        561.31,
+        207.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 11,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "Acknowledgements This work was supported by the project “Aerial Robots in a Tangible World: Drones withthe Sense of Touch Act uponTheir Surroundings” funded bythe Dutch Research Council, grant number NWO-VENI-20308.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        218.82,
+        561.26,
+        260.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 11,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "Author contributions Conceptualization of the study: S.H. and A.B. Hardware development: A.J. and A.B. Software development: A.B. and A.J. Experiments: A.B. Data processing: A.B. Visuals: A.B. and S.H. Writing of the original draft: A.B. and S.H. Funding: S.H.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        272.39,
+        561.26,
+        325.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 11,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "Competing interests The authors declare no competing interests.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        336.62,
+        457.34,
+        357.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 11,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": "Additional information Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s44182-026-00109-9.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        368.77,
+        501.56,
+        411.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 11,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "Correspondence and requests for materials should be addressed to Anton Bredenbeck or Salua Hamaza.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        424.1,
+        542.4,
+        442.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 11,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "Reprints and permissions information is available at http://www.nature.com/reprints",
+      "translation": "",
+      "bbox": [
+        306.14,
+        456.19,
+        491.9,
+        474.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 11,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        488.21,
+        533.03,
+        507.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 11,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+      "translation": "",
+      "bbox": [
+        306.14,
+        520.48,
+        561.28,
+        646.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 11,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "© The Author(s) 2026",
+      "translation": "",
+      "bbox": [
+        306.14,
+        659.81,
+        378.4,
+        667.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0114",
+      "page": 11,
+      "type": "paragraph",
+      "order": 114,
+      "original_text": "20. Ruiz, F. et al. SCORPION-Soft COnfigurable Aerial Robot With PIONeering Capabilities: Dynamic Perching and Full-Actuation. IEEE Robot. Autom. Lett. 11, 506–513 (2026). 21. Kirchgeorg, S., Aucone, E., Wenk, F. & Mintchev, S. Design, modeling, and control of avocado: a multimodal aerial-tethered robot for tree canopy exploration. IEEE Trans. Robot. 40, 592–605 (2024). 22. Yuan, K. et al. Learning agile tensile perching for aerial robots from demonstrations. Preprint at https://arxiv.org/abs/2507.06172 (2025). 23. Ubellacker, S., Ray, A., Bern, J. M., Strader, J. & Carlone, L. Highspeed aerial grasping using a soft drone with onboard perception. npj Robot. 2, 5 (2024). 24. Bauer, E., Cangan, B. G. & Katzschmann, R. K. Autonomous markerless rapid aerial grasping. In Proc. 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 6395–6402 (IEEE, 2023). 25. Wu, Y. et al. Hand-like autonomous flying robot for airborne grasping and interaction. Nat. Commun. 17, 2200 (2026). 26. Popek, K. M. et al. Autonomous grasping robotic aerial system for perching (agrasp). In Proc. 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 1–9 (IEEE, 2018). 27. Park, J., Chang, M., Jung, I., Lee, H. & Cho, K. 3d printing in the design and fabrication of anthropomorphic hands: a review. Adv. Intell. Syst. 6, 2300607 (2024). 28. Santina, C. D., Piazza, C., Grioli, G., Catalano, M. G. & Bicchi, A. Toward dexterous manipulation with augmented adaptive synergies: the pisa/iit softhand 2. IEEE Trans. Robot. 34, 1141–1156 (2018). 29. Xiong, C.-H. et al. Design and implementation of an anthropomorphic hand for replicating human grasping functions. IEEE Trans. Robot. 32, 652–671 (2016). 30. Li, H. et al. Tactile SoftHand-A: 3D-printed, tactile, highly underactuated, anthropomorphic robot hand with an antagonistic tendon mechanism. Int. J. Robot. Res. 45, 1063–1090 (2026). 31. Basumatary, H. & Hazarika, S. M. Design optimization of an underactuated tendon-driven anthropomorphic hand based on grasp quality measures. Robotica 40, 4056–4075 (2022). 32. Barrett Technology, LLC. BarrettHand™– Dexterous 3-Finger Robotic Gripper for Research https://barrett.com/barrett-hand (2026) 33. Li, T. et al. A comprehensive review of robot intelligent grasping based ontactile perception.Robot.Comput.-Integr.Manuf.90,102792(2024). 34. Dang, H., Weisz, J. & Allen, P. K. Blind grasping: Stable robotic grasping using tactile feedback and hand kinematics. In Proc. 2011 IEEE International Conference on Robotics and Automation 5917–5922 (IEEE, 2011). 35. Sommer, N. & Billard, A. Multi-contact haptic exploration and grasping with tactile sensors. Robot. Auton. Syst. 85, 48–61 (2016). 36. Bredenbeck, A., Santina, C. D. & Hamaza, S. Embodying compliant touch on drones for aerial tactile navigation. IEEE Robot. Autom. Lett. 10, 1209–1216 (2025). 37. Bredenbeck, A., Yang, T., Hamaza, S. & Mueller, M. W. A tactile feedback approach to path recovery after high-speed impacts for collision-resilient drones. Drones 9, 758 (2025). 38. Aucone, E., Sferrazza, C., Gregor, M., D’Andrea, R. & Mintchev, S. Optical tactile sensing for aerial multi-contact interaction: design, integration, and evaluation. IEEE Trans. Robot. 41, 364–377 (2024). 39. Schuster, M., Bredenbeck, A., Beitelschmidt, M. & Hamaza, S. Tactile odometry in aerial physical interaction. In Proc. 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 8103–8110 (IEEE, 2024).",
+      "translation": "",
+      "bbox": [
+        39.68,
+        49.13,
+        294.89,
+        667.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0115",
+      "page": 11,
+      "type": "paragraph",
+      "order": 115,
+      "original_text": "npj Robotics | (2026) 4:35 11",
+      "translation": "",
+      "bbox": [
+        39.69,
+        763.41,
+        561.27,
+        771.44
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011",
+        "S0012",
+        "S0013"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0014",
+        "S0015",
+        "S0016",
+        "S0017",
+        "S0018",
+        "S0019"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0020",
+        "S0021",
+        "S0022",
+        "S0023",
+        "S0024",
+        "S0025"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0026",
+        "S0027",
+        "S0028",
+        "S0029"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0030",
+        "S0031",
+        "S0032",
+        "S0033",
+        "S0034",
+        "S0035"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0036",
+        "S0037",
+        "S0038",
+        "S0039",
+        "S0040",
+        "S0041"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0042",
+        "S0043",
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0048",
+        "S0049",
+        "S0050",
+        "S0051",
+        "S0052",
+        "S0053"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0054",
+        "S0055",
+        "S0056",
+        "S0057",
+        "S0058",
+        "S0059",
+        "S0060",
+        "S0061",
+        "S0062",
+        "S0063",
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069",
+        "S0070",
+        "S0071",
+        "S0072",
+        "S0073",
+        "S0074",
+        "S0075",
+        "S0076",
+        "S0077",
+        "S0078",
+        "S0079",
+        "S0080",
+        "S0081",
+        "S0082",
+        "S0083",
+        "S0084",
+        "S0085",
+        "S0086",
+        "S0087",
+        "S0088"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S0089",
+        "S0090",
+        "S0091",
+        "S0092",
+        "S0093",
+        "S0094",
+        "S0095",
+        "S0096",
+        "S0097",
+        "S0098",
+        "S0099",
+        "S0100",
+        "S0101",
+        "S0102"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106",
+        "S0107",
+        "S0108",
+        "S0109",
+        "S0110",
+        "S0111",
+        "S0112",
+        "S0113",
+        "S0114",
+        "S0115"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 3,
+      "caption_original": "Fig. 1 | Biological inspiration, design, and implementation of the tactile flying gripper. a The human hand leverages fingers in an antagonistic configuration relative to the thumb (left), which enables grasping objects of varying geometries and sizes while providing tactile feedback along multiple planes and directions. b Our proposed anthropomorphic hand adopts a similar configuration with distributed touch sensing. Nine tactile sensors (C1 to C9) are positioned at the center of each phalange, providing a binary contact signal whenever a sensor Ci contacts the environment. The drone body frame of reference, B, is located at the CoM. c The",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "The human hand leverages fingers in an antagonistic configuration relative to the thumb (left), which enables grasping objects of varying geometries and sizes while providing tactile feedback along multiple planes and directions",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "b",
+          "original": "Our proposed anthropomorphic hand adopts a similar configuration with distributed touch sensing. Nine tactile sensors (C1 to C9) are positioned at the center of each phalange, providing a binary contact signal whenever a sensor Ci contacts the environment. The drone body frame of reference, B, is located at the CoM",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "The",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 861,
+      "image_height": 813,
+      "crop_confidence": "high",
+      "bbox": [
+        85.48,
+        44.72,
+        515.46,
+        450.95
+      ],
+      "image_path": "papers/paper-99d30fed703601a1/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 4,
+      "caption_original": "Fig. 2 | State machine, resulting procedure, and signal processing for the tactile perching approach. a A block diagram of the state machine used to implement the tactile perching approach. b The resulting behavior of the physical prototype when commanded by the state machine. The system transitions between TAKEOFF, SEARCHING, TOUCHED, APPROACH, POSITION, ROTATION, FINALIZE,",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "A block diagram of the state machine used to implement the tactile perching approach",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "The resulting behavior of the physical prototype when commanded by the state machine. The system transitions between TAKEOFF, SEARCHING, TOUCHED, APPROACH, POSITION, ROTATION, FINALIZE,",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 774,
+      "image_height": 1043,
+      "crop_confidence": "high",
+      "bbox": [
+        151.49,
+        54.15,
+        537.61,
+        575.35
+      ],
+      "image_path": "papers/paper-99d30fed703601a1/figures/figure-02.png"
+    }
+  ],
+  "glossary": []
+}

@@ -1,0 +1,745 @@
+{
+  "schema_version": 1,
+  "id": "paper-99d30fed703601a1",
+  "title": "Aerial tactile perching via an anthropomorphic hand with embodied soft tactile receptors",
+  "authors": [
+    "Anton Bredenbeck",
+    "Anish Jadoenathmisier",
+    "Salua Hamaza"
+  ],
+  "venue": "npj Robotics",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "软体机器人与人机交互"
+  ],
+  "strongly_related": false,
+  "date": "2026-08-22",
+  "doi": "10.1038/s44182-026-00109-9",
+  "source_url": "https://doi.org/10.1038/s44182-026-00109-9",
+  "pdf_source_url": "https://www.nature.com/articles/s44182-026-00109-9.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-08-23T01:06:15.267886+00:00",
+  "page_count": 11,
+  "abstract": {
+    "original": "Abstract Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets. However, their endurance remains limited, inhibiting their applicability in long-term missions. Perching, the ability to attach to environmental structures and rest with minimal power, offers a solution. Yet existing methods typically rely on bespoke attachment mechanisms tuned to a single, known, and predefined target, as well as vision-based target detection systems, prone to noise and occlusions, forcing reliance on brittle feed-forward control. We introduce a tactile-driven perching strategy for aerial robots that refines pose through touch. The system integrates a compliant anthropomorphic hand with embedded binary tactile sensors, enabling closed-loop alignment and grasp stability assessment through direct physical interaction. In simulation, the method achieves over 99% perching success across diverse geometries and pose errors up to 0.6 m and 50°. Hardware experiments validate robust perching across 26 real-world trials on diverse structures, despite corrupted pose estimates. By embedding tactile feedback into perching, this work advances a new paradigm, enabling micro aerial vehicles to exploit contact as informative feedback rather than relying solely on pre-contact visual estimates, facilitating robust autonomous perching on diverse, previously unseen targets in unstructured environments.",
+    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：99%。"
+  },
+  "innovation_points": [
+    "Abstract Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets.",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 7,
+      "category_zh": "制备与实验操作",
+      "original": "Manufacturing the sensorized digits Each digit of the compliant finger assembly comprises three integrated components: a rigid structural backbone, a soft frictional interface, and an embedded tactile sensing pad.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 8,
+      "category_zh": "固化与热处理",
+      "original": "phalange, they must be securely bonded.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 8,
+      "category_zh": "组装与封装",
+      "original": "Instead, we employ a carefully selected combination of materials and bonding procedures that provides robust adhesion while maintaining compliance at the contact surface.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 8,
+      "category_zh": "成膜与沉积",
+      "original": "The rigid backbone of each phalanx is fabricated from PLA using fused deposition modeling (FDM) 3D printing.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 8,
+      "category_zh": "图形化与结构成形",
+      "original": "The soft tactile pads are cast from EcoFlex-30 silicone, selected for its low Shore hardness and durability under repeated contact.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 8,
+      "category_zh": "图形化与结构成形",
+      "original": "This copper-foil assembly is placed flat at the base of the mold, with the lead routed upward.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 8,
+      "category_zh": "图形化与结构成形",
+      "original": "This configuration ensures strong bonding between the foil and the silicone during casting while keeping the wire accessible for subsequent integration.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 8,
+      "category_zh": "材料混合与分散",
+      "original": "The silicone mixture is then poured into the mold, fully encapsulating the copper foil such that, after curing, the sensing element lies just beneath the outer surface of the pad.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 8,
+      "category_zh": "固化与热处理",
+      "original": "Once cured, the thin silicone layer covering the foil is carefully removed by light surface abrasion, exposing the sensing area without compromising the embedded structure.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 10,
+      "page": 8,
+      "category_zh": "组装与封装",
+      "original": "To assemble the composite phalanx, the attachment surface of the PLA backbone is first sanded to increase surface roughness and promote adhesion.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 11,
+      "page": 8,
+      "category_zh": "固化与热处理",
+      "original": "The cured tactile pad is aligned and pressed onto the phalanx, with the sensor wire routed through the corresponding pass-through hole.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 12,
+      "page": 9,
+      "category_zh": "图形化与结构成形",
+      "original": "To stay within the controller’s maximum rejectable torque τctrl, we choose the command velocity of the search pattern vector field at 1.0 m/s.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.9 原文为准。"
+    },
+    {
+      "step": 13,
+      "page": 9,
+      "category_zh": "图形化与结构成形",
+      "original": "Search pattern selection The search pattern strongly influences perching performance, requiring a trade-off between mean time-to-contact and robustness to large pose estimate uncertainties, a trade-off between coverage completeness and path efficiency common in coverage-path-problems45.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.9 原文为准。"
+    },
+    {
+      "step": 14,
+      "page": 9,
+      "category_zh": "图形化与结构成形",
+      "original": "We consider three patterns: sinusoidal, spiral, and square raster scan visualized in Fig. 7.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.9 原文为准。"
+    },
+    {
+      "step": 15,
+      "page": 9,
+      "category_zh": "图形化与结构成形",
+      "original": "The problem of choosing a search pattern can be understood by casting the task as a coverage-path-problem45: hereby the sinusoidal pattern is a dynamically feasible, smooth approximation of the optimal boustrophedonic (zigzag) pattern for covering a rectangular cell.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.9 原文为准。"
+    },
+    {
+      "step": 16,
+      "page": 9,
+      "category_zh": "图形化与结构成形",
+      "original": "Compared to the square raster, it covers the interior of the search region rather than only its perimeter; compared to the spiral, which, while dense, revisits intermediate radii and thus reaches large offsets slowly, it expands outward more rapidly, which leads us to select the sinusoidal pattern as the best compromise between success rate and perching time for the expected uncertainty of the target estimate.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.9 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 7,
+      "text": "Manufacturing the sensorized digits Each digit of the compliant finger assembly comprises three integrated components: a rigid structural backbone, a soft frictional interface, and an embedded tactile sensing pad. For these elements to function as a unified",
+      "bbox": [
+        306.14,
+        690.05,
+        561.38,
+        743.3
+      ]
+    },
+    {
+      "page": 8,
+      "text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ]
+    },
+    {
+      "page": 8,
+      "text": "npj Robotics | (2026) 4:35 8",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Fig. 6 | Highlights of the proposed system's capabilities. a Full trial overview plot for trial III (c.f. Fig. 5) showcasing the position, arm opening states, and contact signals over the different phases of the tactile perching procedure. Initially, the MAV takes off, then it proceeds to search for the target; contact occurs, and it approaches the target, then it positions underneath the target and starts aligning rotationally. During finalization, it then closes all fingers until it can confirm a stable grasp and enters the perch state. b, c Still images (videos in supplementary material) of the tactile perching procedure for a steeply inclined cylindrical (Trial XV) and T-Bar target (Trial XX), respectively.",
+      "bbox": [
+        39.68,
+        49.0,
+        198.42,
+        186.31
+      ]
+    },
+    {
+      "page": 8,
+      "text": "phalange, they must be securely bonded. In biological soft-rigid composites, strong integration is often achieved through gradual material transitions; however, such graded interfaces are difficult to reproduce in engineered systems. Instead, we employ a carefully selected combination of materials and bonding procedures that provides robust adhesion while maintaining compliance at the contact surface. The rigid backbone of each phalanx is fabricated from PLA using fused deposition modeling (FDM) 3D printing. Each segment incorporates dedicated through-holes sized to route 22 AWG wires from the tactile sensors through the finger structure. The soft tactile pads are cast from EcoFlex-30 silicone, selected for its low Shore hardness and durability under repeated contact. The pad geometry is designed as a semi-ellipsoid to approximate the curvature of the human fingertip and maximize contact area. A negative moldofthisgeometryis3D-printedinPLA.Tointegratethetactilesensor,a squarecopperfoilpatchispreparedanda22AWGleadwireissolderedtoit. This copper-foil assembly is placed flat at the base of the mold, with the lead routed upward. This configuration ensures strong bonding between the foil and the silicone during casting while keeping the wire accessible for subsequent integration. The silicone mixture is then poured into the mold, fully encapsulating the copper foil such that, after curing, the sensing element lies just beneath the outer surface of the pad. Once cured, the thin silicone layer covering the foil is carefully removed by light surface abrasion, exposing the sensing area without compromising the embedded structure. To assemble the composite phalanx, the attachment surface of the PLA backbone is first sanded to increase surface roughness and promote",
+      "bbox": [
+        39.69,
+        455.86,
+        294.94,
+        743.29
+      ]
+    },
+    {
+      "page": 8,
+      "text": "adhesion. A flexible, silicone-based adhesive compatible with both PLA and EcoFlex is then applied. The cured tactile pad is aligned and pressed onto the phalanx, with the sensor wire routed through the corresponding pass-through hole. After adhesive curing, this process yields a durable yet compliant interface capable of withstanding repeated loading during grasping tasks. Lastly, each wire is connected to an MPR121 capacitive sensing controller located at the base of the MAV. When a phalanx contacts a conductive object, the resulting change in capacitance provides a clear indication of touch, enabling the hand to detect interactions in real time. Alldesignfilestorealizeouranthropomorphictactilehandarepublicly accessible through our repository (https://github.com/BioMorphicIntelligence-Lab/feely_drone).",
+      "bbox": [
+        306.14,
+        455.26,
+        561.36,
+        593.34
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Integration with the aerial platform Integrating the anthropomorphic tactile hand with an aerial platform requires a compact and lightweight electronics architecture. For this purpose, we use a SpeedyBee FS225 V2 5” quadrotor frame paired with a 45A BL32 4-in-1 ESC that drives four Emax ECO II Series 2207 motors. A Pixracer R15 flight controller running PX4 receives position trajectories from a RaspberryPi 5 companion computer, which also interfaces with a Teensy 4.0 responsible for controlling the three Feetec STS3032 servo motors that actuate the fingers. For position control, the MAV receives position measurements from a Motion Capture (MoCap) system as a proof of concept. It has been shown that the position estimate can also be achieved on-board the MAV using a single camera and an IMU43. The same companion computer processes the signals from",
+      "bbox": [
+        306.14,
+        605.56,
+        561.33,
+        743.3
+      ]
+    },
+    {
+      "page": 9,
+      "text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ]
+    },
+    {
+      "page": 9,
+      "text": "npj Robotics | (2026) 4:35 9",
+      "bbox": [
+        39.69,
+        763.41,
+        561.3,
+        771.44
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Table 1 | Mathematical nomenclature used in this paper",
+      "bbox": [
+        39.69,
+        48.47,
+        271.89,
+        57.43
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Symbol Definition",
+      "bbox": [
+        42.52,
+        68.01,
+        168.91,
+        75.09
+      ]
+    },
+    {
+      "page": 9,
+      "text": "ζ ¼ pBΩB \u0001 \u0003T 2 SEð3Þ Quadrotor configuration (pose)",
+      "bbox": [
+        42.52,
+        76.57,
+        231.62,
+        90.55
+      ]
+    },
+    {
+      "page": 9,
+      "text": "τB 2 R4 Quadrotors control inputs.",
+      "bbox": [
+        42.52,
+        95.89,
+        218.24,
+        105.94
+      ]
+    },
+    {
+      "page": 9,
+      "text": "ξj ¼ ξi;1 . . . ξi;3 \u0001 \u0003T 2 R3 Joint angles of the j-th robotic finger.",
+      "bbox": [
+        42.52,
+        106.84,
+        250.21,
+        121.24
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Mj;EðξjÞ; Cj;Eðξj; ̇ξjÞ 2 R3 × 3 j-th robotic finger’s mass-and Coriolis matrix.",
+      "bbox": [
+        42.52,
+        125.49,
+        276.11,
+        136.38
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Kj;E; Dj;E 2 R3 × 3 j-th robotic finger’s joint stiffness and damping matrices of the robotic finger.",
+      "bbox": [
+        42.52,
+        141.8,
+        280.22,
+        157.55
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Gj;Eðξj;WΩBÞ 2 R4 × 1 Gravity contribution to the j-th finger joint.",
+      "bbox": [
+        42.52,
+        163.23,
+        265.18,
+        173.12
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Aj;E 2 R4 × 1, τj;E 2 R j-th input matrix and tendon tension",
+      "bbox": [
+        42.52,
+        178.53,
+        246.8,
+        188.71
+      ]
+    },
+    {
+      "page": 9,
+      "text": "BpE 2 R3 End-Effector (EE) position in B as computed by the forward kinematics f(ξ).",
+      "bbox": [
+        42.52,
+        193.92,
+        291.95,
+        209.59
+      ]
+    },
+    {
+      "page": 9,
+      "text": "JEðξÞ 2 R3 × 4 ξ-dependent EE Jacobian matrix.",
+      "bbox": [
+        42.52,
+        215.27,
+        238.95,
+        225.03
+      ]
+    },
+    {
+      "page": 9,
+      "text": "JB;EðξÞ 2 R3 × 6 ξ-dependent contact Jacobian matrix for the base.",
+      "bbox": [
+        42.52,
+        229.73,
+        291.98,
+        239.48
+      ]
+    },
+    {
+      "page": 9,
+      "text": "C ¼ C1 \u0004 \u0004 \u0004 Ci \u0001 \u0003 2 B9 Vector of all binary contact signals.",
+      "bbox": [
+        42.52,
+        240.75,
+        244.6,
+        255.1
+      ]
+    },
+    {
+      "page": 9,
+      "text": "fE 2 R3 External force at the EE.",
+      "bbox": [
+        42.52,
+        260.08,
+        210.95,
+        270.12
+      ]
+    },
+    {
+      "page": 9,
+      "text": "ζT ¼ pT ΩT \u0001 \u0003T 2 SEð3Þ Perching target pose",
+      "bbox": [
+        42.52,
+        271.03,
+        201.48,
+        285.43
+      ]
+    },
+    {
+      "page": 9,
+      "text": "the tactile sensors described in the following subsection. All components operate from a single 4S battery mounted on the underside of the MAV.",
+      "bbox": [
+        39.69,
+        316.67,
+        294.81,
+        347.01
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Processing tactile awareness Thenominaljointpositionsofthethreerevolutejointsofeachroboticfinger are chosen such that, in the absence of actuation, the gripper naturally rests in a fully closed configuration due to the joints’ torsional stiffness. This enables the gripper to support the full weight of the MAV when perched withoutanyenergyconsumption.Eachfingerisactuatedbyatendonrouted around aspoolattachedtothedistalphalanx,atthefingertip.Eachphalanxi is equipped with binary contact sensors that produce a contact signal Ci upon touch. In order to infer information about the environment from binary contact signals, the system requires knowledge of the location of the respective contact sensor. This information can be obtained by solving the steady-state dynamics of each robotic finger under a given actuation. Each robotic finger is modeled as a kinematic chain governed by the standard manipulator equations, which result from Lagrangian model analysis44. Therefore, the state of the j-th robotic finger ξj follows:",
+      "bbox": [
+        39.68,
+        359.23,
+        294.92,
+        530.59
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Mj;EðξjÞ€ξj þ Cj;Eðξj; _ξjÞ _ξj þ Dj;E _ξj þ Gj;Eðξj;WΩBÞ þ Kj;Eðξj \u0002 ξj;0Þ ¼ Aj;Eτj;E þ JT j;EðξjÞfj;E;",
+      "bbox": [
+        46.72,
+        541.42,
+        287.77,
+        551.78
+      ]
+    },
+    {
+      "page": 9,
+      "text": "ð1Þ",
+      "bbox": [
+        284.54,
+        555.56,
+        294.78,
+        565.11
+      ]
+    },
+    {
+      "page": 9,
+      "text": "where Table 1 defines all symbols. Under the assumption of quasi steadystatemovement(i.e.€ξj \u0003 0 and _ξj \u0003 0)andnoexternalforces(fj;E \u0003 0)the above allows us to extract the steady state configuration ξj,ss of the finger given some actuation τj;E by solving",
+      "bbox": [
+        39.68,
+        573.08,
+        294.8,
+        617.04
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Gj;Eðξj;WΩBÞ þ Kj;Eðξj \u0002 ξj;0Þ ¼ Aj;Eτj;E : ð2Þ",
+      "bbox": [
+        93.54,
+        626.03,
+        294.78,
+        638.79
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Given the non-linear nature of Gj;Eðξj;WΩBÞ this equation does not have a closed form solution. However, we can solve for ξj using a numerical approach, such as Newton’s method, where a few iterations are sufficient. For better readability, we define the function gðξÞ 2 R3 ! R3:",
+      "bbox": [
+        39.68,
+        646.95,
+        294.8,
+        689.78
+      ]
+    },
+    {
+      "page": 9,
+      "text": "gðξÞ :¼ Gj;Eðξj;WΩBÞ þ Kj;Eðξj \u0002 ξj;0Þ \u0002 Aj;Eτj;E ð3Þ",
+      "bbox": [
+        81.47,
+        700.98,
+        294.78,
+        713.74
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Finding the roots of g(ξ) is then equivalent to finding the steady state configuration that satisfies Eq. (2). The Newton’s Method stepthen takes on",
+      "bbox": [
+        39.68,
+        723.03,
+        294.81,
+        743.3
+      ]
+    },
+    {
+      "page": 9,
+      "text": "the form:",
+      "bbox": [
+        306.14,
+        48.91,
+        338.16,
+        57.88
+      ]
+    },
+    {
+      "page": 9,
+      "text": "ξj;kþ1 ¼ ξj;k \u0002 J\u00021 g ðξjÞgðξjÞ ; ð4Þ",
+      "bbox": [
+        384.78,
+        68.79,
+        561.24,
+        81.79
+      ]
+    },
+    {
+      "page": 9,
+      "text": "where Jg(ξj) is the Jacobian of the function with respectto the entriesof ξj. In practice,a few iterationssufficetoconvergetothesteady-state configuration ξj,ss. Having obtained ξj,ss for each finger, we can solve the forward kinematics problem for each of the sensing pads, yielding their positions in the body frame B. When any contact sensor is active, the contact location is now known, enabling the system to realign with the target by repositioning toward the contact location. In order to obtain binary contact signals from each phalanx, we mount copper foil on each phalanx and connect it to a capacitive sensing board that measures raw capacitance. The distal phalanx of each finger carries foil on both front and back surfaces, forming a single contact interface, while the middle and proximal phalanges carry foil only on the front. This layout allowstouchdetectionregardlessofwhethercontactoccursinsideoroutside the hand’s grasp. Contact is detected by deviations from each phalanx’s nominal capacitance: when touching a conductive object, the object becomes part of the capacitor and decreases the measured value. Thresholding this deviation yields a binary contact signal Ci for each phalanx i, as shown in Fig. 2.",
+      "bbox": [
+        306.14,
+        91.19,
+        561.29,
+        285.05
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Rejecting contact disturbances Intentional contact during perching can cause disturbances that may destabilize the vehicle. Instead of directly controlling interaction forces, we limit the approach velocity so that any resulting disturbance remains within the attitude controller’s rejection capability. Considering a worst-case impact, i.e., contact at maximum moment arm rmax with velocity aligned to the contact normal, the disturbance torque is conservatively estimated as",
+      "bbox": [
+        306.14,
+        294.99,
+        561.25,
+        368.44
+      ]
+    },
+    {
+      "page": 9,
+      "text": "mv Δt ; ð5Þ",
+      "bbox": [
+        447.87,
+        377.32,
+        561.24,
+        398.53
+      ]
+    },
+    {
+      "page": 9,
+      "text": "τmax \u0003 rmax",
+      "bbox": [
+        404.62,
+        383.44,
+        445.88,
+        394.62
+      ]
+    },
+    {
+      "page": 9,
+      "text": "where m is vehicle mass, v is velocity, and Δt is the impact duration. To stay within the controller’s maximum rejectable torque τctrl, we choose the command velocity of the search pattern vector field at 1.0 m/s. In practice, the compliant structure of the fingers further reduces peak impact forces, making this bound conservative.",
+      "bbox": [
+        306.14,
+        412.47,
+        561.24,
+        464.88
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Search pattern selection The search pattern strongly influences perching performance, requiring a trade-off between mean time-to-contact and robustness to large pose estimate uncertainties, a trade-off between coverage completeness and path efficiency common in coverage-path-problems45. We consider three patterns: sinusoidal, spiral, and square raster scan visualized in Fig. 7. The problem of choosing a search pattern can be understood by casting the task as a coverage-path-problem45: hereby the sinusoidal pattern is a dynamically feasible, smooth approximation of the optimal boustrophedonic (zigzag) pattern for covering a rectangular cell. Compared to the square raster, it covers the interior of the search region rather than only its perimeter; compared to the spiral, which, while dense, revisits intermediate radii and thus reaches large offsets slowly, it expands outward more rapidly, which leads us to select the sinusoidal pattern as the best compromise between success rate and perching time for the expected uncertainty of the target estimate.",
+      "bbox": [
+        306.14,
+        477.09,
+        561.34,
+        646.92
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Simulation environment The simulation environment used to evaluate the proposed tactile perching strategy closely approximates the physical system while enabling rapid Monte-Carlo analysis. The simulation is implemented in the Genesis World simulator42, which automatically generatesa dynamic model from a Unified Robot Description Format (URDF) description of both the MAV and the gripper, that includes all effects of inertia and gravity and implements a quadratic penalty formulation for enforcing rigid-body constraints. The",
+      "bbox": [
+        306.14,
+        659.13,
+        561.38,
+        743.3
+      ]
+    },
+    {
+      "page": 10,
+      "text": "https://doi.org/10.1038/s44182-026-00109-9 Article",
+      "bbox": [
+        39.69,
+        23.76,
+        561.19,
+        33.72
+      ]
+    },
+    {
+      "page": 10,
+      "text": "npj Robotics | (2026) 4:35 10",
+      "bbox": [
+        39.69,
+        763.41,
+        561.27,
+        771.44
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Fig. 7 | Visualization of the three search patterns considered in this work: sinusoidal, spiral, and square raster scan. The sinusoidal pattern provides a smooth, dynamically feasible trajectory approximating an optimal boustrophedonic (zigzag) sweep across the target area. The spiral pattern densely fills the search region by expanding outward in a continuous curve, while the square raster scan follows a back-and-forth path along the perimeter of the search region. These patterns each represent different trade-offs between coverage efficiency and robustness to pose uncertainty.",
+      "bbox": [
+        39.68,
+        49.0,
+        198.42,
+        166.41
+      ]
+    },
+    {
+      "page": 10,
+      "text": "MAV is modeled as a six-DoF system, and each finger as a three-link kinematic chain actuated by a single tendon. Additionally to the standard dynamic model we further add tendon based actuation and joint stiffness. The total additional torque τ\u0005 i;j acting on joint j of finger i is given by",
+      "bbox": [
+        39.69,
+        198.28,
+        294.81,
+        242.42
+      ]
+    },
+    {
+      "page": 10,
+      "text": "τ\u0005 i;j ¼ ri;jf i þ Ki;jðξi;j \u0002 ξi;j;0Þ ð6Þ",
+      "bbox": [
+        116.9,
+        250.83,
+        294.78,
+        263.94
+      ]
+    },
+    {
+      "page": 10,
+      "text": "where ri,j is the distance from the tendon mounting point to the joint axis, fi is the tendon tension, Ki,j is the joint stiffness (equal for all joints and measured from the real system), ξi,j is the joint angle, and ξi,j,0 is the nominal joint angle for a fully closed finger. For each link the geometry is represented as a collection of primitive shapes that can make and break contact with the environment. The simulation represents tactile sensing through the known contact forces: if a phalanx experiences a contact force above a threshold ϵ, the sensor outputs a binary contact signal indicating whether any portion of its geometry intersects with the environment. Low-level position, attitude, and rate control is handled by a standard cascaded controller. These controllers receive noisy measurements of position, orientation, and their corresponding velocities. Gaussian measurement noise is injected independently for each DoF to mimic the noise of a motion capture system as employed in the real system46. The noise terms for the i-th DoF, wi, follow:",
+      "bbox": [
+        39.68,
+        273.23,
+        294.94,
+        433.03
+      ]
+    },
+    {
+      "page": 10,
+      "text": "wx; wy; wz \u0006 N 0; ð0:02mÞ2 \u0004 \u0005 ; wrot \u0006 N 0; ð1:0\u0007Þ2 \u0004 \u0005 ; ð7Þ",
+      "bbox": [
+        66.78,
+        438.09,
+        294.78,
+        456.58
+      ]
+    },
+    {
+      "page": 10,
+      "text": "wvx; wvy; wvz \u0006 N 0; ð0:01m=sÞ2 \u0004 \u0005 ; wvrot \u0006 N 0; ð0:1\u0007=sÞ2 \u0004 \u0005 : ð8Þ",
+      "bbox": [
+        49.49,
+        462.53,
+        294.78,
+        482.61
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Thesimulatorusesafixed-stepintegratorwithatimestepof0.01 stoexecute the Monte-Carlo trials. For each trial, the MAV is initialized with zero attitude and placed at a uniformly sampled position on a plane at 0.25 m above the origin, spanning a 2 m × 2 m area. The full simulation implementation, including the URDF models and control pipeline, is publicly available in our repository(https://github.com/BioMorphicIntelligence-Lab/feely_drone).",
+      "bbox": [
+        39.68,
+        498.13,
+        294.82,
+        571.91
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 3,
+      "caption_original": "Fig. 1 | Biological inspiration, design, and implementation of the tactile flying gripper. a The human hand leverages fingers in an antagonistic configuration relative to the thumb (left), which enables grasping objects of varying geometries and sizes while providing tactile feedback along multiple planes and directions. b Our proposed anthropomorphic hand adopts a similar configuration with distributed touch sensing. Nine tactile sensors (C1 to C9) are positioned at the center of each phalange, providing a binary contact signal whenever a sensor Ci contacts the environment. The drone body frame of reference, B, is located at the CoM. c The",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "The human hand leverages fingers in an antagonistic configuration relative to the thumb (left), which enables grasping objects of varying geometries and sizes while providing tactile feedback along multiple planes and directions",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "b",
+          "original": "Our proposed anthropomorphic hand adopts a similar configuration with distributed touch sensing. Nine tactile sensors (C1 to C9) are positioned at the center of each phalange, providing a binary contact signal whenever a sensor Ci contacts the environment. The drone body frame of reference, B, is located at the CoM",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "The",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 861,
+      "image_height": 813,
+      "crop_confidence": "high",
+      "bbox": [
+        85.48,
+        44.72,
+        515.46,
+        450.95
+      ],
+      "image_path": "papers/paper-99d30fed703601a1/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 4,
+      "caption_original": "Fig. 2 | State machine, resulting procedure, and signal processing for the tactile perching approach. a A block diagram of the state machine used to implement the tactile perching approach. b The resulting behavior of the physical prototype when commanded by the state machine. The system transitions between TAKEOFF, SEARCHING, TOUCHED, APPROACH, POSITION, ROTATION, FINALIZE,",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "A block diagram of the state machine used to implement the tactile perching approach",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "The resulting behavior of the physical prototype when commanded by the state machine. The system transitions between TAKEOFF, SEARCHING, TOUCHED, APPROACH, POSITION, ROTATION, FINALIZE,",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 774,
+      "image_height": 1043,
+      "crop_confidence": "high",
+      "bbox": [
+        151.49,
+        54.15,
+        537.61,
+        575.35
+      ],
+      "image_path": "papers/paper-99d30fed703601a1/figures/figure-02.png"
+    }
+  ],
+  "original_pdf": "papers/paper-99d30fed703601a1/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-08-23/deep-reads/paper-99d30fed703601a1/paper.md",
+  "source_map": "research-memory/literature/2026/2026-08-23/deep-reads/paper-99d30fed703601a1/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}
