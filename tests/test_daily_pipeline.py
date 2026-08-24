@@ -155,6 +155,44 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertIn("/journals/2520-1131/works", request.call_args.args[0])
         self.assertEqual([record["title"] for record in records], ["Matching tactile paper"])
 
+    def test_crossref_issn_job_retrieves_every_cursor_page(self) -> None:
+        job = SearchJob(
+            query_id="venue-nature-communications",
+            query="must not constrain the journal bibliography",
+            source="crossref",
+            tracks=("P4",),
+            from_date=date(2026, 6, 14),
+            to_date=date(2026, 7, 14),
+            container_title="Nature Communications",
+            issn="2041-1723",
+        )
+        pages = [
+            {
+                "message": {
+                    "total-results": 2,
+                    "next-cursor": "page-two",
+                    "items": [{"title": ["First"], "container-title": ["Nature Communications"]}],
+                }
+            },
+            {
+                "message": {
+                    "total-results": 2,
+                    "next-cursor": "done",
+                    "items": [{"title": ["Second"], "container-title": ["Nature Communications"]}],
+                }
+            },
+        ]
+        responses = [(json.dumps(page).encode("utf-8"), "application/json") for page in pages]
+        with patch("scripts.daily_literature_pipeline.request_bytes", side_effect=responses) as request:
+            records = search_crossref(job)
+        self.assertEqual([record["title"] for record in records], ["First", "Second"])
+        self.assertEqual(request.call_count, 2)
+        first_params = parse_qs(urlparse(request.call_args_list[0].args[0]).query)
+        second_params = parse_qs(urlparse(request.call_args_list[1].args[0]).query)
+        self.assertEqual(first_params["cursor"], ["*"])
+        self.assertEqual(second_params["cursor"], ["page-two"])
+        self.assertNotIn("query.bibliographic", second_params)
+
     def test_science_official_feed_recovers_newly_published_article(self) -> None:
         job = SearchJob(
             query_id="science-official-tactile-sensor",

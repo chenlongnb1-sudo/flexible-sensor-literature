@@ -608,10 +608,21 @@ def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
     endpoint = "https://api.crossref.org/works"
     if job.issn:
         endpoint = f"https://api.crossref.org/journals/{urllib.parse.quote(job.issn)}/works"
-    url = endpoint + "?" + urllib.parse.urlencode(params)
-    payload = json.loads(request_crossref_bytes(url)[0])
+        params["cursor"] = "*"
+    items: list[dict[str, Any]] = []
+    while True:
+        url = endpoint + "?" + urllib.parse.urlencode(params)
+        payload = json.loads(request_crossref_bytes(url)[0])
+        message = payload.get("message", {})
+        page_items = message.get("items", [])
+        items.extend(page_items)
+        total_results = int(message.get("total-results") or len(items))
+        next_cursor = str(message.get("next-cursor") or "")
+        if not job.issn or not page_items or len(items) >= total_results or not next_cursor:
+            break
+        params["cursor"] = next_cursor
     records = []
-    for item in payload.get("message", {}).get("items", []):
+    for item in items:
         title_values = item.get("title") or []
         venue = clean_markup((item.get("container-title") or [""])[0])
         if job.container_title and normalize_venue_name(venue) != normalize_venue_name(job.container_title):
