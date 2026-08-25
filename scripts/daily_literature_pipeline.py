@@ -596,12 +596,12 @@ def search_openalex(job: SearchJob) -> list[dict[str, Any]]:
 def search_crossref(job: SearchJob) -> list[dict[str, Any]]:
     params = {
         "filter": f"from-pub-date:{job.from_date.isoformat()},until-pub-date:{job.to_date.isoformat()}",
-        "sort": "published" if job.issn else "relevance",
-        "order": "desc",
         "rows": "1000" if job.issn else "25",
         "mailto": DEFAULT_MAILTO or UNPAYWALL_EMAIL,
     }
     if not job.issn:
+        params["sort"] = "relevance"
+        params["order"] = "desc"
         params["query.bibliographic"] = job.query
     if job.container_title:
         params["query.container-title"] = job.container_title

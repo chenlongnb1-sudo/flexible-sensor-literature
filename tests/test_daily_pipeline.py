@@ -152,6 +152,8 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertEqual(params["rows"], ["1000"])
         self.assertTrue(params["mailto"][0])
         self.assertNotIn("query.bibliographic", params)
+        self.assertNotIn("sort", params)
+        self.assertNotIn("order", params)
         self.assertIn("/journals/2520-1131/works", request.call_args.args[0])
         self.assertEqual([record["title"] for record in records], ["Matching tactile paper"])
 
@@ -192,6 +194,8 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertEqual(first_params["cursor"], ["*"])
         self.assertEqual(second_params["cursor"], ["page-two"])
         self.assertNotIn("query.bibliographic", second_params)
+        self.assertNotIn("sort", second_params)
+        self.assertNotIn("order", second_params)
 
     def test_science_official_feed_recovers_newly_published_article(self) -> None:
         job = SearchJob(
