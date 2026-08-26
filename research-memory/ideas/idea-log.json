@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25",
+  "updated_at": "2026-08-26",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -1083,6 +1083,174 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-08-19T02:32:55.437203+00:00"
+    },
+    {
+      "id": "idea-2026-08-26-2ba8b40dafc0",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "Artificial Tactile Neuron Systems: From Biomimetic Sensing to Intelligent Interaction",
+      "source_papers": [
+        {
+          "paper_id": "paper-3a82f44ab4dbb8f2",
+          "title": "Artificial Tactile Neuron Systems: From Biomimetic Sensing to Intelligent Interaction",
+          "doi": "10.1002/adfm.77961",
+          "url": "https://doi.org/10.1002/adfm.77961"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-26T01:07:53.249851+00:00"
+    },
+    {
+      "id": "idea-2026-08-26-241ca1ee2d45",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P5",
+      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
+      "source": "Artificial Tactile Neuron Systems: From Biomimetic Sensing to Intelligent Interaction",
+      "source_papers": [
+        {
+          "paper_id": "paper-3a82f44ab4dbb8f2",
+          "title": "Artificial Tactile Neuron Systems: From Biomimetic Sensing to Intelligent Interaction",
+          "doi": "10.1002/adfm.77961",
+          "url": "https://doi.org/10.1002/adfm.77961"
+        }
+      ],
+      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
+      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
+      "controls": [
+        "raw readout",
+        "software projection",
+        "hardware projection",
+        "hardware projection + few-shot calibration"
+      ],
+      "success_metrics": [
+        "accuracy degradation",
+        "feature drift",
+        "calibration samples",
+        "fault ratio",
+        "cross-device variance"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-26T01:07:53.249861+00:00"
+    },
+    {
+      "id": "idea-2026-08-26-ca6472007811",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Artificial Tactile Neuron Systems: From Biomimetic Sensing to Intelligent Interaction",
+      "source_papers": [
+        {
+          "paper_id": "paper-3a82f44ab4dbb8f2",
+          "title": "Artificial Tactile Neuron Systems: From Biomimetic Sensing to Intelligent Interaction",
+          "doi": "10.1002/adfm.77961",
+          "url": "https://doi.org/10.1002/adfm.77961"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-26T01:07:53.249865+00:00"
+    },
+    {
+      "id": "idea-2026-08-26-502b79be5d9a",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P1",
+      "title": "把论文中的结构机制转成偏移/旋转/接触半径容差地图",
+      "source": "Frequency‐Division‐Multiplexed Microwave Tactile Sensor Array",
+      "source_papers": [
+        {
+          "paper_id": "paper-a55d6d5f79c8a41c",
+          "title": "Frequency‐Division‐Multiplexed Microwave Tactile Sensor Array",
+          "doi": "10.1002/admt.71276",
+          "url": "https://doi.org/10.1002/admt.71276"
+        }
+      ],
+      "hypothesis": "若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。",
+      "minimum_experiment": "在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。",
+      "controls": [
+        "周期电极+常规微结构",
+        "周期电极+HCP",
+        "梯度/非周期电极+常规微结构",
+        "目标结构"
+      ],
+      "success_metrics": [
+        "CV",
+        "shift sensitivity",
+        "rotation sensitivity",
+        "contact-radius sensitivity",
+        "signal void ratio"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-26T01:07:53.249869+00:00"
+    },
+    {
+      "id": "idea-2026-08-26-5bc450179f77",
+      "status": "candidate",
+      "grade": "A",
+      "track": "P3",
+      "title": "把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照",
+      "source": "Frequency‐Division‐Multiplexed Microwave Tactile Sensor Array",
+      "source_papers": [
+        {
+          "paper_id": "paper-a55d6d5f79c8a41c",
+          "title": "Frequency‐Division‐Multiplexed Microwave Tactile Sensor Array",
+          "doi": "10.1002/admt.71276",
+          "url": "https://doi.org/10.1002/admt.71276"
+        }
+      ],
+      "hypothesis": "可解释的局部矢量/空间投影能以更少读出通道保持边缘、形状和滑移方向信息。",
+      "minimum_experiment": "在同一阵列输入上比较 raw scanning、scalar pooling、software gradient 与 hardware macro-pixel。",
+      "controls": [
+        "raw pixel scanning",
+        "scalar pooling",
+        "software gradient",
+        "hardware macro-pixel"
+      ],
+      "success_metrics": [
+        "channel count",
+        "latency",
+        "power",
+        "edge/shape accuracy",
+        "direction accuracy"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-08-26T01:07:53.249872+00:00"
     }
   ]
 }

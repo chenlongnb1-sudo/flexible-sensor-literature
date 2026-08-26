@@ -1,0 +1,7003 @@
+{
+  "paper": {
+    "title": "Spin-based in-sensor computing magnetic tactile sensor for rapid identification of underwater targets",
+    "venue": "Microsystems & Nanoengineering",
+    "source_type": "pdf",
+    "language": "en",
+    "source_path": "research-memory/literature/2026/2026-08-26/papers/paper-98467b8be928a937.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S0001",
+      "page": 1,
+      "type": "paragraph",
+      "order": 1,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Microsystems & Nanoengineering https://doi.org/10.1038/s41378-026-01423-w www.nature.com/micronano",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.81,
+        538.69,
+        55.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0002",
+      "page": 1,
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "A R T I C L E O p e n A c c e s s",
+      "translation": "",
+      "bbox": [
+        60.32,
+        83.26,
+        534.94,
+        96.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0003",
+      "page": 1,
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "Spin-based in-sensor computing magnetic tactile sensor for rapid identification of underwater targets",
+      "translation": "",
+      "bbox": [
+        56.69,
+        116.12,
+        526.38,
+        191.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0004",
+      "page": 1,
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "Wei Gao 1, Yue Qin1, Jinyu Tai1, Ting Feng1, Shuchen Song1, Zhiqiang Xiang1, Yunbo Shi1, Xin Li1, Huanfei Wen1, Zhonghao Li1, Zongmin Ma 1, Hao Guo 1 , Jun Tang1 and Jun Liu1",
+      "translation": "",
+      "bbox": [
+        56.69,
+        199.47,
+        534.51,
+        226.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0005",
+      "page": 1,
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "1234567890():,; 1234567890():,;",
+      "translation": "",
+      "bbox": [
+        3.12,
+        377.02,
+        12.21,
+        408.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0006",
+      "page": 1,
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "1234567890():,; 1234567890():,;",
+      "translation": "",
+      "bbox": [
+        14.44,
+        376.54,
+        25.43,
+        408.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0007",
+      "page": 1,
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "Abstract Reliable underwater tactile sensing technology can promote the effective exploitation of marine resources, which is of significant importance for sustainable human development. Such technology typically requires a combination of waterproofing, intelligence, and high efficiency. Herein, we leverage the in-sensor computing (ISC) neuromorphic device architecture as an innovative platform to construct a diamond nitrogen-vacancy (NV) center-based wireless magnetic tactile sensor (ISC-NVTS). This sensor achieves highly linear force-to-magnetic signal conversion through an array of NdFeB magnetized flexible films and accomplishes ultra-fast magnetic signal detection using diamond NV center magnetic sensing unit arrays operating in a fixed-frequency mode. This wireless connection approach effectively solves the waterproofing issue for tactile electronic devices. Furthermore, we enable adjustable pressure responsivity of the sensing unit array through a microwave multi-parameter NV center electron spin resonance control method, endowing it with the advanced intelligence to execute ISC architecture-based artificial neural network algorithms. Finally, the ISC-NVTS achieved a recognition rate of 95.1% (Random noise 0.1, offline simulation) in a classification task involving five types of marine debris and organisms, with a recognition time of only 6.45 ms. We anticipate that this work will advance the further development of tactile sensors and provide support for the sustainable exploitation and utilization of marine resources.",
+      "translation": "",
+      "bbox": [
+        63.16,
+        243.24,
+        532.11,
+        423.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0008",
+      "page": 1,
+      "type": "paragraph",
+      "order": 8,
+      "original_text": "Introduction As a treasure trove of Earth’s resources, the ocean harbors over 90% of global gas hydrate reserves1,2, 80% of the planet’s biodiversity3–5, and 96.5% of its water volume6. Against the backdrop of gradual terrestrial resource depletion, the effective development of marine resources holds strategic significance for sustainable human development7,8. Reliable underwater information detection technology is indispensable for achieving this goal. However, the high conductivity and strong scattering characteristics of seawater cause severe performance",
+      "translation": "",
+      "bbox": [
+        56.69,
+        456.29,
+        290.64,
+        588.81
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0009",
+      "page": 1,
+      "type": "paragraph",
+      "order": 9,
+      "original_text": "attenuation or even failure of efficient terrestrial detection methods like microwaves9 and optics10 in underwater environments. Although acoustic detection has become the mainstream method for underwater exploration due to its low-frequency penetration capability, it is still limited by resolution, making it difficult to obtain sufficiently detailed target information11–13. Therefore, tactile sensing technology based on direct physical contact can serve as an effective means to acquire richer and more accurate marine information. Typically, a reliable underwater tactile sensing technology needs to possess excellent waterproofing, intelligence, and high efficiency. However, its realization remains a challenge in the community, constrained by the waterproof packaging requirements of wired-connected pressure-sensitive units and the serial working mode of the von Neumann architecture-based intelligent sensing system for sensing, memory, and computation14–16.",
+      "translation": "",
+      "bbox": [
+        304.72,
+        458.94,
+        538.68,
+        660.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0010",
+      "page": 1,
+      "type": "paragraph",
+      "order": 10,
+      "original_text": "Correspondence: Hao Guo (guohao@nuc.edu.cn) or Jun Tang (tangjun@nuc.edu.cn) or Jun Liu (liuj@nuc.edu.cn) 1State key Laboratory of Extreme Environment Optoelectronic Dynamic Testing Technology and Instrument, Shanxi Province Key Laboratory of Quantum Sensing and Precision Measurement, North University of China, Taiyuan 030051, China",
+      "translation": "",
+      "bbox": [
+        56.69,
+        609.4,
+        279.0,
+        661.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0011",
+      "page": 1,
+      "type": "paragraph",
+      "order": 11,
+      "original_text": "© The Author(s) 2026",
+      "translation": "",
+      "bbox": [
+        56.69,
+        671.58,
+        114.4,
+        678.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0012",
+      "page": 1,
+      "type": "paragraph",
+      "order": 12,
+      "original_text": "Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. Theimagesorotherthirdpartymaterialinthisarticleareincludedinthearticle’sCreativeCommonslicence,unlessindicatedotherwiseinacreditlinetothematerial.Ifmaterialisnotincluded in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        679.57,
+        538.59,
+        731.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0013",
+      "page": 2,
+      "type": "paragraph",
+      "order": 13,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 2 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0014",
+      "page": 2,
+      "type": "paragraph",
+      "order": 14,
+      "original_text": "through direct physical contact in an aqueous environment. Leveraging the good penetration of magnetic fields through water, it enables high-fidelity wireless information transmission. The magnetic information sensingprocessing layer consists of a diamond NV center magnetic sensing unit array operating in a fixed-frequency mode, enabling ultra-fast magnetic information detection. Concurrently, by intervening in the NV center electron spin resonance process through microwave frequency/ power control, adjustable magnetic responsivity is achieved, allowing the NV sensing unit array to implement the ISC architecture. Based on matrix multiplication of magnetic field intensity/responsivity and Kirchhoff’s current addition, parallel-mode magnetic information detection and artificial neural network processing are realized. From an application perspective, an ISC-NVTSbased waterproof tactile sensing system for marine object recognition was constructed, achieving a 95.1% recognition rate (Random noise 0.1, offline simulation) in classifying five typical types of marine debris and organisms. This system integrates underwater tactile sensing and computing functions, offering advantages of rapid response, low cost, and high scalability. It provides a reliable technological platform for underwater intelligent tactile scenarios and represents a crucial step towards the sustainable exploitation and development of marine resources.",
+      "translation": "",
+      "bbox": [
+        304.72,
+        88.87,
+        538.6,
+        409.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0015",
+      "page": 2,
+      "type": "paragraph",
+      "order": 15,
+      "original_text": "Results Wireless in-sensor computing magnetic tactile sensor based on diamond NV centers for underwater use Current typical underwater tactile sensors (Fig. 1a) adopt the von Neumann architecture, usually comprising separate tactile sensing arrays, memory, and processors. During seabed operations, they sequentially perform tactile information detection, data storage, and advanced computational processing. This serial working mode leads to high system latency, while redundant data transmission between modules results in high system power consumption31,32. More importantly, the tactile sensing array contains conductive structures and complex wired connections, posing significant challenges for packaging technology. Furthermore, paradoxically, high-quality packaging can weaken the information coupling between the target and the tactile sensing unit, severely affecting tactile sensitivity. Therefore, the design principles for underwater tactile sensing systems mainly include two core aspects: first, a tactile sensing mechanism that is unaffected by the aqueous environment; second, an efficient device architecture with a parallel sensing/computation model. Inspired by the ISC neuromorphic architecture, we constructed an ISC-NVTS tactile sensor (Fig. 1b), realizing the fusion of tactile sensing and data processing functions. The ISC-NVTS primarily consists of",
+      "translation": "",
+      "bbox": [
+        304.72,
+        420.41,
+        538.59,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0016",
+      "page": 2,
+      "type": "paragraph",
+      "order": 16,
+      "original_text": "Recently, intelligent tactile sensors based on various mechanisms such as piezoresistive, piezoelectric, and capacitive have been successfully developed17–19. Based on the innovative platform of the in-sensor computing (ISC) architecture, they have achieved the elimination of data transmission structures between modules and the parallelization of tactile sensing and computation processes, significantly improving sensor power consumption, response speed, and integration20–22. However, most of these sensors contain conductive force-sensitive structures and wired data connection structures23, imposing high demands on packaging technology for underwater operation. Moreover, these sensors often require direct contact with the target for high sensitivity, creating a contradiction between waterproofing and sensitivity. As a novel tactile sensing solution, flexible magnetic tactile sensors have demonstrated excellent performance in underwater environments24,25. They employ a separated structure comprising a flexible magnetoelastic force-sensitive film and a magnetic sensor26, allowing the force-sensitive structure to make direct physical contact with underwater targets without any encapsulation, enabling high-sensitivity tactile sensing27. Nevertheless, such sensors face difficulties operating on an ISC architecture platform, mainly due to two limitations: first, traditional Hall and magnetoresistive magnetic sensors lack responsivity adjustability28,29; second, their inherent response speed is relatively slow, severely constraining the parallel sensing-computing advantage inherent to the ISC architecture. Diamond NV color centers offer an opportunity to address these issues. As one of the quantum sensing methods with high technical proficiency, they possess advantages such as high sensitivity, strong process compatibility, and roomtemperature operation in magnetic detection. More importantly, NV color centers have rich excitation and regulation methods, which makes it possible to adjust the magnetic field responsiveness. Currently, the method of regulating the spin process of NV color centers using multiple parameters such as microwave frequency/power has been verified to achieve responsivity adjustment of NV color center temperature sensors, thereby realizing temperature field sensors based on the ISC architecture30. Here, we propose an in-sensor computing neuromorphic architecture-inspired diamond NV center-based wireless magnetic tactile sensor (ISC-NVTS) that utilizes the magnetoelastic effect in soft magnetoelastic materials to achieve underwater tactile perception. The developed ISC-NVTS features a hierarchical structure, including a force-magnetic coupling layer (requiring no encapsulation) and a magnetic information sensing-processing layer. The force-magnetic coupling layer employs an array of NdFeB magnetized flexible films, which can convert tactile stimuli into magnetic field changes",
+      "translation": "",
+      "bbox": [
+        56.69,
+        88.88,
+        290.57,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0017",
+      "page": 3,
+      "type": "paragraph",
+      "order": 17,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 3 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0018",
+      "page": 3,
+      "type": "paragraph",
+      "order": 18,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        501.0,
+        101.95,
+        502.84,
+        104.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0019",
+      "page": 3,
+      "type": "paragraph",
+      "order": 19,
+      "original_text": "b a",
+      "translation": "",
+      "bbox": [
+        69.75,
+        95.44,
+        237.54,
+        105.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0020",
+      "page": 3,
+      "type": "paragraph",
+      "order": 20,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        465.2,
+        105.54,
+        467.04,
+        107.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0021",
+      "page": 3,
+      "type": "paragraph",
+      "order": 21,
+      "original_text": "Sensors c",
+      "translation": "",
+      "bbox": [
+        258.28,
+        95.44,
+        437.31,
+        111.7
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0022",
+      "page": 3,
+      "type": "paragraph",
+      "order": 22,
+      "original_text": "FN",
+      "translation": "",
+      "bbox": [
+        400.06,
+        106.5,
+        407.1,
+        113.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0023",
+      "page": 3,
+      "type": "paragraph",
+      "order": 23,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        479.12,
+        115.83,
+        480.96,
+        117.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0024",
+      "page": 3,
+      "type": "paragraph",
+      "order": 24,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        508.18,
+        118.96,
+        510.02,
+        121.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0025",
+      "page": 3,
+      "type": "paragraph",
+      "order": 25,
+      "original_text": "Si Si Si",
+      "translation": "",
+      "bbox": [
+        448.42,
+        117.37,
+        474.19,
+        121.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0026",
+      "page": 3,
+      "type": "paragraph",
+      "order": 26,
+      "original_text": ". . .",
+      "translation": "",
+      "bbox": [
+        365.58,
+        103.88,
+        387.05,
+        122.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0027",
+      "page": 3,
+      "type": "paragraph",
+      "order": 27,
+      "original_text": "CPU RAM U",
+      "translation": "",
+      "bbox": [
+        116.99,
+        115.99,
+        151.61,
+        123.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0028",
+      "page": 3,
+      "type": "paragraph",
+      "order": 28,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        485.48,
+        123.98,
+        487.32,
+        126.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0029",
+      "page": 3,
+      "type": "paragraph",
+      "order": 29,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        468.97,
+        126.63,
+        470.81,
+        128.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0030",
+      "page": 3,
+      "type": "paragraph",
+      "order": 30,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        515.95,
+        126.63,
+        517.79,
+        128.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0031",
+      "page": 3,
+      "type": "paragraph",
+      "order": 31,
+      "original_text": "+",
+      "translation": "",
+      "bbox": [
+        271.54,
+        121.98,
+        275.63,
+        128.99
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0032",
+      "page": 3,
+      "type": "paragraph",
+      "order": 32,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        494.11,
+        129.5,
+        495.95,
+        131.59
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0033",
+      "page": 3,
+      "type": "paragraph",
+      "order": 33,
+      "original_text": "In-memory computing",
+      "translation": "",
+      "bbox": [
+        238.03,
+        128.18,
+        306.79,
+        135.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0034",
+      "page": 3,
+      "type": "paragraph",
+      "order": 34,
+      "original_text": "Memory Processor",
+      "translation": "",
+      "bbox": [
+        109.82,
+        131.47,
+        168.67,
+        137.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0035",
+      "page": 3,
+      "type": "paragraph",
+      "order": 35,
+      "original_text": "Si",
+      "translation": "",
+      "bbox": [
+        448.52,
+        137.91,
+        450.36,
+        140.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0036",
+      "page": 3,
+      "type": "paragraph",
+      "order": 36,
+      "original_text": "F1 F2 F3",
+      "translation": "",
+      "bbox": [
+        308.6,
+        116.45,
+        328.84,
+        145.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0037",
+      "page": 3,
+      "type": "paragraph",
+      "order": 37,
+      "original_text": "NdFeB magnetic particle",
+      "translation": "",
+      "bbox": [
+        454.57,
+        143.58,
+        518.95,
+        149.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0038",
+      "page": 3,
+      "type": "paragraph",
+      "order": 38,
+      "original_text": "Si Silicone rubber",
+      "translation": "",
+      "bbox": [
+        446.0,
+        152.63,
+        493.77,
+        159.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0039",
+      "page": 3,
+      "type": "paragraph",
+      "order": 39,
+      "original_text": "I",
+      "translation": "",
+      "bbox": [
+        404.82,
+        152.24,
+        407.3,
+        161.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0040",
+      "page": 3,
+      "type": "paragraph",
+      "order": 40,
+      "original_text": "BN",
+      "translation": "",
+      "bbox": [
+        385.33,
+        153.98,
+        392.55,
+        161.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0041",
+      "page": 3,
+      "type": "paragraph",
+      "order": 41,
+      "original_text": "R1",
+      "translation": "",
+      "bbox": [
+        321.18,
+        159.17,
+        327.73,
+        166.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0042",
+      "page": 3,
+      "type": "paragraph",
+      "order": 42,
+      "original_text": "=",
+      "translation": "",
+      "bbox": [
+        268.11,
+        162.76,
+        275.11,
+        166.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0043",
+      "page": 3,
+      "type": "paragraph",
+      "order": 43,
+      "original_text": "Applied stress",
+      "translation": "",
+      "bbox": [
+        447.59,
+        166.11,
+        484.52,
+        172.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0044",
+      "page": 3,
+      "type": "paragraph",
+      "order": 44,
+      "original_text": "B1 B2 B3",
+      "translation": "",
+      "bbox": [
+        325.68,
+        146.61,
+        354.56,
+        172.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0045",
+      "page": 3,
+      "type": "paragraph",
+      "order": 45,
+      "original_text": "RN",
+      "translation": "",
+      "bbox": [
+        380.72,
+        165.98,
+        387.94,
+        173.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0046",
+      "page": 3,
+      "type": "paragraph",
+      "order": 46,
+      "original_text": "In-sensor computing",
+      "translation": "",
+      "bbox": [
+        241.57,
+        168.89,
+        305.98,
+        175.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0047",
+      "page": 3,
+      "type": "paragraph",
+      "order": 47,
+      "original_text": "R2",
+      "translation": "",
+      "bbox": [
+        330.7,
+        169.22,
+        337.25,
+        176.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0048",
+      "page": 3,
+      "type": "paragraph",
+      "order": 48,
+      "original_text": "R3",
+      "translation": "",
+      "bbox": [
+        341.43,
+        179.16,
+        347.98,
+        186.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0049",
+      "page": 3,
+      "type": "paragraph",
+      "order": 49,
+      "original_text": "B S",
+      "translation": "",
+      "bbox": [
+        443.58,
+        175.71,
+        495.15,
+        186.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0050",
+      "page": 3,
+      "type": "paragraph",
+      "order": 50,
+      "original_text": "I=\u0005FN RN",
+      "translation": "",
+      "bbox": [
+        394.17,
+        182.65,
+        423.69,
+        191.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0051",
+      "page": 3,
+      "type": "paragraph",
+      "order": 51,
+      "original_text": "Tactile sensing array",
+      "translation": "",
+      "bbox": [
+        77.45,
+        185.9,
+        117.53,
+        199.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0052",
+      "page": 3,
+      "type": "paragraph",
+      "order": 52,
+      "original_text": "N",
+      "translation": "",
+      "bbox": [
+        443.37,
+        197.2,
+        446.98,
+        202.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0053",
+      "page": 3,
+      "type": "paragraph",
+      "order": 53,
+      "original_text": "NV F",
+      "translation": "",
+      "bbox": [
+        453.23,
+        200.23,
+        513.66,
+        207.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0054",
+      "page": 3,
+      "type": "paragraph",
+      "order": 54,
+      "original_text": "d",
+      "translation": "",
+      "bbox": [
+        69.75,
+        210.94,
+        75.87,
+        220.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0055",
+      "page": 3,
+      "type": "paragraph",
+      "order": 55,
+      "original_text": "e",
+      "translation": "",
+      "bbox": [
+        175.35,
+        210.94,
+        180.91,
+        220.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0056",
+      "page": 3,
+      "type": "paragraph",
+      "order": 56,
+      "original_text": "f",
+      "translation": "",
+      "bbox": [
+        336.12,
+        210.94,
+        339.45,
+        220.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0057",
+      "page": 3,
+      "type": "paragraph",
+      "order": 57,
+      "original_text": "N",
+      "translation": "",
+      "bbox": [
+        114.71,
+        215.61,
+        120.61,
+        223.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0058",
+      "page": 3,
+      "type": "paragraph",
+      "order": 58,
+      "original_text": "Z",
+      "translation": "",
+      "bbox": [
+        129.76,
+        223.26,
+        133.43,
+        229.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0059",
+      "page": 3,
+      "type": "paragraph",
+      "order": 59,
+      "original_text": "<111>",
+      "translation": "",
+      "bbox": [
+        95.12,
+        223.73,
+        111.08,
+        229.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0060",
+      "page": 3,
+      "type": "paragraph",
+      "order": 60,
+      "original_text": "3E",
+      "translation": "",
+      "bbox": [
+        197.65,
+        233.86,
+        206.34,
+        243.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0061",
+      "page": 3,
+      "type": "paragraph",
+      "order": 61,
+      "original_text": "V",
+      "translation": "",
+      "bbox": [
+        115.2,
+        236.44,
+        120.94,
+        244.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0062",
+      "page": 3,
+      "type": "paragraph",
+      "order": 62,
+      "original_text": "Positive response frequency",
+      "translation": "",
+      "bbox": [
+        468.55,
+        242.47,
+        512.73,
+        253.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0063",
+      "page": 3,
+      "type": "paragraph",
+      "order": 63,
+      "original_text": "\u0003+ 1 \u0004",
+      "translation": "",
+      "bbox": [
+        362.55,
+        246.33,
+        379.69,
+        253.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0064",
+      "page": 3,
+      "type": "paragraph",
+      "order": 64,
+      "original_text": "1A1",
+      "translation": "",
+      "bbox": [
+        178.67,
+        246.42,
+        190.69,
+        257.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0065",
+      "page": 3,
+      "type": "paragraph",
+      "order": 65,
+      "original_text": "C C C",
+      "translation": "",
+      "bbox": [
+        93.63,
+        242.5,
+        138.32,
+        258.78
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0066",
+      "page": 3,
+      "type": "paragraph",
+      "order": 66,
+      "original_text": "Antenna",
+      "translation": "",
+      "bbox": [
+        127.67,
+        255.69,
+        150.01,
+        261.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0067",
+      "page": 3,
+      "type": "paragraph",
+      "order": 67,
+      "original_text": "D = 2.87GHz",
+      "translation": "",
+      "bbox": [
+        412.14,
+        259.89,
+        448.37,
+        266.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0068",
+      "page": 3,
+      "type": "paragraph",
+      "order": 68,
+      "original_text": "532 nm",
+      "translation": "",
+      "bbox": [
+        227.97,
+        252.91,
+        233.97,
+        273.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0069",
+      "page": 3,
+      "type": "paragraph",
+      "order": 69,
+      "original_text": "638–800 nm",
+      "translation": "",
+      "bbox": [
+        240.74,
+        249.0,
+        246.74,
+        282.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0070",
+      "page": 3,
+      "type": "paragraph",
+      "order": 70,
+      "original_text": "\u0003– 1 \u0004",
+      "translation": "",
+      "bbox": [
+        363.04,
+        280.31,
+        379.98,
+        287.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0071",
+      "page": 3,
+      "type": "paragraph",
+      "order": 71,
+      "original_text": "\u0003+ 1 \u0004",
+      "translation": "",
+      "bbox": [
+        313.22,
+        283.17,
+        330.36,
+        290.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0072",
+      "page": 3,
+      "type": "paragraph",
+      "order": 72,
+      "original_text": "MW",
+      "translation": "",
+      "bbox": [
+        349.46,
+        284.4,
+        355.18,
+        294.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0073",
+      "page": 3,
+      "type": "paragraph",
+      "order": 73,
+      "original_text": "Frequency",
+      "translation": "",
+      "bbox": [
+        267.74,
+        267.71,
+        273.74,
+        295.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0074",
+      "page": 3,
+      "type": "paragraph",
+      "order": 74,
+      "original_text": "Negative response frequency",
+      "translation": "",
+      "bbox": [
+        465.75,
+        285.95,
+        511.6,
+        296.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0075",
+      "page": 3,
+      "type": "paragraph",
+      "order": 75,
+      "original_text": "Electrode",
+      "translation": "",
+      "bbox": [
+        147.8,
+        279.46,
+        155.17,
+        298.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0076",
+      "page": 3,
+      "type": "paragraph",
+      "order": 76,
+      "original_text": "Diamond Filter film",
+      "translation": "",
+      "bbox": [
+        111.61,
+        295.47,
+        128.44,
+        303.66
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0077",
+      "page": 3,
+      "type": "paragraph",
+      "order": 77,
+      "original_text": "3A2",
+      "translation": "",
+      "bbox": [
+        191.33,
+        293.56,
+        203.36,
+        304.57
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0078",
+      "page": 3,
+      "type": "paragraph",
+      "order": 78,
+      "original_text": "Magnetic field (applied stress)",
+      "translation": "",
+      "bbox": [
+        520.24,
+        236.61,
+        526.08,
+        312.15
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0079",
+      "page": 3,
+      "type": "paragraph",
+      "order": 79,
+      "original_text": "\u00030 \u0004",
+      "translation": "",
+      "bbox": [
+        368.06,
+        307.83,
+        379.16,
+        315.0
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0080",
+      "page": 3,
+      "type": "paragraph",
+      "order": 80,
+      "original_text": "\u0003– 1 \u0004 \u0003 0 \u0004",
+      "translation": "",
+      "bbox": [
+        313.22,
+        303.26,
+        330.17,
+        319.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0081",
+      "page": 3,
+      "type": "paragraph",
+      "order": 81,
+      "original_text": "Si- PIN photodiode",
+      "translation": "",
+      "bbox": [
+        103.52,
+        317.73,
+        137.69,
+        321.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0082",
+      "page": 3,
+      "type": "paragraph",
+      "order": 82,
+      "original_text": "Microwave power",
+      "translation": "",
+      "bbox": [
+        416.23,
+        315.69,
+        464.48,
+        321.85
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0083",
+      "page": 3,
+      "type": "paragraph",
+      "order": 83,
+      "original_text": "MW frequency",
+      "translation": "",
+      "bbox": [
+        389.63,
+        294.0,
+        395.47,
+        330.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0084",
+      "page": 3,
+      "type": "paragraph",
+      "order": 84,
+      "original_text": "Magnetic field",
+      "translation": "",
+      "bbox": [
+        280.07,
+        325.34,
+        317.14,
+        331.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0085",
+      "page": 3,
+      "type": "paragraph",
+      "order": 85,
+      "original_text": "Output current",
+      "translation": "",
+      "bbox": [
+        413.58,
+        326.86,
+        454.04,
+        333.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0086",
+      "page": 3,
+      "type": "paragraph",
+      "order": 86,
+      "original_text": "g",
+      "translation": "",
+      "bbox": [
+        69.75,
+        339.05,
+        75.87,
+        349.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0087",
+      "page": 3,
+      "type": "paragraph",
+      "order": 87,
+      "original_text": "Positive response frequency",
+      "translation": "",
+      "bbox": [
+        88.53,
+        395.17,
+        141.55,
+        408.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0088",
+      "page": 3,
+      "type": "paragraph",
+      "order": 88,
+      "original_text": "Applied stress Microwave power",
+      "translation": "",
+      "bbox": [
+        226.23,
+        434.83,
+        469.17,
+        442.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0089",
+      "page": 3,
+      "type": "paragraph",
+      "order": 89,
+      "original_text": "Negative response frequency",
+      "translation": "",
+      "bbox": [
+        87.33,
+        484.87,
+        142.3,
+        498.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0090",
+      "page": 3,
+      "type": "paragraph",
+      "order": 90,
+      "original_text": "ms=0 ms=\u00021",
+      "translation": "",
+      "bbox": [
+        431.42,
+        521.28,
+        515.0,
+        530.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0091",
+      "page": 3,
+      "type": "paragraph",
+      "order": 91,
+      "original_text": "Fig. 1 Overview of the wireless in-sensor computing magnetic tactile sensor (ISC-NVTS) for underwater use. a A typical underwater tactile sensing system. The serial sensing/storage/computation working mode leads to low efficiency, and the electronic tactile sensing elements and wired connection structures directly exposed to water impose stringent requirements on packaging quality. b Schematic of the ISC-NVTS structure: a diamond tactile sensing unit array (connected in parallel) composed of a force-magnetic coupling layer and a magnetic information sensingprocessing layer, performing real-time computation:I = ∑FNRN. c Schematic of the force-magnetic coupling layer structure: NdFeB magnetic particles dispersed in a polymer silicone matrix. The magnetization direction is perpendicular to the top surface, enabling highly linear force-to-magnetic information conversion. d Schematic of the diamond NV center magnetic sensing unit structure, consisting of an antenna, diamond (<111> orientation), filter film, and Si-PIN photodetector. e Energy level diagram of the NV center, showing a triplet state. f Mechanism of ultra-fast response and adjustable responsivity for the diamond NV center magnetic sensing unit. The high linearity of the optically detected magnetic resonance (ODMR) output curve is utilized to achieve ultra-fast magnetic detection using a fixed-frequency mode; multi-parameter control of microwave frequency/power intervenes in the NV center electron spin resonance process, enabling positive/negative and magnitude adjustment of the sensing unit’s magnetic (stress) responsivity. g Electron spin state distribution in diamond under different applied stresses and microwave conditions, illustrating the adjustable stress responsivity characteristic of the sensing unit",
+      "translation": "",
+      "bbox": [
+        62.7,
+        541.55,
+        532.67,
+        669.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0092",
+      "page": 3,
+      "type": "paragraph",
+      "order": 92,
+      "original_text": "a force-magnetic information coupling layer and a magnetic information sensing-processing layer, which together form a diamond tactile sensing unit array. All diamond tactile sensing units are connected in parallel to",
+      "translation": "",
+      "bbox": [
+        56.69,
+        686.65,
+        290.55,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0093",
+      "page": 3,
+      "type": "paragraph",
+      "order": 93,
+      "original_text": "form a single output, executing fully connected artificial neural network (ANN) recognition and classification operations based on matrix multiplication of stress (FN) / responsivity (RN) and Kirchhoff’s current addition",
+      "translation": "",
+      "bbox": [
+        304.72,
+        686.11,
+        538.57,
+        733.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0094",
+      "page": 4,
+      "type": "paragraph",
+      "order": 94,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 4 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0095",
+      "page": 4,
+      "type": "paragraph",
+      "order": 95,
+      "original_text": "(Supplementary Fig. 1): I = ∑FNRN. ISC-NVTS achieves hardware mapping for the input node scale, node weight matrix, and node interconnection method of artificial neural network models. The internal structure of the ISCNVTS force-magnetic information coupling layer shows NdFeB magnetic particles dispersed within a polymer silicone matrix (Fig. 1c). After magnetization (direction perpendicular to the top surface), it forms a stable soft magnetic film with a specific magnetic arrangement. During operation, this structural layer can be directly exposed to the aqueous environment for direct physical contact with the target. Based on the giant magnetoelastic effect33, a highly linear magnetic field conversion can be obtained at the far-field position along the normal line of its center point. The magnetic information sensingprocessing layer of the ISC-NVTS is a parallelconnected diamond NV center magnetic sensing unit array, responsible for detecting the stress-coupled magnetic field and executing the ISC architecture ANN recognition/classification algorithm. Figure 1d shows the structure of the integrated diamond NV center magnetic sensing unit based on the optically detected magnetic resonance (ODMR) principle, including an antenna, diamond (<111> orientation), filter film, and Si-PIN photodetector. As a room-temperature stable solid-state spin system with various processing advantages, the diamond NV center also offers excellent scalability for ISC-NVTS integration. The diamond NV center is the core of magnetic detection for the ISC-NVTS. It is a lattice defect with an atomic structure where a nitrogen atom replaces a carbon atom in the diamond lattice, forming a vacancy at an adjacent site. The NV center exhibits a ³A₂ spin triplet state (ms = 0 and ms = ±1) at room temperature34 (Fig. 1e). When excited by a 532 nm laser, electrons in the ms = 0 state return to the ground state via radiative transitions, emitting photons. In contrast, only a portion of electrons in the ms = ±1 states return to the ground state radiatively; another portion relaxes into the metastable ¹A₁ state via non-radiative transitions before flipping to the ms = 0 state, a process that does not produce photons. Therefore, fluorescence intensity can be used to infer the spin population distribution within the ensemble of NV centers: a greater number of electrons in the ms = 0 state yields a stronger measured fluorescence signal. When a magnetic field is applied to the diamond NV center, the Zeeman splitting effect occurs, causing the resonance frequencies of the ms = ±1 state electrons to shift symmetrically around 2.87 GHz (shift frequency Δf = γ * ΔB, gyromagnetic ratio γ = 2.8 MHz/Gs)35. Thus, magnetic field information can typically be resolved by frequency scanning to obtain the resonance frequency shift of the ms = ±1 state electrons. The prerequisites for implementing tactile perception on the ISC architecture are: 1. The tactile sensing unit",
+      "translation": "",
+      "bbox": [
+        56.69,
+        88.34,
+        290.65,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0096",
+      "page": 4,
+      "type": "paragraph",
+      "order": 96,
+      "original_text": "possesses adjustable responsivity to match different weight connections between nodes in the ANN model36,37; 2. The tactile sensing unit has an ultra-fast response characteristic to maximize the advantages of the parallel sensing/computation mode. Since the forcemagnetic information coupling layer of the ISC-NVTS has already converted stress into linear magnetic field information, the requirements here are adjustable responsivity and ultra-fast response for the magnetic sensing unit. As traditional frequency-sweep mode NV center magnetic sensors suffer from high system latency due to frequency sweeping and information resolution, we innovatively propose an ultra-fast magnetic detection method using a fixed microwave frequency, leveraging the high linearity characteristic of the ODMR output curve. Figure 1f shows the frequency-sweep mode ODMR output curves of a diamond NV center magnetic sensing unit responding to external magnetic field changes. When the magnetic field increases, the troughs of the output curve shift symmetrically away from 2.87 GHz (red curve). If the microwave frequency is fixed at the brown dashed line position (positive response frequency), the sensing unit output changes linearly with positive responsivity to magnetic field variations. Conversely, if fixed at the blue dashed line position (negative response frequency), the output changes linearly with negative responsivity. Therefore, the fixed microwave frequency mode diamond NV center magnetic sensing unit can achieve positive/ negative responsivity adjustment by controlling the microwave frequency. Increasing the microwave signal power of the sensing unit excites more photons with energy matching the energy difference between the ms = 0 and ms = ±1 levels, thereby enhancing the NV center’s electron spin resonance effect and promoting more NV center electrons to flip from the ms = 0 state to the ms = ±1 state38. Since the fluorescence intensity of the NV center ensemble is proportional to the number of ms = 0 state electrons, increased microwave power macroscopically manifests as a deepening of the trough in the frequency-sweep output curve (from gray to black curve), resulting in increased output responsivity. Thus, adjusting the microwave power of the sensing unit enables control over the magnitude of responsivity. Figure 1g shows the NV center electron spin state distribution in the diamond NV center tactile sensing unit under different microwave and stress conditions. As external stress increases (the magnetic field sensed by the NV center magnetic sensing unit strengthens), the number of NV center ms = 0 state electrons increases (decreases) under the positive (negative) response microwave frequency. As microwave power increases, the difference in the number of electrons in the ms = 0 state of diamond NV color centers caused by the same change in magnetic field will increase (the difference in fluorescence intensity will increase). In summary, by",
+      "translation": "",
+      "bbox": [
+        304.72,
+        88.88,
+        538.6,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0097",
+      "page": 5,
+      "type": "paragraph",
+      "order": 97,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 5 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0098",
+      "page": 5,
+      "type": "paragraph",
+      "order": 98,
+      "original_text": "performing multi-parameter control of microwave frequency/power on the fixed-frequency diamond NV center magnetic sensing unit, we achieved ultra-fast magnetic field response and adjustable responsivity characteristics. Coupling this with the NdFeB soft magnetic film for force-magnetic information conversion yielded an inherently waterproof, ultra-fast responding, and responsivityadjustable diamond NV center tactile sensing unit, enabling the ISC-NVTS to execute advanced intelligent algorithms based on the ISC architecture.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        88.88,
+        290.57,
+        206.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0099",
+      "page": 5,
+      "type": "paragraph",
+      "order": 99,
+      "original_text": "Implementation and performance of the ISC-NVTS The force-magnetic information coupling film of the ISC-NVTS is composed of NdFeB magnetic powder compounded with a flexible silicone matrix. The dimensions of the force-magnetic information coupling film for a single tactile sensing unit are 18 mm × 18 mm × 2 mm (Supplementary Fig. 2). To achieve both high magnetic response and suitable flexibility, we systematically studied the influence of magnetic powder mass fraction on the film’s comprehensive performance. As the magnetic powder mass fraction in the force-magnetic information coupling film increased from 40 wt% to 70 wt%, the remanent magnetization of the magnetic film continuously increased, reaching a maximum of 50.1 emu/g at 70 wt% (Fig. 2a). However, its coercivity remained essentially stable, indicating that the powder content primarily affects magnetization intensity rather than magnetic domain stability (internal magnetic domains). Additionally, the Young’s modulus of the force-magnetic information coupling film increased with higher magnetic powder content. Notably, when the mass fraction changed from 60 wt% to 70 wt% (where magnetic powder agglomeration significantly intensified), the film’s Young’s modulus jumped from 758 kPa to 1,228 kPa (Fig. 2b), causing a marked reduction in film flexibility. Comparing the properties of films with different ratios, the film with a magnetic powder mass fraction of 60 wt% (Fig. 2c) was selected as the force-magnetic information coupling layer for the ISC-NVTS, providing support for achieving high sensitivity, low latency, and flexible magnetic coupling of external stress information. The distance between the force-magnetic coupling film and the diamond in the diamond NV center tactile sensing unit is 20 mm (force/magnetic coupling coefficient α is 2.66 N/Gs, Supplementary Fig. 3). Here, ISCNVTS controls the spacing between adjacent diamond NV color center tactile sensing units to be 20 mm through molds (Supplementary Fig. 4), and the spacing between the diamond and NdFeB film is 20 mm. Applying different loading forces (0 N-0 Gs, 4.97 N-1.87 Gs, 8.82 N-3.32 Gs) causes the Lorentzian troughs of its ODMR frequency-sweep output curve to shift symmetrically around 2.87 GHz. Here, we select",
+      "translation": "",
+      "bbox": [
+        56.69,
+        220.5,
+        290.62,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0100",
+      "page": 5,
+      "type": "paragraph",
+      "order": 100,
+      "original_text": "the highly linear regions on both sides of the leftmost Lorentzian trough of the ODMR output curve as the sensing unit’s output response curves. Selecting different working frequencies enables responsivity of different polarities (Fig. 2d). Since the ISC-NVTS uses <111 > -oriented diamond, after applying a bias magnetic field perpendicular to the diamond’s top surface, the outermost Lorentzian trough corresponds to the magnetic field vector component perpendicular to the diamond surface. Therefore, selecting the outermost trough allows the sensing unit to naturally shield magnetic interference from other directions. Determining the sensing unit’s working frequency requires balancing linearity and measurement range, i.e., obtaining a higher linearity fitted straight line within the widest possible frequency range on one side of the Lorentzian trough. Through comparative analysis (Supplementary Fig. 5), we finally determined the sensing unit’s positive response frequency as 2.81587 GHz. The maximum detectable loading force FMAX at this frequency is 10.72 N [FMAX = (2 × Δf × α)/γ = 2 × (2.82151 GHz– 2.81587 GHz) × (2.66 N/Gs) / (2.8 MHz/Gs) = 10.72 N], with a linear correlation coefficient R² = 0.9952 for the fitted line. The negative response frequency is 2.80755 GHz, with FMAX = 10.74 N [FMAX = (2 × Δf × α)/γ = 2 × (2.81320 GHz–2.80755 GHz) × (2.66 N/Gs)/ (2.8 MHz/Gs) = 10.74 N] and R² = 0.9958 for the fitted line (Fig. 2e). Furthermore, Fig. 2d shows that the trough current Ict increases slightly with increasing loading stress. Testing the ODMR output of the sensing unit under different loading stresses (Supplementary Fig. 6) revealed a high linear relationship between Ict and loading force (Fig. 2f, R² = 0.997). Since the superposition of two linear processes remains linear, this effect does not impact the linearity quality of the diamond NV center tactile sensing unit. The microwave power can controllably intervene in the strength of the electron spin resonance process in the NV center ensemble. The relationship between ΔI (the difference between Ict and the baseline current) and microwave power (0–25 dBm) was calibrated (Fig. 2g), demonstrating the effective modulation of responsivity magnitude by the microwave power parameter. Because the Lorentzian-fitted line of the sensing unit’s ODMR output cannot start from zero (not all ms = 0 state electrons in the NV center ensemble can flip to ms = ±1, resulting in a baseline fluorescence intensity), a compensation resistor is used to perform a fixed subtraction of the sensing unit’s baseline current, allowing its output response curve to start from zero. Finally, we extracted output response curves for the sensing unit under six different microwave power states at both positive and negative (Fig. 2h) response frequencies, all exhibiting good linearity quality(R2 ≥0.992). At a power of 25 dBm at the positive response microwave frequency, the magnetic",
+      "translation": "",
+      "bbox": [
+        304.72,
+        88.87,
+        538.63,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0101",
+      "page": 6,
+      "type": "paragraph",
+      "order": 101,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 6 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0102",
+      "page": 6,
+      "type": "paragraph",
+      "order": 102,
+      "original_text": "a b c",
+      "translation": "",
+      "bbox": [
+        65.82,
+        95.44,
+        388.69,
+        105.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0103",
+      "page": 6,
+      "type": "paragraph",
+      "order": 103,
+      "original_text": "100",
+      "translation": "",
+      "bbox": [
+        82.13,
+        100.14,
+        92.2,
+        106.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0104",
+      "page": 6,
+      "type": "paragraph",
+      "order": 104,
+      "original_text": "80",
+      "translation": "",
+      "bbox": [
+        85.49,
+        109.29,
+        92.2,
+        115.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0105",
+      "page": 6,
+      "type": "paragraph",
+      "order": 105,
+      "original_text": "1200",
+      "translation": "",
+      "bbox": [
+        236.13,
+        112.01,
+        249.5,
+        118.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0106",
+      "page": 6,
+      "type": "paragraph",
+      "order": 106,
+      "original_text": "60",
+      "translation": "",
+      "bbox": [
+        85.49,
+        118.39,
+        92.2,
+        124.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0107",
+      "page": 6,
+      "type": "paragraph",
+      "order": 107,
+      "original_text": "1000",
+      "translation": "",
+      "bbox": [
+        236.13,
+        124.16,
+        249.5,
+        130.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0108",
+      "page": 6,
+      "type": "paragraph",
+      "order": 108,
+      "original_text": "1400 40 wt% 50 wt% 60 wt% 70 wt%",
+      "translation": "",
+      "bbox": [
+        236.13,
+        99.8,
+        282.41,
+        132.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0109",
+      "page": 6,
+      "type": "paragraph",
+      "order": 109,
+      "original_text": "40",
+      "translation": "",
+      "bbox": [
+        85.49,
+        127.55,
+        92.2,
+        133.56
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0110",
+      "page": 6,
+      "type": "paragraph",
+      "order": 110,
+      "original_text": "40 wt% 50 wt% 60 wt% 70 wt%",
+      "translation": "",
+      "bbox": [
+        119.07,
+        108.9,
+        135.52,
+        134.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0111",
+      "page": 6,
+      "type": "paragraph",
+      "order": 111,
+      "original_text": "800",
+      "translation": "",
+      "bbox": [
+        239.47,
+        136.38,
+        249.49,
+        142.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0112",
+      "page": 6,
+      "type": "paragraph",
+      "order": 112,
+      "original_text": "20",
+      "translation": "",
+      "bbox": [
+        85.49,
+        136.7,
+        92.2,
+        142.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0113",
+      "page": 6,
+      "type": "paragraph",
+      "order": 113,
+      "original_text": "0",
+      "translation": "",
+      "bbox": [
+        88.85,
+        145.85,
+        92.2,
+        151.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0114",
+      "page": 6,
+      "type": "paragraph",
+      "order": 114,
+      "original_text": "600",
+      "translation": "",
+      "bbox": [
+        239.47,
+        148.54,
+        249.49,
+        154.54
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0115",
+      "page": 6,
+      "type": "paragraph",
+      "order": 115,
+      "original_text": "−20",
+      "translation": "",
+      "bbox": [
+        81.98,
+        154.95,
+        92.2,
+        160.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0116",
+      "page": 6,
+      "type": "paragraph",
+      "order": 116,
+      "original_text": "Stress (kPa)",
+      "translation": "",
+      "bbox": [
+        225.4,
+        131.8,
+        231.4,
+        164.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0117",
+      "page": 6,
+      "type": "paragraph",
+      "order": 117,
+      "original_text": "400",
+      "translation": "",
+      "bbox": [
+        239.47,
+        160.75,
+        249.49,
+        166.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0118",
+      "page": 6,
+      "type": "paragraph",
+      "order": 118,
+      "original_text": "−40",
+      "translation": "",
+      "bbox": [
+        81.98,
+        164.1,
+        92.2,
+        170.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0119",
+      "page": 6,
+      "type": "paragraph",
+      "order": 119,
+      "original_text": "200",
+      "translation": "",
+      "bbox": [
+        239.47,
+        172.96,
+        249.49,
+        178.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0120",
+      "page": 6,
+      "type": "paragraph",
+      "order": 120,
+      "original_text": "Magnetization (emu/g)",
+      "translation": "",
+      "bbox": [
+        68.01,
+        119.69,
+        74.0,
+        179.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0121",
+      "page": 6,
+      "type": "paragraph",
+      "order": 121,
+      "original_text": "−60",
+      "translation": "",
+      "bbox": [
+        81.98,
+        173.25,
+        92.2,
+        179.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0122",
+      "page": 6,
+      "type": "paragraph",
+      "order": 122,
+      "original_text": "−80",
+      "translation": "",
+      "bbox": [
+        81.98,
+        182.35,
+        92.2,
+        188.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0123",
+      "page": 6,
+      "type": "paragraph",
+      "order": 123,
+      "original_text": "0",
+      "translation": "",
+      "bbox": [
+        246.15,
+        185.12,
+        249.49,
+        191.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0124",
+      "page": 6,
+      "type": "paragraph",
+      "order": 124,
+      "original_text": "0 50 100 150 200 250",
+      "translation": "",
+      "bbox": [
+        260.35,
+        196.78,
+        361.81,
+        202.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0125",
+      "page": 6,
+      "type": "paragraph",
+      "order": 125,
+      "original_text": "−40k −30k −20k −10k 10k 20k 30k 40k 0 −100",
+      "translation": "",
+      "bbox": [
+        78.62,
+        191.5,
+        214.23,
+        203.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0126",
+      "page": 6,
+      "type": "paragraph",
+      "order": 126,
+      "original_text": "Strain (%)",
+      "translation": "",
+      "bbox": [
+        296.0,
+        206.21,
+        322.76,
+        212.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0127",
+      "page": 6,
+      "type": "paragraph",
+      "order": 127,
+      "original_text": "Magnetic field (Oe)",
+      "translation": "",
+      "bbox": [
+        126.72,
+        207.11,
+        177.81,
+        213.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0128",
+      "page": 6,
+      "type": "paragraph",
+      "order": 128,
+      "original_text": "274.5",
+      "translation": "",
+      "bbox": [
+        395.63,
+        225.46,
+        410.71,
+        231.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0129",
+      "page": 6,
+      "type": "paragraph",
+      "order": 129,
+      "original_text": "f e d",
+      "translation": "",
+      "bbox": [
+        65.82,
+        221.5,
+        386.46,
+        231.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0130",
+      "page": 6,
+      "type": "paragraph",
+      "order": 130,
+      "original_text": "278.4",
+      "translation": "",
+      "bbox": [
+        235.4,
+        226.49,
+        250.47,
+        232.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0131",
+      "page": 6,
+      "type": "paragraph",
+      "order": 131,
+      "original_text": "277.5",
+      "translation": "",
+      "bbox": [
+        77.03,
+        237.15,
+        92.15,
+        243.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0132",
+      "page": 6,
+      "type": "paragraph",
+      "order": 132,
+      "original_text": "277.6",
+      "translation": "",
+      "bbox": [
+        235.4,
+        241.16,
+        250.47,
+        247.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0133",
+      "page": 6,
+      "type": "paragraph",
+      "order": 133,
+      "original_text": "274.4",
+      "translation": "",
+      "bbox": [
+        395.63,
+        247.37,
+        410.71,
+        253.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0134",
+      "page": 6,
+      "type": "paragraph",
+      "order": 134,
+      "original_text": "276.8",
+      "translation": "",
+      "bbox": [
+        235.4,
+        255.84,
+        250.47,
+        261.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0135",
+      "page": 6,
+      "type": "paragraph",
+      "order": 135,
+      "original_text": "275.0",
+      "translation": "",
+      "bbox": [
+        77.03,
+        256.09,
+        92.15,
+        262.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0136",
+      "page": 6,
+      "type": "paragraph",
+      "order": 136,
+      "original_text": "N",
+      "translation": "",
+      "bbox": [
+        185.71,
+        270.17,
+        188.97,
+        274.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0137",
+      "page": 6,
+      "type": "paragraph",
+      "order": 137,
+      "original_text": "274.3",
+      "translation": "",
+      "bbox": [
+        395.63,
+        269.27,
+        410.71,
+        275.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0138",
+      "page": 6,
+      "type": "paragraph",
+      "order": 138,
+      "original_text": "\u0006I",
+      "translation": "",
+      "bbox": [
+        266.81,
+        270.26,
+        271.58,
+        276.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0139",
+      "page": 6,
+      "type": "paragraph",
+      "order": 139,
+      "original_text": "276.0",
+      "translation": "",
+      "bbox": [
+        235.4,
+        270.46,
+        250.47,
+        276.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0140",
+      "page": 6,
+      "type": "paragraph",
+      "order": 140,
+      "original_text": "z",
+      "translation": "",
+      "bbox": [
+        194.34,
+        273.76,
+        196.6,
+        278.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0141",
+      "page": 6,
+      "type": "paragraph",
+      "order": 141,
+      "original_text": "R2=0.9958",
+      "translation": "",
+      "bbox": [
+        289.48,
+        256.25,
+        302.86,
+        280.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0142",
+      "page": 6,
+      "type": "paragraph",
+      "order": 142,
+      "original_text": "R2=0.997",
+      "translation": "",
+      "bbox": [
+        455.37,
+        260.6,
+        479.17,
+        280.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0143",
+      "page": 6,
+      "type": "paragraph",
+      "order": 143,
+      "original_text": "R2=0.9952",
+      "translation": "",
+      "bbox": [
+        314.93,
+        256.28,
+        327.78,
+        280.35
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0144",
+      "page": 6,
+      "type": "paragraph",
+      "order": 144,
+      "original_text": "272.5",
+      "translation": "",
+      "bbox": [
+        77.03,
+        275.02,
+        92.15,
+        281.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0145",
+      "page": 6,
+      "type": "paragraph",
+      "order": 145,
+      "original_text": "I (mA)",
+      "translation": "",
+      "bbox": [
+        66.33,
+        265.18,
+        72.31,
+        281.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0146",
+      "page": 6,
+      "type": "paragraph",
+      "order": 146,
+      "original_text": "I (mA)",
+      "translation": "",
+      "bbox": [
+        224.16,
+        265.18,
+        230.15,
+        281.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0147",
+      "page": 6,
+      "type": "paragraph",
+      "order": 147,
+      "original_text": "Ict (mA)",
+      "translation": "",
+      "bbox": [
+        383.63,
+        262.3,
+        391.61,
+        281.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0148",
+      "page": 6,
+      "type": "paragraph",
+      "order": 148,
+      "original_text": "275.2",
+      "translation": "",
+      "bbox": [
+        235.4,
+        285.14,
+        250.47,
+        291.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0149",
+      "page": 6,
+      "type": "paragraph",
+      "order": 149,
+      "original_text": "C C C V",
+      "translation": "",
+      "bbox": [
+        174.02,
+        281.69,
+        199.16,
+        294.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0150",
+      "page": 6,
+      "type": "paragraph",
+      "order": 150,
+      "original_text": "274.2",
+      "translation": "",
+      "bbox": [
+        395.63,
+        291.12,
+        410.71,
+        297.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0151",
+      "page": 6,
+      "type": "paragraph",
+      "order": 151,
+      "original_text": "2.80755 2.82151",
+      "translation": "",
+      "bbox": [
+        271.66,
+        292.24,
+        343.19,
+        297.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0152",
+      "page": 6,
+      "type": "paragraph",
+      "order": 152,
+      "original_text": "270.0",
+      "translation": "",
+      "bbox": [
+        77.03,
+        293.96,
+        92.15,
+        299.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0153",
+      "page": 6,
+      "type": "paragraph",
+      "order": 153,
+      "original_text": "0 N (0Gs)",
+      "translation": "",
+      "bbox": [
+        174.95,
+        299.97,
+        194.6,
+        304.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0154",
+      "page": 6,
+      "type": "paragraph",
+      "order": 154,
+      "original_text": "274.4",
+      "translation": "",
+      "bbox": [
+        235.4,
+        299.81,
+        250.47,
+        305.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0155",
+      "page": 6,
+      "type": "paragraph",
+      "order": 155,
+      "original_text": "2.81587 2.81320",
+      "translation": "",
+      "bbox": [
+        284.44,
+        309.92,
+        332.65,
+        315.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0156",
+      "page": 6,
+      "type": "paragraph",
+      "order": 156,
+      "original_text": "4.97 N (1.87Gs) 8.82 N (3.19Gs)",
+      "translation": "",
+      "bbox": [
+        174.95,
+        305.68,
+        207.22,
+        315.9
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0157",
+      "page": 6,
+      "type": "paragraph",
+      "order": 157,
+      "original_text": "Ict",
+      "translation": "",
+      "bbox": [
+        258.13,
+        310.35,
+        264.1,
+        318.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0158",
+      "page": 6,
+      "type": "paragraph",
+      "order": 158,
+      "original_text": "267.5",
+      "translation": "",
+      "bbox": [
+        77.03,
+        312.9,
+        92.15,
+        318.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0159",
+      "page": 6,
+      "type": "paragraph",
+      "order": 159,
+      "original_text": "274.1",
+      "translation": "",
+      "bbox": [
+        395.63,
+        313.03,
+        410.71,
+        319.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0160",
+      "page": 6,
+      "type": "paragraph",
+      "order": 160,
+      "original_text": "2.80 2.81 2.82 2.83 273.6",
+      "translation": "",
+      "bbox": [
+        235.4,
+        314.49,
+        373.12,
+        328.02
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0161",
+      "page": 6,
+      "type": "paragraph",
+      "order": 161,
+      "original_text": "2.80 2.85 2.90 2.95",
+      "translation": "",
+      "bbox": [
+        104.29,
+        322.31,
+        205.58,
+        328.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0162",
+      "page": 6,
+      "type": "paragraph",
+      "order": 162,
+      "original_text": "0 2 4 6 8",
+      "translation": "",
+      "bbox": [
+        417.75,
+        324.05,
+        513.68,
+        330.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0163",
+      "page": 6,
+      "type": "paragraph",
+      "order": 163,
+      "original_text": "Microwave frequency (GHz)",
+      "translation": "",
+      "bbox": [
+        114.7,
+        331.0,
+        189.24,
+        337.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0164",
+      "page": 6,
+      "type": "paragraph",
+      "order": 164,
+      "original_text": "Microwave frequency (GHz)",
+      "translation": "",
+      "bbox": [
+        273.18,
+        331.75,
+        347.52,
+        337.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0165",
+      "page": 6,
+      "type": "paragraph",
+      "order": 165,
+      "original_text": "Loading force (N)",
+      "translation": "",
+      "bbox": [
+        448.23,
+        333.36,
+        494.68,
+        339.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0166",
+      "page": 6,
+      "type": "paragraph",
+      "order": 166,
+      "original_text": "g i h",
+      "translation": "",
+      "bbox": [
+        65.82,
+        347.16,
+        385.9,
+        357.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0167",
+      "page": 6,
+      "type": "paragraph",
+      "order": 167,
+      "original_text": "Magnetic field (Gs)",
+      "translation": "",
+      "bbox": [
+        285.92,
+        351.57,
+        336.57,
+        357.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0168",
+      "page": 6,
+      "type": "paragraph",
+      "order": 168,
+      "original_text": "0.0 0.4 0.8 1.1 1.5 1.9 2.3 2.6 3.0 3.4",
+      "translation": "",
+      "bbox": [
+        257.75,
+        361.12,
+        364.85,
+        367.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0169",
+      "page": 6,
+      "type": "paragraph",
+      "order": 169,
+      "original_text": "4.0",
+      "translation": "",
+      "bbox": [
+        83.24,
+        370.0,
+        91.62,
+        376.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0170",
+      "page": 6,
+      "type": "paragraph",
+      "order": 170,
+      "original_text": "104",
+      "translation": "",
+      "bbox": [
+        405.62,
+        369.47,
+        414.99,
+        377.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0171",
+      "page": 6,
+      "type": "paragraph",
+      "order": 171,
+      "original_text": "2",
+      "translation": "",
+      "bbox": [
+        250.17,
+        378.12,
+        253.52,
+        384.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0172",
+      "page": 6,
+      "type": "paragraph",
+      "order": 172,
+      "original_text": "3.5",
+      "translation": "",
+      "bbox": [
+        83.24,
+        380.96,
+        91.62,
+        386.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0173",
+      "page": 6,
+      "type": "paragraph",
+      "order": 173,
+      "original_text": "102",
+      "translation": "",
+      "bbox": [
+        405.62,
+        386.5,
+        414.99,
+        394.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0174",
+      "page": 6,
+      "type": "paragraph",
+      "order": 174,
+      "original_text": "3.0",
+      "translation": "",
+      "bbox": [
+        83.24,
+        391.85,
+        91.62,
+        397.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0175",
+      "page": 6,
+      "type": "paragraph",
+      "order": 175,
+      "original_text": "1",
+      "translation": "",
+      "bbox": [
+        250.17,
+        395.07,
+        253.52,
+        401.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0176",
+      "page": 6,
+      "type": "paragraph",
+      "order": 176,
+      "original_text": "25 dBm 20 dBm 15 dBm 10 dBm 5 dBm 0 dBm",
+      "translation": "",
+      "bbox": [
+        271.4,
+        372.77,
+        285.28,
+        403.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0177",
+      "page": 6,
+      "type": "paragraph",
+      "order": 177,
+      "original_text": "2.5",
+      "translation": "",
+      "bbox": [
+        83.24,
+        402.76,
+        91.62,
+        408.76
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0178",
+      "page": 6,
+      "type": "paragraph",
+      "order": 178,
+      "original_text": "100",
+      "translation": "",
+      "bbox": [
+        405.62,
+        403.3,
+        414.99,
+        410.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0179",
+      "page": 6,
+      "type": "paragraph",
+      "order": 179,
+      "original_text": "0",
+      "translation": "",
+      "bbox": [
+        250.17,
+        412.06,
+        253.52,
+        418.07
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0180",
+      "page": 6,
+      "type": "paragraph",
+      "order": 180,
+      "original_text": "2.0",
+      "translation": "",
+      "bbox": [
+        83.24,
+        413.71,
+        91.62,
+        419.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0181",
+      "page": 6,
+      "type": "paragraph",
+      "order": 181,
+      "original_text": "I (mA)",
+      "translation": "",
+      "bbox": [
+        235.91,
+        406.64,
+        241.89,
+        422.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0182",
+      "page": 6,
+      "type": "paragraph",
+      "order": 182,
+      "original_text": "(mA) \u0006I",
+      "translation": "",
+      "bbox": [
+        72.32,
+        404.7,
+        78.46,
+        424.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0183",
+      "page": 6,
+      "type": "paragraph",
+      "order": 183,
+      "original_text": "R2=0.998",
+      "translation": "",
+      "bbox": [
+        133.02,
+        404.14,
+        156.59,
+        424.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0184",
+      "page": 6,
+      "type": "paragraph",
+      "order": 184,
+      "original_text": "10–2",
+      "translation": "",
+      "bbox": [
+        403.27,
+        420.6,
+        414.99,
+        428.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0185",
+      "page": 6,
+      "type": "paragraph",
+      "order": 185,
+      "original_text": "1.5",
+      "translation": "",
+      "bbox": [
+        83.24,
+        424.6,
+        91.62,
+        430.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0186",
+      "page": 6,
+      "type": "paragraph",
+      "order": 186,
+      "original_text": "−1",
+      "translation": "",
+      "bbox": [
+        246.67,
+        429.0,
+        253.52,
+        435.01
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0187",
+      "page": 6,
+      "type": "paragraph",
+      "order": 187,
+      "original_text": "1.0",
+      "translation": "",
+      "bbox": [
+        83.24,
+        435.5,
+        91.62,
+        441.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0188",
+      "page": 6,
+      "type": "paragraph",
+      "order": 188,
+      "original_text": "10–4",
+      "translation": "",
+      "bbox": [
+        403.27,
+        437.19,
+        414.99,
+        444.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0189",
+      "page": 6,
+      "type": "paragraph",
+      "order": 189,
+      "original_text": "Magnetic noise density (nT/Hz1/2)",
+      "translation": "",
+      "bbox": [
+        385.44,
+        376.19,
+        398.85,
+        446.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0190",
+      "page": 6,
+      "type": "paragraph",
+      "order": 190,
+      "original_text": "Frequency (Hz)",
+      "translation": "",
+      "bbox": [
+        459.81,
+        445.04,
+        486.79,
+        448.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0191",
+      "page": 6,
+      "type": "paragraph",
+      "order": 191,
+      "original_text": "−2",
+      "translation": "",
+      "bbox": [
+        246.67,
+        445.95,
+        253.52,
+        451.96
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0192",
+      "page": 6,
+      "type": "paragraph",
+      "order": 192,
+      "original_text": "0.5",
+      "translation": "",
+      "bbox": [
+        83.24,
+        446.45,
+        91.62,
+        452.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0193",
+      "page": 6,
+      "type": "paragraph",
+      "order": 193,
+      "original_text": "Magnetic noise density (nT/Hz1/2)",
+      "translation": "",
+      "bbox": [
+        422.3,
+        396.57,
+        425.92,
+        454.41
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0194",
+      "page": 6,
+      "type": "paragraph",
+      "order": 194,
+      "original_text": "1.9nT/Hz1/2(1-1000Hz)",
+      "translation": "",
+      "bbox": [
+        447.79,
+        449.8,
+        494.95,
+        455.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0195",
+      "page": 6,
+      "type": "paragraph",
+      "order": 195,
+      "original_text": "0 dBm 5 dBm 10 dBm 15 dBm 20 dBm 25 dBm",
+      "translation": "",
+      "bbox": [
+        271.25,
+        427.17,
+        285.13,
+        457.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0196",
+      "page": 6,
+      "type": "paragraph",
+      "order": 196,
+      "original_text": "10–2 10–6",
+      "translation": "",
+      "bbox": [
+        403.27,
+        453.57,
+        424.87,
+        468.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0197",
+      "page": 6,
+      "type": "paragraph",
+      "order": 197,
+      "original_text": "100 102 104",
+      "translation": "",
+      "bbox": [
+        447.68,
+        460.63,
+        524.99,
+        468.2
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0198",
+      "page": 6,
+      "type": "paragraph",
+      "order": 198,
+      "original_text": "0 5 10 15 20 25 0.0",
+      "translation": "",
+      "bbox": [
+        83.24,
+        457.35,
+        205.9,
+        468.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0199",
+      "page": 6,
+      "type": "paragraph",
+      "order": 199,
+      "original_text": "0 1 2 3 4 5 6 7 8 9",
+      "translation": "",
+      "bbox": [
+        260.27,
+        463.23,
+        362.3,
+        469.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0200",
+      "page": 6,
+      "type": "paragraph",
+      "order": 200,
+      "original_text": "Frequency (Hz)",
+      "translation": "",
+      "bbox": [
+        449.53,
+        471.71,
+        492.81,
+        477.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0201",
+      "page": 6,
+      "type": "paragraph",
+      "order": 201,
+      "original_text": "Microwave power (dBm)",
+      "translation": "",
+      "bbox": [
+        119.37,
+        472.25,
+        183.96,
+        478.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0202",
+      "page": 6,
+      "type": "paragraph",
+      "order": 202,
+      "original_text": "Loading force (N)",
+      "translation": "",
+      "bbox": [
+        288.0,
+        472.64,
+        334.55,
+        478.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0203",
+      "page": 6,
+      "type": "paragraph",
+      "order": 203,
+      "original_text": "Fig. 2 Performance characterization of the diamond NV center tactile sensing unit. a Room-temperature magnetic hysteresis loops of flexible magnetic films with different magnetic particle contents. Saturation magnetization increases significantly with higher particle concentration, while coercivity remains relatively stable. b Stress-strain curves of flexible magnetic films with different magnetic particle contents. Higher particle content results in steeper curves and higher Young’s modulus, indicating greater rigidity. c SEM image of a sample with 60 wt% magnetic particle content. d ODMR frequency-sweep outputs of the sensing unit under different loading forces. Selecting different working frequencies enables positive or negative responses. e Determination of the optimal working frequency. The highly linear regions on both sides of the Lorentzian trough in the ODMR output curve are selected as the sensor’s output response curves. f Relationship between the trough current Ict of the leftmost Lorentzian trough and the loading force. g Relationship between the current difference ΔI (Ict minus baseline current) and microwave power, demonstrating the adjustable magnitude of the sensing unit’s tactile responsivity. h Output response curves of the sensing unit at the positive/negative response frequency under different microwave powers. i Magnetic field noise spectral density of the sensing unit",
+      "translation": "",
+      "bbox": [
+        62.7,
+        487.31,
+        532.69,
+        585.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0204",
+      "page": 6,
+      "type": "paragraph",
+      "order": 204,
+      "original_text": "field responsivity of the NV color center magnetic sensing layer in the sensing unit is 0.823 mA/Gs (Supplementary Fig. 7), and the noise spectral density is 1.9 nT/Hz1/2",
+      "translation": "",
+      "bbox": [
+        56.69,
+        602.38,
+        290.55,
+        636.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0205",
+      "page": 6,
+      "type": "paragraph",
+      "order": 205,
+      "original_text": "NVTS has a top surface dimension of 100 mm × 100 mm (Fig. 3a), with the force-magnetic information coupling film thickness being 2 mm and the magnetic information sensing-processing layer thickness being 7.4 mm. Each individual diamond NV center magnetic sensing unit is an integrated structure comprising the diamond, Si-PIN photodetector, laser, and antenna. To enhance the integration of the device, ISC-NVTS employs a spatial optical information coupling approach (Supplementary Fig. 8). Here, ISC-NVTS utilizes transparent resin for the fabrication of the encapsulation structure (Supplementary Fig. 9).",
+      "translation": "",
+      "bbox": [
+        304.73,
+        602.91,
+        538.7,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0206",
+      "page": 6,
+      "type": "paragraph",
+      "order": 206,
+      "original_text": "(1–1000 Hz) (Fig. 2i). Its excellent magnetic sensing performance ensures the detection of weak magnetic signals from NdFeB films. The excellent adjustable characteristics of responsivity magnitude and polarity in the diamond NV center tactile sensing unit ensure the feasibility of implementing the ISC architecture in the ISC-NVTS. The ISC-NVTS was constructed using an array of diamond NV center tactile sensing units. The integrated ISC-",
+      "translation": "",
+      "bbox": [
+        56.69,
+        638.26,
+        290.54,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0207",
+      "page": 7,
+      "type": "paragraph",
+      "order": 207,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 7 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0208",
+      "page": 7,
+      "type": "paragraph",
+      "order": 208,
+      "original_text": "a",
+      "translation": "",
+      "bbox": [
+        63.78,
+        95.44,
+        69.35,
+        105.45
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0209",
+      "page": 7,
+      "type": "paragraph",
+      "order": 209,
+      "original_text": "Photodiode Filter film",
+      "translation": "",
+      "bbox": [
+        406.33,
+        104.5,
+        515.87,
+        115.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0210",
+      "page": 7,
+      "type": "paragraph",
+      "order": 210,
+      "original_text": "1 mm",
+      "translation": "",
+      "bbox": [
+        507.36,
+        122.03,
+        522.26,
+        128.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0211",
+      "page": 7,
+      "type": "paragraph",
+      "order": 211,
+      "original_text": "Laser",
+      "translation": "",
+      "bbox": [
+        423.25,
+        142.81,
+        443.29,
+        150.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0212",
+      "page": 7,
+      "type": "paragraph",
+      "order": 212,
+      "original_text": "Laser",
+      "translation": "",
+      "bbox": [
+        422.88,
+        177.02,
+        442.93,
+        185.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0213",
+      "page": 7,
+      "type": "paragraph",
+      "order": 213,
+      "original_text": "30 mm",
+      "translation": "",
+      "bbox": [
+        183.24,
+        182.13,
+        201.6,
+        188.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0214",
+      "page": 7,
+      "type": "paragraph",
+      "order": 214,
+      "original_text": "Operational amplifier circuit",
+      "translation": "",
+      "bbox": [
+        473.42,
+        169.65,
+        518.0,
+        195.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0215",
+      "page": 7,
+      "type": "paragraph",
+      "order": 215,
+      "original_text": "Antenna",
+      "translation": "",
+      "bbox": [
+        418.83,
+        194.03,
+        448.5,
+        202.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0216",
+      "page": 7,
+      "type": "paragraph",
+      "order": 216,
+      "original_text": "5 mm",
+      "translation": "",
+      "bbox": [
+        504.98,
+        200.93,
+        519.88,
+        206.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0217",
+      "page": 7,
+      "type": "paragraph",
+      "order": 217,
+      "original_text": "20 mm",
+      "translation": "",
+      "bbox": [
+        125.12,
+        208.36,
+        143.48,
+        214.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0218",
+      "page": 7,
+      "type": "paragraph",
+      "order": 218,
+      "original_text": "3.0",
+      "translation": "",
+      "bbox": [
+        395.95,
+        232.13,
+        404.29,
+        238.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0219",
+      "page": 7,
+      "type": "paragraph",
+      "order": 219,
+      "original_text": "0.4",
+      "translation": "",
+      "bbox": [
+        235.17,
+        232.69,
+        243.47,
+        238.68
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0220",
+      "page": 7,
+      "type": "paragraph",
+      "order": 220,
+      "original_text": "b c d",
+      "translation": "",
+      "bbox": [
+        63.78,
+        228.8,
+        390.64,
+        238.81
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0221",
+      "page": 7,
+      "type": "paragraph",
+      "order": 221,
+      "original_text": "F1 F2",
+      "translation": "",
+      "bbox": [
+        102.18,
+        236.32,
+        129.31,
+        241.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0222",
+      "page": 7,
+      "type": "paragraph",
+      "order": 222,
+      "original_text": "F3",
+      "translation": "",
+      "bbox": [
+        149.1,
+        236.89,
+        154.1,
+        242.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0223",
+      "page": 7,
+      "type": "paragraph",
+      "order": 223,
+      "original_text": "F4 F5",
+      "translation": "",
+      "bbox": [
+        174.24,
+        236.89,
+        203.17,
+        242.55
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0224",
+      "page": 7,
+      "type": "paragraph",
+      "order": 224,
+      "original_text": "R2 R1",
+      "translation": "",
+      "bbox": [
+        106.76,
+        242.56,
+        135.4,
+        248.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0225",
+      "page": 7,
+      "type": "paragraph",
+      "order": 225,
+      "original_text": "R5 R4 R3",
+      "translation": "",
+      "bbox": [
+        154.59,
+        243.05,
+        209.1,
+        249.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0226",
+      "page": 7,
+      "type": "paragraph",
+      "order": 226,
+      "original_text": "2.5",
+      "translation": "",
+      "bbox": [
+        395.95,
+        247.25,
+        404.29,
+        253.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0227",
+      "page": 7,
+      "type": "paragraph",
+      "order": 227,
+      "original_text": "F6",
+      "translation": "",
+      "bbox": [
+        97.7,
+        252.37,
+        102.7,
+        258.04
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0228",
+      "page": 7,
+      "type": "paragraph",
+      "order": 228,
+      "original_text": "F7",
+      "translation": "",
+      "bbox": [
+        121.21,
+        252.39,
+        126.2,
+        258.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0229",
+      "page": 7,
+      "type": "paragraph",
+      "order": 229,
+      "original_text": "F8",
+      "translation": "",
+      "bbox": [
+        145.92,
+        252.39,
+        150.91,
+        258.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0230",
+      "page": 7,
+      "type": "paragraph",
+      "order": 230,
+      "original_text": "F10 F9",
+      "translation": "",
+      "bbox": [
+        170.93,
+        252.39,
+        200.28,
+        258.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0231",
+      "page": 7,
+      "type": "paragraph",
+      "order": 231,
+      "original_text": "0",
+      "translation": "",
+      "bbox": [
+        198.33,
+        254.56,
+        200.28,
+        258.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0232",
+      "page": 7,
+      "type": "paragraph",
+      "order": 232,
+      "original_text": "0.3",
+      "translation": "",
+      "bbox": [
+        235.17,
+        257.43,
+        243.47,
+        263.42
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0233",
+      "page": 7,
+      "type": "paragraph",
+      "order": 233,
+      "original_text": "R10",
+      "translation": "",
+      "bbox": [
+        198.78,
+        258.48,
+        206.28,
+        264.14
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0234",
+      "page": 7,
+      "type": "paragraph",
+      "order": 234,
+      "original_text": "R8",
+      "translation": "",
+      "bbox": [
+        150.39,
+        258.51,
+        155.94,
+        264.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0235",
+      "page": 7,
+      "type": "paragraph",
+      "order": 235,
+      "original_text": "R9",
+      "translation": "",
+      "bbox": [
+        175.46,
+        258.51,
+        181.02,
+        264.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0236",
+      "page": 7,
+      "type": "paragraph",
+      "order": 236,
+      "original_text": "R6",
+      "translation": "",
+      "bbox": [
+        102.96,
+        258.73,
+        108.51,
+        264.39
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0237",
+      "page": 7,
+      "type": "paragraph",
+      "order": 237,
+      "original_text": "R7",
+      "translation": "",
+      "bbox": [
+        125.88,
+        258.74,
+        131.43,
+        264.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0238",
+      "page": 7,
+      "type": "paragraph",
+      "order": 238,
+      "original_text": "2.0",
+      "translation": "",
+      "bbox": [
+        395.95,
+        262.36,
+        404.29,
+        268.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0239",
+      "page": 7,
+      "type": "paragraph",
+      "order": 239,
+      "original_text": "F12",
+      "translation": "",
+      "bbox": [
+        116.82,
+        267.57,
+        123.76,
+        273.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0240",
+      "page": 7,
+      "type": "paragraph",
+      "order": 240,
+      "original_text": "F11",
+      "translation": "",
+      "bbox": [
+        93.16,
+        268.49,
+        100.1,
+        274.15
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0241",
+      "page": 7,
+      "type": "paragraph",
+      "order": 241,
+      "original_text": "F13 F14 F15",
+      "translation": "",
+      "bbox": [
+        140.42,
+        267.45,
+        197.74,
+        274.19
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0242",
+      "page": 7,
+      "type": "paragraph",
+      "order": 242,
+      "original_text": "R15",
+      "translation": "",
+      "bbox": [
+        195.0,
+        274.49,
+        202.49,
+        280.15
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0243",
+      "page": 7,
+      "type": "paragraph",
+      "order": 243,
+      "original_text": "R11",
+      "translation": "",
+      "bbox": [
+        98.68,
+        274.61,
+        106.17,
+        280.27
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0244",
+      "page": 7,
+      "type": "paragraph",
+      "order": 244,
+      "original_text": "R13 R12",
+      "translation": "",
+      "bbox": [
+        121.45,
+        274.37,
+        153.61,
+        280.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0245",
+      "page": 7,
+      "type": "paragraph",
+      "order": 245,
+      "original_text": "R14",
+      "translation": "",
+      "bbox": [
+        171.19,
+        274.63,
+        178.68,
+        280.29
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0246",
+      "page": 7,
+      "type": "paragraph",
+      "order": 246,
+      "original_text": "1.5",
+      "translation": "",
+      "bbox": [
+        395.95,
+        277.47,
+        404.29,
+        283.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0247",
+      "page": 7,
+      "type": "paragraph",
+      "order": 247,
+      "original_text": "F17",
+      "translation": "",
+      "bbox": [
+        115.27,
+        282.43,
+        122.21,
+        288.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0248",
+      "page": 7,
+      "type": "paragraph",
+      "order": 248,
+      "original_text": "0.2",
+      "translation": "",
+      "bbox": [
+        235.17,
+        282.17,
+        243.47,
+        288.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0249",
+      "page": 7,
+      "type": "paragraph",
+      "order": 249,
+      "original_text": "F16",
+      "translation": "",
+      "bbox": [
+        90.32,
+        282.72,
+        97.26,
+        288.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0250",
+      "page": 7,
+      "type": "paragraph",
+      "order": 250,
+      "original_text": "F18 F19 F20",
+      "translation": "",
+      "bbox": [
+        139.21,
+        282.43,
+        195.26,
+        288.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0251",
+      "page": 7,
+      "type": "paragraph",
+      "order": 251,
+      "original_text": "I (mA)",
+      "translation": "",
+      "bbox": [
+        385.46,
+        274.98,
+        391.44,
+        291.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0252",
+      "page": 7,
+      "type": "paragraph",
+      "order": 252,
+      "original_text": "R16",
+      "translation": "",
+      "bbox": [
+        94.76,
+        289.39,
+        102.26,
+        295.05
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0253",
+      "page": 7,
+      "type": "paragraph",
+      "order": 253,
+      "original_text": "R18 R17",
+      "translation": "",
+      "bbox": [
+        118.12,
+        289.63,
+        149.81,
+        295.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0254",
+      "page": 7,
+      "type": "paragraph",
+      "order": 254,
+      "original_text": "R20",
+      "translation": "",
+      "bbox": [
+        191.84,
+        289.98,
+        199.34,
+        295.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0255",
+      "page": 7,
+      "type": "paragraph",
+      "order": 255,
+      "original_text": "R19",
+      "translation": "",
+      "bbox": [
+        167.84,
+        290.06,
+        175.34,
+        295.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0256",
+      "page": 7,
+      "type": "paragraph",
+      "order": 256,
+      "original_text": "1.0",
+      "translation": "",
+      "bbox": [
+        395.95,
+        292.53,
+        404.29,
+        298.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0257",
+      "page": 7,
+      "type": "paragraph",
+      "order": 257,
+      "original_text": "F22",
+      "translation": "",
+      "bbox": [
+        115.35,
+        297.71,
+        122.29,
+        303.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0258",
+      "page": 7,
+      "type": "paragraph",
+      "order": 258,
+      "original_text": "F24 F25 F23",
+      "translation": "",
+      "bbox": [
+        139.49,
+        297.5,
+        196.01,
+        304.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0259",
+      "page": 7,
+      "type": "paragraph",
+      "order": 259,
+      "original_text": "F21",
+      "translation": "",
+      "bbox": [
+        86.91,
+        298.45,
+        93.85,
+        304.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0260",
+      "page": 7,
+      "type": "paragraph",
+      "order": 260,
+      "original_text": "Press 6.45ms Release 13.3ms",
+      "translation": "",
+      "bbox": [
+        424.66,
+        293.52,
+        510.04,
+        304.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0261",
+      "page": 7,
+      "type": "paragraph",
+      "order": 261,
+      "original_text": "R21",
+      "translation": "",
+      "bbox": [
+        91.67,
+        305.06,
+        99.16,
+        310.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0262",
+      "page": 7,
+      "type": "paragraph",
+      "order": 262,
+      "original_text": "R23 R22",
+      "translation": "",
+      "bbox": [
+        115.78,
+        305.1,
+        146.93,
+        310.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0263",
+      "page": 7,
+      "type": "paragraph",
+      "order": 263,
+      "original_text": "R24",
+      "translation": "",
+      "bbox": [
+        164.51,
+        305.15,
+        172.01,
+        310.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0264",
+      "page": 7,
+      "type": "paragraph",
+      "order": 264,
+      "original_text": "R25",
+      "translation": "",
+      "bbox": [
+        189.47,
+        305.78,
+        196.96,
+        311.44
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0265",
+      "page": 7,
+      "type": "paragraph",
+      "order": 265,
+      "original_text": "0.1",
+      "translation": "",
+      "bbox": [
+        235.17,
+        306.85,
+        243.47,
+        312.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0266",
+      "page": 7,
+      "type": "paragraph",
+      "order": 266,
+      "original_text": "0.5",
+      "translation": "",
+      "bbox": [
+        395.95,
+        307.65,
+        404.29,
+        313.65
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0267",
+      "page": 7,
+      "type": "paragraph",
+      "order": 267,
+      "original_text": "Overall variance: 0.000323078 Average value: 0.29396",
+      "translation": "",
+      "bbox": [
+        299.23,
+        303.82,
+        368.43,
+        314.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0268",
+      "page": 7,
+      "type": "paragraph",
+      "order": 268,
+      "original_text": "Force responsivity (mA/N)",
+      "translation": "",
+      "bbox": [
+        224.16,
+        250.88,
+        230.17,
+        320.5
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0269",
+      "page": 7,
+      "type": "paragraph",
+      "order": 269,
+      "original_text": "Rc",
+      "translation": "",
+      "bbox": [
+        83.92,
+        318.16,
+        89.77,
+        324.15
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0270",
+      "page": 7,
+      "type": "paragraph",
+      "order": 270,
+      "original_text": "0.0",
+      "translation": "",
+      "bbox": [
+        395.95,
+        322.76,
+        404.29,
+        328.76
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0271",
+      "page": 7,
+      "type": "paragraph",
+      "order": 271,
+      "original_text": "0 20 40 60 80 100 120",
+      "translation": "",
+      "bbox": [
+        414.68,
+        336.01,
+        526.47,
+        342.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0272",
+      "page": 7,
+      "type": "paragraph",
+      "order": 272,
+      "original_text": "0 5 10 15 20 25 0.0",
+      "translation": "",
+      "bbox": [
+        235.17,
+        331.59,
+        363.84,
+        343.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0273",
+      "page": 7,
+      "type": "paragraph",
+      "order": 273,
+      "original_text": "A",
+      "translation": "",
+      "bbox": [
+        155.54,
+        338.98,
+        159.15,
+        343.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0274",
+      "page": 7,
+      "type": "paragraph",
+      "order": 274,
+      "original_text": "I = \u0005RN FN + V / RC",
+      "translation": "",
+      "bbox": [
+        92.61,
+        339.46,
+        143.89,
+        347.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0275",
+      "page": 7,
+      "type": "paragraph",
+      "order": 275,
+      "original_text": "Times (ms)",
+      "translation": "",
+      "bbox": [
+        453.86,
+        345.87,
+        483.82,
+        351.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0276",
+      "page": 7,
+      "type": "paragraph",
+      "order": 276,
+      "original_text": "Counts",
+      "translation": "",
+      "bbox": [
+        298.32,
+        346.92,
+        317.25,
+        352.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0277",
+      "page": 7,
+      "type": "paragraph",
+      "order": 277,
+      "original_text": "e f g",
+      "translation": "",
+      "bbox": [
+        63.78,
+        361.34,
+        390.64,
+        371.35
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0278",
+      "page": 7,
+      "type": "paragraph",
+      "order": 278,
+      "original_text": "3.5",
+      "translation": "",
+      "bbox": [
+        234.32,
+        370.63,
+        242.7,
+        376.64
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0279",
+      "page": 7,
+      "type": "paragraph",
+      "order": 279,
+      "original_text": "127.3ns",
+      "translation": "",
+      "bbox": [
+        133.65,
+        371.8,
+        154.95,
+        377.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0280",
+      "page": 7,
+      "type": "paragraph",
+      "order": 280,
+      "original_text": "20",
+      "translation": "",
+      "bbox": [
+        74.82,
+        372.35,
+        81.48,
+        378.34
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0281",
+      "page": 7,
+      "type": "paragraph",
+      "order": 281,
+      "original_text": "25 5N",
+      "translation": "",
+      "bbox": [
+        397.95,
+        371.91,
+        521.46,
+        382.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0282",
+      "page": 7,
+      "type": "paragraph",
+      "order": 282,
+      "original_text": "20",
+      "translation": "",
+      "bbox": [
+        397.95,
+        390.63,
+        404.62,
+        396.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0283",
+      "page": 7,
+      "type": "paragraph",
+      "order": 283,
+      "original_text": "3.0",
+      "translation": "",
+      "bbox": [
+        234.32,
+        393.07,
+        242.7,
+        399.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0284",
+      "page": 7,
+      "type": "paragraph",
+      "order": 284,
+      "original_text": "15",
+      "translation": "",
+      "bbox": [
+        74.82,
+        393.96,
+        81.48,
+        399.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0285",
+      "page": 7,
+      "type": "paragraph",
+      "order": 285,
+      "original_text": "15",
+      "translation": "",
+      "bbox": [
+        397.95,
+        409.4,
+        404.62,
+        415.4
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0286",
+      "page": 7,
+      "type": "paragraph",
+      "order": 286,
+      "original_text": "2.5",
+      "translation": "",
+      "bbox": [
+        234.32,
+        415.46,
+        242.7,
+        421.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0287",
+      "page": 7,
+      "type": "paragraph",
+      "order": 287,
+      "original_text": "10",
+      "translation": "",
+      "bbox": [
+        74.82,
+        415.62,
+        81.48,
+        421.62
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0288",
+      "page": 7,
+      "type": "paragraph",
+      "order": 288,
+      "original_text": "I (mA)",
+      "translation": "",
+      "bbox": [
+        64.28,
+        410.19,
+        70.27,
+        426.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0289",
+      "page": 7,
+      "type": "paragraph",
+      "order": 289,
+      "original_text": "I (mA)",
+      "translation": "",
+      "bbox": [
+        222.99,
+        410.19,
+        228.98,
+        426.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0290",
+      "page": 7,
+      "type": "paragraph",
+      "order": 290,
+      "original_text": "10",
+      "translation": "",
+      "bbox": [
+        397.95,
+        428.12,
+        404.62,
+        434.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0291",
+      "page": 7,
+      "type": "paragraph",
+      "order": 291,
+      "original_text": "5",
+      "translation": "",
+      "bbox": [
+        78.15,
+        437.23,
+        81.48,
+        443.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0292",
+      "page": 7,
+      "type": "paragraph",
+      "order": 292,
+      "original_text": "2.0",
+      "translation": "",
+      "bbox": [
+        234.32,
+        437.91,
+        242.7,
+        443.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0293",
+      "page": 7,
+      "type": "paragraph",
+      "order": 293,
+      "original_text": "Overall variance: 0.000440768 Average value: 2.5748",
+      "translation": "",
+      "bbox": [
+        298.05,
+        437.74,
+        366.49,
+        450.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0294",
+      "page": 7,
+      "type": "paragraph",
+      "order": 294,
+      "original_text": "5",
+      "translation": "",
+      "bbox": [
+        401.28,
+        446.89,
+        404.62,
+        452.89
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0295",
+      "page": 7,
+      "type": "paragraph",
+      "order": 295,
+      "original_text": "Magnetic flux density (Gs)",
+      "translation": "",
+      "bbox": [
+        387.17,
+        384.28,
+        393.17,
+        453.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0296",
+      "page": 7,
+      "type": "paragraph",
+      "order": 296,
+      "original_text": "3.2Gs 0Gs",
+      "translation": "",
+      "bbox": [
+        184.14,
+        440.64,
+        200.11,
+        454.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0297",
+      "page": 7,
+      "type": "paragraph",
+      "order": 297,
+      "original_text": "0",
+      "translation": "",
+      "bbox": [
+        78.15,
+        458.84,
+        81.48,
+        464.83
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0298",
+      "page": 7,
+      "type": "paragraph",
+      "order": 298,
+      "original_text": "1.5",
+      "translation": "",
+      "bbox": [
+        234.32,
+        460.35,
+        242.7,
+        466.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0299",
+      "page": 7,
+      "type": "paragraph",
+      "order": 299,
+      "original_text": "0 40 80 120 160 200",
+      "translation": "",
+      "bbox": [
+        249.83,
+        470.35,
+        368.24,
+        476.36
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0300",
+      "page": 7,
+      "type": "paragraph",
+      "order": 300,
+      "original_text": "0 200 400 600",
+      "translation": "",
+      "bbox": [
+        90.8,
+        470.99,
+        189.82,
+        476.98
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0301",
+      "page": 7,
+      "type": "paragraph",
+      "order": 301,
+      "original_text": "10 15 20 25 30 0",
+      "translation": "",
+      "bbox": [
+        401.28,
+        465.61,
+        529.57,
+        477.53
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0302",
+      "page": 7,
+      "type": "paragraph",
+      "order": 302,
+      "original_text": "Times (s)",
+      "translation": "",
+      "bbox": [
+        294.73,
+        479.86,
+        319.6,
+        485.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0303",
+      "page": 7,
+      "type": "paragraph",
+      "order": 303,
+      "original_text": "Time (ns)",
+      "translation": "",
+      "bbox": [
+        133.66,
+        480.17,
+        158.71,
+        486.17
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0304",
+      "page": 7,
+      "type": "paragraph",
+      "order": 304,
+      "original_text": "Distance (mm)",
+      "translation": "",
+      "bbox": [
+        448.16,
+        481.12,
+        487.16,
+        487.12
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0305",
+      "page": 7,
+      "type": "paragraph",
+      "order": 305,
+      "original_text": "Fig. 3 Hardware implementation of the ISC-NVTS. a Macroscopic image of the ISC-NVTS. Scale bar: 30 mm. The enlarged view shows a single diamond NV center tactile sensing unit. Scale bar: 5 mm. The scale bar of the diamond filter film image is 1 mm. b Circuit connection scheme of the ISC-NVTS. The array scale is 5 × 5, with zero-offset compensation achieved via a compensation resistor. c Initial responsivity distribution (at 25 dBm) of the 25 diamond NV center tactile sensing units in the ISC-NVTS, with consistency evaluation. d Response time of a diamond NV center tactile sensing unit. e Response time of a diamond NV center magnetic sensing unit. f Output stability of the ISC-NVTS over 200 s. g Relationship between magnetic field strength and distance for the force-magnetic information coupling film of the ISC-NVTS",
+      "translation": "",
+      "bbox": [
+        62.7,
+        495.97,
+        532.66,
+        553.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0306",
+      "page": 7,
+      "type": "paragraph",
+      "order": 306,
+      "original_text": "25 dBm)(Supplementary Fig. 11), showing excellent consistency (overall variance: 0.00032)(Fig. 3c). Since sensing and data processing in the ISC-NVTS occur in parallel, its response time is determined by that of the diamond NV center tactile sensing unit. By applying a transient loading stress, the diamond NV center tactile sensing unit (Fig. 3d) exhibited a rise time of 6.45 ms and a fall time of 13.3 ms, demonstrating excellent response time performance. We also measured the response time of the diamond NV center magnetic sensing unit, with rise time (Fig. 3e) and fall time (Supplementary Fig. 12) being 127.3 ns and 131.4 ns, respectively. Therefore, the delay of the ISC-NVTS is primarily contributed by the force-",
+      "translation": "",
+      "bbox": [
+        304.73,
+        579.04,
+        538.6,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0307",
+      "page": 7,
+      "type": "paragraph",
+      "order": 307,
+      "original_text": "To verify the underwater performance of the current encapsulation structure, hydrostatic pressure simulation tests were conducted in different water depths (Supplementary Fig. 10). Ultimately, the encapsulation structure suffered structural failure when submerged at a depth of 34 meters. In the future, the encapsulation performance can be improved by using non-metallic materials with better fatigue resistance and higher strength. Figure 3b shows its circuit connection scheme and array scale, where 25 sensing units and 1 compensation resistor are connected in parallel to form a single current output channel. The initial responsivity of the tactile sensing unit array in the ISC-NVTS was calibrated (microwave power:",
+      "translation": "",
+      "bbox": [
+        56.69,
+        579.04,
+        290.66,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0308",
+      "page": 8,
+      "type": "paragraph",
+      "order": 308,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 8 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0309",
+      "page": 8,
+      "type": "paragraph",
+      "order": 309,
+      "original_text": "Table 1 Comparison of ISC-NVTS response time and similar sensors",
+      "translation": "",
+      "bbox": [
+        56.69,
+        87.18,
+        272.88,
+        107.09
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0310",
+      "page": 8,
+      "type": "paragraph",
+      "order": 310,
+      "original_text": "Our work Hu33 Hu41 Zhou42 Cui43 Zhi44",
+      "translation": "",
+      "bbox": [
+        56.69,
+        119.01,
+        281.65,
+        128.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0311",
+      "page": 8,
+      "type": "paragraph",
+      "order": 311,
+      "original_text": "6.45 ms 924 ms 954 ms 583 ms 2258 ms 1049 ms",
+      "translation": "",
+      "bbox": [
+        56.69,
+        140.85,
+        290.57,
+        148.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0312",
+      "page": 8,
+      "type": "paragraph",
+      "order": 312,
+      "original_text": "Using the ISC-NVTS for underwater tactile recognition Due to a lack of effective regulation, the discharge of various harmful debris during marine resource exploitation has caused irreversible harm to the marine ecosystem45,46. Current primary methods for marine debris removal still rely on human divers, incurring high costs and risks. The ISC-NVTS, with its excellent waterproofing, ultra-fast response, and low-power consumption, can be integrated with an underwater robotic arm to achieve efficient classification of marine debris and organisms (Fig. 4a). Here, a fully connected artificial neural network recognition algorithm (Supplementary Fig. 15) was used for offline training on five typical types of marine debris and organisms (The loading force for the feature pixel points is set to 5 N): battery (9–10.5 mA), reagent bottle (7.5–9 mA), apple (6–7.5 mA), sea turtle (4.5–6 mA), and tire (3–4.5 mA) (Fig. 4b). All the reasoning and training processes are completed on an external processor. Figure 4c shows the loss function decreasing to 7.02 over 8000 training epochs. The inset shows the responsivity distribution of the ISC-NVTS tactile sensing unit array after training, with a compensation current value of 0.962 mA. An underwater tactile recognition experimental system was constructed (Fig. 4d). Models of the five typical debris types and organisms (Supplementary Fig. 16) were randomly placed in a waterfilled container. By controlling the robotic arm, the ISCNVTS made direct contact with the models (The contact force of the feature pixel point is 5 N), and the recognition result was determined based on the output current value. The left side of Fig. 4e shows photos of the recognition targets in an underwater 5 × 5 grid, the middle shows the corresponding ISC-NVTS output currents, and the right side shows the recognition results judged based on the trained label current values. To verify the robustness of the ISC-NVTS, 1000 offline recognition tasks were performed with 0.1 random noise, achieving an accuracy of 95.1% (Fig. 4f). In addition, we conducted simulation verification of the recognition function of ISC-NVTS in more complex environments, such as higher noise levels, uneven recognition targets, and a larger number of recognition targets (Supplementary Fig. 17), all demonstrating high recognition rates. Simultaneously, ISC-NVTS exhibits good algorithmic scalability. By increasing the array size of diamond NV color center tactile sensing units and adjusting the interconnection method (Supplementary Fig. 18), an artificial neural network classifier with higher current discrimination can be achieved. The strong robustness and good algorithmic scalability of ISC-NVTS in complex environments provide support for its recognition tasks in complex underwater environments.",
+      "translation": "",
+      "bbox": [
+        304.72,
+        89.03,
+        538.59,
+        708.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0313",
+      "page": 8,
+      "type": "paragraph",
+      "order": 313,
+      "original_text": "magnetic information coupling film. The output signal of a diamond NV center tactile sensing unit was tested over 200 s under an 8.82 N loading force (overall variance 0.00044) (Fig. 3f), confirming excellent integration stability. Finally, the relationship between magnetic field strength and distance for the force-magnetic information coupling film of the ISC-NVTS was tested (Fig. 3g). Under a 5 N loading force, the magnetic field strength at a distance of 20 mm was 4.8 Gs, proving excellent wireless signal transmission capability underwater. Tactile sensors based on the ISC architecture possess advantages in power consumption and response time compared to those with the classical von Neumann architecture, due to their parallel sensing/computation working mode and independence from external memory and processors39,40. Due to the integration of arrayed lasers and the requirement for a microwave generator module for operation, the operating power consumption of ISC-NVTS is 8.145 W (see Section S1). The proposed ISC-NVTS shows a clear advantage in response time compared to similar underwater wireless tactile sensors33,41–44(see Section S2) (Table 1). By optimizing the photodetection module and operational amplifier in the diamond NV color center tactile sensing unit, the response time index can be further improved. Furthermore, it is noteworthy that diamond NV color centers, as a abundant quantum sensing platform, are not only sensitive to magnetic fields but also exhibit excellent response capabilities to temperature fields. We conducted tests on the temperature characteristics of NV color center sensing units (Supplementary Fig. 13) and found that, in addition to the zero-field splitting frequency D undergoing a linear shift with temperature variation (with a shift of −74 kHz/°C), the baseline current value of its ODMR output also exhibits a high linear correlation with temperature. Based on the temperature response characteristics of NV color centers, we propose a three-unit differential magnetic field sensing method (Supplementary Fig. 14). This method can achieve a doubling of magnetic field responsivity on the basis of dynamic compensation for temperature noise, while still possessing responsivity adjustment characteristics and being capable of executing the ISC architecture. This design scheme provides guarantees for the application of ISC-NVTS in marine environments with complex temperature variations.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        172.02,
+        290.68,
+        708.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0314",
+      "page": 9,
+      "type": "paragraph",
+      "order": 314,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 9 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0315",
+      "page": 9,
+      "type": "paragraph",
+      "order": 315,
+      "original_text": "b",
+      "translation": "",
+      "bbox": [
+        266.35,
+        96.26,
+        272.46,
+        106.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0316",
+      "page": 9,
+      "type": "paragraph",
+      "order": 316,
+      "original_text": "a",
+      "translation": "",
+      "bbox": [
+        71.95,
+        97.11,
+        77.51,
+        107.11
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0317",
+      "page": 9,
+      "type": "paragraph",
+      "order": 317,
+      "original_text": "Sea turtle Apple Reagent bottle Battery",
+      "translation": "",
+      "bbox": [
+        338.87,
+        140.03,
+        503.97,
+        146.79
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0318",
+      "page": 9,
+      "type": "paragraph",
+      "order": 318,
+      "original_text": "Tire",
+      "translation": "",
+      "bbox": [
+        296.83,
+        140.94,
+        307.17,
+        146.94
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0319",
+      "page": 9,
+      "type": "paragraph",
+      "order": 319,
+      "original_text": "ISC-NVTS",
+      "translation": "",
+      "bbox": [
+        95.62,
+        144.58,
+        123.63,
+        150.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0320",
+      "page": 9,
+      "type": "paragraph",
+      "order": 320,
+      "original_text": "Distribution of underwater space",
+      "translation": "",
+      "bbox": [
+        178.87,
+        150.01,
+        226.55,
+        163.21
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0321",
+      "page": 9,
+      "type": "paragraph",
+      "order": 321,
+      "original_text": "3 4.5 6 7.5 9 10.5",
+      "translation": "",
+      "bbox": [
+        283.3,
+        190.43,
+        519.26,
+        196.77
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0322",
+      "page": 9,
+      "type": "paragraph",
+      "order": 322,
+      "original_text": "Marine debris and organisms",
+      "translation": "",
+      "bbox": [
+        187.95,
+        190.83,
+        227.3,
+        204.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0323",
+      "page": 9,
+      "type": "paragraph",
+      "order": 323,
+      "original_text": "Output current (mA)",
+      "translation": "",
+      "bbox": [
+        370.68,
+        207.95,
+        423.69,
+        213.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0324",
+      "page": 9,
+      "type": "paragraph",
+      "order": 324,
+      "original_text": "c d",
+      "translation": "",
+      "bbox": [
+        70.61,
+        221.98,
+        352.98,
+        238.23
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0325",
+      "page": 9,
+      "type": "paragraph",
+      "order": 325,
+      "original_text": "1600",
+      "translation": "",
+      "bbox": [
+        356.66,
+        235.58,
+        370.01,
+        241.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0326",
+      "page": 9,
+      "type": "paragraph",
+      "order": 326,
+      "original_text": "Stepper Robotic arm",
+      "translation": "",
+      "bbox": [
+        115.52,
+        235.42,
+        223.93,
+        242.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0327",
+      "page": 9,
+      "type": "paragraph",
+      "order": 327,
+      "original_text": "0.129",
+      "translation": "",
+      "bbox": [
+        476.36,
+        241.69,
+        486.37,
+        245.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0328",
+      "page": 9,
+      "type": "paragraph",
+      "order": 328,
+      "original_text": "0.026 –0.073 –0.122 –0.068",
+      "translation": "",
+      "bbox": [
+        405.82,
+        241.67,
+        469.72,
+        246.18
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0329",
+      "page": 9,
+      "type": "paragraph",
+      "order": 329,
+      "original_text": "0.038 0.039",
+      "translation": "",
+      "bbox": [
+        458.49,
+        257.72,
+        486.37,
+        261.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0330",
+      "page": 9,
+      "type": "paragraph",
+      "order": 330,
+      "original_text": "0.103",
+      "translation": "",
+      "bbox": [
+        440.82,
+        257.84,
+        450.83,
+        261.84
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0331",
+      "page": 9,
+      "type": "paragraph",
+      "order": 331,
+      "original_text": "–0.076 –0.077",
+      "translation": "",
+      "bbox": [
+        404.32,
+        257.94,
+        434.75,
+        262.06
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0332",
+      "page": 9,
+      "type": "paragraph",
+      "order": 332,
+      "original_text": "1200",
+      "translation": "",
+      "bbox": [
+        356.66,
+        257.3,
+        370.01,
+        263.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0333",
+      "page": 9,
+      "type": "paragraph",
+      "order": 333,
+      "original_text": "V/RC = 0.962 mA",
+      "translation": "",
+      "bbox": [
+        492.27,
+        244.45,
+        497.27,
+        274.6
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0334",
+      "page": 9,
+      "type": "paragraph",
+      "order": 334,
+      "original_text": "0.095 0.102 0.084",
+      "translation": "",
+      "bbox": [
+        423.16,
+        273.99,
+        468.5,
+        278.1
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0335",
+      "page": 9,
+      "type": "paragraph",
+      "order": 335,
+      "original_text": "–0.041 –0.033",
+      "translation": "",
+      "bbox": [
+        404.75,
+        274.31,
+        487.67,
+        278.51
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0336",
+      "page": 9,
+      "type": "paragraph",
+      "order": 336,
+      "original_text": "0.31",
+      "translation": "",
+      "bbox": [
+        493.36,
+        279.28,
+        501.15,
+        283.28
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0337",
+      "page": 9,
+      "type": "paragraph",
+      "order": 337,
+      "original_text": "800",
+      "translation": "",
+      "bbox": [
+        360.51,
+        279.08,
+        370.52,
+        285.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0338",
+      "page": 9,
+      "type": "paragraph",
+      "order": 338,
+      "original_text": "Loss",
+      "translation": "",
+      "bbox": [
+        347.26,
+        276.46,
+        353.26,
+        289.13
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0339",
+      "page": 9,
+      "type": "paragraph",
+      "order": 339,
+      "original_text": "0.091",
+      "translation": "",
+      "bbox": [
+        405.58,
+        290.38,
+        415.59,
+        294.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0340",
+      "page": 9,
+      "type": "paragraph",
+      "order": 340,
+      "original_text": "0.052 0.254 0.164 0.206",
+      "translation": "",
+      "bbox": [
+        423.16,
+        290.38,
+        486.37,
+        294.38
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0341",
+      "page": 9,
+      "type": "paragraph",
+      "order": 341,
+      "original_text": "R(mA/N)",
+      "translation": "",
+      "bbox": [
+        500.74,
+        290.52,
+        504.74,
+        306.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0342",
+      "page": 9,
+      "type": "paragraph",
+      "order": 342,
+      "original_text": "400",
+      "translation": "",
+      "bbox": [
+        360.51,
+        300.8,
+        370.52,
+        306.8
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0343",
+      "page": 9,
+      "type": "paragraph",
+      "order": 343,
+      "original_text": "0.190",
+      "translation": "",
+      "bbox": [
+        405.58,
+        306.73,
+        415.59,
+        310.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0344",
+      "page": 9,
+      "type": "paragraph",
+      "order": 344,
+      "original_text": "0.167 0.133 0.167 0.301",
+      "translation": "",
+      "bbox": [
+        423.16,
+        306.66,
+        486.37,
+        310.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0345",
+      "page": 9,
+      "type": "paragraph",
+      "order": 345,
+      "original_text": "–0.31",
+      "translation": "",
+      "bbox": [
+        493.16,
+        313.87,
+        503.17,
+        317.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0346",
+      "page": 9,
+      "type": "paragraph",
+      "order": 346,
+      "original_text": "0",
+      "translation": "",
+      "bbox": [
+        368.21,
+        322.52,
+        371.54,
+        328.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0347",
+      "page": 9,
+      "type": "paragraph",
+      "order": 347,
+      "original_text": "ISC-NVTS",
+      "translation": "",
+      "bbox": [
+        268.19,
+        328.82,
+        296.19,
+        334.82
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0348",
+      "page": 9,
+      "type": "paragraph",
+      "order": 348,
+      "original_text": "0 2000 4000 6000 8000",
+      "translation": "",
+      "bbox": [
+        387.15,
+        339.43,
+        504.23,
+        345.43
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0349",
+      "page": 9,
+      "type": "paragraph",
+      "order": 349,
+      "original_text": "Epoch",
+      "translation": "",
+      "bbox": [
+        434.62,
+        348.73,
+        451.63,
+        354.73
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0350",
+      "page": 9,
+      "type": "paragraph",
+      "order": 350,
+      "original_text": "3.82 mA",
+      "translation": "",
+      "bbox": [
+        309.26,
+        367.72,
+        320.94,
+        380.92
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0351",
+      "page": 9,
+      "type": "paragraph",
+      "order": 351,
+      "original_text": "6.87 mA",
+      "translation": "",
+      "bbox": [
+        464.85,
+        368.17,
+        476.53,
+        381.37
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0352",
+      "page": 9,
+      "type": "paragraph",
+      "order": 352,
+      "original_text": "e 1.02 mA",
+      "translation": "",
+      "bbox": [
+        70.51,
+        366.65,
+        160.38,
+        381.69
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0353",
+      "page": 9,
+      "type": "paragraph",
+      "order": 353,
+      "original_text": "0.95 mA",
+      "translation": "",
+      "bbox": [
+        465.54,
+        424.02,
+        477.21,
+        437.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0354",
+      "page": 9,
+      "type": "paragraph",
+      "order": 354,
+      "original_text": "1.04 mA 8.17 mA",
+      "translation": "",
+      "bbox": [
+        148.99,
+        423.73,
+        320.67,
+        437.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0355",
+      "page": 9,
+      "type": "paragraph",
+      "order": 355,
+      "original_text": "%",
+      "translation": "",
+      "bbox": [
+        477.71,
+        472.6,
+        478.69,
+        474.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0356",
+      "page": 9,
+      "type": "paragraph",
+      "order": 356,
+      "original_text": "5.31 mA",
+      "translation": "",
+      "bbox": [
+        149.11,
+        481.52,
+        160.79,
+        494.72
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0357",
+      "page": 9,
+      "type": "paragraph",
+      "order": 357,
+      "original_text": "9.56 mA",
+      "translation": "",
+      "bbox": [
+        309.31,
+        481.75,
+        320.99,
+        494.95
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0358",
+      "page": 9,
+      "type": "paragraph",
+      "order": 358,
+      "original_text": "0.98 mA",
+      "translation": "",
+      "bbox": [
+        465.73,
+        482.02,
+        477.41,
+        495.22
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0359",
+      "page": 9,
+      "type": "paragraph",
+      "order": 359,
+      "original_text": "f",
+      "translation": "",
+      "bbox": [
+        70.1,
+        538.91,
+        73.43,
+        548.91
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0360",
+      "page": 9,
+      "type": "paragraph",
+      "order": 360,
+      "original_text": "Sea turtle",
+      "translation": "",
+      "bbox": [
+        181.31,
+        547.3,
+        206.99,
+        553.3
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0361",
+      "page": 9,
+      "type": "paragraph",
+      "order": 361,
+      "original_text": "Tire",
+      "translation": "",
+      "bbox": [
+        137.22,
+        547.87,
+        147.55,
+        553.87
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0362",
+      "page": 9,
+      "type": "paragraph",
+      "order": 362,
+      "original_text": "35",
+      "translation": "",
+      "bbox": [
+        84.45,
+        550.75,
+        92.23,
+        557.75
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0363",
+      "page": 9,
+      "type": "paragraph",
+      "order": 363,
+      "original_text": "Reagent bottle",
+      "translation": "",
+      "bbox": [
+        181.31,
+        556.63,
+        220.34,
+        562.63
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0364",
+      "page": 9,
+      "type": "paragraph",
+      "order": 364,
+      "original_text": "Apple",
+      "translation": "",
+      "bbox": [
+        137.22,
+        557.19,
+        152.56,
+        563.19
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0365",
+      "page": 9,
+      "type": "paragraph",
+      "order": 365,
+      "original_text": "30",
+      "translation": "",
+      "bbox": [
+        84.45,
+        563.25,
+        92.23,
+        570.25
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0366",
+      "page": 9,
+      "type": "paragraph",
+      "order": 366,
+      "original_text": "Battery",
+      "translation": "",
+      "bbox": [
+        137.22,
+        566.52,
+        156.22,
+        572.52
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0367",
+      "page": 9,
+      "type": "paragraph",
+      "order": 367,
+      "original_text": "25",
+      "translation": "",
+      "bbox": [
+        84.45,
+        575.86,
+        92.23,
+        582.86
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0368",
+      "page": 9,
+      "type": "paragraph",
+      "order": 368,
+      "original_text": "20",
+      "translation": "",
+      "bbox": [
+        84.45,
+        588.47,
+        92.23,
+        595.47
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0369",
+      "page": 9,
+      "type": "paragraph",
+      "order": 369,
+      "original_text": "Counts",
+      "translation": "",
+      "bbox": [
+        74.11,
+        581.43,
+        81.11,
+        603.61
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0370",
+      "page": 9,
+      "type": "paragraph",
+      "order": 370,
+      "original_text": "15",
+      "translation": "",
+      "bbox": [
+        84.45,
+        600.97,
+        92.23,
+        607.97
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0371",
+      "page": 9,
+      "type": "paragraph",
+      "order": 371,
+      "original_text": "10",
+      "translation": "",
+      "bbox": [
+        84.45,
+        613.58,
+        92.23,
+        620.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0372",
+      "page": 9,
+      "type": "paragraph",
+      "order": 372,
+      "original_text": "5",
+      "translation": "",
+      "bbox": [
+        88.34,
+        626.08,
+        92.23,
+        633.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0373",
+      "page": 9,
+      "type": "paragraph",
+      "order": 373,
+      "original_text": "3 4 5 6 7 8 9 10 0",
+      "translation": "",
+      "bbox": [
+        88.34,
+        638.69,
+        488.99,
+        652.32
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0374",
+      "page": 9,
+      "type": "paragraph",
+      "order": 374,
+      "original_text": "Output current (mA)",
+      "translation": "",
+      "bbox": [
+        267.47,
+        655.57,
+        329.32,
+        662.57
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0375",
+      "page": 9,
+      "type": "paragraph",
+      "order": 375,
+      "original_text": "Fig. 4 ISC-NVTS for underwater tactile recognition. a Robotic arm integrated with the ISC-NVTS, enabling perception and recognition of marine organisms and debris. b Five typical marine organisms and debris, with training feature labels set as: tire (3–4.5 mA), sea turtle (4.5-6 mA), apple (6–7.5 mA), reagent bottle (7.5–9 mA), battery (9–10.5 mA). c Loss function variation over 8000 epochs. The inset shows the responsivity distribution obtained from training the ISC-NVTS. d Photograph of the constructed underwater tactile recognition simulation experimental system. e Left: photos of recognition targets in an underwater 5 × 5 grid. Middle: corresponding ISC-NVTS output currents. Right: recognition results. f Distribution of labeled recognition currents for 1000 trials under 0.1 random noise, showing a recognition rate of 95.1%",
+      "translation": "",
+      "bbox": [
+        62.7,
+        671.66,
+        532.67,
+        729.46
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0376",
+      "page": 10,
+      "type": "paragraph",
+      "order": 376,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 10 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0377",
+      "page": 10,
+      "type": "paragraph",
+      "order": 377,
+      "original_text": "utilization of marine resources. Future work will focus on developing tactile sensing units with responsivity storage capabilities to further enhance sensor integration. Additionally, utilizing the diamond NV center as a sensing platform to achieve the detection and neuromorphic processing of physical fields, such as temperature and microwaves, will be pursued to improve the sensor’s applicability in complex environments.",
+      "translation": "",
+      "bbox": [
+        304.72,
+        88.87,
+        538.6,
+        182.31
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0378",
+      "page": 10,
+      "type": "paragraph",
+      "order": 378,
+      "original_text": "Conclusion In summary, we have developed a wireless in-sensor computing magnetic tactile sensor possessing advantages in waterproofing and ultra-fast response. First, our sensor utilizes NdFeB magnetized flexible films to achieve highly linear force-magnetic information coupling. This wireless transmission method allows the tactile sensing film to be directly exposed to the aqueous environment for direct physical contact with target objects, significantly enhancing waterproof performance while maintaining sensitivity. Furthermore, by intervening in the diamond NV center electron spin resonance process through multiparameter control of microwave frequency/power, we achieved adjustment of both the magnitude and polarity of the responsivity for the diamond NV center tactile sensing unit. This enables it to execute the ISC architecture with a parallel sensing/computation mode, greatly reducing system latency. Finally, we validated that the ISC-NVTS can complete high-accuracy recognition and classification tasks for marine debris and organisms without relying on any external memory or processors.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        85.69,
+        290.56,
+        337.71
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0379",
+      "page": 10,
+      "type": "paragraph",
+      "order": 379,
+      "original_text": "Materials and methods Device fabrication The force-magnetic information coupling film of the ISC-NVTS was fabricated by compositing NdFeB magnetic particles with a flexible silicone matrix (Ecoflex 00-30 B). During material preparation, the silicone matrix and NdFeB magnetic powder were first mixed in proportion. Fumed silica was added to improve dispersion and adjust viscosity. Subsequently, SE1700 and a catalyst were added to promote crosslinking and curing. After thorough mixing via stirring, casting, leveling, and heat curing, a flexible film with uniform thickness was obtained. Finally, a highstrength pulsed magnetic field of 2 T was applied for vertical magnetization, forming a magnetic film structure with a clear dipole orientation. For the diamond NV magnetic sensing unit array in the ISC-NVTS, the diamond raw material was sourced from Element Six, using the high-temperature high-pressure CD1010 (111) type with a nitrogen content of 100 ppm. After irradiation with a 10 MeV electron beam for 4 hours and annealing at 850°C for 2 hours, the nitrogenvacancy concentration in the diamond was approximately 0.8 ppm. The filter film selected was an OD3 short-pass filter for 600–800 nm. The laser model is GH15130C8C. The photodetector module utilizes a TEMD5010X01 Si-Pin photodiode, and to reduce power consumption, its output employs a two-stage operational amplifier design. Firstly, an OPA380 operational amplifier (GAIN BANDWIDTH: 90 MHz), which boasts high bandwidth, is used to perform the first amplification of the Si-Pin photodiode’s output, enabling it to execute artificial neural network classification algorithms at μA level current. Subsequently, an OPA323 operational amplifier (GAIN BANDWIDTH: 20 MHz), which offers cost advantages, is employed for the second amplification of the operational results, thereby increasing the output amplitude of the device for detection purposes. The ISC-NVTS antenna (Supplementary Fig. 19) adopts a dual-layer structure with a total thickness of 800 μm, capable of simultaneously radiating microwave signals of two different frequencies. The coupling effect of the array elements of the antenna was simulated (Supplementary Fig. 20). The maximum coupling S(3,2)",
+      "translation": "",
+      "bbox": [
+        304.72,
+        193.29,
+        538.66,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0380",
+      "page": 10,
+      "type": "paragraph",
+      "order": 380,
+      "original_text": "Discussion The results of this study provide inspiration for the design and development of highly sensitive, ultrafastresponse, low-power, and highly integrated underwater tactile recognition sensors. By coupling force-magnetic information in an underwater environment via a magnetized flexible film, the tactile-sensitive material of the sensor can make direct physical contact with the measured target to maintain high sensitivity, while concurrently reducing the wired connection structures within the sensor to improve waterproof performance. Furthermore, a diamond NV center magnetic sensing unit is employed to collect the coupled magnetic signals. On one hand, this is based on its inherent advantages of ultrafast response, high sensitivity, and integration stability; more importantly, by regulating the spin state of the NV center through multiple parameters such as microwave frequency and power, the polarity and intensity of the magnetic responsivity can be adjusted. This allows it to simulate the weight changes of artificial neural network nodes at the hardware level, thereby achieving a parallel mode for the tactile sensing and recognition processes, which drastically improves the response time of underwater tactile recognition. Notably, the ISC architecture eliminates the storage and processing modules found in classical tactile recognition sensors, thus not only reducing data transmission power consumption but also improving the degree of integration. This sensor, fusing the advantages of quantum precision measurement and artificial intelligence architectures, provides a promising strategy for the design of underwater tactile sensors and offers support for the sustainable development and",
+      "translation": "",
+      "bbox": [
+        56.69,
+        348.69,
+        290.56,
+        732.24
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0381",
+      "page": 11,
+      "type": "paragraph",
+      "order": 381,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 11 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0382",
+      "page": 11,
+      "type": "paragraph",
+      "order": 382,
+      "original_text": "parameter between adjacent antennas at a frequency of 2.87 GHz is −37.2 dB. The microwave generation module incorporates two customized integrated fixedfrequency microwave generators (Supplementary Fig. 21) with a power consumption of 3.54 W. These generators provide microwave signals of different frequencies to the antenna, enabling the adjustment of responsivity for different polarities of the diamond NV color center tactile sensing unit. The adjustment of the responsivity intensity of the sensing unit is achieved by altering the impedance of the antenna unit, and secondary precise adjustment can be achieved by adjusting the amplification factor of the operational amplifier in the photodetection module.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        88.88,
+        290.62,
+        254.03
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0383",
+      "page": 11,
+      "type": "paragraph",
+      "order": 383,
+      "original_text": "Experimental setup The output channels of the ISC-NVTS were all equipped with current-to-voltage conversion circuits. All data were tested using a Tektronix MDO4104C oscilloscope.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        268.35,
+        290.55,
+        313.85
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0384",
+      "page": 11,
+      "type": "paragraph",
+      "order": 384,
+      "original_text": "Acknowledgements This work was supported in part by National Natural Science Foundation of China (52275576), Shanxi Province Major Science and Technology Special Projects Plan (202501150102014Z), Fundamental Research Program of Shanxi Province (202403021223007)and Sanjin Talent Program of Shanxi Province.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        324.97,
+        289.76,
+        368.33
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0385",
+      "page": 11,
+      "type": "paragraph",
+      "order": 385,
+      "original_text": "Author contributions Conceptualization: W.G., H.G., J.T., and J.L.; Methodology: W.G., J.T., and J.L; Investigation: W.G., H.G., and J.T.; Visualization: W.G., H.G. and J.T.; Funding acquisition: H.G., J.T., and J.L.; Project administration: H.G., J.T., and J.L.; Supervision: H.G., J.T., and J.L.; Writing-original draft: W.G. and H.G.; Writingreview & editing: W.G., H.G., and the other authors.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        380.3,
+        283.33,
+        432.56
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0386",
+      "page": 11,
+      "type": "paragraph",
+      "order": 386,
+      "original_text": "Data availability The data generated in this study are included in the manuscript and supplemental information and will be made available from the lead contact upon reasonable request.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        444.54,
+        287.82,
+        478.88
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0387",
+      "page": 11,
+      "type": "paragraph",
+      "order": 387,
+      "original_text": "Competing interests The authors declare no competing interests.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        492.84,
+        190.94,
+        509.26
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0388",
+      "page": 11,
+      "type": "paragraph",
+      "order": 388,
+      "original_text": "Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41378-026-01423-w.",
+      "translation": "",
+      "bbox": [
+        56.69,
+        520.73,
+        279.8,
+        537.16
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0389",
+      "page": 11,
+      "type": "paragraph",
+      "order": 389,
+      "original_text": "Received: 16 April 2026 Revised: 10 July 2026 Accepted: 22 July 2026",
+      "translation": "",
+      "bbox": [
+        56.69,
+        550.61,
+        277.28,
+        558.08
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0390",
+      "page": 11,
+      "type": "paragraph",
+      "order": 390,
+      "original_text": "6. Lee, C.-H., Ho, H.-J., Chen, W.-S. & Iizuka, A. Total resource circulation of desalination brine: a review. Adv. Sustain. Syst. 8, 2300460 (2024). 7. Hong, K. & Guan, X. The effects of ocean governance on marine economic development from an environmental optimization perspective. Water 16, 1900 (2024). 8. Sebastian, W., Padate, V. P., Cubelio, S. S., Saravanane, N. & Gupta, G. V. M. Marine living resources—a blue future. Curr. Sci. 126, 200–207 (2024). 9. Dala, A. & Arslan, T. In situ sensor for the detection of oil spill in seawater using microwave techniques. Micromachines 13, 536 (2022). 10. Xiao, R. Q., Vegni, A. M., Combeau, P., Loscrí, V., Aveneau, L., & IEEE. Performance evaluation of underwater visible light positioning algorithms using realistic propagation model. in Proc. IEEE International Conference on Communications Workshops (IEEE, 2023). 11. Hong, S. A robust underwater object detection method using forward-looking sonar images. Remote Sens Lett. 14, 442–449 (2023). 12. Tang, Y. et al. AUV-based side-scan sonar real-time method for underwatertarget detection. J. Mar. Sci. Eng. 11, 690 (2023). 13. Zheng, L., Hu, T. & Zhu, J. Underwater sonar target detection based on improved ScEMA-YOLOv8. IEEE Geosci. Remote Sens. Lett. 21, 1–5 (2024). 14. Lee, J. et al. Recent advances in smart tactile sensory systems with braininspired neural networks. Adv. Intell. Syst. 6, 2300631 (2024). 15. Pastor, F., Gandarias, J. M., García-Cerezo, A. J. & Gómez-de-Gabriel, J. M. Using 3D convolutional neural networks for tactile object recognition with robotic palpation. Sensors 19, 5356 (2019). 16. Yue, S., Xu, M. & Che, Z. A skin-inspired PDMS optical tactile sensor driven by a convolutional neural network. IEEE Sens. J. 24, 8651–8660 (2024). 17. Chen, Y. et al. Capacitive in-sensor tactile computing. Nat. Commun. 16, 5691 (2025). 18. Chen, L., Feng, J., Li, T., Li, X. & Zhang, J. High-tactile sensitivity of piezoresistive sensors with a micro-crack structure induced by thin film tension. IEEE Electron Device Lett. 40, 1519–1521 (2019). 19. Tang, J. et al. Recent progress in flexible piezoelectric tactile sensors: materials, structures, fabrication, and application. Sensors 25, 964 (2025). 20. Mennel, L. et al. Ultrafast machine vision with 2D material neural network image sensors. Nature 579, 62–66 (2020). 21. Li, Z. et al. A reconfigurable heterostructure transistor array for monocular 3D parallax reconstruction. Nat. Electron 8, 46–55 (2025). 22. Wang, M. et al. Tactile near-sensor analogue computing for ultrafast responsive artificial Skin. Adv. Mater. 34, 2201962 (2022). 23. You, Z., Wei, L., Zhang, M., Yang, F. & Wang, X. Hermetic and bioresorbable packaging materials for MEMS implantable pressure sensors: a review. IEEE Sens. J. 22, 23633–23648 (2022). 24. Man, J., Chen, G. & Chen, J. Recent progress of biomimetic tactile sensing technology based on magnetic sensors. Biosensors 12, 1054 (2022). 25. Man, J., Jin, Z. & Chen, J. Magnetic tactile sensor with bionic hair array for sliding sensing and object recognition. Adv. Sci. 11, 2306832 (2024). 26. Liu, J. et al. Novel structural flexible magnetic tactile sensors: design, numerical studies and tactile recognition. IEEE Rob. Autom. Lett. 10, 7110–7117 (2025). 27. Hu, X. et al. Design of 3D magnetic tactile sensors with high sensing accuracy guided by the theoretical model. Adv. Intell. Syst. 5, 2200291 (2023). 28. Xu, Y. et al. Hall-effect sensor design with physics-informed Gaussian process modeling. IEEE Sens. J. 22, 22519–22528 (2022). 29. Oogane, M. et al. Sub-pT magnetic field detection by tunnel magneto-resistive sensors. Appl. Phys. Express 14, 123002 (2021). 30. Gao, W. et al. Temperature field ultrafast detection and identification quantum sensor based on diamond array. Microsyst. Nanoeng. 11, 244 (2025). 31. Zhong, B. et al. Monolithic cell-on-memristor architecture enables wafer-scale integration of oscillatory chemoreceptors for bio-realistic gustatory chips. Nat. Mater. 25, 275–284 (2026). 32. Liu, Y. et al. Self-powered high-sensitivity all-in-one vertical tribotransistor device for multi-sensing-memory-computing. Nat. Commun. 13, 7917 (2022). 33. Hu, H. et al. Wireless flexible magnetic tactile sensor with super-resolution in large-areas. ACS Nano 16, 19271–19280 (2022). 34. Ninio, Y. et al. High-sensitivity, high-resolution detection of reactive oxygen species concentration using NV centers. ACS Photonics 8, 1917–1921 (2021). 35. Barry, J. F. et al. Sensitivity optimization for NV-diamond magnetometry. Rev. Mod. Phys. 92, 015004 (2020). 36. Fu, J. T. et al. Bionic visual-audio photodetectors with in-sensor perception and preprocessing. Sci. Adv. 10, eadk8199 (2024).",
+      "translation": "",
+      "bbox": [
+        304.72,
+        90.38,
+        538.65,
+        716.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0391",
+      "page": 11,
+      "type": "paragraph",
+      "order": 391,
+      "original_text": "References 1. Li, Z. & Han, J. Environmental safety and low velocity of the development of submarine natural gas hydrate with examples of test production in South China Sea. Environ. Sci. Pollut. Res. 28, 6259–6265 (2021). 2. Liu, K., Chen, G., Zhu, G. & Zhu, J. Nonlinear self-induced vibration and operability envelope analysis of production strings in marine natural gas development. Int J. Nav. Arch. Ocean Eng. 11, 344–352 (2019). 3. Jacob, C. et al. Marine biodiversity offsets: Pragmatic approaches toward better conservation outcomes. Conserv Lett. 13, e12711 (2020). 4. Sun, J., Chen, Z., Xu, K. & Lin, M. Editorial: Marine biodiversity under global climate change. J. Sea Res. 202, 102555 (2024). 5. Votsi, N. E. Pathways to protect marine biodiversity: Could Marine Protected Areas (MPAs) be benefited by landscape ecology?. Mar. Pollut. Bull. 191, 114942 (2023).",
+      "translation": "",
+      "bbox": [
+        56.69,
+        595.46,
+        290.64,
+        719.48
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0392",
+      "page": 12,
+      "type": "paragraph",
+      "order": 392,
+      "original_text": "Gao et al. Microsystems & Nanoengineering (2026) 12:304 Page 12 of 12",
+      "translation": "",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0393",
+      "page": 12,
+      "type": "paragraph",
+      "order": 393,
+      "original_text": "42. Zhou, Y. et al. A multimodal magnetoelastic artificial skin for underwater haptic sensing. Sci. Adv. 10, eadj8567 (2024). 43. Cui, Z. W. et al. Skin-integrated haptic interface system based on a stretchable pressure sensor array for wireless tactile visualization applications. Nano Energy 139, 110911 (2025). 44. Zhi, X. et al. Hybrid tactile sensor array for pressure sensing and tactile pattern recognition. Nano Energy 125, 109532 (2024). 45. Loizidou, X. I., Loizides, M. I. & Orthodoxou, D. L. Persistent marine litter: small plastics and cigarette butts remain on beaches after organized beach cleanups. Environ. Monit. Assess. 190, 414 (2018). 46. Papp, A. & Oremus, K. L. Plastic bag bans and fees reduce harmful bag litter on shorelines. Science 388, eadp9274 (2025).",
+      "translation": "",
+      "bbox": [
+        304.72,
+        90.17,
+        538.62,
+        196.49
+      ],
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S0394",
+      "page": 12,
+      "type": "paragraph",
+      "order": 394,
+      "original_text": "37. Liu, L. et al. Reconfigurable optoelectronic memristive architecture based on doped nanowire array for in-memory parallel perception and computation. Natl. Sci. Rev. 12, nwaf386 (2025). 38. Guo, Y. et al. Robust diamond-embedded microwave antenna for optimizing quantum sensing using nitrogen-vacancy center ensembles. Appl Phys. Lett. 123, 264003 (2023). 39. Kumar, D. et al. Artificial visual perception neural system using a solutionprocessable MoS2-based in-memory light sensor. Light Sci. Appl 12, 109 (2023). 40. Carrara, S., Chen, J., Bhardwaj, K., Golparvar, A. & Barbruni, G. L. In-memory sensing and computing for cancer diagnostics: a perspective paper. IEEE Trans. Biomed. Circuits Syst. 18, 361–368 (2024). 41. Hu, H. et al. Large-area magnetic skin for multi-point and multi-scale tactile sensing with super-resolution. npj Flex. Electron 8, 42 (2024).",
+      "translation": "",
+      "bbox": [
+        56.69,
+        90.17,
+        290.64,
+        205.45
+      ],
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S0001",
+        "S0002",
+        "S0003",
+        "S0004",
+        "S0005",
+        "S0006",
+        "S0007",
+        "S0008",
+        "S0009",
+        "S0010",
+        "S0011",
+        "S0012"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S0013",
+        "S0014",
+        "S0015",
+        "S0016"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S0017",
+        "S0018",
+        "S0019",
+        "S0020",
+        "S0021",
+        "S0022",
+        "S0023",
+        "S0024",
+        "S0025",
+        "S0026",
+        "S0027",
+        "S0028",
+        "S0029",
+        "S0030",
+        "S0031",
+        "S0032",
+        "S0033",
+        "S0034",
+        "S0035",
+        "S0036",
+        "S0037",
+        "S0038",
+        "S0039",
+        "S0040",
+        "S0041",
+        "S0042",
+        "S0043",
+        "S0044",
+        "S0045",
+        "S0046",
+        "S0047",
+        "S0048",
+        "S0049",
+        "S0050",
+        "S0051",
+        "S0052",
+        "S0053",
+        "S0054",
+        "S0055",
+        "S0056",
+        "S0057",
+        "S0058",
+        "S0059",
+        "S0060",
+        "S0061",
+        "S0062",
+        "S0063",
+        "S0064",
+        "S0065",
+        "S0066",
+        "S0067",
+        "S0068",
+        "S0069",
+        "S0070",
+        "S0071",
+        "S0072",
+        "S0073",
+        "S0074",
+        "S0075",
+        "S0076",
+        "S0077",
+        "S0078",
+        "S0079",
+        "S0080",
+        "S0081",
+        "S0082",
+        "S0083",
+        "S0084",
+        "S0085",
+        "S0086",
+        "S0087",
+        "S0088",
+        "S0089",
+        "S0090",
+        "S0091",
+        "S0092",
+        "S0093"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S0094",
+        "S0095",
+        "S0096"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S0097",
+        "S0098",
+        "S0099",
+        "S0100"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S0101",
+        "S0102",
+        "S0103",
+        "S0104",
+        "S0105",
+        "S0106",
+        "S0107",
+        "S0108",
+        "S0109",
+        "S0110",
+        "S0111",
+        "S0112",
+        "S0113",
+        "S0114",
+        "S0115",
+        "S0116",
+        "S0117",
+        "S0118",
+        "S0119",
+        "S0120",
+        "S0121",
+        "S0122",
+        "S0123",
+        "S0124",
+        "S0125",
+        "S0126",
+        "S0127",
+        "S0128",
+        "S0129",
+        "S0130",
+        "S0131",
+        "S0132",
+        "S0133",
+        "S0134",
+        "S0135",
+        "S0136",
+        "S0137",
+        "S0138",
+        "S0139",
+        "S0140",
+        "S0141",
+        "S0142",
+        "S0143",
+        "S0144",
+        "S0145",
+        "S0146",
+        "S0147",
+        "S0148",
+        "S0149",
+        "S0150",
+        "S0151",
+        "S0152",
+        "S0153",
+        "S0154",
+        "S0155",
+        "S0156",
+        "S0157",
+        "S0158",
+        "S0159",
+        "S0160",
+        "S0161",
+        "S0162",
+        "S0163",
+        "S0164",
+        "S0165",
+        "S0166",
+        "S0167",
+        "S0168",
+        "S0169",
+        "S0170",
+        "S0171",
+        "S0172",
+        "S0173",
+        "S0174",
+        "S0175",
+        "S0176",
+        "S0177",
+        "S0178",
+        "S0179",
+        "S0180",
+        "S0181",
+        "S0182",
+        "S0183",
+        "S0184",
+        "S0185",
+        "S0186",
+        "S0187",
+        "S0188",
+        "S0189",
+        "S0190",
+        "S0191",
+        "S0192",
+        "S0193",
+        "S0194",
+        "S0195",
+        "S0196",
+        "S0197",
+        "S0198",
+        "S0199",
+        "S0200",
+        "S0201",
+        "S0202",
+        "S0203",
+        "S0204",
+        "S0205",
+        "S0206"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S0207",
+        "S0208",
+        "S0209",
+        "S0210",
+        "S0211",
+        "S0212",
+        "S0213",
+        "S0214",
+        "S0215",
+        "S0216",
+        "S0217",
+        "S0218",
+        "S0219",
+        "S0220",
+        "S0221",
+        "S0222",
+        "S0223",
+        "S0224",
+        "S0225",
+        "S0226",
+        "S0227",
+        "S0228",
+        "S0229",
+        "S0230",
+        "S0231",
+        "S0232",
+        "S0233",
+        "S0234",
+        "S0235",
+        "S0236",
+        "S0237",
+        "S0238",
+        "S0239",
+        "S0240",
+        "S0241",
+        "S0242",
+        "S0243",
+        "S0244",
+        "S0245",
+        "S0246",
+        "S0247",
+        "S0248",
+        "S0249",
+        "S0250",
+        "S0251",
+        "S0252",
+        "S0253",
+        "S0254",
+        "S0255",
+        "S0256",
+        "S0257",
+        "S0258",
+        "S0259",
+        "S0260",
+        "S0261",
+        "S0262",
+        "S0263",
+        "S0264",
+        "S0265",
+        "S0266",
+        "S0267",
+        "S0268",
+        "S0269",
+        "S0270",
+        "S0271",
+        "S0272",
+        "S0273",
+        "S0274",
+        "S0275",
+        "S0276",
+        "S0277",
+        "S0278",
+        "S0279",
+        "S0280",
+        "S0281",
+        "S0282",
+        "S0283",
+        "S0284",
+        "S0285",
+        "S0286",
+        "S0287",
+        "S0288",
+        "S0289",
+        "S0290",
+        "S0291",
+        "S0292",
+        "S0293",
+        "S0294",
+        "S0295",
+        "S0296",
+        "S0297",
+        "S0298",
+        "S0299",
+        "S0300",
+        "S0301",
+        "S0302",
+        "S0303",
+        "S0304",
+        "S0305",
+        "S0306",
+        "S0307"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S0308",
+        "S0309",
+        "S0310",
+        "S0311",
+        "S0312",
+        "S0313"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S0314",
+        "S0315",
+        "S0316",
+        "S0317",
+        "S0318",
+        "S0319",
+        "S0320",
+        "S0321",
+        "S0322",
+        "S0323",
+        "S0324",
+        "S0325",
+        "S0326",
+        "S0327",
+        "S0328",
+        "S0329",
+        "S0330",
+        "S0331",
+        "S0332",
+        "S0333",
+        "S0334",
+        "S0335",
+        "S0336",
+        "S0337",
+        "S0338",
+        "S0339",
+        "S0340",
+        "S0341",
+        "S0342",
+        "S0343",
+        "S0344",
+        "S0345",
+        "S0346",
+        "S0347",
+        "S0348",
+        "S0349",
+        "S0350",
+        "S0351",
+        "S0352",
+        "S0353",
+        "S0354",
+        "S0355",
+        "S0356",
+        "S0357",
+        "S0358",
+        "S0359",
+        "S0360",
+        "S0361",
+        "S0362",
+        "S0363",
+        "S0364",
+        "S0365",
+        "S0366",
+        "S0367",
+        "S0368",
+        "S0369",
+        "S0370",
+        "S0371",
+        "S0372",
+        "S0373",
+        "S0374",
+        "S0375"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S0376",
+        "S0377",
+        "S0378",
+        "S0379",
+        "S0380"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S0381",
+        "S0382",
+        "S0383",
+        "S0384",
+        "S0385",
+        "S0386",
+        "S0387",
+        "S0388",
+        "S0389",
+        "S0390",
+        "S0391"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S0392",
+        "S0393",
+        "S0394"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 3,
+      "caption_original": "Fig. 1 Overview of the wireless in-sensor computing magnetic tactile sensor (ISC-NVTS) for underwater use. a A typical underwater tactile sensing system. The serial sensing/storage/computation working mode leads to low efficiency, and the electronic tactile sensing elements and wired connection structures directly exposed to water impose stringent requirements on packaging quality. b Schematic of the ISC-NVTS structure: a diamond tactile sensing unit array (connected in parallel) composed of a force-magnetic coupling layer and a magnetic information sensingprocessing layer, performing real-time computation:I = ∑FNRN. c Schematic of the force-magnetic coupling layer structure: NdFeB magnetic particles dispersed in a polymer silicone matrix. The magnetization direction is perpendicular to the top surface, enabling highly linear force-to-magnetic information conversion. d Schematic of the diamond NV center magnetic sensing unit structure, consisting of an antenna, diamond (<111> orientation), filter film, and Si-PIN photodetector. e Energy level diagram of the NV center, showing a triplet state. f Mechanism of ultra-fast response and adjustable responsivity for the diamond NV center magnetic sensing unit. The high linearity of the optically detected magnetic resonance (ODMR) output curve is utilized to achieve ultra-fast magnetic detection using a fixed-frequency mode; multi-parameter control of microwave frequency/power intervenes in the NV center electron spin resonance process, enabling positive/negative and magnitude adjustment of the sensing unit’s magnetic (stress) responsivity. g Electron spin state distribution in diamond under different applied stresses and microwave conditions, illustrating the adjustable stress responsivity characteristic of the sensing unit",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "A typical underwater tactile sensing system. The serial sensing/storage/computation working mode leads to low efficiency, and the electronic tactile sensing elements and wired connection structures directly exposed to water impose stringent requirements on packaging quality",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Schematic of the ISC-NVTS structure: a diamond tactile sensing unit array (connected in parallel) composed of a force-magnetic coupling layer and a magnetic information sensingprocessing layer, performing real-time computation:I = ∑FNRN",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "c",
+          "original": "Schematic of the force-magnetic coupling layer structure: NdFeB magnetic particles dispersed in a polymer silicone matrix. The magnetization direction is perpendicular to the top surface, enabling highly linear force-to-magnetic information conversion",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "d",
+          "original": "Schematic of the diamond NV center magnetic sensing unit structure, consisting of an antenna, diamond (<111> orientation), filter film, and Si-PIN photodetector",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "e",
+          "original": "Energy level diagram of the NV center, showing a triplet state",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "Mechanism of ultra-fast response and adjustable responsivity for the diamond NV center magnetic sensing unit. The high linearity of the optically detected magnetic resonance (ODMR) output curve is utilized to achieve ultra-fast magnetic detection using a fixed-frequency mode; multi-parameter control of microwave frequency/power intervenes in the NV center electron spin resonance process, enabling positive/negative and magnitude adjustment of the sensing unit’s magnetic (stress) responsivity",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "g",
+          "original": "Electron spin state distribution in diamond under different applied stresses and microwave conditions, illustrating the adjustable stress responsivity characteristic of the sensing unit",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 945,
+      "image_height": 897,
+      "crop_confidence": "high",
+      "bbox": [
+        61.91,
+        91.35,
+        533.71,
+        539.26
+      ],
+      "image_path": "papers/paper-98467b8be928a937/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 6,
+      "caption_original": "Fig. 2 Performance characterization of the diamond NV center tactile sensing unit. a Room-temperature magnetic hysteresis loops of flexible magnetic films with different magnetic particle contents. Saturation magnetization increases significantly with higher particle concentration, while coercivity remains relatively stable. b Stress-strain curves of flexible magnetic films with different magnetic particle contents. Higher particle content results in steeper curves and higher Young’s modulus, indicating greater rigidity. c SEM image of a sample with 60 wt% magnetic particle content. d ODMR frequency-sweep outputs of the sensing unit under different loading forces. Selecting different working frequencies enables positive or negative responses. e Determination of the optimal working frequency. The highly linear regions on both sides of the Lorentzian trough in the ODMR output curve are selected as the sensor’s output response curves. f Relationship between the trough current Ict of the leftmost Lorentzian trough and the loading force. g Relationship between the current difference ΔI (Ict minus baseline current) and microwave power, demonstrating the adjustable magnitude of the sensing unit’s tactile responsivity. h Output response curves of the sensing unit at the positive/negative response frequency under different microwave powers. i Magnetic field noise spectral density of the sensing unit",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Room-temperature magnetic hysteresis loops of flexible magnetic films with different magnetic particle contents. Saturation magnetization increases significantly with higher particle concentration, while coercivity remains relatively stable",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Stress-strain curves of flexible magnetic films with different magnetic particle contents. Higher particle content results in steeper curves and higher Young’s modulus, indicating greater rigidity",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "SEM image of a sample with 60 wt% magnetic particle content",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "d",
+          "original": "ODMR frequency-sweep outputs of the sensing unit under different loading forces. Selecting different working frequencies enables positive or negative responses",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "e",
+          "original": "Determination of the optimal working frequency. The highly linear regions on both sides of the Lorentzian trough in the ODMR output curve are selected as the sensor’s output response curves",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "f",
+          "original": "Relationship between the trough current Ict of the leftmost Lorentzian trough and the loading force",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "g",
+          "original": "Relationship between the current difference ΔI (Ict minus baseline current) and microwave power, demonstrating the adjustable magnitude of the sensing unit’s tactile responsivity",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "h",
+          "original": "Output response curves of the sensing unit at the positive/negative response frequency under different microwave powers",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "i",
+          "original": "Magnetic field noise spectral density of the sensing unit",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 555,
+      "image_height": 230,
+      "crop_confidence": "high",
+      "bbox": [
+        255.95,
+        95.49,
+        532.78,
+        209.56
+      ],
+      "image_path": "papers/paper-98467b8be928a937/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 7,
+      "caption_original": "Fig. 3 Hardware implementation of the ISC-NVTS. a Macroscopic image of the ISC-NVTS. Scale bar: 30 mm. The enlarged view shows a single diamond NV center tactile sensing unit. Scale bar: 5 mm. The scale bar of the diamond filter film image is 1 mm. b Circuit connection scheme of the ISC-NVTS. The array scale is 5 × 5, with zero-offset compensation achieved via a compensation resistor. c Initial responsivity distribution (at 25 dBm) of the 25 diamond NV center tactile sensing units in the ISC-NVTS, with consistency evaluation. d Response time of a diamond NV center tactile sensing unit. e Response time of a diamond NV center magnetic sensing unit. f Output stability of the ISC-NVTS over 200 s. g Relationship between magnetic field strength and distance for the force-magnetic information coupling film of the ISC-NVTS",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Macroscopic image of the ISC-NVTS. Scale bar: 30 mm. The enlarged view shows a single diamond NV center tactile sensing unit. Scale bar: 5 mm. The scale bar of the diamond filter film image is 1 mm",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "b",
+          "original": "Circuit connection scheme of the ISC-NVTS. The array scale is 5 × 5, with zero-offset compensation achieved via a compensation resistor",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "c",
+          "original": "Initial responsivity distribution (at 25 dBm) of the 25 diamond NV center tactile sensing units in the ISC-NVTS, with consistency evaluation",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Response time of a diamond NV center tactile sensing unit",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "e",
+          "original": "Response time of a diamond NV center magnetic sensing unit",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "f",
+          "original": "Output stability of the ISC-NVTS over 200 s",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "g",
+          "original": "Relationship between magnetic field strength and distance for the force-magnetic information coupling film of the ISC-NVTS",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 897,
+      "image_height": 257,
+      "crop_confidence": "high",
+      "bbox": [
+        80.12,
+        96.0,
+        528.43,
+        223.63
+      ],
+      "image_path": "papers/paper-98467b8be928a937/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 4",
+      "page": 9,
+      "caption_original": "Fig. 4 ISC-NVTS for underwater tactile recognition. a Robotic arm integrated with the ISC-NVTS, enabling perception and recognition of marine organisms and debris. b Five typical marine organisms and debris, with training feature labels set as: tire (3–4.5 mA), sea turtle (4.5-6 mA), apple (6–7.5 mA), reagent bottle (7.5–9 mA), battery (9–10.5 mA). c Loss function variation over 8000 epochs. The inset shows the responsivity distribution obtained from training the ISC-NVTS. d Photograph of the constructed underwater tactile recognition simulation experimental system. e Left: photos of recognition targets in an underwater 5 × 5 grid. Middle: corresponding ISC-NVTS output currents. Right: recognition results. f Distribution of labeled recognition currents for 1000 trials under 0.1 random noise, showing a recognition rate of 95.1%",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Robotic arm integrated with the ISC-NVTS, enabling perception and recognition of marine organisms and debris",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "b",
+          "original": "Five typical marine organisms and debris, with training feature labels set as: tire (3–4.5 mA), sea turtle (4.5-6 mA), apple (6–7.5 mA), reagent bottle (7.5–9 mA), battery (9–10.5 mA)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Loss function variation over 8000 epochs. The inset shows the responsivity distribution obtained from training the ISC-NVTS",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Photograph of the constructed underwater tactile recognition simulation experimental system",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "e",
+          "original": "Left: photos of recognition targets in an underwater 5 × 5 grid. Middle: corresponding ISC-NVTS output currents. Right: recognition results",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        },
+        {
+          "label": "f",
+          "original": "Distribution of labeled recognition currents for 1000 trials under 0.1 random noise, showing a recognition rate of 95.1%",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 932,
+      "image_height": 625,
+      "crop_confidence": "high",
+      "bbox": [
+        63.53,
+        221.61,
+        529.09,
+        533.86
+      ],
+      "image_path": "papers/paper-98467b8be928a937/figures/figure-04.png"
+    }
+  ],
+  "glossary": []
+}
