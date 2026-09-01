@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "paper-4c557ec566bc4bfa",
+  "title": "A Soft Robotic Finger With Deep Learning‐Enhanced Tactile Sensing for Texture and Softness Recognition",
+  "authors": [
+    "Gorkem Anil Al",
+    "Arya Shabani",
+    "Nicos Hadjigeorgiou",
+    "James Fant‐Male"
+  ],
+  "venue": "Advanced Intelligent Systems",
+  "primary_category": "软体机器人与人机交互",
+  "categories": [
+    "软体机器人与人机交互",
+    "电子皮肤与触觉",
+    "多模态与生化传感"
+  ],
+  "strongly_related": false,
+  "date": "2026-08-31",
+  "doi": "10.1002/aisy.70504",
+  "source_url": "https://doi.org/10.1002/aisy.70504",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-01T06:16:17.052374+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Tactile sensing is essential for robots to interact effectively with humans, objects, and their environment. While soft tactile fingers have emerged to emulate human touch, existing designs often fall short in perceiving subtle material features, struggle with textures on deformable surfaces, and treat softness and texture recognition as separate tasks. Here, we present a tendon‐driven soft robotic finger with a multimodal tactile fingertip capable of simultaneously discerning texture and softness through automated human‐like finger motion. The finger integrates a compliant, anthropomorphic structure with a multimodal fingertip embedding pressure, accelerometer, and gyroscope sensors within a soft elastomer. As the finger slides over materials, a hybrid CNN‐LSTM deep learning pipeline processes multimodal tactile cues to classify material properties. Extensive experiments demonstrate classification of 18 textures with 94.3% accuracy and four softness levels with 97.9% accuracy. In combined texture‐softness tests across 20 samples, the system achieved 95.4% accuracy for texture and 97.0% for softness recognition. These results highlight the finger’s ability to perceive complex material properties that prior soft tactile fingers failed to resolve. By bridging the gap between human‐like perception and soft tactile sensing, the proposed system advances capabilities for adaptive grasping, refined object manipulation, material sorting, and prosthetic applications.",
+    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：94.3%、97.9%、95.4%、97.0%。"
+  },
+  "innovation_points": [
+    "Tactile sensing is essential for robots to interact effectively with humans, objects, and their environment.",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-01/deep-reads/paper-4c557ec566bc4bfa/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
