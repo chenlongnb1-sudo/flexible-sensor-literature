@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "paper-290223431826c636",
+  "title": "Spiderweb‐Inspired Conformable Stretchable Electronic Skin for Tactile Force and Softness Perception",
+  "authors": [
+    "Ketong Gao",
+    "Haruki Nakamura",
+    "Atsushi Nitta",
+    "Naruhito Seimiya",
+    "Yanpeng Li",
+    "Yan Xuan",
+    "Kuniharu Takei"
+  ],
+  "venue": "Advanced Functional Materials",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "软体机器人与人机交互",
+    "可穿戴健康与生理监测"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-02",
+  "doi": "10.1002/adfm.78147",
+  "source_url": "https://doi.org/10.1002/adfm.78147",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-03T05:50:41.333248+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Electronic skin (e‐skin) that can conformably cover deformable surfaces is essential for robotic perception and wearable human–machine interfaces. However, simultaneously achieving high spatial resolution, multimodal sensing, and mechanical stretchability remains challenging. In addition, most existing machine‐learning‐based tactile systems rely on predefined material classifications, limiting their ability to recognize previously unseen objects. Here, we present a spiderweb‐inspired stretchable e‐skin that enables the perception of applied force, contact position, and object softness using a simple electrode design. The device is constructed using a conductive elastomer composite consisting to form a highly stretchable spiderweb‐like sensing network that can conform to three‐dimensional and deformable surfaces. By combining this structural design with a data‐driven learning framework based on reservoir computing, the system extracts rich spatiotemporal features from a limited number of sensing channels. The proposed platform reconstructs force distributions with an effective spatial resolution equivalent to a 6 × 6 pixel array using only eight electrodes while enabling quantitative prediction of applied force. Furthermore, object softness (including previously unseen materials) is quantitatively detected together with applied force. This approach significantly reduces hardware complexity while maintaining high sensing performance. The spiderweb e‐skin provides a scalable strategy for next‐generation tactile perception systems in various applications.",
+    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。当前未从摘要提取到可比较数值。"
+  },
+  "innovation_points": [
+    "ABSTRACT Electronic skin (e‐skin) that can conformably cover deformable surfaces is essential for robotic perception and wearable human–machine interfaces.",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计"
+  ],
+  "innovation_suggestions": [
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。"
+  ],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-03/deep-reads/paper-290223431826c636/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

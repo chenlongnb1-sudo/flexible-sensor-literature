@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -1251,6 +1251,72 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-08-26T01:07:53.249872+00:00"
+    },
+    {
+      "id": "idea-2026-09-03-b38939dc8d5a",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Spiderweb‐Inspired Conformable Stretchable Electronic Skin for Tactile Force and Softness Perception",
+      "source_papers": [
+        {
+          "paper_id": "paper-290223431826c636",
+          "title": "Spiderweb‐Inspired Conformable Stretchable Electronic Skin for Tactile Force and Softness Perception",
+          "doi": "10.1002/adfm.78147",
+          "url": "https://doi.org/10.1002/adfm.78147"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-03T05:50:35.559798+00:00"
+    },
+    {
+      "id": "idea-2026-09-03-2f17b7113ee5",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P1",
+      "title": "把论文中的结构机制转成偏移/旋转/接触半径容差地图",
+      "source": "Spiderweb‐Inspired Conformable Stretchable Electronic Skin for Tactile Force and Softness Perception",
+      "source_papers": [
+        {
+          "paper_id": "paper-290223431826c636",
+          "title": "Spiderweb‐Inspired Conformable Stretchable Electronic Skin for Tactile Force and Softness Perception",
+          "doi": "10.1002/adfm.78147",
+          "url": "https://doi.org/10.1002/adfm.78147"
+        }
+      ],
+      "hypothesis": "若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。",
+      "minimum_experiment": "在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。",
+      "controls": [
+        "周期电极+常规微结构",
+        "周期电极+HCP",
+        "梯度/非周期电极+常规微结构",
+        "目标结构"
+      ],
+      "success_metrics": [
+        "CV",
+        "shift sensitivity",
+        "rotation sensitivity",
+        "contact-radius sensitivity",
+        "signal void ratio"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-03T05:50:35.559819+00:00"
     }
   ]
 }

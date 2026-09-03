@@ -1,0 +1,30 @@
+# Programmable Thermosensitive Ink Based on Multi‐Melting‐Point Acrylate Copolymers for Substrate‐Dependent Temperature Sensing
+
+- 期刊：Advanced Functional Materials
+- 日期：2026-09-02
+- DOI：10.1002/adfm.78137
+- 解析状态：metadata_only_no_legal_pdf
+
+## 摘要与研究价值
+
+**Original:** ABSTRACT Flexible temperature sensors are highly desirable for intelligent packaging/ logistics and temperature monitoring, where low‐cost fabrication, patternability, tunable sensing behavior, and substrate adaptability are required. However, most phase‐change‐based temperature sensing materials rely on a single transition temperature, which often results in sudden changes in resistance near the melting region, leading to a narrow operating range and limited tunability for diverse application scenarios. Herein, a programmable thermosensitive composite ink based on multi‐melting‐point acrylate copolymers is proposed. By screen printing the ink onto PET and cellulose paper substrates, resistive flexible temperature sensors with substrate‐dependent sensing behaviors are fabricated, and the influence of substrate structure on temperature response is clarified. By adjusting the composition of the copolymers, the sensing range and relative resistance variation can be effectively regulated. The resulting sensors exhibit a wide sensing range of 0°C–50°C, a temperature resolution of 0.1°C, and good cycling stability. Additionally, a paper‐based sensing array enables spatial temperature mapping on the packaging surfaces, while a PET‐based sensor serves as a visual LED temperature switch, demonstrating the potential of this programmable thermosensitive ink for flexible temperature monitoring, smart packaging labels, and threshold temperature alarms.
+
+**中文:** 可用于低离散/装配容差触觉界面的结构与对照设计；涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。
+
+## 创新点
+
+- ABSTRACT Flexible temperature sensors are highly desirable for intelligent packaging/ logistics and temperature monitoring, where low‐cost fabrication, patternability, tunable sensing behavior, and substrate adaptability are required.
+- 可用于低离散/装配容差触觉界面的结构与对照设计
+- 涉及 in-sensor/物理计算或可编程触觉前端
+
+## 对当前课题的启发
+
+- 可用于低离散/装配容差触觉界面的结构与对照设计
+- 涉及 in-sensor/物理计算或可编程触觉前端
+- 可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗
+
+## 制备与实验步骤
+
+## 方法原文锚点
+
+## 图表解读
