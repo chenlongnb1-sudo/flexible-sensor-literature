@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "paper-a2a08783354fa079",
+  "title": "Scorpion’s Slit Sensillum-Inspired Flexible Pressure-Position Sensor with Low Channel Consumption and High Localization Accuracy",
+  "authors": [
+    "Shengqi Chen",
+    "Xiancun Meng",
+    "Yufan Zhang",
+    "Dakai Wang",
+    "Liuqi Ji",
+    "Minze Hu",
+    "Jiangyue Lu",
+    "Haiwen Sun",
+    "Zhengzhi Mu",
+    "Bo Li",
+    "Shichao Niu",
+    "Zhiwu Han"
+  ],
+  "venue": "Nano Letters",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "可穿戴健康与生理监测",
+    "多模态与生化传感"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-04",
+  "doi": "10.1021/acs.nanolett.6c02941",
+  "source_url": "https://doi.org/10.1021/acs.nanolett.6c02941",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-05T05:47:16.709742+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Abstract Flexible pressure sensors have been widely adopted in fields including e-skin and wearable devices. Compared with single-mode pressure sensing, pressure-position sensing can further provide positional information, endowing the system with multidimensional sensing capabilities. This is usually achieved using multiple sensing units. However, numerous sensing units often cause excessive wiring, large data volumes, and high energy consumption. Here, inspired by the slit unit collaborative mechanism of scorpions, designed a flexible pressure-position sensor (FPPS). It consists of a pressure-sensing layer, which is a single conductive layer, and a pressure-positioning layer, which contains three conductive layers. With only four signal channels, the FPPS can identify nine positional regions, thereby significantly reducing data complexity. Based on outstanding perception capabilities, such as low zero-drift (0.2%), fast response time (124 ms), and excellent stability (&gt;14000), the FPPS is employed in digital input and control applications, demonstrating its potential in large-scale detection fields such as intelligent human–computer interaction.",
+    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及低冗余阵列、空间特征或读出通道压缩。摘要可核实数值包括：0.2%、124 ms。"
+  },
+  "innovation_points": [
+    "Abstract Flexible pressure sensors have been widely adopted in fields including e-skin and wearable devices.",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ],
+  "innovation_suggestions": [
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-05/deep-reads/paper-a2a08783354fa079/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
