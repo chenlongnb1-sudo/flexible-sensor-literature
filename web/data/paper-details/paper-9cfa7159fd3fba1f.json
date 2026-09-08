@@ -1,0 +1,1254 @@
+{
+  "schema_version": 1,
+  "id": "paper-9cfa7159fd3fba1f",
+  "title": "Extremely bending-resistant and compression-insensitive flexible circuits enabled by real-time crack healing via spontaneous interfacial wetting",
+  "authors": [
+    "Sheng Li",
+    "Liang Wang",
+    "Xiaoliang Chen",
+    "Cong Zhao",
+    "Bing Wang",
+    "Jinbin Xu",
+    "Qi Zhang",
+    "Yizhuo Luo",
+    "Guifang Liu",
+    "Qi Chen",
+    "Chunhui Wang",
+    "Hongmiao Tian"
+  ],
+  "venue": "International Journal of Extreme Manufacturing",
+  "primary_category": "制造、封装与可靠性",
+  "categories": [
+    "制造、封装与可靠性",
+    "柔性材料与器件"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-07",
+  "doi": "10.1088/2631-7990/aea393",
+  "source_url": "https://doi.org/10.1088/2631-7990/aea393",
+  "pdf_source_url": "https://iopscience.iop.org/article/10.1088/2631-7990/aea393/pdf",
+  "pdf_version": "repository_or_author_copy",
+  "pdf_version_label": "作者或机构仓储合法公开版本",
+  "status": "fulltext_draft",
+  "generated_at": "2026-09-08T06:00:03.432092+00:00",
+  "page_count": 24,
+  "abstract": {
+    "original": "Abstract Flexible circuits that allow stable electrical conductance and signal transmission under deformations are highly required for flexible electronics. However, bending-induced fatigue cracks in solid conductive materials can significantly degrade the stability of flexible circuits. Although liquid metal (LM) is a promising candidate for bending-resistant circuits, LM circuits are prone to being squeezed and susceptible to compression. Here, an extremely bending-resistant and compression-insensitive flexible circuit was achieved by the complementary effects of the fluidity of the upper LM and good conductivity and rigidity of a thick bottom copper (Cu) layer. The fluidic LM can heal Cu cracks in real-time by spontaneous interfacial wetting to enhance the bending durability, while the solid Cu layer can maintain conductivity under compression to enhance the compression-insensitivity. Such flexible circuit achieves a 120-fold improvement in folding lifespan compared to conventional Cu circuit, while its resistance fluctuation under compression is only 0.05% of that of the counterpart LM circuit. Meanwhile, the bottom Cu pattern exactly facilitates the high-resolution selective printing of LM by reactive wetting. As a demonstration, a flexible signal acquisition system constructed with this circuit can continuously capture pulse signals during bending and remains functional after 10000 bending cycles. The simultaneously enhanced bending stability and compression-insensitivity will greatly boost the applicability and reliability of flexible circuits under various deformation conditions.",
+    "zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：0.05%。"
+  },
+  "innovation_points": [
+    "Abstract Flexible circuits that allow stable electrical conductance and signal transmission under deformations are highly required for flexible electronics.",
+    "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 4,
+      "category_zh": "成膜与沉积",
+      "original": "for printing high-resolution pure LM circuits [46-50].",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 4,
+      "category_zh": "图形化与结构成形",
+      "original": "By inheriting the inherent high precision of the photolithography process [51, 52], this method can be used to fabricate very fine LM circuits based on high-precision metal patterns prepared by photolithography.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.4 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "Meanwhile, the bottom Cu pattern exactly facilitates the high-resolution and high-efficiency selective printing of LM by reactive wetting.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 6,
+      "category_zh": "成膜与沉积",
+      "original": "Figure 1(f) shows a comparison of the resistance changes between the Cu-LM circuit and the counterpart LM circuit (with only 50 nm of Cu for the selective printing of LM) under compression.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 4,
+      "text": "for printing high-resolution pure LM circuits [46-50]. By inheriting the inherent high precision of",
+      "bbox": [
+        36.0,
+        679.29,
+        562.26,
+        692.57
+      ]
+    },
+    {
+      "page": 4,
+      "text": "the photolithography process [51, 52], this method can be used to fabricate very fine LM circuits based on",
+      "bbox": [
+        36.0,
+        700.05,
+        562.38,
+        713.33
+      ]
+    },
+    {
+      "page": 4,
+      "text": "high-precision metal patterns prepared by photolithography. Such LM circuits offer excellent stretching and",
+      "bbox": [
+        36.0,
+        720.69,
+        562.02,
+        733.97
+      ]
+    },
+    {
+      "page": 4,
+      "text": "bending performances, but an often neglected issue is their susceptibility to compression. The conductivity",
+      "bbox": [
+        36.0,
+        741.44,
+        562.06,
+        754.73
+      ]
+    },
+    {
+      "page": 4,
+      "text": "of such circuits is provided mainly by the thicker LM layer, as the metal film is often very thin (at the",
+      "bbox": [
+        36.0,
+        762.11,
+        562.15,
+        775.39
+      ]
+    },
+    {
+      "page": 4,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.17,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 4,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 4,
+      "text": "1. Introduction",
+      "bbox": [
+        36.0,
+        63.69,
+        129.53,
+        79.23
+      ]
+    },
+    {
+      "page": 4,
+      "text": "Page 2 of 22",
+      "bbox": [
+        536.42,
+        9.22,
+        587.32,
+        21.24
+      ]
+    },
+    {
+      "page": 4,
+      "text": "2",
+      "bbox": [
+        294.89,
+        784.44,
+        303.19,
+        796.66
+      ]
+    },
+    {
+      "page": 5,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Template for the IJEM",
+      "bbox": [
+        134.18,
+        50.43,
+        562.08,
+        63.12
+      ]
+    },
+    {
+      "page": 5,
+      "text": "nanoscale) and may undergo an alloying reaction with LM. However, owing to the high fluidity, LM",
+      "bbox": [
+        36.0,
+        63.59,
+        562.36,
+        76.87
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 5,
+      "text": "conductive path is prone to being squeezed, making the resistance of the circuit highly susceptible to",
+      "bbox": [
+        36.0,
+        84.25,
+        562.38,
+        97.53
+      ]
+    },
+    {
+      "page": 5,
+      "text": "compression, which hinders its broad adaptability under various deformation conditions.",
+      "bbox": [
+        36.0,
+        105.01,
+        464.14,
+        118.29
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Here, we propose an extremely bending-resistant and compression-insensitive flexible circuit by the",
+      "bbox": [
+        48.0,
+        131.65,
+        562.27,
+        144.93
+      ]
+    },
+    {
+      "page": 5,
+      "text": "complementary effects of the fluidity of the upper LM and the good conductivity and rigidity of a thick bottom",
+      "bbox": [
+        36.0,
+        152.41,
+        562.33,
+        165.69
+      ]
+    },
+    {
+      "page": 5,
+      "text": "copper (Cu) layer. The highly fluidic LM can timely heal the cracks in the Cu layer during bending by",
+      "bbox": [
+        36.0,
+        173.05,
+        561.94,
+        186.33
+      ]
+    },
+    {
+      "page": 5,
+      "text": "spontaneous interfacial wetting to enhance the bending durability, whereas the highly conductive thick Cu",
+      "bbox": [
+        36.0,
+        193.81,
+        562.28,
+        207.09
+      ]
+    },
+    {
+      "page": 5,
+      "text": "layer can maintain conductivity under compression to enhance the compression insensitivity. Compared with",
+      "bbox": [
+        36.0,
+        214.45,
+        562.38,
+        227.73
+      ]
+    },
+    {
+      "page": 5,
+      "text": "the counterpart Cu circuits, the obtained flexible circuits exhibit a durability of 230 000 cycles under a",
+      "bbox": [
+        36.0,
+        235.09,
+        562.37,
+        248.37
+      ]
+    },
+    {
+      "page": 5,
+      "text": "bending radius of 0.5 mm and 60 000 cycles under repeated folding conditions, achieving an improvement of",
+      "bbox": [
+        36.0,
+        255.88,
+        562.27,
+        269.16
+      ]
+    },
+    {
+      "page": 5,
+      "text": "2.3 and 120 times, respectively. Moreover, its resistance fluctuation under compression (4 MPa) is only 0.05%",
+      "bbox": [
+        36.0,
+        276.52,
+        562.4,
+        289.8
+      ]
+    },
+    {
+      "page": 5,
+      "text": "that of the counterpart LM circuit. Meanwhile, the bottom Cu pattern exactly facilitates the high-resolution",
+      "bbox": [
+        36.0,
+        297.28,
+        562.37,
+        310.56
+      ]
+    },
+    {
+      "page": 5,
+      "text": "and high-efficiency selective printing of LM by reactive wetting. As a proof of concept, such a robust flexible",
+      "bbox": [
+        36.0,
+        317.92,
+        562.4,
+        331.2
+      ]
+    },
+    {
+      "page": 5,
+      "text": "circuit was integrated into a flexible system for acquiring human pulse signals, which can continuously collect",
+      "bbox": [
+        36.0,
+        338.68,
+        562.13,
+        351.96
+      ]
+    },
+    {
+      "page": 5,
+      "text": "pulse signals during bending with negligible interference and operate normally even after 10 000 bending",
+      "bbox": [
+        36.0,
+        359.32,
+        562.38,
+        372.6
+      ]
+    },
+    {
+      "page": 5,
+      "text": "cycles. The excellent bending durability and compression insensitivity greatly enhance the applicability and",
+      "bbox": [
+        36.0,
+        380.08,
+        562.37,
+        393.36
+      ]
+    },
+    {
+      "page": 5,
+      "text": "reliability of flexible circuits under various deformation conditions.",
+      "bbox": [
+        36.0,
+        400.72,
+        362.95,
+        414.0
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Figure 1(a) illustrates the structure and advantage of the bending-resistant and compression-insensitive",
+      "bbox": [
+        36.0,
+        457.62,
+        562.43,
+        470.9
+      ]
+    },
+    {
+      "page": 5,
+      "text": "flexible circuit enabled by real-time crack healing of the bottom Cu layer by spontaneous interfacial wetting of",
+      "bbox": [
+        36.0,
+        478.38,
+        562.31,
+        491.66
+      ]
+    },
+    {
+      "page": 5,
+      "text": "the upper LM. For conventional flexible circuits consisting of rigid metal films and polymer substrates, cracks",
+      "bbox": [
+        36.0,
+        499.02,
+        562.21,
+        512.3
+      ]
+    },
+    {
+      "page": 5,
+      "text": "often propagate in the metal films during repeated bending cycles due to interface delamination, excessive",
+      "bbox": [
+        36.0,
+        519.78,
+        562.29,
+        533.06
+      ]
+    },
+    {
+      "page": 5,
+      "text": "local stress, or fatigue damage (Figure 1(a-i)), leading to abrupt resistance change or even complete loss of",
+      "bbox": [
+        36.0,
+        540.42,
+        562.21,
+        553.7
+      ]
+    },
+    {
+      "page": 5,
+      "text": "electrical functionality, which severely affects the continuous operation stability and lifespan of the electronic",
+      "bbox": [
+        36.0,
+        561.18,
+        562.15,
+        574.46
+      ]
+    },
+    {
+      "page": 5,
+      "text": "systems. As a potential alternative to solid metal circuits, LM circuits exhibit good bending stability owing to",
+      "bbox": [
+        36.0,
+        581.85,
+        562.19,
+        595.13
+      ]
+    },
+    {
+      "page": 5,
+      "text": "their excellent fluidity. However, this also causes the LM channels to be prone to undergoing a significant",
+      "bbox": [
+        36.0,
+        602.49,
+        561.98,
+        615.77
+      ]
+    },
+    {
+      "page": 5,
+      "text": "reduction in cross-sectional area under compression, making the resistance of the circuit highly susceptible to",
+      "bbox": [
+        36.0,
+        623.25,
+        562.24,
+        636.53
+      ]
+    },
+    {
+      "page": 5,
+      "text": "pressure (Figure 1(a-ii)). To address this conflict, we propose a bending-resistant and compression-insensitive",
+      "bbox": [
+        36.0,
+        643.89,
+        562.4,
+        657.17
+      ]
+    },
+    {
+      "page": 5,
+      "text": "flexible circuit consisting of a bottom thick Cu layer and an LM healing layer (Figure 1(a-iii)). When cracks",
+      "bbox": [
+        36.0,
+        664.65,
+        562.35,
+        677.93
+      ]
+    },
+    {
+      "page": 5,
+      "text": "propagate in the Cu film during bending, LM can fill and bridge the cracks in real-time through spontaneous",
+      "bbox": [
+        36.0,
+        685.29,
+        562.36,
+        698.57
+      ]
+    },
+    {
+      "page": 5,
+      "text": "interfacial wetting, thus enhancing the bending stability of the flexible circuits. Meanwhile, the rigid thick Cu",
+      "bbox": [
+        36.0,
+        706.05,
+        562.4,
+        719.33
+      ]
+    },
+    {
+      "page": 5,
+      "text": "layer can withstand higher pressure under compression, which enables the resistance of the circuit being less",
+      "bbox": [
+        36.0,
+        726.69,
+        562.44,
+        739.97
+      ]
+    },
+    {
+      "page": 5,
+      "text": "affected by squeezing, thereby achieving a win-win combination of excellent bending durability and",
+      "bbox": [
+        36.0,
+        747.47,
+        562.21,
+        760.75
+      ]
+    },
+    {
+      "page": 5,
+      "text": "compression insensitivity. A comparison of the scanning electron microscope (SEM) images of the Cu circuit",
+      "bbox": [
+        36.0,
+        768.11,
+        562.32,
+        781.39
+      ]
+    },
+    {
+      "page": 5,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.18,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Page 3 of 22",
+      "bbox": [
+        8.0,
+        9.22,
+        58.9,
+        21.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "2. Results and discussion",
+      "bbox": [
+        36.0,
+        427.6,
+        187.4,
+        443.14
+      ]
+    },
+    {
+      "page": 5,
+      "text": "3",
+      "bbox": [
+        294.89,
+        784.44,
+        303.19,
+        796.66
+      ]
+    },
+    {
+      "page": 6,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Template for the IJEM",
+      "bbox": [
+        134.18,
+        50.43,
+        562.08,
+        63.12
+      ]
+    },
+    {
+      "page": 6,
+      "text": "and our Cu-LM circuit after bending confirms the role of LM in healing fatigue cracks (Figure 1(b)). Figure",
+      "bbox": [
+        36.0,
+        63.59,
+        562.27,
+        76.87
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 6,
+      "text": "1(c) shows an image of the Cu-LM flexible circuit after being stored for 60 days in an ambient environment.",
+      "bbox": [
+        36.0,
+        84.25,
+        562.38,
+        97.53
+      ]
+    },
+    {
+      "page": 6,
+      "text": "The upper surface and bottom layer of the circuit still exhibited distinguishable colors of LM and Cu, proving",
+      "bbox": [
+        36.0,
+        105.01,
+        562.33,
+        118.29
+      ]
+    },
+    {
+      "page": 6,
+      "text": "that the bilayer metal films can maintain their respective morphologies stably over a long time without",
+      "bbox": [
+        36.0,
+        125.65,
+        562.01,
+        138.93
+      ]
+    },
+    {
+      "page": 6,
+      "text": "undergoing serious alloying reactions (details are discussed in Figure 3). Moreover, the bending-resistant",
+      "bbox": [
+        36.0,
+        146.41,
+        562.4,
+        159.69
+      ]
+    },
+    {
+      "page": 6,
+      "text": "flexible circuits are compatible with different commercial standard connectors to achieve stable electrical",
+      "bbox": [
+        36.0,
+        167.05,
+        561.98,
+        180.33
+      ]
+    },
+    {
+      "page": 6,
+      "text": "interconnection (Figure S1). Taking advantage of the excellent electrical stability, this flexible circuit can",
+      "bbox": [
+        36.0,
+        187.81,
+        562.18,
+        201.09
+      ]
+    },
+    {
+      "page": 6,
+      "text": "interconnect various electronic components to integrate into a flexible signal acquisition system for human",
+      "bbox": [
+        36.0,
+        208.45,
+        562.03,
+        221.73
+      ]
+    },
+    {
+      "page": 6,
+      "text": "pulse (Figure 1(d)), which can stably acquire pulse signals of humans even after 10 000 bending cycles. Figure",
+      "bbox": [
+        36.0,
+        229.09,
+        562.38,
+        242.37
+      ]
+    },
+    {
+      "page": 6,
+      "text": "1(e) shows the comparison of the cyclic folding durability between the Cu-LM flexible circuit and the",
+      "bbox": [
+        36.0,
+        249.88,
+        562.37,
+        263.16
+      ]
+    },
+    {
+      "page": 6,
+      "text": "conventional Cu circuit. The results show that the resistance of the conventional Cu circuit began to fluctuate",
+      "bbox": [
+        36.0,
+        270.52,
+        562.21,
+        283.8
+      ]
+    },
+    {
+      "page": 6,
+      "text": "dramatically after a few hundred cycles, whereas the Cu-LM circuit maintained extremely high stability over a",
+      "bbox": [
+        36.0,
+        291.28,
+        562.37,
+        304.56
+      ]
+    },
+    {
+      "page": 6,
+      "text": "long period of time. Specifically, the relative resistance change (in the folded state) of the conventional Cu",
+      "bbox": [
+        36.0,
+        311.92,
+        562.02,
+        325.2
+      ]
+    },
+    {
+      "page": 6,
+      "text": "circuit reached more than 300% after just 500 folding cycles, while that of the Cu-LM circuit could remain",
+      "bbox": [
+        36.0,
+        332.68,
+        562.36,
+        345.96
+      ]
+    },
+    {
+      "page": 6,
+      "text": "below 300% even after 60 000 folding cycles, thereby achieving at least a 120-fold improvement in the",
+      "bbox": [
+        36.0,
+        353.32,
+        562.44,
+        366.6
+      ]
+    },
+    {
+      "page": 6,
+      "text": "folding lifespan. These results indicate the significant role of real-time-healing cracks in enhancing stability",
+      "bbox": [
+        36.0,
+        374.08,
+        562.38,
+        387.36
+      ]
+    },
+    {
+      "page": 6,
+      "text": "and prolonging the lifespan of flexible circuits. Figure 1(f) shows a comparison of the resistance changes",
+      "bbox": [
+        36.0,
+        394.72,
+        562.25,
+        408.0
+      ]
+    },
+    {
+      "page": 6,
+      "text": "between the Cu-LM circuit and the counterpart LM circuit (with only 50 nm of Cu for the selective printing of",
+      "bbox": [
+        36.0,
+        415.5,
+        562.41,
+        428.78
+      ]
+    },
+    {
+      "page": 6,
+      "text": "LM) under compression. Under a pressure of 4 MPa, the resistance of the LM circuit increased by 208.4%,",
+      "bbox": [
+        36.0,
+        436.14,
+        562.01,
+        449.42
+      ]
+    },
+    {
+      "page": 6,
+      "text": "whereas that of the Cu-LM circuit increased by only 0.11%, demonstrating that the thick Cu layer plays an",
+      "bbox": [
+        36.0,
+        456.9,
+        562.11,
+        470.18
+      ]
+    },
+    {
+      "page": 6,
+      "text": "important role in enhancing the compression insensitivity of the circuit. As shown in Figure 1(g), the bending",
+      "bbox": [
+        36.0,
+        477.54,
+        562.4,
+        490.82
+      ]
+    },
+    {
+      "page": 6,
+      "text": "durability of our flexible circuit is superior to the reported performances of other flexible circuits [16, 17, 21,",
+      "bbox": [
+        36.0,
+        498.3,
+        562.41,
+        511.58
+      ]
+    },
+    {
+      "page": 6,
+      "text": "30, 53-59], as it can withstand more bending cycles under extremely small bending radii (<1 mm) while",
+      "bbox": [
+        36.0,
+        518.94,
+        562.44,
+        532.22
+      ]
+    },
+    {
+      "page": 6,
+      "text": "maintaining very low resistance changes. Such excellent bending durability and conductivity are attributed to",
+      "bbox": [
+        36.0,
+        539.7,
+        562.13,
+        552.98
+      ]
+    },
+    {
+      "page": 6,
+      "text": "the real-time healing of cracks by the highly fluidic LM, as well as the inherently excellent electrical",
+      "bbox": [
+        36.0,
+        560.34,
+        562.23,
+        573.62
+      ]
+    },
+    {
+      "page": 6,
+      "text": "conductivity and ability to maintain the shape of solid Cu film under extremely small bending radii, which",
+      "bbox": [
+        36.0,
+        581.13,
+        562.34,
+        594.41
+      ]
+    },
+    {
+      "page": 6,
+      "text": "avoids possible flow interruption of pure LM due to squeezing of the channel under extremely small bending",
+      "bbox": [
+        36.0,
+        601.77,
+        562.14,
+        615.05
+      ]
+    },
+    {
+      "page": 6,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.17,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 6,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "radii [56].",
+      "bbox": [
+        36.0,
+        622.53,
+        87.02,
+        635.81
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Page 4 of 22",
+      "bbox": [
+        536.42,
+        9.22,
+        587.32,
+        21.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "4",
+      "bbox": [
+        294.89,
+        784.44,
+        303.19,
+        796.66
+      ]
+    },
+    {
+      "page": 7,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Template for the IJEM",
+      "bbox": [
+        134.18,
+        50.43,
+        562.08,
+        63.12
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Liquid metal (LM)",
+      "bbox": [
+        260.95,
+        71.58,
+        326.26,
+        105.3
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Susceptible to compression Compression-insensitive (ii)",
+      "bbox": [
+        70.06,
+        158.75,
+        372.34,
+        177.63
+      ]
+    },
+    {
+      "page": 7,
+      "text": "10 mm 20 mm",
+      "bbox": [
+        203.22,
+        341.55,
+        534.78,
+        356.52
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Figure 1. Mechanism and structure of the real-time healing bending-resistant and compression-insensitive",
+      "bbox": [
+        36.0,
+        531.42,
+        562.43,
+        544.7
+      ]
+    },
+    {
+      "page": 7,
+      "text": "flexible circuit. (a) Mechanism and advantage of the bending-resistant and compression-insensitive flexible",
+      "bbox": [
+        36.0,
+        552.06,
+        562.38,
+        565.34
+      ]
+    },
+    {
+      "page": 7,
+      "text": "circuit (iii) compared to conventional Cu circuit (i) and LM circuit (ii). (b) SEM images of the conventional",
+      "bbox": [
+        36.0,
+        572.82,
+        562.44,
+        586.1
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Cu circuit and our Cu-LM circuit after cyclic bending. (c) Optical image of the flexible circuit. (d) Application",
+      "bbox": [
+        36.0,
+        593.49,
+        562.15,
+        606.77
+      ]
+    },
+    {
+      "page": 7,
+      "text": "demonstration of the flexible circuit for wearable signal acquisition system for human pulse by",
+      "bbox": [
+        36.0,
+        614.25,
+        562.29,
+        627.53
+      ]
+    },
+    {
+      "page": 7,
+      "text": "interconnecting with multiple electronic components. (e) Enhanced stability and extended lifespan of the",
+      "bbox": [
+        36.0,
+        634.89,
+        562.02,
+        648.17
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Cu-LM flexible circuit compared to conventional Cu circuit. (f) Enhanced compression insensitivity of the",
+      "bbox": [
+        36.0,
+        655.65,
+        562.36,
+        668.93
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Cu-LM flexible circuit compared to conventional LM circuit. (g) Comparison of the bending durability with",
+      "bbox": [
+        36.0,
+        676.29,
+        562.37,
+        689.57
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 5,
+      "caption_original": "Figure 1(a) illustrates the structure and advantage of the bending-resistant and compression-insensitive",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "illustrates the structure and advantage of the bending-resistant and compression-insensitive",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 1119,
+      "image_height": 862,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        454.62
+      ],
+      "image_path": "papers/paper-9cfa7159fd3fba1f/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 2",
+      "page": 9,
+      "caption_original": "Figure 2. Patterning LM by a simple dip-coating method via selective interfacial wetting. (a) Patterning",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Patterning",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 985,
+      "image_height": 768,
+      "crop_confidence": "high",
+      "bbox": [
+        51.5,
+        209.44,
+        543.74,
+        592.91
+      ],
+      "image_path": "papers/paper-9cfa7159fd3fba1f/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 3",
+      "page": 11,
+      "caption_original": "Figure 3. Large-area manufacturing and long-term stability of the Cu-LM pattern. (a) Optical images of a",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Optical images of a",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 951,
+      "image_height": 513,
+      "crop_confidence": "high",
+      "bbox": [
+        68.53,
+        129.92,
+        543.66,
+        385.83
+      ],
+      "image_path": "papers/paper-9cfa7159fd3fba1f/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 4",
+      "page": 12,
+      "caption_original": "Figure 4(f)–(h), with increasing bending frequency, the bending durability of the circuit decreases.",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-04.png",
+      "image_width": 1119,
+      "image_height": 1053,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        550.02
+      ],
+      "image_path": "papers/paper-9cfa7159fd3fba1f/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Figure S12",
+      "page": 15,
+      "caption_original": "Figure S12, the resistance of the circuit increased slightly with increasing temperature. The increase in",
+      "caption_zh": "Figure S12 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-05.png",
+      "image_width": 1119,
+      "image_height": 582,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        314.92
+      ],
+      "image_path": "papers/paper-9cfa7159fd3fba1f/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Figure 5",
+      "page": 16,
+      "caption_original": "Figure 5. Folding and compression performances of the Cu-LM flexible circuits. (a) Schematic illustration",
+      "caption_zh": "Figure 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic illustration",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 960,
+      "image_height": 779,
+      "crop_confidence": "high",
+      "bbox": [
+        64.23,
+        312.65,
+        543.87,
+        701.76
+      ],
+      "image_path": "papers/paper-9cfa7159fd3fba1f/figures/figure-06.png"
+    },
+    {
+      "id": "F007",
+      "label": "Figure 6",
+      "page": 18,
+      "caption_original": "Figure 6. Interconnection reliability and robust flexible integrated system for acquiring human pulse signals.",
+      "caption_zh": "Figure 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-07.png",
+      "image_width": 962,
+      "image_height": 815,
+      "crop_confidence": "high",
+      "bbox": [
+        62.65,
+        313.4,
+        543.48,
+        720.31
+      ],
+      "image_path": "papers/paper-9cfa7159fd3fba1f/figures/figure-07.png"
+    }
+  ],
+  "original_pdf": "papers/paper-9cfa7159fd3fba1f/original.pdf",
+  "reader_markdown": "research-memory/literature/2026/2026-09-08/deep-reads/paper-9cfa7159fd3fba1f/paper.md",
+  "source_map": "research-memory/literature/2026/2026-09-08/deep-reads/paper-9cfa7159fd3fba1f/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}

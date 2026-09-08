@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "paper-622392a295565118",
+  "title": "A vision-based tactile sensor with in-sensor computing paradigm for seamless tactile sensing and perception",
+  "authors": [
+    "Wen Fan",
+    "Jiajian Zheng",
+    "Yanan Liu",
+    "Dandan Zhang"
+  ],
+  "venue": "Communications Engineering",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "神经形态与传感计算",
+    "软体机器人与人机交互"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-08",
+  "doi": "10.1038/s44172-026-00770-w",
+  "source_url": "https://doi.org/10.1038/s44172-026-00770-w",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-08T06:00:02.932629+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Abstract Vision-based tactile sensors (VBTSs) offer high-resolution, multimodal tactile sensing capabilities, supporting precise and dexterous robotic manipulation. However, the physical separation of sensing and perception modules necessitates frequent data transfer, introducing communication overhead and potentially constraining real-time performance. In biological tactile systems, sensory transduction and preliminary signal processing occur at the periphery before information is transmitted to the central nervous system, thereby enabling efficient and timely tactile perception. Inspired by this principle, we present PixelTac, a VBTS designed under an in-sensor computing paradigm. PixelTac integrates sensing, memory, and computation within a single in-situ vision processor that combines a computational pixel matrix and a microcontroller. This architecture enables local compression of tactile data and fully on-chip processing from pixel-level sensing to force inference. Here, we show that PixelTac reproduces key features of human mechanoreception in real-time while maintaining efficient power consumption, providing a scalable and energy-efficient route to seamless tactile sensing and perception.",
+    "zh": "涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。"
+  },
+  "innovation_points": [
+    "Abstract Vision-based tactile sensors (VBTSs) offer high-resolution, multimodal tactile sensing capabilities, supporting precise and dexterous robotic manipulation.",
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ],
+  "innovation_suggestions": [
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-08/deep-reads/paper-622392a295565118/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
