@@ -64,12 +64,14 @@ function renderPaper(paper, detail) {
     <section id="summary" class="paper-detail-section">
       <div class="section-head"><div><p class="eyebrow">Paper brief</p><h2>摘要、创新点与课题启发</h2></div></div>
       <div class="paper-summary-grid">
-        <article><h3>中文摘要</h3><p>${escapeHtml(detail?.abstract?.zh || paper.summary_zh || "等待摘要分析")}</p></article>
+        <article><h3>中文摘要直译</h3><p>${escapeHtml(detail?.abstract?.translation_zh || paper.abstract_translation_zh || "等待智能体翻译；原文摘要已保存")}</p></article>
+        <article><h3>中文总结</h3><p>${escapeHtml(detail?.abstract?.summary_zh || paper.abstract_summary_zh || "等待智能体基于原文摘要总结")}</p></article>
         <article><h3>创新点</h3>${list(detail?.innovation_points || [paper.core_claim].filter(Boolean))}</article>
         ${(detail?.innovation_suggestions || paper.innovation_suggestions || []).length ? `<article><h3>给你的创新建议</h3>${list(detail?.innovation_suggestions || paper.innovation_suggestions)}</article>` : ""}
         <article><h3>对你的启发</h3>${list(detail?.inspirations || paper.transferable_points)}</article>
       </div>
       <details class="abstract-original"><summary>查看原始摘要</summary><p>${escapeHtml(detail?.abstract?.original || paper.source_abstract || "未获取原始摘要")}</p></details>
+      ${detail?.source_access_notes || paper.source_access_notes ? `<div class="detail-empty">${escapeHtml(detail?.source_access_notes || paper.source_access_notes)}</div>` : ""}
     </section>
 
     <section id="methods" class="paper-detail-section">
@@ -86,10 +88,18 @@ function renderPaper(paper, detail) {
 
     <section id="pdf" class="paper-detail-section pdf-section">
       <div class="section-head"><div><p class="eyebrow">Lawful open-access source</p><h2>合法开放全文 PDF</h2><p class="pdf-version">${escapeHtml(detail?.pdf_version_label || "版本类型待核实")}</p></div>${pdf ? `<a class="secondary-btn" href="${escapeHtml(pdf)}" target="_blank" rel="noreferrer"><i data-lucide="download"></i><span>打开 PDF</span></a>` : ""}</div>
-      ${pdf ? `<iframe class="pdf-frame" src="${escapeHtml(pdf)}#view=FitH" title="${escapeHtml(paper.title)} PDF"></iframe>` : `<div class="detail-empty">没有获取到合法开放获取 PDF，只保留 DOI/出版社来源。</div>`}
+      ${pdf ? `<iframe class="pdf-frame" src="${escapeHtml(pdf)}#view=FitH" title="${escapeHtml(paper.title)} PDF"></iframe>` : `<div class="detail-empty">没有获取到合法开放获取 PDF，只保留 DOI/出版社来源。</div>${renderSourceAccess(detail?.source_access || paper.source_access)}`}
     </section>`;
   document.title = `${paper.title}｜论文精读`;
   window.lucide?.createIcons();
+}
+
+function renderSourceAccess(access) {
+  if (!access) return "";
+  const urls = (access.candidate_urls || []).filter(Boolean).slice(0, 8);
+  const links = urls.map((url) => `<li><a href="${escapeHtml(safeUrl(url))}" target="_blank" rel="noreferrer">${escapeHtml(url)}</a></li>`).join("");
+  const failures = (access.failure_reasons || []).slice(0, 6).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  return `<div class="source-access"><h3>已检查的合法原文入口</h3>${links ? `<ul>${links}</ul>` : `<p class="quiet">未发现可用 PDF 候选。</p>`}${failures ? `<h4>获取结果</h4><ul>${failures}</ul>` : ""}</div>`;
 }
 
 async function loadPaper() {

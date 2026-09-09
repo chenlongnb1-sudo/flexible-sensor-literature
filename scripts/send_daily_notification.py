@@ -25,6 +25,14 @@ CATEGORY_ORDER = (
     "制造、封装与可靠性",
     "多模态与生化传感",
 )
+GENERIC_INNOVATION_TEXT = (
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+)
 
 
 def read_json(path: Path, fallback: Any) -> Any:
@@ -74,12 +82,17 @@ def build_message(day: Path) -> tuple[str, str, str]:
             current_category = category
         relation = "强相关" if paper.get("strongly_related") else "相关"
         lines.append(f"{index}. [{relation}｜{paper.get('venue') or '期刊待核验'}] {paper.get('title', '')}")
-        abstract = (detail.get("abstract") or {}).get("zh")
-        lines.append(f"摘要：{abstract or paper.get('summary_zh') or paper.get('core_claim') or '待精读'}")
+        abstract = detail.get("abstract") or {}
+        translation = abstract.get("translation_zh") or paper.get("abstract_translation_zh")
+        summary = abstract.get("summary_zh") or paper.get("abstract_summary_zh")
+        lines.append(f"摘要中文直译：{translation or '待智能体翻译；原文已保存。'}")
+        lines.append(f"中文总结：{summary or '待智能体基于原文摘要总结。'}")
         innovations = [
             item
-            for item in (detail.get("innovation_points") or paper.get("relevance_reasons", []))
-            if item and any("\u4e00" <= char <= "\u9fff" for char in str(item))
+            for item in (detail.get("innovation_points") or [paper.get("core_claim", "")])
+            if item
+            and not any(str(item).startswith(prefix) for prefix in GENERIC_INNOVATION_TEXT)
+            and any("\u4e00" <= char <= "\u9fff" for char in str(item))
         ][:2]
         if innovations:
             lines.append(f"论文创新：{'；'.join(innovations)}")
@@ -89,10 +102,15 @@ def build_message(day: Path) -> tuple[str, str, str]:
         inspirations = [
             item
             for item in (detail.get("inspirations") or paper.get("transferable_points", []))
-            if item and item not in suggestions
+            if item
+            and item not in suggestions
+            and not any(str(item).startswith(prefix) for prefix in GENERIC_INNOVATION_TEXT)
         ][:2]
         if inspirations:
             lines.append(f"对你的启发：{'；'.join(inspirations)}")
+        access = detail.get("source_access") or paper.get("source_access") or {}
+        if not detail.get("original_pdf") and access.get("candidate_urls"):
+            lines.append("原文状态：未获得可合法下载 PDF，详情页保留 DOI/出版社和开放存档入口。")
         lines.append(f"详情：{link}")
         lines.append("")
     if not papers:

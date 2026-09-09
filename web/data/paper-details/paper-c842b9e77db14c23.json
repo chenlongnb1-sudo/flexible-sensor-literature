@@ -28,13 +28,12 @@
   "page_count": 0,
   "abstract": {
     "original": "Robots are the intelligent systems that connect sensors and actuators. Many sensorimotor architectures use close-loop control codes that arbitrate sensing signals, entailing processing modules. Reactive architectures minimize computational demands by establishing direct sensor-actuator connections and have proven to be effective and robust. Here, we introduce a mechanical analogy of such reactive systems: a fluidic-based multiaxis mechanical soft force sensor (ME-SOFS) that directly couples sensory signals with fluidic actuation, eliminating the need for external computation or energy input. The ME-SOFS can be easily reconfigured and integrated to endow robots with somatosensory multiaxis force sensing capabilities. Based on fluid transduction, ME-SOFS converts applied force into mechanical output for fluidic actuators. We demonstrate this sensing-actuation loop in three scenarios: directional droplet manipulation, unified bending of cilia-like array guided by detected force vectors, and haptic feedback system that accelerates robotic grasping learning. ME-SOFSs demonstrate how fluidic approach can realize multiaxis force sensing for soft robots, and enable simplified, closed sensing-actuation loops and haptic human-machine interfaces.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Robots are the intelligent systems that connect sensors and actuators.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据",
-    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
-    "涉及坏点、漂移、跨器件迁移或少样本校准"
+    "Robots are the intelligent systems that connect sensors and actuators."
   ],
   "inspirations": [
     "提供机器人、可穿戴或电子皮肤系统任务证据",
@@ -52,5 +51,18 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1126/sciadv.aeb8052",
+    "publisher_url": "https://doi.org/10.1126/sciadv.aeb8052",
+    "candidate_urls": [],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ]
 }

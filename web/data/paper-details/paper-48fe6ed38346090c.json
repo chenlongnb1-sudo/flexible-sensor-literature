@@ -23,13 +23,12 @@
   "page_count": 10,
   "abstract": {
     "original": "Abstract The intelligent soft robotic gripper integrated with tactile sensors significantly enhances the robot’s execution capabilities in complex tasks, resolving critical shortcomings of traditional mechanical grippers—namely, fragile item breakage from rigid impacts, irregular object slippage, and inefficiency due to recognition errors. While electrical sensors (e.g ., piezoresistive, capacitive) struggle with structural complexity, signal crosstalk, and environmental interference, optical waveguide tactile sensing offers superior sensitivity, rapid dynamics, and electromagnetic immunity. However, existing waveguide tactile systems face two key limitations: millimeter-scale waveguides cause beam divergence, limiting deformation sensitivity and complicating heterogeneous integration. Additionally, critical gaps remain in adaptive grasping control and contextual object recognition during manipulation. Herein, we present a soft robotic gripper integrated with slender elastic optical waveguide sensors (EOWS) and equipped with a closed-loop feedback control module to achieve intelligent grasping and object attribute recognition. The hand comprises three flexible silicone fingers, each finger seamlessly integrates three EOWS for multi-modal tactile sensing. These sensors exhibit high sensitivity to bending angle (0.273%/°), contact force (0.843%/N), and pressure (1.064%/N). Furthermore, a PID adaptive grasping control strategy and a long short-term memory (LSTM) deep learning algorithm are introduced to dynamically adjust the grasping force and intelligently recognize object attributes such as shape, size, and hardness, with accuracies exceeding 97% for each attribute. Ultimately, experimental validation via a smart fruit-sorting system highlights the platform’s potential for precision agriculture, intelligent logistics, and medical robotics, demonstrating robust, adaptive manipulation in real-world applications.",
-    "zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：0.273%、0.843%、1.064%、97%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract The intelligent soft robotic gripper integrated with tactile sensors significantly enhances the robot’s execution capabilities in complex tasks, resolving critical shortcomings of traditional mechanical grippers—namely, fragile item breakage from rigid impacts, irregular object slippage, and inefficiency due to recognition errors.",
-    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "Abstract The intelligent soft robotic gripper integrated with tactile sensors significantly enhances the robot’s execution capabilities in complex tasks, resolving critical shortcomings of traditional mechanical grippers—namely, fragile item breakage from rigid impacts, irregular object slippage, and inefficiency due to recognition errors."
   ],
   "inspirations": [
     "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
@@ -1254,5 +1253,20 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41378-026-01364-4",
+    "publisher_url": "https://doi.org/10.1038/s41378-026-01364-4",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41378-026-01364-4.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41378-026-01364-4.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

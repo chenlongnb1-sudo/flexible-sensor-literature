@@ -33,12 +33,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Tactile sensing and perception are fundamental to intelligent interaction with complex environments, yet most artificial sensing systems rely on continuous signal acquisition and centralized electronic computation, resulting in high data redundancy, latency, and limited robustness. In this research, we introduce mechanically encoded materials (MEM) as a sensing‐centric paradigm that embeds perception directly into material architecture. Inspired by biological mechanosensory systems, MEM exploits geometry‐force‐property coupling to selectively transduce mechanical stimuli into discrete binary outputs, enabling event‐driven tactile sensing without continuous sampling or intensive electronic processing. By rational design, MEMs are programmed to respond only when external stimuli exceed predefined thresholds, thereby encoding tactile information such as pressure, stiffness, and curvature into binary representations at the material level. Arrays of MEMs with graded thresholds further enable multi‐level discrimination of mechanical stimuli solely through mechanical design. We demonstrate the integration of pressure‐, stiffness‐, and curvature‐sensitive MEMs into a compliant gripper, where proprioceptive and tactile perception emerges locally at the sensing interface without CPU‐driven computation. This mechano‐encoding strategy reduces data bandwidth and sensing latency while enhancing robustness and adaptability under dynamic conditions. By transforming sensing, encoding, and preliminary computation into intrinsic material functions, MEMs establish a general framework for decentralized tactile perception in next‐generation intelligent systems.",
-    "zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Tactile sensing and perception are fundamental to intelligent interaction with complex environments, yet most artificial sensing systems rely on continuous signal acquisition and centralized electronic computation, resulting in high data redundancy, latency, and limited robustness.",
-    "涉及 in-sensor/物理计算或可编程触觉前端",
-    "涉及坏点、漂移、跨器件迁移或少样本校准"
+    "ABSTRACT Tactile sensing and perception are fundamental to intelligent interaction with complex environments, yet most artificial sensing systems rely on continuous signal acquisition and centralized electronic computation, resulting in high data redundancy, latency, and limited robustness."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -56,5 +56,19 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adma.74403",
+    "publisher_url": "https://doi.org/10.1002/adma.74403",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74403"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ]
 }

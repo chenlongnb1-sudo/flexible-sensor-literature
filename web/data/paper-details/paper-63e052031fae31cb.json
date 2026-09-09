@@ -34,14 +34,12 @@
   "page_count": 35,
   "abstract": {
     "original": "Miniature multi-axis force/torque sensors are essential for advanced robotics and wearable devices, yet their development is hindered by complex multi-beam structures and laborious calibration. We overcome this by introducing a monolithic 6-axis force/torque sensor constructed from a single, ultrathin-walled piezoceramic shell. This architecture eliminates the need for multi-component assembly and algorithm-driven decoupling, relying instead on the intrinsic mechanical deformation modes of the engineered shell for direct and reliable dynamic force/torque variation measurement. Leveraging this architecture, our sensor enables straightforward calibration and achieves a decoupling accuracy of 99.37% across 120,000 randomized dynamic tests. We fabricated the core sensing element as a 50-μm-thick annular piezoceramic shell to maximize sensitivity and limit of detection, achieving detection limits better than 3 mN in normal force, 4 mN in tangential force, and 0.3 mN·m in torque. We demonstrate a compact, 3.85-gram sensor (2.53 cm³) that integrates seamlessly into robotic grippers for event-driven delicate assembly and into exoskeletons for high-fidelity dynamic monitoring of in-home rehabilitation. This work establishes an architecture for inherently decoupled force/torque sensing, with broad potential in advanced robotics, prosthetics, and personalized medicine.",
-    "zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。摘要可核实数值包括：99.37%、3 mN、4 mN、0.3 mN、2.53 cm。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Miniature multi-axis force/torque sensors are essential for advanced robotics and wearable devices, yet their development is hindered by complex multi-beam structures and laborious calibration.",
-    "可用于低离散/装配容差触觉界面的结构与对照设计",
-    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+    "Miniature multi-axis force/torque sensors are essential for advanced robotics and wearable devices, yet their development is hindered by complex multi-beam structures and laborious calibration."
   ],
   "innovation_suggestions": [
     "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。",
@@ -1457,5 +1455,21 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41467-026-75631-3",
+    "publisher_url": "https://doi.org/10.1038/s41467-026-75631-3",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41467-026-75631-3_reference.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41467-026-75631-3_reference.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+  ]
 }

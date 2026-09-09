@@ -35,12 +35,12 @@
   "page_count": 0,
   "abstract": {
     "original": "Biological organisms exhibit tightly integrated motor functions, sensory input, and control systems that enable adaptive behaviors across diverse environments. Emulating such coordination in robotics remains challenging, as most soft machines compartmentalize actuation, sensing, and control. Here, we present BeetleBot, an adaptive beetle-bioinspired soft robot platform that seamlessly integrates programmable locomotion, object manipulation, sensory feedback, and intuitive human-machine interaction. BeetleBot features electrothermally actuated liquid crystal elastomer muscles embedded in modular leg structures and a soft gripper, with a flexible circuit enabling independent control. A wearable strain-sensing patch supports wireless gesture-based operation, while embedded vision and tactile sensors provide real-time environmental feedback. All functional components are fabricated through scalable additive manufacturing techniques. We demonstrate terrain navigation, object recognition, and gesture-control synchronized bidirectional interaction between the user and the robot. This multifunctional platform emulates the adaptability of living systems and establishes a promising foundation for next-generation intelligent soft robotics.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Biological organisms exhibit tightly integrated motor functions, sensory input, and control systems that enable adaptive behaviors across diverse environments.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据",
-    "涉及 in-sensor/物理计算或可编程触觉前端"
+    "Biological organisms exhibit tightly integrated motor functions, sensory input, and control systems that enable adaptive behaviors across diverse environments."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -58,5 +58,19 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1126/sciadv.aeg8849",
+    "publisher_url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg8849",
+    "candidate_urls": [
+      "https://www.science.org/doi/pdf/10.1126/sciadv.aeg8849"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ]
 }

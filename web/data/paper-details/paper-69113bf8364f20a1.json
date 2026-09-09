@@ -33,11 +33,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Biological synapses process complex temporal information through a diverse range of excitatory postsynaptic current (EPSC) decay scales. However, conventional neuromorphic hardware often employs homogeneous synaptic models, limiting its capacity for multi‐scale temporal tasks. Here, we present a material‐to‐system co‐design strategy to emulate biological temporal heterogeneity using anion‐engineered organic electrochemical transistors (OECTs). By tailoring the anion species within a solid‐state ion‐gel electrolyte utilizing BF 4 − , TFSI − , and MeSO 4 − , we demonstrate precise control over ionic reverse diffusion kinetics, realizing the controllable tuning of synaptic decay constants (from 0.275 s to 1.059 s). These stateful synapses act as intrinsic leaky integrators, embedding short‐term memory directly into the device hardware. We evaluate these devices across diverse spiking neural network (SNN) architectures, including feedforward SNNs and liquid state machines (LSMs), using four benchmark datasets. Our results reveal a critical timescale‐matching effect: fast‐decaying synapses optimize spoken digit recognition (TI‐46, 89.4%), while slow‐decaying synapses are essential for long‐term event integration (DVS Gesture, 88.5%). By transforming synapses from passive transmitters into active physical regulators of network computation, this work provides a versatile hardware platform for constructing task‐adaptive neuromorphic systems capable of processing complex spatiotemporal information.",
-    "zh": "涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：0.275 s、1.059 s、89.4%、88.5%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Biological synapses process complex temporal information through a diverse range of excitatory postsynaptic current (EPSC) decay scales.",
-    "涉及 in-sensor/物理计算或可编程触觉前端"
+    "ABSTRACT Biological synapses process complex temporal information through a diverse range of excitatory postsynaptic current (EPSC) decay scales."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -54,5 +55,18 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/smll.74398",
+    "publisher_url": "https://doi.org/10.1002/smll.74398",
+    "candidate_urls": [
+      "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.74398"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ]
 }

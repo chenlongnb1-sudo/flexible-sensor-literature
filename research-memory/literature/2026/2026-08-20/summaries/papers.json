@@ -752,7 +752,7 @@
         "涉及 in-sensor/物理计算或可编程触觉前端"
       ],
       "core_claim": "Abstract Touch encoding and display is still an unmet need in advanced robotics and telepresence, although somatosensation is crucial to enable safe human-machine cooperation and remote interaction.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：16 mm、96 %。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "This study presents an Integrated Neuromorphic Tactile-Haptic Interface System (INTHIS) enabling a human operator to perceive tactile feedback over the upper limb skin in response to the real-time distributed tactile stimulation of a remote robotic e-skin integrating Fiber Bragg Gratings transducers.",
       "key_metrics": [
         "16 mm",
@@ -777,7 +777,19 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-ceb046bca39478d1",
-      "detail_json": "data/paper-details/paper-ceb046bca39478d1.json"
+      "detail_json": "data/paper-details/paper-ceb046bca39478d1.json",
+      "abstract_original": "Abstract Touch encoding and display is still an unmet need in advanced robotics and telepresence, although somatosensation is crucial to enable safe human-machine cooperation and remote interaction. This study presents an Integrated Neuromorphic Tactile-Haptic Interface System (INTHIS) enabling a human operator to perceive tactile feedback over the upper limb skin in response to the real-time distributed tactile stimulation of a remote robotic e-skin integrating Fiber Bragg Gratings transducers. The INTHIS sensing interface features a spatiotemporal multilayer Spiking Neural Network, whose bioinspiration strategy guarantees the real-time transmission of the location and extension of tactile stimuli, with efficient use of information exchange and 16 mm localization Root Mean Squared Error. The INTHIS actuation interface integrates a wearable Forearm Haptic Display (FHD) to render physical interactions via neuromorphic triggering of a matrix of 23 miniaturized actuation units, achieving 96 % correct localization of the stimulated area over more than 1900 experimental trials. Overall, the INTHIS demonstrated the capability to build a real-time tactile link between the e-skin and the human skin, supporting robotic teleoperation and tactile telepresence applications.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1038/s44172-026-00757-7",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s44172-026-00757-7",
+        "publisher_url": "https://doi.org/10.1038/s44172-026-00757-7",
+        "candidate_urls": [],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-2dc4e544fb111108",
@@ -839,7 +851,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Achieving human‐like tactile perception is essential for robotic systems to perform fine manipulation and adapt to dynamic environments.",
-      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：97.62%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "However, most tactile sensors have deviated from the physiological encoding based on human mechanoreceptors.",
       "key_metrics": [
         "97.62%"
@@ -864,7 +876,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-2dc4e544fb111108",
-      "detail_json": "data/paper-details/paper-2dc4e544fb111108.json"
+      "detail_json": "data/paper-details/paper-2dc4e544fb111108.json",
+      "abstract_original": "ABSTRACT Achieving human‐like tactile perception is essential for robotic systems to perform fine manipulation and adapt to dynamic environments. However, most tactile sensors have deviated from the physiological encoding based on human mechanoreceptors. Here, we present a layered trimodal tactile sensing system that mimics Meissner, Merkel, and Ruffini receptors. These sensors can accurately distinguish stimuli (static normal pressure, dynamic shear vibration, static horizontal strain) coming from different directions and in different shapes. Using a receptor‐level analysis framework based on random forest feature importance, we systematically analyze the involvement and relative contribution of biomimetic sensors across four tactile tasks (Braille reading, texture identification, softness classification, slip detection). Notably, the cooperation of two or three sensors significantly enhances recognition accuracy for the tasks. When the sensors are integrated on a robotic gripper, they enables real‐time slip/drop detection with 97.62% accuracy and supports closed‐loop grip‐force adaptation, thereby demonstrating stabilized grip of the object under increasing load. These results help identify appropriate sensor combinations for specific tactile tasks and demonstrate the potential of the proposed system for applications in humanoid robotics, prosthetics, haptic devices, and augmented and virtual reality systems.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.77230",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.77230",
+        "publisher_url": "https://doi.org/10.1002/advs.77230",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77230"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-862ace0c9e4d38a9",
@@ -927,7 +953,7 @@
         "涉及 in-sensor/物理计算或可编程触觉前端"
       ],
       "core_claim": "Biological organisms exhibit tightly integrated motor functions, sensory input, and control systems that enable adaptive behaviors across diverse environments.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we present BeetleBot, an adaptive beetle-bioinspired soft robot platform that seamlessly integrates programmable locomotion, object manipulation, sensory feedback, and intuitive human-machine interaction.",
       "key_metrics": [],
       "transferable_points": [
@@ -946,7 +972,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-862ace0c9e4d38a9",
-      "detail_json": "data/paper-details/paper-862ace0c9e4d38a9.json"
+      "detail_json": "data/paper-details/paper-862ace0c9e4d38a9.json",
+      "abstract_original": "Biological organisms exhibit tightly integrated motor functions, sensory input, and control systems that enable adaptive behaviors across diverse environments. Emulating such coordination in robotics remains challenging, as most soft machines compartmentalize actuation, sensing, and control. Here, we present BeetleBot, an adaptive beetle-bioinspired soft robot platform that seamlessly integrates programmable locomotion, object manipulation, sensory feedback, and intuitive human-machine interaction. BeetleBot features electrothermally actuated liquid crystal elastomer muscles embedded in modular leg structures and a soft gripper, with a flexible circuit enabling independent control. A wearable strain-sensing patch supports wireless gesture-based operation, while embedded vision and tactile sensors provide real-time environmental feedback. All functional components are fabricated through scalable additive manufacturing techniques. We demonstrate terrain navigation, object recognition, and gesture-control synchronized bidirectional interaction between the user and the robot. This multifunctional platform emulates the adaptability of living systems and establishes a promising foundation for next-generation intelligent soft robotics.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://www.science.org/doi/abs/10.1126/sciadv.aeg8849",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1126/sciadv.aeg8849",
+        "publisher_url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg8849",
+        "candidate_urls": [
+          "https://www.science.org/doi/pdf/10.1126/sciadv.aeg8849"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-3210527d5b30030c",
@@ -1000,7 +1040,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Wearable health monitoring technology places high demands on flexible sensors in terms of high performance, high comfort, and multi‐functional integration.",
-      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：0.91 mW、1.3 V、200 kPa、15.6 Pa、97.6%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "This study presents an intelligent foot perception system for wearable health monitoring.",
       "key_metrics": [
         "0.91 mW",
@@ -1025,7 +1065,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-3210527d5b30030c",
-      "detail_json": "data/paper-details/paper-3210527d5b30030c.json"
+      "detail_json": "data/paper-details/paper-3210527d5b30030c.json",
+      "abstract_original": "ABSTRACT Wearable health monitoring technology places high demands on flexible sensors in terms of high performance, high comfort, and multi‐functional integration. This study presents an intelligent foot perception system for wearable health monitoring. It integrates a high‐performance, flexible triboelectric sensor and a hybrid deep‐learning model. The sensor uses a MXene‐Ecoflex composite dielectric layer with a microcolumn array, which triples its output power to 0.91 mW. It demonstrates excellent linearity (R 2 > 0.99), high sensitivity (1.3 V/kPa), a wide detection range (0–200 kPa), and a low detection limit (15.6 Pa). Furthermore, we integrated the flexible sensor with a three‐axis accelerometer on a flexible printed circuit board. This constructed a wearable perception system. The system can simultaneously acquire fused pressure and acceleration signals. The system uses a CNN‐LSTM hybrid deep learning algorithm. It achieves an accuracy of 97.6% and an F1‐score of 0.98 on various motion classification tasks. Moreover, it can effectively distinguish between healthy and disabled states. This study confirms that the proposed flexible sensing system has great potential for application. It can be used for real‐time and accurate fall warning and mobile health monitoring.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/admt.71263",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/admt.71263",
+        "publisher_url": "https://doi.org/10.1002/admt.71263",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71263"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-dc5d9a38a842ada0",
@@ -1084,7 +1138,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Current intestinal training models typically exhibit rigid or static structures, limiting their usefulness for validating endoluminal robots and supporting realistic endoscopy training.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "A programmable pneumatic actuator system is presented in this paper, integrated within a modular soft robotic colon simulator that mimics physiological motility through distributed pneumatic actuation and custom control.",
       "key_metrics": [],
       "transferable_points": [
@@ -1103,7 +1157,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-dc5d9a38a842ada0",
-      "detail_json": "data/paper-details/paper-dc5d9a38a842ada0.json"
+      "detail_json": "data/paper-details/paper-dc5d9a38a842ada0.json",
+      "abstract_original": "ABSTRACT Current intestinal training models typically exhibit rigid or static structures, limiting their usefulness for validating endoluminal robots and supporting realistic endoscopy training. A programmable pneumatic actuator system is presented in this paper, integrated within a modular soft robotic colon simulator that mimics physiological motility through distributed pneumatic actuation and custom control. The system is constructed from anatomically representative segments (rectum to cecum) and offers on‐demand specification of contraction timing, location, and amplitude, enabling experimentally demonstrated peristaltic, segmental, and mass‐movement‐like actuation, with programmable pressure and timing parameters adjustable for pathological‐like benchmark scenarios. Finite element simulations guide actuator geometry and material layout optimization, and comparison with experiments confirms agreement in pressure‐deformation response and luminal shape change. Functional testing demonstrates real‐time deformation and compatibility with colonoscope‐based inspection, while capsule endoscope transit experiments reveal frequency‐dependent transport and trapping behavior, providing insights into controllable endoluminal locomotion. The modular architecture of the system allows rapid reconfiguration across anatomical variations and supports replacement or integration of lesion and sensor modules. This programmable colon simulator provides a versatile platform for advancing gastrointestinal soft robotics, capsule diagnostics, mechanobiology, and future clinical‐training research, significantly enhancing the realism of benchtop device testing while reducing the reliance on in vivo experimentation.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/admt.71240",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/admt.71240",
+        "publisher_url": "https://doi.org/10.1002/admt.71240",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71240"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-4f8e4ad96bfd829b",
@@ -1158,7 +1226,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "Abstract Fibrous neuromorphic electronics have emerged as fundamental platforms for somatosensory perception and brain-inspired computing, driven by their one-dimensional (1D) macroscopic flexibility and micro/nanoscale interfaces.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "This Mini-Review systematically discusses recent advancements in fibrous neuromorphic devices, focusing on underlying physical mechanisms, three-dimensional interface designs, and all-fiber system integration.",
       "key_metrics": [],
       "transferable_points": [
@@ -1177,7 +1245,22 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-4f8e4ad96bfd829b",
-      "detail_json": "data/paper-details/paper-4f8e4ad96bfd829b.json"
+      "detail_json": "data/paper-details/paper-4f8e4ad96bfd829b.json",
+      "abstract_original": "Abstract Fibrous neuromorphic electronics have emerged as fundamental platforms for somatosensory perception and brain-inspired computing, driven by their one-dimensional (1D) macroscopic flexibility and micro/nanoscale interfaces. This Mini-Review systematically discusses recent advancements in fibrous neuromorphic devices, focusing on underlying physical mechanisms, three-dimensional interface designs, and all-fiber system integration. We discuss the operating principles of two-terminal and three-terminal architectures, highlighting how working mechanisms such as conductive filament formation, phase transitions, and electrochemical redox reactions enable robust artificial synaptic behaviors and complex dendritic computations. Furthermore, we explore the transition of these devices from isolated functional units to closed-loop “sensing-computing-feedback” networks, demonstrating their capabilities in distributed bionic sensing and artificial reflex arcs. Finally, we identify current challenges in manufacturing consistency and kinetic limitations, proposing strategies to realize autonomous, all-fiber intelligent systems for future flexible electronics and embodied intelligent agents.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1021/acs.nanolett.6c02650",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1021/acs.nanolett.6c02650",
+        "publisher_url": "https://doi.org/10.1021/acs.nanolett.6c02650",
+        "candidate_urls": [
+          "https://pubs.acs.org/doi/pdf/10.1021/acs.nanolett.6c02650",
+          "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c02650/66854384/acs.nanolett.6c02650.pdf"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-fd2911cfe22ee138",
@@ -1230,7 +1313,7 @@
         "涉及 in-sensor/物理计算或可编程触觉前端"
       ],
       "core_claim": "ABSTRACT A simple iontronic memtransistor capable of emulating synaptic plasticity and cognitive functions showcases high performance and low energy consumption, fostering admiration for its efficiency.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：3 s。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Using tailored input‐output pulse schemes, the device demonstrates key synaptic and cognitive learning functionalities with lower energy consumption per event and faster response speed down to the microsecond regime.",
       "key_metrics": [
         "3 s"
@@ -1250,7 +1333,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-fd2911cfe22ee138",
-      "detail_json": "data/paper-details/paper-fd2911cfe22ee138.json"
+      "detail_json": "data/paper-details/paper-fd2911cfe22ee138.json",
+      "abstract_original": "ABSTRACT A simple iontronic memtransistor capable of emulating synaptic plasticity and cognitive functions showcases high performance and low energy consumption, fostering admiration for its efficiency. Here, we report the versatile, high‐performance memtransistor behavior of a solid polymer electrolyte‐gated few‐layer thick two‐dimensional molybdenum disulfide (2D MoS 2 ) channel. Transfer characteristics exhibit pinched hysteresis, confirming n‐channel enhancement‐mode operation, supported by the low‐voltage drain characteristics under the influence of the electrical double layer (EDL) formed by iontronic gating. The memtransistor shows a reproducible non‐volatile memory window in its transfer characteristics with conductance retention exceeding 10 3 s and endurance beyond 10 3 switching cycles. Mechanistic studies reveal coupled slow ion migration and dipolar relaxation processes coexisting with purely electronic transport in the 2D material channel, highlighting mixed ionic‐electronic carrier dynamics. Using tailored input‐output pulse schemes, the device demonstrates key synaptic and cognitive learning functionalities with lower energy consumption per event and faster response speed down to the microsecond regime. Furthermore, higher‐order behaviors such as Atkinson‐Shiffrin‐type memory behavior, Pavlovian associative learning, and logic gate operations are achieved. These achievements confirm the potential of our 2D iontronic memtransistor (IMT) as a reliable, reproducible building block for next‐generation brain‐inspired computing systems.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.77150",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.77150",
+        "publisher_url": "https://doi.org/10.1002/advs.77150",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77150"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-dc115337684dfc5c",
@@ -1313,7 +1410,7 @@
         "可用于低离散/装配容差触觉界面的结构与对照设计"
       ],
       "core_claim": "ABSTRACT Organic semiconducting single crystals are ideal candidates for flexible artificial photonic synapses (APSs) owing to their superior photoelectric properties.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：171%、15%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Herein, inspired by soil salinization, we developed a segregation strategy to in situ grow large‐area organic single crystals on elastomer substrates via a simple air–water interface drop‐casting method.",
       "key_metrics": [
         "171%",
@@ -1335,7 +1432,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-dc115337684dfc5c",
-      "detail_json": "data/paper-details/paper-dc115337684dfc5c.json"
+      "detail_json": "data/paper-details/paper-dc115337684dfc5c.json",
+      "abstract_original": "ABSTRACT Organic semiconducting single crystals are ideal candidates for flexible artificial photonic synapses (APSs) owing to their superior photoelectric properties. However, large‐area high‐quality organic single crystals are rarely obtained on the elastomer substrates commonly used in flexible electronics. Herein, inspired by soil salinization, we developed a segregation strategy to in situ grow large‐area organic single crystals on elastomer substrates via a simple air–water interface drop‐casting method. Solvent‐evaporation‐driven phase separation in organic semiconductor‐elastomer blends promotes molecular migration, leading to a precipitation behaviour that enables the fabrication of centimetre‐scale organic single‐crystal nanosheet film directly on elastomer surfaces. Planar APS devices based on a mode molecule, 2,7‐dioctyl[1]benzothieno[3,2‐b][1]benzothiophene (C8‐BTBT), demonstrate exceptional synaptic functionality, including 171% paired‐pulse facilitation (PPF) and ultralow power consumption of 0.15 fJ per synaptic event. Leveraging a synergistic stress‐dispersion mechanism involving nanosheet sliding and elastic substrate deformation, these devices retain synaptic performance under 15% tensile strain and after 60 days of ambient storage without encapsulation. The results shed light on the large‐area fabrication of organic single crystals on elastomer toward high‐performance flexible neuromorphic electronics.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/smll.75292",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/smll.75292",
+        "publisher_url": "https://doi.org/10.1002/smll.75292",
+        "candidate_urls": [
+          "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.75292"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-7d660e15301d0576",
@@ -1395,7 +1506,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Early diagnosis and personalized management of chronic liver disease are critical for preventing disease progression and reducing mortality.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "In this study, we developed a skin‐conformal, wearable electrochemical biosensing platform capable of real time monitoring of liver health by continuously analyzing liver‐related metabolic biomarkers (creatine and lactate) in sweat.",
       "key_metrics": [],
       "transferable_points": [
@@ -1412,7 +1523,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-7d660e15301d0576",
-      "detail_json": "data/paper-details/paper-7d660e15301d0576.json"
+      "detail_json": "data/paper-details/paper-7d660e15301d0576.json",
+      "abstract_original": "ABSTRACT Early diagnosis and personalized management of chronic liver disease are critical for preventing disease progression and reducing mortality. However, existing diagnostic methods primarily depend on invasive blood sampling and laboratory‐based analyses, which limit their suitability for continuous, real‐world monitoring. In this study, we developed a skin‐conformal, wearable electrochemical biosensing platform capable of real time monitoring of liver health by continuously analyzing liver‐related metabolic biomarkers (creatine and lactate) in sweat. To improve sensor reliability, we introduced a universal enzyme immobilization strategy based on covalent organic frameworks, which enhances enzymatic stability and maintains catlytic activity under dynamic conditions. The fully integrated system supports efficient passive sweat collection, real time multi‐analyte detection, on‐board signal processing, and digital display. The platform was applied in preliminary human studies to track dynamic changes in sweat creatine and lactate in healthy individuals and participants with chronic liver disease. Overall, this work demonstrates a versatile wearable platform for noninvasive, continuous assisted evaluation of liver metabolic functions, contributing to the advancement of next‐generation personalized healthcare technologies.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adma.74688",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adma.74688",
+        "publisher_url": "https://doi.org/10.1002/adma.74688",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74688"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-ecb9c9a0597673f3",
@@ -1475,7 +1600,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Constructing multiscale structures has been regarded as a promising strategy to improve the overall performance of flexible pressure sensors.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：809 kPa、4%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "In this work, a high‐precision and controllable fabrication strategy based on a novel secondary replica molding approach is proposed.",
       "key_metrics": [
         "809 kPa",
@@ -1499,7 +1624,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-ecb9c9a0597673f3",
-      "detail_json": "data/paper-details/paper-ecb9c9a0597673f3.json"
+      "detail_json": "data/paper-details/paper-ecb9c9a0597673f3.json",
+      "abstract_original": "ABSTRACT Constructing multiscale structures has been regarded as a promising strategy to improve the overall performance of flexible pressure sensors. However, their manufacturing approach remains a challenge due to the lack of mild, compatible, and scalable processing methods. In this work, a high‐precision and controllable fabrication strategy based on a novel secondary replica molding approach is proposed. A paraffin intermediate mold is introduced to reduce potential damage to functional sensing materials, which enables the precise construction of arbitrary structures. The resulting multiscale‐structured octet‐truss piezoresistive pressure sensor (MSPS‐O) exhibits exceptional batch‐to‐batch reproducibility with a deviation of volume‐normalized initial resistance −1 and a wide detection range of up to 809 kPa. It also exhibits remarkable long‐term cyclic stability over 15 000 loading cycles with less than 4% deviation. Furthermore, MSPS‐O can be utilized for real‐time monitoring of human motion, and can accurately distinguish different gait patterns through machine learning algorithms. This work offers a new approach for the reliable manufacturing technology of multiscale‐structured flexible sensors with high stability and consistency.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/smll.75240",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/smll.75240",
+        "publisher_url": "https://doi.org/10.1002/smll.75240",
+        "candidate_urls": [
+          "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.75240"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-c64b98204d042498",
@@ -1551,7 +1690,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Continuous, noninvasive animal health monitoring systems are increasingly required in livestock farming, companion animal care, and wildlife conservation.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "This review presents a system‐level, design‐oriented analysis of animal health monitoring sensing technologies.",
       "key_metrics": [],
       "transferable_points": [
@@ -1568,7 +1707,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-c64b98204d042498",
-      "detail_json": "data/paper-details/paper-c64b98204d042498.json"
+      "detail_json": "data/paper-details/paper-c64b98204d042498.json",
+      "abstract_original": "ABSTRACT Continuous, noninvasive animal health monitoring systems are increasingly required in livestock farming, companion animal care, and wildlife conservation. The translation of wearable sensing technologies across these sectors is complicated. Their practical performance depends not only on sensing accuracy but also on the variability of anatomical features, uncontrolled movement, environmental exposure, wireless connectivity, power supply, and animal welfare considerations. This review presents a system‐level, design‐oriented analysis of animal health monitoring sensing technologies. It classifies sensing modalities into physical and physiological, biochemical and molecular, environmental and spatial, and multimodal sensing, followed by examining their integration into on‐animal and ingestible devices. Communication, edge and cloud computing, power management, and representative applications across livestock, companion animals, and wildlife are also discussed. The review further identifies key barriers to translation, including the need for signal stability, interoperability between systems, energy supply constraints, maintenance burden, and ethical and welfare concerns related to long‐term monitoring. Future systems should prioritize species‐ and site‐specific integration, long‐term field validation, interoperable data architectures, welfare‐conscious design, and clinically or managerially actionable outputs. This framework offers practical guidance for translating continuous sensing into scalable decisions for animal health and welfare.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/smtd.70982",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/smtd.70982",
+        "publisher_url": "https://doi.org/10.1002/smtd.70982",
+        "candidate_urls": [
+          "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smtd.70982"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-8233ee569fc93db3",
@@ -1629,7 +1782,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Unlike conventional printed electronics, embodied intelligence systems impose simultaneous demands on high electrical conductivity, intrinsic deformability, multimodal responsiveness, and scalable manufacturability to enable seamless integration into wearable human‐machine interfaces.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：4 S。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Based on this ink, we fabricate screen‑printed multifunctional sensors that exhibit a gauge factor (GF) of 192.2 for strain sensing, together with excellent cyclic stability.",
       "key_metrics": [
         "4 S"
@@ -1648,7 +1801,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-8233ee569fc93db3",
-      "detail_json": "data/paper-details/paper-8233ee569fc93db3.json"
+      "detail_json": "data/paper-details/paper-8233ee569fc93db3.json",
+      "abstract_original": "ABSTRACT Unlike conventional printed electronics, embodied intelligence systems impose simultaneous demands on high electrical conductivity, intrinsic deformability, multimodal responsiveness, and scalable manufacturability to enable seamless integration into wearable human‐machine interfaces. Herein, we report a shear‐assisted interfacial exfoliation strategy for the scalable production of high‑performance graphene conductive inks. The resulting ink is completely additive‑free and nontoxic, eliminating the need for chemical reductants or insulating stabilizers. It achieves a high concentration (23.1 mg/mL) and an exceptional production yield, while preserving the pristine lattice structure to minimize defects and deliver a high electrical conductivity of 1.49 × 10 4 S/m. Based on this ink, we fabricate screen‑printed multifunctional sensors that exhibit a gauge factor (GF) of 192.2 for strain sensing, together with excellent cyclic stability. Importantly, the sensor architecture enables effective signal decoupling among temperature, humidity, and strain modalities, ensuring reliable and accurate data acquisition. The practical utility of the sensor is demonstrated in diverse scenarios, ranging from precise physiological monitoring to large‐range motion tracking. This study provides a scalable, cost‑effective, and high‐performance material solution for next‐generation wearable electronics and soft robotic systems.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/smll.75299",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/smll.75299",
+        "publisher_url": "https://doi.org/10.1002/smll.75299",
+        "candidate_urls": [
+          "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.75299"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-5ba6034206807d34",
@@ -1708,7 +1875,7 @@
         "可用于低离散/装配容差触觉界面的结构与对照设计"
       ],
       "core_claim": "ABSTRACT Naturally rigid cellulose is an ideal mechanical reinforcement for ionogels, but its presence often hinders the migration of gel ions, affecting its application in flexible self‐powered electronics.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：100 MPa、48%、1%、1.43 mS、472%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Inspired by tendon hierarchy, we propose a three‐step strategy (delignification, ionic‐liquid induction, and UV‐crosslinking) to reconstruct bamboo across molecular‐nano‐macro scales into a multiscale bamboo ionic gel with a hard‐core/soft‐shell architecture.",
       "key_metrics": [
         "100 MPa",
@@ -1734,7 +1901,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-5ba6034206807d34",
-      "detail_json": "data/paper-details/paper-5ba6034206807d34.json"
+      "detail_json": "data/paper-details/paper-5ba6034206807d34.json",
+      "abstract_original": "ABSTRACT Naturally rigid cellulose is an ideal mechanical reinforcement for ionogels, but its presence often hinders the migration of gel ions, affecting its application in flexible self‐powered electronics. Inspired by tendon hierarchy, we propose a three‐step strategy (delignification, ionic‐liquid induction, and UV‐crosslinking) to reconstruct bamboo across molecular‐nano‐macro scales into a multiscale bamboo ionic gel with a hard‐core/soft‐shell architecture. Density functional theory calculations reveal carboxyl–hydroxyl–ion mediated triple hydrogen bonds significantly increase the interfacial binding between bamboo fiber and gel matrix. Consequently, the gel achieves a tensile strength of 100 MPa, a toughness of 17.25 MJ m −3 at 48% strain, and only ∼ 1% hysteresis variation over 1000 cycles. Furthermore, bamboo‐fiber skeleton increase conductivity (1.43 mS cm −1 ) by 472% compared to pure ionogel. It can be used as an electrode in a triboelectric device, generating an open‐circuit voltage of 366 V and a peak power density of 99.98 µW cm −2 , enabling highly sensitive self‐powered joint/gait monitoring. By incorporating machine learning, gel‐based triboelectric devices can perform human‐computer interaction tasks with up to 99% accuracy. This study successfully designed an ionogel with both high‐mechanical strength and efficient ion transport capability using a biomimetic strategy, demonstrating its broad potential in flexible self‐powered devices.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77773",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77773",
+        "publisher_url": "https://doi.org/10.1002/adfm.77773",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77773"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-be6b0b114fc56c52",
@@ -1799,7 +1980,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT This study investigates the scalable development of lead‐free 2D/3D metal halide perovskites for advanced optoelectronic applications via the precise deployment of inkjet printing.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：50 A、10 V、400 kHz、0.2 A。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "ABSTRACT This study investigates the scalable development of lead‐free 2D/3D metal halide perovskites for advanced optoelectronic applications via the precise deployment of inkjet printing.",
       "key_metrics": [
         "50 A",
@@ -1823,7 +2004,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-be6b0b114fc56c52",
-      "detail_json": "data/paper-details/paper-be6b0b114fc56c52.json"
+      "detail_json": "data/paper-details/paper-be6b0b114fc56c52.json",
+      "abstract_original": "ABSTRACT This study investigates the scalable development of lead‐free 2D/3D metal halide perovskites for advanced optoelectronic applications via the precise deployment of inkjet printing. Specifically, (PEA 0.5 BA 0.5 ) 2 FA 9 Sn 10 I 31 films were successfully printed onto both rigid glass and flexible polyethylene terephthalate (PET) substrates prepatterned with indium tin oxide (ITO) interdigitated electrodes. To address the persistent challenge of chemical instability and oxidation inherent to tin‐based perovskites, a novel synthesis of high‐purity SnI 2 precursor was combined with a robust dual‐layer encapsulation strategy comprising sequential polymethyl methacrylate (PMMA) and epoxy resin layers. Electro‐optical evaluations conducted under continuous‐wave (DC) illumination revealed a pronounced photoconductive gain mechanism with a high responsivity exceeding 50 A/W under low incident powers (at 5–10 V bias), accompanied by persistent photoconductivity governed by carrier trapping/detrapping dynamics. Conversely, modulated (AC) light characterization successfully bypassed these slower trapping pathways, enabling high‐frequency device operation with a cut‐off frequency of 400 kHz, at the expense of a lower responsivity (0.1–0.2 A/W). Crucially, long‐term operational testing spanning 30 days revealed no structural or performance degradation with responsivities as high as 50 A/W. These findings provide critical insights into the practical fabrication of sustainable, low‐cost, and high‐performance lead‐free perovskite photodetectors compatible with next‐generation flexible and wearable electronics.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adom.71629",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adom.71629",
+        "publisher_url": "https://doi.org/10.1002/adom.71629",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adom.71629"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-0f97de1934b73088",
@@ -1875,7 +2070,7 @@
         "涉及 in-sensor/物理计算或可编程触觉前端"
       ],
       "core_claim": "ABSTRACT The energy‐transfer‐driven multifunctional luminescence behaviors of a novel Bi 3+ ‐Eu 3+ co‐doped Na 3 Ca 2 TaO 6 (NCTO) phosphor are systematically investigated.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Furthermore, the distinct thermal responses of Bi 3+ and Eu 3+ emission centers give rise to a reliable fluorescence intensity ratio behavior based on non‐thermally coupled luminescence, enabling accurate temperature sensing with high fitting reliability.",
       "key_metrics": [],
       "transferable_points": [
@@ -1893,7 +2088,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-0f97de1934b73088",
-      "detail_json": "data/paper-details/paper-0f97de1934b73088.json"
+      "detail_json": "data/paper-details/paper-0f97de1934b73088.json",
+      "abstract_original": "ABSTRACT The energy‐transfer‐driven multifunctional luminescence behaviors of a novel Bi 3+ ‐Eu 3+ co‐doped Na 3 Ca 2 TaO 6 (NCTO) phosphor are systematically investigated. In the multi‐octahedral framework of the NCTO host, Bi 3+ ions act as broadband sensitizers while Eu 3+ ions serve as efficient red‐emitting centers, enabling effective non‐radiative energy transfer from Bi 3+ to Eu 3+ ions. Under ultraviolet excitation, the co‐doped system exhibits excitation‐dependent emission, while tunable emission is achieved by a combination of Bi 3+ broadband emission and Eu 3+ characteristic line emission. The energy‐transfer efficiency is confirmed to be governed by dipole‐dipole interactions. Furthermore, the distinct thermal responses of Bi 3+ and Eu 3+ emission centers give rise to a reliable fluorescence intensity ratio behavior based on non‐thermally coupled luminescence, enabling accurate temperature sensing with high fitting reliability. The flexible phosphor‐polydimethylsiloxane films are fabricated to realize multi‐mode optical information encryption based on excitation‐selective emission, demonstrating their potential usage for next‐generation muti‐functional photoluminescent materials.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adom.71631",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adom.71631",
+        "publisher_url": "https://doi.org/10.1002/adom.71631",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adom.71631"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-0f615e5d8f3fbfc0",
@@ -1947,7 +2156,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "ABSTRACT Recent advances in the fabrication of single‐crystalline oxide membranes have opened a promising avenue for the realization of freestanding ferroelectric films with potential applications in the field of flexible electronics, such as sensors, actuators, and energy harvesting devices.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here we report the design of few‐unit‐cell‐thick ferroelectric membranes using pulsed laser deposition.",
       "key_metrics": [],
       "transferable_points": [
@@ -1964,7 +2173,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-0f615e5d8f3fbfc0",
-      "detail_json": "data/paper-details/paper-0f615e5d8f3fbfc0.json"
+      "detail_json": "data/paper-details/paper-0f615e5d8f3fbfc0.json",
+      "abstract_original": "ABSTRACT Recent advances in the fabrication of single‐crystalline oxide membranes have opened a promising avenue for the realization of freestanding ferroelectric films with potential applications in the field of flexible electronics, such as sensors, actuators, and energy harvesting devices. A widely used fabrication method is the integration of water‐soluble Sr 3 Al 2 O 6 (SAO) as a sacrificial layer between the perovskite‐type substrate and the ferroelectric film. Here we report the design of few‐unit‐cell‐thick ferroelectric membranes using pulsed laser deposition. This work reveals the tendency for strontium diffusion from the SAO layer into the BiFeO 3 (BFO) films during the pulsed deposition, leading to the spontaneous formation of an Aurivillius‐like layered phase. Mitigation of such undesired effects is achieved here by introducing a SrRuO 3 (SRO) buffer layer between the SAO and BFO layers. This prevents strontium diffusion and enables the fabrication of BFO membranes down to 5‐unit cells with high structural integrity and a consistent polar tetragonal distortion. Our results demonstrate that freestanding ferroelectric films can be fabricated with a degree of precision comparable to that of molecular beam epitaxy. Our strategy can be further extended to other membrane compositions.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/smll.202511535",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/smll.202511535",
+        "publisher_url": "https://doi.org/10.1002/smll.202511535",
+        "candidate_urls": [
+          "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.202511535"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     }
   ],
   "generated_ideas": [

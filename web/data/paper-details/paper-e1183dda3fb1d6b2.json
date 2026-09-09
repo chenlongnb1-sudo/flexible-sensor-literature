@@ -34,11 +34,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Hydrogels have emerged as a versatile materials platform for soft and biointegrated electronics. However, reliable hydrogel bioelectronics under seawater conditions is limited by biofouling at interfaces, high‐salinity swelling‐induced drift, and noise‐robust temporal decoding. Here, we present a hydration‐locked percolation strategy to engineer a jellyfish‐inspired hydrogel that combines synergistic antifouling with drift‐resistant conduction for AI‐assisted multimodal marine bioelectronics. The constructed hydration‐polyphenol network suppresses nonspecific adsorption and early biofilm evolution, achieving a synergistic antifouling system that repels and inactivates fouling organisms. Meanwhile, cross‐substrate wet anchoring and localized swelling suppression stabilize electron‐percolation pathways, thereby enabling long‐term stable high conductivity (22 S m − 1 ) and physiological signal acquisition with high signal‐to‐noise ratio in seawater. Notably, a tailored multimodal decoding framework integrating Transformer encoder with multilayer perceptron further enables accurate interpretation of complex physiological signals (98.5% accuracy) by capturing long‐range temporal dependencies and cross‐modal correlations. This integration of high‐performance bioinspired hydrogels with Transformer‐assisted decoding paves the way for long‐term, high‐fidelity marine bioelectronics.",
-    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：22 S、98.5%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Hydrogels have emerged as a versatile materials platform for soft and biointegrated electronics.",
-    "涉及坏点、漂移、跨器件迁移或少样本校准"
+    "ABSTRACT Hydrogels have emerged as a versatile materials platform for soft and biointegrated electronics."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -55,5 +56,18 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adma.74213",
+    "publisher_url": "https://doi.org/10.1002/adma.74213",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74213"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ]
 }

@@ -29,6 +29,27 @@ from scripts.daily_literature_pipeline import (
 
 
 class DailyPipelineTests(unittest.TestCase):
+    def test_enrich_record_separates_source_translation_and_summary(self) -> None:
+        paper = enrich_record(
+            {
+                "title": "Flexible tactile sensor",
+                "abstract": "We develop a flexible tactile sensor for robotic grasping.",
+                "venue": "Advanced Functional Materials",
+                "date": date.today().isoformat(),
+                "doi": "10.1000/example",
+                "url": "https://doi.org/10.1000/example",
+                "query_ids": [],
+                "query_tracks": ["P2"],
+            },
+            date.today(),
+        )
+        self.assertEqual(paper["source_abstract"], paper["abstract_original"])
+        self.assertEqual(paper["abstract_translation_zh"], "")
+        self.assertEqual(paper["abstract_summary_zh"], paper["summary_zh"])
+        self.assertNotIn("提供机器人", paper["summary_zh"])
+        self.assertNotIn("摘要可核实数值", paper["summary_zh"])
+        self.assertEqual(paper["abstract_translation_status"], "pending_agent_translation")
+
     def test_elite_journal_database_drives_am_afm_searches(self) -> None:
         config = {
             "journal_database": "config/elite-journals.json",

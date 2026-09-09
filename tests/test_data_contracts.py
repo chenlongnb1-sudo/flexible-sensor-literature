@@ -67,6 +67,8 @@ class DataContractTests(unittest.TestCase):
             "id", "title", "tracks", "relevance_score", "score_breakdown",
             "relevance_reasons", "core_claim", "method_summary", "key_metrics",
             "transferable_points", "risks", "decision_hint", "verification_status",
+            "abstract_original", "abstract_translation_zh", "abstract_summary_zh",
+            "abstract_translation_status", "source_access",
         }
         allowed_actions = {"ignore", "skim", "read", "add_to_ideas", "profile_candidate", "task_candidate"}
         allowed_tracks = {"P1", "P2", "P3", "P4", "P5", "P6"}
@@ -162,10 +164,12 @@ class DataContractTests(unittest.TestCase):
     def test_notification_uses_curated_brief_without_methods_or_figures(self) -> None:
         day = PAPERS_PATH.parents[1]
         _, plain, _ = build_message(day)
-        self.assertIn("摘要：", plain)
+        self.assertIn("摘要中文直译：", plain)
+        self.assertIn("中文总结：", plain)
         self.assertIn("论文创新：", plain)
         self.assertIn("对你的启发：", plain)
-        self.assertIn("无标记的视觉触觉传感器", plain)
+        self.assertNotIn("摘要可核实数值", plain)
+        self.assertNotIn("提供机器人、可穿戴或电子皮肤系统任务证据", plain)
         self.assertNotIn("制备步骤", plain)
         self.assertNotIn("逐图", plain)
 

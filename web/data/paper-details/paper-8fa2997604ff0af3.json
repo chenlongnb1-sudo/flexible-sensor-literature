@@ -28,11 +28,12 @@
   "page_count": 18,
   "abstract": {
     "original": "Abstract High-density organic electrochemical transistor (OECT) arrays are essential for neuromorphic computing and bioelectronic interfaces, but progress has been limited by the low resolution of electrolyte patterning. Although conventional photolithography offers high feature resolution, it involves a fundamental trade-off among spatial resolution, ionic capacitance, and stability in the electrolyte. Here we report an ion compensation-assisted photolithography (ICAP) strategy that yields electrolyte micro-patterns combining high precision, high capacitance and high stability. A molecularly engineered electrolyte forms, under UV exposure, a physicochemical dual cross-linked network with strong solvent resistance and hydrophobicity, which suppresses swelling during both aqueous development and the subsequent ion-compensation step, preserving pattern fidelity. Ion compensation then restores and enhances the mobile-ion content, increasing areal capacitance. The resulting electrolytes achieve a record 2 μm resolution, 15.6 μF cm −2 capacitance, and strong thermal stability from − 50 to 200 °C. Integrated into OECTs, the ICAP-patterned electrolytes suppress crosstalk by 97.6% and boost on/off ratios by 325%, reducing parasitic coupling by more than 40 times compared to unpatterned arrays. The method is compatible with p -type and n -type organic semiconductors and inorganic oxides, providing a versatile route to scalable neuromorphic circuits and advanced bioelectronics.",
-    "zh": "涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：2 μm、97.6%、325%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract High-density organic electrochemical transistor (OECT) arrays are essential for neuromorphic computing and bioelectronic interfaces, but progress has been limited by the low resolution of electrolyte patterning.",
-    "涉及 in-sensor/物理计算或可编程触觉前端"
+    "Abstract High-density organic electrochemical transistor (OECT) arrays are essential for neuromorphic computing and bioelectronic interfaces, but progress has been limited by the low resolution of electrolyte patterning."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -835,5 +836,18 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1007/s40820-026-02288-4",
+    "publisher_url": "https://doi.org/10.1007/s40820-026-02288-4",
+    "candidate_urls": [
+      "https://link.springer.com/content/pdf/10.1007/s40820-026-02288-4.pdf"
+    ],
+    "successful_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02288-4.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ]
 }

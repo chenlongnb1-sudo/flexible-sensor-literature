@@ -21,13 +21,12 @@
   "page_count": 46,
   "abstract": {
     "original": "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions. Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptable to body-interfaced formats. In this review, wearability refers to body-mounted, skin-interfaced, textile-integrated, or otherwise human-attached triboelectric sensing platforms, whereas human-centric smart electronics refers to downstream electronic systems that remain functionally anchored to human-originated sensing, interpretation, feedback, or control. From this perspective, we review triboelectric wearable sensors from fundamentals to applications, covering working principles, material selection, device architectures, and fabrication strategies. We further discuss artificial intelligence-assisted signal processing, triboelectric artificial synapses, and neuromorphic computing as key bridges from self-powered sensing to intelligent HMI. Representative application spaces, including health care, gesture recognition, device control, immersive virtual interaction, wearable-to-robotic extensions, and intelligent transportation are discussed only when wearable triboelectric sensing serves as the primary human-input interface. Finally, the remaining challenges and future directions toward next-generation human-centric smart electronics are outlined.",
-    "zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions.",
-    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
-    "涉及 in-sensor/物理计算或可编程触觉前端",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions."
   ],
   "inspirations": [
     "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
@@ -1177,5 +1176,20 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1007/s40820-026-02263-z",
+    "publisher_url": "https://doi.org/10.1007/s40820-026-02263-z",
+    "candidate_urls": [
+      "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf"
+    ],
+    "successful_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

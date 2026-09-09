@@ -506,9 +506,22 @@ def request_pdf_bytes(url: str, timeout: int = 45) -> tuple[bytes, str]:
     return raw, content_type
 
 
-def legal_pdf_candidates(paper: dict[str, Any]) -> list[str]:
+def legal_pdf_candidates(paper: dict[str, Any], audit: dict[str, Any] | None = None) -> list[str]:
     doi = normalize_doi(paper.get("doi"))
     candidates: list[str] = []
+    if audit is not None:
+        audit.update(
+            {
+                "doi_landing": f"https://doi.org/{doi}" if doi else "",
+                "publisher_url": str(paper.get("url") or ""),
+                "unpaywall_checked": False,
+                "crossref_checked": False,
+                "pmc_checked": False,
+                "candidate_urls": [],
+                "successful_url": "",
+                "failure_reasons": [],
+            }
+        )
     if doi.startswith("10.1038/"):
         candidates.append(f"https://www.nature.com/articles/{doi.split('/', 1)[1]}.pdf")
     if doi.startswith("10.1007/"):
@@ -517,6 +530,8 @@ def legal_pdf_candidates(paper: dict[str, Any]) -> list[str]:
     candidates.extend(paper.get("pdf_candidates") or [])
 
     if doi and UNPAYWALL_EMAIL:
+        if audit is not None:
+            audit["unpaywall_checked"] = True
         try:
             url = "https://api.unpaywall.org/v2/" + urllib.parse.quote(doi, safe="")
             url += "?" + urllib.parse.urlencode({"email": UNPAYWALL_EMAIL})
@@ -531,6 +546,8 @@ def legal_pdf_candidates(paper: dict[str, Any]) -> list[str]:
                     except Exception:
                         pass
                     try:
+                        if audit is not None:
+                            audit["pmc_checked"] = True
                         candidates.extend(pmc_oa_pdf_urls(landing))
                     except Exception:
                         pass
@@ -540,10 +557,15 @@ def legal_pdf_candidates(paper: dict[str, Any]) -> list[str]:
     if doi:
         landing_url = f"https://doi.org/{doi}"
         try:
+            if audit is not None:
+                audit["crossref_checked"] = True
             candidates.extend(citation_pdf_urls(landing_url))
         except Exception:
             pass
-    return unique_urls(candidates)
+    candidates = unique_urls(candidates)
+    if audit is not None:
+        audit["candidate_urls"] = candidates
+    return candidates
 
 
 def search_openalex(job: SearchJob) -> list[dict[str, Any]]:
@@ -1331,6 +1353,8 @@ def enrich_record(record: dict[str, Any], today: date) -> dict[str, Any]:
         risks.append("可能主要贡献是材料灵敏度，未必能支撑前端触觉计算主线。")
     if any(term in (title + " " + record.get("abstract", "")).lower() for term in ("three-axis", "triaxial", "3d force")):
         risks.append("如无完整标定矩阵，不应直接迁移为 full 3D force reconstruction 主张。")
+    abstract_original = record.get("abstract", "")
+    summary_zh = "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
     return {
         "id": f"paper-{stable_id(title, doi)}",
         "title": title,
@@ -1357,21 +1381,86 @@ def enrich_record(record: dict[str, Any], today: date) -> dict[str, Any]:
         "score_breakdown": scoring["score_breakdown"],
         "relevance_reasons": scoring["relevance_reasons"],
         "core_claim": sentence_summary(record),
-        "summary_zh": (
-            "；".join(scoring["relevance_reasons"][:2])
-            + (f"。摘要可核实数值包括：{'、'.join(metrics[:5])}" if metrics else "。当前未从摘要提取到可比较数值")
-            + "。"
-        ),
+        "summary_zh": summary_zh,
+        "abstract_original": abstract_original,
+        "abstract_translation_zh": "",
+        "abstract_summary_zh": summary_zh,
+        "abstract_translation_status": "pending_agent_translation" if abstract_original else "missing_source_abstract",
+        "abstract_source": record.get("url", "") or (f"https://doi.org/{doi}" if doi else ""),
         "method_summary": method_summary(record),
         "key_metrics": metrics,
         "transferable_points": transfer,
         "innovation_suggestions": project_suggestions,
         "risks": risks,
-        "source_abstract": record.get("abstract", ""),
+        "source_abstract": abstract_original,
+        "source_access": {
+            "doi_landing": f"https://doi.org/{doi}" if doi else "",
+            "publisher_url": record.get("url", ""),
+            "candidate_urls": [],
+            "successful_url": "",
+            "failure_reasons": [],
+        },
         "cited_by_count": int(record.get("cited_by_count") or 0),
         "decision_hint": scoring["decision_hint"],
         "verification_status": "metadata_abstract_screened",
     }
+
+
+def translate_abstracts_with_openai(papers: list[dict[str, Any]]) -> None:
+    """Add source-grounded Chinese translation and summary when an API key is configured."""
+    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        return
+    model = os.environ.get("LITERATURE_TRANSLATE_MODEL", "").strip() or "gpt-4o-mini"
+    endpoint = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/") + "/chat/completions"
+    for paper in papers:
+        original = str(paper.get("source_abstract") or "").strip()
+        if not original:
+            continue
+        prompt = (
+            "你是科研文献翻译与摘要编辑。只根据给定英文摘要工作。\n"
+            "请返回严格 JSON，字段为 translation_zh 和 summary_zh。\n"
+            "translation_zh 必须逐句忠实翻译，保留材料名、单位、数值、缩写和限定语，不添加原文没有的内容。\n"
+            "summary_zh 是在完整翻译之后写的 2-4 句中文总结，说明问题、方法、主要结果和意义；不能写成相关性评价。\n"
+            f"英文原文摘要：\n{original}"
+        )
+        body = json.dumps(
+            {
+                "model": model,
+                "temperature": 0.1,
+                "response_format": {"type": "json_object"},
+                "messages": [
+                    {"role": "system", "content": "你只输出合法 JSON，不要 Markdown。"},
+                    {"role": "user", "content": prompt},
+                ],
+            },
+            ensure_ascii=False,
+        ).encode("utf-8")
+        request = urllib.request.Request(
+            endpoint,
+            data=body,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT.format(DEFAULT_MAILTO),
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=45) as response:
+                payload = json.loads(response.read().decode("utf-8", errors="replace"))
+            content = payload["choices"][0]["message"]["content"]
+            translated = json.loads(content)
+            translation = str(translated.get("translation_zh") or "").strip()
+            summary = str(translated.get("summary_zh") or "").strip()
+            if translation and summary:
+                paper["abstract_translation_zh"] = translation
+                paper["abstract_summary_zh"] = summary
+                paper["summary_zh"] = summary
+                paper["abstract_translation_status"] = "automatic_agent_translation_pending_review"
+        except Exception as error:  # noqa: BLE001 - keep the paper and its original abstract
+            paper["abstract_translation_status"] = "translation_unavailable"
+            paper["abstract_translation_error"] = type(error).__name__
 
 
 IDEA_TEMPLATES = {
@@ -1514,10 +1603,13 @@ def download_open_access_pdfs(papers: list[dict[str, Any]], output_dir: Path, li
                 paper["pdf_url"] = source_url
                 paper["pdf_source_url"] = source_url
                 paper["pdf_version"], paper["pdf_version_label"] = classify_pdf_version(source_url)
+            paper.setdefault("source_access", {})["successful_url"] = source_url
             downloaded += 1
             continue
         errors = []
-        for pdf_url in legal_pdf_candidates(paper):
+        audit: dict[str, Any] = {}
+        candidates = legal_pdf_candidates(paper, audit)
+        for pdf_url in candidates:
             try:
                 raw, content_type = request_pdf_bytes(pdf_url, timeout=40)
                 if len(raw) > 40 * 1024 * 1024:
@@ -1538,12 +1630,17 @@ def download_open_access_pdfs(papers: list[dict[str, Any]], output_dir: Path, li
                 paper["pdf_version"], paper["pdf_version_label"] = classify_pdf_version(pdf_url)
                 paper["is_open_access"] = True
                 paper["local_pdf"] = str(path.relative_to(ROOT)).replace("\\", "/")
+                audit["successful_url"] = pdf_url
+                paper["source_access"] = audit
                 downloaded += 1
                 break
             except Exception as error:  # noqa: BLE001 - try the next lawful OA candidate
-                errors.append(type(error).__name__)
+                errors.append(f"{type(error).__name__}: {pdf_url}")
         if not paper.get("local_pdf"):
             summary = "、".join(dict.fromkeys(errors)) if errors else "未找到合法开放获取 PDF"
+            audit["failure_reasons"] = list(dict.fromkeys(errors))
+            paper["source_access"] = audit
+            paper.setdefault("source_access_notes", "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。")
             paper.setdefault("risks", []).append(f"开放获取 PDF 下载失败：{summary}。")
 
 
@@ -1855,6 +1952,7 @@ def main() -> int:
             break
 
     enriched = [enrich_record(record, run_date) for record in chosen_records]
+    translate_abstracts_with_openai(enriched)
     enriched.sort(key=lambda item: (item["relevance_score"], item.get("date", "")), reverse=True)
     papers = enriched[:maximum]
 

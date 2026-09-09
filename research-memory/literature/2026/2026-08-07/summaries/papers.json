@@ -749,7 +749,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Swallowing disorders are a common complication after stroke, yet current assessment methods rely largely on clinical observation and subjective screening, limiting continuous and objective evaluation.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：92.4%、87.6%、20%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "S3‐LLM converts them into structured signal sequences and combines temporal encoding with parameter‐efficient fine‐tuning, thereby exploiting the representation and generalization capabilities of LLMs under few‐shot conditions.",
       "key_metrics": [
         "92.4%",
@@ -772,7 +772,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-d5c14f4658f1dd03",
-      "detail_json": "data/paper-details/paper-d5c14f4658f1dd03.json"
+      "detail_json": "data/paper-details/paper-d5c14f4658f1dd03.json",
+      "abstract_original": "ABSTRACT Swallowing disorders are a common complication after stroke, yet current assessment methods rely largely on clinical observation and subjective screening, limiting continuous and objective evaluation. Here, we report a large language model (LLM)‐driven throat‐wearable sensing system (TWSS) for real‐time monitoring of laryngeal activity and quantitative assessment of swallowing function. TWSS consists of a flexible sensing patch and a structured signal sequence–based LLM framework (S3‐LLM). The flexible patch integrates a stretchable sensor with a wireless circuit module, enabling conformal attachment to the throat and real‐time acquisition of physiological signals. Owing to its dual sensitivity to pressure and strain, the sensor can capture subtle and complex laryngeal movements associated with different physiological activities. S3‐LLM converts them into structured signal sequences and combines temporal encoding with parameter‐efficient fine‐tuning, thereby exploiting the representation and generalization capabilities of LLMs under few‐shot conditions. In a clinical validation involving 20 participants, TWSS achieved an accuracy of 92.4% for recognizing normal laryngeal activities and 87.6% for evaluating swallowing function, approximately 20% improvement over conventional models. These results demonstrate that TWSS provides a promising wearable platform for continuous, objective, and quantitative assessment of swallowing disorders and highlights the potential for personalized healthcare.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adhm.71548",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adhm.71548",
+        "publisher_url": "https://doi.org/10.1002/adhm.71548",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adhm.71548"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-c9e4bf04904010bb",
@@ -829,7 +843,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Flexible pressure sensors are often evaluated over only a limited portion of their nominal operating range, making it difficult to simultaneously achieve high‐sensitivity, ultrawide‐ range detection, and reliable signal resolution under large preloads within a single device.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：122 kPa、2555 kPa、1864 kPa、61 kPa、7.6 Pa。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we present a geometry‐guided strategy for stable pressure sensing from Pa to MPa based on a biomimetic daisy‐inspired gradient hemispherical array.",
       "key_metrics": [
         "122 kPa",
@@ -854,7 +868,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-c9e4bf04904010bb",
-      "detail_json": "data/paper-details/paper-c9e4bf04904010bb.json"
+      "detail_json": "data/paper-details/paper-c9e4bf04904010bb.json",
+      "abstract_original": "ABSTRACT Flexible pressure sensors are often evaluated over only a limited portion of their nominal operating range, making it difficult to simultaneously achieve high‐sensitivity, ultrawide‐ range detection, and reliable signal resolution under large preloads within a single device. Here, we present a geometry‐guided strategy for stable pressure sensing from Pa to MPa based on a biomimetic daisy‐inspired gradient hemispherical array. By integrating finite‐element‐analysis‐guided optimization with an interpretable simulation‐trained surrogate model, the multilevel gradient microstructure is rationally engineered to regulate compressibility and contact‐area evolution, thereby mitigating capacitive saturation and extending the accessible pressure range. The resulting iontronic sensor delivers a consistently high sensitivity exceeding 122 kPa −1 over 0–2555 kPa, together with an ultrahigh sensitivity of 1864 kPa −1 in the low‐pressure regime (0–61 kPa) and a low detection limit of 7.6 Pa. The device further shows fast response/recovery times below 5 ms, stable operation under repeated loading, and reliable pressure resolution even under MPa‐level preloads. Beyond device performance, the surrogate‐model interpretation reveals the key multilevel design rules governing the sensing response, establishing a generalizable framework that links bioinspired geometry, interfacial mechanics, and pressure‐sensing behavior. This integrated structure‐mechanism‐modeling strategy provides a practical route toward next‐generation ultrawide‐range flexible sensors for wearable electronics and human‐machine interfaces.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77497",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77497",
+        "publisher_url": "https://doi.org/10.1002/adfm.77497",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77497"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-f1a34f288f7496ab",
@@ -913,7 +941,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Nanoscale mechano‐optical surfaces enable electronics‐free strain sensing, attractive for skin‐interfaced devices, yet reported implementations require laser/spectrometer interrogation, negating this advantage.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：2%、9%、65%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "ABSTRACT Nanoscale mechano‐optical surfaces enable electronics‐free strain sensing, attractive for skin‐interfaced devices, yet reported implementations require laser/spectrometer interrogation, negating this advantage.",
       "key_metrics": [
         "2%",
@@ -934,7 +962,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-f1a34f288f7496ab",
-      "detail_json": "data/paper-details/paper-f1a34f288f7496ab.json"
+      "detail_json": "data/paper-details/paper-f1a34f288f7496ab.json",
+      "abstract_original": "ABSTRACT Nanoscale mechano‐optical surfaces enable electronics‐free strain sensing, attractive for skin‐interfaced devices, yet reported implementations require laser/spectrometer interrogation, negating this advantage. Here, we report electrically passive mechanical transduction of arterial pulsation into diffractive colour shifts read by unmodified smartphone cameras, enabled by a dual‐function monolithic poly‐dimethylsiloxane (PDMS) film. Using large‐area double‐sided nanoimprinting, we achieve a strain‐sensitive nanophotonic surface on one face of the film and a bio‐inspired 3D structural adhesive on the other. We measure strain‐dependent optical response and reproduce it in color‐mixing optical simulations. In uniaxial cyclic loading tests, 2% strain produces a 9% RGB‐intensity modulation, stable over 1000 cycles. Further, 3D structuring improves adhesive shear strength by 65% on skin over flat PDMS. Hand‐held smartphone recordings in humans ( n = 13) resolve sub‐beat hemodynamics in agreement with clinical reference (per‐beat waveform ρ = 0.94 ± 0.03), exceeding established non‐invasive techniques such as active reflectance photoplethysmography (PPG), imaging PPG, and piezoelectric pulse‐force sensors in simultaneous recordings. Importantly, mechanical transduction at the elastomer–air interface presents an optical cardiovascular monitoring approach agnostic to dermal‐melanin, a known PPG confounder. Together, these advances establish camera‐readable mechanochromic elastomers as versatile materials platforms for wearable cardiovascular monitoring, point‐of‐care diagnostics, and electronics‐free human‐machine interfaces.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adma.74512",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adma.74512",
+        "publisher_url": "https://doi.org/10.1002/adma.74512",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74512"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-f3e60589da913e9a",
@@ -991,7 +1033,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "ABSTRACT Stress urinary incontinence affects millions worldwide.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：100%、10 mm。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we present a smart, personalized vaginal pessary manufactured by extrusion‐based 3D‐printing with integrated flexible piezoelectric pressure sensors to enable real‐time intravaginal force measurements.",
       "key_metrics": [
         "100%",
@@ -1012,7 +1054,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-f3e60589da913e9a",
-      "detail_json": "data/paper-details/paper-f3e60589da913e9a.json"
+      "detail_json": "data/paper-details/paper-f3e60589da913e9a.json",
+      "abstract_original": "ABSTRACT Stress urinary incontinence affects millions worldwide. It can be managed with vaginal pessaries, but clinical effectiveness is limited in part by poor customization of device size, shape, and mechanics. A key barrier to personalization is incomplete knowledge of mechanical forces experienced in the vaginal cavity. Here, we present a smart, personalized vaginal pessary manufactured by extrusion‐based 3D‐printing with integrated flexible piezoelectric pressure sensors to enable real‐time intravaginal force measurements. By selecting ethylene vinyl acetate, which is approved for intra‐vaginal applications, as the structural material and polyethylene terephthalate as the thermally robust sensor substrate, seamless sensor embedding was achieved without compromising device integrity. We produced pessaries of varying infill densities (25 and 100%) to tune stiffness and performed in‐vitro compression tests mimicking physiologically relevant vaginal temperatures and loadings by varying force and cycle number. Sensor sensitivity equivalent to forces required to achieve 10 mm deformation increased with infill density, demonstrating adjustable mechanical behavior. Importantly, embedded sensors showed stable and reproducible sensitivity under repeated compression cycles, indicating suitability for monitoring the repeated loading experienced in situ. This work demonstrates a manufacturable route to instrumented, patient‐specific pessaries and establishes the technical foundation for in‐vivo force mapping that can guide individualized device selection and future closed‐loop therapies.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/admt.71232",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/admt.71232",
+        "publisher_url": "https://doi.org/10.1002/admt.71232",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71232"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-12aa2001ed1cf8c9",
@@ -1065,7 +1121,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "ABSTRACT Mechanically coupled flexible electronics enable real‐time, conformal monitoring of diverse mechanical signals.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "To address these challenges, various material systems designed to enhance surface and interfacial performance are systematically reviewed, focusing on surface chemical modification, interfacial chemical engineering, as well as processing‐ and manufacturing‐enabled physical reinforcement approaches.",
       "key_metrics": [],
       "transferable_points": [
@@ -1084,7 +1140,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-12aa2001ed1cf8c9",
-      "detail_json": "data/paper-details/paper-12aa2001ed1cf8c9.json"
+      "detail_json": "data/paper-details/paper-12aa2001ed1cf8c9.json",
+      "abstract_original": "ABSTRACT Mechanically coupled flexible electronics enable real‐time, conformal monitoring of diverse mechanical signals. However, their operation in dynamic and complex environments places stringent demands on surface and interfacial reliability. Insufficient interfacial functionalization, unstable contact, as well as mechanical and electrical mismatch have emerged as key factors limiting device durability, signal fidelity, and practical deployment. This review summarizes the fundamental surface and interfacial challenges in mechanically coupled flexible electronics from the perspective of surface and interfacial physics, including contact instability, interfacial failure, stress concentration, and environmental degradation. To address these challenges, various material systems designed to enhance surface and interfacial performance are systematically reviewed, focusing on surface chemical modification, interfacial chemical engineering, as well as processing‐ and manufacturing‐enabled physical reinforcement approaches. In addition to isolated chemical or physical methods, multiscale surface and interface architectures are further engineered through bioinspired interfaces, mechanical interlocking, adhesive interlayers, buffering layers, percolating interpenetrating networks, and homogeneous structural design. The resulting improvements in reliability and functional stability are illustrated through representative applications across multiple operating scenarios. Finally, current challenges and future directions are outlined in terms of standardization, environmental robustness, manufacturing repeatability, and large‐scale implementation.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.76797",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.76797",
+        "publisher_url": "https://doi.org/10.1002/advs.76797",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.76797"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-93614044164cf96b",
@@ -1142,7 +1212,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Carbon nanotube fibers (CNTFs) exhibit exceptional mechanical, electrical, and thermal properties, granting them broad application potential in aerospace, flexible electronics, and advanced composites.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Conventional research has often focused on adjusting isolated process parameters and preparation strategies based on equilibrium‐state assumptions, lacking a systematic grasp of non‐equilibrium growth kinetics and the synergistic regulation of multi‐physical fields.",
       "key_metrics": [],
       "transferable_points": [
@@ -1160,7 +1230,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-93614044164cf96b",
-      "detail_json": "data/paper-details/paper-93614044164cf96b.json"
+      "detail_json": "data/paper-details/paper-93614044164cf96b.json",
+      "abstract_original": "ABSTRACT Carbon nanotube fibers (CNTFs) exhibit exceptional mechanical, electrical, and thermal properties, granting them broad application potential in aerospace, flexible electronics, and advanced composites. However, the performance of CNTFs produced by the FCCVD dry spinning method is far below the theoretical limit of a single carbon nanotube (CNTs). This gap is largely attributed to weak interfacial interactions between CNTs, catalyst residues, and multiscale structural defects. Conventional research has often focused on adjusting isolated process parameters and preparation strategies based on equilibrium‐state assumptions, lacking a systematic grasp of non‐equilibrium growth kinetics and the synergistic regulation of multi‐physical fields. Therefore, this study explores the cooperative assembly of CNTFs through the lens of non‐equilibrium states and multi‐field synergy. It systematically reviews recent advances in CNTs synthesis and fiber optimization across three scales: the microscale (atomic‐level growth mechanisms and interface modulation), the mesoscale (structural evolution and multi‐physical field coupling during CNTs assembly), and the macroscale (bulk fiber properties). With a focus on enhancing CNTFs performance, the work outlines cross‐scale structural regulation strategies. The aim is to provide theoretical support for future cross‐scale modeling, reactor design optimization, and defect engineering, while offering a systematic reference and technical roadmap toward high‐performance CNTFs and breakthrough property advancements.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adma.74400",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adma.74400",
+        "publisher_url": "https://doi.org/10.1002/adma.74400",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74400"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-2346c8487187a6a4",
@@ -1215,7 +1299,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "ABSTRACT The pursuit of flexible phase‐change materials (PCMs) for advanced thermal management is fundamentally constrained by a longstanding “impossible trinity”: achieving simultaneous high flexibility, high thermal conductivity, and large latent‐heat storage in a single material remains an unmet goal.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：175%、3.50 W、94.59%、30 dB。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "A double‐network skeleton of cellulose nanofibers (CNF) and aramid nanofibers (ANF), cross‐linked by reversible Fe 3+ ‑tannic acid (TA) coordination, is designed to create an adaptive matrix.",
       "key_metrics": [
         "175%",
@@ -1237,7 +1321,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-2346c8487187a6a4",
-      "detail_json": "data/paper-details/paper-2346c8487187a6a4.json"
+      "detail_json": "data/paper-details/paper-2346c8487187a6a4.json",
+      "abstract_original": "ABSTRACT The pursuit of flexible phase‐change materials (PCMs) for advanced thermal management is fundamentally constrained by a longstanding “impossible trinity”: achieving simultaneous high flexibility, high thermal conductivity, and large latent‐heat storage in a single material remains an unmet goal. Here, we break this paradigm via a “dynamic adaptable encapsulation” strategy. A double‐network skeleton of cellulose nanofibers (CNF) and aramid nanofibers (ANF), cross‐linked by reversible Fe 3+ ‑tannic acid (TA) coordination, is designed to create an adaptive matrix. This unique architecture concurrently provides dynamic stress dissipation​ for extreme stretchability (≈175% elongation), efficient phonon‐transfer pathways​ for rapid heat dissipation (3.50 W/(m·K)), and dense yet compliant confinement​ for preserving a high phase‐change enthalpy (>120 J/g). Molecular dynamics simulations reveal that the reversible metal‑phenolic bonds, which not only maintain strong interfacial adhesion but also percolate heat‐transfer networks under deformation, offering atomic‑scale insights into the synergy. Consequently, the composite film exhibits exceptional cyclic stability and reliable conformability to complex surfaces. Leveraging this synergistic foundation, the film demonstrates multifunctional capabilities, including efficient solar‐thermal conversion (94.59%) and effective electromagnetic interference shielding (≈30 dB), validated in multi‑scenario applications from flexible electronics cooling to high‑power device thermal regulation. This work establishes a generalizable design principle for adaptive thermal‐management materials.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77537",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77537",
+        "publisher_url": "https://doi.org/10.1002/adfm.77537",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77537"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     }
   ],
   "generated_ideas": []

@@ -35,13 +35,12 @@
   "page_count": 14,
   "abstract": {
     "original": "Abstract High-performance temperature sensors are critical components for emerging Internet-of-Things and biomedical-electronics platforms. However, simultaneously achieving high sensitivity, mechanical compliance, and user-defined integrability remains a formidable materials-and-device challenge. Here, we report a continuous graphene fiber (GF) thermocouple technology where multiple p–n thermocouples are created in situ along a single, unbroken fiber while preserving its structural integrity. By periodically modulating surface charge-transfer doping with polyethyleneimine (PEI) and FeCl 3 , we formed an array of ten p–n pairs that delivered an exceptional thermocouple sensitivity of 452.32 µV K −1 . The device retained ~97.8% of its initial sensitivity after 10,000 bending cycles at a 5-mm radius, confirming robustness under repeated mechanical deformation. When deployed on skin, the sensor tracked dynamic body temperature variations with a measurement error of 0.64%, validating its practical value for real-time, non-invasive health monitoring. These results establish all-carbon GF thermocouples as a high-precision and mechanically adaptable temperature-sensing platform for next-generation wearable electronics and personalized healthcare systems.",
-    "zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：97.8%、0.64%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract High-performance temperature sensors are critical components for emerging Internet-of-Things and biomedical-electronics platforms.",
-    "可用于低离散/装配容差触觉界面的结构与对照设计",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "Abstract High-performance temperature sensors are critical components for emerging Internet-of-Things and biomedical-electronics platforms."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -425,5 +424,20 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41378-026-01412-z",
+    "publisher_url": "https://doi.org/10.1038/s41378-026-01412-z",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41378-026-01412-z.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41378-026-01412-z.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

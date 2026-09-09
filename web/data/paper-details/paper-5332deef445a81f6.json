@@ -35,13 +35,12 @@
   "page_count": 0,
   "abstract": {
     "original": "Electronic skin powered with artificial intelligence could enable next-generation robotic and medical devices, yet integrating multimodal sensors and analyzing heterogeneous, multifrequency time series remain challenging. Most wearable machine learning architectures are time-invariant and trained for a specific task, limiting transfer across modalities and users. We present a multimodal electronic skin that captures diverse physiological signs with an adaptive learning framework that rapidly generalizes to unseen tasks with minimal labeled data. Our streamlined end-to-end framework uses a spectral variational autoencoder to denoise and compress multifrequency biosignals into a shared, unified second-wise latent space that preserves the spectral-temporal structure, followed by a transformer to capture temporal dependencies to support diverse downstream tasks with data-efficient learning. We demonstrate robust adaptation with 94.7% accuracy in activity recognition and 90.2% precision in fatigue assessment across various users and daily activities regardless of device and user variations, highlighting a scalable route to generalized physiological time-series analytics and human performance assessments.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：94.7%、90.2%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Electronic skin powered with artificial intelligence could enable next-generation robotic and medical devices, yet integrating multimodal sensors and analyzing heterogeneous, multifrequency time series remain challenging.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据",
-    "可用于低离散/装配容差触觉界面的结构与对照设计",
-    "涉及 in-sensor/物理计算或可编程触觉前端"
+    "Electronic skin powered with artificial intelligence could enable next-generation robotic and medical devices, yet integrating multimodal sensors and analyzing heterogeneous, multifrequency time series remain challenging."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -59,5 +58,20 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1126/sciadv.aeg5606",
+    "publisher_url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg5606",
+    "candidate_urls": [
+      "https://www.science.org/doi/pdf/10.1126/sciadv.aeg5606"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ]
 }

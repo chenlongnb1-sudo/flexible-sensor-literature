@@ -29,13 +29,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Emerging applications such as brain‐machine interfaces, bio‐compatible prosthetics, and adaptive soft robotics rely on artificial neuromorphic devices that can interface directly with biological systems. To address this need, we demonstrate organic field‐effect transistors (OFETs) doped with a hybrid electrolyte, 1,4‐di‐ tert ‐butylbenzene‐2,5‐bis(1‐propoxy‐3‐sulfonate) lithium salt ( BBOPSO 3 Li ), as novel artificial synaptic devices. Incorporation of BBOPSO 3 Li into poly(3‐hexylthiophene) (P3HT) channels enables precise modulation of shallow trap states through the close energetic alignment of BBOPSO 3 Li with the P3HT HOMO (∼0.1 eV offset), resulting in tunable threshold voltage, controllable hysteresis, and enhanced carrier mobility. Doped devices exhibit outstanding synaptic functions, including excitatory postsynaptic current (EPSC), paired‐pulse facilitation (PPF), and long‐term potentiation–depression (PD) with analog weight updates. An optimal doping level of 0.070 mol% provides the highest excitability, balanced temporal memory characteristics, and the widest conductance window. System‐level validation demonstrated improved classification accuracy (up to 89.8% on MNIST‐like datasets) and robust time‐series prediction in a physical reservoir computing framework, achieving a normalized mean square error of −32 dB. These findings demonstrate that hybrid electrolytes capable of self‐doping can be used to introduce well‐defined, reversible trap states, allowing control of synaptic plasticity and temporal dynamics in OFETs, advancing their potential as efficient neuromorphic computing platforms.",
-    "zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：89.8%、32 dB。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Emerging applications such as brain‐machine interfaces, bio‐compatible prosthetics, and adaptive soft robotics rely on artificial neuromorphic devices that can interface directly with biological systems.",
-    "涉及 in-sensor/物理计算或可编程触觉前端",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "ABSTRACT Emerging applications such as brain‐machine interfaces, bio‐compatible prosthetics, and adaptive soft robotics rely on artificial neuromorphic devices that can interface directly with biological systems."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -53,5 +52,20 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/admt.71212",
+    "publisher_url": "https://doi.org/10.1002/admt.71212",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71212"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

@@ -35,12 +35,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Reliably monitoring epidermal electrophysiological signals with precision is essential for advanced healthcare systems and next‐generation human‐machine interfaces. Although stretchable thin‐film electrodes have shown promise for accurate electrocardiogram signal acquisition, the issue of pressure‐induced drift artifacts remains largely overlooked. We developed a stretchable LM thin‐film electrode integrated with an LM strain sensor to quantitatively investigate the drift artifact alongside skin deformation simultaneously and in situ. While most existing research focuses on strain‐induced drift, our findings reveal that the pressure‐induced drift artifact is more significant in stretchable LM electrodes. This work further emphasizes the limitations of the skin‐electrode impedance model in explaining the pressure‐induced drift, and confirms that its primary origin lies in skin potential change. Based on this, we validated an adaptive filtering method using the noise signal reconstructed from strain sensor data to calibrate pressure‐induced drifts. Compared to traditional static filtering methods, it demonstrates superior performance in suppressing irregular pressure‐induced drift artifacts",
-    "zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Reliably monitoring epidermal electrophysiological signals with precision is essential for advanced healthcare systems and next‐generation human‐machine interfaces.",
-    "可用于低离散/装配容差触觉界面的结构与对照设计",
-    "涉及坏点、漂移、跨器件迁移或少样本校准"
+    "ABSTRACT Reliably monitoring epidermal electrophysiological signals with precision is essential for advanced healthcare systems and next‐generation human‐machine interfaces."
   ],
   "innovation_suggestions": [
     "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
@@ -61,5 +61,19 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/advs.76002",
+    "publisher_url": "https://doi.org/10.1002/advs.76002",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.76002"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ]
 }

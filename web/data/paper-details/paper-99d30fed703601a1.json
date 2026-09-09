@@ -25,12 +25,12 @@
   "page_count": 11,
   "abstract": {
     "original": "Abstract Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets. However, their endurance remains limited, inhibiting their applicability in long-term missions. Perching, the ability to attach to environmental structures and rest with minimal power, offers a solution. Yet existing methods typically rely on bespoke attachment mechanisms tuned to a single, known, and predefined target, as well as vision-based target detection systems, prone to noise and occlusions, forcing reliance on brittle feed-forward control. We introduce a tactile-driven perching strategy for aerial robots that refines pose through touch. The system integrates a compliant anthropomorphic hand with embedded binary tactile sensors, enabling closed-loop alignment and grasp stability assessment through direct physical interaction. In simulation, the method achieves over 99% perching success across diverse geometries and pose errors up to 0.6 m and 50°. Hardware experiments validate robust perching across 26 real-world trials on diverse structures, despite corrupted pose estimates. By embedding tactile feedback into perching, this work advances a new paradigm, enabling micro aerial vehicles to exploit contact as informative feedback rather than relying solely on pre-contact visual estimates, facilitating robust autonomous perching on diverse, previously unseen targets in unstructured environments.",
-    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：99%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets.",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "Abstract Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -741,5 +741,19 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s44182-026-00109-9",
+    "publisher_url": "https://doi.org/10.1038/s44182-026-00109-9",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s44182-026-00109-9.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s44182-026-00109-9.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

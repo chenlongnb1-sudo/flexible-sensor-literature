@@ -33,13 +33,12 @@
   "page_count": 30,
   "abstract": {
     "original": "Abstract Cutaneous electrophysiology is a fundamental non-invasive technique for assessing electrically active organs such as the brain, heart, and muscles. Standard approaches, however, are limited in spatial resolution, reducing sensitivity to certain pathological features. The development of body surface potential mapping using electrode arrays has helped overcome these limitations, enhancing the diagnostic power of cutaneous recordings, yet clinical adoption remains constrained by challenges in electrode performance, wiring complexity, wearability, data transmission, and interpretability. Here, we present a hybrid e-textile electrode array system that overcomes these barriers, enabling simultaneous mapping of electrical activity along the cortico-muscular axis. The system combines application-specific conducting polymer coatings to improve electrode performance, a flexible fabrication process for robust connectivity and wearability, and interpretable machine learning algorithms for data analysis. In controlled single-subject experiments, we demonstrate reliable muscle and brain recordings, enabling classification of grasped object shapes and somatosensory stimuli. Simultaneous multi-site recordings along the cortico-muscular axis provide spatial maps of reaction time distributions and allow prediction of muscle activation patterns from cortical activity. This platform establishes a framework for wearable, multi-modal electrophysiological mapping and non-invasive study of cortico-muscular dynamics, representing a step towards practical brain–body interfaces with applications in neurorehabilitation, prosthetics, and human–machine interaction.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract Cutaneous electrophysiology is a fundamental non-invasive technique for assessing electrically active organs such as the brain, heart, and muscles.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据",
-    "可用于低离散/装配容差触觉界面的结构与对照设计",
-    "涉及坏点、漂移、跨器件迁移或少样本校准"
+    "Abstract Cutaneous electrophysiology is a fundamental non-invasive technique for assessing electrically active organs such as the brain, heart, and muscles."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -1253,5 +1252,18 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41467-026-75134-1",
+    "publisher_url": "https://doi.org/10.1038/s41467-026-75134-1",
+    "candidate_urls": [],
+    "successful_url": "https://www.nature.com/articles/s41467-026-75134-1_reference.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ]
 }

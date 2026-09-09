@@ -29,12 +29,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Flexible force sensors rely on soft elastomers and stretchable conductors to conform to curved surfaces and convert mechanical loads into electrical signals. However, the intrinsically nonlinear and coupled mechanical responses of soft materials make it difficult to simultaneously achieve high sensitivity, broad dynamic range, and long‐term stability. In this Review, microstructural architecture is identified as a primary design variable governing force‐to‐electrical transduction beyond material composition alone. A unified structural framework is established to connect uniaxial force sensing and triaxial force sensing through the deliberate regulation of deformation modes and load‐transfer pathways. Porous, micropatterned, and hierarchical structures are examined for their roles in amplifying and stabilizing pressure‐induced responses in uniaxial sensing, whereas distributed arrays and multilayer heterogeneous designs are analyzed for their abilities to enable directional discrimination, signal reconstruction, and normal–shear force decoupling in triaxial sensing. By comparing structure‐mediated behaviors across major transduction mechanisms, general design principles are identified for improving sensitivity, linearity, and force decoupling, while the growing integration of structural engineering with data‐driven signal reconstruction is also highlighted. This perspective provides a rational foundation for the design of next‐generation wearable electronics and robotic tactile systems.",
-    "zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Flexible force sensors rely on soft elastomers and stretchable conductors to conform to curved surfaces and convert mechanical loads into electrical signals.",
-    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "ABSTRACT Flexible force sensors rely on soft elastomers and stretchable conductors to conform to curved surfaces and convert mechanical loads into electrical signals."
   ],
   "innovation_suggestions": [
     "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。",
@@ -57,5 +57,19 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/smll.75254",
+    "publisher_url": "https://doi.org/10.1002/smll.75254",
+    "candidate_urls": [
+      "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.75254"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

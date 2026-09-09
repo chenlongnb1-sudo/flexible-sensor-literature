@@ -447,7 +447,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "Abstract Tactile sensing can provide a critical function in advanced interactive systems by emulating the human sense of touch to detect stimuli.",
-      "summary_zh": "该工作提出一种无标记的视觉触觉传感器：在透明 PDMS/石墨-PDMS 双层弹性体中加工十字微沟槽，用受压后透光图案的变化在器件端放大接触特征，再由轻量卷积网络同时反演接触位置、法向位移和力。系统使用商用摄像头，可检测低于 5 mN 的力并达到毫米级单点空间分辨率；仅使用一层卷积的模型即可将平均绝对误差控制在 0.05 mm 以下。其核心不是单独提高材料灵敏度，而是通过微结构与算法协同设计降低后端特征提取负担。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performance while reducing computational load.",
       "key_metrics": [
         "5 mN",
@@ -470,7 +470,21 @@
       "pdf_version_label": "出版社开放获取 PDF",
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-8dd8aa82559e2447",
-      "detail_json": "data/paper-details/paper-8dd8aa82559e2447.json"
+      "detail_json": "data/paper-details/paper-8dd8aa82559e2447.json",
+      "abstract_original": "Abstract Tactile sensing can provide a critical function in advanced interactive systems by emulating the human sense of touch to detect stimuli. Vision-based tactile sensors are promising for providing multimodal capabilities and high robustness, yet existing technologies still have limitations in sensitivity, spatial resolution and the high computational demands of deep learning-based image processing. This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performance while reducing computational load. Without traditional tracking markers, our sensor incorporates a surface with micromachined trenches, as an example of microstructures which can modulate light transmission and amplify the visual response to applied force. The amplified image features can be extracted by an ultra-lightweight convolutional neural network to accurately infer contact location, displacement, and applied force with high precision. Through theoretical analysis, we demonstrate that the micro trenches significantly amplify the visual effects of surface deformation. Using only a commercial webcam, the sensor system effectively detected forces below 5 mN and achieved a millimetre-level single-point spatial resolution. Using a model with only one convolutional layer, a mean absolute error below 0.05 mm was achieved. The compliant sensor body and optical readout design make the system inherently compatible with soft robotic integration and immune to electrical crosstalk or electromagnetic interference that often affects electronic tactile arrays. These characteristics highlight its potential for reliable operation in complex human–machine environments.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1038/s41378-026-01355-5",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s41378-026-01355-5",
+        "publisher_url": "https://doi.org/10.1038/s41378-026-01355-5",
+        "candidate_urls": [
+          "https://www.nature.com/articles/s41378-026-01355-5.pdf"
+        ],
+        "successful_url": "https://www.nature.com/articles/s41378-026-01355-5.pdf",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-711d36cffdfeb77e",
@@ -514,7 +528,7 @@
         "涉及 in-sensor/物理计算或可编程触觉前端"
       ],
       "core_claim": "ABSTRACT Triboelectric nanogenerators provide a direct electrical interface to mechanical stimuli, yet most triboelectric–neuromorphic integrations rely on volatile conductance modulation or indirect capacitive coupling, limiting memory‐assisted tactile perception.",
-      "summary_zh": "该工作用摩擦电接触-分离产生的脉冲直接编程 MoS2/HfO2/PbZr0.3Ti0.7O3 铁电晶体管。整流后的摩擦电脉冲触发铁电极化切换，并与 HfO2 电荷俘获共同形成随刺激历史累积的电导状态，因此无需外部信号放大或连续波形处理即可把重复机械输入编码为模拟记忆。作者进一步建立力-频率-电导映射和参考电流窗口，用累积状态而非瞬时信号区分触觉条件，并把实验参数化编码框架扩展到心电信号分类。当前结论来自摘要级核验，尚未获得合法开放全文。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "By constructing a force–frequency‐dependent conductance map and defining a reference current window, tactile conditions are encoded into stable state regimes, allowing threshold‐based discrimination based on accumulated device states rather than instantaneous signals.",
       "key_metrics": [],
       "transferable_points": [
@@ -531,7 +545,21 @@
       "verification_status": "abstract_agent_curated",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-711d36cffdfeb77e",
-      "detail_json": "data/paper-details/paper-711d36cffdfeb77e.json"
+      "detail_json": "data/paper-details/paper-711d36cffdfeb77e.json",
+      "abstract_original": "ABSTRACT Triboelectric nanogenerators provide a direct electrical interface to mechanical stimuli, yet most triboelectric–neuromorphic integrations rely on volatile conductance modulation or indirect capacitive coupling, limiting memory‐assisted tactile perception. Here, we demonstrate direct triboelectric programming of a MoS 2 /HfO 2 /PbZr 0.3 Ti 0.7 O 3 ferroelectric transistor, where rectified triboelectric pulses are coupled to ferroelectric switching to realize cumulative conductance modulation. The spike‐like outputs generated by mechanical contact–separation are translated into history‐dependent conductance evolution through polarization‐controlled electrostatic modulation in PbZr 0.3 Ti 0.7 O 3 assisted by charge trapping in HfO 2 . Systematic correlation between triboelectric pulse amplitude, repetition frequency, and channel conductance reveals that repetitive mechanical inputs progressively accumulate polarization‐mediated states without external signal amplification or continuous waveform processing. The device exhibits fundamental synaptic characteristics under electrical stimulation, while triboelectrically generated inputs enable cumulative tactile programming. By constructing a force–frequency‐dependent conductance map and defining a reference current window, tactile conditions are encoded into stable state regimes, allowing threshold‐based discrimination based on accumulated device states rather than instantaneous signals. Furthermore, the experimentally parameterized encoding framework is extended to electrocardiogram signal classification, demonstrating its capability to transform temporal bio‐signals into device‐relevant conductance features for neuromorphic signal processing. These results establish a physics‐grounded route for analog memory‐assisted tactile state encoding in neuromorphic sensory systems.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/smll.74524",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/smll.74524",
+        "publisher_url": "https://doi.org/10.1002/smll.74524",
+        "candidate_urls": [
+          "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smll.74524"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-c842b9e77db14c23",
@@ -585,7 +613,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "Robots are the intelligent systems that connect sensors and actuators.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Based on fluid transduction, ME-SOFS converts applied force into mechanical output for fluidic actuators.",
       "key_metrics": [],
       "transferable_points": [
@@ -604,7 +632,19 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-c842b9e77db14c23",
-      "detail_json": "data/paper-details/paper-c842b9e77db14c23.json"
+      "detail_json": "data/paper-details/paper-c842b9e77db14c23.json",
+      "abstract_original": "Robots are the intelligent systems that connect sensors and actuators. Many sensorimotor architectures use close-loop control codes that arbitrate sensing signals, entailing processing modules. Reactive architectures minimize computational demands by establishing direct sensor-actuator connections and have proven to be effective and robust. Here, we introduce a mechanical analogy of such reactive systems: a fluidic-based multiaxis mechanical soft force sensor (ME-SOFS) that directly couples sensory signals with fluidic actuation, eliminating the need for external computation or energy input. The ME-SOFS can be easily reconfigured and integrated to endow robots with somatosensory multiaxis force sensing capabilities. Based on fluid transduction, ME-SOFS converts applied force into mechanical output for fluidic actuators. We demonstrate this sensing-actuation loop in three scenarios: directional droplet manipulation, unified bending of cilia-like array guided by detected force vectors, and haptic feedback system that accelerates robotic grasping learning. ME-SOFSs demonstrate how fluidic approach can realize multiaxis force sensing for soft robots, and enable simplified, closed sensing-actuation loops and haptic human-machine interfaces.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1126/sciadv.aeb8052",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1126/sciadv.aeb8052",
+        "publisher_url": "https://doi.org/10.1126/sciadv.aeb8052",
+        "candidate_urls": [],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-eb9282b5c24ccb1c",
@@ -660,7 +700,7 @@
         "涉及 in-sensor/物理计算或可编程触觉前端"
       ],
       "core_claim": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：6414 kPa、800 kPa、3.4 Pa、30 ms。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span.",
       "key_metrics": [
         "6414 kPa",
@@ -685,7 +725,21 @@
       "pdf_version_label": "作者或机构仓储合法公开版本",
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-eb9282b5c24ccb1c",
-      "detail_json": "data/paper-details/paper-eb9282b5c24ccb1c.json"
+      "detail_json": "data/paper-details/paper-eb9282b5c24ccb1c.json",
+      "abstract_original": "Abstract Achieving flexible pressure sensors that simultaneously combine ultra-high sensitivity, ultra-broad detection range, and low detection limit remains a major challenge due to the intrinsic trade-off between signal sensitivity and working span. Here, we demonstrate a femtosecond laser engraving approach that directly constructs programmable hybrid micro/nanostructures on metallic electrodes in a single, mask-free step. This top-down laser patterning process produces dual-scale micro/nanostructures, significantly expanding the interfacial coupling region and enhancing sensor performance. The resulting iontronic pressure sensors exhibit extreme capabilities, characterized by a maximum sensitivity reaching 6414 kPa -1 , a wide sensing range up to 800 kPa, a low detection threshold of 3.4 Pa, rapid signal response (~30 ms), and excellent cycling stability. For demonstration, the sensors were integrated into a wearable multi-octave glove system, validating their robustness in multifunctional pressure recognition. This work highlights the femtosecond laser-based approach as an efficient and scalable manufacturing method for tunable, hybrid micro/nanostructures, opening new opportunities for advanced electronic skins, intelligent robotics, and human-machine interfaces.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1088/2631-7990/ae83ec",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1088/2631-7990/ae83ec",
+        "publisher_url": "https://doi.org/10.1088/2631-7990/ae83ec",
+        "candidate_urls": [
+          "https://iopscience.iop.org/article/10.1088/2631-7990/ae83ec/pdf"
+        ],
+        "successful_url": "https://iopscience.iop.org/article/10.1088/2631-7990/ae83ec/pdf",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-dc68dea1322aea5f",
@@ -736,7 +790,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions.",
-      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptable to body-interfaced formats.",
       "key_metrics": [],
       "transferable_points": [
@@ -757,7 +811,21 @@
       "pdf_version_label": "出版社开放获取 PDF",
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-dc68dea1322aea5f",
-      "detail_json": "data/paper-details/paper-dc68dea1322aea5f.json"
+      "detail_json": "data/paper-details/paper-dc68dea1322aea5f.json",
+      "abstract_original": "As intelligent electronics become increasingly integrated into daily life, health care, virtual interaction, and assistive systems, human-machine interfaces (HMIs) require sensing platforms that are not only wearable and self-powered but also capable of translating human signals into adaptive machine functions. Triboelectric wearable sensors are particularly attractive in this regard because they directly transduce human-generated mechanical stimuli, provide broad material and structural design freedom, and are readily adaptable to body-interfaced formats. In this review, wearability refers to body-mounted, skin-interfaced, textile-integrated, or otherwise human-attached triboelectric sensing platforms, whereas human-centric smart electronics refers to downstream electronic systems that remain functionally anchored to human-originated sensing, interpretation, feedback, or control. From this perspective, we review triboelectric wearable sensors from fundamentals to applications, covering working principles, material selection, device architectures, and fabrication strategies. We further discuss artificial intelligence-assisted signal processing, triboelectric artificial synapses, and neuromorphic computing as key bridges from self-powered sensing to intelligent HMI. Representative application spaces, including health care, gesture recognition, device control, immersive virtual interaction, wearable-to-robotic extensions, and intelligent transportation are discussed only when wearable triboelectric sensing serves as the primary human-input interface. Finally, the remaining challenges and future directions toward next-generation human-centric smart electronics are outlined.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1007/s40820-026-02263-z",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1007/s40820-026-02263-z",
+        "publisher_url": "https://doi.org/10.1007/s40820-026-02263-z",
+        "candidate_urls": [
+          "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf"
+        ],
+        "successful_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02263-z.pdf",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-48fe6ed38346090c",
@@ -808,7 +876,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "Abstract The intelligent soft robotic gripper integrated with tactile sensors significantly enhances the robot’s execution capabilities in complex tasks, resolving critical shortcomings of traditional mechanical grippers—namely, fragile item breakage from rigid impacts, irregular object slippage, and inefficiency due to recognition errors.",
-      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：0.273%、0.843%、1.064%、97%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Herein, we present a soft robotic gripper integrated with slender elastic optical waveguide sensors (EOWS) and equipped with a closed-loop feedback control module to achieve intelligent grasping and object attribute recognition.",
       "key_metrics": [
         "0.273%",
@@ -834,7 +902,21 @@
       "pdf_version_label": "出版社开放获取 PDF",
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-48fe6ed38346090c",
-      "detail_json": "data/paper-details/paper-48fe6ed38346090c.json"
+      "detail_json": "data/paper-details/paper-48fe6ed38346090c.json",
+      "abstract_original": "Abstract The intelligent soft robotic gripper integrated with tactile sensors significantly enhances the robot’s execution capabilities in complex tasks, resolving critical shortcomings of traditional mechanical grippers—namely, fragile item breakage from rigid impacts, irregular object slippage, and inefficiency due to recognition errors. While electrical sensors (e.g ., piezoresistive, capacitive) struggle with structural complexity, signal crosstalk, and environmental interference, optical waveguide tactile sensing offers superior sensitivity, rapid dynamics, and electromagnetic immunity. However, existing waveguide tactile systems face two key limitations: millimeter-scale waveguides cause beam divergence, limiting deformation sensitivity and complicating heterogeneous integration. Additionally, critical gaps remain in adaptive grasping control and contextual object recognition during manipulation. Herein, we present a soft robotic gripper integrated with slender elastic optical waveguide sensors (EOWS) and equipped with a closed-loop feedback control module to achieve intelligent grasping and object attribute recognition. The hand comprises three flexible silicone fingers, each finger seamlessly integrates three EOWS for multi-modal tactile sensing. These sensors exhibit high sensitivity to bending angle (0.273%/°), contact force (0.843%/N), and pressure (1.064%/N). Furthermore, a PID adaptive grasping control strategy and a long short-term memory (LSTM) deep learning algorithm are introduced to dynamically adjust the grasping force and intelligently recognize object attributes such as shape, size, and hardness, with accuracies exceeding 97% for each attribute. Ultimately, experimental validation via a smart fruit-sorting system highlights the platform’s potential for precision agriculture, intelligent logistics, and medical robotics, demonstrating robust, adaptive manipulation in real-world applications.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1038/s41378-026-01364-4",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s41378-026-01364-4",
+        "publisher_url": "https://doi.org/10.1038/s41378-026-01364-4",
+        "candidate_urls": [
+          "https://www.nature.com/articles/s41378-026-01364-4.pdf"
+        ],
+        "successful_url": "https://www.nature.com/articles/s41378-026-01364-4.pdf",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-39f3c43900fde1b0",
@@ -883,7 +965,7 @@
         "涉及 in-sensor/物理计算或可编程触觉前端"
       ],
       "core_claim": "Restoring tactile feedback that can be delivered through selective neural interfaces is essential for prosthetic embodiment.",
-      "summary_zh": "该工作构建仿生三维触觉前端，把皮肤式机械交互转换为可用于神经接口的选择性刺激模式。系统在可调顺应性的 PDMS 人工皮肤中嵌入慢适应（SA）和快适应（FA）通道：MWCNT-PDMS 压阻复合材料提供持续压力响应，BaTiO3-PDMS 摩擦电复合材料提供瞬态动态事件响应；随后用神经形态编码把模拟输出转换为类感受器电位波形和动作电位脉冲序列。传感单元尺寸、占地和埋入深度用于形成不同感受野，在大鼠坐骨神经刺激实验中，按压与敲击编码引起可区分的胫骨前肌和腓肠肌 EMG 响应。当前结论来自摘要级核验，尚未获得合法开放全文。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "This study presents a biomimetic 3D tactile sensor system designed to convert skin‐like mechanical interactions into functionally selective neural stimulation patterns at the fascicle level.",
       "key_metrics": [],
       "transferable_points": [
@@ -900,7 +982,21 @@
       "verification_status": "abstract_agent_curated",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-39f3c43900fde1b0",
-      "detail_json": "data/paper-details/paper-39f3c43900fde1b0.json"
+      "detail_json": "data/paper-details/paper-39f3c43900fde1b0.json",
+      "abstract_original": "Restoring tactile feedback that can be delivered through selective neural interfaces is essential for prosthetic embodiment. This study presents a biomimetic 3D tactile sensor system designed to convert skin‐like mechanical interactions into functionally selective neural stimulation patterns at the fascicle level. The system integrates a polydimethylsiloxane (PDMS)‐based artificial skin layer with tunable mechanical compliance, embedded slow‐adapting (SA) and fast‐adapting (FA) sensor channels, and a neuromorphic encoding framework that transforms analog sensor outputs into receptor‐potential‐like waveforms and action potential spike trains. MWCNT‐PDMS piezoresistive composites provide sustained pressure‐sensitive SA outputs, whereas BaTiO 3 ‐PDMS triboelectric composites provide transient dynamic‐event‐sensitive FA outputs. The size, footprint, and embedding depth of the sensors were selected to generate distinct receptive‐field‐inspired response profiles within the 3D skin matrix. In vivo validation using rat sciatic nerve stimulation showed that encoded pressing and tapping patterns elicited distinguishable electromyographic (EMG) responses in the tibialis anterior (TA) and gastrocnemius (GC) muscles. These results support the feasibility of a functionally selective biomimetic tactile front‐end for future closed‐loop neuroprosthetic feedback, while further device‐level durability, frequency‐response characterization, and real‐time integration remain necessary for clinical translation.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/aisy.70458",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/aisy.70458",
+        "publisher_url": "https://doi.org/10.1002/aisy.70458",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.70458"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-565e82a0af3dbad3",
@@ -949,7 +1045,7 @@
         "可用于低离散/装配容差触觉界面的结构与对照设计"
       ],
       "core_claim": "ABSTRACT Reproducing realistic tactile sensations is critical for intuitive and immersive human–machine interaction in bio‐mechatronic systems.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：81.7%、72%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we present a stimulus‐replicating system that translates real‐world tactile events into biomimetic sensations.",
       "key_metrics": [
         "81.7%",
@@ -969,7 +1065,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-565e82a0af3dbad3",
-      "detail_json": "data/paper-details/paper-565e82a0af3dbad3.json"
+      "detail_json": "data/paper-details/paper-565e82a0af3dbad3.json",
+      "abstract_original": "ABSTRACT Reproducing realistic tactile sensations is critical for intuitive and immersive human–machine interaction in bio‐mechatronic systems. Here, we present a stimulus‐replicating system that translates real‐world tactile events into biomimetic sensations. The system couples a self‐powered, multimodal tactile sensor—detecting dynamic/static pressure and temperature via hybrid triboelectric and ionic mechanisms—with a wearable stimulator. The stimulator features a co‐located Peltier‐based thermotactile module and a concentric poly(2,3‐diydrothieno‐1,4‐dioxin)‐poly(styrenesulfonate)/polyurethane electrotactile electrode, optimized through Multiphysics simulations for spatially focused receptor activation. This integrated architecture, stabilized by aluminum nitride/polydimethylsiloxane encapsulation and acrylate‐based pressure‐sensitive adhesion, faithfully reproduces sensed mechano‐thermal signatures on the user's skin. Psychophysical tests further show high accuracy in discriminating pressure, temperature, and softness: 81.7% accuracy in discriminating pressure and softness via electrotactile stimulation and 72% accuracy in discriminating temperature via thermotactile stimulation. By moving beyond predefined haptics, our framework establishes a new approach to biomimetic sensation delivery. This technology holds significant promise for applications requiring high‐fidelity tactile replication, including smart prosthetics and tele‐haptics.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.76616",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.76616",
+        "publisher_url": "https://doi.org/10.1002/advs.76616",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.76616"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-4889cddc418c8a51",
@@ -1016,7 +1126,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "High-resolution, real-time tactile sensing is essential for robotic tasks that demand accurate, dynamic detection of contact morphology and pressure distribution, such as grasping and manipulation of delicate, slippery, or irregularly shaped objects.",
-      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Finer resolutions can be achieved with vision-based tactile sensors using just a camera, although the computation required to transform raw images into three-dimensional contact maps inherently introduces latency.",
       "key_metrics": [],
       "transferable_points": [
@@ -1034,7 +1144,19 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-4889cddc418c8a51",
-      "detail_json": "data/paper-details/paper-4889cddc418c8a51.json"
+      "detail_json": "data/paper-details/paper-4889cddc418c8a51.json",
+      "abstract_original": "High-resolution, real-time tactile sensing is essential for robotic tasks that demand accurate, dynamic detection of contact morphology and pressure distribution, such as grasping and manipulation of delicate, slippery, or irregularly shaped objects. Existing technologies, however, face a fundamental trade-off between spatial resolution and response speed. Taxel-based sensors (e.g., capacitive, resistive, or piezoelectric) operate in real time but are intrinsically limited in resolution by taxel size, spacing, wiring, and cross-talk; even deep learning–based tactile super-resolutions rarely surpass ∼1 millimeter. Finer resolutions can be achieved with vision-based tactile sensors using just a camera, although the computation required to transform raw images into three-dimensional contact maps inherently introduces latency. Here, we present mechanochromic tactile sensors that directly encode mechanical strain into spatially resolved structural colors, enabling vision-based tactile sensing with an unprecedented combination of high resolution, real-time operation, and intrinsic simplicity. The devices consist of a stretchable mechanochromic Bragg reflector embedded between two soft silicone layers, whose thickness can be tailored to precisely map contact pressure or strain. As an example, we present topological maps of a fingertip, a one-penny coin, and a leaf, with ∼100 micrometer resolution. In comparison to the most performing vision-based tactile sensors, this was achieved without requiring any deep learning–based data enhancement and without introducing any computational latency. The straightforward applicability of this mechanochromic strategy to enhance vision-based tactile sensing in a simple yet powerful way underscores its transformative potential for uses as diverse as robotic gripping and handling, tactile product inspection, and enhanced human-robot interaction.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1126/sciadv.aee5236",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1126/sciadv.aee5236",
+        "publisher_url": "https://doi.org/10.1126/sciadv.aee5236",
+        "candidate_urls": [],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-0c5f2da57f8cc2e5",
@@ -1090,7 +1212,7 @@
         "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出"
       ],
       "core_claim": "Iontronic tactile sensors intrinsically respond to both thermal and mechanical stimuli and hold promise for skin-like multimodal tactile sensing owing to their sensitive response.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。摘要可核实数值包括：99.4%、96.4%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Based on these insights, a thermal‒mechanical decoupling method is proposed.",
       "key_metrics": [
         "99.4%",
@@ -1113,7 +1235,22 @@
       "pdf_version_label": "出版社开放获取 PDF",
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-0c5f2da57f8cc2e5",
-      "detail_json": "data/paper-details/paper-0c5f2da57f8cc2e5.json"
+      "detail_json": "data/paper-details/paper-0c5f2da57f8cc2e5.json",
+      "abstract_original": "Iontronic tactile sensors intrinsically respond to both thermal and mechanical stimuli and hold promise for skin-like multimodal tactile sensing owing to their sensitive response. However, the decoupling of temperature and pressure remains elusive due to an unclear understanding of the thermal‒mechanical‒coupled impedance characteristics, which hinders accurate pressure measurement under temperature fluctuations and limits the practical use of iontronic tactile sensors. This study elucidates the thermal-mechanical impedance characteristics of iontronic tactile sensors, by resolving nine impedance elements associated with sensor structure and ion migration pattern. Based on these insights, a thermal‒mechanical decoupling method is proposed. A temperature‒pressure linear relationship behind the impedance responses uncovers the intrinsic decoupling signatures: the pressure-insensitive root and the temperature-insensitive capacitance variation. These signatures enable high-accuracy decoupling with 99.4% for temperature and 96.4% for pressure, allowing the acquisition of temperature‒pressure distributions using tactile sensing arrays. The study lays a mechanistic foundation for iontronic sensors, opening a pathway for integrating additional modalities, such as strain and humidity, into iontronic tactile sensors.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1038/s41528-026-00604-x",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s41528-026-00604-x",
+        "publisher_url": "https://doi.org/10.1038/s41528-026-00604-x",
+        "candidate_urls": [
+          "https://www.nature.com/articles/s41528-026-00604-x_reference.pdf",
+          "https://www.nature.com/articles/s41528-026-00604-x.pdf"
+        ],
+        "successful_url": "https://www.nature.com/articles/s41528-026-00604-x.pdf",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-05d5aeb0daab20c5",
@@ -1164,7 +1301,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "Abstract This work introduces a novel electronic yarn (E-yarn) capable of delivering controlled vibrotactile feedback, offering a seamless haptic integration technique into wearable textiles.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：5%、40%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "By embedding miniature vibrotactile motors at the yarn level and employing robust encapsulation techniques, the design ensures durability and compatibility with everyday wear.",
       "key_metrics": [
         "5%",
@@ -1185,7 +1322,19 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-05d5aeb0daab20c5",
-      "detail_json": "data/paper-details/paper-05d5aeb0daab20c5.json"
+      "detail_json": "data/paper-details/paper-05d5aeb0daab20c5.json",
+      "abstract_original": "Abstract This work introduces a novel electronic yarn (E-yarn) capable of delivering controlled vibrotactile feedback, offering a seamless haptic integration technique into wearable textiles. By embedding miniature vibrotactile motors at the yarn level and employing robust encapsulation techniques, the design ensures durability and compatibility with everyday wear. Prototypes, including a knitted glove incorporating these haptic E-yarns, demonstrated sustained functionality over 20 wash cycles with minimal resistance change ( −2 , with only 1–5% frequency variation and up to 40% amplitude increase post-integration to wearables. This technology enables reliable haptic feedback within textiles, paving the way for future applications in assistive communication and interactive wearables.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1038/s41528-026-00613-w",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s41528-026-00613-w",
+        "publisher_url": "https://doi.org/10.1038/s41528-026-00613-w",
+        "candidate_urls": [],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-187f12b75df95d73",
@@ -1235,7 +1384,7 @@
         "涉及低冗余阵列、空间特征或读出通道压缩"
       ],
       "core_claim": "当前仅获得题录信息，需要打开 DOI/原文核实机制、实验和性能指标。",
-      "summary_zh": "涉及低冗余阵列、空间特征或读出通道压缩。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "当前题录没有摘要，需打开原文核实方法。",
       "key_metrics": [],
       "transferable_points": [
@@ -1251,7 +1400,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-187f12b75df95d73",
-      "detail_json": "data/paper-details/paper-187f12b75df95d73.json"
+      "detail_json": "data/paper-details/paper-187f12b75df95d73.json",
+      "abstract_original": "",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "missing_source_abstract",
+      "abstract_source": "https://doi.org/10.1007/s42765-026-00745-8",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1007/s42765-026-00745-8",
+        "publisher_url": "https://doi.org/10.1007/s42765-026-00745-8",
+        "candidate_urls": [
+          "https://link.springer.com/content/pdf/10.1007/s42765-026-00745-8.pdf"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-d80ad861acb33148",
@@ -1302,7 +1465,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "Grasping objects such as handles, mice, and phones plays a central role in human-machine interaction, yet the contact surfaces of the hand, despite their exquisite tactile sensitivity, are rarely exploited as channels for information transfer.",
-      "summary_zh": "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：30%、80%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we introduce transdermal all-directional targeting (TADT), a static-contact interface design strategy that converts passive grip surfaces into active tactile displays, allowing users to grasp stably while receiving spatially and temporally evolving information on the fingertips.",
       "key_metrics": [
         "30%",
@@ -1323,7 +1486,19 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-d80ad861acb33148",
-      "detail_json": "data/paper-details/paper-d80ad861acb33148.json"
+      "detail_json": "data/paper-details/paper-d80ad861acb33148.json",
+      "abstract_original": "Grasping objects such as handles, mice, and phones plays a central role in human-machine interaction, yet the contact surfaces of the hand, despite their exquisite tactile sensitivity, are rarely exploited as channels for information transfer. Here, we introduce transdermal all-directional targeting (TADT), a static-contact interface design strategy that converts passive grip surfaces into active tactile displays, allowing users to grasp stably while receiving spatially and temporally evolving information on the fingertips. TADT enhances sub-actuator-pitch energy delivery by integrating a microtextured skin-coupling interface with phase-controlled vibrotactile actuation, thereby generating steerable three-dimensional tactile foci beneath the skin, enabling >200-hertz vibration and sub-actuator-pitch spatial super-resolution. Psychophysical experiments show that TADT lowers detection thresholds by 30% and reduces power consumption by 80% compared with designs without TADT. Using static grip alone, users reliably identified six directional cues and completed nonvisual indoor navigation and virtual reality interaction tasks, demonstrating a compact, energy-efficient modality for expressive tactile communication.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1126/sciadv.aef2372",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1126/sciadv.aef2372",
+        "publisher_url": "https://doi.org/10.1126/sciadv.aef2372",
+        "candidate_urls": [],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-1982b1cc702fc77e",
@@ -1371,7 +1546,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "Abstract Brain-computer interfaces (BCIs) promise to extend human movement capabilities by enabling direct neural control of supernumerary effectors, yet integrating augmented commands with multiple degrees of freedom without disrupting natural movement remains a key challenge.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we propose a tactile-encoded BCI that leverages sensory afferents through a tactile-evoked P300 paradigm, allowing reliable decoding of supernumerary motor intentions even when superimposed with voluntary actions.",
       "key_metrics": [],
       "transferable_points": [
@@ -1389,7 +1564,19 @@
       "pdf_version_label": "出版社开放获取 PDF",
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-1982b1cc702fc77e",
-      "detail_json": "data/paper-details/paper-1982b1cc702fc77e.json"
+      "detail_json": "data/paper-details/paper-1982b1cc702fc77e.json",
+      "abstract_original": "Abstract Brain-computer interfaces (BCIs) promise to extend human movement capabilities by enabling direct neural control of supernumerary effectors, yet integrating augmented commands with multiple degrees of freedom without disrupting natural movement remains a key challenge. Here, we propose a tactile-encoded BCI that leverages sensory afferents through a tactile-evoked P300 paradigm, allowing reliable decoding of supernumerary motor intentions even when superimposed with voluntary actions. The interface was evaluated in a multi-day experiment comprising a single motor recognition task to validate baseline BCI performance and a dual-task paradigm to assess the potential influence between the BCI and natural human movement. The interface achieved real-time and reliable decoding of four supernumerary degrees of freedom, with significant performance improvements after three days of training. After training, performance did not differ significantly between the single-task and dual-task conditions, and natural movement remained unimpaired during concurrent supernumerary control. Lastly, the interface was deployed in a movement augmentation task, demonstrating its ability to command two supernumerary robotic arms for functional assistance during bimanual tasks. These results establish a neural interface paradigm for movement augmentation through stimulation of sensory afferents, expanding motor degrees of freedom without impairing natural movement.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1038/s41467-026-75213-3",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s41467-026-75213-3",
+        "publisher_url": "https://doi.org/10.1038/s41467-026-75213-3",
+        "candidate_urls": [],
+        "successful_url": "https://www.nature.com/articles/s41467-026-75213-3_reference.pdf",
+        "failure_reasons": []
+      }
     }
   ],
   "generated_ideas": [

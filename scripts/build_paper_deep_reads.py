@@ -405,9 +405,11 @@ def paper_markdown(detail: dict[str, Any], method_blocks: list[dict[str, Any]]) 
         "",
         "## 摘要与研究价值",
         "",
-        f"**Original:** {detail['abstract']['original'] or 'PDF/题录未提供摘要。'}",
+        f"**原文摘要:** {detail['abstract']['original'] or 'PDF/题录未提供摘要。'}",
         "",
-        f"**中文:** {detail['abstract']['zh'] or '等待智能体精读补充。'}",
+        f"**中文直译:** {detail['abstract'].get('translation_zh') or '等待智能体翻译补充。'}",
+        "",
+        f"**中文总结:** {detail['abstract'].get('summary_zh') or '等待智能体基于原文摘要总结。'}",
         "",
         "## 创新点",
         "",
@@ -476,7 +478,16 @@ def apply_curation(detail: dict[str, Any], detail_root: Path) -> dict[str, Any]:
         if curation.get(field):
             detail[field] = curation[field]
     if curation.get("abstract_zh"):
+        detail["abstract"]["translation_zh"] = curation["abstract_zh"]
         detail["abstract"]["zh"] = curation["abstract_zh"]
+    if curation.get("abstract_translation_zh"):
+        detail["abstract"]["translation_zh"] = curation["abstract_translation_zh"]
+        detail["abstract"]["zh"] = curation["abstract_translation_zh"]
+    if curation.get("abstract_summary_zh"):
+        detail["abstract"]["summary_zh"] = curation["abstract_summary_zh"]
+        detail["abstract_summary_zh"] = curation["abstract_summary_zh"]
+    if curation.get("source_access_notes"):
+        detail["source_access_notes"] = curation["source_access_notes"]
     step_overrides = {
         int(item["step"]): item for item in curation.get("preparation_steps", []) if item.get("step")
     }
@@ -524,15 +535,20 @@ def build_metadata_only(paper: dict[str, Any], day_dir: Path) -> dict[str, Any]:
         "page_count": 0,
         "abstract": {
             "original": paper.get("source_abstract", ""),
-            "zh": paper.get("summary_zh", ""),
+            "translation_zh": paper.get("abstract_translation_zh", ""),
+            "summary_zh": paper.get("abstract_summary_zh", "") or "待基于原文摘要生成中文总结。",
+            "zh": paper.get("abstract_translation_zh", ""),
         },
-        "innovation_points": [paper.get("core_claim", ""), *paper.get("relevance_reasons", [])],
+        "innovation_points": [paper.get("core_claim", "")] if paper.get("core_claim") else [],
+        "relevance_reasons": paper.get("relevance_reasons", []),
         "innovation_suggestions": paper.get("innovation_suggestions", []),
         "inspirations": paper.get("transferable_points", []),
         "preparation_steps": [],
         "method_blocks": [],
         "figures": [],
         "original_pdf": "",
+        "source_access": paper.get("source_access", {}),
+        "source_access_notes": paper.get("source_access_notes", ""),
         "reader_markdown": str((detail_root / "paper.md").relative_to(ROOT)).replace("\\", "/"),
         "source_map": "",
         "notes": [
@@ -542,7 +558,10 @@ def build_metadata_only(paper: dict[str, Any], day_dir: Path) -> dict[str, Any]:
     }
     apply_curation(detail, detail_root)
     if detail.get("curation_status", "").startswith("agent_reviewed"):
-        paper["summary_zh"] = detail["abstract"]["zh"]
+        paper["abstract_translation_zh"] = detail["abstract"].get("translation_zh", "")
+        paper["abstract_summary_zh"] = detail["abstract"].get("summary_zh", "")
+        paper["summary_zh"] = paper["abstract_summary_zh"]
+        paper["abstract_translation_status"] = "agent_reviewed"
         paper["verification_status"] = "abstract_agent_curated"
     detail_root.mkdir(parents=True, exist_ok=True)
     (detail_root / "paper.md").write_text(paper_markdown(detail, []), encoding="utf-8")
@@ -601,9 +620,12 @@ def build_one(paper: dict[str, Any], day_dir: Path) -> dict[str, Any] | None:
         "page_count": document.page_count,
         "abstract": {
             "original": paper.get("source_abstract", ""),
-            "zh": paper.get("summary_zh", ""),
+            "translation_zh": paper.get("abstract_translation_zh", ""),
+            "summary_zh": paper.get("abstract_summary_zh", "") or "待基于原文摘要生成中文总结。",
+            "zh": paper.get("abstract_translation_zh", ""),
         },
-        "innovation_points": [paper.get("core_claim", ""), *paper.get("relevance_reasons", [])],
+        "innovation_points": [paper.get("core_claim", "")] if paper.get("core_claim") else [],
+        "relevance_reasons": paper.get("relevance_reasons", []),
         "innovation_suggestions": paper.get("innovation_suggestions", []),
         "inspirations": paper.get("transferable_points", []),
         "preparation_steps": steps,
@@ -613,6 +635,8 @@ def build_one(paper: dict[str, Any], day_dir: Path) -> dict[str, Any] | None:
         ],
         "figures": figures,
         "original_pdf": f"papers/{paper['id']}/original.pdf",
+        "source_access": paper.get("source_access", {}),
+        "source_access_notes": paper.get("source_access_notes", ""),
         "reader_markdown": str((detail_root / "paper.md").relative_to(ROOT)).replace("\\", "/"),
         "source_map": str((detail_root / "source_map.json").relative_to(ROOT)).replace("\\", "/"),
         "notes": [
@@ -623,7 +647,10 @@ def build_one(paper: dict[str, Any], day_dir: Path) -> dict[str, Any] | None:
     }
     apply_curation(detail, detail_root)
     if detail.get("curation_status", "").startswith("agent_reviewed"):
-        paper["summary_zh"] = detail["abstract"]["zh"]
+        paper["abstract_translation_zh"] = detail["abstract"].get("translation_zh", "")
+        paper["abstract_summary_zh"] = detail["abstract"].get("summary_zh", "")
+        paper["summary_zh"] = paper["abstract_summary_zh"]
+        paper["abstract_translation_status"] = "agent_reviewed"
         paper["verification_status"] = "fulltext_agent_curated"
         paper["risks"] = [
             risk

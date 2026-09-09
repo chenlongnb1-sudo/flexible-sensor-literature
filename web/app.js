@@ -145,7 +145,7 @@ function paperCard(paper, compact = false) {
         <div class="paper-topline"><div class="tags">${tag(paper.primary_category || "柔性材料与器件")}${tag(paper.strongly_related ? "强相关" : "相关", paper.strongly_related ? "amber" : "")}${(paper.tracks || []).map((item) => tag(item, "blue")).join("")}${tag(actionLabels[paper.decision_hint] || paper.decision_hint || "待判断", "amber")}${sources}</div><span class="paper-date">${formatDate(paper.date)}</span></div>
         <h3><a href="${escapeHtml(detailLink)}">${escapeHtml(paper.title)}</a></h3>
         <div class="paper-meta"><span>${escapeHtml(paper.venue || "来源未标注")}</span>${authors ? `<span>${escapeHtml(authors)}${(paper.authors || []).length > 4 ? " et al." : ""}</span>` : ""}</div>
-        <p class="paper-claim">${escapeHtml(paper.summary_zh || paper.core_claim || "等待摘要分析")}</p>
+        <p class="paper-claim">${escapeHtml(paper.abstract_summary_zh || paper.abstract_translation_zh || paper.summary_zh || paper.core_claim || "等待摘要分析")}</p>
         ${compact ? "" : `<details><summary>迁移价值与风险</summary><div class="detail-grid"><div><strong>可迁移</strong><ul>${transfers || "<li>需精读后判断</li>"}</ul></div><div><strong>边界</strong><ul>${risks || "<li>需精读后判断</li>"}</ul></div></div></details>`}
         <div class="card-actions">
           <button class="small-btn" data-paper-action="read" data-id="${escapeHtml(paper.id)}">${icon("book-open-check")}精读</button>
@@ -197,7 +197,7 @@ function filteredPapers() {
   return state.bundle.papers.filter((paper) => {
     const trackOk = state.trackFilter === "all" || (paper.tracks || []).includes(state.trackFilter);
     const actionOk = state.paperActionFilter === "all" || paper.decision_hint === state.paperActionFilter;
-    const haystack = [paper.title, paper.venue, paper.core_claim, paper.summary_zh, ...(paper.tracks || [])].join(" ").toLowerCase();
+    const haystack = [paper.title, paper.venue, paper.core_claim, paper.abstract_summary_zh, paper.abstract_translation_zh, paper.summary_zh, ...(paper.tracks || [])].join(" ").toLowerCase();
     return trackOk && actionOk && (!query || haystack.includes(query));
   });
 }

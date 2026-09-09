@@ -27,12 +27,12 @@
   "page_count": 12,
   "abstract": {
     "original": "Iontronic tactile sensors intrinsically respond to both thermal and mechanical stimuli and hold promise for skin-like multimodal tactile sensing owing to their sensitive response. However, the decoupling of temperature and pressure remains elusive due to an unclear understanding of the thermal‒mechanical‒coupled impedance characteristics, which hinders accurate pressure measurement under temperature fluctuations and limits the practical use of iontronic tactile sensors. This study elucidates the thermal-mechanical impedance characteristics of iontronic tactile sensors, by resolving nine impedance elements associated with sensor structure and ion migration pattern. Based on these insights, a thermal‒mechanical decoupling method is proposed. A temperature‒pressure linear relationship behind the impedance responses uncovers the intrinsic decoupling signatures: the pressure-insensitive root and the temperature-insensitive capacitance variation. These signatures enable high-accuracy decoupling with 99.4% for temperature and 96.4% for pressure, allowing the acquisition of temperature‒pressure distributions using tactile sensing arrays. The study lays a mechanistic foundation for iontronic sensors, opening a pathway for integrating additional modalities, such as strain and humidity, into iontronic tactile sensors.",
-    "zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出。摘要可核实数值包括：99.4%、96.4%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Iontronic tactile sensors intrinsically respond to both thermal and mechanical stimuli and hold promise for skin-like multimodal tactile sensing owing to their sensitive response.",
-    "可用于低离散/装配容差触觉界面的结构与对照设计",
-    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出"
+    "Iontronic tactile sensors intrinsically respond to both thermal and mechanical stimuli and hold promise for skin-like multimodal tactile sensing owing to their sensitive response."
   ],
   "inspirations": [
     "可用于低离散/装配容差触觉界面的结构与对照设计",
@@ -717,5 +717,20 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41528-026-00604-x",
+    "publisher_url": "https://doi.org/10.1038/s41528-026-00604-x",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41528-026-00604-x_reference.pdf",
+      "https://www.nature.com/articles/s41528-026-00604-x.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41528-026-00604-x.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及 ADC 前模拟矢量、剪切/摩擦/方向相关触觉读出"
+  ]
 }

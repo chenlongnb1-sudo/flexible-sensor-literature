@@ -20,12 +20,12 @@
   "page_count": 15,
   "abstract": {
     "original": "Abstract Tactile sensing can provide a critical function in advanced interactive systems by emulating the human sense of touch to detect stimuli. Vision-based tactile sensors are promising for providing multimodal capabilities and high robustness, yet existing technologies still have limitations in sensitivity, spatial resolution and the high computational demands of deep learning-based image processing. This paper presents a comprehensive approach combining a novel microstructure-based sensor design and efficient image processing, demonstrating that carefully engineered microstructures can significantly enhance performance while reducing computational load. Without traditional tracking markers, our sensor incorporates a surface with micromachined trenches, as an example of microstructures which can modulate light transmission and amplify the visual response to applied force. The amplified image features can be extracted by an ultra-lightweight convolutional neural network to accurately infer contact location, displacement, and applied force with high precision. Through theoretical analysis, we demonstrate that the micro trenches significantly amplify the visual effects of surface deformation. Using only a commercial webcam, the sensor system effectively detected forces below 5 mN and achieved a millimetre-level single-point spatial resolution. Using a model with only one convolutional layer, a mean absolute error below 0.05 mm was achieved. The compliant sensor body and optical readout design make the system inherently compatible with soft robotic integration and immune to electrical crosstalk or electromagnetic interference that often affects electronic tactile arrays. These characteristics highlight its potential for reliable operation in complex human–machine environments.",
-    "zh": "该工作提出一种无标记的视觉触觉传感器：在透明 PDMS/石墨-PDMS 双层弹性体中加工十字微沟槽，用受压后透光图案的变化在器件端放大接触特征，再由轻量卷积网络同时反演接触位置、法向位移和力。系统使用商用摄像头，可检测低于 5 mN 的力并达到毫米级单点空间分辨率；仅使用一层卷积的模型即可将平均绝对误差控制在 0.05 mm 以下。其核心不是单独提高材料灵敏度，而是通过微结构与算法协同设计降低后端特征提取负担。"
+    "zh": "该工作提出一种无标记的视觉触觉传感器：在透明 PDMS/石墨-PDMS 双层弹性体中加工十字微沟槽，用受压后透光图案的变化在器件端放大接触特征，再由轻量卷积网络同时反演接触位置、法向位移和力。系统使用商用摄像头，可检测低于 5 mN 的力并达到毫米级单点空间分辨率；仅使用一层卷积的模型即可将平均绝对误差控制在 0.05 mm 以下。其核心不是单独提高材料灵敏度，而是通过微结构与算法协同设计降低后端特征提取负担。",
+    "translation_zh": "该工作提出一种无标记的视觉触觉传感器：在透明 PDMS/石墨-PDMS 双层弹性体中加工十字微沟槽，用受压后透光图案的变化在器件端放大接触特征，再由轻量卷积网络同时反演接触位置、法向位移和力。系统使用商用摄像头，可检测低于 5 mN 的力并达到毫米级单点空间分辨率；仅使用一层卷积的模型即可将平均绝对误差控制在 0.05 mm 以下。其核心不是单独提高材料灵敏度，而是通过微结构与算法协同设计降低后端特征提取负担。",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "利用受压微沟槽调制透射光，把接触形变在传感器结构内转换为更易分辨的图像特征，形成器件级物理特征放大。",
-    "将微结构、光学读出和轻量 CNN 联合设计，用同一输入同时估计接触 x/y 位置、法向位移和作用力，而不依赖传统跟踪标记。",
-    "通过模型深度消融证明硬件产生的强特征允许极浅网络工作：一层卷积模型仍可达到低于 0.05 mm 的平均绝对误差，并保持低于 5 mN 的力检测能力。"
+    "利用受压微沟槽调制透射光，把接触形变在传感器结构内转换为更易分辨的图像特征，形成器件级物理特征放大。"
   ],
   "inspirations": [
     "把论文的“微结构先放大任务相关特征”迁移到你的电极/微结构前端：目标不只是提高灵敏度，而是在 ADC 前增强方向、接触位置或纹理可分性。",
@@ -514,5 +514,19 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "agent_reviewed_source_grounded"
+  "curation_status": "agent_reviewed_source_grounded",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41378-026-01355-5",
+    "publisher_url": "https://doi.org/10.1038/s41378-026-01355-5",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41378-026-01355-5.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41378-026-01355-5.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "将微结构、光学读出和轻量 CNN 联合设计，用同一输入同时估计接触 x/y 位置、法向位移和作用力，而不依赖传统跟踪标记。",
+    "通过模型深度消融证明硬件产生的强特征允许极浅网络工作：一层卷积模型仍可达到低于 0.05 mm 的平均绝对误差，并保持低于 5 mN 的力检测能力。"
+  ]
 }

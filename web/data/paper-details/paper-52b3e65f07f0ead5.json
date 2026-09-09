@@ -32,12 +32,12 @@
   "page_count": 18,
   "abstract": {
     "original": "Abstract Herein, a flexible dual-modal sensing transistor (FDST) is reported, based on zinc oxide nanofibers (ZnO NFs) integrated onto an indium–gallium–zinc–oxide thin-film transistor, and combined with a deep learning-based signal decoupling strategy. Defect-mediated subgap excitation and thermally activated interfacial potential modulation enable high sensitivity dual-modal responses, delivering a broadband photoresponsivity ( $$R$$ R ) up to 2.69 A W −1 and a temperature coefficient ( $${TC}$$ TC ) of 0.071 °C −1 . To enable reliable discrimination and simultaneous reconstruction of light and temperature, a multibias readout physically encodes the coupled stimuli into a high-dimensional current fingerprint, which is decoded by a lightweight multilayer perceptron. This synergistic approach enables accurate and independent reconstruction of light intensity and temperature, achieving coefficients of determination ( R 2 ) around 0.99. The FDST exhibits exceptional mechanical robustness under 10,000 bending cycles and severe bending (2 mm radius). Furthermore, a wearable system based on a low-power microcontroller demonstrates real-time monitoring with negligible cross-interference between optical and thermal modalities under uncontrolled outdoor conditions. This work establishes a general strategy for resolving cross-sensitivity, paving the way for robust and intelligent artificial perception systems.",
-    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：2.69 A、2 mm。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract Herein, a flexible dual-modal sensing transistor (FDST) is reported, based on zinc oxide nanofibers (ZnO NFs) integrated onto an indium–gallium–zinc–oxide thin-film transistor, and combined with a deep learning-based signal decoupling strategy.",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "Abstract Herein, a flexible dual-modal sensing transistor (FDST) is reported, based on zinc oxide nanofibers (ZnO NFs) integrated onto an indium–gallium–zinc–oxide thin-film transistor, and combined with a deep learning-based signal decoupling strategy."
   ],
   "innovation_suggestions": [
     "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。",
@@ -1422,5 +1422,19 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1007/s40820-026-02285-7",
+    "publisher_url": "https://doi.org/10.1007/s40820-026-02285-7",
+    "candidate_urls": [
+      "https://link.springer.com/content/pdf/10.1007/s40820-026-02285-7.pdf"
+    ],
+    "successful_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02285-7.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

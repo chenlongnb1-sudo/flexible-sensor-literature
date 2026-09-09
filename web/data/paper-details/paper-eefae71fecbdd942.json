@@ -28,11 +28,12 @@
   "page_count": 66,
   "abstract": {
     "original": "Abstract Soft electronics are an emerging class of mechanically compliant platforms that enable conformal, skin-interfaced sensing and actuation on curvilinear and dynamic surfaces. These systems combine deformation-tolerant electrical functionality with soft contact mechanics, but their in-use performance is strongly influenced by time-varying interfaces, motion-induced artifacts, and the system burden associated with dense multimodal integration. Advances in soft electronics are now converging with artificial intelligence, which supports reliable information extraction from high-dimensional signals and enables on-device inference that tolerates variability across users and day-to-day conditions. Here, progress in this convergence from materials to intelligent systems is summarized. Material and interface foundations are introduced first, focusing on deformation-tolerant conductors, low-impedance biointerfaces, and breathable substrate strategies that support extended wear. Manufacturing and integration approaches are then discussed, highlighting scalable fabrication, multilayer interconnects, and energy-autonomous wireless operation that enable higher channel counts and multifunctional architectures. Learning-based pipelines are subsequently reviewed with emphasis on artifact suppression, nonideality compensation, multimodal inference, and efficient edge deployment. Finally, emerging directions including neuromorphic computing and in-sensor computing are discussed, together with current challenges and future opportunities toward deployable intelligent soft systems that operate continuously and reliably in everyday settings.",
-    "zh": "涉及 in-sensor/物理计算或可编程触觉前端。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract Soft electronics are an emerging class of mechanically compliant platforms that enable conformal, skin-interfaced sensing and actuation on curvilinear and dynamic surfaces.",
-    "涉及 in-sensor/物理计算或可编程触觉前端"
+    "Abstract Soft electronics are an emerging class of mechanically compliant platforms that enable conformal, skin-interfaced sensing and actuation on curvilinear and dynamic surfaces."
   ],
   "innovation_suggestions": [
     "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
@@ -1197,5 +1198,18 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1007/s40820-026-02265-x",
+    "publisher_url": "https://doi.org/10.1007/s40820-026-02265-x",
+    "candidate_urls": [
+      "https://link.springer.com/content/pdf/10.1007/s40820-026-02265-x.pdf"
+    ],
+    "successful_url": "https://link.springer.com/content/pdf/10.1007/s40820-026-02265-x.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端"
+  ]
 }

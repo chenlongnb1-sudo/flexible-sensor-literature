@@ -32,12 +32,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Recent advances in wearable biosensing technologies have underscored the importance of continuous and reliable personal health monitoring. However, the limited size and capacity of conventional batteries remain a critical bottleneck for long‐term operation. Here, we present integrated self‐powered wearable bioelectronics driven by an air‐pumping pneumatic energy buffering mechanism, which converts intermittent human motion into sustained mechanical rotation during walking and efficiently generates electrical energy. The air‐driven rotation persists for 1.5 s per step, enabling continuous power generation from inherently low‐frequency biomechanical inputs and serving as a lightweight frequency‐regulating mechanism for wearable energy harvesters. To facilitate efficient integration with energy storage systems, a power management system is developed to directly charge a compact battery. In addition, a wearable photoplethysmography (PPG) device is designed to mitigate motion‐induced artifacts, enabling robust physiological signal acquisition during dynamic conditions. Owing to its Velcro‐type design, the PPG system demonstrates improved signal reliability compared to conventional devices. By integrating the energy harvester with the PPG, a self‐powered wearable biosensing platform has been successfully demonstrated. Unlike conventional wearable energy harvesters that directly convert transient biomechanical inputs into short‐duration electrical outputs, the proposed system introduces a pneumatic energy buffering mechanism that enables quasi‐continuous power generation from inherently intermittent human motion.",
-    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：1.5 s。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Recent advances in wearable biosensing technologies have underscored the importance of continuous and reliable personal health monitoring.",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "ABSTRACT Recent advances in wearable biosensing technologies have underscored the importance of continuous and reliable personal health monitoring."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -55,5 +55,19 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/advs.77158",
+    "publisher_url": "https://doi.org/10.1002/advs.77158",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77158"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

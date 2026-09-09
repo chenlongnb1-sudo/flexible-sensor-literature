@@ -26,11 +26,12 @@
   "page_count": 12,
   "abstract": {
     "original": "Abstract Optical fiber sensors have emerged as a powerful platform for high-precision shape detection in soft robotics and minimally invasive medical devices. However, existing fiber-sensing architectures face a long-standing trade-off between device size and spatial resolution. This work reports a miniaturized three-dimensional shape-sensing system based on misplaced orthogonal eccentric scatterers (MOESs) densely inscribed into the cladding of a standard single-mode fiber. The MOESs array is fabricated through a scalable reel-to-reel femtosecond laser writing process. Each MOES element functions as a curvature-dependent Rayleigh scatterer, and their misplaced orthogonal arrangement spatially encodes full 3D deformation information within a single fiber core. Experimental results demonstrate high-fidelity 2D bending and full 3D deformation reconstruction. The intensity-domain reconstruction algorithm further exhibits strong immunity to environmental perturbations. This approach defines a new paradigm for compact, cost-effective, and high-fidelity fiber sensors, paving the way for applications in unstructured and dynamic environments.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract Optical fiber sensors have emerged as a powerful platform for high-precision shape detection in soft robotics and minimally invasive medical devices.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "Abstract Optical fiber sensors have emerged as a powerful platform for high-precision shape detection in soft robotics and minimally invasive medical devices."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -584,5 +585,18 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41377-026-02425-z",
+    "publisher_url": "https://doi.org/10.1038/s41377-026-02425-z",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41377-026-02425-z.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41377-026-02425-z.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

@@ -24,11 +24,12 @@
   "page_count": 0,
   "abstract": {
     "original": "Vision‐based tactile sensors offer rich contact information with simple optical hardware, but most existing designs focus on the fingerpad and treat nail‐like structures mainly as mechanical aids for grasping. This paper presents a compact tactile sensor that senses both the nail and the fingerpad with a single internal camera. Compared with our previous NailTact design, the fingerpad shape is changed from a quarter circle to a quarter ellipse, which reduces the sensor size and makes the sensor better suited to grasping small objects while supporting broader fingerpad contact during holding. The system also combines an external camera with a motorized mechanism that presets the inclination of both fingers relative to the tabletop before grasping. The preset is determined from the recognized object class and a representative height stored for that class. The nail part estimates force from marker displacement, while the fingerpad part estimates force and measures the contact position and in‐plane orientation of the contacted object, so multiple tactile cues can be acquired within a single fingertip. Experiments include a nail‐tip contact test with the table and grasping tests with objects of various shapes.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Vision‐based tactile sensors offer rich contact information with simple optical hardware, but most existing designs focus on the fingerpad and treat nail‐like structures mainly as mechanical aids for grasping.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据"
+    "Vision‐based tactile sensors offer rich contact information with simple optical hardware, but most existing designs focus on the fingerpad and treat nail‐like structures mainly as mechanical aids for grasping."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -44,5 +45,18 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/aisy.70526",
+    "publisher_url": "https://doi.org/10.1002/aisy.70526",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.70526"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ]
 }

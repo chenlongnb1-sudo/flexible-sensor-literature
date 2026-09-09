@@ -739,7 +739,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "Abstract The pulse wave is a vital physiological signal reflecting cardiovascular function.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：80%、98.2%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Based on the traditional 2D convolutional neural network (CNN), the pulse wave sequence needs to be converted into a 2D image.",
       "key_metrics": [
         "80%",
@@ -761,7 +761,22 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-5b3d7bebdacb9c6a",
-      "detail_json": "data/paper-details/paper-5b3d7bebdacb9c6a.json"
+      "detail_json": "data/paper-details/paper-5b3d7bebdacb9c6a.json",
+      "abstract_original": "Abstract The pulse wave is a vital physiological signal reflecting cardiovascular function. It carries a wealth of critical health information, playing a significant role in the early diagnosis and continuous monitoring of cardiovascular diseases. Although considerable progress has been made in pulse monitoring technologies in recent years, several key technical challenges remain unresolved: (i) signal acquisition is susceptible to motion artifacts, and (ii) high-precision monitoring equipment relies on professional medical instruments, resulting in elevated costs and hindering the realization of autonomous, long-term monitoring. Based on the traditional 2D convolutional neural network (CNN), the pulse wave sequence needs to be converted into a 2D image. The conversion process leads to the loss of critical potential time-domain features due to time-frequency transformation and significantly increases external system complexity and computational overhead. This work proposes a one-dimensional intelligent convolutional monitoring system based on a single convolutional transistor. The system adopts a hybrid architecture that integrates self-powered pulse sensing with externally biased convolutional-transistor computing. The system directly acquires human pulse signals through a high-sensitivity flexible sensor and employs an approximate one-dimensional convolutional neural network for in situ feature extraction and analysis, reducing the total area of devices by over 80%. Validated on a public physiological waveform data set, the system achieves 98.2% accuracy in pulse-related abnormal waveform classification. This study provides a highly integrated and low-power solution for wearable health monitoring devices, demonstrating significant potential for applications in the early screening of cardiovascular diseases.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1021/acsnano.6c04605",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1021/acsnano.6c04605",
+        "publisher_url": "https://doi.org/10.1021/acsnano.6c04605",
+        "candidate_urls": [
+          "https://pubs.acs.org/doi/pdf/10.1021/acsnano.6c04605",
+          "https://pubs.acs.org/ancac3/article-pdf/doi/10.1021/acsnano.6c04605/66483594/acsnano.6c04605.pdf"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-2314223bf1ab720a",
@@ -819,7 +834,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "ABSTRACT Real‐time decoding of multidimensional biomechanical forces is critical for clinical monitoring yet remains challenging.",
-      "summary_zh": "涉及低冗余阵列、空间特征或读出通道压缩；涉及 in-sensor/物理计算或可编程触觉前端。摘要可核实数值包括：200%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "ABSTRACT Real‐time decoding of multidimensional biomechanical forces is critical for clinical monitoring yet remains challenging.",
       "key_metrics": [
         "200%"
@@ -840,7 +855,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-2314223bf1ab720a",
-      "detail_json": "data/paper-details/paper-2314223bf1ab720a.json"
+      "detail_json": "data/paper-details/paper-2314223bf1ab720a.json",
+      "abstract_original": "ABSTRACT Real‐time decoding of multidimensional biomechanical forces is critical for clinical monitoring yet remains challenging. Most conventional flexible sensors are intrinsically isotropic and cannot distinguish directional force vectors. Consequently, they rely on computationally intensive backend algorithms to separate coupled signals, introducing latency and power consumption. Inspired by muscle spindles, we report a biomimetic sensor that achieves signal decoupling directly at the hardware level. We utilized a magnetic programming strategy to align high‐aspect‐ratio CoNi alloy wires within a liquid metal matrix. Density functional theory calculations reveal that oxygen‐mediated interfacial coupling stabilizes this heterostructure while maintaining electrical connectivity. The resulting magnetically ordered architecture exhibits a high mechanical‐to‐electrical anisotropy index of 4.0, with gauge factors reaching 12.77 in the parallel direction. The sensor maintains linearity across a strain range exceeding 200% and demonstrates robust structural integrity over 3000 fatigue cycles. Wearable demonstrations show that the device can physically decode risk‐associated motion patterns without complex algorithmic post‐processing. It maps knee valgus to a distinct temporal feature, T delay (Cohen's d = −5.85), and differentiates plantar shear modes via a spatial anisotropic ratio. This hardware‐enabled feature separability establishes a paradigm for intrinsic multiplexed sensing, enabling immediate, low‐latency wearable diagnostics.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77571",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77571",
+        "publisher_url": "https://doi.org/10.1002/adfm.77571",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77571"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-fa1f52e90ebbb6f5",
@@ -895,7 +924,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Continuous cardiac volumetric monitoring remains challenging because clinical imaging is not readily accessible and most wearable sensors estimate cardiac volume indirectly through proxy measurements rather than direct measurement.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "ABSTRACT Continuous cardiac volumetric monitoring remains challenging because clinical imaging is not readily accessible and most wearable sensors estimate cardiac volume indirectly through proxy measurements rather than direct measurement.",
       "key_metrics": [],
       "transferable_points": [
@@ -913,7 +942,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-fa1f52e90ebbb6f5",
-      "detail_json": "data/paper-details/paper-fa1f52e90ebbb6f5.json"
+      "detail_json": "data/paper-details/paper-fa1f52e90ebbb6f5.json",
+      "abstract_original": "ABSTRACT Continuous cardiac volumetric monitoring remains challenging because clinical imaging is not readily accessible and most wearable sensors estimate cardiac volume indirectly through proxy measurements rather than direct measurement. Wearable ultrasound enables direct cardiac monitoring but is constrained by its form factor and power demands. This study introduces a wearable kirigami‐apertured carbon nanotube‐paper composite (K‐CPC) capacitive sensor for cardiac volumetric monitoring. A novel kirigami process creates a central aperture in the nanocomposite electrode, forming cantilever‐like conductive fibers along the aperture rim. This aperture concentrates and confines the electric fields, enhancing sensitivity and lateral resolution. The enhanced sensing performance enables detection of localized subsurface cardiac boundary displacements driven by volumetric changes. When configured as an array, the K‐CPC sensors provide spatially and depth‐resolved mapping of a cardiac chamber, such as changes in left ventricular (LV) volume. Integrated with a machine learning (ML) model, the system continuously estimates LV volume with a mean absolute error of 9.4 mL. It further derives key cardiac parameters, including stroke volume, cardiac output, and ejection fraction during motion. This work establishes an electrode engineering strategy for wearable, low‐power, and motion‐tolerant cardiac volumetric monitoring, providing a pathway toward continuous hemodynamic assessment beyond clinical settings.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77641",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77641",
+        "publisher_url": "https://doi.org/10.1002/adfm.77641",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77641"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-d1dab74920c81f82",
@@ -967,7 +1010,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "ABSTRACT The artificial design of material microstructure in correlated oxides offers an emerging pathway for unlocking exotic electronic states through adjusting coupled order parameters.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "ABSTRACT The artificial design of material microstructure in correlated oxides offers an emerging pathway for unlocking exotic electronic states through adjusting coupled order parameters.",
       "key_metrics": [],
       "transferable_points": [
@@ -986,7 +1029,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-d1dab74920c81f82",
-      "detail_json": "data/paper-details/paper-d1dab74920c81f82.json"
+      "detail_json": "data/paper-details/paper-d1dab74920c81f82.json",
+      "abstract_original": "ABSTRACT The artificial design of material microstructure in correlated oxides offers an emerging pathway for unlocking exotic electronic states through adjusting coupled order parameters. Here, we showcase the robust capability of a crystallographic orientation strategy in rationally designing insulator‐metal transition (IMT) functionality in the VO 2 system, as driven by either critical temperature or protonation, giving rise to in‐plane anisotropic transport behavior and kinetically accelerated phase transition. Rutile‐on‐rutile epitaxy in VO 2 /TiO 2 heterostructure enables the facile control over the c R ‐axis orientation of VO 2 films through engineering crystallographic orientations, which aligns the c R ‐axis out of plane and enhances the orbital hybridization to extensively reduce the T IMT . Introducing a previously unexplored high‐Miller‐index (102) orientation offers an additional handle to tailor IMT behaviors in VO 2 via mirror‐symmetry breaking, engendering in‐plane anisotropic IMT behaviors. Benefiting from tunable migration kinetics, hydrogen‐related electronic phase modulations in VO 2 /TiO 2 (102) bilayer can be facilitated through inclined oxygen channels, a critical enabler for high‐speed iontronics. Hydrogen‐associated electronic orbital reconfigurations govern electronic localization of VO 2 through protonation, as uncovered by theoretical calculations and synchrotron analysis. The present work identifies crystallographic orientation as a powerful tuning knob for adjusting IMT functionality in correlated systems, accessing exotic correlated electronic states.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.77134",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.77134",
+        "publisher_url": "https://doi.org/10.1002/advs.77134",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77134"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-64e563a783d4bee6",
@@ -1046,7 +1103,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Recent advances in wearable biosensing technologies have underscored the importance of continuous and reliable personal health monitoring.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：1.5 s。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we present integrated self‐powered wearable bioelectronics driven by an air‐pumping pneumatic energy buffering mechanism, which converts intermittent human motion into sustained mechanical rotation during walking and efficiently generates electrical energy.",
       "key_metrics": [
         "1.5 s"
@@ -1067,7 +1124,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-64e563a783d4bee6",
-      "detail_json": "data/paper-details/paper-64e563a783d4bee6.json"
+      "detail_json": "data/paper-details/paper-64e563a783d4bee6.json",
+      "abstract_original": "ABSTRACT Recent advances in wearable biosensing technologies have underscored the importance of continuous and reliable personal health monitoring. However, the limited size and capacity of conventional batteries remain a critical bottleneck for long‐term operation. Here, we present integrated self‐powered wearable bioelectronics driven by an air‐pumping pneumatic energy buffering mechanism, which converts intermittent human motion into sustained mechanical rotation during walking and efficiently generates electrical energy. The air‐driven rotation persists for 1.5 s per step, enabling continuous power generation from inherently low‐frequency biomechanical inputs and serving as a lightweight frequency‐regulating mechanism for wearable energy harvesters. To facilitate efficient integration with energy storage systems, a power management system is developed to directly charge a compact battery. In addition, a wearable photoplethysmography (PPG) device is designed to mitigate motion‐induced artifacts, enabling robust physiological signal acquisition during dynamic conditions. Owing to its Velcro‐type design, the PPG system demonstrates improved signal reliability compared to conventional devices. By integrating the energy harvester with the PPG, a self‐powered wearable biosensing platform has been successfully demonstrated. Unlike conventional wearable energy harvesters that directly convert transient biomechanical inputs into short‐duration electrical outputs, the proposed system introduces a pneumatic energy buffering mechanism that enables quasi‐continuous power generation from inherently intermittent human motion.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.77158",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.77158",
+        "publisher_url": "https://doi.org/10.1002/advs.77158",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77158"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-48e5663f0a896ebc",
@@ -1122,7 +1193,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "ABSTRACT Flexible zinc‐air batteries (FZABs) have emerged as promising candidates for next‐generation flexible electronics and large‐scale energy storage.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Focusing on dendrite suppression and ultrathin design, we elaborate four core strategies: regulating ion transport for uniform deposition, enhancing mechanical/interfacial stability, optimizing solvation structures to suppress side reactions, and innovating in macroscopic architectures for functional integration.",
       "key_metrics": [],
       "transferable_points": [
@@ -1140,7 +1211,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-48e5663f0a896ebc",
-      "detail_json": "data/paper-details/paper-48e5663f0a896ebc.json"
+      "detail_json": "data/paper-details/paper-48e5663f0a896ebc.json",
+      "abstract_original": "ABSTRACT Flexible zinc‐air batteries (FZABs) have emerged as promising candidates for next‐generation flexible electronics and large‐scale energy storage. However, dendrite growth, interfacial side reactions, and electrolyte leakage severely limit their cycle life and energy density. This review systematically summarizes recent advances in advanced gel electrolytes for FZABs. We first establish a comprehensive classification framework and horizontal comparison of aqueous, ionic liquid, and organic gel electrolyte systems. The fundamental mechanisms of zinc dendrite growth, interfacial failure, and unique challenges under flexible conditions are thoroughly analyzed. Focusing on dendrite suppression and ultrathin design, we elaborate four core strategies: regulating ion transport for uniform deposition, enhancing mechanical/interfacial stability, optimizing solvation structures to suppress side reactions, and innovating in macroscopic architectures for functional integration. The inherent trade‐offs between ionic conductivity, mechanical robustness, and energy density are critically evaluated. Finally, future directions in multifunctional integration, advanced in‐situ characterization, and scalable manufacturing are discussed, providing theoretical guidance for developing high‐performance, safe, flexible energy storage devices.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.77061",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.77061",
+        "publisher_url": "https://doi.org/10.1002/advs.77061",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77061"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-7a8db38a8823b532",
@@ -1201,7 +1286,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Liquid crystal elastomers (LCEs) are among the most promising candidates for next‐generation soft actuators in robotics and wearable systems.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Moreover, it offers a general framework for designing both stable and reprogrammable shape‐morphing polymers by coupling high‐activation‐energy dynamic bonds with reversible catalysts.",
       "key_metrics": [],
       "transferable_points": [
@@ -1220,7 +1305,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-7a8db38a8823b532",
-      "detail_json": "data/paper-details/paper-7a8db38a8823b532.json"
+      "detail_json": "data/paper-details/paper-7a8db38a8823b532.json",
+      "abstract_original": "ABSTRACT Liquid crystal elastomers (LCEs) are among the most promising candidates for next‐generation soft actuators in robotics and wearable systems. Exchangeable LCEs (xLCEs) enable permanently crosslinked actuators with reprogrammable actuation modes. However, undesirable exchange reactions during thermal actuation can disrupt the orientation order of the liquid crystals, reducing device lifetimes and compromises reliability. Here, we synergistically integrate a reversible catalyst with the universal transesterification‐based xLCEs to achieve ultra‐stable actuation over 200 000 cycles—a 20‐fold improvement over the previous best xLCE. The catalyst reversibly transitions between active and inactive states in response to temperature, thereby suppressing transesterification at the actuation temperature while promoting it at the reprogramming temperature. At the actuation temperature, the xLCEs exhibit ultra‐stable actuation. Upon heating, efficient reprogramming is enabled. Upon cooling, the xLCE returns to its stable state. This strategy allows xLCEs to be repeatedly reprogrammed while maintaining ultra‐stable actuation performance. Moreover, it offers a general framework for designing both stable and reprogrammable shape‐morphing polymers by coupling high‐activation‐energy dynamic bonds with reversible catalysts.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77627",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77627",
+        "publisher_url": "https://doi.org/10.1002/adfm.77627",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77627"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-464c0312b6f65f52",
@@ -1272,7 +1371,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "ABSTRACT The growing demand for flexible electronics has paralleled increasing attention to sustainability and eco‐friendly device fabrication.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：136.9 mA。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Photodetectors based on pure LIG and hybrid LIG/MAPbI 3 structures were fabricated and systematically compared.",
       "key_metrics": [
         "136.9 mA"
@@ -1291,7 +1390,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-464c0312b6f65f52",
-      "detail_json": "data/paper-details/paper-464c0312b6f65f52.json"
+      "detail_json": "data/paper-details/paper-464c0312b6f65f52.json",
+      "abstract_original": "ABSTRACT The growing demand for flexible electronics has paralleled increasing attention to sustainability and eco‐friendly device fabrication. Laser‐induced graphene (LIG), which can be directly generated from natural carbon sources, offers a cost‐effective and environmentally responsible approach to next‐generation electronics. In this work, we demonstrate the direct laser writing of LIG on cellulose filter paper under ambient conditions, producing a flexible and patterned sensing substrate. To enhance optoelectronic performance, LIG was further integrated with the highly light‐absorbing MAPbI 3 perovskite via a simple solution deposition method. Photodetectors based on pure LIG and hybrid LIG/MAPbI 3 structures were fabricated and systematically compared. The hybrid devices exhibited a nearly tenfold improvement in responsivity (13.9 to 136.9 mA/W) and a sevenfold increase in detectivity (7.67 × 10 7 to 5.33 × 10 8 Jones) over pure LIG devices, while retaining excellent stability after 1000 bending cycles. These results highlight paper‐based LIG/perovskite photodetectors as promising candidates for sustainable optoelectronic applications.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/aelm.70522",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/aelm.70522",
+        "publisher_url": "https://doi.org/10.1002/aelm.70522",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aelm.70522"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-111282832ea4c89c",
@@ -1347,7 +1460,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "ABSTRACT Bio‐based polyurethanes, derived from renewable feedstocks such as vegetable oils, lignin, and polysaccharides, have attracted increasing attention as sustainable alternatives to fossil‐derived polyurethanes and as versatile materials for smart coatings, flexible electronics, biomedical engineering, and energy devices.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Through structural engineering strategies combining dynamic covalent network design with nanocomposite reinforcement, these materials achieve mechanical tunability, reprocessability, and multifunctionality.",
       "key_metrics": [],
       "transferable_points": [
@@ -1364,7 +1477,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-111282832ea4c89c",
-      "detail_json": "data/paper-details/paper-111282832ea4c89c.json"
+      "detail_json": "data/paper-details/paper-111282832ea4c89c.json",
+      "abstract_original": "ABSTRACT Bio‐based polyurethanes, derived from renewable feedstocks such as vegetable oils, lignin, and polysaccharides, have attracted increasing attention as sustainable alternatives to fossil‐derived polyurethanes and as versatile materials for smart coatings, flexible electronics, biomedical engineering, and energy devices. Through structural engineering strategies combining dynamic covalent network design with nanocomposite reinforcement, these materials achieve mechanical tunability, reprocessability, and multifunctionality. This review summarizes recent progress in bio‐based polyurethane chemistry, encompassing bio‐polyols, internal emulsifiers, isocyanates, and non‐isocyanate synthetic routes, and discusses structural engineering strategies based on chain‐segment design, aggregation‐state control, dynamic covalent bond chemistry, and nanocomposite reinforcement. These strategies overcome the inherent limitations of thermosets, enabling high strength, self‐healing, and recyclability, thereby supporting applications in protective coatings, fire‐warning systems, tissue repair, antibacterial dressings, flexible sensors, and energy storage devices. This review examines remaining challenges and future opportunities, including sustainability assessment, scalable processing, end‐of‐life management, and data‐driven material design, toward the development of sustainable, reliable, and closed‐loop bio‐based polyurethane systems.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.77078",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.77078",
+        "publisher_url": "https://doi.org/10.1002/advs.77078",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77078"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-702fb913dc9d12f9",
@@ -1427,7 +1554,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "ABSTRACT Flexible vibration sensors are widely used in structural health monitoring, human‐machine interfaces, and biomedical diagnostics.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。摘要可核实数值包括：55.0 Hz、55 Hz、0.5%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we present a bioinspired vibration sensor that overcomes this limitation through active resonance modulation, mimicking the stiffness‐graded rib‐membrane mechanics of the cicada tympanum.",
       "key_metrics": [
         "55.0 Hz",
@@ -1448,7 +1575,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-702fb913dc9d12f9",
-      "detail_json": "data/paper-details/paper-702fb913dc9d12f9.json"
+      "detail_json": "data/paper-details/paper-702fb913dc9d12f9.json",
+      "abstract_original": "ABSTRACT Flexible vibration sensors are widely used in structural health monitoring, human‐machine interfaces, and biomedical diagnostics. However, conventional sensing devices operate at a fixed resonance frequency with limited bandwidth, restricting reliable frequency recognition in dynamic environments. Here, we present a bioinspired vibration sensor that overcomes this limitation through active resonance modulation, mimicking the stiffness‐graded rib‐membrane mechanics of the cicada tympanum. Specifically, by spatially programming the cross‐linking density of polydimethylsiloxane, we construct a stiffness‐graded wavy architecture, integrated with a stabilized Ag‐graphene conductive network that functions via a controlled microcrack design. It is shown that mechanical pre‐stretching of the sensor actively tunes its resonant frequency from 22.3 to 55.0 Hz, governed by the transition from wrinkle unfolding to sensor membrane stretching. Remarkably, from 0 to 55 Hz, the extracted frequency shows high linearity (R 2 = 0.9992) with a relative error below 0.5%, while maintaining stable performance over 10 000 loading cycles. The bioinspired sensor demonstrates preliminary monitoring of laryngeal activities (vomiting, swallowing, and breathing) and frequency vibration response analysis on a bridge model. This work provides a practical strategy for frequency tunable flexible sensing and supports applications in health monitoring and engineering safety.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.202600036",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.202600036",
+        "publisher_url": "https://doi.org/10.1002/adfm.202600036",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202600036"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-989baba463e6a1f6",
@@ -1503,7 +1644,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Pressure‐sensitive sensors that can respond to tiny signals are key to various medical and healthcare monitoring applications.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：159 kPa、20 kPa。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Developing wearable sensors that combine high sensitivity in real time, flexibility, and biological and environmental safety is challenging.",
       "key_metrics": [
         "159 kPa",
@@ -1523,7 +1664,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-989baba463e6a1f6",
-      "detail_json": "data/paper-details/paper-989baba463e6a1f6.json"
+      "detail_json": "data/paper-details/paper-989baba463e6a1f6.json",
+      "abstract_original": "ABSTRACT Pressure‐sensitive sensors that can respond to tiny signals are key to various medical and healthcare monitoring applications. Developing wearable sensors that combine high sensitivity in real time, flexibility, and biological and environmental safety is challenging. In this paper, a biomass‐based conductive silicone elastomer is designed via ultraviolet curing. The deep eutectic solvents are well dispersed within the silicone matrix via hydrogen bonding to ɑ‐lipoic acid moieties within the network. Along with the bottlebrush topology of the network, the engineered material exhibits ultra‐softness (Young's modulus 159 kPa), excellent rebound, and fatigue resistance under repeated high strains. Meanwhile, the engineered sensor shows outstanding electrical sensitivity to deformation in the range of 0–20 kPa. These features enable precise, real‐time monitoring of subtle signals, including respiration, abdominal and chest movements, wrist pulse, and facial expressions. The green conductive silicone elastomer shows great potential in the development of portable Polysomnography and other high‐end wearable devices in the future.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77676",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77676",
+        "publisher_url": "https://doi.org/10.1002/adfm.77676",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77676"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-eb97afc8a96e6cec",
@@ -1581,7 +1736,7 @@
         "可用于低离散/装配容差触觉界面的结构与对照设计"
       ],
       "core_claim": "ABSTRACT Aqueous zinc–iodine (Zn–I 2 ) batteries are promising for grid‐scale storage and flexible electronics because of their nonflammable chemistry, low cost, and high theoretical capacity.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Finally, we distinguish materials‐level evidence from pouch‐ and Ah‐level validation and propose an application‐specific roadmap centered on high iodine loading, lean electrolyte, limited Zn inventory, water retention, and scalable manufacturing.",
       "key_metrics": [],
       "transferable_points": [
@@ -1598,7 +1753,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-eb97afc8a96e6cec",
-      "detail_json": "data/paper-details/paper-eb97afc8a96e6cec.json"
+      "detail_json": "data/paper-details/paper-eb97afc8a96e6cec.json",
+      "abstract_original": "ABSTRACT Aqueous zinc–iodine (Zn–I 2 ) batteries are promising for grid‐scale storage and flexible electronics because of their nonflammable chemistry, low cost, and high theoretical capacity. Their deployment, however, is limited by uneven Zn deposition, water‐driven hydrogen evolution and corrosion, and polyiodide shuttling. Functional hydrogel electrolytes can regulate these coupled processes through solvent confinement, ion‐selective transport, and mechanically persistent electrode contact. This review critically examines recent advances in hydrogel electrolytes for Zn–I 2 batteries from interfacial chemistry to architectural engineering. Distinct from broader hydrogel reviews for aqueous Zn batteries, it focuses on the chemically asymmetric coupling between a water‐reactive Zn anode and a soluble polyiodide cathode and organizes the field through a structure–mechanism–performance framework that links molecular affinity, fixed charge, and water‐state regulation to measurable interfacial parameters, spatially decoupled architectures, and scale‐relevant device metrics. We analyze dual‐interface regulation across solvation and nucleation, polyiodide confinement, tortuosity control, and asymmetric/Janus structures. Broad‐temperature and voltage‐tolerant operation, together with self‐healing, self‐sensing, and biosensing functions, is also evaluated. Finally, we distinguish materials‐level evidence from pouch‐ and Ah‐level validation and propose an application‐specific roadmap centered on high iodine loading, lean electrolyte, limited Zn inventory, water retention, and scalable manufacturing.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adma.74570",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adma.74570",
+        "publisher_url": "https://doi.org/10.1002/adma.74570",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74570"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-e7e6810f9aa3fe1e",
@@ -1654,7 +1823,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "ABSTRACT Polymer semiconductors that simultaneously exhibit high charge mobility and robust mechanical stretchability are essential for the next generation of flexible electronics.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：6.01 cm、2 V、1 s、1.39 cm、50%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "ABSTRACT Polymer semiconductors that simultaneously exhibit high charge mobility and robust mechanical stretchability are essential for the next generation of flexible electronics.",
       "key_metrics": [
         "6.01 cm",
@@ -1678,7 +1847,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-e7e6810f9aa3fe1e",
-      "detail_json": "data/paper-details/paper-e7e6810f9aa3fe1e.json"
+      "detail_json": "data/paper-details/paper-e7e6810f9aa3fe1e.json",
+      "abstract_original": "ABSTRACT Polymer semiconductors that simultaneously exhibit high charge mobility and robust mechanical stretchability are essential for the next generation of flexible electronics. Here, we report a new poly(indacenodithiophene‐ alt ‐benzothiadiazole) ( IDTBT ) based polymer semiconductor, IDTBT‐C‐1 , in which a fraction of the long alkyl chains are replaced with cyclopentyl groups, exhibiting a hole mobility of 6.01 cm 2 V −1 s −1 , among the highest reported for intrinsically stretchable polymer semiconductors to date, and substantially higher than that of the parent IDTBT (1.39 cm 2 V −1 s −1 ). Notably, the charge transport performance of IDTBT‐C‐1 remains highly stable even after 3000 stretching‐releasing cycles at 50% strain. Moreover, relative to the parent IDTBT , IDTBT‐C‐1 exhibits a higher onset strain for surface damage, an increased elastic modulus, and enhanced strain recovery. Further studies reveal that substitution with a cyclopentyl group strengthens interchain interactions among conjugated units. These reinforced interactions facilitate interchain charge hopping, leading to enhanced mobility, while simultaneously promoting the formation of additional physical cross‐links that impart superior mechanical stretchability and elastic recovery to IDTBT‐C‐1 thin films.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adma.74579",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adma.74579",
+        "publisher_url": "https://doi.org/10.1002/adma.74579",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74579"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-ccfe2bf3d9994f57",
@@ -1738,7 +1921,7 @@
         "材料性能词较多、前端/阵列/系统证据偏少，已降权"
       ],
       "core_claim": "ABSTRACT Hydrogels are promising for flexible sensing, yet trade‐offs between sensitivity and mechanics remain a major bottleneck.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：521.65%、0%、400%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Drawing inspiration from human skin, we present a bilayer hydrogel design with functionally distinct yet synergistically reinforced layers: an upper GO–CS conductive network for high‐sensitivity strain response, and a lower CNF‐reinforced CS–AA robust scaffold for mechanical support and adhesion.",
       "key_metrics": [
         "521.65%",
@@ -1762,7 +1945,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-ccfe2bf3d9994f57",
-      "detail_json": "data/paper-details/paper-ccfe2bf3d9994f57.json"
+      "detail_json": "data/paper-details/paper-ccfe2bf3d9994f57.json",
+      "abstract_original": "ABSTRACT Hydrogels are promising for flexible sensing, yet trade‐offs between sensitivity and mechanics remain a major bottleneck. Drawing inspiration from human skin, we present a bilayer hydrogel design with functionally distinct yet synergistically reinforced layers: an upper GO–CS conductive network for high‐sensitivity strain response, and a lower CNF‐reinforced CS–AA robust scaffold for mechanical support and adhesion. A covalently interpenetrating interface, formed via monomer infiltration–activation, ensures seamless load transfer and electrical synergy while preventing delamination. Selective PDMS encapsulation of the upper layer further confers environmental stability. The resulting hydrogel achieves high stretchability (521.65% strain), high sensitivity (GF = 2.4 over 0%–400% strain), rapid response ( 2000 cycles). Multisite human motion tests confirm its accurate strain‐sensing performance, underscoring its potential for motion monitoring, health diagnostics, and e‐skin applications.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77646",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77646",
+        "publisher_url": "https://doi.org/10.1002/adfm.77646",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77646"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     }
   ],
   "generated_ideas": []

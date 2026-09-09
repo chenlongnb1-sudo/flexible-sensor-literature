@@ -27,13 +27,12 @@
   "page_count": 0,
   "abstract": {
     "original": "The human somatosensory system achieves both rapid tactile perception and high-level cognitive reasoning through a hierarchical architecture, yet robotic tactile systems still lack the integration between multimodal sensory hardware and semantic computing frameworks, leaving a gap between fast perception and deep cognition. Here we present a spike–language dual encoding strategy for embodied somatosensory systems, implemented on a robotic skin-like sensor array that mimics human mechanoreceptors and thermoreceptors. Tactile time-series data are simultaneously encoded into spikes for a spiking neural network, enabling fast object classification, and into natural language prompts for a large language model, supporting semantic reasoning. A confidence-based gating mechanism adaptively routes sensory data, ensuring reflexive responses for routine tasks while reserving computationally intensive reasoning for open-set recognition—an underexplored capability in tactile systems. This dual-pathway framework provides a foundation for human-like somatosensation and advancing the development of autonomous, cognitively capable robots.",
-    "zh": "该研究在机器人皮肤式多模态传感阵列上提出脉冲—语言双编码框架：同一触觉时序一方面转换为脉冲供 SNN 快速分类，另一方面转换为自然语言提示供大模型进行开放集语义推理，并通过置信度门控在快速反射与深度推理之间自适应路由。"
+    "zh": "该研究在机器人皮肤式多模态传感阵列上提出脉冲—语言双编码框架：同一触觉时序一方面转换为脉冲供 SNN 快速分类，另一方面转换为自然语言提示供大模型进行开放集语义推理，并通过置信度门控在快速反射与深度推理之间自适应路由。",
+    "translation_zh": "该研究在机器人皮肤式多模态传感阵列上提出脉冲—语言双编码框架：同一触觉时序一方面转换为脉冲供 SNN 快速分类，另一方面转换为自然语言提示供大模型进行开放集语义推理，并通过置信度门控在快速反射与深度推理之间自适应路由。",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "A spike-language dual encoding strategy combines fast SNN classification with LLM-based semantic reasoning on tactile time-series data from a robotic skin-like sensor array.",
-    "使用仿生机械感受器和温度感受器的皮肤式传感阵列",
-    "同一触觉时序同时编码为脉冲和自然语言，形成快感知与深推理双通路",
-    "可作为硬件投影前端与分层事件编码/语义路由的系统级对照"
+    "A spike-language dual encoding strategy combines fast SNN classification with LLM-based semantic reasoning on tactile time-series data from a robotic skin-like sensor array."
   ],
   "inspirations": [
     "将 P4 的硬件投影输出进一步组织为事件脉冲与语义特征两条可切换通路",
@@ -50,5 +49,18 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s44460-026-00108-1",
+    "publisher_url": "https://www.nature.com/articles/s44460-026-00108-1",
+    "candidate_urls": [],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "使用仿生机械感受器和温度感受器的皮肤式传感阵列",
+    "同一触觉时序同时编码为脉冲和自然语言，形成快感知与深推理双通路",
+    "可作为硬件投影前端与分层事件编码/语义路由的系统级对照"
+  ]
 }

@@ -20,12 +20,12 @@
   "page_count": 24,
   "abstract": {
     "original": "Large-area, high-speed tactile skins could improve robotics, prosthetics, and human-machine interfaces, but scaling them is limited by wiring complexity and readout bandwidth. We introduce Single-Pixel Tactile Skin (SPTS), a flexible, daisy-chainable tactile array that implements compressive sampling directly in hardware. Each sensing element uses a miniature low-cost microcontroller to apply programmable analog weights, while all pixel currents are summed into a single output channel. Repeating this process yields global projections from which tactile images are reconstructed using sparse recovery, reducing the measurements required relative to raster scanning. In a 10×10 array, SPTS achieved ≥98% object classification accuracy with 20 measurements, corresponding to an effective 3500 FPS, and captured an 8 ms projectile impact in 23 reconstructed frames. Because reconstruction quality improves progressively with measurement count, SPTS can rapidly localize contact from sparse data and refine tactile images over time, enabling scalable, responsive tactile sensing for physical interaction and control.",
-    "zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及低冗余阵列、空间特征或读出通道压缩。摘要可核实数值包括：98%、3500 FPS、8 ms。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Large-area, high-speed tactile skins could improve robotics, prosthetics, and human-machine interfaces, but scaling them is limited by wiring complexity and readout bandwidth.",
-    "涉及 in-sensor/物理计算或可编程触觉前端",
-    "涉及低冗余阵列、空间特征或读出通道压缩"
+    "Large-area, high-speed tactile skins could improve robotics, prosthetics, and human-machine interfaces, but scaling them is limited by wiring complexity and readout bandwidth."
   ],
   "inspirations": [
     "涉及 in-sensor/物理计算或可编程触觉前端",
@@ -510,5 +510,11 @@
     "方法步骤和图注来自 PDF 文本层与页码锚点。",
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "source_access": {},
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及低冗余阵列、空间特征或读出通道压缩"
   ]
 }

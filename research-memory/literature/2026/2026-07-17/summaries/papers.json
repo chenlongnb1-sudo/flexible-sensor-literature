@@ -479,7 +479,7 @@
         "可作为硬件投影前端与分层事件编码/语义路由的系统级对照"
       ],
       "core_claim": "A spike-language dual encoding strategy combines fast SNN classification with LLM-based semantic reasoning on tactile time-series data from a robotic skin-like sensor array.",
-      "summary_zh": "该研究在机器人皮肤式多模态传感阵列上提出脉冲—语言双编码框架：同一触觉时序一方面转换为脉冲供 SNN 快速分类，另一方面转换为自然语言提示供大模型进行开放集语义推理，并通过置信度门控在快速反射与深度推理之间自适应路由。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Official abstract metadata only; full text is subscription content.",
       "key_metrics": [],
       "transferable_points": [
@@ -497,7 +497,19 @@
       "verification_status": "publisher_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-0e5f42c01a3bcb79",
-      "detail_json": "data/paper-details/paper-0e5f42c01a3bcb79.json"
+      "detail_json": "data/paper-details/paper-0e5f42c01a3bcb79.json",
+      "abstract_original": "The human somatosensory system achieves both rapid tactile perception and high-level cognitive reasoning through a hierarchical architecture, yet robotic tactile systems still lack the integration between multimodal sensory hardware and semantic computing frameworks, leaving a gap between fast perception and deep cognition. Here we present a spike–language dual encoding strategy for embodied somatosensory systems, implemented on a robotic skin-like sensor array that mimics human mechanoreceptors and thermoreceptors. Tactile time-series data are simultaneously encoded into spikes for a spiking neural network, enabling fast object classification, and into natural language prompts for a large language model, supporting semantic reasoning. A confidence-based gating mechanism adaptively routes sensory data, ensuring reflexive responses for routine tasks while reserving computationally intensive reasoning for open-set recognition—an underexplored capability in tactile systems. This dual-pathway framework provides a foundation for human-like somatosensation and advancing the development of autonomous, cognitively capable robots.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://www.nature.com/articles/s44460-026-00108-1",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s44460-026-00108-1",
+        "publisher_url": "https://www.nature.com/articles/s44460-026-00108-1",
+        "candidate_urls": [],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     }
   ],
   "generated_ideas": []

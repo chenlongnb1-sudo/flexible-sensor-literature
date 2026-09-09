@@ -28,12 +28,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT The rapid identification of chemical composition, temperature, and dynamic behavior of leaked liquids by robots during accidental spills of hazardous chemicals would significantly reduce the potential risks to both human health and the environment. Here, we designed a flexible, palm‐shaped liquid‐sensing e‐skin (PSLSES) featuring 128 metal electrodes fabricated via flexible printed circuit (FPC) technology and coated with a fluorinated ethylene propylene (FEP) film. By capturing the local triboelectrification signals along the droplet's trajectory, PSLSES enables multimodal dynamic liquid sensing, simultaneously achieving liquid composition identification, temperature sensing, as well as droplet motion tracking through visualized trajectory patterns. Integrated with a one‐dimensional convolutional neural network (1D CNN), PSLSES achieves an ultrahigh identification accuracy of 99.5% across 21 types of liquids, with a high monitoring resolution down to the ppb level and 98% accuracy in identifying liquid temperature. This includes deionized water, acids, bases, salts, and organic solutions, demonstrating broad liquid identification versatility. Compared with previously reported E‐skin systems, it achieved faster identification (0.3 s), a lower detection limit (0.1 ppb), broader liquid recognition, and higher accuracy. The integration of PSLSES into wearable robotics systems opens new ways for robots to assist humans in analyzing and handling chemical leakage in hazardous environments.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；可用于低离散/装配容差触觉界面的结构与对照设计。摘要可核实数值包括：99.5%、98%、0.3 s。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT The rapid identification of chemical composition, temperature, and dynamic behavior of leaked liquids by robots during accidental spills of hazardous chemicals would significantly reduce the potential risks to both human health and the environment.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据",
-    "可用于低离散/装配容差触觉界面的结构与对照设计"
+    "ABSTRACT The rapid identification of chemical composition, temperature, and dynamic behavior of leaked liquids by robots during accidental spills of hazardous chemicals would significantly reduce the potential risks to both human health and the environment."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -50,5 +50,19 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adma.74261",
+    "publisher_url": "https://doi.org/10.1002/adma.74261",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74261"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计"
+  ]
 }

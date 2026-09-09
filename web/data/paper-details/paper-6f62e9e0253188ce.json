@@ -33,12 +33,12 @@
   "page_count": 30,
   "abstract": {
     "original": "Photon-in-textile offers transformative potential for wearable sensing, yet persistent challenges in signal overlap, coupling, and quality degradation in dynamic, multivariate environments limit their efficacy. A new polarization-enhanced sensing technology, enabled by a spin fibre-textile capable of efficient decoupling between multivariable interference, is presented. We develop a discrete helix anchoring strategy that autonomously embeds circularly polarized materials within fibres during extrusion, yielding kilometer-scale spin-photon fibres-exceeding 1300 m in continuous length. More importantly, the resulting core-sheath beaded fibres exhibit a luminescence asymmetry factor of 0.41. The fibre-woven fabrics are then produced, allowing for dynamic, real-time signal acquisition by our developed polarization-enhanced sensing approach-that is, distinguishing spin light from surrounding optical fields-achieving signal segmentation and noise suppression at source with 92.63% signal entropy reduction in dynamic scenarios. This spin-photon-digital signal conversion system realizes a superior normalized signal-to-noise ratio of 1.0 (noiseless), thereby enabling multi-dimensional robotic control with 100% sensing accuracy under interference. Furthermore, we demonstrate the scalability and compatibility of this technology in polarization-based image processing, target recognition, and virtual reality. This work offers an innovative solution for robust, embedded intelligence in soft robotics and human-machine symbiosis.",
-    "zh": "提供机器人、可穿戴或电子皮肤系统任务证据；涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：92.63%、100%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Photon-in-textile offers transformative potential for wearable sensing, yet persistent challenges in signal overlap, coupling, and quality degradation in dynamic, multivariate environments limit their efficacy.",
-    "提供机器人、可穿戴或电子皮肤系统任务证据",
-    "涉及坏点、漂移、跨器件迁移或少样本校准"
+    "Photon-in-textile offers transformative potential for wearable sensing, yet persistent challenges in signal overlap, coupling, and quality degradation in dynamic, multivariate environments limit their efficacy."
   ],
   "innovation_suggestions": [
     "把其传感源端的物理编码或抗干扰机制抽象为 ADC 前投影，对比源端输出与采样后软件补偿的信噪比和通道成本。"
@@ -1299,5 +1299,19 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41467-026-75025-5",
+    "publisher_url": "https://doi.org/10.1038/s41467-026-75025-5",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41467-026-75025-5_reference.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41467-026-75025-5_reference.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ]
 }

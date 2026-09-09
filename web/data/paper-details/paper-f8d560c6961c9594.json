@@ -29,11 +29,12 @@
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Triboelectric tactile sensors coupled with machine learning achieve high material recognition accuracy under controlled conditions, but ambient humidity introduces a domain shift that degrades performance in real‐world settings. Here we develop a coaxial porous nanofiber sensing yarn that embeds environmental referencing directly within its sensing structure. The yarn combines triboelectric material recognition with a capacitive baseline ( C 0 ) whose monotonic humidity dependence serves as an intrinsic environmental indicator, co‐localized and temporally synchronized with the sensing signal. Using C 0 to partition data into humidity‐defined bins, a humidity‐adaptive learning framework recovers cross‐humidity classification accuracy from 70.2% to 95.7% without external sensors. The capacitive mode simultaneously provides pressure sensitivity enhanced approximately to 2.74 times over dense‐coated yarns, stability over 6000 cycles, ultralight‐object detection, and stiffness discrimination. Integrated into a soft robotic gripper, a gated multimodal fusion network achieves 99.9% classification accuracy across five object categories and 30‐70% relative humidity. This work shows that environmental sensitivity in sensing systems, rather than being an obstacle to suppress, can serve as an intrinsic information source for adaptive perception.",
-    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准。摘要可核实数值包括：70.2%、95.7%、99.9%、70%。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "ABSTRACT Triboelectric tactile sensors coupled with machine learning achieve high material recognition accuracy under controlled conditions, but ambient humidity introduces a domain shift that degrades performance in real‐world settings.",
-    "涉及坏点、漂移、跨器件迁移或少样本校准"
+    "ABSTRACT Triboelectric tactile sensors coupled with machine learning achieve high material recognition accuracy under controlled conditions, but ambient humidity introduces a domain shift that degrades performance in real‐world settings."
   ],
   "innovation_suggestions": [],
   "inspirations": [
@@ -50,5 +51,18 @@
     "当前仅完成题录/摘要级筛选。",
     "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adfm.77610",
+    "publisher_url": "https://doi.org/10.1002/adfm.77610",
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77610"
+    ],
+    "successful_url": "",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ]
 }

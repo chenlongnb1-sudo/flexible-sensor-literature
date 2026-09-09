@@ -27,12 +27,12 @@
   "page_count": 37,
   "abstract": {
     "original": "Abstract Flexible pressure sensors are key components of Internet of Things systems for monitoring environmental and physiological signals, yet simultaneously achieving a high sensitivity, a fast response time, and a high mechanical durability remains challenging owing to the lack of sophisticated structural designs that balance sensing performance and robustness. Here, we demonstrate a multiscale artificial spider web (MASW) fabricated via copper-mesh-assisted electrospinning of biodegradable polylactic acid, forming a nanofiber network that efficiently transmits stress while enhancing mechanical stability. The resulting pressure sensor simultaneously shows a high sensitivity of 39.85 [kPa] −1 , a fast response of 42 ms and high durability over 6000 loading cycles, enabling reliable and versatile neural-network-assisted real-time monitoring of multiple physiological signals, including pulse, breathing, and vocalization. Furthermore, leveraging precise joint movement signal acquisition, a human-machine interaction system was developed with potential applications in fine motor rehabilitation for Parkinson’s disease, suggesting strong promise for sustainable healthcare and IoT systems.",
-    "zh": "涉及坏点、漂移、跨器件迁移或少样本校准；材料性能词较多、前端/阵列/系统证据偏少，已降权。摘要可核实数值包括：42 ms。"
+    "zh": "",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。"
   },
   "innovation_points": [
-    "Abstract Flexible pressure sensors are key components of Internet of Things systems for monitoring environmental and physiological signals, yet simultaneously achieving a high sensitivity, a fast response time, and a high mechanical durability remains challenging owing to the lack of sophisticated structural designs that balance sensing performance and robustness.",
-    "涉及坏点、漂移、跨器件迁移或少样本校准",
-    "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+    "Abstract Flexible pressure sensors are key components of Internet of Things systems for monitoring environmental and physiological signals, yet simultaneously achieving a high sensitivity, a fast response time, and a high mechanical durability remains challenging owing to the lack of sophisticated structural designs that balance sensing performance and robustness."
   ],
   "inspirations": [
     "涉及坏点、漂移、跨器件迁移或少样本校准",
@@ -1303,5 +1303,19 @@
     "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
     "裁图标为 approximate 时，应在人工精读阶段调整边界。"
   ],
-  "curation_status": "automatic_draft"
+  "curation_status": "automatic_draft",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41467-026-74200-y",
+    "publisher_url": "https://doi.org/10.1038/s41467-026-74200-y",
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41467-026-74200-y_reference.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41467-026-74200-y_reference.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+  ]
 }

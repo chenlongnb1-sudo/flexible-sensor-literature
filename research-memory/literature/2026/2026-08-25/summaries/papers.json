@@ -756,7 +756,7 @@
         "涉及坏点、漂移、跨器件迁移或少样本校准"
       ],
       "core_claim": "ABSTRACT Two‐dimensional (2D) materials offer a distinctive foundation for flexible neuromorphic electronics by combining atomically thin structures, mechanical compliance, and tunable electronic, ionic, and interfacial properties.",
-      "summary_zh": "涉及 in-sensor/物理计算或可编程触觉前端；涉及坏点、漂移、跨器件迁移或少样本校准。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Defect engineering, van der Waals heterostructure design, and surface functionalization are then examined as key routes for regulating charge transport, ion migration, synaptic linearity, mechanical robustness, and environmental stability.",
       "key_metrics": [],
       "transferable_points": [
@@ -775,7 +775,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-57bdf7796bab3379",
-      "detail_json": "data/paper-details/paper-57bdf7796bab3379.json"
+      "detail_json": "data/paper-details/paper-57bdf7796bab3379.json",
+      "abstract_original": "ABSTRACT Two‐dimensional (2D) materials offer a distinctive foundation for flexible neuromorphic electronics by combining atomically thin structures, mechanical compliance, and tunable electronic, ionic, and interfacial properties. These features are essential for artificial synapses, memristors, synaptic transistors, and bio‐inspired devices that require low operating voltage, reduced energy consumption, stable conductance modulation, and reliable operation under mechanical deformation. This review provides a materials‐centered analysis of recent progress in 2D‐material‐based flexible neuromorphic devices. Primary 2D material platforms, including graphene‐derived sheets, MXenes, transition‐metal dichalcogenides, black phosphorus, and other layered or nanosheet systems, are distinguished from 2D‐like CNT‐network films and hybrid functional layers and are compared according to their dimensionality, structural form, and device role. Defect engineering, van der Waals heterostructure design, and surface functionalization are then examined as key routes for regulating charge transport, ion migration, synaptic linearity, mechanical robustness, and environmental stability. Flexible memristive devices, synaptic transistors, and bio‐integrated neuromorphic systems are further discussed within this material‐to‐device framework. By clarifying the links among material properties, engineering strategies, device architectures, neuromorphic metrics, and deformation‐stable functionality, this review provides mechanism‐guided design principles for scalable, energy‐efficient, and application‐oriented 2D neuromorphic platforms.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/aelm.70543",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/aelm.70543",
+        "publisher_url": "https://doi.org/10.1002/aelm.70543",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aelm.70543"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-52f3114dfdf1d3bf",
@@ -830,7 +844,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "Vision‐based tactile sensors offer rich contact information with simple optical hardware, but most existing designs focus on the fingerpad and treat nail‐like structures mainly as mechanical aids for grasping.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Vision‐based tactile sensors offer rich contact information with simple optical hardware, but most existing designs focus on the fingerpad and treat nail‐like structures mainly as mechanical aids for grasping.",
       "key_metrics": [],
       "transferable_points": [
@@ -847,7 +861,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-52f3114dfdf1d3bf",
-      "detail_json": "data/paper-details/paper-52f3114dfdf1d3bf.json"
+      "detail_json": "data/paper-details/paper-52f3114dfdf1d3bf.json",
+      "abstract_original": "Vision‐based tactile sensors offer rich contact information with simple optical hardware, but most existing designs focus on the fingerpad and treat nail‐like structures mainly as mechanical aids for grasping. This paper presents a compact tactile sensor that senses both the nail and the fingerpad with a single internal camera. Compared with our previous NailTact design, the fingerpad shape is changed from a quarter circle to a quarter ellipse, which reduces the sensor size and makes the sensor better suited to grasping small objects while supporting broader fingerpad contact during holding. The system also combines an external camera with a motorized mechanism that presets the inclination of both fingers relative to the tabletop before grasping. The preset is determined from the recognized object class and a representative height stored for that class. The nail part estimates force from marker displacement, while the fingerpad part estimates force and measures the contact position and in‐plane orientation of the contacted object, so multiple tactile cues can be acquired within a single fingertip. Experiments include a nail‐tip contact test with the table and grasping tests with objects of various shapes.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/aisy.70526",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/aisy.70526",
+        "publisher_url": "https://doi.org/10.1002/aisy.70526",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.70526"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-3ed20e92092f6dc6",
@@ -904,7 +932,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT As high‐density information storage, integrated magnetic sensors, and ultrathin wearable devices continue to advance, nanoscale multielement transition‐metal alloys are required to retain stable exchange coupling, anisotropy, and resistance to thermally activated magnetization fluctuations.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：400%、208%、50%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Here, we develop a binary CoNi multigranular superstructure (MGS), enabled by pulsed Joule heating, to reconstruct magnetic coupling states and stabilize collective magnetism at the nanoscale.",
       "key_metrics": [
         "400%",
@@ -925,7 +953,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-3ed20e92092f6dc6",
-      "detail_json": "data/paper-details/paper-3ed20e92092f6dc6.json"
+      "detail_json": "data/paper-details/paper-3ed20e92092f6dc6.json",
+      "abstract_original": "ABSTRACT As high‐density information storage, integrated magnetic sensors, and ultrathin wearable devices continue to advance, nanoscale multielement transition‐metal alloys are required to retain stable exchange coupling, anisotropy, and resistance to thermally activated magnetization fluctuations. Here, we develop a binary CoNi multigranular superstructure (MGS), enabled by pulsed Joule heating, to reconstruct magnetic coupling states and stabilize collective magnetism at the nanoscale. Specifically, transient energy fluctuations drive structural reconfiguration, yielding high‐density interfacial networks and locally coherent magnetic units within individual superstructures. Reinforced interfacial pinning and dual magnetic coupling strengthen exchange interactions and suppress magnetothermal perturbations, thereby alleviating nanoscale‐induced magnetic degradation. The CoNi nanoalloy with the MGS achieves a ∼400% enhancement in coercivity and a 208% improvement in permeability relative to the conventionally annealed CoNi sample, outperforming representative ferromagnetic alloys. Moreover, the superstructure exhibits over 50% effective absorption across 5G wireless spectrum with thermal stability from 300 to 800 K. This work establishes a practical route to enhance the magnetic properties of binary transition‐metal nanoalloys for flexible, high‐performance electromagnetic (EM) devices.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adma.74764",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adma.74764",
+        "publisher_url": "https://doi.org/10.1002/adma.74764",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.74764"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-875404f899f0bf6b",
@@ -978,7 +1020,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Origami‐ and Kirigami‐inspired structures have emerged as transformative strategies for enhancing the performance and versatility of triboelectric nanogenerators (TENGs).",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "On this basis, we summarize the representative origami and kirigami configurations and their mechanical characteristics.",
       "key_metrics": [],
       "transferable_points": [
@@ -995,7 +1037,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-875404f899f0bf6b",
-      "detail_json": "data/paper-details/paper-875404f899f0bf6b.json"
+      "detail_json": "data/paper-details/paper-875404f899f0bf6b.json",
+      "abstract_original": "ABSTRACT Origami‐ and Kirigami‐inspired structures have emerged as transformative strategies for enhancing the performance and versatility of triboelectric nanogenerators (TENGs). Their folding mechanisms facilitate efficient for contact‐separation TENGs, as well as their geometric patterns provide essential stretchability for complex interfaces. This review emphasizes that the core mechanism of these architectures lies in their ability to bridge mechanical deformation and electrical output of TENGs. On this basis, we summarize the representative origami and kirigami configurations and their mechanical characteristics. More importantly, we propose a general design framework to clarify how these structural strategies adapt to different operating conditions by leveraging their inherent mechanical characteristics. Typical applications include blue energy harvesting, vibration and biomechanical energy harvesting for micro/nano energy systems, self‐powered sensing for environmental and health monitoring, tactile sensing, and wearable electronics that benefit from the stretchability and deformability of kirigami structures. Finally, the current challenges and outline emerging opportunities toward deeper functional integration and scalable implementation of origami‐ and kirigami‐inspired TENGs are concluded.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/aenm.71484",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/aenm.71484",
+        "publisher_url": "https://doi.org/10.1002/aenm.71484",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71484"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-cae1ffefbd0e54dc",
@@ -1057,7 +1113,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT There is an increasing demand on flexible or wearable position‐sensitive detectors (PSDs) for high‐precision positioning in robots or drones driven by artificial vision.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；提供机器人、可穿戴或电子皮肤系统任务证据。摘要可核实数值包括：423.2 mV、43.55 ms、1550 nm。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "We also developed a theoretical model for the lateral photothermoelectric effect that quantitatively relates the light‐induced temperature field and thermoelectric voltage to the spot position, matching experimental data well over the full position range.",
       "key_metrics": [
         "423.2 mV",
@@ -1080,7 +1136,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-cae1ffefbd0e54dc",
-      "detail_json": "data/paper-details/paper-cae1ffefbd0e54dc.json"
+      "detail_json": "data/paper-details/paper-cae1ffefbd0e54dc.json",
+      "abstract_original": "ABSTRACT There is an increasing demand on flexible or wearable position‐sensitive detectors (PSDs) for high‐precision positioning in robots or drones driven by artificial vision. Inherited from conventional materials, e.g., ultrathin Si or multilayer heterojunctions, existing flexible PSDs still suffer from narrow spectral response, poor long‐term stability, and complicated fabrication process. Here we introduce the photothermoelectric effect from thermoelectric Bi 2 Te 3 to create a new type of flexible photothermoelectric PSDs. Such devices can reach a maximum responsivity of 423.2 mV W −1 at room temperature with 43.55 ms response time. Unlike lateral photovoltaic effect based counterparts, our flexible PSDs rely on a single thermoelectric material without heterojunctions or p‐n junctions, enabling position identification and two‐dimensional spot trajectory tracking from visible to near‐infrared (1550 nm). We also developed a theoretical model for the lateral photothermoelectric effect that quantitatively relates the light‐induced temperature field and thermoelectric voltage to the spot position, matching experimental data well over the full position range. The device output remains stable after 1000 bending cycles. This work thus offers an assessable, cost‐effective, and robust route to flexible position‐sensitive photodetectors with broad spectral response in automation of artificial visions smart robotics or drones.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adom.71697",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adom.71697",
+        "publisher_url": "https://doi.org/10.1002/adom.71697",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adom.71697"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-c96de38adddfe8ca",
@@ -1131,7 +1201,7 @@
         "可用于低离散/装配容差触觉界面的结构与对照设计"
       ],
       "core_claim": "ABSTRACT Flexible mechanical metamaterials with stable negative Poisson's ratios hold great promise for applications in flexible electronics.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Nevertheless, most existing stretchable auxetic designs rely on single or strongly coupled deformation modes, which confine their mechanical responses to only one stable state and restrict their functional versatility.",
       "key_metrics": [],
       "transferable_points": [
@@ -1148,7 +1218,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-c96de38adddfe8ca",
-      "detail_json": "data/paper-details/paper-c96de38adddfe8ca.json"
+      "detail_json": "data/paper-details/paper-c96de38adddfe8ca.json",
+      "abstract_original": "ABSTRACT Flexible mechanical metamaterials with stable negative Poisson's ratios hold great promise for applications in flexible electronics. Nevertheless, most existing stretchable auxetic designs rely on single or strongly coupled deformation modes, which confine their mechanical responses to only one stable state and restrict their functional versatility. A dual‐plateau Poisson's ratio characteristic that enables strain‐switchable and bi‐stable Poisson's ratio states has rarely been reported in previous studies. This work introduces a new class of flexible mechanical metamaterials based on rotating soft network structures (RSNSs), where deformable network units replace the rigid plate units in traditional rotating rigid structures. Owing to a unique multi‐stage deformation mechanism, the proposed RSNS metamaterials exhibit an unusual strain‐switchable dual‐plateau negative Poisson's ratio response under large tensile deformation. The dual‐plateau Poisson's ratio characteristic is accurately captured by FEA simulations and can be systematically tuned through rational design of structural geometries. The RSNS metamaterials can be constructed by modular assembly of discrete rotating units using physical pin‐based hinges or by one‐step fabrication employing a living‐hinge design. Finally, a class of RSNS‐based stretchable luminescent devices is demonstrated, exhibiting strain‐controlled optical information switching performance, with each stable working state sustained over a finite continuous strain range.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adfm.77850",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adfm.77850",
+        "publisher_url": "https://doi.org/10.1002/adfm.77850",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.77850"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-314a7ca0e2ca4811",
@@ -1199,7 +1283,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT 4D printing relies on the 3D printing of materials that respond to various stimuli after printing.",
-      "summary_zh": "提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "A framework is presented for selecting print parameters, where only the extruder speed needs to be adjusted when switching between inks having different particle contents.",
       "key_metrics": [],
       "transferable_points": [
@@ -1216,7 +1300,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-314a7ca0e2ca4811",
-      "detail_json": "data/paper-details/paper-314a7ca0e2ca4811.json"
+      "detail_json": "data/paper-details/paper-314a7ca0e2ca4811.json",
+      "abstract_original": "ABSTRACT 4D printing relies on the 3D printing of materials that respond to various stimuli after printing. Among these, magneto‐active elastomers readily react to magnetic fields, particularly at high magnetic particle loadings. For soft silicones with high particle contents, direct ink writing (DIW) is the most appropriate printing technique. However, a major challenge remains, especially for very‐short‐pot‐life silicones: crosslinking starts once the base is mixed with the curing agent. Hence, a helical mixer with large blades operating at low speed within a large chamber is introduced for the first time in active mixing DIW to specifically address high‐particle‐content, short‐pot‐life silicones. This method offers a steady and efficient mixing of the two silicone components, both loaded with magnetic particles and a rheology modifier, just before extrusion, leading to consistent filament extrusion with even particle distribution in addition to extended printing times without further additives or elaborate control systems. A framework is presented for selecting print parameters, where only the extruder speed needs to be adjusted when switching between inks having different particle contents. The impact of printing strategy on mechanical properties is assessed, and magneto‐active structures that can find applications in tunable actuators, soft robotics, deployable structures, and surface morphing are demonstrated.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/admt.71264",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/admt.71264",
+        "publisher_url": "https://doi.org/10.1002/admt.71264",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71264"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-b7fc831eb178d4b0",
@@ -1274,7 +1372,7 @@
         "提供机器人、可穿戴或电子皮肤系统任务证据"
       ],
       "core_claim": "ABSTRACT Hybrid metal halide semiconductors exhibit intriguing photophysical properties that are attributed to strong electron‐phonon coupling mediated by lattice deformations.",
-      "summary_zh": "可用于低离散/装配容差触觉界面的结构与对照设计；提供机器人、可穿戴或电子皮肤系统任务证据。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "As a testing platform, we synthesized two new 0D metal halides based on [Bi 2 I 9 ] 3− dimers using phosphonium organic cations, with general formula (L) 3 Bi 2 I 9 (L = butyl(trimethyl)phosphonium bromide (P5‐P), benzyl(triethyl)phosphonium bromide (P3‐P)).",
       "key_metrics": [],
       "transferable_points": [
@@ -1292,7 +1390,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-b7fc831eb178d4b0",
-      "detail_json": "data/paper-details/paper-b7fc831eb178d4b0.json"
+      "detail_json": "data/paper-details/paper-b7fc831eb178d4b0.json",
+      "abstract_original": "ABSTRACT Hybrid metal halide semiconductors exhibit intriguing photophysical properties that are attributed to strong electron‐phonon coupling mediated by lattice deformations. Although extensive research has established a relatively clear picture of the effects of both intra‐octahedral and inter‐octahedral distortions on the optical and electronic behavior of 3D and 2D metal halide materials, there is still a lack of distortion descriptors to quantify octahedral distortions in edge‐sharing 0D dimers (oligomers). Here, we provide new structure distortion descriptors to accurately quantify the off‐centering of the metal cation from the geometric center of the octahedron and the twist angle between face‐sharing octahedra. As a testing platform, we synthesized two new 0D metal halides based on [Bi 2 I 9 ] 3− dimers using phosphonium organic cations, with general formula (L) 3 Bi 2 I 9 (L = butyl(trimethyl)phosphonium bromide (P5‐P), benzyl(triethyl)phosphonium bromide (P3‐P)). We correlated the inter‐octahedral twisting within the metal halide dimers with their photoluminescence at RT and 80 K, while their inherent water stability enabled the evaluation of their redox and sensing properties toward persistent organic pollutants. The assembly of flexible, wearable electrodes demonstrated the simultaneous determination of per‐ and polyfluoroalkyl substances (PFAS) and polychlorinated biphenyls (PCBs), underscoring their promise for portable field applications.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adom.71536",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adom.71536",
+        "publisher_url": "https://doi.org/10.1002/adom.71536",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adom.71536"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-dba8767c787df82c",
@@ -1345,7 +1457,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "ABSTRACT Polydopamine (PDA)‐dyed wool textiles offer a potentially scalable route to ultrablack materials that combine wide‐angle reflectance suppression, flexibility, breathability, and biocompatibility.",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Their development, however, has remained largely empirical, lacking structural and mechanistic foundations for PDA dyeing, and prior ultrablack wool systems have been restricted to merino‐based single‐jersey fabrics.",
       "key_metrics": [],
       "transferable_points": [
@@ -1362,7 +1474,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-dba8767c787df82c",
-      "detail_json": "data/paper-details/paper-dba8767c787df82c.json"
+      "detail_json": "data/paper-details/paper-dba8767c787df82c.json",
+      "abstract_original": "ABSTRACT Polydopamine (PDA)‐dyed wool textiles offer a potentially scalable route to ultrablack materials that combine wide‐angle reflectance suppression, flexibility, breathability, and biocompatibility. Their development, however, has remained largely empirical, lacking structural and mechanistic foundations for PDA dyeing, and prior ultrablack wool systems have been restricted to merino‐based single‐jersey fabrics. Here, we establish a multimodal structural and mechanistic framework for PDA dyeing by integrating dopamine polymerization chemistry, fiber surface chemistry and ultrastructure, as well as macroscopic fabric architecture. These factors collectively govern dye uptake and optical response. Dye formulation optimization reduces the dyeing time to 15–30 min across merino and generic wool fibers spanning diverse fabric architectures. Notably, fabric architecture emerges as a dominant design variable for controlling wide‐angle optical response, a previously underappreciated lever for engineering photonic textiles. Mechanistic analysis of dopamine polymerization reveals PDA formation in wool as an absorption‐driven dyeing process rather than a purely surface‐coating process, whose uptake and interactions within the porous fibrous matrix contribute to near‐zero reflectance when plasma‐treated. Together, these findings provide a material design blueprint for scalable ultrablack wool textiles and offer broader principles for flexible photonic devices.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/advs.77312",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/advs.77312",
+        "publisher_url": "https://doi.org/10.1002/advs.77312",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77312"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-81617352bb97968b",
@@ -1415,7 +1541,7 @@
         "材料性能词较多、前端/阵列/系统证据偏少，已降权"
       ],
       "core_claim": "ABSTRACT Achieving simultaneous wet adhesion, mechanical robustness, and long‐term ionic conductivity in soft electronic interfaces remains a major challenge for the design of next‐generation epidermal bioelectronics.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；材料性能词较多、前端/阵列/系统证据偏少，已降权。摘要可核实数值包括：114%、432%、332%、300%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "ABSTRACT Achieving simultaneous wet adhesion, mechanical robustness, and long‐term ionic conductivity in soft electronic interfaces remains a major challenge for the design of next‐generation epidermal bioelectronics.",
       "key_metrics": [
         "114%",
@@ -1439,7 +1565,21 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-81617352bb97968b",
-      "detail_json": "data/paper-details/paper-81617352bb97968b.json"
+      "detail_json": "data/paper-details/paper-81617352bb97968b.json",
+      "abstract_original": "ABSTRACT Achieving simultaneous wet adhesion, mechanical robustness, and long‐term ionic conductivity in soft electronic interfaces remains a major challenge for the design of next‐generation epidermal bioelectronics. Here, an injectable, muscle‐conformal eutectogel comprising gelatin‐based microgels and a polymerizable ternary eutectic solvent ([PTES]) is introduced, serving as a reactive medium and catalyst for rapid epoxy–amine crosslinking at physiological temperature. The [PTES] system establishes an extended hydrogen‐bonding and ionic network that accelerates ring‐opening reactions, enabling fast on‐tissue gelation and robust adhesion. Compositional tuning reveals that increasing [PTES] content enhances complex viscosity by 114%, increases peel adhesion from 0.238 ± 0.063 to 0.309 ± 0.091·Nm −1 , and reduces swelling ratios from 432% to 332%, confirming the formation of denser dual dynamic–covalent networks. Electrical analyses show that polymerized [PTES] generates stable ionic pathways, decreasing initial resistance from 4.91±0.10 to 3.17±0.12 kΩ, with conductivity preserved over 5 days. The optimized eutectogel demonstrates excellent diabetic wound healing, high piezoresistive sensitivity with a gauge factor of 4.2 at 300% strain, enabling precise detection of both micro‐ and macro‐scale human motions. Overall, this work establishes [PTES]‐driven eutectogels as a versatile macromolecular platform that integrates injectability, wet adhesion, network toughness, and stable ionic conductivity for epidermal bioelectronics interfaces and soft mechanosensing applications.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1002/adhm.71587",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1002/adhm.71587",
+        "publisher_url": "https://doi.org/10.1002/adhm.71587",
+        "candidate_urls": [
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adhm.71587"
+        ],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-09d00153e462ceff",
@@ -1494,7 +1634,7 @@
         "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
       ],
       "core_claim": "当前仅获得题录信息，需要打开 DOI/原文核实机制、实验和性能指标。",
-      "summary_zh": "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献。当前未从摘要提取到可比较数值。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "当前题录没有摘要，需打开原文核实方法。",
       "key_metrics": [],
       "transferable_points": [
@@ -1513,7 +1653,21 @@
       "pdf_version_label": "出版社开放获取 PDF",
       "deep_read_status": "fulltext_draft",
       "detail_path": "paper.html?id=paper-09d00153e462ceff",
-      "detail_json": "data/paper-details/paper-09d00153e462ceff.json"
+      "detail_json": "data/paper-details/paper-09d00153e462ceff.json",
+      "abstract_original": "",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "missing_source_abstract",
+      "abstract_source": "https://doi.org/10.1007/s42765-026-00761-8",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1007/s42765-026-00761-8",
+        "publisher_url": "https://doi.org/10.1007/s42765-026-00761-8",
+        "candidate_urls": [
+          "https://link.springer.com/content/pdf/10.1007/s42765-026-00761-8.pdf"
+        ],
+        "successful_url": "https://link.springer.com/content/pdf/10.1007/s42765-026-00761-8.pdf",
+        "failure_reasons": []
+      }
     },
     {
       "id": "paper-deb20a28746a0398",
@@ -1571,7 +1725,7 @@
         "材料性能词较多、前端/阵列/系统证据偏少，已降权"
       ],
       "core_claim": "Abstract Living materials, owing to their inherent capacities for growth, self-healing, sensing, and adaptation, have attracted widespread attention in recent years.",
-      "summary_zh": "涉及坏点、漂移、跨器件迁移或少样本校准；材料性能词较多、前端/阵列/系统证据偏少，已降权。摘要可核实数值包括：195.62 ± 9.06 MPa、16.0%、78.5%、80%。",
+      "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
       "method_summary": "Abstract Living materials, owing to their inherent capacities for growth, self-healing, sensing, and adaptation, have attracted widespread attention in recent years.",
       "key_metrics": [
         "195.62 ± 9.06 MPa",
@@ -1595,7 +1749,19 @@
       "verification_status": "metadata_abstract_screened",
       "deep_read_status": "metadata_only_no_legal_pdf",
       "detail_path": "paper.html?id=paper-deb20a28746a0398",
-      "detail_json": "data/paper-details/paper-deb20a28746a0398.json"
+      "detail_json": "data/paper-details/paper-deb20a28746a0398.json",
+      "abstract_original": "Abstract Living materials, owing to their inherent capacities for growth, self-healing, sensing, and adaptation, have attracted widespread attention in recent years. However, controlling growth of living matter to achieve robust and tunable material properties remains a challenge. Here, we report a co-culture strategy that integrates mycelial microfibers with bacterial cellulose nanofibers into hierarchical hydrogels and transparent films. The biological crosslinking between fungal cell wall mannans and cellulose chains yields an interpenetrating micro–nano network with enhanced interfacial hydrogen bonding. As a result, the films achieve simultaneous high tensile strength (195.62 ± 9.06 MPa) and toughness (11.51 ± 0.94 MJ m –3 ), surpassing most reported biodegradable films. The micro-nano architecture also enables wide-range optical tunability: haze increases from 16.0% to 78.5% while maintaining approximately 80% transparency by controlling culture duration. Mycelium/bacterial cellulose films with tailored properties are promising candidates for applications such as radiative cooling coatings on outdoor displays. This strategy demonstrates a generalizable principle for programming material structure and properties through microbial activity, offering a green pathway toward next-generation sustainable films for transparent radiative cooling, flexible electronics, and optical devices.",
+      "abstract_translation_zh": "",
+      "abstract_summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+      "abstract_translation_status": "pending_agent_translation",
+      "abstract_source": "https://doi.org/10.1038/s41467-026-76430-6",
+      "source_access": {
+        "doi_landing": "https://doi.org/10.1038/s41467-026-76430-6",
+        "publisher_url": "https://doi.org/10.1038/s41467-026-76430-6",
+        "candidate_urls": [],
+        "successful_url": "",
+        "failure_reasons": []
+      }
     }
   ],
   "generated_ideas": []
