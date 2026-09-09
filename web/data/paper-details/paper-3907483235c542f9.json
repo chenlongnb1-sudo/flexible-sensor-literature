@@ -1,0 +1,1515 @@
+{
+  "schema_version": 1,
+  "id": "paper-3907483235c542f9",
+  "title": "Hydrogel-Based Flexible Sensors: From Manufacturing Strategies to Sensing Applications",
+  "authors": [
+    "Xiaoqin Li",
+    "Jianwen Liu",
+    "Xianxin Ding",
+    "Eun Seong Kim",
+    "Namyoung Kim",
+    "Yang Li",
+    "Peiming Xu",
+    "Weidong Qin"
+  ],
+  "venue": "International Journal of Extreme Manufacturing",
+  "primary_category": "制造、封装与可靠性",
+  "categories": [
+    "制造、封装与可靠性",
+    "软体机器人与人机交互",
+    "可穿戴健康与生理监测"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-08",
+  "doi": "10.1088/2631-7990/aea3e5",
+  "source_url": "https://doi.org/10.1088/2631-7990/aea3e5",
+  "pdf_source_url": "https://iopscience.iop.org/article/10.1088/2631-7990/aea3e5/pdf",
+  "pdf_version": "repository_or_author_copy",
+  "pdf_version_label": "作者或机构仓储合法公开版本",
+  "status": "fulltext_draft",
+  "generated_at": "2026-09-09T06:01:09.130057+00:00",
+  "page_count": 112,
+  "abstract": {
+    "original": "Abstract Hydrogel-based flexible sensors combine tissue-like mechanical properties with superior sensing performance, showing immense potential in human-machine interaction, soft robotics, and health monitoring. Although significant progress has been made in related research, the fabrication of precision structures, the environmental tolerance of materials, and the heterogeneous integration between materials and devices remain key research challenges. In response to these challenges, this review provides a comprehensive review of the latest progress in hydrogel-based sensors, covering the entire process from material fabrication and functional regulation to interface engineering. First, the impacts of advanced processing techniques such as solution processing, microstructure molding, photolithography, additive manufacturing, and fiber spinning on film structure are discussed in detail. Subsequently, physicochemical strategies for enhancing sensing performance and environmental tolerance are analyzed. Furthermore, diverse assembly schemes and interface engineering strategies are highlighted. Finally, typical applications in pressure, strain, environmental, and physiological signal monitoring are summarized. This review aims to provide guidance for the development of next-generation high-performance and stable flexible electronic systems.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "Abstract Hydrogel-based flexible sensors combine tissue-like mechanical properties with superior sensing performance, showing immense potential in human-machine interaction, soft robotics, and health monitoring."
+  ],
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 7,
+      "category_zh": "组装与封装",
+      "original": "Second, synergistically optimising synthetic strategies and encapsulation techniques to confer structural integrity and functional stability across diverse environments remains an urgent manufacturing challenge[52].",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 7,
+      "category_zh": "制备与实验操作",
+      "original": "Moreover, the fabrication of flexible sensors inherently involves a cross-scale heterogeneous integration process.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 7,
+      "category_zh": "组装与封装",
+      "original": "The unique ‘soft and wet’ properties of hydrogels result in significant mechanical mismatches with rigid electrodes and encapsulation layers[53, 54].",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 7,
+      "category_zh": "制备与实验操作",
+      "original": "This review comprehensively explores the latest research advances in hydrogel-based flexible sensors and systematically investigates hydrogel synthesis techniques, functional tuning strategies, sensor assembly processes, application domains, as well as current challenges and future development trends (see Figure 2).",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 7,
+      "category_zh": "图形化与结构成形",
+      "original": "The structure of this paper is as follows: section 2 provides a comprehensive overview of advanced manufacturing techniques for hydrogels, encompassing solution processing, microstructure molding, photolithography, additive manufacturing, and fiber spinning, which serve as the cornerstone for achieving customised device structures.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 8,
+      "category_zh": "组装与封装",
+      "original": "Section 4 summarizes structural design principles for hydrogel-based sensors, focusing on heterogeneous interface connection strategies and device encapsulation solutions.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 8,
+      "category_zh": "制备与实验操作",
+      "original": "This review aims to provide systematic theoretical underpinnings for the preparation of high-performance hydrogels and the design and fabrication of sensors.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 8,
+      "category_zh": "制备与实验操作",
+      "original": "Image for “first fabrication of",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 8,
+      "category_zh": "制备与实验操作",
+      "original": "Transparent and conformal ‘piezoionic’ touch sensor[25] Hydrogel-based Pressure sensor[24] electrode[32] Ionic hydrogel-based strain sensor[23] PVA hydrogel PDMS Al electrode Ni fabric electrode Hydrogel substrate First fabrication of conductivity hydrogel[11] Triboelectric nanogenerator[26] Intelligent window[12]",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.8 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 7,
+      "text": "alone struggles to meet the demand for the precise micro- and nano-scale structural control required",
+      "bbox": [
+        36.0,
+        401.11,
+        562.31,
+        414.39
+      ]
+    },
+    {
+      "page": 7,
+      "text": "by next-generation sensors. Second, synergistically optimising synthetic strategies and encapsulation",
+      "bbox": [
+        36.0,
+        425.55,
+        562.25,
+        438.83
+      ]
+    },
+    {
+      "page": 7,
+      "text": "techniques to confer structural integrity and functional stability across diverse environments remains an urgent",
+      "bbox": [
+        36.0,
+        450.03,
+        562.16,
+        463.31
+      ]
+    },
+    {
+      "page": 7,
+      "text": "manufacturing challenge[52]. Moreover, the fabrication of flexible sensors inherently involves a cross-scale",
+      "bbox": [
+        36.0,
+        473.53,
+        562.37,
+        487.73
+      ]
+    },
+    {
+      "page": 7,
+      "text": "heterogeneous integration process. The unique ‘soft and wet’ properties of hydrogels result in significant",
+      "bbox": [
+        36.0,
+        498.93,
+        562.08,
+        512.21
+      ]
+    },
+    {
+      "page": 7,
+      "text": "mechanical mismatches with rigid electrodes and encapsulation layers[53, 54]. The establishment of robust",
+      "bbox": [
+        36.0,
+        522.43,
+        562.3,
+        536.63
+      ]
+    },
+    {
+      "page": 7,
+      "text": "heterogeneous interfaces during manufacturing to prevent delamination and failure under dynamic loads",
+      "bbox": [
+        36.0,
+        547.83,
+        562.06,
+        561.11
+      ]
+    },
+    {
+      "page": 7,
+      "text": "represents a major technical bottleneck in current device processing.",
+      "bbox": [
+        36.0,
+        572.25,
+        367.18,
+        585.53
+      ]
+    },
+    {
+      "page": 7,
+      "text": "This review comprehensively explores the latest research advances in hydrogel-based flexible sensors",
+      "bbox": [
+        60.0,
+        596.73,
+        562.33,
+        610.01
+      ]
+    },
+    {
+      "page": 7,
+      "text": "and systematically investigates hydrogel synthesis techniques, functional tuning strategies, sensor assembly",
+      "bbox": [
+        36.0,
+        621.15,
+        562.04,
+        634.43
+      ]
+    },
+    {
+      "page": 7,
+      "text": "processes, application domains, as well as current challenges and future development trends (see Figure 2).",
+      "bbox": [
+        36.0,
+        645.63,
+        562.26,
+        658.91
+      ]
+    },
+    {
+      "page": 7,
+      "text": "The structure of this paper is as follows: section 2 provides a comprehensive overview of advanced",
+      "bbox": [
+        36.0,
+        670.05,
+        562.25,
+        683.33
+      ]
+    },
+    {
+      "page": 7,
+      "text": "manufacturing techniques for hydrogels, encompassing solution processing, microstructure molding,",
+      "bbox": [
+        36.0,
+        694.55,
+        562.12,
+        707.83
+      ]
+    },
+    {
+      "page": 7,
+      "text": "photolithography, additive manufacturing, and fiber spinning, which serve as the cornerstone for achieving",
+      "bbox": [
+        36.0,
+        718.97,
+        562.09,
+        732.25
+      ]
+    },
+    {
+      "page": 7,
+      "text": "customised device structures. Section 3 introduces performance-tuning strategies for hydrogels, systematically",
+      "bbox": [
+        36.0,
+        743.45,
+        562.36,
+        756.73
+      ]
+    },
+    {
+      "page": 7,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 7,
+      "text": "5",
+      "bbox": [
+        54.0,
+        772.04,
+        311.17,
+        792.38
+      ]
+    },
+    {
+      "page": 7,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.18,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 8,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 8,
+      "text": "examining approaches to constructing conductive networks, designing for extreme environmental adaptability,",
+      "bbox": [
+        36.0,
+        58.79,
+        565.2,
+        72.07
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 8,
+      "text": "implementing self-healing mechanisms, achieving biocompatibility, and imparting antimicrobial properties.",
+      "bbox": [
+        36.0,
+        83.21,
+        562.14,
+        96.49
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Section 4 summarizes structural design principles for hydrogel-based sensors, focusing on heterogeneous",
+      "bbox": [
+        36.0,
+        107.69,
+        562.29,
+        120.97
+      ]
+    },
+    {
+      "page": 8,
+      "text": "interface connection strategies and device encapsulation solutions. Section 5 outlines the applications of",
+      "bbox": [
+        36.0,
+        132.13,
+        562.07,
+        145.41
+      ]
+    },
+    {
+      "page": 8,
+      "text": "hydrogel-based sensors in monitoring pressure, strain, environment, and bioelectrical signals, demonstrating",
+      "bbox": [
+        36.0,
+        156.61,
+        562.26,
+        169.89
+      ]
+    },
+    {
+      "page": 8,
+      "text": "their immense potential in flexible electronics and intelligent systems. Finally, Section 6 analyses unresolved",
+      "bbox": [
+        36.0,
+        181.03,
+        562.19,
+        194.31
+      ]
+    },
+    {
+      "page": 8,
+      "text": "key issues and technical bottlenecks in current hydrogel-based sensor research while outlining future",
+      "bbox": [
+        36.0,
+        205.51,
+        562.38,
+        218.79
+      ]
+    },
+    {
+      "page": 8,
+      "text": "development directions. This review aims to provide systematic theoretical underpinnings for the preparation",
+      "bbox": [
+        36.0,
+        229.93,
+        562.2,
+        243.21
+      ]
+    },
+    {
+      "page": 8,
+      "text": "of high-performance hydrogels and the design and fabrication of sensors. Concurrently, it is hoped that this",
+      "bbox": [
+        36.0,
+        254.41,
+        562.03,
+        267.69
+      ]
+    },
+    {
+      "page": 8,
+      "text": "work provides a reference framework for in-depth interdisciplinary research in this field and for engineering",
+      "bbox": [
+        36.0,
+        278.83,
+        562.18,
+        292.11
+      ]
+    },
+    {
+      "page": 8,
+      "text": "2018 2016 2014",
+      "bbox": [
+        273.27,
+        531.51,
+        405.38,
+        557.67
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Hydrogel-based pH sensors[21]",
+      "bbox": [
+        205.37,
+        609.28,
+        307.23,
+        617.07
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Hydrogel devices for biomedical",
+      "bbox": [
+        203.87,
+        630.39,
+        314.33,
+        638.17
+      ]
+    },
+    {
+      "page": 8,
+      "text": "First report of self-healing hydrogel[15]",
+      "bbox": [
+        203.87,
+        647.05,
+        329.0,
+        654.86
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Undamaged Damaged Healed",
+      "bbox": [
+        200.11,
+        656.38,
+        318.14,
+        661.93
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Low-temperature organohydrogel sensor[20]",
+      "bbox": [
+        199.38,
+        713.8,
+        319.18,
+        729.95
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Figure 1. The timeline of the development of hydrogels and hydrogel-based sensors. Image for “first fabrication of",
+      "bbox": [
+        36.0,
+        752.59,
+        561.87,
+        763.68
+      ]
+    },
+    {
+      "page": 8,
+      "text": "6",
+      "bbox": [
+        54.0,
+        772.04,
+        311.17,
+        792.38
+      ]
+    },
+    {
+      "page": 8,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.18,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 8,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 8,
+      "text": "applications of flexible electronic devices.",
+      "bbox": [
+        36.0,
+        303.31,
+        241.96,
+        316.59
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Transparent and conformal ‘piezoionic’ touch sensor[25]",
+      "bbox": [
+        64.98,
+        345.83,
+        203.33,
+        361.99
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Hydrogel-based",
+      "bbox": [
+        243.54,
+        392.07,
+        298.62,
+        399.88
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Pressure sensor[24]",
+      "bbox": [
+        127.86,
+        395.08,
+        191.65,
+        402.86
+      ]
+    },
+    {
+      "page": 8,
+      "text": "electrode[32]",
+      "bbox": [
+        245.69,
+        400.82,
+        283.82,
+        408.62
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Ionic hydrogel-based strain sensor[23]",
+      "bbox": [
+        70.21,
+        432.32,
+        195.36,
+        440.11
+      ]
+    },
+    {
+      "page": 8,
+      "text": "PVA hydrogel PDMS Al electrode Ni fabric electrode Hydrogel substrate",
+      "bbox": [
+        250.2,
+        454.63,
+        295.6,
+        485.08
+      ]
+    },
+    {
+      "page": 8,
+      "text": "First fabrication of conductivity hydrogel[11]",
+      "bbox": [
+        65.23,
+        464.38,
+        144.91,
+        480.54
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Triboelectric",
+      "bbox": [
+        239.37,
+        489.14,
+        283.57,
+        496.92
+      ]
+    },
+    {
+      "page": 8,
+      "text": "nanogenerator[26]",
+      "bbox": [
+        240.45,
+        496.74,
+        296.49,
+        504.53
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Intelligent window[12]",
+      "bbox": [
+        127.03,
+        521.11,
+        196.62,
+        528.91
+      ]
+    },
+    {
+      "page": 8,
+      "text": "2010 2012",
+      "bbox": [
+        224.55,
+        543.8,
+        290.92,
+        573.26
+      ]
+    },
+    {
+      "page": 8,
+      "text": "1894",
+      "bbox": [
+        91.29,
+        566.55,
+        108.39,
+        577.4
+      ]
+    },
+    {
+      "page": 8,
+      "text": "1960",
+      "bbox": [
+        118.55,
+        571.97,
+        135.96,
+        583.93
+      ]
+    },
+    {
+      "page": 8,
+      "text": "1990s",
+      "bbox": [
+        165.93,
+        583.0,
+        186.92,
+        594.64
+      ]
+    },
+    {
+      "page": 8,
+      "text": "2008 2003",
+      "bbox": [
+        216.33,
+        591.39,
+        284.21,
+        599.19
+      ]
+    },
+    {
+      "page": 8,
+      "text": "The term ‘hydrogel’ was initially conceived[8]",
+      "bbox": [
+        67.55,
+        610.3,
+        147.78,
+        626.46
+      ]
+    },
+    {
+      "page": 8,
+      "text": "applications[19]",
+      "bbox": [
+        198.67,
+        638.7,
+        246.54,
+        646.51
+      ]
+    },
+    {
+      "page": 8,
+      "text": "The first biocompatible soft contact lens was designed[9]",
+      "bbox": [
+        64.98,
+        643.73,
+        164.12,
+        659.88
+      ]
+    },
+    {
+      "page": 8,
+      "text": "First proposal of high-strength hydrogels[14]",
+      "bbox": [
+        64.92,
+        713.05,
+        174.22,
+        729.2
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Page 6 of 110",
+      "bbox": [
+        531.29,
+        9.22,
+        587.32,
+        21.24
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Hollow",
+      "bbox": [
+        499.33,
+        342.34,
+        515.67,
+        347.9
+      ]
+    },
+    {
+      "page": 8,
+      "text": "skin",
+      "bbox": [
+        502.53,
+        348.3,
+        512.57,
+        353.88
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Recorder",
+      "bbox": [
+        384.39,
+        351.47,
+        406.02,
+        357.03
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Soft conductive",
+      "bbox": [
+        494.47,
+        365.73,
+        520.85,
+        377.31
+      ]
+    },
+    {
+      "page": 8,
+      "text": "hydrogel",
+      "bbox": [
+        497.11,
+        377.72,
+        518.07,
+        383.3
+      ]
+    },
+    {
+      "page": 8,
+      "text": "3D skins[47]",
+      "bbox": [
+        464.68,
+        392.15,
+        502.43,
+        399.93
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Multichannel",
+      "bbox": [
+        348.45,
+        392.47,
+        393.22,
+        400.27
+      ]
+    },
+    {
+      "page": 8,
+      "text": "hydrogel electrode[34]",
+      "bbox": [
+        343.26,
+        400.82,
+        412.86,
+        408.62
+      ]
+    },
+    {
+      "page": 8,
+      "text": "This work Biocompatibility",
+      "bbox": [
+        373.59,
+        414.83,
+        416.57,
+        419.6
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Power μLED",
+      "bbox": [
+        390.66,
+        419.65,
+        421.09,
+        423.92
+      ]
+    },
+    {
+      "page": 8,
+      "text": "A B C",
+      "bbox": [
+        385.41,
+        420.19,
+        387.57,
+        430.07
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Thickness Flexibility",
+      "bbox": [
+        390.31,
+        434.73,
+        420.38,
+        438.06
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Unlock",
+      "bbox": [
+        494.65,
+        439.62,
+        508.09,
+        444.09
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Person recognition",
+      "bbox": [
+        474.84,
+        447.8,
+        511.14,
+        452.25
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Smart glove system[43]",
+      "bbox": [
+        448.97,
+        473.81,
+        524.09,
+        481.62
+      ]
+    },
+    {
+      "page": 8,
+      "text": "All-in-one electronic skin[38]",
+      "bbox": [
+        352.94,
+        474.97,
+        409.0,
+        491.13
+      ]
+    },
+    {
+      "page": 8,
+      "text": "2026",
+      "bbox": [
+        484.5,
+        499.32,
+        500.41,
+        507.1
+      ]
+    },
+    {
+      "page": 8,
+      "text": "2025 2024",
+      "bbox": [
+        402.46,
+        499.32,
+        450.36,
+        508.41
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Expanding emerging",
+      "bbox": [
+        462.34,
+        517.41,
+        532.17,
+        525.21
+      ]
+    },
+    {
+      "page": 8,
+      "text": "2022",
+      "bbox": [
+        435.51,
+        523.88,
+        452.4,
+        534.26
+      ]
+    },
+    {
+      "page": 8,
+      "text": "fields",
+      "bbox": [
+        487.66,
+        525.78,
+        505.97,
+        533.57
+      ]
+    },
+    {
+      "page": 8,
+      "text": "2020",
+      "bbox": [
+        442.95,
+        551.5,
+        458.81,
+        559.3
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Piezoelectric",
+      "bbox": [
+        374.71,
+        641.46,
+        419.94,
+        649.27
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Wearable touch pad[41]",
+      "bbox": [
+        454.05,
+        646.2,
+        529.48,
+        654.0
+      ]
+    },
+    {
+      "page": 8,
+      "text": "sensor[27]",
+      "bbox": [
+        378.84,
+        649.83,
+        408.83,
+        657.62
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Swelling",
+      "bbox": [
+        430.75,
+        669.78,
+        459.42,
+        677.58
+      ]
+    },
+    {
+      "page": 8,
+      "text": "25 day",
+      "bbox": [
+        434.04,
+        704.26,
+        456.19,
+        712.04
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Anti-swelling hydrogrl sensor[28]",
+      "bbox": [
+        396.46,
+        722.08,
+        502.17,
+        729.89
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Page 7 of 110",
+      "bbox": [
+        8.0,
+        9.22,
+        64.03,
+        21.24
+      ]
+    },
+    {
+      "page": 9,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 9,
+      "text": "hydrogel/conductive polymer composites”. Reprinted from[11]. Copyright (1994), with permission from Elsevier. Image for",
+      "bbox": [
+        36.0,
+        59.65,
+        561.87,
+        70.74
+      ]
+    },
+    {
+      "page": 9,
+      "text": "“intelligent window”. Reprinted from[12]. Copyright (1998), with permission from Elsevier. Image for “first proposal of high-strength",
+      "bbox": [
+        36.0,
+        84.07,
+        561.9,
+        95.16
+      ]
+    },
+    {
+      "page": 9,
+      "text": "hydrogels with rubber-like elasticity”. [14] John Wiley & Sons. Copyright © 2003 WILEY-VCH Verlag GmbH & Co. KGaA,",
+      "bbox": [
+        36.0,
+        108.55,
+        561.84,
+        119.64
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Weinheim. Image for “first report of autonomous self-healing in hydrogel films”. [15] John Wiley & Sons. Copyright © 2010 WILEY-",
+      "bbox": [
+        36.0,
+        132.99,
+        559.42,
+        144.08
+      ]
+    },
+    {
+      "page": 9,
+      "text": "VCH Verlag GmbH & Co. KGaA, Weinheim. Image for “Pressure sensor”. Reproduced from [24], with permission from Springer",
+      "bbox": [
+        36.0,
+        157.47,
+        561.79,
+        168.56
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Nature.. Image of “triboelectric nanogenerator”. [26] John Wiley & Sons. © 2016 WILEY-VCH Verlag GmbH & Co. KGaA,",
+      "bbox": [
+        36.0,
+        181.89,
+        561.82,
+        192.98
+      ]
+    },
+    {
+      "page": 9,
+      "text": "Weinheim. Image for “piezoelectric sensor”. Reproduced from [27] with permission from Springer Nature. Image for “hydrogel-",
+      "bbox": [
+        36.0,
+        206.37,
+        559.42,
+        217.46
+      ]
+    },
+    {
+      "page": 9,
+      "text": "based electrode”. Reprinted with permission from [32]. Copyright (2019) American Chemical Society. Image of “anti-swelling",
+      "bbox": [
+        36.0,
+        230.79,
+        561.85,
+        242.22
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 8,
+      "caption_original": "Figure 1. The timeline of the development of hydrogels and hydrogel-based sensors. Image for “first fabrication of",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-01.png",
+      "image_width": 1001,
+      "image_height": 847,
+      "crop_confidence": "high",
+      "bbox": [
+        47.85,
+        321.56,
+        547.7,
+        744.93
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 2",
+      "page": 10,
+      "caption_original": "Figure 2. Schematic overview of the review framework. It systematically covers the fabrication and performance regulation",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-02.png",
+      "image_width": 884,
+      "image_height": 862,
+      "crop_confidence": "high",
+      "bbox": [
+        76.91,
+        49.03,
+        518.14,
+        479.55
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 3",
+      "page": 14,
+      "caption_original": "Figure 3. Various solution processing techniques have been developed for hydrogel fabrication, as illustrated below: (a) physical",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "physical",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 960,
+      "image_height": 1164,
+      "crop_confidence": "high",
+      "bbox": [
+        57.38,
+        55.05,
+        536.91,
+        636.61
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 4",
+      "page": 19,
+      "caption_original": "Figure 4. Hydrogel fabrication techniques. (a) Casting. (b) Spin coating. (c) Spray coating. (d) Ionic hydrogel cast in a pyramid-",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Casting",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Spin coating",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Spray coating",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Ionic hydrogel cast in a pyramid-",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 979,
+      "image_height": 1082,
+      "crop_confidence": "high",
+      "bbox": [
+        53.37,
+        51.1,
+        542.14,
+        591.82
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Figure 5",
+      "page": 27,
+      "caption_original": "Figure 5. Conductivity properties of the hydrogels. (a) Different types of conductive hydrogels: polymer-based, metal-based, ion-",
+      "caption_zh": "Figure 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Different types of conductive hydrogels: polymer-based, metal-based, ion-",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 984,
+      "image_height": 962,
+      "crop_confidence": "high",
+      "bbox": [
+        38.0,
+        240.89,
+        529.53,
+        721.29
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Figure 6",
+      "page": 31,
+      "caption_original": "Figure 6. The anti-freezing and water-retention properties of the hydrogels. (a) Introduction of LiCl imparts anti-freezing and self-",
+      "caption_zh": "Figure 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Introduction of LiCl imparts anti-freezing and self-",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 971,
+      "image_height": 995,
+      "crop_confidence": "high",
+      "bbox": [
+        55.12,
+        76.9,
+        540.16,
+        573.58
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-06.png"
+    },
+    {
+      "id": "F007",
+      "label": "Figure 7",
+      "page": 35,
+      "caption_original": "Figure 7. The anti-swelling property of hydrogels. (a) DMSO-to-water solvent exchange process and the resulting swelling curve",
+      "caption_zh": "Figure 7 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "DMSO-to-water solvent exchange process and the resulting swelling curve",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-07.png",
+      "image_width": 974,
+      "image_height": 863,
+      "crop_confidence": "high",
+      "bbox": [
+        54.35,
+        55.05,
+        540.73,
+        486.1
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-07.png"
+    },
+    {
+      "id": "F008",
+      "label": "Figure 8",
+      "page": 41,
+      "caption_original": "Figure 8(c). Similarly, incorporating PA into PAM/AA hydrogels confers both tissue-mimetic mechanical",
+      "caption_zh": "Figure 8 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-08.png",
+      "image_width": 1119,
+      "image_height": 671,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        359.47
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-08.png"
+    },
+    {
+      "id": "F009",
+      "label": "Figure 9",
+      "page": 50,
+      "caption_original": "Figure 9. Assembly strategies of hydrogel-based sensors. (a) Vertical sandwich architecture. (b) Pressure sensor array using a",
+      "caption_zh": "Figure 9 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Vertical sandwich architecture",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Pressure sensor array using a",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-09.png",
+      "image_width": 996,
+      "image_height": 1176,
+      "crop_confidence": "high",
+      "bbox": [
+        48.62,
+        55.44,
+        546.39,
+        642.65
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-09.png"
+    },
+    {
+      "id": "F010",
+      "label": "Figure 10",
+      "page": 54,
+      "caption_original": "Figure 10. Chemical anchoring and mechanical interlocking strategies at heterogeneous interfaces. (a) In-situ anchoring via silane",
+      "caption_zh": "Figure 10 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "In-situ anchoring via silane",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-10.png",
+      "image_width": 980,
+      "image_height": 683,
+      "crop_confidence": "high",
+      "bbox": [
+        52.89,
+        53.92,
+        542.39,
+        394.57
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-10.png"
+    },
+    {
+      "id": "F011",
+      "label": "Figure 11",
+      "page": 57,
+      "caption_original": "Figure 11. Encapsulation strategies for hydrogel-based sensors. (a) The preparation process of the silicone rubber-encapsulated",
+      "caption_zh": "Figure 11 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "The preparation process of the silicone rubber-encapsulated",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-11.png",
+      "image_width": 985,
+      "image_height": 878,
+      "crop_confidence": "high",
+      "bbox": [
+        51.39,
+        51.9,
+        543.44,
+        490.44
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-11.png"
+    },
+    {
+      "id": "F012",
+      "label": "Figure 12",
+      "page": 60,
+      "caption_original": "Figure 12. Connections between sensing mechanisms, perception dimensions and application scenarios.",
+      "caption_zh": "Figure 12 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [],
+      "image_filename": "figure-12.png",
+      "image_width": 978,
+      "image_height": 357,
+      "crop_confidence": "high",
+      "bbox": [
+        53.35,
+        236.4,
+        541.62,
+        414.36
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-12.png"
+    },
+    {
+      "id": "F013",
+      "label": "Figure 13",
+      "page": 63,
+      "caption_original": "Figure 13(b), its working principle relied on the EDL capacitance formed between the electrodes and the",
+      "caption_zh": "Figure 13 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-13.png",
+      "image_width": 1119,
+      "image_height": 1420,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        733.85
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-13.png"
+    },
+    {
+      "id": "F014",
+      "label": "Figure 14",
+      "page": 71,
+      "caption_original": "Figure 14. Multifunctional hydrogels for environmental sensors and bioelectric sensors. (a) Schematic diagram of a hydrogel",
+      "caption_zh": "Figure 14 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Schematic diagram of a hydrogel",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        }
+      ],
+      "image_filename": "figure-14.png",
+      "image_width": 984,
+      "image_height": 968,
+      "crop_confidence": "high",
+      "bbox": [
+        51.56,
+        52.62,
+        543.33,
+        536.33
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-14.png"
+    },
+    {
+      "id": "F015",
+      "label": "Figure 15",
+      "page": 78,
+      "caption_original": "Figure 15. Current challenges and potential solution strategies for hydrogel-based sensors.",
+      "caption_zh": "Figure 15 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [],
+      "image_filename": "figure-15.png",
+      "image_width": 845,
+      "image_height": 352,
+      "crop_confidence": "high",
+      "bbox": [
+        86.08,
+        284.59,
+        508.36,
+        460.5
+      ],
+      "image_path": "papers/paper-3907483235c542f9/figures/figure-15.png"
+    }
+  ],
+  "original_pdf": "papers/paper-3907483235c542f9/original.pdf",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1088/2631-7990/aea3e5",
+    "publisher_url": "https://doi.org/10.1088/2631-7990/aea3e5",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://iopscience.iop.org/article/10.1088/2631-7990/aea3e5/pdf"
+    ],
+    "successful_url": "https://iopscience.iop.org/article/10.1088/2631-7990/aea3e5/pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-09/deep-reads/paper-3907483235c542f9/paper.md",
+  "source_map": "research-memory/literature/2026/2026-09-09/deep-reads/paper-3907483235c542f9/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}
