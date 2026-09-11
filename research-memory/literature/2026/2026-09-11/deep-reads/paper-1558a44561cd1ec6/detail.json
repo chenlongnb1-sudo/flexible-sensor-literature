@@ -1,0 +1,1265 @@
+{
+  "schema_version": 1,
+  "id": "paper-1558a44561cd1ec6",
+  "title": "Vibrissae-inspired wearable neuromorphic artificial fingernail for vibrotactile perception and interfacing",
+  "authors": [
+    "Chao Ai",
+    "Sai Jiang",
+    "Chaoran Wu",
+    "Yukai Zhou",
+    "Chen Xu",
+    "Kai Chen",
+    "Qinyong Dai",
+    "Chengpeng Jiang",
+    "Shi Yi",
+    "Yun Li"
+  ],
+  "venue": "International Journal of Extreme Manufacturing",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "神经形态与传感计算",
+    "可穿戴健康与生理监测"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-10",
+  "doi": "10.1088/2631-7990/aea5fb",
+  "source_url": "https://doi.org/10.1088/2631-7990/aea5fb",
+  "pdf_source_url": "https://iopscience.iop.org/article/10.1088/2631-7990/aea5fb/pdf",
+  "pdf_version": "repository_or_author_copy",
+  "pdf_version_label": "作者或机构仓储合法公开版本",
+  "status": "fulltext_draft",
+  "generated_at": "2026-09-11T06:04:03.368355+00:00",
+  "page_count": 20,
+  "abstract": {
+    "original": "Abstract The rodent vibrissal system exhibits remarkable vibrotactile perception, enabling the discrimination of fine surface features through dynamic spike encoding and efficient synaptic integration. Here, we develop a vibrissae-inspired wearable neuromorphic artificial fingernail that combines piezoelectric sensing, spike encoding, and synaptic processing within a near-sensor computing architecture. A dual-gate synaptic transistor gated by proton-conducting ion gel exhibits excellent air stability, sensory memory, sensory integration, and perceptual weighting capabilities, allowing spatiotemporal recognition of both fast- and slow-adapting tactile spikes. Notably, this synaptic device features multiple preprocessing functions, enabling direct extraction of task-relevant features at the hardware level and thereby minimizing computational requirements. Using this system, we achieve over 90% classification accuracy across multiple tactile tasks, including object contour recognition, surface texture discrimination, and finger-writing trajectory identification. These results demonstrate the potential of our system as a smart wearable interface for low-power, real-time tactile recognition, thereby expanding the applications of neuromorphic electronics.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "Abstract The rodent vibrissal system exhibits remarkable vibrotactile perception, enabling the discrimination of fine surface features through dynamic spike encoding and efficient synaptic integration."
+  ],
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "把文中的传感/计算耦合机制映射为可编程物理投影核，增加原始像素、软件投影和硬件投影三组严格消融。"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 5,
+      "category_zh": "制备与实验操作",
+      "original": "2.1 Fabrication of synaptic devices https://mc04.manuscriptcentral.com/ijem-caep Accepted Manuscript International Journal of Extreme Manufacturing Dual-gate IGZO synaptic transistors were fabricated on 1.5 cm ×1.5 cm Si substrates (Figure S1).",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "A 30 nm-thick IGZO (In:Ga:Zn = 2:2:1) Accepted Manuscript semiconductor layer was deposited by radio frequency (RF) magnetron sputtering (100 W, 5 mTorr Ar atmosphere, room temperature).",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "The source, drain, and two lateral gate electrodes were defined through a Ni shadow mask, followed by the sputtering of a 100 nm indium tin oxide (ITO, mass ratio of In2O3 and SnO2 was 9:1) film under identical Ar pressure.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 5,
+      "category_zh": "材料混合与分散",
+      "original": "The chitosan-based ion-gel electrolyte was prepared by dissolving chitosan (2 wt%) in acetic acid (2 wt%) at 80 °C with continuous stirring, followed by the addition of 1 wt% glycerol.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 5,
+      "category_zh": "图形化与结构成形",
+      "original": "The resulting solution was cast and thermally cured at 80 °C for 1 h to form a flexible, transparent gel film.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 5,
+      "category_zh": "组装与封装",
+      "original": "The ion-gel film was then diced and laminated onto the surface of the oxide channel and planar gates, establishing an electric double layer at the gel/semiconductor interface.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 5,
+      "category_zh": "成膜与沉积",
+      "original": "The obtained devices were wire- bonded onto printed circuit boards for testing.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 5,
+      "category_zh": "制备与实验操作",
+      "original": "The structural morphology and layer configuration of the as- fabricated device were characterized by optical microscopy, cross-sectional scanning electron microscopy",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.5 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 6,
+      "category_zh": "成膜与沉积",
+      "original": "The sensor, composed of a 28 μm-thick piezoelectric film bonded to a polyester substrate with screen-printed electrodes, was mounted onto a custom-designed printed circuit board (PCB).",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.6 原文为准。"
+    },
+    {
+      "step": 10,
+      "page": 7,
+      "category_zh": "图形化与结构成形",
+      "original": "These two distinct spike patterns are conveyed by different classes of afferent fibers to second-order neurons in the trigeminal nuclei, where synaptic integration occurs[22].",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    },
+    {
+      "step": 11,
+      "page": 7,
+      "category_zh": "图形化与结构成形",
+      "original": "The temporal pattern and correlation of the two spike https://mc04.manuscriptcentral.com/ijem-caep Accepted Manuscript International Journal of Extreme Manufacturing trains modulate the synaptic behavior of the transistor and consequently affect its postsynaptic current output.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.7 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 5,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 5,
+      "text": "2.1 Fabrication of synaptic devices",
+      "bbox": [
+        36.0,
+        767.87,
+        215.45,
+        781.15
+      ]
+    },
+    {
+      "page": 5,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.18,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 5,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 6,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Dual-gate IGZO synaptic transistors were fabricated on 1.5 cm ×1.5 cm Si substrates (Figure S1). Substrates",
+      "bbox": [
+        36.0,
+        36.47,
+        562.25,
+        49.75
+      ]
+    },
+    {
+      "page": 6,
+      "text": "were ultrasonically cleaned in acetone, isopropanol, and deionized water, followed by ultraviolet-ozone (UV-",
+      "bbox": [
+        36.0,
+        57.11,
+        559.48,
+        70.39
+      ]
+    },
+    {
+      "page": 6,
+      "text": "ozone) treatment to improve surface cleanliness and wettability. A 30 nm-thick IGZO (In:Ga:Zn = 2:2:1)",
+      "bbox": [
+        36.0,
+        77.89,
+        562.29,
+        91.17
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 6,
+      "text": "semiconductor layer was deposited by radio frequency (RF) magnetron sputtering (100 W, 5 mTorr Ar",
+      "bbox": [
+        36.0,
+        98.53,
+        562.28,
+        111.81
+      ]
+    },
+    {
+      "page": 6,
+      "text": "atmosphere, room temperature). The source, drain, and two lateral gate electrodes were defined through a Ni",
+      "bbox": [
+        36.0,
+        119.29,
+        562.13,
+        132.57
+      ]
+    },
+    {
+      "page": 6,
+      "text": "shadow mask, followed by the sputtering of a 100 nm indium tin oxide (ITO, mass ratio of In2O3 and SnO2",
+      "bbox": [
+        36.0,
+        139.93,
+        562.44,
+        153.32
+      ]
+    },
+    {
+      "page": 6,
+      "text": "was 9:1) film under identical Ar pressure. The chitosan-based ion-gel electrolyte was prepared by dissolving",
+      "bbox": [
+        36.0,
+        160.69,
+        562.25,
+        173.97
+      ]
+    },
+    {
+      "page": 6,
+      "text": "chitosan (2 wt%) in acetic acid (2 wt%) at 80 °C with continuous stirring, followed by the addition of 1 wt%",
+      "bbox": [
+        36.0,
+        181.33,
+        562.44,
+        194.61
+      ]
+    },
+    {
+      "page": 6,
+      "text": "glycerol. The resulting solution was cast and thermally cured at 80 °C for 1 h to form a flexible, transparent",
+      "bbox": [
+        36.0,
+        202.09,
+        561.96,
+        215.37
+      ]
+    },
+    {
+      "page": 6,
+      "text": "gel film. The ion-gel film was then diced and laminated onto the surface of the oxide channel and planar gates,",
+      "bbox": [
+        36.0,
+        222.73,
+        562.2,
+        236.01
+      ]
+    },
+    {
+      "page": 6,
+      "text": "establishing an electric double layer at the gel/semiconductor interface. The obtained devices were wire-",
+      "bbox": [
+        36.0,
+        243.52,
+        559.48,
+        256.8
+      ]
+    },
+    {
+      "page": 6,
+      "text": "bonded onto printed circuit boards for testing. The structural morphology and layer configuration of the as-",
+      "bbox": [
+        36.0,
+        264.16,
+        559.24,
+        277.44
+      ]
+    },
+    {
+      "page": 6,
+      "text": "fabricated device were characterized by optical microscopy, cross-sectional scanning electron microscopy",
+      "bbox": [
+        36.0,
+        284.92,
+        562.41,
+        298.2
+      ]
+    },
+    {
+      "page": 6,
+      "text": "(SEM), and atomic force microscopy (AFM), as provided in Figure S2. The device architecture supports",
+      "bbox": [
+        36.0,
+        305.56,
+        562.17,
+        318.84
+      ]
+    },
+    {
+      "page": 6,
+      "text": "single-gate or dual-gate operation, with synaptic plasticity modulated by electrical spikes.",
+      "bbox": [
+        36.0,
+        326.32,
+        469.78,
+        339.6
+      ]
+    },
+    {
+      "page": 6,
+      "text": "The structural morphology and layer configuration of the artificial synaptic device were examined by optical",
+      "bbox": [
+        36.0,
+        367.72,
+        562.06,
+        381.0
+      ]
+    },
+    {
+      "page": 6,
+      "text": "microscopy (DM500, Leica), cross-sectional field-emission scanning electron microscopy (SEM, ULTRA 55,",
+      "bbox": [
+        36.0,
+        388.36,
+        562.33,
+        401.64
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Carl Zeiss), and atomic force microscopy (AFM, MultiMode 8, Bruker Scientific Instruments). The ionic",
+      "bbox": [
+        36.0,
+        409.12,
+        562.21,
+        422.4
+      ]
+    },
+    {
+      "page": 6,
+      "text": "capacitance of the ion-gel was evaluated using an LCR meter (Agilent E4980A). The synaptic transistor was",
+      "bbox": [
+        36.0,
+        429.78,
+        562.08,
+        443.06
+      ]
+    },
+    {
+      "page": 6,
+      "text": "electrically characterized using a semiconductor parameter analyzer (Keysight B1500A). To characterize the",
+      "bbox": [
+        36.0,
+        450.54,
+        562.02,
+        463.82
+      ]
+    },
+    {
+      "page": 6,
+      "text": "piezoelectric sensor response, mechanical stimulation was applied using a motorized force test stand (ESM301,",
+      "bbox": [
+        36.0,
+        471.18,
+        565.34,
+        484.46
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Mark-10) equipped with a force gauge, and the resulting voltage signals were recorded with a Tektronix 4",
+      "bbox": [
+        36.0,
+        491.94,
+        562.04,
+        505.22
+      ]
+    },
+    {
+      "page": 6,
+      "text": "A flexible piezoelectric vibrotactile sensor (LDT0-028K, TE Connectivity) was employed to transduce",
+      "bbox": [
+        36.0,
+        553.98,
+        562.21,
+        567.26
+      ]
+    },
+    {
+      "page": 6,
+      "text": "mechanical deflection into analog voltage signals. The sensor, composed of a 28 μm-thick piezoelectric film",
+      "bbox": [
+        36.0,
+        574.74,
+        562.32,
+        588.02
+      ]
+    },
+    {
+      "page": 6,
+      "text": "bonded to a polyester substrate with screen-printed electrodes, was mounted onto a custom-designed printed",
+      "bbox": [
+        36.0,
+        595.41,
+        562.38,
+        608.69
+      ]
+    },
+    {
+      "page": 6,
+      "text": "circuit board (PCB). The PCB provided a direct connection to the dual-gate synaptic transistor via a gold-",
+      "bbox": [
+        36.0,
+        616.17,
+        559.36,
+        629.45
+      ]
+    },
+    {
+      "page": 6,
+      "text": "plated interface for real-time signal transmission. The spike-encoded FA/SA signals were routed to the two",
+      "bbox": [
+        36.0,
+        636.81,
+        562.28,
+        650.09
+      ]
+    },
+    {
+      "page": 6,
+      "text": "independent gates of the transistor, which was powered by a 0.1 V supply module controlled by the",
+      "bbox": [
+        36.0,
+        657.57,
+        562.08,
+        670.85
+      ]
+    },
+    {
+      "page": 6,
+      "text": "microcontroller (ESP32). ESP32 also read the drain-source current through an integrated analog front-end",
+      "bbox": [
+        36.0,
+        678.21,
+        562.43,
+        691.49
+      ]
+    },
+    {
+      "page": 6,
+      "text": "module equipped with a low-noise transimpedance amplifier and analog-to-digital converter (ADC) circuitry,",
+      "bbox": [
+        36.0,
+        698.97,
+        562.41,
+        712.25
+      ]
+    },
+    {
+      "page": 6,
+      "text": "enabling precise capture of the postsynaptic current (PSC) (Figure S3). The difference between the maximum",
+      "bbox": [
+        36.0,
+        719.61,
+        562.18,
+        732.89
+      ]
+    },
+    {
+      "page": 6,
+      "text": "and minimum postsynaptic current, denoted as ΔPSC, was extracted to quantify the stimulus intensity.",
+      "bbox": [
+        36.0,
+        740.36,
+        562.36,
+        753.65
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Hardware-derived features, including fFA and fSA, and ΔPSC (Figure S4), were processed by the",
+      "bbox": [
+        36.0,
+        761.03,
+        562.35,
+        774.42
+      ]
+    },
+    {
+      "page": 6,
+      "text": "microcontroller for real-time tactile classification. All feature data and recognition results were wirelessly",
+      "bbox": [
+        36.0,
+        781.67,
+        562.09,
+        794.95
+      ]
+    },
+    {
+      "page": 6,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.17,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 6,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "2.2 Characterization and measurements",
+      "bbox": [
+        36.0,
+        346.96,
+        243.41,
+        360.24
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Series MSO oscilloscope (MSO44).",
+      "bbox": [
+        36.0,
+        512.58,
+        211.73,
+        525.86
+      ]
+    },
+    {
+      "page": 6,
+      "text": "2.3 Hardware of the neuromorphic system",
+      "bbox": [
+        36.0,
+        533.34,
+        255.29,
+        546.62
+      ]
+    },
+    {
+      "page": 6,
+      "text": "Page 4 of 18",
+      "bbox": [
+        536.42,
+        9.22,
+        587.32,
+        21.24
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Page 5 of 18",
+      "bbox": [
+        8.0,
+        9.22,
+        58.9,
+        21.24
+      ]
+    },
+    {
+      "page": 7,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 7,
+      "text": "transmitted via Bluetooth to a host computer (Figure S5). This wireless, distributed sensing-processing",
+      "bbox": [
+        36.0,
+        36.47,
+        562.4,
+        49.75
+      ]
+    },
+    {
+      "page": 7,
+      "text": "architecture supports compact, low-latency, and wearable closed-loop tactile cognition without reliance on",
+      "bbox": [
+        36.0,
+        57.11,
+        562.27,
+        70.39
+      ]
+    },
+    {
+      "page": 7,
+      "text": "external computation units.",
+      "bbox": [
+        36.0,
+        77.89,
+        170.06,
+        91.17
+      ]
+    },
+    {
+      "page": 7,
+      "text": "2.4 Demonstration of tactile perception and finger-writing interaction",
+      "bbox": [
+        36.0,
+        98.53,
+        394.27,
+        111.81
+      ]
+    },
+    {
+      "page": 7,
+      "text": "All the experiments were performed using a biomimetic tactile perception system consisting of a piezoelectric",
+      "bbox": [
+        36.0,
+        119.29,
+        562.21,
+        132.57
+      ]
+    },
+    {
+      "page": 7,
+      "text": "sensor, a spike-encoding module, and a dual-gate IGZO synaptic transistor. To minimize power-line",
+      "bbox": [
+        36.0,
+        139.93,
+        562.4,
+        153.21
+      ]
+    },
+    {
+      "page": 7,
+      "text": "interference, all sensor signal acquisitions were conducted inside an electromagnetic shielding cage. For tactile",
+      "bbox": [
+        36.0,
+        160.69,
+        562.3,
+        173.97
+      ]
+    },
+    {
+      "page": 7,
+      "text": "scanning tasks, the piezoelectric sensor was mounted on a linear translation stage (Zolix TSM25-2A) and",
+      "bbox": [
+        36.0,
+        181.33,
+        562.4,
+        194.61
+      ]
+    },
+    {
+      "page": 7,
+      "text": "inclined by ~10° relative to the scanning plane to ensure reliable contact. A pre-deflection of ~1 mm was",
+      "bbox": [
+        36.0,
+        202.09,
+        562.31,
+        215.37
+      ]
+    },
+    {
+      "page": 7,
+      "text": "applied to the sensor tip to ensure stable contact with the sample surface. The sample was translated at a",
+      "bbox": [
+        36.0,
+        222.73,
+        561.94,
+        236.01
+      ]
+    },
+    {
+      "page": 7,
+      "text": "constant speed of 5.25 mm·s−1. Sensor output signals were acquired using a Tektronix 4-series oscilloscope",
+      "bbox": [
+        36.0,
+        242.46,
+        562.37,
+        256.8
+      ]
+    },
+    {
+      "page": 7,
+      "text": "and processed in real time via a spike encoding algorithm. Encoded spikes were sent to the dual-gate terminals",
+      "bbox": [
+        36.0,
+        264.16,
+        562.35,
+        277.44
+      ]
+    },
+    {
+      "page": 7,
+      "text": "of the IGZO-based synaptic transistor, and the corresponding postsynaptic current signals from the device",
+      "bbox": [
+        36.0,
+        284.92,
+        562.29,
+        298.2
+      ]
+    },
+    {
+      "page": 7,
+      "text": "were recorded. Encoded spikes, postsynaptic current, and classification outcomes were wirelessly transmitted",
+      "bbox": [
+        36.0,
+        305.56,
+        562.18,
+        318.84
+      ]
+    },
+    {
+      "page": 7,
+      "text": "via Bluetooth and visualized on a host computer for analysis.",
+      "bbox": [
+        36.0,
+        326.32,
+        332.47,
+        339.6
+      ]
+    },
+    {
+      "page": 7,
+      "text": "3. Results and discussion",
+      "bbox": [
+        36.0,
+        367.82,
+        187.4,
+        383.36
+      ]
+    },
+    {
+      "page": 7,
+      "text": "3.1 Bioinspired artificial fingernail with neuromorphic architecture",
+      "bbox": [
+        36.0,
+        391.84,
+        383.23,
+        405.12
+      ]
+    },
+    {
+      "page": 7,
+      "text": "In the rodent vibrissal system, when a vibrissa contacts external objects, mechanical stimuli such as vibration",
+      "bbox": [
+        36.0,
+        412.5,
+        562.22,
+        425.78
+      ]
+    },
+    {
+      "page": 7,
+      "text": "and pressure are captured by the follicle-sinus complex located at the vibrissae base (Figure 1(a))[10, 20]. This",
+      "bbox": [
+        36.0,
+        432.23,
+        562.42,
+        446.54
+      ]
+    },
+    {
+      "page": 7,
+      "text": "specialized tactile organ contains diverse mechanoreceptors with different sensitivities to stimulus",
+      "bbox": [
+        36.0,
+        453.9,
+        562.07,
+        467.18
+      ]
+    },
+    {
+      "page": 7,
+      "text": "dynamics[10]. Some receptors respond preferentially to rapid, transient deflections with phasic firing, whereas",
+      "bbox": [
+        36.0,
+        473.63,
+        562.44,
+        487.94
+      ]
+    },
+    {
+      "page": 7,
+      "text": "others exhibit more sustained responses with tonic firing[21]. These two distinct spike patterns are conveyed",
+      "bbox": [
+        36.0,
+        494.27,
+        562.25,
+        508.58
+      ]
+    },
+    {
+      "page": 7,
+      "text": "by different classes of afferent fibers to second-order neurons in the trigeminal nuclei, where synaptic",
+      "bbox": [
+        36.0,
+        516.06,
+        562.2,
+        529.34
+      ]
+    },
+    {
+      "page": 7,
+      "text": "integration occurs[22]. This early-stage processing emphasizes stimulus-dependent temporal dynamics and",
+      "bbox": [
+        36.0,
+        535.67,
+        562.31,
+        549.98
+      ]
+    },
+    {
+      "page": 7,
+      "text": "reduces redundancy in the tactile inputs before transmission to the somatosensory cortex for further perception",
+      "bbox": [
+        36.0,
+        557.46,
+        562.13,
+        570.74
+      ]
+    },
+    {
+      "page": 7,
+      "text": "and recognition[23]. The entire process can be conceptually understood through a bioinspired labeled-line",
+      "bbox": [
+        36.0,
+        577.07,
+        562.42,
+        591.38
+      ]
+    },
+    {
+      "page": 7,
+      "text": "framework (Figure S6), in which dynamic and static tactile cues are independently encoded through two",
+      "bbox": [
+        36.0,
+        598.89,
+        562.0,
+        612.17
+      ]
+    },
+    {
+      "page": 7,
+      "text": "parallel channels (FA and SA) and subsequently integrated at a later stage.",
+      "bbox": [
+        36.0,
+        619.53,
+        395.47,
+        632.81
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Figure 1(b) shows the schematic of our wearable neuromorphic artificial fingernail, which reproduces",
+      "bbox": [
+        60.02,
+        640.29,
+        562.08,
+        653.57
+      ]
+    },
+    {
+      "page": 7,
+      "text": "key structural and functional elements of the rodent vibrissae pathway for sensing, encoding, and",
+      "bbox": [
+        36.0,
+        660.93,
+        562.1,
+        674.21
+      ]
+    },
+    {
+      "page": 7,
+      "text": "preprocessing. Our system employs a flexible piezoelectric sensor that transduces mechanical stimuli such as",
+      "bbox": [
+        36.0,
+        681.69,
+        562.32,
+        694.97
+      ]
+    },
+    {
+      "page": 7,
+      "text": "vibration and pressure into continuous analog voltage signals resembling the receptor potential[24]. We",
+      "bbox": [
+        36.0,
+        701.3,
+        562.41,
+        715.61
+      ]
+    },
+    {
+      "page": 7,
+      "text": "designed a dual-channel spike encoder that converts analog tactile signals into two spike trains corresponding",
+      "bbox": [
+        36.0,
+        723.09,
+        562.2,
+        736.37
+      ]
+    },
+    {
+      "page": 7,
+      "text": "to dynamic (FA) and static (SA) tactile information. These two spike trains are delivered to the two gates of a",
+      "bbox": [
+        36.0,
+        743.72,
+        562.14,
+        757.01
+      ]
+    },
+    {
+      "page": 7,
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60",
+      "bbox": [
+        8.0,
+        45.22,
+        18.26,
+        765.24
+      ]
+    },
+    {
+      "page": 7,
+      "text": "dual-gate synaptic transistor with asymmetric synaptic weights, reflecting the different perceptual weights",
+      "bbox": [
+        36.0,
+        764.51,
+        562.44,
+        777.79
+      ]
+    },
+    {
+      "page": 7,
+      "text": "among multiple tactile modalities in biological systems. The temporal pattern and correlation of the two spike",
+      "bbox": [
+        36.0,
+        785.15,
+        562.2,
+        798.43
+      ]
+    },
+    {
+      "page": 7,
+      "text": "https://mc04.manuscriptcentral.com/ijem-caep",
+      "bbox": [
+        199.18,
+        800.4,
+        396.15,
+        812.42
+      ]
+    },
+    {
+      "page": 7,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 8,
+      "text": "International Journal of Extreme Manufacturing",
+      "bbox": [
+        198.88,
+        9.22,
+        396.44,
+        21.24
+      ]
+    },
+    {
+      "page": 8,
+      "text": "trains modulate the synaptic behavior of the transistor and consequently affect its postsynaptic current output.",
+      "bbox": [
+        36.0,
+        36.47,
+        562.14,
+        49.75
+      ]
+    },
+    {
+      "page": 8,
+      "text": "In this way, the device realizes multisensory integration and synaptic processing of tactile stimuli, analogous",
+      "bbox": [
+        36.0,
+        57.11,
+        561.91,
+        70.39
+      ]
+    },
+    {
+      "page": 8,
+      "text": "to mechanoreceptor pathways in biological tactile perception[25-26].",
+      "bbox": [
+        36.0,
+        76.84,
+        358.75,
+        91.17
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Accepted Manuscript",
+      "bbox": [
+        -5.73,
+        80.66,
+        565.66,
+        821.12
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Standard machine learning (ML) pipelines for tactile recognition typically require the preprocessing of",
+      "bbox": [
+        60.02,
+        98.53,
+        562.41,
+        111.81
+      ]
+    },
+    {
+      "page": 8,
+      "text": "temporal signals, which are then unfolded into high-dimensional feature vectors and processed by",
+      "bbox": [
+        36.0,
+        119.29,
+        562.23,
+        132.57
+      ]
+    },
+    {
+      "page": 8,
+      "text": "computationally intensive models such as deep neural networks, spiking neural networks, or other high-",
+      "bbox": [
+        36.0,
+        139.93,
+        559.36,
+        153.21
+      ]
+    },
+    {
+      "page": 8,
+      "text": "dimensional classifiers (left panel of Figure 1(c)) [27-29]. Instead of expanding temporal signals into high-",
+      "bbox": [
+        36.0,
+        159.66,
+        559.6,
+        173.97
+      ]
+    },
+    {
+      "page": 8,
+      "text": "dimensional representations, our strategy (right panel of Figure 1(c)) encodes tactile information at the sensing",
+      "bbox": [
+        36.0,
+        181.33,
+        562.2,
+        194.61
+      ]
+    },
+    {
+      "page": 8,
+      "text": "stage by converting continuous tactile signals into sparse, event-driven spike trains. These spikes are then",
+      "bbox": [
+        36.0,
+        202.09,
+        562.37,
+        215.37
+      ]
+    },
+    {
+      "page": 8,
+      "text": "processed by a dual-gate synaptic transistor to perform weighted integration of the FA and SA pathways,",
+      "bbox": [
+        36.0,
+        222.73,
+        562.08,
+        236.01
+      ]
+    },
+    {
+      "page": 8,
+      "text": "thereby producing synaptic responses that reflect their spike-timing dynamics. The synaptic responses of the",
+      "bbox": [
+        36.0,
+        243.52,
+        562.26,
+        256.8
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Figure 1",
+      "page": 7,
+      "caption_original": "Figure 1(b) shows the schematic of our wearable neuromorphic artificial fingernail, which reproduces",
+      "caption_zh": "Figure 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "b",
+          "original": "shows the schematic of our wearable neuromorphic artificial fingernail, which reproduces",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 1119,
+      "image_height": 1227,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        637.29
+      ],
+      "image_path": "papers/paper-1558a44561cd1ec6/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Figure 3",
+      "page": 12,
+      "caption_original": "Figure 3(k) and (l). In this case, the feature distribution spans all three axes (fFA, fSA, and ΔPSC), and the",
+      "caption_zh": "Figure 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "k",
+          "original": "and (l). In this case, the feature distribution spans all three axes (fFA, fSA, and ΔPSC), and the",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 1119,
+      "image_height": 185,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        116.29
+      ],
+      "image_path": "papers/paper-1558a44561cd1ec6/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 2",
+      "page": 18,
+      "caption_original": "Figure 2. Neuromorphic tactile sensing and recognition framework. (a) Overall workflow of the neuromorphic",
+      "caption_zh": "Figure 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Overall workflow of the neuromorphic",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 1119,
+      "image_height": 876,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        461.66
+      ],
+      "image_path": "papers/paper-1558a44561cd1ec6/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Figure 4",
+      "page": 20,
+      "caption_original": "Figure 4. Neuromorphic tactile interface for real-time gesture recognition and control. (a) Bioinspired concept",
+      "caption_zh": "Figure 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Bioinspired concept",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 1119,
+      "image_height": 690,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.32,
+        368.92
+      ],
+      "image_path": "papers/paper-1558a44561cd1ec6/figures/figure-04.png"
+    }
+  ],
+  "original_pdf": "papers/paper-1558a44561cd1ec6/original.pdf",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1088/2631-7990/aea5fb",
+    "publisher_url": "https://doi.org/10.1088/2631-7990/aea5fb",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://iopscience.iop.org/article/10.1088/2631-7990/aea5fb/pdf"
+    ],
+    "successful_url": "https://iopscience.iop.org/article/10.1088/2631-7990/aea5fb/pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-11/deep-reads/paper-1558a44561cd1ec6/paper.md",
+  "source_map": "research-memory/literature/2026/2026-09-11/deep-reads/paper-1558a44561cd1ec6/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "paper-699248c4b5c23f7e",
+  "title": "Wearable plasmonic SERS patch for quantitative sweat metabolite profiling via dual-track spectral inference",
+  "authors": [
+    "Rowoon Park",
+    "Bo You Heo",
+    "Se Jin Choi",
+    "Seungki Lee",
+    "Jaewon Kim",
+    "Mi Jeong Kim",
+    "Jihwan Kim",
+    "Jinah Jang",
+    "Oh Seok Kwon",
+    "Hyun Ju Yoo",
+    "Jahyun Koo",
+    "Yong-Sang Ryu"
+  ],
+  "venue": "International Journal of Extreme Manufacturing",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "多模态与生化传感"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-10",
+  "doi": "10.1088/2631-7990/aea53e",
+  "source_url": "https://doi.org/10.1088/2631-7990/aea53e",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-11T06:04:03.386732+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Abstract Wearable sweat sensing offers a non-invasive route to monitor human metabolism, but quantitative analysis is limited by strong endogenous backgrounds, spectral overlap, and mechanical instability on skin. Here, we present a wearable plasmonic surface-enhanced Raman scattering (SERS) patch that enables robust, multiplex sweat analysis under realistic physiological conditions. Gold nanoparticles are generated in situ within a hydrated agarose matrix, forming a diffusion-accessible and mechanically stable plasmonic network compatible with on-skin wear. To resolve low-abundance, intake-related metabolites masked by dominant endogenous signals, we introduce a dual-track deep-learning framework. High-abundance sweat components are quantified directly from mixed spectra, while trace targets are recovered through an unmixing-assisted residual pathway. Using paraxanthine, a primary metabolite of caffeine, we demonstrate quantitative detection across large concentration disparities despite severe spectral congestion. A controlled on-body study combining caffeine intake with exercise-induced sweating reveals subject-specific paraxanthine trajectories with delayed peaks consistent with known pharmacokinetics, while endogenous metabolites show broader exercise-driven trends. Together, this platform advances wearable optical sensing from qualitative detection toward quantitative, personalized metabolic monitoring in complex biofluids.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "Abstract Wearable sweat sensing offers a non-invasive route to monitor human metabolism, but quantitative analysis is limited by strong endogenous backgrounds, spectral overlap, and mechanical instability on skin."
+  ],
+  "relevance_reasons": [
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1088/2631-7990/aea53e",
+    "publisher_url": "https://doi.org/10.1088/2631-7990/aea53e",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://iopscience.iop.org/article/10.1088/2631-7990/aea53e/pdf"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "链接未返回 PDF"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-11/deep-reads/paper-699248c4b5c23f7e/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

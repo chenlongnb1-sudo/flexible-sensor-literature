@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -1351,6 +1351,106 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-09-08T05:59:53.434995+00:00"
+    },
+    {
+      "id": "idea-2026-09-11-43fbad974bf0",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "Vibrissae-inspired wearable neuromorphic artificial fingernail for vibrotactile perception and interfacing",
+      "source_papers": [
+        {
+          "paper_id": "paper-1558a44561cd1ec6",
+          "title": "Vibrissae-inspired wearable neuromorphic artificial fingernail for vibrotactile perception and interfacing",
+          "doi": "10.1088/2631-7990/aea5fb",
+          "url": "https://doi.org/10.1088/2631-7990/aea5fb"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-11T06:03:47.823159+00:00"
+    },
+    {
+      "id": "idea-2026-09-11-bd6f05c3c1f7",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P6",
+      "title": "把论文系统任务压缩成不拖累主线的最小闭环演示",
+      "source": "Vibrissae-inspired wearable neuromorphic artificial fingernail for vibrotactile perception and interfacing",
+      "source_papers": [
+        {
+          "paper_id": "paper-1558a44561cd1ec6",
+          "title": "Vibrissae-inspired wearable neuromorphic artificial fingernail for vibrotactile perception and interfacing",
+          "doi": "10.1088/2631-7990/aea5fb",
+          "url": "https://doi.org/10.1088/2631-7990/aea5fb"
+        }
+      ],
+      "hypothesis": "一个受控的纹理/滑移/抓取演示足以证明前端特征的任务价值，无需把主张扩展成完整机器人系统。",
+      "minimum_experiment": "选择单一任务，固定机械输入和后端分类器，只消融 raw、z-only 与前端矢量/投影特征。",
+      "controls": [
+        "raw signal",
+        "z-only",
+        "front-end vector/projection"
+      ],
+      "success_metrics": [
+        "task accuracy",
+        "response time",
+        "channel count",
+        "failure cases"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-11T06:03:47.823177+00:00"
+    },
+    {
+      "id": "idea-2026-09-11-e4d2145f4433",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P4",
+      "title": "把论文机制映射为 3x3 可编程物理触觉投影核",
+      "source": "Toward Perception‐Native Electronic Skin: Bio‐Inspired In‐/Near‐Sensor and Neuromorphic Computing for Humanoid Robots",
+      "source_papers": [
+        {
+          "paper_id": "paper-96b6853d3c5df9eb",
+          "title": "Toward Perception‐Native Electronic Skin: Bio‐Inspired In‐/Near‐Sensor and Neuromorphic Computing for Humanoid Robots",
+          "doi": "10.1002/admt.71306",
+          "url": "https://doi.org/10.1002/admt.71306"
+        }
+      ],
+      "hypothesis": "Ksum/Kx/Ky/Klap/Kring/Kcorner 等可解释投影可在 ADC 前形成，并与软件投影保持一致。",
+      "minimum_experiment": "先用 3x3 精密电阻阵列施加标准图案，再迁移到触觉阵列，比较六类投影核的硬件与软件输出。",
+      "controls": [
+        "raw scanning",
+        "software projection",
+        "fixed hardware kernel",
+        "programmable hardware kernel"
+      ],
+      "success_metrics": [
+        "hardware-software R2",
+        "linearity",
+        "kernel switching error",
+        "ADC count",
+        "latency"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-11T06:03:47.823182+00:00"
     }
   ]
 }
