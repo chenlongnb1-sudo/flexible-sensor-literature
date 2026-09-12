@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "paper-39f9d807b0aad549",
+  "title": "A Self‐Healing Ionic Synaptic Device for Resilient Neuromorphic Motion Control of a Mechanical Arm",
+  "authors": [
+    "Yanfei Li",
+    "Shilin Tang",
+    "Xinrui Yang",
+    "Yu Zhang",
+    "Chong Zhang",
+    "Jiayi Chen",
+    "Xiang He",
+    "Jianyu Ming",
+    "Yannan Xie",
+    "Linghai Xie",
+    "Haifeng Ling",
+    "Wei Huang"
+  ],
+  "venue": "Advanced Functional Materials",
+  "primary_category": "神经形态与传感计算",
+  "categories": [
+    "神经形态与传感计算",
+    "制造、封装与可靠性",
+    "软体机器人与人机交互"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-11",
+  "doi": "10.1002/adfm.78394",
+  "source_url": "https://doi.org/10.1002/adfm.78394",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-12T05:50:24.904742+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Biological neuromuscular systems seamlessly integrate signal sensing, synaptic processing, and motor execution, all while possessing remarkable self‐healing capabilities to maintain functional stability after injury. Mimicking this sophisticated integration of neural signal processing and action with embodied resilience remains a grand challenge for artificial systems. Here, we report a self‐healing ionic synaptic device that leverages ion‐mediated signal transmission and dynamically reversible borate ester bonds within a bilayer hydrogel matrix. The device emulates key synaptic functions, including short‐term plasticity, paired‐pulse facilitation, and experience‐accelerated learning. More importantly, it exhibits bio‐inspired dynamic recovery capabilities, autonomously restoring its synaptic functions after severe mechanical damage (100% recovery in Young's modulus). By integrating this device into a neuromorphic control circuit, we construct an artificial neuromuscular system that successfully translates pulse signals into precise, graded movements of a mechanical arm, mimicking muscle contraction and relaxation. The system maintains robust performance even after device damage and self‐healing, demonstrating features such as Morse code recognition and Pavlovian associative learning. This work provides a paradigm for developing resilient, brain‐inspired intelligent systems with perception‐action capabilities for soft robotics and adaptive human‐machine interfaces.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "ABSTRACT Biological neuromuscular systems seamlessly integrate signal sensing, synaptic processing, and motor execution, all while possessing remarkable self‐healing capabilities to maintain functional stability after injury."
+  ],
+  "relevance_reasons": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及 in-sensor/物理计算或可编程触觉前端",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adfm.78394",
+    "publisher_url": "https://doi.org/10.1002/adfm.78394",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78394"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78394"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-12/deep-reads/paper-39f9d807b0aad549/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
