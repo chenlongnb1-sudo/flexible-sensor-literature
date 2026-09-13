@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-09-13",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -1451,6 +1451,74 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-09-11T06:03:47.823182+00:00"
+    },
+    {
+      "id": "idea-2026-09-13-d6d59f47dbe9",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P3",
+      "title": "把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照",
+      "source": "Decoupled Temperature‐Pressure Sensing via Hierarchical Porous Sponge for Thermo‐Tactile Perception",
+      "source_papers": [
+        {
+          "paper_id": "paper-b2c80153704c6016",
+          "title": "Decoupled Temperature‐Pressure Sensing via Hierarchical Porous Sponge for Thermo‐Tactile Perception",
+          "doi": "10.1002/adfm.78367",
+          "url": "https://doi.org/10.1002/adfm.78367"
+        }
+      ],
+      "hypothesis": "可解释的局部矢量/空间投影能以更少读出通道保持边缘、形状和滑移方向信息。",
+      "minimum_experiment": "在同一阵列输入上比较 raw scanning、scalar pooling、software gradient 与 hardware macro-pixel。",
+      "controls": [
+        "raw pixel scanning",
+        "scalar pooling",
+        "software gradient",
+        "hardware macro-pixel"
+      ],
+      "success_metrics": [
+        "channel count",
+        "latency",
+        "power",
+        "edge/shape accuracy",
+        "direction accuracy"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-13T06:14:37.841504+00:00"
+    },
+    {
+      "id": "idea-2026-09-13-04ebc90ee820",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P5",
+      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
+      "source": "Decoupled Temperature‐Pressure Sensing via Hierarchical Porous Sponge for Thermo‐Tactile Perception",
+      "source_papers": [
+        {
+          "paper_id": "paper-b2c80153704c6016",
+          "title": "Decoupled Temperature‐Pressure Sensing via Hierarchical Porous Sponge for Thermo‐Tactile Perception",
+          "doi": "10.1002/adfm.78367",
+          "url": "https://doi.org/10.1002/adfm.78367"
+        }
+      ],
+      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
+      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
+      "controls": [
+        "raw readout",
+        "software projection",
+        "hardware projection",
+        "hardware projection + few-shot calibration"
+      ],
+      "success_metrics": [
+        "accuracy degradation",
+        "feature drift",
+        "calibration samples",
+        "fault ratio",
+        "cross-device variance"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-13T06:14:37.841528+00:00"
     }
   ]
 }

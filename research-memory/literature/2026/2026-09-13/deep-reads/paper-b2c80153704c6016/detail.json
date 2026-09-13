@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "paper-b2c80153704c6016",
+  "title": "Decoupled Temperature‐Pressure Sensing via Hierarchical Porous Sponge for Thermo‐Tactile Perception",
+  "authors": [
+    "Jiachen Dong",
+    "Bo Xu",
+    "Hongyu Mi",
+    "Xin Zhao",
+    "Yuqing Zhai",
+    "Yongqi Zhu",
+    "Zhiyu Wang",
+    "Xinqin Liao"
+  ],
+  "venue": "Advanced Functional Materials",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉",
+    "可穿戴健康与生理监测",
+    "多模态与生化传感"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-12",
+  "doi": "10.1002/adfm.78367",
+  "source_url": "https://doi.org/10.1002/adfm.78367",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-13T06:14:40.960878+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Precise and crosstalk‐free discrimination of pressure and temperature remains a fundamental challenge in artificial sensory systems due to the intrinsic coupling of mechanical and thermal transduction. Herein, we present a flexible, high‐fidelity dual‐modal sensor based on an ultralight hierarchically porous conductive sponge. The engineered porous architecture synergistically integrates piezoresistive and thermoelectric effects within a single carbon nanomaterial, achieving physical decoupling between resistance‐type pressure signals and voltage‐type temperature outputs, effectively suppressing dual‐modal interference. Owing to its compressibility, conductive network, and thermal insulation, the sensor delivers a pressure sensitivity of 4.43 kPa −1 , a detection limit of 25 Pa, a response time of 91 ms, and durability over 20 000 cycles, alongside a Seebeck coefficient of 9.96 µV K −1 and a temperature resolution of 0.5 K. As a proof of concept, it enables real‐time Morse code communication and physiological monitoring. Moreover, a 3 × 3 sensor array integrated with machine learning demonstrates robust tactile‐thermal fusion perception, highlighting its potential as a multifunctional sensing platform. This work presents a material‐driven strategy to overcome multimodal signal interference, significantly promoting sensory perception in complex environments.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "ABSTRACT Precise and crosstalk‐free discrimination of pressure and temperature remains a fundamental challenge in artificial sensory systems due to the intrinsic coupling of mechanical and thermal transduction."
+  ],
+  "relevance_reasons": [
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ],
+  "innovation_suggestions": [
+    "把论文的跨模态解耦机制迁移为法向/切向通道设计，并分别验证结构解耦、模拟前端解耦和软件解耦的增益。"
+  ],
+  "inspirations": [
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "把论文的跨模态解耦机制迁移为法向/切向通道设计，并分别验证结构解耦、模拟前端解耦和软件解耦的增益。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adfm.78367",
+    "publisher_url": "https://doi.org/10.1002/adfm.78367",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78367"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78367"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-13/deep-reads/paper-b2c80153704c6016/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
