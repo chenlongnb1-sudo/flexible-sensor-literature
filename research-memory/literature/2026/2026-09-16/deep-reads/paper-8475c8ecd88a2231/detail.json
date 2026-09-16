@@ -1,0 +1,821 @@
+{
+  "schema_version": 1,
+  "id": "paper-8475c8ecd88a2231",
+  "title": "Multiplexed catheter-integrated pressure sensing system for endoluminal interventions",
+  "authors": [
+    "Xiaotong Guo",
+    "Qindong Zheng",
+    "Jinshi Zhao",
+    "Bing Li",
+    "Eric M. Yeatman"
+  ],
+  "venue": "Microsystems & Nanoengineering",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "柔性能源与自供能",
+    "柔性材料与器件"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-15",
+  "doi": "10.1038/s41378-026-01411-0",
+  "source_url": "https://doi.org/10.1038/s41378-026-01411-0",
+  "pdf_source_url": "https://www.nature.com/articles/s41378-026-01411-0.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-09-16T06:05:52.212978+00:00",
+  "page_count": 13,
+  "abstract": {
+    "original": "Abstract Advances in flexible catheters pave the way for minimally invasive diagnosis and treatment of luminal organs and tubular structures through endoluminal interventions. A key challenge is in establishing non-constraining pressure monitoring at the interfaces between medical catheters and intraluminal anatomy, where catheter–tissue interactions may be influenced by lumen curvature, structural variability, and physiological motion. In this work, we present a scalable and multi-purpose pressure sensing system for multidirectional monitoring of tissue interactions, establishing a robust solution for deploying diagnostic and therapeutic instruments in various types of endoluminal interventions. This approach provides an integrated pressure sensing platform that combines a thin-film piezoelectric sensor array with a bespoke multi-lumen catheter and a custom signal acquisition circuit. The sensor array is fabricated from an ultrathin poly (vinylidene fluoride-co-trifluoroethylene) (P(VDF-TrFE)) film using a multilayer sandwich architecture with patterned gold electrodes, resulting in a flexible device with a total thickness of approximately 20 µm and sensing units as small as 2.25 mm 2 . The multi-lumen catheter is fabricated with a cost-effective and highly scalable fiber drawing technology, establishing a means of fast prototyping catheters with bespoke microstructures for sensor integration and medical instrument deployment. Supported by a custom high-impedance acquisition circuit, the system achieves a sensitivity of 16 mV per kPa, which is approximately 25 times higher than state-of-the-art catheter-integrated sensors, while maintaining a sensing range from 0 to 80 kPa. Through in-vitro phantom studies, the system performs precise multi-directional sensing within various clinical endoluminal scenarios, showing its potential in digitalizing tissue interactions during endoluminal interventions.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "Abstract Advances in flexible catheters pave the way for minimally invasive diagnosis and treatment of luminal organs and tubular structures through endoluminal interventions."
+  ],
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ],
+  "innovation_suggestions": [
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。"
+  ],
+  "inspirations": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 10,
+      "category_zh": "制备与实验操作",
+      "original": "Fabrication and integration workflow The overall fabrication and integration process of the catheter-integrated sensing system is illustrated in Fig. S1.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 2,
+      "page": 10,
+      "category_zh": "成膜与沉积",
+      "original": "The workflow follows a modular approach that includes sensor fabrication, multi-lumen catheter thermal drawing from a 3D-printed preform, sensor–catheter integration, and final system assembly with the signal acquisition module.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 3,
+      "page": 10,
+      "category_zh": "组装与封装",
+      "original": "Sensor fabrication The pressure sensor was constructed by encapsulating a P(VDF-TrFE) thin film between two metallic electrode layers composed of Au/Cr.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 4,
+      "page": 10,
+      "category_zh": "成膜与沉积",
+      "original": "The polymer layer was prepared via spin-coating.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 5,
+      "page": 10,
+      "category_zh": "材料混合与分散",
+      "original": "Specifically, P(VDF-TrFE) was dissolved in dimethylformamide at a concentration of 1%, and the resulting solution was spin-coated onto an atomically flat, highly conductive Si substrate at 2000 rpm for 30 s.",
+      "explanation_zh": "材料混合与分散步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 6,
+      "page": 10,
+      "category_zh": "固化与热处理",
+      "original": "Following ambient drying, the film was annealed at 140 °C for 10 min to promote crystallization.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 7,
+      "page": 10,
+      "category_zh": "固化与热处理",
+      "original": "The annealed film was subsequently electrically poled at 23 °C under an incrementally increasing alternating-current voltage.",
+      "explanation_zh": "固化与热处理步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 8,
+      "page": 10,
+      "category_zh": "图形化与结构成形",
+      "original": "Electrode patterning was achieved using stainless-steel masks (100 μm thickness) fabricated via laser cutting, as shown in Fig. S2.",
+      "explanation_zh": "图形化与结构成形步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 9,
+      "page": 10,
+      "category_zh": "成膜与沉积",
+      "original": "A 2–3 nm Cr adhesion layer was first deposited by thermal evaporation, followed by thermal evaporation of a 100 nm Au layer at a rate of 2 Å/s, yielding a smooth and welldefined electrode surface.",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 10,
+      "page": 10,
+      "category_zh": "组装与封装",
+      "original": "The digitized signals are transmitted through the SPI interface to the MCU in the DST module for data encoding and communication, and subsequently sent via UART to the RTD module, where an isolator and USB interface enable safe data transfer to a computer for visualization and recording.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 11,
+      "page": 10,
+      "category_zh": "制备与实验操作",
+      "original": "Sensor-catheter assembly The assembly began with cutting the sides of the fiber to expose the side lumens, gaining access for the conductive wires.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 12,
+      "page": 10,
+      "category_zh": "成膜与沉积",
+      "original": "Fiber drawing The fiber preform was first conceptualized using 3D computer-aided design software (SolidWorks, Dassault Systèmes, France) and fabricated using a fused-filament fabrication 3D printer (Ultimaker, PC Transparent, 2.85 mm; Netherlands).",
+      "explanation_zh": "成膜与沉积步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    },
+    {
+      "step": 13,
+      "page": 11,
+      "category_zh": "制备与实验操作",
+      "original": "The fiber drawing process was initiated by securing the prepared preform onto a vertically aligned linear motorized stage positioned above a three-zone cylindrical heating furnace.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.11 原文为准。"
+    },
+    {
+      "step": 14,
+      "page": 11,
+      "category_zh": "制备与实验操作",
+      "original": "Finally, fibers with desired diameter were cut into sections with the targeted length for catheter preparation.",
+      "explanation_zh": "制备与实验操作步骤，关键配比、时间、温度和设备参数以 p.11 原文为准。"
+    },
+    {
+      "step": 15,
+      "page": 11,
+      "category_zh": "组装与封装",
+      "original": "This conduit model was constructed to replicate the geometric complexity and luminal irregularities typically encountered in physiological environments, enabling controlled and reproducible assessment of sensor response.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.11 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 10,
+      "text": "Fabrication and integration workflow",
+      "bbox": [
+        56.69,
+        659.54,
+        206.96,
+        684.05
+      ]
+    },
+    {
+      "page": 10,
+      "text": "The overall fabrication and integration process of the catheter-integrated sensing system is illustrated in Fig. S1. The workflow follows a modular approach that includes sensor fabrication, multi-lumen catheter thermal drawing",
+      "bbox": [
+        56.69,
+        686.65,
+        290.57,
+        732.24
+      ]
+    },
+    {
+      "page": 10,
+      "text": "from a 3D-printed preform, sensor–catheter integration, and final system assembly with the signal acquisition module.",
+      "bbox": [
+        304.73,
+        88.34,
+        538.62,
+        110.6
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Sensor fabrication",
+      "bbox": [
+        304.72,
+        124.86,
+        377.63,
+        134.08
+      ]
+    },
+    {
+      "page": 10,
+      "text": "The pressure sensor was constructed by encapsulating a P(VDF-TrFE) thin film between two metallic electrode layers composed of Au/Cr. The polymer layer was prepared via spin-coating. Specifically, P(VDF-TrFE) was dissolved in dimethylformamide at a concentration of 1%, and the resulting solution was spin-coated onto an atomically flat, highly conductive Si substrate at 2000 rpm for 30 s. Following ambient drying, the film was annealed at 140 °C for 10 min to promote crystallization. The annealed film was subsequently electrically poled at 23 °C under an incrementally increasing alternating-current voltage. Electrode patterning was achieved using stainless-steel masks (100 μm thickness) fabricated via laser cutting, as shown in Fig. S2. A 2–3 nm Cr adhesion layer was first deposited by thermal evaporation, followed by thermal evaporation of a 100 nm Au layer at a rate of 2 Å/s, yielding a smooth and welldefined electrode surface.",
+      "bbox": [
+        304.72,
+        136.67,
+        538.71,
+        337.71
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Custom signal acquisition circuit configuration",
+      "bbox": [
+        304.72,
+        351.78,
+        492.67,
+        361.25
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Within the ASP module, the weak signals generated by the piezoelectric sensor are conditioned using high-inputimpedance instrumentation amplifiers (INA116), followed by low-pass filtering (LPF) and analog-to-digital conversion (ADC). The digitized signals are transmitted through the SPI interface to the MCU in the DST module for data encoding and communication, and subsequently sent via UART to the RTD module, where an isolator and USB interface enable safe data transfer to a computer for visualization and recording.",
+      "bbox": [
+        304.72,
+        363.84,
+        538.6,
+        481.2
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Sensor-catheter assembly",
+      "bbox": [
+        304.72,
+        495.52,
+        407.52,
+        504.74
+      ]
+    },
+    {
+      "page": 10,
+      "text": "The assembly began with cutting the sides of the fiber to expose the side lumens, gaining access for the conductive wires. The electrode pads for anodes and ground of the sensing elements were then connected with the pull-our wires via conductive Cu pads (Fig. S5a). Subsequently, the wires were fed into their corresponding lumens until reaching the preassigned position (Fig. S5b). After that, the sensor was gently bent and wrapped over the distal end of the fiber. The process was finalized by wrapping a layer of PTFE tape (100 μm thickness) over the entire sensor and corresponding wires, as a protective layer preventing sensors from scratch damage and short circuit caused by body fluids.",
+      "bbox": [
+        304.72,
+        506.73,
+        538.67,
+        648.56
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Fiber drawing",
+      "bbox": [
+        304.72,
+        662.88,
+        360.73,
+        672.09
+      ]
+    },
+    {
+      "page": 10,
+      "text": "The fiber preform was first conceptualized using 3D computer-aided design software (SolidWorks, Dassault Systèmes, France) and fabricated using a fused-filament fabrication 3D printer (Ultimaker, PC Transparent, 2.85 mm; Netherlands). The preform allows for consistent",
+      "bbox": [
+        304.72,
+        674.15,
+        538.6,
+        732.24
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Guo et al. Microsystems & Nanoengineering (2026) 12:319 Page 11 of 13",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ]
+    },
+    {
+      "page": 11,
+      "text": "reproduction of fine structural features required for subsequent thermal drawing. This fiber preform was then placed in a vacuum oven maintained at 70 °C for 48 h to effectively dehydrate and eliminate residual moisture content that could compromise thermal stability, induce bubble formation, or introduce defects during consolidation.",
+      "bbox": [
+        56.69,
+        88.34,
+        290.62,
+        158.39
+      ]
+    },
+    {
+      "page": 11,
+      "text": "The fiber drawing process was initiated by securing the prepared preform onto a vertically aligned linear motorized stage positioned above a three-zone cylindrical heating furnace. Once the temperature at each zone of the furnace reaching 150 °C, 230 °C, and 85 °C (from top to bottom), the linear stage continuously fed the fiber preform into the furnace at a constant speed of 1 mm/min (Vfeed). After the polymer preform began to neck down, a downward pulling force was applied from the bottom side using a speed-controllable capstan (Vdraw). The resulting diameter of the fiber (Dfiber) can be approximated using the following equation:",
+      "bbox": [
+        56.69,
+        160.06,
+        290.55,
+        301.88
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Dfibre2",
+      "bbox": [
+        73.25,
+        314.15,
+        96.79,
+        326.18
+      ]
+    },
+    {
+      "page": 11,
+      "text": "¼ Dpreform2",
+      "bbox": [
+        100.01,
+        314.15,
+        144.87,
+        332.31
+      ]
+    },
+    {
+      "page": 11,
+      "text": "ð1Þ",
+      "bbox": [
+        278.14,
+        321.8,
+        290.57,
+        332.1
+      ]
+    },
+    {
+      "page": 11,
+      "text": "V draw",
+      "bbox": [
+        73.87,
+        329.24,
+        96.21,
+        339.73
+      ]
+    },
+    {
+      "page": 11,
+      "text": "V feed",
+      "bbox": [
+        118.77,
+        329.24,
+        137.76,
+        339.73
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Meanwhile, the diameter of the fiber was continuously monitored using a laser measurement device, which provides real-time feedback for the operator to adjust the capstan speed, thereby controlling the fiber diameter. Finally, fibers with desired diameter were cut into sections with the targeted length for catheter preparation.",
+      "bbox": [
+        56.69,
+        351.34,
+        290.67,
+        433.36
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Catheter stiffness characterization",
+      "bbox": [
+        56.69,
+        447.67,
+        193.47,
+        456.89
+      ]
+    },
+    {
+      "page": 11,
+      "text": "The stiffness of the catheter was evaluated by conducting a flexural rigidity test. The distal end section, where the sensor mounted, was tested with wires embedded. The experiment involved vertically displacing the catheter tip (50 mm) by 10 mm deflection, repeated over three trials. A commercial force sensor was used to measure the overall force applied (Nano43, ATI Industrial Automation, USA). The stiffness is calculated with the total force required for different amplitudes of tip deflection and expressed in N/mm.",
+      "bbox": [
+        56.69,
+        459.48,
+        290.55,
+        576.84
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Sensor array characterization",
+      "bbox": [
+        56.69,
+        591.16,
+        173.91,
+        600.38
+      ]
+    },
+    {
+      "page": 11,
+      "text": "The characterization of sensor array was performed on a bespoke platform for force loading and unloading with a controllable cycle frequency, as shown in Fig. S9. The contact area was determined via a customized spring probe mechanism (Fig. S10).",
+      "bbox": [
+        56.69,
+        602.97,
+        290.55,
+        660.52
+      ]
+    },
+    {
+      "page": 11,
+      "text": "The sensitivity of individual sensors was tested by repeatedly applying cycles of various pressures. The effective pressure in each cycle was derived from equation P = F/A, where F is the peak force from the scale and A is the surface area of the probe tip. Pressures ranging from 10 kPa to 70 kPa with a step of 10 kPa were experimented. 10 repeated",
+      "bbox": [
+        56.69,
+        662.72,
+        290.63,
+        732.24
+      ]
+    },
+    {
+      "page": 11,
+      "text": "cycles were conducted for each pressure. The voltage output from the sensor was determined by the positive peak in each loading cycle. Due to the high linearity, a first-order polynomial fitting was used for sensitivity calculation.",
+      "bbox": [
+        304.73,
+        88.87,
+        538.64,
+        134.47
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Biological conduit test",
+      "bbox": [
+        304.72,
+        148.79,
+        395.04,
+        158.0
+      ]
+    },
+    {
+      "page": 11,
+      "text": "The mechanical performance of the catheter-mounted sensor array under multidirectional loading was systematically evaluated using a custom-designed experimental platform incorporating a 3D-printed biological conduit (Fig. S11). This conduit model was constructed to replicate the geometric complexity and luminal irregularities typically encountered in physiological environments, enabling controlled and reproducible assessment of sensor response. During testing, the catheter was advanced exclusively with an axial insertion force, ensuring that the contact force exerted on the sensor array remained consistent as the device traversed each predefined bump along the conduit wall. To maintain a constant and repeatable insertion velocity, the catheter was secured onto a precision linear translation stage driven by a programmable motor. The spatial arrangement of the raised features within the conduit ensured that only two lateral regions of the sensor array were engaged in direct mechanical contact, while the remaining sensing elements experienced minimal or no applied pressure. This controlled asymmetry in loading conditions allowed for isolated characterization of directional sensitivity and crosstalk within the array. Overall, this experimental setup provided an accurate and reproducible means of quantifying the ability of the sensor to detect localized mechanical events during catheter navigation.",
+      "bbox": [
+        304.72,
+        160.59,
+        538.72,
+        457.28
+      ]
+    },
+    {
+      "page": 11,
+      "text": "In-vitro phantom study Endovascular interventions",
+      "bbox": [
+        304.72,
+        471.6,
+        409.56,
+        492.77
+      ]
+    },
+    {
+      "page": 11,
+      "text": "A 1:1 life-sized soft silicone anatomical model of the aortic arch featuring a physiologically accurate three-cusp inflow region (T-S-N-002-v2, Elastrat, Switzerland) was employed to assess the sensorized catheter’s behavior under conditions representative of clinical endovascular procedures (Fig. S12). The experimental protocol began with the insertion of the catheter into the phantom through a unidirectional valve, which served to replicate the functional characteristics of a standard catheter introducer used in vascular access. Once positioned within the phantom, the catheter was advanced and retracted along the curvature of the vascular wall to evaluate the fidelity of sensor–wall interactions, with particular emphasis on detecting contact events with both the endovascular surface and the embedded artificial protrusion designed to simulate pathological irregularities.",
+      "bbox": [
+        304.72,
+        495.37,
+        538.69,
+        684.45
+      ]
+    },
+    {
+      "page": 11,
+      "text": "Bronchial and lung interventions",
+      "bbox": [
+        304.72,
+        698.76,
+        432.57,
+        707.98
+      ]
+    },
+    {
+      "page": 11,
+      "text": "For respiratory system simulations, a simplified yet anatomically relevant bronchial passage model",
+      "bbox": [
+        304.72,
+        709.98,
+        538.59,
+        732.24
+      ]
+    },
+    {
+      "page": 12,
+      "text": "Guo et al. Microsystems & Nanoengineering (2026) 12:319 Page 12 of 13",
+      "bbox": [
+        56.69,
+        33.65,
+        538.6,
+        42.58
+      ]
+    },
+    {
+      "page": 12,
+      "text": "(Medtronic, US) was utilized (Fig. S13). The catheter was initially introduced parallel to the primary bronchial conduit to mimic navigation through branching airways as encountered during bronchoscopy-guided interventions. Subsequent controlled movement of the catheter along the lumen enabled systematic evaluation of sensor response upon encountering an artificial protruded bump integrated into the model.",
+      "bbox": [
+        56.69,
+        88.88,
+        290.59,
+        182.32
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 3,
+      "caption_original": "Fig. 1 Illustration of the catheter-integrated sensing system. a Overview of the catheter-integrated pressure sensing system as applied in bronchial interventions. b Schematic of the catheter-integrated sensing system being in touch with an aneurysmal protrusion within a confined vascular structure. c Illustration of the catheter-integrated sensing system accommodating various medical devices, including optical catheter (top), urinary catheter (middle), and balloon catheter for stent deployment (bottom). d Microscopic view of the sensor array. e Cross-sectional schematics of the sensor design and piezoelectric mechanism showing the generation of potential difference when mechanical force is applied. f Demonstration of the device array in multilayer format integrated at the distal end of the catheter",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Overview of the catheter-integrated pressure sensing system as applied in bronchial interventions",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Schematic of the catheter-integrated sensing system being in touch with an aneurysmal protrusion within a confined vascular structure",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "c",
+          "original": "Illustration of the catheter-integrated sensing system accommodating various medical devices, including optical catheter (top), urinary catheter (middle), and balloon catheter for stent deployment (bottom)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Microscopic view of the sensor array",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "e",
+          "original": "Cross-sectional schematics of the sensor design and piezoelectric mechanism showing the generation of potential difference when mechanical force is applied",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "f",
+          "original": "Demonstration of the device array in multilayer format integrated at the distal end of the catheter",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 729,
+      "image_height": 602,
+      "crop_confidence": "high",
+      "bbox": [
+        114.95,
+        91.08,
+        478.51,
+        391.51
+      ],
+      "image_path": "papers/paper-8475c8ecd88a2231/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 4,
+      "caption_original": "Fig. 2 Catheter fabrication and characterization. a 3D printing of the preform with designated cross-section prepared for catheter fabrication. b Resulting 3D-print preform. c Schematic illustration of the fiber drawing process, where the colored hollowed cylinder represents the heating furnace. d Labeled microscopic cross-section view of the drawn fiber with channels 1-3 (the wiring channels for connecting anodes), 4 (the wiring channel for connecting cathode), and a central working channel for accommodating medical devices. e Microscopic view of the fiber with wires embedded. f Stiffness measurement of the fiber with a flexural rigidity test",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "3D printing of the preform with designated cross-section prepared for catheter fabrication",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "Resulting 3D-print preform",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Schematic illustration of the fiber drawing process, where the colored hollowed cylinder represents the heating furnace",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "d",
+          "original": "Labeled microscopic cross-section view of the drawn fiber with channels 1-3 (the wiring channels for connecting anodes), 4 (the wiring channel for connecting cathode), and a central working channel for accommodating medical devices",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Microscopic view of the fiber with wires embedded",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "f",
+          "original": "Stiffness measurement of the fiber with a flexural rigidity test",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 741,
+      "image_height": 433,
+      "crop_confidence": "high",
+      "bbox": [
+        112.61,
+        89.13,
+        482.77,
+        305.38
+      ],
+      "image_path": "papers/paper-8475c8ecd88a2231/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Figure 2D",
+      "page": 4,
+      "caption_original": "Figure 2d shows the microscopic view of the crosssection of the resulting drawn fiber. The cross-section structure was well retained compared with the design of fiber geometry, allowing passing through the conductive wires therein (Fig. 2e). The layout of the side lumens facilitates streamlined wiring of the integrated sensor that has electrodes uniformly distributed at 120° intervals. Figure 2f illustrates the stiffness characterization results of the fabricated fiber based on a flexural rigidity test. The fiber with embedded wires shows a stiffness of 1.8 N/mm for an identical 2.8 mm diameter and 50 mm length, according to the equation Stiffness ¼ Force=Displacement.",
+      "caption_zh": "Figure 2D 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [],
+      "image_filename": "figure-03.png",
+      "image_width": 741,
+      "image_height": 433,
+      "crop_confidence": "high",
+      "bbox": [
+        112.61,
+        89.13,
+        482.77,
+        305.38
+      ],
+      "image_path": "papers/paper-8475c8ecd88a2231/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 3",
+      "page": 5,
+      "caption_original": "Fig. 3 Customized signal acquisition module for real-time multi-channel readout. a Image of the signal acquisition system board. b Circuit design: RE = reference electrode, WE = working electrode, RG = gain resistor of the instrumentation amplifier, RLP = low-pass filter resistor, CLP = low-pass filter capacitor, MCU = micro controller unit, PC = personal computer; and a graph showcases the processed digital output from the circuit. c Signal readout characterization from three channels under different waveforms (ramp, square, and sinusoid) with different frequencies applied. d Consistency evaluation between the customized module and a commercial recording instrument when measuring the same piezoelectric sensor output",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Image of the signal acquisition system board",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "b",
+          "original": "Circuit design: RE = reference electrode, WE = working electrode, RG = gain resistor of the instrumentation amplifier, RLP = low-pass filter resistor, CLP = low-pass filter capacitor, MCU = micro controller unit, PC = personal computer; and a graph showcases the processed digital output from the circuit",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Signal readout characterization from three channels under different waveforms (ramp, square, and sinusoid) with different frequencies applied",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Consistency evaluation between the customized module and a commercial recording instrument when measuring the same piezoelectric sensor output",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 957,
+      "image_height": 610,
+      "crop_confidence": "high",
+      "bbox": [
+        58.67,
+        89.13,
+        536.71,
+        393.52
+      ],
+      "image_path": "papers/paper-8475c8ecd88a2231/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 4",
+      "page": 6,
+      "caption_original": "Fig. 4 Characterization of the sensor array. a Semi-logarithmic plot demonstrating impedance variance of the sensor across different frequencies measured with commercial impedance analyzer. b Output peak voltage corresponding to various ranges of pressure. c Voltage response to a single cycle of force loading and unloading. d Voltage response corresponding to various ranges of pressure. e Histogram and approximated Gaussian line of the sensitivity measurements across multiple sensing units. f Force application with a repeated loading and unloading cycle on the sensor array",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Semi-logarithmic plot demonstrating impedance variance of the sensor across different frequencies measured with commercial impedance analyzer",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Output peak voltage corresponding to various ranges of pressure",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Voltage response to a single cycle of force loading and unloading",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "d",
+          "original": "Voltage response corresponding to various ranges of pressure",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "e",
+          "original": "Histogram and approximated Gaussian line of the sensitivity measurements across multiple sensing units",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "f",
+          "original": "Force application with a repeated loading and unloading cycle on the sensor array",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 1119,
+      "image_height": 639,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.28,
+        343.07
+      ],
+      "image_path": "papers/paper-8475c8ecd88a2231/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Fig. 5",
+      "page": 7,
+      "caption_original": "Fig. 5 Controlled benchmark study of catheter multi-directional sensing and spatial localization. a, b Schematics of the 3D-printed conduit model with periodically arranged protruding bumps used for quantitative evaluation under well-defined geometric constraints. c Reconstruction of in-contact locations of individual bumps from the recorded pressure peaks and comparison with ground-truth bump positions. d Multi-channel sensor output signals recorded during catheter insertion",
+      "caption_zh": "Fig. 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a,b",
+          "original": "Schematics of the 3D-printed conduit model with periodically arranged protruding bumps used for quantitative evaluation under well-defined geometric constraints",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "c",
+          "original": "Reconstruction of in-contact locations of individual bumps from the recorded pressure peaks and comparison with ground-truth bump positions",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Multi-channel sensor output signals recorded during catheter insertion",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 925,
+      "image_height": 450,
+      "crop_confidence": "high",
+      "bbox": [
+        73.16,
+        92.04,
+        535.09,
+        316.9
+      ],
+      "image_path": "papers/paper-8475c8ecd88a2231/figures/figure-06.png"
+    },
+    {
+      "id": "F007",
+      "label": "Fig. 6",
+      "page": 8,
+      "caption_original": "Fig. 6 Results of in-vitro phantom studies. a Sequential images showing catheter insertion and withdrawal within an aortic arch phantom containing an artificial bump. The labels in red balloons indicate the temporal sequence of the images. b Two representative examples of sensor output signals recorded during the aortic arch phantom study. The timestamps corresponding to the images are labeled in red. c, d Illustrations of catheter manipulation during navigation through a simplified bronchial phantom with a small protruding bump located at the midpoint. e Magnified image showing the catheter in contact with the bump. f Representative sensor array readouts",
+      "caption_zh": "Fig. 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Sequential images showing catheter insertion and withdrawal within an aortic arch phantom containing an artificial bump. The labels in red balloons indicate the temporal sequence of the images",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "b",
+          "original": "Two representative examples of sensor output signals recorded during the aortic arch phantom study. The timestamps corresponding to the images are labeled in red",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "c,d",
+          "original": "Illustrations of catheter manipulation during navigation through a simplified bronchial phantom with a small protruding bump located at the midpoint",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Magnified image showing the catheter in contact with the bump",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        },
+        {
+          "label": "f",
+          "original": "Representative sensor array readouts",
+          "explanation_zh": "重点查看阵列规模、空间分辨率、串扰、读出通道和空间特征表达。"
+        }
+      ],
+      "image_filename": "figure-07.png",
+      "image_width": 955,
+      "image_height": 643,
+      "crop_confidence": "high",
+      "bbox": [
+        59.39,
+        89.13,
+        536.47,
+        410.2
+      ],
+      "image_path": "papers/paper-8475c8ecd88a2231/figures/figure-07.png"
+    }
+  ],
+  "original_pdf": "papers/paper-8475c8ecd88a2231/original.pdf",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41378-026-01411-0",
+    "publisher_url": "https://doi.org/10.1038/s41378-026-01411-0",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41378-026-01411-0.pdf"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41378-026-01411-0.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-16/deep-reads/paper-8475c8ecd88a2231/paper.md",
+  "source_map": "research-memory/literature/2026/2026-09-16/deep-reads/paper-8475c8ecd88a2231/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}

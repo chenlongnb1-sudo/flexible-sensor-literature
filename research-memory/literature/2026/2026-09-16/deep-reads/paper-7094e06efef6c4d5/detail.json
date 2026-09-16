@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "paper-7094e06efef6c4d5",
+  "title": "Lab‐Scale Fabrication Process Selection for Soft Robotics: Benchmarking, Tradeoffs, and Guidelines for Formative Manufacturing of Soft Silicone Components",
+  "authors": [
+    "Charlotte M. Folinus",
+    "Daniel Massimino",
+    "Cat Arase",
+    "Kaitlyn P. Becker"
+  ],
+  "venue": "Advanced Intelligent Systems",
+  "primary_category": "软体机器人与人机交互",
+  "categories": [
+    "软体机器人与人机交互",
+    "制造、封装与可靠性"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-15",
+  "doi": "10.1002/aisy.70519",
+  "source_url": "https://doi.org/10.1002/aisy.70519",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-16T06:05:52.228811+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "To close the gap between conceptual ideas and applied solutions, soft roboticists must build physical hardware. How that hardware is built meaningfully impacts its performance, as soft robots are highly sensitive to manufacturing. When fabricating components, researchers must select a high‐level process and numerous implementation details but currently lack both characterization data to make informed choices and a strategy for evaluating process tradeoffs. This paper addresses both gaps for molding soft elastomeric components, comparing injection molding (IM) and hand casting (HC) across molds from three additive manufacturing technologies: fused filament fabrication (FFF), stereolithography (SLA), and PolyJet (PJ). Using a representative inflatable geometry, actuators, molds, and test coupons are characterized with cycle testing, optical microscopy, profilometry, and 3D imaging. Lab‐scale, soft robotics‐specific criteria for evaluating fabrication strategies are defined and applied. Results demonstrate no universally best strategy exists; appropriate choices are context‐dependent. For example, SLA and PJ molds produced inflatable actuators lasting 2.5–3× longer than FFF, but at orders‐of‐magnitude greater cost and longer design‐to‐test times. Similarly, IM yielded better‐aligned internal cores than HC but with higher consumable costs and more hands‐on time. Synthesizing these criteria with characterization data and representative fabrication scenarios provides concrete process selection recommendations for matching fabrication with application.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "To close the gap between conceptual ideas and applied solutions, soft roboticists must build physical hardware."
+  ],
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/aisy.70519",
+    "publisher_url": "https://doi.org/10.1002/aisy.70519",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.70519"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.70519"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-16/deep-reads/paper-7094e06efef6c4d5/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

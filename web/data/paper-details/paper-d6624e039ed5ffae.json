@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "paper-d6624e039ed5ffae",
+  "title": "Vectorial Slip‐Touch Perception Enabled by Sliding‐Gated Charge Carrier Dynamics",
+  "authors": [
+    "Chongxiang Pan",
+    "Hongxiang Xue",
+    "Hao Sun",
+    "Zi Hao Guo",
+    "Jing Wang",
+    "Yutong Song",
+    "Fuchun Sun",
+    "Zhong Lin Wang",
+    "Xiong Pu"
+  ],
+  "venue": "Advanced Functional Materials",
+  "primary_category": "软体机器人与人机交互",
+  "categories": [
+    "软体机器人与人机交互",
+    "电子皮肤与触觉",
+    "神经形态与传感计算"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-15",
+  "doi": "10.1002/adfm.78455",
+  "source_url": "https://doi.org/10.1002/adfm.78455",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-16T06:05:51.259051+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT High‐dimensional tactile perception is essential for dexterous robotic manipulation, but is severely constrained by the hardware‐stacking of pixelated arrays or the computational latency of inverse‐problem algorithms. To overcome these bottlenecks, we report a monolithic, array‐free robotic skin (SG‐skin) driven by sliding‐gated carrier dynamics, achieving high‐fidelity, vectorial slip‐touch perception. Specifically, leveraging a localized triboelectric field acting as a moving gate, the SG‐skin triggers reversible microscopic p ‐to‐ n inversion and directional carrier transport within a continuous semiconductor film, deterministically translating macroscopic mechanical stimuli into vectorial electrical signatures. Supported by an analytical model that validates in‐sensor signal decoupling, a minimalist four‐electrode design augmented by a computationally lightweight machine learning framework concurrently resolves sliding speed, omnidirectional trajectory (1° precision), material type, and touch localization. Ultimately, our SG‐skin maps complex tactile stimuli into deterministic commands, enabling agile human‐machine interaction and advanced closed‐loop robotic control. By breaking the longstanding dependency on complex sensor arrays or resource‐intensive computations, this sliding‐gated strategy translates microscale charge carrier dynamics into macroscopic intelligent perception, providing a scalable and robust material foundation for next‐generation embodied intelligence.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "ABSTRACT High‐dimensional tactile perception is essential for dexterous robotic manipulation, but is severely constrained by the hardware‐stacking of pixelated arrays or the computational latency of inverse‐problem algorithms."
+  ],
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ],
+  "innovation_suggestions": [
+    "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。",
+    "把论文的跨模态解耦机制迁移为法向/切向通道设计，并分别验证结构解耦、模拟前端解耦和软件解耦的增益。"
+  ],
+  "inspirations": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及低冗余阵列、空间特征或读出通道压缩",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "将法向/剪切/摩擦信息改写为 ADC 前差分或矢量组合，并同步比较 hardware output 与 software vector 的 R2、PSD/SNR。",
+    "把论文的跨模态解耦机制迁移为法向/切向通道设计，并分别验证结构解耦、模拟前端解耦和软件解耦的增益。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adfm.78455",
+    "publisher_url": "https://doi.org/10.1002/adfm.78455",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78455"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78455"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-16/deep-reads/paper-d6624e039ed5ffae/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15",
+  "updated_at": "2026-09-16",
   "ideas": [
     {
       "id": "idea-p4-fault-projection-001",
@@ -1519,6 +1519,108 @@
       "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
       "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
       "created_at": "2026-09-13T06:14:37.841528+00:00"
+    },
+    {
+      "id": "idea-2026-09-16-9aeb8b641fb1",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P1",
+      "title": "把论文中的结构机制转成偏移/旋转/接触半径容差地图",
+      "source": "Vectorial Slip‐Touch Perception Enabled by Sliding‐Gated Charge Carrier Dynamics",
+      "source_papers": [
+        {
+          "paper_id": "paper-d6624e039ed5ffae",
+          "title": "Vectorial Slip‐Touch Perception Enabled by Sliding‐Gated Charge Carrier Dynamics",
+          "doi": "10.1002/adfm.78455",
+          "url": "https://doi.org/10.1002/adfm.78455"
+        }
+      ],
+      "hypothesis": "若界面机制真正降低输入离散性，其优势应在装配扰动和接触条件变化下保持，而不只体现在灵敏度。",
+      "minimum_experiment": "在统一载荷下扫描 shift、rotation 与 contact radius，输出 CV、signal-void ratio 和 sensitivity map。",
+      "controls": [
+        "周期电极+常规微结构",
+        "周期电极+HCP",
+        "梯度/非周期电极+常规微结构",
+        "目标结构"
+      ],
+      "success_metrics": [
+        "CV",
+        "shift sensitivity",
+        "rotation sensitivity",
+        "contact-radius sensitivity",
+        "signal void ratio"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-16T06:05:42.803532+00:00"
+    },
+    {
+      "id": "idea-2026-09-16-aebdeedf0286",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P3",
+      "title": "把论文的阵列读出策略改写为低冗余 hardware macro-pixel 对照",
+      "source": "Vectorial Slip‐Touch Perception Enabled by Sliding‐Gated Charge Carrier Dynamics",
+      "source_papers": [
+        {
+          "paper_id": "paper-d6624e039ed5ffae",
+          "title": "Vectorial Slip‐Touch Perception Enabled by Sliding‐Gated Charge Carrier Dynamics",
+          "doi": "10.1002/adfm.78455",
+          "url": "https://doi.org/10.1002/adfm.78455"
+        }
+      ],
+      "hypothesis": "可解释的局部矢量/空间投影能以更少读出通道保持边缘、形状和滑移方向信息。",
+      "minimum_experiment": "在同一阵列输入上比较 raw scanning、scalar pooling、software gradient 与 hardware macro-pixel。",
+      "controls": [
+        "raw pixel scanning",
+        "scalar pooling",
+        "software gradient",
+        "hardware macro-pixel"
+      ],
+      "success_metrics": [
+        "channel count",
+        "latency",
+        "power",
+        "edge/shape accuracy",
+        "direction accuracy"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-16T06:05:42.803558+00:00"
+    },
+    {
+      "id": "idea-2026-09-16-177d29848734",
+      "status": "candidate",
+      "grade": "B",
+      "track": "P5",
+      "title": "把论文的鲁棒/迁移策略加入物理投影坏点渐进退化实验",
+      "source": "Vectorial Slip‐Touch Perception Enabled by Sliding‐Gated Charge Carrier Dynamics",
+      "source_papers": [
+        {
+          "paper_id": "paper-d6624e039ed5ffae",
+          "title": "Vectorial Slip‐Touch Perception Enabled by Sliding‐Gated Charge Carrier Dynamics",
+          "doi": "10.1002/adfm.78455",
+          "url": "https://doi.org/10.1002/adfm.78455"
+        }
+      ],
+      "hypothesis": "归一化物理投影特征在坏点、漂移和跨器件变化下应比 raw readout 更平滑退化，并减少重标定样本。",
+      "minimum_experiment": "设置 0/1/5/10/20% 等效坏点与增益漂移，比较 raw、software projection、hardware projection 及少样本校准。",
+      "controls": [
+        "raw readout",
+        "software projection",
+        "hardware projection",
+        "hardware projection + few-shot calibration"
+      ],
+      "success_metrics": [
+        "accuracy degradation",
+        "feature drift",
+        "calibration samples",
+        "fault ratio",
+        "cross-device variance"
+      ],
+      "risk": "该 idea 是基于题录/摘要和用户画像生成的可验证假设，需先精读来源论文并做最小实验。",
+      "profile_update_recommendation": "先进入候选池；只有用户在网页中确认并接受画像提案后才写入研究画像。",
+      "created_at": "2026-09-16T06:05:42.803565+00:00"
     }
   ]
 }
