@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "paper-e7b443d2da0d0317",
+  "title": "Geometry‐Encoded Soft Strain Sensing via Liquid‐Metal Transmission Lines",
+  "authors": [
+    "Zhang Liu",
+    "Fengdeng Jin",
+    "Wenxuan Shi",
+    "Meng She",
+    "Ziqi Meng",
+    "Miao Fang",
+    "Yixin Zhang",
+    "Qianwen Dong",
+    "Wandi Yang",
+    "Lei Shi",
+    "Xujia Zhao",
+    "Feng Zhou"
+  ],
+  "venue": "Advanced Science",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "柔性材料与器件"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-16",
+  "doi": "10.1002/advs.77839",
+  "source_url": "https://doi.org/10.1002/advs.77839",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-17T06:12:00.157722+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Reliable strain sensing in soft systems remains challenging under mechanically complex conditions, where compression, folding, transverse deformation, and environmental perturbations often interfere with tensile‐strain readout. Existing flexible strain sensors typically rely on amplitude‐based electrical responses and therefore frequently require calibration, compensation, or signal reconstruction to isolate axial deformation. Here, we present a soft liquid‐metal transmission‐line sensor that directly encodes axial elongation into the time‐of‐flight of an electromagnetic pulse. Because the readout is governed by the total propagation path length, deformation modes that do not alter this path—including localized compression, folding, and biaxial transverse strain—produce negligible influence on the measured signal. The sensor exhibits linear strain response over a wide working range up to 400% strain, together with a strain‐range–independent length resolution of 10 mm. Owing to its geometry‐governed mechanism, the device enables self‐referenced and calibration‐free strain measurement with strong inter‐device consistency, while maintaining stable operation under large pre‐strain, cyclic loading, and irreversible deformation. Reliable sensing is further demonstrated on curved surfaces, wearable systems, inflatable structures, pneumatic artificial muscles, and task‐level clinical tourniquet monitoring under dynamically varying deformation conditions. This work provides a robust and reconstruction‐free strategy for strain sensing in soft electronics, wearable systems, and clinical healthcare.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "ABSTRACT Reliable strain sensing in soft systems remains challenging under mechanically complex conditions, where compression, folding, transverse deformation, and environmental perturbations often interfere with tensile‐strain readout."
+  ],
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "inspirations": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "在同一阵列上比较 raw scanning、software feature 与低通道 hardware macro-pixel，量化通道数、延迟、功耗和任务精度。",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/advs.77839",
+    "publisher_url": "https://doi.org/10.1002/advs.77839",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77839"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77839"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-17/deep-reads/paper-e7b443d2da0d0317/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "paper-e833645b929e281a",
+  "title": "Dual‐Function Enhancement of PVDF Nanofibers via Bimetallic MOF for Wearable Pressure Sensor and AI‐Driven Non‐Invasive Blood Pressure Prediction",
+  "authors": [
+    "Rafi u Shan Ahmad",
+    "Mohamed Elhousseini Hilal",
+    "Weibin Zhu",
+    "Syed Bilal Ahmed",
+    "Wasim Ullah Khan",
+    "Iyappan Gunasekaran",
+    "Bangul Khan",
+    "Bee Luan Khoo"
+  ],
+  "venue": "Advanced Materials Technologies",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "电子皮肤与触觉",
+    "柔性能源与自供能"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-16",
+  "doi": "10.1002/admt.71248",
+  "source_url": "https://doi.org/10.1002/admt.71248",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-17T06:12:00.173368+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Engineering high‐performance wearable piezoelectric sensors requires concurrent optimization of β‐phase crystallinity and conductive pathways, a persistent materials‐level challenge. Here, we introduce a novel two‐stage amplification strategy employing a Zn/Cu bimetallic zeolitic imidazolate framework (Cu‑ZIF‑8) to simultaneously engineer β‑phase alignment and establish percolated conductive networks within electrospun PVDF nanofibers. Incorporating 3 wt% Cu‑ZIF‑8 boosts β‑phase content by 21%, functioning as a dynamic nucleating agent that suppresses α‑phase crystallization and promotes all‑trans chain conformation. Coupled with copper‑ion‑facilitated charge transport, the pressure sensor achieves an exceptional sensitivity of 23.37 mV/kPa, a fast response time of ∼42.89 ms, and robust cyclic stability over 5000 cycles, enabling high‑fidelity detection of multiple physiological signals (including arterial pulse signals). To translate signals into actionable diagnostics, we further integrate a hybrid deep‑learning architecture combining Convolutional Neural Networks with Bidirectional Long Short‑Term Memory (CNN‑BiLSTM) to predict non‐invasive blood pressure (BP) from pulse waveforms. Trained on multi‐subject pulse waveform datasets, the model predicts BP with remarkable accuracy, attaining mean absolute errors of 0.69±3.95 mmHg (systolic) and 0.25±2.21 mmHg (diastolic), surpassing conventional regression models. By unifying tailored material design with embedded artificial intelligence, this work establishes PVDF/Cu‑ZIF‑8 composites as a versatile platform for next‑generation smart wearables capable of continuous health monitoring.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "ABSTRACT Engineering high‐performance wearable piezoelectric sensors requires concurrent optimization of β‐phase crystallinity and conductive pathways, a persistent materials‐level challenge."
+  ],
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "材料性能词较多、前端/阵列/系统证据偏少，已降权"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/admt.71248",
+    "publisher_url": "https://doi.org/10.1002/admt.71248",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71248"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71248"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-17/deep-reads/paper-e833645b929e281a/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
