@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "paper-a5bc4baf46d640b4",
+  "title": "Unlocking Terahertz Steganography: Authentication of Hidden Images in Flexible Media",
+  "authors": [
+    "Tiziana Ritacco",
+    "Francesca Vittorioso",
+    "Dimitrios C. Zografopoulos",
+    "Romeo Beccherelli",
+    "Walter Fuscaldo"
+  ],
+  "venue": "Advanced Materials Technologies",
+  "primary_category": "柔性材料与器件",
+  "categories": [
+    "柔性材料与器件"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-17",
+  "doi": "10.1002/admt.71320",
+  "source_url": "https://doi.org/10.1002/admt.71320",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-18T05:58:16.471242+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Terahertz time‐domain imaging (THz‐TDI) is a nondestructive technique for investigating multilayered, composite samples. By exploiting the characteristic THz fingerprints of different materials, it enables the detection of hidden information with submillimetric resolution, without damaging surface layers. This makes THz‐TDI particularly suitable for authenticating steganographic devices, where genuine information is concealed beneath a false image. However, reconstructing features embedded in intermediate layers remains challenging, especially in flexible devices. Here, we investigate four steganographic portraits concealing objects made of different materials and sizes. The samples are characterized in reflection mode in a ‘grounded’ environment, i.e., backed with a perfect mirror. This configuration allows for determining several imaging metrics, among which the reflection from the mirror itself provides the highest reconstruction quality, as the concealed features locally attenuate the THz radiation reaching the mirror, effectively projecting a “shadow” that encodes their spatial distribution in the reflected signal. Finally, authentication of the reconstructed images is achieved using the Structural Similarity Index Measure algorithm, which compares the edges of real and reconstructed images. Under optimal conditions, this approach reached up to a maximum SSIM‐based edge‐map similarity score of 0.92 for the most favorable sample, demonstrating its potential for image processing anticounterfeiting and cultural heritage applications.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "ABSTRACT Terahertz time‐domain imaging (THz‐TDI) is a nondestructive technique for investigating multilayered, composite samples."
+  ],
+  "relevance_reasons": [
+    "与柔性触觉相关，但尚未显示对前端触觉计算的直接贡献"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/admt.71320",
+    "publisher_url": "https://doi.org/10.1002/admt.71320",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": true,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-18/deep-reads/paper-a5bc4baf46d640b4/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}

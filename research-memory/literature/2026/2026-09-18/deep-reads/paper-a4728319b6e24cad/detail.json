@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "paper-a4728319b6e24cad",
+  "title": "Iontronic Triboelectric Sensing for Adaptive Robotic Perception before and during Contact",
+  "authors": [
+    "Jiaxin Guo",
+    "Yan Du",
+    "Zhong Lin Wang",
+    "Di Wei"
+  ],
+  "venue": "Nano Letters",
+  "primary_category": "软体机器人与人机交互",
+  "categories": [
+    "软体机器人与人机交互",
+    "柔性能源与自供能",
+    "电子皮肤与触觉"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-17",
+  "doi": "10.1021/acs.nanolett.6c03434",
+  "source_url": "https://doi.org/10.1021/acs.nanolett.6c03434",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-18T05:58:16.468636+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "Abstract Adaptive robotic manipulation requires sensing systems capable of both anticipating contact and resolving haptic interactions. Existing triboelectric sensors operate through electron transport alone and are intrinsically limited to contact-triggered signal generation, preventing unified tele-perception and haptic perception. Here we introduce an iontronic triboelectric sensor (ITS) that exploits coupled ionic and electronic carrier transport to stabilize triboelectric charge generation while extending electrostatic perception beyond physical contact. Based on a PVDF-ionic liquid-TiO2 composite dielectric with optimized surface microstructuring, the ITS enables haptic pressure sensing over 0–70 kPa in the contact-separation mode and human-target tele-perception up to 1.1 m in the single-electrode mode. The same 1D-CNN is independently applied, achieving 91.3% accuracy for material pre-recognition before contact and 90.28% accuracy for material recognition during contact. Integrated with a robotic hand, the ITS enables closed-loop tele-perception–haptic perception–action feedback for adaptive grasping, providing a self-powered multimodal platform for embodied intelligence and autonomous robotics.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "Abstract Adaptive robotic manipulation requires sensing systems capable of both anticipating contact and resolving haptic interactions."
+  ],
+  "relevance_reasons": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "提供机器人、可穿戴或电子皮肤系统任务证据",
+    "可用于低离散/装配容差触觉界面的结构与对照设计"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1021/acs.nanolett.6c03434",
+    "publisher_url": "https://doi.org/10.1021/acs.nanolett.6c03434",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://pubs.acs.org/doi/pdf/10.1021/acs.nanolett.6c03434",
+      "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c03434/68540655/acs.nanolett.6c03434.pdf"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://pubs.acs.org/doi/pdf/10.1021/acs.nanolett.6c03434",
+      "RuntimeError: https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c03434/68540655/acs.nanolett.6c03434.pdf"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-18/deep-reads/paper-a4728319b6e24cad/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
