@@ -26,7 +26,7 @@
   "pdf_version": "unavailable",
   "pdf_version_label": "暂无可合法自动获取的开放全文",
   "status": "metadata_only_no_legal_pdf",
-  "generated_at": "2026-09-18T05:58:16.469981+00:00",
+  "generated_at": "2026-09-19T17:53:29.386978+00:00",
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Biomechanical energy is abundant but irregular and low‐grade, posing a significant challenge for wearable electronics, where existing energy‐harvesting solutions are mainly limited to charging capacitors via physical storage, falling short of achieving a full chemical‐charging cycle for practical batteries. To bridge this gap, we developed a closed‐loop strategy that integrates an optimized triboelectric nanogenerator, a dedicated lithium‐ion battery charge‐management system, and fiber lithium‐ion batteries (FLIBs). This system achieved a 22.7‐fold increase in the root‐mean‐square current and an 800‐fold reduction in the optimal load resistance. Consequently, the charging rate is increased by a factor of 38.8, allowing, for the first time, the full electrochemical charging cycle of 20 and 50 cm FLIBs to be completed within 2.37 ± 0.10 and 6.06 ± 0.11 h, respectively. The self‐powered backpack system demonstrated practical viability by powering real‐time positioning and outdoor data transmission, marking a decisive advance from energy harvesting to full energy autonomy for wearables.",
@@ -55,11 +55,13 @@
     "crossref_checked": true,
     "pmc_checked": false,
     "candidate_urls": [
-      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016"
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016",
+      "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75016"
     ],
     "successful_url": "",
     "failure_reasons": [
-      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016"
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016",
+      "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75016"
     ]
   },
   "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",

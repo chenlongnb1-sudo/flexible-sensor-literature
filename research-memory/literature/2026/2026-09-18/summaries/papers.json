@@ -768,7 +768,8 @@
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75027。"
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75027。",
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75027、RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75027。"
       ],
       "source_abstract": "ABSTRACT Neuromorphic systems capable of directly interfacing with the physical world are essential for embodied intelligence, wearable bioelectronics, and adaptive human‐machine interaction. However, most artificial neurons process mechanical and chemical stimuli through external sensors and peripheral circuitry, rather than encoding multimodal information at the neuron‐level, limiting integration and functional coupling between stimuli and excitability. Here we report a flexible organic artificial neuron (OAN) that couples mechanical deformation and ionic environment to spiking dynamics through nonlinear mechano‐electrochemical interactions. The OAN, fabricated by additive manufacturing on flexible substrates, integrates an organic electrochemical nonlinear element exhibiting S‐shaped negative differential resistance (S‐NDR) with a nonlinear active load to generate low‐voltage oscillatory activity. Mechanical bending within the elastic regime and variations in electrolyte ion concentration reconfigure the relative position between the S‐NDR characteristic and the active‐load line in the current‐voltage plane, enabling deterministic transitions between quiescent and oscillatory states. The proposed OAN shows mechanically triggered firing, mechanically induced silencing, and chemically controlled reactivation. Numerical simulations quantitatively reproduce the nonlinear OAN operation and spiking behavior, providing predictive design guidelines. These findings establish a device‐level framework for multimodal organic neurons in which mechanical and ionic signals are directly encoded in device physics, opening avenues toward biointegrated neuromorphic systems.",
       "source_access": {
@@ -776,13 +777,15 @@
         "publisher_url": "https://doi.org/10.1002/adma.75027",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": true,
+        "pmc_checked": false,
         "candidate_urls": [
-          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75027"
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75027",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75027"
         ],
         "successful_url": "",
         "failure_reasons": [
-          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75027"
+          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75027",
+          "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75027"
         ]
       },
       "cited_by_count": 0,
@@ -1162,7 +1165,8 @@
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016。"
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016。",
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016、RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75016。"
       ],
       "source_abstract": "ABSTRACT Biomechanical energy is abundant but irregular and low‐grade, posing a significant challenge for wearable electronics, where existing energy‐harvesting solutions are mainly limited to charging capacitors via physical storage, falling short of achieving a full chemical‐charging cycle for practical batteries. To bridge this gap, we developed a closed‐loop strategy that integrates an optimized triboelectric nanogenerator, a dedicated lithium‐ion battery charge‐management system, and fiber lithium‐ion batteries (FLIBs). This system achieved a 22.7‐fold increase in the root‐mean‐square current and an 800‐fold reduction in the optimal load resistance. Consequently, the charging rate is increased by a factor of 38.8, allowing, for the first time, the full electrochemical charging cycle of 20 and 50 cm FLIBs to be completed within 2.37 ± 0.10 and 6.06 ± 0.11 h, respectively. The self‐powered backpack system demonstrated practical viability by powering real‐time positioning and outdoor data transmission, marking a decisive advance from energy harvesting to full energy autonomy for wearables.",
       "source_access": {
@@ -1172,11 +1176,13 @@
         "crossref_checked": true,
         "pmc_checked": false,
         "candidate_urls": [
-          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016"
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75016"
         ],
         "successful_url": "",
         "failure_reasons": [
-          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016"
+          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75016",
+          "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.75016"
         ]
       },
       "cited_by_count": 0,
@@ -1254,7 +1260,8 @@
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464。"
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464。",
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464、RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78464。"
       ],
       "source_abstract": "ABSTRACT Effective downscaling of Liquid Crystal Elastomers and Networks (LCE/Ns) is essential to unlocking their applicability in small‐scale soft robotics. Of equal importance, the synthesis‐alignment‐fabrication (SAF) workflow must be versatile, high‐throughput, and cost‐effective. In recent literature, state‐of‐the‐art photo‐printing methods, such as direct laser writing (DLW) and digital light processing (DLP), coupled with patterned surfaces or external fields, exemplify promising SAF workflows to achieve downscaling. However, they are typically costly and inaccessible to many. The prototype developed in the present work showcases an inexpensive and straightforward SAF workflow that utilizes masked photolithography and magnetic fields to obtain miniaturized LCN actuators with a minimum feature width of 50 µm. By combining stepwise photopolymerization with controlled dosage through carefully designed photomasks in the presence of a variable external field, versatile director discretization and shape‐change programmability are obtained. With this approach, we produced a variety of 2D LCN constructs with discretized alignment domains of millimetre to micrometre‐scale with light‐actuatable shape‐change, such as a miniaturized gripper (actuatable curvature 5.2 mm −1 ) and a rapid twisting actuator (twist angle ∼720°).",
       "source_access": {
@@ -1262,13 +1269,15 @@
         "publisher_url": "https://doi.org/10.1002/adfm.78464",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": true,
+        "pmc_checked": false,
         "candidate_urls": [
-          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464"
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78464"
         ],
         "successful_url": "",
         "failure_reasons": [
-          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464"
+          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464",
+          "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78464"
         ]
       },
       "cited_by_count": 0,
@@ -1343,7 +1352,8 @@
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320。"
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320。",
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320、RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71320。"
       ],
       "source_abstract": "ABSTRACT Terahertz time‐domain imaging (THz‐TDI) is a nondestructive technique for investigating multilayered, composite samples. By exploiting the characteristic THz fingerprints of different materials, it enables the detection of hidden information with submillimetric resolution, without damaging surface layers. This makes THz‐TDI particularly suitable for authenticating steganographic devices, where genuine information is concealed beneath a false image. However, reconstructing features embedded in intermediate layers remains challenging, especially in flexible devices. Here, we investigate four steganographic portraits concealing objects made of different materials and sizes. The samples are characterized in reflection mode in a ‘grounded’ environment, i.e., backed with a perfect mirror. This configuration allows for determining several imaging metrics, among which the reflection from the mirror itself provides the highest reconstruction quality, as the concealed features locally attenuate the THz radiation reaching the mirror, effectively projecting a “shadow” that encodes their spatial distribution in the reflected signal. Finally, authentication of the reconstructed images is achieved using the Structural Similarity Index Measure algorithm, which compares the edges of real and reconstructed images. Under optimal conditions, this approach reached up to a maximum SSIM‐based edge‐map similarity score of 0.92 for the most favorable sample, demonstrating its potential for image processing anticounterfeiting and cultural heritage applications.",
       "source_access": {
@@ -1351,13 +1361,15 @@
         "publisher_url": "https://doi.org/10.1002/admt.71320",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": true,
+        "pmc_checked": false,
         "candidate_urls": [
-          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320"
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71320"
         ],
         "successful_url": "",
         "failure_reasons": [
-          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320"
+          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320",
+          "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71320"
         ]
       },
       "cited_by_count": 0,
@@ -1370,4 +1382,4 @@
     }
   ],
   "generated_ideas": []
-}
+}\n

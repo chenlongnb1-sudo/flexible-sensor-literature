@@ -773,7 +773,7 @@
         "publisher_url": "https://doi.org/10.1002/advs.77839",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": false,
+        "pmc_checked": true,
         "candidate_urls": [
           "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77839"
         ],
@@ -1089,7 +1089,7 @@
         "publisher_url": "https://doi.org/10.1002/advs.77794",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": false,
+        "pmc_checked": true,
         "candidate_urls": [
           "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77794"
         ],
@@ -1176,7 +1176,8 @@
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71317。"
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71317。",
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71317、RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71317。"
       ],
       "source_abstract": "ABSTRACT In recent years, main‐chain liquid crystal elastomers (LCEs) have been of widespread interest in soft robotics research. LCEs are polymer resins that can be molecularly aligned and show large contractions upon application of various stimuli. A current challenge is the fabrication of large‐scale soft actuator arrays while addressing individual actuators. Here, we describe a scalable method for the fabrication of flexible foils with thermally driven active LCE elements, enabled by controlled Joule heating of a resistive heater array. Four different heater designs were made on two different polymer foil types. Electrothermal properties, power consumption, and the resulting actuation behavior were investigated and characterized. By combining conventional thin‐film electronics processes for the manufacturing of heaters with direct ink writing of the LCE, a matrix of 25 elements was realized that produces local on‐demand actuation at low power, i.e. down to a 2 mm bending radius at below 400 mW per actuator. The scalable thin‐film electronics fabrication in combination with printed LCEs shows potential for applications in texture‐changing surfaces or surface‐driven object motion, examples of which include haptic displays or soft touch human‐machine interfaces.",
       "source_access": {
@@ -1184,13 +1185,15 @@
         "publisher_url": "https://doi.org/10.1002/admt.71317",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": true,
+        "pmc_checked": false,
         "candidate_urls": [
-          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71317"
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71317",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71317"
         ],
         "successful_url": "",
         "failure_reasons": [
-          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71317"
+          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71317",
+          "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71317"
         ]
       },
       "cited_by_count": 0,
@@ -1272,7 +1275,8 @@
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78524。"
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78524。",
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78524、RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78524。"
       ],
       "source_abstract": "ABSTRACT Solution‐processed two‐dimensional semiconductors offer a scalable route to flexible optoelectronic devices, yet when restacked nanosheet films are assembled into heterostructures, their intrinsic disorder, hopping‐dominated transport and heterogeneous interfaces are expected to limit ideal junction behavior. Here we show that liquid–liquid interface assembly of electrochemically exfoliated n‐type MoS 2 and p‐type WSe 2 yields nanometer‐thick, centimeter‐scale type‐II heterostructures directly on paper substrates, translating disordered nanosheet films into macroscopic rectifying p–n junction networks. Under white‐light illumination, these networks enter a long‐lived photocharged state that persists for about 15 min at zero applied bias, demonstrating that the heterostructure itself can stabilize photocharge without a continuously applied voltage. Electrical measurements, terahertz spectroscopy and geometric hopping simulations show that this retention arises from transport‐limited recombination, in which separated carriers relax through sparse electronically active pathways in the disordered nanosheet network. The stored charge is electrically accessible and can be released on demand through an external circuit to power a load or erased by a voltage pulse. These findings establish structural disorder as a tool for controlling recombination and photocharge dynamics in solution‐processed van der Waals heterostructures, paving the way for scalable optoelectronic platforms that integrate light harvesting, charge storage, and controlled release.",
       "source_access": {
@@ -1282,11 +1286,13 @@
         "crossref_checked": true,
         "pmc_checked": false,
         "candidate_urls": [
-          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78524"
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78524",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78524"
         ],
         "successful_url": "",
         "failure_reasons": [
-          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78524"
+          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78524",
+          "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78524"
         ]
       },
       "cited_by_count": 0,
@@ -1683,7 +1689,7 @@
         "publisher_url": "https://doi.org/10.1002/advs.77587",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": false,
+        "pmc_checked": true,
         "candidate_urls": [
           "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.77587"
         ],
@@ -1960,7 +1966,8 @@
       "innovation_suggestions": [],
       "risks": [
         "当前为题录/摘要级初筛，论文结论、对照和数值必须在精读全文后核实。",
-        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313。"
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313。",
+        "开放获取 PDF 下载失败：RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313、RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71313。"
       ],
       "source_abstract": "ABSTRACT Silicone elastomers have garnered widespread attention for their flexibility, biocompatibility, and tunable mechanical properties. Among them, polydimethylsiloxane (PDMS) and Ecoflex, are widely used in soft electronics, microfluidics, and biomedical devices. However, the limited stretchability of PDMS (maximum strain",
       "source_access": {
@@ -1968,13 +1975,15 @@
         "publisher_url": "https://doi.org/10.1002/admt.71313",
         "unpaywall_checked": true,
         "crossref_checked": true,
-        "pmc_checked": true,
+        "pmc_checked": false,
         "candidate_urls": [
-          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313"
+          "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71313"
         ],
         "successful_url": "",
         "failure_reasons": [
-          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313"
+          "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313",
+          "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71313"
         ]
       },
       "cited_by_count": 0,
@@ -1987,4 +1996,4 @@
     }
   ],
   "generated_ideas": []
-}
+}\n

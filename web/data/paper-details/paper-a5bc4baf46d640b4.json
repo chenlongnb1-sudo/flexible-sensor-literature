@@ -22,7 +22,7 @@
   "pdf_version": "unavailable",
   "pdf_version_label": "暂无可合法自动获取的开放全文",
   "status": "metadata_only_no_legal_pdf",
-  "generated_at": "2026-09-18T05:58:16.471242+00:00",
+  "generated_at": "2026-09-19T17:53:29.446290+00:00",
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Terahertz time‐domain imaging (THz‐TDI) is a nondestructive technique for investigating multilayered, composite samples. By exploiting the characteristic THz fingerprints of different materials, it enables the detection of hidden information with submillimetric resolution, without damaging surface layers. This makes THz‐TDI particularly suitable for authenticating steganographic devices, where genuine information is concealed beneath a false image. However, reconstructing features embedded in intermediate layers remains challenging, especially in flexible devices. Here, we investigate four steganographic portraits concealing objects made of different materials and sizes. The samples are characterized in reflection mode in a ‘grounded’ environment, i.e., backed with a perfect mirror. This configuration allows for determining several imaging metrics, among which the reflection from the mirror itself provides the highest reconstruction quality, as the concealed features locally attenuate the THz radiation reaching the mirror, effectively projecting a “shadow” that encodes their spatial distribution in the reflected signal. Finally, authentication of the reconstructed images is achieved using the Structural Similarity Index Measure algorithm, which compares the edges of real and reconstructed images. Under optimal conditions, this approach reached up to a maximum SSIM‐based edge‐map similarity score of 0.92 for the most favorable sample, demonstrating its potential for image processing anticounterfeiting and cultural heritage applications.",
@@ -49,13 +49,15 @@
     "publisher_url": "https://doi.org/10.1002/admt.71320",
     "unpaywall_checked": true,
     "crossref_checked": true,
-    "pmc_checked": true,
+    "pmc_checked": false,
     "candidate_urls": [
-      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320"
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320",
+      "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71320"
     ],
     "successful_url": "",
     "failure_reasons": [
-      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320"
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71320",
+      "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71320"
     ]
   },
   "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",

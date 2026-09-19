@@ -22,7 +22,7 @@
   "pdf_version": "unavailable",
   "pdf_version_label": "暂无可合法自动获取的开放全文",
   "status": "metadata_only_no_legal_pdf",
-  "generated_at": "2026-09-18T05:58:16.470628+00:00",
+  "generated_at": "2026-09-19T17:53:29.392716+00:00",
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Effective downscaling of Liquid Crystal Elastomers and Networks (LCE/Ns) is essential to unlocking their applicability in small‐scale soft robotics. Of equal importance, the synthesis‐alignment‐fabrication (SAF) workflow must be versatile, high‐throughput, and cost‐effective. In recent literature, state‐of‐the‐art photo‐printing methods, such as direct laser writing (DLW) and digital light processing (DLP), coupled with patterned surfaces or external fields, exemplify promising SAF workflows to achieve downscaling. However, they are typically costly and inaccessible to many. The prototype developed in the present work showcases an inexpensive and straightforward SAF workflow that utilizes masked photolithography and magnetic fields to obtain miniaturized LCN actuators with a minimum feature width of 50 µm. By combining stepwise photopolymerization with controlled dosage through carefully designed photomasks in the presence of a variable external field, versatile director discretization and shape‐change programmability are obtained. With this approach, we produced a variety of 2D LCN constructs with discretized alignment domains of millimetre to micrometre‐scale with light‐actuatable shape‐change, such as a miniaturized gripper (actuatable curvature 5.2 mm −1 ) and a rapid twisting actuator (twist angle ∼720°).",
@@ -49,13 +49,15 @@
     "publisher_url": "https://doi.org/10.1002/adfm.78464",
     "unpaywall_checked": true,
     "crossref_checked": true,
-    "pmc_checked": true,
+    "pmc_checked": false,
     "candidate_urls": [
-      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464"
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464",
+      "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78464"
     ],
     "successful_url": "",
     "failure_reasons": [
-      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464"
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78464",
+      "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adfm.78464"
     ]
   },
   "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",

@@ -20,7 +20,7 @@
   "pdf_version": "publisher_pdf",
   "pdf_version_label": "出版社开放获取 PDF",
   "status": "fulltext_draft",
-  "generated_at": "2026-09-19T05:56:16.517210+00:00",
+  "generated_at": "2026-09-19T17:53:25.013343+00:00",
   "page_count": 17,
   "abstract": {
     "original": "Abstract Tiny flying robots hold great potential for search-and-rescue, safety inspections, and environmental monitoring, but their small size and limited computational resources constrain onboard sensing capabilities. Inspired by animals such as rats and moles which rely on lightweight whiskers to navigate and perceive their surroundings through touch, we present a 3.2-gram whisker-based tactile sensing apparatus that enables tiny drones to perceive and interact with their environment through gentle physical contact, even in complete darkness. The apparatus employs barometers at the base of each whisker to estimate contact depth in flight, enabling obstacle localization while minimizing contact-induced destabilization. To compensate for sensor noise and drift during sustained contact, we develop a tactile depth estimation pipeline that achieves millimeter-scale depth estimation accuracy. Together, these innovations enable tiny drones to autonomously avoid obstacles, contour surfaces, and explore confined spaces, guided by onboard tactile sensing across both rigid and soft environments. Running entirely onboard a microcontroller with just 192 KB of memory, our system demonstrates autonomous tactile flight across various scenarios. This bio-inspired approach extends perception for mobile robots beyond vision, opening new possibilities for autonomous operations in visually degraded and GPS-denied environments.",
@@ -134,40 +134,10 @@
     },
     {
       "page": 10,
-      "text": "removing the sweeping behavior results in a higher proportion of timeout cases, suggesting inefficient exploration with limited environment coverage. Random exploration exhibits both frequent crashing and timeout events, reflecting the lack of an information-driven exploration strategy.",
+      "text": "removing the sweeping behavior results in a higher proportion of timeout cases, suggesting inefficient exploration with limited environment coverage. Random exploration exhibits both frequent crashing and timeout events, reflecting the lack of an information-driven exploration strategy. Additional qualitative results across all trials are provided in Supplementary Fig. S11, where we visualize the drone trajectories, reconstructed contours, GT layouts, and failure cases (indicated by red crosses for crashing events). These results further highlight the role of the corner-penalty mechanism in avoiding concave regions. Without this component, the drone frequently collides with sharp corners, as observed in both the w/o corner-penalty and random exploration variants. In contrast, the proposed method consistently steers away from such high-risk regions. We also observe that removing the sweeping behavior leads to noticeably less accurate reconstructions, as the lack of local coverage limits the acquisition of fine geometric details. Finally, we note a limitation of the current strategy: in some cases (e.g., Trial 8), the drone locates the exit before fully exploring the environment, resulting in incomplete reconstruction. This suggests that future work could incorporate an uncertainty-aware exploration strategy to prevent premature exit and enable the drone to return and continue exploring until sufficient environment coverage is achieved. Figure 7 illustrates one successful exploration, which panel Fig. 7c1 shows the first application of GPIS to the uncertainty map after collecting training data in four orthogonal orientations (red dots: surface; blue dots: interior). Compared to Fig. 7a, uncertainty is significantly reduced in the explored regions. The drone’s trajectory and current state are indicated by a small drone icon, with reconstructed contours in orange using the marching squares algorithm. Curvature analysis (Fig. 7c2) highlights high-curvature corners, which are penalized to guide the next exploration target (blue hollow circle). Subsequent GPIS applications and corner penalties (Fig. 7d1–f2) progressively refine the map and reduce uncertainty. For clarity, we omit the third GPIS application from the figure. The drone successfully located the exit after the fourth GPIS application. To validate our method in real-world scenarios, we constructed a 2 m × 2 m room with glass walls and an 80 cm-wide exit. As part of the experimental setup, optical flow is used only for egomotion estimation and flight stabilization, while all environment perception and navigation decisions are driven by tactile sensing onboard. As shown in Fig. 7g, h, the drone successfully explored the environment and located the exit. It began by collecting GPIS training data in four orthogonal directions (Fig. 7i1) to build an initial environmental model. Highcurvature corners were identified and penalized (Fig. 7i2), guiding the drone to explore in safer directions while progressively reducing uncertainty. At each step, the GPIS-based prediction and corner penalties updated the target exploration points, allowing the drone to navigate efficiently and avoid collisions. The final reconstructed map closely aligns with the actual room layout, with minor deviations due to odometry drift. Grid resolution was reduced (10 × 10) compared to",
       "bbox": [
         39.68,
         199.0,
-        294.91,
-        250.03
-      ]
-    },
-    {
-      "page": 10,
-      "text": "Additional qualitative results across all trials are provided in Supplementary Fig. S11, where we visualize the drone trajectories, reconstructed contours, GT layouts, and failure cases (indicated by red crosses for crashing events). These results further highlight the role of the corner-penalty mechanism in avoiding concave regions. Without this component, the drone frequently collides with sharp corners, as observed in both the w/o corner-penalty and random exploration variants. In contrast, the proposed method consistently steers away from such high-risk regions. We also observe that removing the sweeping behavior leads to noticeably less accurate reconstructions, as the lack of local coverage limits the acquisition of fine geometric details. Finally, we note a limitation of the current strategy: in some cases (e.g., Trial 8), the drone locates the exit before fully exploring the environment, resulting in incomplete reconstruction. This suggests that future work could incorporate an uncertainty-aware exploration strategy to prevent premature exit and enable the drone to return and continue exploring until sufficient environment coverage is achieved.",
-      "bbox": [
-        39.68,
-        252.52,
-        294.83,
-        442.84
-      ]
-    },
-    {
-      "page": 10,
-      "text": "Figure 7 illustrates one successful exploration, which panel Fig. 7c1 shows the first application of GPIS to the uncertainty map after collecting training data in four orthogonal orientations (red dots: surface; blue dots: interior). Compared to Fig. 7a, uncertainty is significantly reduced in the explored regions. The drone’s trajectory and current state are indicated by a small drone icon, with reconstructed contours in orange using the marching squares algorithm. Curvature analysis (Fig. 7c2) highlights high-curvature corners, which are penalized to guide the next exploration target (blue hollow circle). Subsequent GPIS applications and corner penalties (Fig. 7d1–f2) progressively refine the map and reduce uncertainty. For clarity, we omit the third GPIS application from the figure. The drone successfully located the exit after the fourth GPIS application.",
-      "bbox": [
-        39.68,
-        445.28,
-        294.9,
-        582.03
-      ]
-    },
-    {
-      "page": 10,
-      "text": "To validate our method in real-world scenarios, we constructed a 2 m × 2 m room with glass walls and an 80 cm-wide exit. As part of the experimental setup, optical flow is used only for egomotion estimation and flight stabilization, while all environment perception and navigation decisions are driven by tactile sensing onboard. As shown in Fig. 7g, h, the drone successfully explored the environment and located the exit. It began by collecting GPIS training data in four orthogonal directions (Fig. 7i1) to build an initial environmental model. Highcurvature corners were identified and penalized (Fig. 7i2), guiding the drone to explore in safer directions while progressively reducing uncertainty. At each step, the GPIS-based prediction and corner penalties updated the target exploration points, allowing the drone to navigate efficiently and avoid collisions. The final reconstructed map closely aligns with the actual room layout, with minor deviations due to odometry drift. Grid resolution was reduced (10 × 10) compared to",
-      "bbox": [
-        39.68,
-        584.53,
         294.91,
         742.7
       ]
@@ -184,20 +154,10 @@
     },
     {
       "page": 10,
-      "text": "Aerial tactile wall following in complete darkness We evaluated the drone’s ability to perform wall-following flight in complete darkness on both solid (Fig. 8a) and soft, textile surfaces (Fig. 8c). In these settings, we employ the aerial tactile navigation framework of Fig. 3, relying solely on the onboard IMU and a downward-facing ToF sensor for state estimation. Tactile depth was predicted only using MLP.",
+      "text": "Aerial tactile wall following in complete darkness We evaluated the drone’s ability to perform wall-following flight in complete darkness on both solid (Fig. 8a) and soft, textile surfaces (Fig. 8c). In these settings, we employ the aerial tactile navigation framework of Fig. 3, relying solely on the onboard IMU and a downward-facing ToF sensor for state estimation. Tactile depth was predicted only using MLP. The drone took off and flew forward at V max = 20 cm/s. Upon detecting an obstacle (Tc = 20), it entered wall following mode, maintaining a safe standoff distance within a depth threshold band of 40–100 mm for approximately seven seconds before flying backward and landing. Although laser data was recorded, it cannot be considered GT due to sensor placement differences and unknown relative positioning. Nevertheless, depth predictions from both left and right whiskers closely tracked the trends in the laser data, indicating sufficient accuracy for closed-loop tactile navigation (Fig. 8b, d). Despite significant IMU drift, the drone was still able to maintain stable wallfollowing using reactive control. As shown in Supplementary Movie 6, the drone exhibited an increase in lateral velocity while transitioning from the first to the second obstacle during solid surface sweeping. This may have resulted from a momentary rightward acceleration when losing contact, which the IMU misinterpreted as relative stasis, prompting an excessive corrective command in that direction. Wallfollowing on soft objects proved more challenging due to higher surface friction and the presence of folds on the flag. These factors reduce the reliability of depth estimation and destabilize the controller, resulting in the oscillatory behavior observed in Fig. 8d. The oscillations highlight the controller’s limited robustness under soft-surface conditions. Nevertheless, the system successfully completed wallfollowing on the flag without crashing—a task that remains difficult for other intrusive tactile sensors or aerial manipulators.",
       "bbox": [
         306.14,
         230.69,
-        561.36,
-        303.6
-      ]
-    },
-    {
-      "page": 10,
-      "text": "The drone took off and flew forward at V max = 20 cm/s. Upon detecting an obstacle (Tc = 20), it entered wall following mode, maintaining a safe standoff distance within a depth threshold band of 40–100 mm for approximately seven seconds before flying backward and landing. Although laser data was recorded, it cannot be considered GT due to sensor placement differences and unknown relative positioning. Nevertheless, depth predictions from both left and right whiskers closely tracked the trends in the laser data, indicating sufficient accuracy for closed-loop tactile navigation (Fig. 8b, d). Despite significant IMU drift, the drone was still able to maintain stable wallfollowing using reactive control. As shown in Supplementary Movie 6, the drone exhibited an increase in lateral velocity while transitioning from the first to the second obstacle during solid surface sweeping. This may have resulted from a momentary rightward acceleration when losing contact, which the IMU misinterpreted as relative stasis, prompting an excessive corrective command in that direction. Wallfollowing on soft objects proved more challenging due to higher surface friction and the presence of folds on the flag. These factors reduce the reliability of depth estimation and destabilize the controller, resulting in the oscillatory behavior observed in Fig. 8d. The oscillations highlight the controller’s limited robustness under soft-surface conditions. Nevertheless, the system successfully completed wallfollowing on the flag without crashing—a task that remains difficult for other intrusive tactile sensors or aerial manipulators.",
-      "bbox": [
-        306.14,
-        305.97,
         561.37,
         560.65
       ]
@@ -458,26 +418,6 @@
     },
     {
       "id": "F008",
-      "label": "Figure 7",
-      "page": 10,
-      "caption_original": "Figure 7 illustrates one successful exploration, which panel Fig. 7c1 shows the first application of GPIS to the uncertainty map after collecting training data in four orthogonal orientations (red dots: surface; blue dots: interior). Compared to Fig. 7a, uncertainty is significantly reduced in the explored regions. The drone’s trajectory and current state are indicated by a small drone icon, with reconstructed contours in orange using the marching squares algorithm. Curvature analysis (Fig. 7c2) highlights high-curvature corners, which are penalized to guide the next exploration target (blue hollow circle). Subsequent GPIS applications and corner penalties (Fig. 7d1–f2) progressively refine the map and reduce uncertainty. For clarity, we omit the third GPIS application from the figure. The drone successfully located the exit after the fourth GPIS application.",
-      "caption_zh": "Figure 7 原始图注已提取；逐项含义见下方分图说明。",
-      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
-      "panels": [],
-      "image_filename": "figure-08.png",
-      "image_width": 1119,
-      "image_height": 837,
-      "crop_confidence": "approximate",
-      "bbox": [
-        18.0,
-        24.0,
-        577.28,
-        442.28
-      ],
-      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-08.png"
-    },
-    {
-      "id": "F009",
       "label": "Fig. 8",
       "page": 11,
       "caption_original": "Fig. 8 | Wall-following-based aerial tactile navigation in complete darkness along solid and soft surfaces, using only the onboard IMU and a downwardfacing ToF sensor for state estimation. a Sweeping along a rigid surface for 7 s. b Predicted depth from the whisker MLP model vs. laser measurements during",
@@ -495,7 +435,7 @@
           "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
         }
       ],
-      "image_filename": "figure-09.png",
+      "image_filename": "figure-08.png",
       "image_width": 981,
       "image_height": 578,
       "crop_confidence": "high",
@@ -505,7 +445,7 @@
         545.45,
         332.12
       ],
-      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-09.png"
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-08.png"
     }
   ],
   "original_pdf": "papers/paper-3b1697973a1361d6/original.pdf",

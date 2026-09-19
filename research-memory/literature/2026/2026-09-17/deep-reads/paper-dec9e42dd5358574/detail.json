@@ -29,7 +29,7 @@
   "pdf_version": "unavailable",
   "pdf_version_label": "暂无可合法自动获取的开放全文",
   "status": "metadata_only_no_legal_pdf",
-  "generated_at": "2026-09-17T06:12:00.174811+00:00",
+  "generated_at": "2026-09-19T17:53:29.872238+00:00",
   "page_count": 0,
   "abstract": {
     "original": "ABSTRACT Silicone elastomers have garnered widespread attention for their flexibility, biocompatibility, and tunable mechanical properties. Among them, polydimethylsiloxane (PDMS) and Ecoflex, are widely used in soft electronics, microfluidics, and biomedical devices. However, the limited stretchability of PDMS (maximum strain",
@@ -56,13 +56,15 @@
     "publisher_url": "https://doi.org/10.1002/admt.71313",
     "unpaywall_checked": true,
     "crossref_checked": true,
-    "pmc_checked": true,
+    "pmc_checked": false,
     "candidate_urls": [
-      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313"
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313",
+      "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71313"
     ],
     "successful_url": "",
     "failure_reasons": [
-      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313"
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/admt.71313",
+      "RuntimeError: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/admt.71313"
     ]
   },
   "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
