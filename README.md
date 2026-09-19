@@ -11,6 +11,19 @@
 - P5：坏点、漂移、跨器件迁移与少样本校准。
 - P6：摩擦、纹理、滑移、机器人、鞋垫和人体监测任务。
 
+## 跨电脑迁移
+
+完整迁移说明见 [CODEX_HANDOFF.md](CODEX_HANDOFF.md)。新电脑只需克隆本仓库、安装 Python 依赖并让 Codex 先阅读该文件、研究画像和最近日报。GitHub Actions 的通知和摘要翻译密钥需要在仓库的 Actions Secrets 中重新配置，密钥本身不会随仓库迁移。
+
+快速恢复：
+
+    git clone https://github.com/chenlongnb1-sudo/flexible-sensor-literature.git
+    cd flexible-sensor-literature
+    py -m venv .venv
+    .\.venv\Scripts\Activate.ps1
+    python -m pip install -r requirements.txt
+    python -m unittest discover -s tests -v
+
 ## 运行方式
 
 在仓库根目录运行：
