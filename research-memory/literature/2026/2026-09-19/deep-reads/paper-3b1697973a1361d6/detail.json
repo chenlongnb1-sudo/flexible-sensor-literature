@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "id": "paper-3b1697973a1361d6",
+  "title": "Whisker-based tactile flight for tiny drones",
+  "authors": [
+    "Chaoxiang Ye",
+    "Guido de Croon",
+    "Salua Hamaza"
+  ],
+  "venue": "Nature Communications",
+  "primary_category": "电子皮肤与触觉",
+  "categories": [
+    "电子皮肤与触觉"
+  ],
+  "strongly_related": true,
+  "date": "2026-09-18",
+  "doi": "10.1038/s41467-026-77366-7",
+  "source_url": "https://doi.org/10.1038/s41467-026-77366-7",
+  "pdf_source_url": "https://www.nature.com/articles/s41467-026-77366-7.pdf",
+  "pdf_version": "publisher_pdf",
+  "pdf_version_label": "出版社开放获取 PDF",
+  "status": "fulltext_draft",
+  "generated_at": "2026-09-19T05:56:16.517210+00:00",
+  "page_count": 17,
+  "abstract": {
+    "original": "Abstract Tiny flying robots hold great potential for search-and-rescue, safety inspections, and environmental monitoring, but their small size and limited computational resources constrain onboard sensing capabilities. Inspired by animals such as rats and moles which rely on lightweight whiskers to navigate and perceive their surroundings through touch, we present a 3.2-gram whisker-based tactile sensing apparatus that enables tiny drones to perceive and interact with their environment through gentle physical contact, even in complete darkness. The apparatus employs barometers at the base of each whisker to estimate contact depth in flight, enabling obstacle localization while minimizing contact-induced destabilization. To compensate for sensor noise and drift during sustained contact, we develop a tactile depth estimation pipeline that achieves millimeter-scale depth estimation accuracy. Together, these innovations enable tiny drones to autonomously avoid obstacles, contour surfaces, and explore confined spaces, guided by onboard tactile sensing across both rigid and soft environments. Running entirely onboard a microcontroller with just 192 KB of memory, our system demonstrates autonomous tactile flight across various scenarios. This bio-inspired approach extends perception for mobile robots beyond vision, opening new possibilities for autonomous operations in visually degraded and GPS-denied environments.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "Abstract Tiny flying robots hold great potential for search-and-rescue, safety inspections, and environmental monitoring, but their small size and limited computational resources constrain onboard sensing capabilities."
+  ],
+  "relevance_reasons": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准"
+  ],
+  "innovation_suggestions": [
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "inspirations": [
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗",
+    "加入坏点比例、增益漂移和跨器件迁移实验，比较重标定样本量与性能渐进退化，形成可靠性主张。"
+  ],
+  "preparation_steps": [
+    {
+      "step": 1,
+      "page": 10,
+      "category_zh": "组装与封装",
+      "original": "To validate our method in real-world scenarios, we constructed a 2 m × 2 m room with glass walls and an 80 cm-wide exit.",
+      "explanation_zh": "组装与封装步骤，关键配比、时间、温度和设备参数以 p.10 原文为准。"
+    }
+  ],
+  "method_blocks": [
+    {
+      "page": 10,
+      "text": "Exit success Reconstruction accuracy Exploration efficiency",
+      "bbox": [
+        42.52,
+        67.04,
+        450.83,
+        74.04
+      ]
+    },
+    {
+      "page": 10,
+      "text": "SR (%)↑ CD (m)↓ RMSD (m)↓ Distance (m)↓ Sweeping count↓",
+      "bbox": [
+        137.08,
+        80.76,
+        529.44,
+        87.76
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Ours (Full) 90 0.26 ± 0.06 0.14 ± 0.03 25.38 ± 5.26 7.00 ± 1.41",
+      "bbox": [
+        42.52,
+        91.75,
+        505.96,
+        98.75
+      ]
+    },
+    {
+      "page": 10,
+      "text": "w/o Corner penalty 50 0.27 ± 0.08 0.16 ± 0.06 34.16 ± 4.48 8.60 ± 0.89",
+      "bbox": [
+        42.52,
+        103.83,
+        508.13,
+        110.8
+      ]
+    },
+    {
+      "page": 10,
+      "text": "w/o Sweeping 40 0.33 ± 0.09 0.19 ± 0.07 32.60 ± 10.88 10.11 ± 3.48",
+      "bbox": [
+        42.52,
+        115.96,
+        507.22,
+        122.93
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Random exploration 10 0.36 ± 0.12 0.25 ± 0.13 33.86 ± 9.16 10.50 ± 3.00",
+      "bbox": [
+        42.52,
+        128.03,
+        511.33,
+        135.01
+      ]
+    },
+    {
+      "page": 10,
+      "text": "The table reports exit success rate, reconstruction accuracy, and exploration efficiency for different methods, including ablation variants. Exit success is defined as successfully locating and navigating out of the environment within 5 min. Reconstruction accuracy is measured by Chamfer Distance (CD) and Root Mean Square Distance (RMSD). Exploration efficiency is measured by travel distance and sweeping count, and is computed only over trials that were not prematurely terminated by crashing events. Each method is evaluated over 10 trials with randomly rotated environment orientations. To ensure fair comparison, trials in which the drone exits the environment immediately without performing meaningful exploration are excluded. Bold values denote the best-performing method.",
+      "bbox": [
+        39.68,
+        141.19,
+        561.28,
+        172.57
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Nature Communications| (2026) 17:9743 10",
+      "bbox": [
+        39.69,
+        763.57,
+        561.39,
+        771.55
+      ]
+    },
+    {
+      "page": 10,
+      "text": "removing the sweeping behavior results in a higher proportion of timeout cases, suggesting inefficient exploration with limited environment coverage. Random exploration exhibits both frequent crashing and timeout events, reflecting the lack of an information-driven exploration strategy.",
+      "bbox": [
+        39.68,
+        199.0,
+        294.91,
+        250.03
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Additional qualitative results across all trials are provided in Supplementary Fig. S11, where we visualize the drone trajectories, reconstructed contours, GT layouts, and failure cases (indicated by red crosses for crashing events). These results further highlight the role of the corner-penalty mechanism in avoiding concave regions. Without this component, the drone frequently collides with sharp corners, as observed in both the w/o corner-penalty and random exploration variants. In contrast, the proposed method consistently steers away from such high-risk regions. We also observe that removing the sweeping behavior leads to noticeably less accurate reconstructions, as the lack of local coverage limits the acquisition of fine geometric details. Finally, we note a limitation of the current strategy: in some cases (e.g., Trial 8), the drone locates the exit before fully exploring the environment, resulting in incomplete reconstruction. This suggests that future work could incorporate an uncertainty-aware exploration strategy to prevent premature exit and enable the drone to return and continue exploring until sufficient environment coverage is achieved.",
+      "bbox": [
+        39.68,
+        252.52,
+        294.83,
+        442.84
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Figure 7 illustrates one successful exploration, which panel Fig. 7c1 shows the first application of GPIS to the uncertainty map after collecting training data in four orthogonal orientations (red dots: surface; blue dots: interior). Compared to Fig. 7a, uncertainty is significantly reduced in the explored regions. The drone’s trajectory and current state are indicated by a small drone icon, with reconstructed contours in orange using the marching squares algorithm. Curvature analysis (Fig. 7c2) highlights high-curvature corners, which are penalized to guide the next exploration target (blue hollow circle). Subsequent GPIS applications and corner penalties (Fig. 7d1–f2) progressively refine the map and reduce uncertainty. For clarity, we omit the third GPIS application from the figure. The drone successfully located the exit after the fourth GPIS application.",
+      "bbox": [
+        39.68,
+        445.28,
+        294.9,
+        582.03
+      ]
+    },
+    {
+      "page": 10,
+      "text": "To validate our method in real-world scenarios, we constructed a 2 m × 2 m room with glass walls and an 80 cm-wide exit. As part of the experimental setup, optical flow is used only for egomotion estimation and flight stabilization, while all environment perception and navigation decisions are driven by tactile sensing onboard. As shown in Fig. 7g, h, the drone successfully explored the environment and located the exit. It began by collecting GPIS training data in four orthogonal directions (Fig. 7i1) to build an initial environmental model. Highcurvature corners were identified and penalized (Fig. 7i2), guiding the drone to explore in safer directions while progressively reducing uncertainty. At each step, the GPIS-based prediction and corner penalties updated the target exploration points, allowing the drone to navigate efficiently and avoid collisions. The final reconstructed map closely aligns with the actual room layout, with minor deviations due to odometry drift. Grid resolution was reduced (10 × 10) compared to",
+      "bbox": [
+        39.68,
+        584.53,
+        294.91,
+        742.7
+      ]
+    },
+    {
+      "page": 10,
+      "text": "the simulation to save memory. Videos of the real-world exploration are available in Supplementary Movie 5.",
+      "bbox": [
+        306.14,
+        199.01,
+        561.26,
+        217.89
+      ]
+    },
+    {
+      "page": 10,
+      "text": "Aerial tactile wall following in complete darkness We evaluated the drone’s ability to perform wall-following flight in complete darkness on both solid (Fig. 8a) and soft, textile surfaces (Fig. 8c). In these settings, we employ the aerial tactile navigation framework of Fig. 3, relying solely on the onboard IMU and a downward-facing ToF sensor for state estimation. Tactile depth was predicted only using MLP.",
+      "bbox": [
+        306.14,
+        230.69,
+        561.36,
+        303.6
+      ]
+    },
+    {
+      "page": 10,
+      "text": "The drone took off and flew forward at V max = 20 cm/s. Upon detecting an obstacle (Tc = 20), it entered wall following mode, maintaining a safe standoff distance within a depth threshold band of 40–100 mm for approximately seven seconds before flying backward and landing. Although laser data was recorded, it cannot be considered GT due to sensor placement differences and unknown relative positioning. Nevertheless, depth predictions from both left and right whiskers closely tracked the trends in the laser data, indicating sufficient accuracy for closed-loop tactile navigation (Fig. 8b, d). Despite significant IMU drift, the drone was still able to maintain stable wallfollowing using reactive control. As shown in Supplementary Movie 6, the drone exhibited an increase in lateral velocity while transitioning from the first to the second obstacle during solid surface sweeping. This may have resulted from a momentary rightward acceleration when losing contact, which the IMU misinterpreted as relative stasis, prompting an excessive corrective command in that direction. Wallfollowing on soft objects proved more challenging due to higher surface friction and the presence of folds on the flag. These factors reduce the reliability of depth estimation and destabilize the controller, resulting in the oscillatory behavior observed in Fig. 8d. The oscillations highlight the controller’s limited robustness under soft-surface conditions. Nevertheless, the system successfully completed wallfollowing on the flag without crashing—a task that remains difficult for other intrusive tactile sensors or aerial manipulators.",
+      "bbox": [
+        306.14,
+        305.97,
+        561.37,
+        560.65
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "F001",
+      "label": "Fig. 1",
+      "page": 2,
+      "caption_original": "Fig. 1 | Design and biological inspiration of the whiskered drone. a The whiskered drone platform considered here: a tiny, 44.1-g Crazyflie Brushless drone with 2 artificial whiskers. b Structural diagram of the whisker sensor, the STM32F0 is only used for data acquisition and transmission for the three barometers and for",
+      "caption_zh": "Fig. 1 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "The whiskered drone platform considered here: a tiny, 44.1-g Crazyflie Brushless drone with 2 artificial whiskers",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Structural diagram of the whisker sensor, the STM32F0 is only used for data acquisition and transmission for the three barometers and for",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-01.png",
+      "image_width": 981,
+      "image_height": 393,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        43.76,
+        545.45,
+        239.82
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-01.png"
+    },
+    {
+      "id": "F002",
+      "label": "Fig. 2",
+      "page": 3,
+      "caption_original": "Fig. 2 | Effect of the whisker placement angle on the drone’s stability during wall-following interactions. a, b Schematic illustration of forces and moments present on the drone during whisker-based wall sweeping at the positive placement angle. While in contact with a vertical obstacle, the whisker generates a normal force N, which induces a friction force fN. The whisker’s placement angle α influences the resulting N and moment arm, and thus the drone’s pitch Mpitch and yaw Myaw moments. c–h Experimental setup, whisker deflection, and sweeping motion of the drone with whiskers mounted at −15°, 0°, 15°, 30°, 45°, and 60° in the pitch",
+      "caption_zh": "Fig. 2 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a,b",
+          "original": "Schematic illustration of forces and moments present on the drone during whisker-based wall sweeping at the positive placement angle. While in contact with a vertical obstacle, the whisker generates a normal force N, which induces a friction force fN. The whisker’s placement angle α influences the resulting N and moment arm, and thus the drone’s pitch Mpitch and yaw Myaw moments",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "c-h",
+          "original": "Experimental setup, whisker deflection, and sweeping motion of the drone with whiskers mounted at −15°, 0°, 15°, 30°, 45°, and 60° in the pitch",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-02.png",
+      "image_width": 972,
+      "image_height": 1221,
+      "crop_confidence": "high",
+      "bbox": [
+        57.76,
+        43.76,
+        543.19,
+        653.74
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-02.png"
+    },
+    {
+      "id": "F003",
+      "label": "Fig. 3",
+      "page": 5,
+      "caption_original": "Fig. 3 | Overview of our whiskered drone system pipeline. a System architecture diagram. b The TODRC module for compensating tactile drift. c The tactile depth estimation module, which fuses the sensor model and process model to predict left and right whisker depths. d The aerial tactile navigation module (highlighted in red), based on wall-following, and the active aerial tactile exploration module",
+      "caption_zh": "Fig. 3 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看器件结构、材料层次、信号路径和制备流程。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "System architecture diagram",
+          "explanation_zh": "重点查看器件结构、材料层次、信号路径和制备流程。"
+        },
+        {
+          "label": "b",
+          "original": "The TODRC module for compensating tactile drift",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "The tactile depth estimation module, which fuses the sensor model and process model to predict left and right whisker depths",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        },
+        {
+          "label": "d",
+          "original": "The aerial tactile navigation module (highlighted in red), based on wall-following, and the active aerial tactile exploration module",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-03.png",
+      "image_width": 981,
+      "image_height": 743,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        43.76,
+        545.45,
+        414.83
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-03.png"
+    },
+    {
+      "id": "F004",
+      "label": "Fig. 4",
+      "page": 6,
+      "caption_original": "Fig. 4 | Whisker sensor drift compensation during free flight. a Whiskered drone performing a free flight with TDORC onboard. b The mean and standard deviation bands of the six-channel barometer signals for raw measurements, bandpassfiltered signals, TDOC, and TDORC demonstrate that our proposed methods effectively suppresses signal drift. c Violin plots showing the whisker signal",
+      "caption_zh": "Fig. 4 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Whiskered drone performing a free flight with TDORC onboard",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "The mean and standard deviation bands of the six-channel barometer signals for raw measurements, bandpassfiltered signals, TDOC, and TDORC demonstrate that our proposed methods effectively suppresses signal drift",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Violin plots showing the whisker signal",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-04.png",
+      "image_width": 669,
+      "image_height": 715,
+      "crop_confidence": "high",
+      "bbox": [
+        133.44,
+        43.76,
+        467.44,
+        400.77
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-04.png"
+    },
+    {
+      "id": "F005",
+      "label": "Fig. 5",
+      "page": 7,
+      "caption_original": "Fig. 5 | Whisker-based tactile depth estimation evaluated on the test set. a Data collection on a rigid panel (Dataset 1). b Prediction error density across models for Dataset 1. c Predicted depth from MLP + KF (Full Model) vs. GT and laser on Dataset",
+      "caption_zh": "Fig. 5 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Data collection on a rigid panel (Dataset 1)",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Prediction error density across models for Dataset 1",
+          "explanation_zh": "重点查看标定方法、量程、误差、线性和动态响应，避免只比较单一灵敏度。"
+        },
+        {
+          "label": "c",
+          "original": "Predicted depth from MLP + KF (Full Model) vs. GT and laser on Dataset",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        }
+      ],
+      "image_filename": "figure-05.png",
+      "image_width": 981,
+      "image_height": 787,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        43.76,
+        545.45,
+        436.55
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-05.png"
+    },
+    {
+      "id": "F006",
+      "label": "Fig. 6",
+      "page": 8,
+      "caption_original": "Fig. 6 | Experimental results of aerial tactile navigation through multiple invisible walls. a Whiskered drone successfully navigating three parallel glass walls. b Trajectories of the drone across five independent trials in the first wall setup, with absolute position and orientation visualized. c Comparison of true and estimatedcontact depths with the corresponding threshold bands in the first setup. d Absolute orientation of the drone in the first setup. e Whiskered drone",
+      "caption_zh": "Fig. 6 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Whiskered drone successfully navigating three parallel glass walls",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Trajectories of the drone across five independent trials in the first wall setup, with absolute position and orientation visualized",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "c",
+          "original": "Comparison of true and estimatedcontact depths with the corresponding threshold bands in the first setup",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "d",
+          "original": "Absolute orientation of the drone in the first setup",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "e",
+          "original": "Whiskered drone",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        }
+      ],
+      "image_filename": "figure-06.png",
+      "image_width": 981,
+      "image_height": 1096,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        43.76,
+        545.45,
+        591.32
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-06.png"
+    },
+    {
+      "id": "F007",
+      "label": "Fig. 7",
+      "page": 9,
+      "caption_original": "Fig. 7 | Simulation and real-world results of active aerial tactile exploration. a Initial unexplored environment with maximum uncertainty. b Simulation in ISAAC SIM. c1, d1, e1, f1 Successive GPIS applications after collecting training data (red: surface; blue: interior), showing reduced uncertainty and improved shape reconstruction. The drone’s trajectory (rainbow line), reconstructed contours (orange), and real-time state (drone icon) are shown. The exit is reached after the fourth GPIS. c2, d2, e2, f2 Curvature analysis of extracted contours: brighter colors indicate higher curvature. Identified convex corners (white dots) are penalized, and",
+      "caption_zh": "Fig. 7 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Initial unexplored environment with maximum uncertainty",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Simulation in ISAAC SIM. c1, d1, e1, f1 Successive GPIS applications after collecting training data (red: surface; blue: interior), showing reduced uncertainty and improved shape reconstruction. The drone’s trajectory (rainbow line), reconstructed contours (orange), and real-time state (drone icon) are shown. The exit is reached after the fourth GPIS. c2, d2, e2, f2 Curvature analysis of extracted contours: brighter colors indicate higher curvature. Identified convex corners (white dots) are penalized, and",
+          "explanation_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。"
+        }
+      ],
+      "image_filename": "figure-07.png",
+      "image_width": 981,
+      "image_height": 797,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        43.76,
+        545.45,
+        441.82
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-07.png"
+    },
+    {
+      "id": "F008",
+      "label": "Figure 7",
+      "page": 10,
+      "caption_original": "Figure 7 illustrates one successful exploration, which panel Fig. 7c1 shows the first application of GPIS to the uncertainty map after collecting training data in four orthogonal orientations (red dots: surface; blue dots: interior). Compared to Fig. 7a, uncertainty is significantly reduced in the explored regions. The drone’s trajectory and current state are indicated by a small drone icon, with reconstructed contours in orange using the marching squares algorithm. Curvature analysis (Fig. 7c2) highlights high-curvature corners, which are penalized to guide the next exploration target (blue hollow circle). Subsequent GPIS applications and corner penalties (Fig. 7d1–f2) progressively refine the map and reduce uncertainty. For clarity, we omit the third GPIS application from the figure. The drone successfully located the exit after the fourth GPIS application.",
+      "caption_zh": "Figure 7 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看任务设置、基线、消融和失败案例，判断系统演示是否真正支撑前端价值。",
+      "panels": [],
+      "image_filename": "figure-08.png",
+      "image_width": 1119,
+      "image_height": 837,
+      "crop_confidence": "approximate",
+      "bbox": [
+        18.0,
+        24.0,
+        577.28,
+        442.28
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-08.png"
+    },
+    {
+      "id": "F009",
+      "label": "Fig. 8",
+      "page": 11,
+      "caption_original": "Fig. 8 | Wall-following-based aerial tactile navigation in complete darkness along solid and soft surfaces, using only the onboard IMU and a downwardfacing ToF sensor for state estimation. a Sweeping along a rigid surface for 7 s. b Predicted depth from the whisker MLP model vs. laser measurements during",
+      "caption_zh": "Fig. 8 原始图注已提取；逐项含义见下方分图说明。",
+      "reading_note_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。",
+      "panels": [
+        {
+          "label": "a",
+          "original": "Sweeping along a rigid surface for 7 s",
+          "explanation_zh": "结合正文首次引用位置和原始图注核对该图的证据角色。"
+        },
+        {
+          "label": "b",
+          "original": "Predicted depth from the whisker MLP model vs. laser measurements during",
+          "explanation_zh": "重点查看机制模型与实验结果是否一致，以及关键结构参数的对照关系。"
+        }
+      ],
+      "image_filename": "figure-09.png",
+      "image_width": 981,
+      "image_height": 578,
+      "crop_confidence": "high",
+      "bbox": [
+        55.49,
+        43.76,
+        545.45,
+        332.12
+      ],
+      "image_path": "papers/paper-3b1697973a1361d6/figures/figure-09.png"
+    }
+  ],
+  "original_pdf": "papers/paper-3b1697973a1361d6/original.pdf",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1038/s41467-026-77366-7",
+    "publisher_url": "https://doi.org/10.1038/s41467-026-77366-7",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": true,
+    "candidate_urls": [
+      "https://www.nature.com/articles/s41467-026-77366-7.pdf",
+      "https://arxiv.org/pdf/2510.03119"
+    ],
+    "successful_url": "https://www.nature.com/articles/s41467-026-77366-7.pdf",
+    "failure_reasons": []
+  },
+  "source_access_notes": "",
+  "reader_markdown": "research-memory/literature/2026/2026-09-19/deep-reads/paper-3b1697973a1361d6/paper.md",
+  "source_map": "research-memory/literature/2026/2026-09-19/deep-reads/paper-3b1697973a1361d6/source_map.json",
+  "notes": [
+    "方法步骤和图注来自 PDF 文本层与页码锚点。",
+    "中文逐段翻译和复杂分图语义仍需智能体精读复核。",
+    "裁图标为 approximate 时，应在人工精读阶段调整边界。"
+  ],
+  "curation_status": "automatic_draft"
+}

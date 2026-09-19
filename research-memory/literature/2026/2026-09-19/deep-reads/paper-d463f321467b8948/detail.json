@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "paper-d463f321467b8948",
+  "title": "Motion‐Robust Multichannel sEMG Array for High‐Fidelity Muscle Fatigue Monitoring",
+  "authors": [
+    "Yicong Wang",
+    "Wenting Yu",
+    "Senyun Yang",
+    "Liang Zheng",
+    "Hongnan Zhu",
+    "Qiongyi Zhang",
+    "Zhouyang Hu",
+    "Jiangrui Gao",
+    "Sanwei Hao",
+    "Xianying Xu",
+    "Ning Zhang",
+    "Yuxing Bai"
+  ],
+  "venue": "Advanced Functional Materials",
+  "primary_category": "可穿戴健康与生理监测",
+  "categories": [
+    "可穿戴健康与生理监测",
+    "柔性材料与器件"
+  ],
+  "strongly_related": false,
+  "date": "2026-09-18",
+  "doi": "10.1002/adfm.78406",
+  "source_url": "https://doi.org/10.1002/adfm.78406",
+  "pdf_source_url": "",
+  "pdf_version": "unavailable",
+  "pdf_version_label": "暂无可合法自动获取的开放全文",
+  "status": "metadata_only_no_legal_pdf",
+  "generated_at": "2026-09-19T05:56:15.149696+00:00",
+  "page_count": 0,
+  "abstract": {
+    "original": "ABSTRACT Real‐time muscle fatigue monitoring during dynamic activities is critical for preventing injury and optimizing performance, yet remains hindered by motion‐induced signal artifacts in conventional wearable systems. Here, we present a motion‐robust, multichannel surface electromyography (sEMG) array that enables high‐fidelity neuromuscular signal acquisition and localized fatigue assessment during complex movements. The platform integrates a bacterial cellulose (BC)‐reinforced heterogeneous eutectogel (BHE) with a hollow‐patterned flexible printed circuit (FPC), wherein the BC network dissipates mechanical stress to preserve structural stability. This heterogeneous interface ensures seamless skin‐electrode contact and suppresses signal distortion under motion. The six‐channel FPC electrode configuration facilitates spatially resolved tracking of muscle synergy and fatigue progression. The system exhibits minimal resistance drift over 100 000 bending cycles and maintains impedance stability across a broad frequency range (1 to 10 5 Hz), achieving an average signal‐to‐noise ratio of 41 dB. In real‐world scenarios, the device captures sEMG variations across localized muscle regions with reduced motion artifacts, enabling differential fatigue analysis. Furthermore, the model achieved 83.1% accuracy across four fatigue states in an independent external cohort comprising 160 samples from 40 previously unseen participants. This work demonstrates a wearable platform for continuous muscle monitoring with potential applications in sports science and rehabilitation.",
+    "translation_zh": "",
+    "summary_zh": "待基于原文摘要生成中文总结；当前仅完成题录/摘要级筛选。",
+    "zh": ""
+  },
+  "innovation_points": [
+    "ABSTRACT Real‐time muscle fatigue monitoring during dynamic activities is critical for preventing injury and optimizing performance, yet remains hindered by motion‐induced signal artifacts in conventional wearable systems."
+  ],
+  "relevance_reasons": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "提供机器人、可穿戴或电子皮肤系统任务证据"
+  ],
+  "innovation_suggestions": [],
+  "inspirations": [
+    "可用于低离散/装配容差触觉界面的结构与对照设计",
+    "涉及坏点、漂移、跨器件迁移或少样本校准",
+    "可对照 raw pixel、software feature 与 physical projection 的性能/通道/功耗"
+  ],
+  "preparation_steps": [],
+  "method_blocks": [],
+  "figures": [],
+  "original_pdf": "",
+  "source_access": {
+    "doi_landing": "https://doi.org/10.1002/adfm.78406",
+    "publisher_url": "https://doi.org/10.1002/adfm.78406",
+    "unpaywall_checked": true,
+    "crossref_checked": true,
+    "pmc_checked": false,
+    "candidate_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78406"
+    ],
+    "successful_url": "",
+    "failure_reasons": [
+      "RuntimeError: https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.78406"
+    ]
+  },
+  "source_access_notes": "已检查 DOI、出版社、开放存档和可用 PDF 候选；未找到可合法下载的 PDF。",
+  "reader_markdown": "research-memory/literature/2026/2026-09-19/deep-reads/paper-d463f321467b8948/paper.md",
+  "source_map": "",
+  "notes": [
+    "当前仅完成题录/摘要级筛选。",
+    "未获得合法开放全文，因此不生成制备步骤、逐图解释或 PDF 副本。"
+  ],
+  "curation_status": "automatic_draft"
+}
